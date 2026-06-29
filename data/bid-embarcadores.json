@@ -1,0 +1,2578 @@
+{
+  "generatedAt": "2026-06-10",
+  "source": "Filtered to Alta all tiers + Media only Tier1/Tier2 from full public research",
+  "rows": [
+    {
+      "embarcador": "Amazon Brasil",
+      "siteBid": "Amazon Relay / Apply",
+      "siteBidLinks": [
+        {
+          "label": "Amazon Relay",
+          "url": "https://relay.amazon.com/"
+        },
+        {
+          "label": "Apply",
+          "url": "https://relay.amazon.com/get-started"
+        }
+      ],
+      "transportadoraParceira": "Magalog",
+      "evidencia": "Release da Magalu informa que a logistica das vendas Magalu na Amazon sera operada pela Magalog, \"transportadora independente do Magalu, homologada pela Amazon\".",
+      "fonte": "RI Magazine Luiza - Press release parceria Magalu e Amazon",
+      "fonteLinks": [
+        {
+          "label": "RI Magazine Luiza - Press release parceria Magalu e Amazon",
+          "url": "https://ri.magazineluiza.com.br/Download/Magalu---20260608---Press-Release---Parceria-Magalu-e-Amazon?=xZRwY0AQcUunOHpVIVy3pg%3D%3D&linguagem=pt"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Amazon Brasil",
+      "siteBid": "Amazon Relay / Apply",
+      "siteBidLinks": [
+        {
+          "label": "Amazon Relay",
+          "url": "https://relay.amazon.com/"
+        },
+        {
+          "label": "Apply",
+          "url": "https://relay.amazon.com/get-started"
+        }
+      ],
+      "transportadoraParceira": "Loggi; Shippify; Dialogo Logistica; ICS Delivery",
+      "evidencia": "Guia publico lista transportadoras parceiras para entregadores Amazon; nao e fonte oficial da Amazon, mas traz nomes operacionais.",
+      "fonte": "Remessa Online - como ser entregador da Amazon",
+      "fonteLinks": [
+        {
+          "label": "Remessa Online - como ser entregador da Amazon",
+          "url": "https://www.remessaonline.com.br/blog/como-ser-entregador-da-amazon/"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Mercado Livre",
+      "siteBid": "Mercado Envios Extra",
+      "siteBidLinks": [
+        {
+          "label": "Mercado Envios Extra",
+          "url": "https://envios.mercadolivre.com.br/envios-extra/ajuda/18624"
+        }
+      ],
+      "transportadoraParceira": "J3 Flex",
+      "evidencia": "Pagina da transportadora afirma colaboracao com Mercado Livre Flex em Belo Horizonte, com coleta e entrega para clientes.",
+      "fonte": "J3 Flex - Entregas Mercado Livre Flex BH",
+      "fonteLinks": [
+        {
+          "label": "J3 Flex - Entregas Mercado Livre Flex BH",
+          "url": "https://enviosj3flex.com.br/servicos/entregas-mercado-livre-flex-em-belo-horizonte"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Mercado Livre",
+      "siteBid": "Mercado Envios Extra",
+      "siteBidLinks": [
+        {
+          "label": "Mercado Envios Extra",
+          "url": "https://envios.mercadolivre.com.br/envios-extra/ajuda/18624"
+        }
+      ],
+      "transportadoraParceira": "SOS Envios Express",
+      "evidencia": "Pagina comercial anuncia operacao Mercado Livre Flex ABC, com SLA e operacao Grande SP.",
+      "fonte": "SOS Envios Express - Mercado Livre Flex ABC",
+      "fonteLinks": [
+        {
+          "label": "SOS Envios Express - Mercado Livre Flex ABC",
+          "url": "https://sosenvioexpress.com.br/servicos/mercado-livre-flex-abc"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Shopee Brasil",
+      "siteBid": "Formulario transportadora parceira Shopee / SPX Express",
+      "siteBidLinks": [
+        {
+          "label": "Formulario transportadora parceira Shopee",
+          "url": "https://help.shopee.com.br/4/article/100043-%5BOrienta%C3%A7%C3%B5es%5D-Como-se-candidatar-para-ser-uma-transportadora-parceira-da-Shopee"
+        },
+        {
+          "label": "SPX Express",
+          "url": "https://spx.com.br/"
+        }
+      ],
+      "transportadoraParceira": "SPX Express",
+      "evidencia": "Site da SPX se define como logistica integrada da Shopee no Brasil, com hubs, CDs, entregadores parceiros e agencias.",
+      "fonte": "SPX Express",
+      "fonteLinks": [
+        {
+          "label": "SPX Express",
+          "url": "https://spx.com.br/"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Magazine Luiza",
+      "siteBid": "Magalu Entregas / Magalu Empresas",
+      "siteBidLinks": [
+        {
+          "label": "Magalu Entregas",
+          "url": "https://magaluentregas.com.br/"
+        },
+        {
+          "label": "Magalu Empresas",
+          "url": "https://empresas.magazineluiza.com.br/"
+        }
+      ],
+      "transportadoraParceira": "Magalog",
+      "evidencia": "Magalog e apresentada como transportadora independente do Magalu e operadora logistica das vendas Magalu na Amazon.",
+      "fonte": "RI Magazine Luiza - Press release parceria Magalu e Amazon",
+      "fonteLinks": [
+        {
+          "label": "RI Magazine Luiza - Press release parceria Magalu e Amazon",
+          "url": "https://ri.magazineluiza.com.br/Download/Magalu---20260608---Press-Release---Parceria-Magalu-e-Amazon?=xZRwY0AQcUunOHpVIVy3pg%3D%3D&linguagem=pt"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "CIMED",
+      "siteBid": "Nao encontrado",
+      "siteBidLinks": [],
+      "transportadoraParceira": "Isa's Transportes",
+      "evidencia": "Post publico da transportadora anuncia \"nova parceria de sucesso\" entre Isa's Transportes e CIMED.",
+      "fonte": "Facebook - Isa's Transportes e CIMED",
+      "fonteLinks": [
+        {
+          "label": "Facebook - Isa's Transportes e CIMED",
+          "url": "https://www.facebook.com/isastransportes/posts/nova-parceria-de-sucesso-isas-transportes-e-cimed-cimedco-estamos-prontos-para-l/1040872858249950/"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "CIMED",
+      "siteBid": "Nao encontrado",
+      "siteBidLinks": [],
+      "transportadoraParceira": "Prolog",
+      "evidencia": "Post publico da Prolog cita Grupo Cimed como exemplo/cliente para operacao dedicada e last mile.",
+      "fonte": "LinkedIn - Prolog/Cimed",
+      "fonteLinks": [
+        {
+          "label": "LinkedIn - Prolog/Cimed",
+          "url": "https://pt.linkedin.com/posts/prologrio_prolog-log%C3%ADstica-lastmile-activity-7382488509481107457-y60i"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "JBS",
+      "siteBid": "JBS YMS/Trizy / Uboi",
+      "siteBidLinks": [
+        {
+          "label": "JBS YMS/Trizy",
+          "url": "https://jbs.yms.trizy.com.br/Content/Manual%20de%20Acessos%20Transportadoras.pdf"
+        },
+        {
+          "label": "Uboi",
+          "url": "https://www.uboi.com.br/"
+        }
+      ],
+      "transportadoraParceira": "JBS Transportadora / Uboi",
+      "evidencia": "Uboi e apresentado como solucao da JBS Transportadora para transporte de gado vivo.",
+      "fonte": "Uboi",
+      "fonteLinks": [
+        {
+          "label": "Uboi",
+          "url": "https://www.uboi.com.br/"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Nestle Brasil",
+      "siteBid": "Nestle Supplier Portal / Nestle eSourcing Ariba",
+      "siteBidLinks": [
+        {
+          "label": "Nestle Supplier Portal",
+          "url": "https://supplier.nestle.com/"
+        },
+        {
+          "label": "Nestle eSourcing Ariba",
+          "url": "https://s1.ariba.com/Sourcing/Main/ad/userNameHelp/SSOActions?awr=3&passwordadapter=PasswordAdapter1&realm=nestleondemand"
+        }
+      ],
+      "transportadoraParceira": "Carsten Servicos",
+      "evidencia": "Case da Carsten informa operacoes de transporte para Nestle com caminhoes a gas e parceria de negocios.",
+      "fonte": "Carsten - parceria com Nestle",
+      "fonteLinks": [
+        {
+          "label": "Carsten - parceria com Nestle",
+          "url": "https://www.carsten.com.br/blog/em-parceria-com-a-carsten-servicos-nestle-compoe-sua-frota-de-caminhoes-a-gas-para-o-transporte-de-cargas/"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Nestle Brasil",
+      "siteBid": "Nestle Supplier Portal / Nestle eSourcing Ariba",
+      "siteBidLinks": [
+        {
+          "label": "Nestle Supplier Portal",
+          "url": "https://supplier.nestle.com/"
+        },
+        {
+          "label": "Nestle eSourcing Ariba",
+          "url": "https://s1.ariba.com/Sourcing/Main/ad/userNameHelp/SSOActions?awr=3&passwordadapter=PasswordAdapter1&realm=nestleondemand"
+        }
+      ],
+      "transportadoraParceira": "Kothe S.A.",
+      "evidencia": "Post da Kothe informa reconhecimento como Melhor Transportadora da Nestle em 2025 no Summit 2026 Nestle.",
+      "fonte": "LinkedIn - Kothe/Nestle",
+      "fonteLinks": [
+        {
+          "label": "LinkedIn - Kothe/Nestle",
+          "url": "https://pt.linkedin.com/posts/kothe-s-a_melhor-transportadora-da-nestl%C3%A9-em-2025-activity-7442555938672205824-B_J8"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Unilever Brasil",
+      "siteBid": "Nao encontrado",
+      "siteBidLinks": [],
+      "transportadoraParceira": "Joanini Transporte e Logistica",
+      "evidencia": "Post publico afirma inicio de operacao 3PL com Unilever.",
+      "fonte": "Instagram - Joanini/Unilever",
+      "fonteLinks": [
+        {
+          "label": "Instagram - Joanini/Unilever",
+          "url": "https://www.instagram.com/p/DAJcbXKvSOz/"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Unilever Brasil",
+      "siteBid": "Nao encontrado",
+      "siteBidLinks": [],
+      "transportadoraParceira": "FTI Logistica / Fantinati",
+      "evidencia": "Pagina institucional informa que a chegada da Unilever como cliente iniciou parceria em 2003, com distribuicao em SP, ABC, MG, litoral paulista e Vale do Paraiba.",
+      "fonte": "FTI Logistica - quem somos",
+      "fonteLinks": [
+        {
+          "label": "FTI Logistica - quem somos",
+          "url": "https://www.ftilogistica.com.br/quem-somos"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Grupo Boticario",
+      "siteBid": "Portal dos Fornecedores / Plataforma Logistica GB",
+      "siteBidLinks": [
+        {
+          "label": "Portal dos Fornecedores",
+          "url": "https://fornecedores.grupoboticario.com.br/"
+        },
+        {
+          "label": "Plataforma Logistica GB",
+          "url": "https://plataformalogistica.grupoboticario.com.br/"
+        }
+      ],
+      "transportadoraParceira": "Patrus Transportes",
+      "evidencia": "Noticia informa Trofeu Ouro como Melhor Transportadora de Carga Fracionada do Grupo Boticario, com 16 anos de parceria.",
+      "fonte": "Exclusivo - Patrus e Grupo Boticario",
+      "fonteLinks": [
+        {
+          "label": "Exclusivo - Patrus e Grupo Boticario",
+          "url": "https://exclusivo.com.br/negocios/patrus-e-destaque-no-programa-de-parceiros-do-grupo-boticario/"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Raizen",
+      "siteBid": "Portal dos Fornecedores Raizen / Supplier Portal",
+      "siteBidLinks": [
+        {
+          "label": "Portal dos Fornecedores Raizen",
+          "url": "https://www.raizen.com.br/sobre-a-raizen/portal-dos-fornecedores"
+        },
+        {
+          "label": "Supplier Portal",
+          "url": "https://www.raizen.com.br/en/about-raizen/suppliers-portal"
+        }
+      ],
+      "transportadoraParceira": "WPL; CNA",
+      "evidencia": "Noticia setorial informa que WPL e CNA sao contratadas para logistica fluvial da Raizen na regiao Norte.",
+      "fonte": "ABOL - logistica fluvial Raizen",
+      "fonteLinks": [
+        {
+          "label": "ABOL - logistica fluvial Raizen",
+          "url": "https://abolbrasil.org.br/noticias/noticias/raizen-incentiva-seguranca-para-consolidar-crescimento-de-logistica-fluvial"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Raizen",
+      "siteBid": "Portal dos Fornecedores Raizen / Supplier Portal",
+      "siteBidLinks": [
+        {
+          "label": "Portal dos Fornecedores Raizen",
+          "url": "https://www.raizen.com.br/sobre-a-raizen/portal-dos-fornecedores"
+        },
+        {
+          "label": "Supplier Portal",
+          "url": "https://www.raizen.com.br/en/about-raizen/suppliers-portal"
+        }
+      ],
+      "transportadoraParceira": "Stefani Transporte",
+      "evidencia": "Noticia do SETCERGS informa apoio da Stefani, transportadora parceira da Raizen, em etapa regional do Rodeio de Caminhoes.",
+      "fonte": "SETCERGS - Stefani e Raizen",
+      "fonteLinks": [
+        {
+          "label": "SETCERGS - Stefani e Raizen",
+          "url": "https://www.setcergs.com.br/noticias/13o-rodeio-de-caminhoes-destaca-seguranca-viaria-e-valoriza-profissionais-do-trc/"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Raizen",
+      "siteBid": "Portal dos Fornecedores Raizen / Supplier Portal",
+      "siteBidLinks": [
+        {
+          "label": "Portal dos Fornecedores Raizen",
+          "url": "https://www.raizen.com.br/sobre-a-raizen/portal-dos-fornecedores"
+        },
+        {
+          "label": "Supplier Portal",
+          "url": "https://www.raizen.com.br/en/about-raizen/suppliers-portal"
+        }
+      ],
+      "transportadoraParceira": "Agricopel Transportes / Transportadora Pra Frente Brasil",
+      "evidencia": "Noticia informa transferencia de ativos/contrato de operacao vinculada ao contrato com a Raizen em SC, citando parceria de mais de uma decada.",
+      "fonte": "Radio 105 FM - Agricopel/Raizen/Pra Frente Brasil",
+      "fonteLinks": [
+        {
+          "label": "Radio 105 FM - Agricopel/Raizen/Pra Frente Brasil",
+          "url": "https://www.fm105.com.br/divisao-de-transportes-da-agricopel-e-adquirida-pela-transportadora-pra-frente-brasil-2/"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Vibra Energia",
+      "siteBid": "Quero ser fornecedor / +Transportes",
+      "siteBidLinks": [
+        {
+          "label": "Quero ser fornecedor",
+          "url": "https://www.vibraenergia.com.br/quero-ser-um-fornecedor"
+        },
+        {
+          "label": "+Transportes",
+          "url": "https://play.google.com/store/apps/details?hl=pt&id=br.com.vibraenergia.maistransportes"
+        }
+      ],
+      "transportadoraParceira": "Transportadora Garbuio",
+      "evidencia": "Post publico de profissional da Vibra cita visita a Transportadora Garbuio, \"grande parceira da Vibra Energia\".",
+      "fonte": "LinkedIn - Vibra/Garbuio",
+      "fonteLinks": [
+        {
+          "label": "LinkedIn - Vibra/Garbuio",
+          "url": "https://pt.linkedin.com/posts/alinefcosta_log%C3%ADstica-transportes-vibra-activity-7037045939663994881-y_XS"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Braskem",
+      "siteBid": "Fornecedores Braskem / Coupa",
+      "siteBidLinks": [
+        {
+          "label": "Fornecedores Braskem",
+          "url": "https://www.braskem.com.br/fornecedores"
+        },
+        {
+          "label": "Coupa",
+          "url": "https://www.braskem.com.br/fornecedores-material-de-apoio-coupa"
+        }
+      ],
+      "transportadoraParceira": "Transportadora Contatto",
+      "evidencia": "Post publico menciona reconhecimento no 4o Premio Braskem de Fornecedores 2025 na categoria Logistica.",
+      "fonte": "Instagram - Premio Braskem/Contatto",
+      "fonteLinks": [
+        {
+          "label": "Instagram - Premio Braskem/Contatto",
+          "url": "https://www.instagram.com/p/DK9a4gDtrnM/"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Gerdau",
+      "siteBid": "Seja fornecedor Gerdau / Ariba/fornecedores",
+      "siteBidLinks": [
+        {
+          "label": "Seja fornecedor Gerdau",
+          "url": "https://www2.gerdau.com.br/fornecedores/"
+        },
+        {
+          "label": "Ariba/fornecedores",
+          "url": "https://wasazrprd01.azurewebsites.net/fornecedores"
+        }
+      ],
+      "transportadoraParceira": "G2L Logistica",
+      "evidencia": "G2L e subsidiaria/logistica ligada a Gerdau; post menciona G2L como transportadora destaque Gerdau Unidade.",
+      "fonte": "Instagram - G2L/Gerdau",
+      "fonteLinks": [
+        {
+          "label": "Instagram - G2L/Gerdau",
+          "url": "https://www.instagram.com/p/DUJbtvGkhB5/"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Gerdau",
+      "siteBid": "Seja fornecedor Gerdau / Ariba/fornecedores",
+      "siteBidLinks": [
+        {
+          "label": "Seja fornecedor Gerdau",
+          "url": "https://www2.gerdau.com.br/fornecedores/"
+        },
+        {
+          "label": "Ariba/fornecedores",
+          "url": "https://wasazrprd01.azurewebsites.net/fornecedores"
+        }
+      ],
+      "transportadoraParceira": "Lenarge Transportes",
+      "evidencia": "Pagina institucional da Lenarge lista \"Melhor Transportadora Gerdau\" e \"Empresa do Ano\" eleita pela Gerdau.",
+      "fonte": "Lenarge - A Lenarge",
+      "fonteLinks": [
+        {
+          "label": "Lenarge - A Lenarge",
+          "url": "https://www.lenarge.com.br/a-lenarge"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Gerdau",
+      "siteBid": "Seja fornecedor Gerdau / Ariba/fornecedores",
+      "siteBidLinks": [
+        {
+          "label": "Seja fornecedor Gerdau",
+          "url": "https://www2.gerdau.com.br/fornecedores/"
+        },
+        {
+          "label": "Ariba/fornecedores",
+          "url": "https://wasazrprd01.azurewebsites.net/fornecedores"
+        }
+      ],
+      "transportadoraParceira": "Multiterminais",
+      "evidencia": "Site da Multiterminais cita parceria com Grupo Gerdau em projeto logistico em Ouro Branco.",
+      "fonte": "Multiterminais - dicionario/logistica",
+      "fonteLinks": [
+        {
+          "label": "Multiterminais - dicionario/logistica",
+          "url": "https://www.multiterminais.com.br/dicionario-logistica"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Cargill",
+      "siteBid": "Central de Fornecedores - Ariba Network / eSourcing",
+      "siteBidLinks": [
+        {
+          "label": "Central de Fornecedores - Ariba Network",
+          "url": "https://www.cargill.com/supplier-central/pt_BR/ariba-network"
+        },
+        {
+          "label": "eSourcing",
+          "url": "https://www.cargill.com/supplier-central/en/esourcing"
+        }
+      ],
+      "transportadoraParceira": "Transportadores Cargill Foods (nao nominalizados)",
+      "evidencia": "Post publico de executivo cita Encontro Nacional de Transportes Cargill Foods e agradece transportadoras parceiras, sem nomes.",
+      "fonte": "LinkedIn - Cargill Foods transportadores",
+      "fonteLinks": [
+        {
+          "label": "LinkedIn - Cargill Foods transportadores",
+          "url": "https://pt.linkedin.com/posts/bruno-ferracioli-ele-dele-he-him-695b8a51_encontro-nacional-de-transportes-cargill-activity-7395187521913094145-3lAR"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Coca-Cola FEMSA",
+      "siteBid": "Fornecedores Coca-Cola FEMSA",
+      "siteBidLinks": [
+        {
+          "label": "Fornecedores Coca-Cola FEMSA",
+          "url": "https://coca-colafemsa.com/pt/global/fornecedores.html"
+        }
+      ],
+      "transportadoraParceira": "Reiter Log",
+      "evidencia": "Post publico informa contrato de cinco anos com Coca-Cola FEMSA.",
+      "fonte": "Instagram - Reiter Log/Coca-Cola FEMSA",
+      "fonteLinks": [
+        {
+          "label": "Instagram - Reiter Log/Coca-Cola FEMSA",
+          "url": "https://www.instagram.com/p/DR-tpO2ErRz/"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "MBRF (Marfrig + BRF)",
+      "siteBid": "Portal do Fornecedor MBRF / Seja fornecedor MBRF",
+      "siteBidLinks": [
+        {
+          "label": "Portal do Fornecedor MBRF",
+          "url": "https://www.mbrf.com/portal-do-fornecedor/"
+        },
+        {
+          "label": "Seja fornecedor MBRF",
+          "url": "https://www.brf-global.com/portais-brf/portal-do-fornecedor/"
+        }
+      ],
+      "transportadoraParceira": "SS Log Transportes",
+      "evidencia": "Blog da SS Log registra premio como melhor transportadora do trimestre no programa GIF 2025 e premios anteriores na operacao BRF.",
+      "fonte": "SS Log - blog",
+      "fonteLinks": [
+        {
+          "label": "SS Log - blog",
+          "url": "https://sslogtransportes.com.br/blog"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "MBRF (Marfrig + BRF)",
+      "siteBid": "Portal do Fornecedor MBRF / Seja fornecedor MBRF",
+      "siteBidLinks": [
+        {
+          "label": "Portal do Fornecedor MBRF",
+          "url": "https://www.mbrf.com/portal-do-fornecedor/"
+        },
+        {
+          "label": "Seja fornecedor MBRF",
+          "url": "https://www.brf-global.com/portais-brf/portal-do-fornecedor/"
+        }
+      ],
+      "transportadoraParceira": "Tombini",
+      "evidencia": "Post publico informa destaque no Premio GIF da BRF.",
+      "fonte": "Facebook - Tombini/BRF",
+      "fonteLinks": [
+        {
+          "label": "Facebook - Tombini/BRF",
+          "url": "https://www.facebook.com/grupotombini/posts/tombini-%C3%A9-destaque-no-pr%C3%AAmio-gif-da-brfnesta-ter%C3%A7a-feria-18-de-mar%C3%A7o-a-tombini-p/638909702117424/"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "MBRF (Marfrig + BRF)",
+      "siteBid": "Portal do Fornecedor MBRF / Seja fornecedor MBRF",
+      "siteBidLinks": [
+        {
+          "label": "Portal do Fornecedor MBRF",
+          "url": "https://www.mbrf.com/portal-do-fornecedor/"
+        },
+        {
+          "label": "Seja fornecedor MBRF",
+          "url": "https://www.brf-global.com/portais-brf/portal-do-fornecedor/"
+        }
+      ],
+      "transportadoraParceira": "Hungaro Transportes",
+      "evidencia": "Posts publicos mencionam visita de gestores de logistica da MBRF e parceria confiavel com MBRF.",
+      "fonte": "Instagram - Hungaro/MBRF",
+      "fonteLinks": [
+        {
+          "label": "Instagram - Hungaro/MBRF",
+          "url": "https://www.instagram.com/p/DXMKneaGd70/"
+        }
+      ],
+      "confianca": "Media",
+      "tier": 1
+    },
+    {
+      "embarcador": "Ambev",
+      "siteBid": "Nao encontrado",
+      "siteBidLinks": [],
+      "transportadoraParceira": "Imediato Nexway / Transportes Imediato",
+      "evidencia": "Noticia informa que Imediato Nexway e a maior parceira logistica da Ambev no Brasil, com 26 anos de colaboracao; outra noticia cita investimento da Ambev na Transportes Imediato.",
+      "fonte": "Logweb - Imediato Nexway e Ambev / MundoLogistica - Ambev e Transportes Imediato",
+      "fonteLinks": [
+        {
+          "label": "Logweb - Imediato Nexway e Ambev",
+          "url": "https://logweb.com.br/imediato-nexway-operacao-logistica-ambev-presidente-prudente/"
+        },
+        {
+          "label": "MundoLogistica - Ambev e Transportes Imediato",
+          "url": "https://mundologistica.com.br/noticias/ambev-investira-em-transportadora-parceria-para-otimizar-distribuicao-em-cidades"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Bunge Brasil",
+      "siteBid": "Bunge YMS/Trizy / Vector",
+      "siteBidLinks": [
+        {
+          "label": "Bunge YMS/Trizy",
+          "url": "https://bunge.yms.trizy.com.br/"
+        },
+        {
+          "label": "Vector",
+          "url": "https://www.vector-unitech.com/"
+        }
+      ],
+      "transportadoraParceira": "Vector",
+      "evidencia": "Vector nasceu como solucao/app de fretes da Bunge e se tornou plataforma/empresa para frete rodoviario; fontes citam cadastro de motoristas e transportadoras e grande volume de cargas.",
+      "fonte": "Vector / MundoLogistica - digitalizacao de fretes Bunge",
+      "fonteLinks": [
+        {
+          "label": "Vector",
+          "url": "https://www.vector-unitech.com/"
+        },
+        {
+          "label": "MundoLogistica - digitalizacao de fretes Bunge",
+          "url": "https://mundologistica.com.br/entrevistas/com-digitalizacao-de-fretes-bunge-ja-movimentou-15-milhao-de-toneladas-de-graos"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "embarcador": "Votorantim Cimentos",
+      "siteBid": "Quero ser fornecedor / Ariba manual / Motz",
+      "siteBidLinks": [
+        {
+          "label": "Quero ser fornecedor",
+          "url": "https://www.votorantimcimentos.com.br/quero-ser-fornecedor/"
+        },
+        {
+          "label": "Ariba manual",
+          "url": "https://www.votorantimcimentos.com.br/wp-content/uploads/2022/11/2022.01.18-Manual-do-Fornecedor-Jan22.pdf"
+        },
+        {
+          "label": "Motz",
+          "url": "https://mundologistica.com.br/noticias/votorantim-cimentos-lanca-transportadora-digital-motz-para-conectar-embarcadores-e-motoristas"
+        }
+      ],
+      "transportadoraParceira": "Motz",
+      "evidencia": "Motz nasceu com heranca/estrutura da Votorantim Cimentos como transportadora digital para conectar embarcadores e caminhoneiros; relatorio integrado da VC cita transportadora dedicada a cadeia logistica.",
+      "fonte": "Transporta Brasil - Motz/Votorantim / Relatorio Integrado VC 2021",
+      "fonteLinks": [
+        {
+          "label": "Transporta Brasil - Motz/Votorantim",
+          "url": "https://www.transportabrasil.com.br/2022/03/votorantim-cimentos-cria-transportadora-digital-para-oferecer-cargas-aos-autonomos/"
+        },
+        {
+          "label": "Relatorio Integrado VC 2021",
+          "url": "https://www.votorantimcimentos.com.br/wp-content/uploads/2024/03/relatorio-integrado-2021.pdf"
+        }
+      ],
+      "confianca": "Alta",
+      "tier": 1
+    },
+    {
+      "tier": 2,
+      "embarcador": "Casas Bahia",
+      "siteBid": "Casas Bahia Entrega / CB Full",
+      "siteBidLinks": [
+        {
+          "label": "Casas Bahia Entrega / CB Full",
+          "url": "https://developers.grupocasasbahia.com.br/marketplace/docs/casas-bahia-entrega"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.cbfull.com.br/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://ricoolog.com.br/clientes-e-parceiros/21/casas-bahia"
+        }
+      ],
+      "transportadoraParceira": "CB Full / ASAP Log / CNT Log; RicooLog",
+      "evidencia": "CB Entrega e CB Full aparecem como estrutura logística do Grupo Casas Bahia; RicooLog declara colaboração com Casas Bahia em entregas.",
+      "fonte": "Casas Bahia Entrega; CB Full; RicooLog",
+      "fonteLinks": [
+        {
+          "label": "Casas Bahia Entrega; CB Full; RicooLog",
+          "url": "https://developers.grupocasasbahia.com.br/marketplace/docs/casas-bahia-entrega"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.cbfull.com.br/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://ricoolog.com.br/clientes-e-parceiros/21/casas-bahia"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Shein Brasil",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://www.tecnologistica.com.br/noticias/logistica-reversa/20191/shein-amplia-parceria-com-a-jadlog-para-logistica-reversa/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mundologistica.com.br/noticias/jadlog-firma-parceria-com-a-shien-para-logistica-reversa"
+        }
+      ],
+      "transportadoraParceira": "Jadlog",
+      "evidencia": "SHEIN ampliou parceria com Jadlog para logística reversa via rede Jadlog Pickup.",
+      "fonte": "Tecnologística / MundoLogística",
+      "fonteLinks": [
+        {
+          "label": "Tecnologística / MundoLogística",
+          "url": "https://www.tecnologistica.com.br/noticias/logistica-reversa/20191/shein-amplia-parceria-com-a-jadlog-para-logistica-reversa/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mundologistica.com.br/noticias/jadlog-firma-parceria-com-a-shien-para-logistica-reversa"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "AliExpress",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://abiacom.org/noticias/aliexpress-anuncia-solucao-de-full-commerce-em-parceira-com-cainiao-e-infracommerce"
+        }
+      ],
+      "transportadoraParceira": "Cainiao / Infracommerce",
+      "evidencia": "AliExpress e Cainiao desenvolveram solução full-commerce com Infracommerce para vendedores brasileiros.",
+      "fonte": "ABIACOM",
+      "fonteLinks": [
+        {
+          "label": "ABIACOM",
+          "url": "https://abiacom.org/noticias/aliexpress-anuncia-solucao-de-full-commerce-em-parceira-com-cainiao-e-infracommerce"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Eurofarma",
+      "siteBid": "Fornecedores Eurofarma",
+      "siteBidLinks": [
+        {
+          "label": "Fornecedores Eurofarma",
+          "url": "https://eurofarma.com.br/fornecedores"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://logweb.com.br/embarcador-farmaceutico-desafio-de-atender-ao-mercado-na-eurofarma-e-vencido-com-diversas-atividades/"
+        }
+      ],
+      "transportadoraParceira": "Transportadoras homologadas não nominalizadas",
+      "evidencia": "Eurofarma tem página de fornecedores; Logweb cita transportadoras homologadas por Suprimentos e Qualidade.",
+      "fonte": "Eurofarma / Logweb",
+      "fonteLinks": [
+        {
+          "label": "Eurofarma / Logweb",
+          "url": "https://eurofarma.com.br/fornecedores"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://logweb.com.br/embarcador-farmaceutico-desafio-de-atender-ao-mercado-na-eurofarma-e-vencido-com-diversas-atividades/"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Ache",
+      "siteBid": "Fornecedores Aché",
+      "siteBidLinks": [
+        {
+          "label": "Fornecedores Aché",
+          "url": "https://www.ache.com.br/parceiros-de-negocios/fornecedores/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.instagram.com/reel/DG5NyeZJEl1/"
+        }
+      ],
+      "transportadoraParceira": "Mundial Logistics",
+      "evidencia": "Aché possui página de fornecedores; post público da Mundial Logistics cita parceria com Aché Laboratórios.",
+      "fonte": "Aché / Mundial Logistics",
+      "fonteLinks": [
+        {
+          "label": "Aché / Mundial Logistics",
+          "url": "https://www.ache.com.br/parceiros-de-negocios/fornecedores/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.instagram.com/reel/DG5NyeZJEl1/"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Neo Química / Hypera",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://sindusfarma.org.br/noticias/empresas-foco/exibir/12318-ativa-logistica-e-o-melhor-transportador-nas-operacoes-da-hypera-pharma-pela-6a-vez-consecutiva"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://ativalog.com.br/ativa-recebe-premio-da-hypera-pharma/"
+        }
+      ],
+      "transportadoraParceira": "Ativa Logística",
+      "evidencia": "Ativa foi reconhecida como melhor transportador nas operações da Hypera Pharma por anos consecutivos.",
+      "fonte": "Sindusfarma / Ativa",
+      "fonteLinks": [
+        {
+          "label": "Sindusfarma / Ativa",
+          "url": "https://sindusfarma.org.br/noticias/empresas-foco/exibir/12318-ativa-logistica-e-o-melhor-transportador-nas-operacoes-da-hypera-pharma-pela-6a-vez-consecutiva"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://ativalog.com.br/ativa-recebe-premio-da-hypera-pharma/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Seara",
+      "siteBid": "JBS YMS/Trizy",
+      "siteBidLinks": [
+        {
+          "label": "JBS YMS/Trizy",
+          "url": "https://jbs.yms.trizy.com.br/Content/Manual%20de%20Acessos%20Transportadoras.pdf"
+        }
+      ],
+      "transportadoraParceira": "Transportadoras JBS/Seara via YMS",
+      "evidencia": "Seara integra ecossistema JBS; manual YMS JBS orienta acesso de transportadoras para agendamento.",
+      "fonte": "JBS YMS",
+      "fonteLinks": [
+        {
+          "label": "JBS YMS",
+          "url": "https://jbs.yms.trizy.com.br/Content/Manual%20de%20Acessos%20Transportadoras.pdf"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Bauducco",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://ellecelogistica.gupy.io/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://logweb.com.br/ellece-logistica-atua-em-todos-os-elos-da-cadeia-pos-produto-acabado-das-industrias-no-atacado-e-varejo/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://www.instagram.com/reel/DLZ4gf2iJaD/"
+        }
+      ],
+      "transportadoraParceira": "Ellece Logística; Yamalog",
+      "evidencia": "Ellece é parceira estratégica das marcas Bauducco/Visconti/Tommy; Yamalog publicou depoimento de logística Bauducco.",
+      "fonte": "Ellece / Logweb / Yamalog",
+      "fonteLinks": [
+        {
+          "label": "Ellece / Logweb / Yamalog",
+          "url": "https://ellecelogistica.gupy.io/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://logweb.com.br/ellece-logistica-atua-em-todos-os-elos-da-cadeia-pos-produto-acabado-das-industrias-no-atacado-e-varejo/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://www.instagram.com/reel/DLZ4gf2iJaD/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "P&G",
+      "siteBid": "P&G Supplier Site",
+      "siteBidLinks": [
+        {
+          "label": "P&G Supplier Site",
+          "url": "https://pgsupplier.com/pt"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mundologistica.com.br/noticias/pg-cria-premio-para-reconhecer-seus-parceiros-de-transporte"
+        }
+      ],
+      "transportadoraParceira": "Transportadoras premiadas não nominalizadas",
+      "evidencia": "P&G possui portal de fornecedores e prêmio para reconhecer parceiros de transporte.",
+      "fonte": "P&G Supplier / MundoLogística",
+      "fonteLinks": [
+        {
+          "label": "P&G Supplier / MundoLogística",
+          "url": "https://pgsupplier.com/pt"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mundologistica.com.br/noticias/pg-cria-premio-para-reconhecer-seus-parceiros-de-transporte"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Natura",
+      "siteBid": "Jornada do Fornecedor Natura",
+      "siteBidLinks": [
+        {
+          "label": "Jornada do Fornecedor Natura",
+          "url": "https://ri.natura.com.br/a-companhia/fornecedores/jornada-do-fornecedor/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mundologistica.com.br/noticias/omnichannel-natura-faz-entregas-em-20-estados"
+        }
+      ],
+      "transportadoraParceira": "Abbiamo",
+      "evidencia": "Natura firmou parceria com Abbiamo para impulsionar estratégia omnichannel em entregas em 20 estados.",
+      "fonte": "MundoLogística",
+      "fonteLinks": [
+        {
+          "label": "MundoLogística",
+          "url": "https://ri.natura.com.br/a-companhia/fornecedores/jornada-do-fornecedor/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mundologistica.com.br/noticias/omnichannel-natura-faz-entregas-em-20-estados"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "L'Oréal",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://mundologistica.com.br/noticias/exato-transportes-recebe-premio-da-loreal-brasil"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://logweb.com.br/exato-transportes-urgentes-e-reconhecida-em-premiacao-da-loreal-brasil/"
+        }
+      ],
+      "transportadoraParceira": "Exato Transportes",
+      "evidencia": "Exato foi reconhecida em premiação da L’Oréal Brasil e citada como fornecedora desde 1998.",
+      "fonte": "MundoLogística / Logweb",
+      "fonteLinks": [
+        {
+          "label": "MundoLogística / Logweb",
+          "url": "https://mundologistica.com.br/noticias/exato-transportes-recebe-premio-da-loreal-brasil"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://logweb.com.br/exato-transportes-urgentes-e-reconhecida-em-premiacao-da-loreal-brasil/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "CSN",
+      "siteBid": "Portal de Cotações CSN / Ariba",
+      "siteBidLinks": [
+        {
+          "label": "Portal de Cotações CSN / Ariba",
+          "url": "https://www.csn.com.br/fornecedores/seja-nosso-fornecedor/"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "CSN informa acesso ao Portal de Cotações via cadastro no Ariba.",
+      "fonte": "CSN",
+      "fonteLinks": [
+        {
+          "label": "CSN",
+          "url": "https://www.csn.com.br/fornecedores/seja-nosso-fornecedor/"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Usiminas",
+      "siteBid": "Usiminas SAP Ariba / e-Fornecedores",
+      "siteBidLinks": [
+        {
+          "label": "Usiminas SAP Ariba / e-Fornecedores",
+          "url": "https://www.usiminas.com/pages/seja-fornecedor/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://portaldecompras.usiminas.com.br/"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Usiminas possui cadastro/fornecedor via SAP Ariba e portal e-Fornecedores.",
+      "fonte": "Usiminas",
+      "fonteLinks": [
+        {
+          "label": "Usiminas",
+          "url": "https://www.usiminas.com/pages/seja-fornecedor/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://portaldecompras.usiminas.com.br/"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "ArcelorMittal",
+      "siteBid": "Pré-cadastro / Portal da Logística ArcelorMittal",
+      "siteBidLinks": [
+        {
+          "label": "Pré-cadastro / Portal da Logística ArcelorMittal",
+          "url": "https://brasil.arcelormittal.com/fornecedores"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://portalqa.gear7.com.br/termos_de_uso"
+        }
+      ],
+      "transportadoraParceira": "Transportadoras cadastradas no Portal da Logística",
+      "evidencia": "Portal da Logística cita cadastro de transportadoras, oferta coletiva, leilão e cotação de fretes.",
+      "fonte": "ArcelorMittal / Portal Logística",
+      "fonteLinks": [
+        {
+          "label": "ArcelorMittal / Portal Logística",
+          "url": "https://brasil.arcelormittal.com/fornecedores"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://portalqa.gear7.com.br/termos_de_uso"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Continental",
+      "siteBid": "Continental Procurement Platform Jaggaer",
+      "siteBidLinks": [
+        {
+          "label": "Continental Procurement Platform Jaggaer",
+          "url": "https://www.continental.com/en/company/suppliers/psuite/"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Continental informa transição de sourcing, SRM e compras para plataforma Jaggaer.",
+      "fonte": "Continental",
+      "fonteLinks": [
+        {
+          "label": "Continental",
+          "url": "https://www.continental.com/en/company/suppliers/psuite/"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "White Martins",
+      "siteBid": "Pré-cadastro de fornecedores White Martins",
+      "siteBidLinks": [
+        {
+          "label": "Pré-cadastro de fornecedores White Martins",
+          "url": "https://www.whitemartins.com.br/nossa-empresa/fornecedores"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "White Martins possui formulário de pré-cadastro de fornecedores.",
+      "fonte": "White Martins",
+      "fonteLinks": [
+        {
+          "label": "White Martins",
+          "url": "https://www.whitemartins.com.br/nossa-empresa/fornecedores"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Petrobras",
+      "siteBid": "Petronect / Canal Fornecedor Petrobras",
+      "siteBidLinks": [
+        {
+          "label": "Petronect / Canal Fornecedor Petrobras",
+          "url": "https://www.petronect.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://canalfornecedor.petrobras.com.br/cadastro-de-fornecedores/sobre-o-cadastro-de-fornecedores"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Petrobras centraliza cadastro de fornecedores pelo Petronect/Canal Fornecedor.",
+      "fonte": "Petronect / Petrobras",
+      "fonteLinks": [
+        {
+          "label": "Petronect / Petrobras",
+          "url": "https://www.petronect.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://canalfornecedor.petrobras.com.br/cadastro-de-fornecedores/sobre-o-cadastro-de-fornecedores"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Centauro",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://ricoolog.com.br/clientes-e-parceiros/22/centauro"
+        }
+      ],
+      "transportadoraParceira": "RicooLog",
+      "evidencia": "RicooLog declara atuação logística para Centauro.",
+      "fonte": "RicooLog",
+      "fonteLinks": [
+        {
+          "label": "RicooLog",
+          "url": "https://ricoolog.com.br/clientes-e-parceiros/22/centauro"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Carrefour Brasil",
+      "siteBid": "Seja fornecedor Carrefour",
+      "siteBidLinks": [
+        {
+          "label": "Seja fornecedor Carrefour",
+          "url": "https://grupocarrefourbrasil.com.br/seja-um-fornecedor"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://frotacia.com.br/carrefour-reconhece-as-empresas-com-melhores-praticas-na-cadeia-produtiva-e-transporte/"
+        }
+      ],
+      "transportadoraParceira": "Fornecedores logísticos FazLog não nominalizados",
+      "evidencia": "Carrefour descreve seleção por concorrência de mercado e possui prêmio FazLog para fornecedores logísticos/transportadoras.",
+      "fonte": "Carrefour / Frotacia",
+      "fonteLinks": [
+        {
+          "label": "Carrefour / Frotacia",
+          "url": "https://grupocarrefourbrasil.com.br/seja-um-fornecedor"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://frotacia.com.br/carrefour-reconhece-as-empresas-com-melhores-praticas-na-cadeia-produtiva-e-transporte/"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Heineken Brasil",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://www.onsv.org.br/lacoamarelo/noticias/lognet-logistica-e-transportes-e-2o-lugar-no-tep-do-grupo-heineken-brasil-2021"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://sindicamp.org.br/heineken-alcanca-resultados-positivos-com-o-programa-de-excelencia-de-transportadoras/"
+        }
+      ],
+      "transportadoraParceira": "Lognet; Grupo Cargo",
+      "evidencia": "Lognet foi reconhecida no TEP; fonte setorial informa 62 transportadoras na operação Heineken.",
+      "fonte": "ONSV / Sindicamp",
+      "fonteLinks": [
+        {
+          "label": "ONSV / Sindicamp",
+          "url": "https://www.onsv.org.br/lacoamarelo/noticias/lognet-logistica-e-transportes-e-2o-lugar-no-tep-do-grupo-heineken-brasil-2021"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://sindicamp.org.br/heineken-alcanca-resultados-positivos-com-o-programa-de-excelencia-de-transportadoras/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Vale",
+      "siteBid": "Vale GSRP / cadastro de fornecedores",
+      "siteBidLinks": [
+        {
+          "label": "Vale GSRP / cadastro de fornecedores",
+          "url": "https://vale.com/pt/cadastro-de-fornecedores"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://vale.com/pt/seja-um-fornecedor"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Vale usa pré-cadastro e convite ao portal GSRP para fornecedores, cotações e convites.",
+      "fonte": "Vale",
+      "fonteLinks": [
+        {
+          "label": "Vale",
+          "url": "https://vale.com/pt/cadastro-de-fornecedores"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://vale.com/pt/seja-um-fornecedor"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Suzano",
+      "siteBid": "Portal de Fornecedores Suzano",
+      "siteBidLinks": [
+        {
+          "label": "Portal de Fornecedores Suzano",
+          "url": "https://portaldofornecedor.suzano.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://portaldofornecedor.suzano.com.br/seja-fornecedor"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Suzano possui portal de fornecedor com pré-cadastro, certificação/homologação e jornada do fornecedor.",
+      "fonte": "Suzano",
+      "fonteLinks": [
+        {
+          "label": "Suzano",
+          "url": "https://portaldofornecedor.suzano.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://portaldofornecedor.suzano.com.br/seja-fornecedor"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Mondelez Brasil",
+      "siteBid": "Central de informações para fornecedores Mondelez",
+      "siteBidLinks": [
+        {
+          "label": "Central de informações para fornecedores Mondelez",
+          "url": "https://www.mondelezinternational.com/brazil-procurement/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://investsp.org.br/mondelez-brasil-adere-a-cabotagem-para-o-transporte-de-insumos-e-produtos/"
+        }
+      ],
+      "transportadoraParceira": "Aliança Navegação e Logística / Maersk",
+      "evidencia": "Mondelez Brasil aderiu à cabotagem com Aliança Navegação e Logística para transporte de insumos e produtos.",
+      "fonte": "InvestSP",
+      "fonteLinks": [
+        {
+          "label": "InvestSP",
+          "url": "https://www.mondelezinternational.com/brazil-procurement/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://investsp.org.br/mondelez-brasil-adere-a-cabotagem-para-o-transporte-de-insumos-e-produtos/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Pfizer Brasil",
+      "siteBid": "Pfizer Become a Supplier",
+      "siteBidLinks": [
+        {
+          "label": "Pfizer Become a Supplier",
+          "url": "https://www.pfizer.com/about/partners/B2B-and-suppliers/becoming-a-supplier"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Pfizer lista Transportation & Logistics como categoria de fornecedor.",
+      "fonte": "Pfizer",
+      "fonteLinks": [
+        {
+          "label": "Pfizer",
+          "url": "https://www.pfizer.com/about/partners/B2B-and-suppliers/becoming-a-supplier"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Roche Brasil",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://frotacia.com.br/roche-foca-em-seguranca-e-inovacao-na-logistica-de-farmacos/"
+        }
+      ],
+      "transportadoraParceira": "DHL + transportadoras qualificadas",
+      "evidencia": "DHL é responsável pela logística do CD da Roche Farma e parte do transporte, com apoio de outras transportadoras qualificadas.",
+      "fonte": "Frota&Cia",
+      "fonteLinks": [
+        {
+          "label": "Frota&Cia",
+          "url": "https://frotacia.com.br/roche-foca-em-seguranca-e-inovacao-na-logistica-de-farmacos/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Johnson & Johnson Brasil",
+      "siteBid": "J&J Suppliers",
+      "siteBidLinks": [
+        {
+          "label": "J&J Suppliers",
+          "url": "https://www.jnj.com/suppliers"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "J&J possui página global de fornecedores; sem parceiro logístico nominal brasileiro nesta rodada.",
+      "fonte": "J&J",
+      "fonteLinks": [
+        {
+          "label": "J&J",
+          "url": "https://www.jnj.com/suppliers"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Kimberly-Clark Brasil",
+      "siteBid": "Kimberly-Clark Supplier Portals / Coupa",
+      "siteBidLinks": [
+        {
+          "label": "Kimberly-Clark Supplier Portals / Coupa",
+          "url": "https://www.kimberly-clark.com/en-us/suppliers/supplier-portals"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.tecnologistica.com.br/noticias/reconhecimento/388/kimberly-clark-premia-fornecedores-de-transporte/"
+        }
+      ],
+      "transportadoraParceira": "Fornecedores de transporte não nominalizados",
+      "evidencia": "K-C usa portais Taulia/Coupa e já premiou fornecedores de transporte.",
+      "fonte": "K-C / Tecnologística",
+      "fonteLinks": [
+        {
+          "label": "K-C / Tecnologística",
+          "url": "https://www.kimberly-clark.com/en-us/suppliers/supplier-portals"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.tecnologistica.com.br/noticias/reconhecimento/388/kimberly-clark-premia-fornecedores-de-transporte/"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Beiersdorf Brasil",
+      "siteBid": "Orientações aos fornecedores NIVEA",
+      "siteBidLinks": [
+        {
+          "label": "Orientações aos fornecedores NIVEA",
+          "url": "https://logweb.com.br/centro-distribuicao-sustentavel-id-logistics-beiersdorf-iniciativas/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mundologistica.com.br/noticias/beiersdorf-adota-1-caminhao-eletrico-setor-beleza"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://www.mellotransportes.log.br/blog/mello-transportes-recebe-premio-da-beiersdorf-nivea-e-eucerin-por-excelencia-e-sustentabilidade-no-transporte/"
+        }
+      ],
+      "transportadoraParceira": "ID Logistics Brasil; Reiter Log; Mello Transportes",
+      "evidencia": "ID Logistics opera CD em parceria com Beiersdorf; Reiter Log opera caminhão elétrico; Mello foi reconhecida no transporte.",
+      "fonte": "Logweb / MundoLogística / Mello",
+      "fonteLinks": [
+        {
+          "label": "Logweb / MundoLogística / Mello",
+          "url": "https://logweb.com.br/centro-distribuicao-sustentavel-id-logistics-beiersdorf-iniciativas/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mundologistica.com.br/noticias/beiersdorf-adota-1-caminhao-eletrico-setor-beleza"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://www.mellotransportes.log.br/blog/mello-transportes-recebe-premio-da-beiersdorf-nivea-e-eucerin-por-excelencia-e-sustentabilidade-no-transporte/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Goodyear Brasil",
+      "siteBid": "Goodyear Suppliers",
+      "siteBidLinks": [
+        {
+          "label": "Goodyear Suppliers",
+          "url": "https://supplier.goodyear.com/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://corporate.goodyear.com/us/en/more/goodyear-suppliers.html"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Goodyear possui portal global de fornecedores e formulário LATAM.",
+      "fonte": "Goodyear",
+      "fonteLinks": [
+        {
+          "label": "Goodyear",
+          "url": "https://supplier.goodyear.com/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://corporate.goodyear.com/us/en/more/goodyear-suppliers.html"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "BASF Brasil",
+      "siteBid": "BASF Fornecedores e Parceiros",
+      "siteBidLinks": [
+        {
+          "label": "BASF Fornecedores e Parceiros",
+          "url": "https://www.basf.com/br/pt/who-we-are/organization/suppliers-and-partners"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "BASF declara que Compras cobre matérias-primas, serviços técnicos e soluções logísticas.",
+      "fonte": "BASF",
+      "fonteLinks": [
+        {
+          "label": "BASF",
+          "url": "https://www.basf.com/br/pt/who-we-are/organization/suppliers-and-partners"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Klabin",
+      "siteBid": "Portal fornecedor Klabin / SAP Ariba",
+      "siteBidLinks": [
+        {
+          "label": "Portal fornecedor Klabin / SAP Ariba",
+          "url": "https://klabin.com.br/relacionamento/fornecedores/seja-nosso-fornecedor"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://klabin.com.br/cadastro-fornecedores"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Klabin exige cadastro no SAP Ariba para relacionamento comercial com fornecedores.",
+      "fonte": "Klabin",
+      "fonteLinks": [
+        {
+          "label": "Klabin",
+          "url": "https://klabin.com.br/relacionamento/fornecedores/seja-nosso-fornecedor"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://klabin.com.br/cadastro-fornecedores"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Saint-Gobain Brasil",
+      "siteBid": "Saint-Gobain Supplier Relationship Management",
+      "siteBidLinks": [
+        {
+          "label": "Saint-Gobain Supplier Relationship Management",
+          "url": "https://drivesrm.com.br/saint-gobain/Login.aspx"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.saint-gobain-northamerica.com/supplier-portal-documentation"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Há portal SRM Saint-Gobain Brasil e documentação de supplier portal com acesso a tenders.",
+      "fonte": "Saint-Gobain",
+      "fonteLinks": [
+        {
+          "label": "Saint-Gobain",
+          "url": "https://drivesrm.com.br/saint-gobain/Login.aspx"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.saint-gobain-northamerica.com/supplier-portal-documentation"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Louis Dreyfus Brasil",
+      "siteBid": "Fornecedores LDC",
+      "siteBidLinks": [
+        {
+          "label": "Fornecedores LDC",
+          "url": "https://www.ldc.com/br/pt/fornecedores/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://agfeed.com.br/negocios/strada-logfintech-das-grandes-tradings-entra-na-rota-dos-r-10-bi-e-com-frete-mais-barato/"
+        }
+      ],
+      "transportadoraParceira": "Strada / Carguero",
+      "evidencia": "LDC possui cadastro de fornecedores; Strada nasceu de Carguero, criada por Amaggi e Dreyfus, e tem LDC entre sócias.",
+      "fonte": "LDC / AgFeed",
+      "fonteLinks": [
+        {
+          "label": "LDC / AgFeed",
+          "url": "https://www.ldc.com/br/pt/fornecedores/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://agfeed.com.br/negocios/strada-logfintech-das-grandes-tradings-entra-na-rota-dos-r-10-bi-e-com-frete-mais-barato/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Amaggi",
+      "siteBid": "Pré-cadastro fornecedores Amaggi / Coupa",
+      "siteBidLinks": [
+        {
+          "label": "Pré-cadastro fornecedores Amaggi / Coupa",
+          "url": "https://www.amaggi.com.br/fornecedor/seja-um-fornecedor/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.amaggi.com.br/fornecedor/ja-sou-fornecedor/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://agfeed.com.br/negocios/strada-logfintech-das-grandes-tradings-entra-na-rota-dos-r-10-bi-e-com-frete-mais-barato/"
+        }
+      ],
+      "transportadoraParceira": "Strada / Carguero",
+      "evidencia": "Amaggi possui pré-cadastro e cita eventos de cotação via Coupa; Strada/Carguero tem Amaggi como sócia/fundadora.",
+      "fonte": "Amaggi / AgFeed",
+      "fonteLinks": [
+        {
+          "label": "Amaggi / AgFeed",
+          "url": "https://www.amaggi.com.br/fornecedor/seja-um-fornecedor/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.amaggi.com.br/fornecedor/ja-sou-fornecedor/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://agfeed.com.br/negocios/strada-logfintech-das-grandes-tradings-entra-na-rota-dos-r-10-bi-e-com-frete-mais-barato/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Corteva Agriscience",
+      "siteBid": "Corteva Partner Portal",
+      "siteBidLinks": [
+        {
+          "label": "Corteva Partner Portal",
+          "url": "https://corteva.my.site.com/Partner/s/login/?language=pt_BR"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://site.multilog.com.br/noticia/multilog-corteva-agriscience/"
+        }
+      ],
+      "transportadoraParceira": "Multilog",
+      "evidencia": "Case da Multilog informa colaboração com Corteva desde 2022 em logística integrada.",
+      "fonte": "Multilog",
+      "fonteLinks": [
+        {
+          "label": "Multilog",
+          "url": "https://corteva.my.site.com/Partner/s/login/?language=pt_BR"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://site.multilog.com.br/noticia/multilog-corteva-agriscience/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "GPA / Grupo Pão de Açúcar",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://cordenonsi.com.br/2018/09/28/cordenonsi-e-grupo-pao-de-acucar-a-parceria-que-inovou-a-forma-de-gerir-entregas/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.manh.com/pt-br/nossos-insights/recursos/estudos-de-caso/gpa-otimiza-seu-abastecimento-com-solucao-de-transporte-da-manhattan"
+        }
+      ],
+      "transportadoraParceira": "GPA Logística / Cordenonsi",
+      "evidencia": "Case Cordenonsi descreve distribuição às centrais GPA pela própria GPA Logística; Manhattan descreve solução de transporte para abastecimento.",
+      "fonte": "Cordenonsi / Manhattan",
+      "fonteLinks": [
+        {
+          "label": "Cordenonsi / Manhattan",
+          "url": "https://cordenonsi.com.br/2018/09/28/cordenonsi-e-grupo-pao-de-acucar-a-parceria-que-inovou-a-forma-de-gerir-entregas/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.manh.com/pt-br/nossos-insights/recursos/estudos-de-caso/gpa-otimiza-seu-abastecimento-com-solucao-de-transporte-da-manhattan"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Grupo Mateus",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://transpodata.com.br/brado-impulsiona-abastecimento-do-grupo-mateus-com-operacao-multimodal/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mahoje.com.br/grupo-mateus-fortalece-abastecimento-no-maranhao-com-nova-rota-multimodal-da-brado-logistica/"
+        }
+      ],
+      "transportadoraParceira": "Brado Logística",
+      "evidencia": "Notícias recentes informam rota multimodal estruturada em parceria com Brado para abastecimento do Grupo Mateus.",
+      "fonte": "TranspoData / MA Hoje",
+      "fonteLinks": [
+        {
+          "label": "TranspoData / MA Hoje",
+          "url": "https://transpodata.com.br/brado-impulsiona-abastecimento-do-grupo-mateus-com-operacao-multimodal/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://mahoje.com.br/grupo-mateus-fortalece-abastecimento-no-maranhao-com-nova-rota-multimodal-da-brado-logistica/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Ultrapar",
+      "siteBid": "Rumo fornecedores / Ultra portfólio",
+      "siteBidLinks": [
+        {
+          "label": "Rumo fornecedores / Ultra portfólio",
+          "url": "https://www.ultra.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.rumolog.com/fornecedores/"
+        }
+      ],
+      "transportadoraParceira": "Rumo / Hidrovias do Brasil / Ultracargo",
+      "evidencia": "Ultra tem Ipiranga, Ultragaz, Ultracargo e Hidrovias; Rumo possui portal de fornecedores.",
+      "fonte": "Ultra / Rumo",
+      "fonteLinks": [
+        {
+          "label": "Ultra / Rumo",
+          "url": "https://www.ultra.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.rumolog.com/fornecedores/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Raia Drogasil",
+      "siteBid": "RD Portal de Fornecedores / Techsocial / Ariba",
+      "siteBidLinks": [
+        {
+          "label": "RD Portal de Fornecedores / Techsocial / Ariba",
+          "url": "https://portaldefornecedores.rd.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://rd.techsocial.com.br/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://rdsaude.com.br/parceiros-comerciais/"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "RD possui portal de fornecedores, pré-cadastro e evidência de implantação Ariba.",
+      "fonte": "RD",
+      "fonteLinks": [
+        {
+          "label": "RD",
+          "url": "https://portaldefornecedores.rd.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://rd.techsocial.com.br/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://rdsaude.com.br/parceiros-comerciais/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Cosan",
+      "siteBid": "Rumo fornecedores / Portal Rumo",
+      "siteBidLinks": [
+        {
+          "label": "Rumo fornecedores / Portal Rumo",
+          "url": "https://www.cosan.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.rumolog.com/fornecedores/"
+        }
+      ],
+      "transportadoraParceira": "Rumo / Brado",
+      "evidencia": "Cosan destaca Rumo como empresa de soluções logísticas e Brado no portfólio; Rumo possui portal de fornecedores.",
+      "fonte": "Cosan / Rumo",
+      "fonteLinks": [
+        {
+          "label": "Cosan / Rumo",
+          "url": "https://www.cosan.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.rumolog.com/fornecedores/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Camil",
+      "siteBid": "Fornecedores Camil",
+      "siteBidLinks": [
+        {
+          "label": "Fornecedores Camil",
+          "url": "https://camilalimentos.com.br/fornecedores"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Camil possui espaço para fornecedores e portal para parceiros cadastrados.",
+      "fonte": "Camil",
+      "fonteLinks": [
+        {
+          "label": "Camil",
+          "url": "https://camilalimentos.com.br/fornecedores"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Tigre S.A.",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "Não encontrado",
+          "url": "https://portalerp.com/br/noticia/grupo-tigre-aprimora-logistica-para-reduzir-gastos-com-transporte-de-cargas"
+        }
+      ],
+      "transportadoraParceira": "Pool de 17 transportadoras não nominalizadas",
+      "evidencia": "Tigre usava pool de 17 transportadoras em cargas dedicadas e fracionadas para escoar produção rodoviária.",
+      "fonte": "Portal ERP",
+      "fonteLinks": [
+        {
+          "label": "Portal ERP",
+          "url": "https://portalerp.com/br/noticia/grupo-tigre-aprimora-logistica-para-reduzir-gastos-com-transporte-de-cargas"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Sherwin-Williams Brasil",
+      "siteBid": "Sherwin-Williams Suppliers / Coupa",
+      "siteBidLinks": [
+        {
+          "label": "Sherwin-Williams Suppliers / Coupa",
+          "url": "https://suppliers.sherwin-williams.com/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://suppliers.sherwin-williams.com/prospective-supplier"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://suppliers.sherwin-williams.com/existing-supplier"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Portal global permite aplicação de fornecedor e acesso Coupa.",
+      "fonte": "Sherwin-Williams",
+      "fonteLinks": [
+        {
+          "label": "Sherwin-Williams",
+          "url": "https://suppliers.sherwin-williams.com/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://suppliers.sherwin-williams.com/prospective-supplier"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://suppliers.sherwin-williams.com/existing-supplier"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Leroy Merlin Brasil",
+      "siteBid": "Portal do Fornecedor Leroy Merlin",
+      "siteBidLinks": [
+        {
+          "label": "Portal do Fornecedor Leroy Merlin",
+          "url": "https://plataforma.leroymerlin.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.generixgroup.com/pt/casos-de-sucesso/leroy-merlin"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Há portal do fornecedor Leroy Merlin e cases de gestão/otimização de supply chain.",
+      "fonte": "Leroy Merlin / Generix",
+      "fonteLinks": [
+        {
+          "label": "Leroy Merlin / Generix",
+          "url": "https://plataforma.leroymerlin.com.br/"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://www.generixgroup.com/pt/casos-de-sucesso/leroy-merlin"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 2,
+      "embarcador": "Tramontina",
+      "siteBid": "Portal do fornecedor Tramontina",
+      "siteBidLinks": [
+        {
+          "label": "Portal do fornecedor Tramontina",
+          "url": "https://app.tramontina.cloud/fornecedores/login"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://tramontinalogistics.com/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://www.instagram.com/p/DGNq2MIxsK6/"
+        }
+      ],
+      "transportadoraParceira": "Tramontina Logistics / BBM Logística",
+      "evidencia": "Tramontina possui portal de fornecedor e operação Tramontina Logistics; BBM registrou visita/alinhamento logístico.",
+      "fonte": "Tramontina / BBM",
+      "fonteLinks": [
+        {
+          "label": "Tramontina / BBM",
+          "url": "https://app.tramontina.cloud/fornecedores/login"
+        },
+        {
+          "label": "Fonte 2",
+          "url": "https://tramontinalogistics.com/"
+        },
+        {
+          "label": "Fonte 3",
+          "url": "https://www.instagram.com/p/DGNq2MIxsK6/"
+        }
+      ],
+      "confianca": "Media"
+    },
+    {
+      "tier": 3,
+      "embarcador": "3tentos",
+      "siteBid": "Não encontrado",
+      "siteBidLinks": [
+        {
+          "label": "3tentos e Caramuru JV logística",
+          "url": "https://www.noticiasagricolas.com.br/noticias/logistica/366356-3tentos-e-caramuru-fecham-acordo-para-joint-venture-de-logistica-no-arco-norte.html"
+        },
+        {
+          "label": "3tentos/Iprianga biodiesel",
+          "url": "https://logweb.com.br/ipiranga-3tentos-base-distribuicao-biodiesel-vera-mt/"
+        }
+      ],
+      "transportadoraParceira": "Caramuru / JV logística; Ipiranga",
+      "evidencia": "3tentos e Caramuru criaram JV de logística no Arco Norte; 3tentos e Ipiranga terão base integrada de biodiesel com foco em eficiência logística.",
+      "fonte": "Notícias Agrícolas / Logweb",
+      "fonteLinks": [
+        {
+          "label": "3tentos e Caramuru JV logística",
+          "url": "https://www.noticiasagricolas.com.br/noticias/logistica/366356-3tentos-e-caramuru-fecham-acordo-para-joint-venture-de-logistica-no-arco-norte.html"
+        },
+        {
+          "label": "3tentos/Iprianga biodiesel",
+          "url": "https://logweb.com.br/ipiranga-3tentos-base-distribuicao-biodiesel-vera-mt/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Riachuelo",
+      "siteBid": "Portal de Fornecedores Riachuelo",
+      "siteBidLinks": [
+        {
+          "label": "Portal fornecedores Riachuelo",
+          "url": "https://www.riachuelo.com.br/portal-de-fornecedores"
+        },
+        {
+          "label": "Portal login",
+          "url": "https://portalfornecedor.lojasriachuelo.com.br/"
+        },
+        {
+          "label": "Cartilha fornecimento",
+          "url": "https://midia.fotos-riachuelo.com.br/fotos/hotsites/moda-que-transforma-sustentabilidade/cadeia/25-06-21/Cartilha%20de%20Fornecimento.pdf"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Portal permite receber e responder pedidos de cotação; cartilha descreve logística com interação direta no agendamento/recebimento e CDs.",
+      "fonte": "Riachuelo",
+      "fonteLinks": [
+        {
+          "label": "Portal fornecedores Riachuelo",
+          "url": "https://www.riachuelo.com.br/portal-de-fornecedores"
+        },
+        {
+          "label": "Portal login",
+          "url": "https://portalfornecedor.lojasriachuelo.com.br/"
+        },
+        {
+          "label": "Cartilha fornecimento",
+          "url": "https://midia.fotos-riachuelo.com.br/fotos/hotsites/moda-que-transforma-sustentabilidade/cadeia/25-06-21/Cartilha%20de%20Fornecimento.pdf"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Eliane",
+      "siteBid": "Sistema de Gestão Eliane / FOB Homologado",
+      "siteBidLinks": [
+        {
+          "label": "Sistema de gestão Eliane",
+          "url": "https://www.eliane.com/institucional/sistema-de-gestao"
+        },
+        {
+          "label": "Mohawk Brasil",
+          "url": "https://mohawk.gupy.io/"
+        }
+      ],
+      "transportadoraParceira": "Transportadoras indicadas/homologadas pela Eliane",
+      "evidencia": "Página oficial cita FOB homologado e necessidade de autorização se o cliente optar por transportadora diferente da indicada pela Eliane.",
+      "fonte": "Eliane",
+      "fonteLinks": [
+        {
+          "label": "Sistema de gestão Eliane",
+          "url": "https://www.eliane.com/institucional/sistema-de-gestao"
+        },
+        {
+          "label": "Mohawk Brasil",
+          "url": "https://mohawk.gupy.io/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Pernambucanas",
+      "siteBid": "Portal Fornecedor Pernambucanas",
+      "siteBidLinks": [
+        {
+          "label": "Portal fornecedor",
+          "url": "https://portalfornecedor.pernambucanas.com.br/"
+        },
+        {
+          "label": "Publicações portal",
+          "url": "https://portalfornecedor.pernambucanas.com.br/Pernambucanas/content/help/publicacoes.htm"
+        },
+        {
+          "label": "Frota própria",
+          "url": "https://logweb.com.br/pernambucanas-esta-operando-com-frota-propria-e-usa-caminhoes-eletricos-para-entregas-nas-lojas/"
+        }
+      ],
+      "transportadoraParceira": "Frota própria / transportadoras complementares não nominalizadas",
+      "evidencia": "Portal de fornecedor público; Logweb informa que Pernambucanas opera com frota própria, representando 25% da frota total para abastecimento de lojas.",
+      "fonte": "Pernambucanas / Logweb",
+      "fonteLinks": [
+        {
+          "label": "Portal fornecedor",
+          "url": "https://portalfornecedor.pernambucanas.com.br/"
+        },
+        {
+          "label": "Publicações portal",
+          "url": "https://portalfornecedor.pernambucanas.com.br/Pernambucanas/content/help/publicacoes.htm"
+        },
+        {
+          "label": "Frota própria",
+          "url": "https://logweb.com.br/pernambucanas-esta-operando-com-frota-propria-e-usa-caminhoes-eletricos-para-entregas-nas-lojas/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Cencosud Brasil",
+      "siteBid": "Portal do Fornecedor Cencosud",
+      "siteBidLinks": [
+        {
+          "label": "Portal fornecedor Cencosud Brasil",
+          "url": "https://fornecedor.cencosud.com.br/Site/Pages/index.html"
+        },
+        {
+          "label": "Novo site fornecedor",
+          "url": "https://fornecedor.cencosud.com.br/NewSite/"
+        },
+        {
+          "label": "Cencosud global fornecedores",
+          "url": "https://www.cencosud.com/"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Portal de fornecedores permite acesso gratuito às rotinas diárias dos fornecedores; Cencosud global tem portal para novos negócios.",
+      "fonte": "Cencosud",
+      "fonteLinks": [
+        {
+          "label": "Portal fornecedor Cencosud Brasil",
+          "url": "https://fornecedor.cencosud.com.br/Site/Pages/index.html"
+        },
+        {
+          "label": "Novo site fornecedor",
+          "url": "https://fornecedor.cencosud.com.br/NewSite/"
+        },
+        {
+          "label": "Cencosud global fornecedores",
+          "url": "https://www.cencosud.com/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Dow Brasil",
+      "siteBid": "Dow Suppliers / Dow Portal",
+      "siteBidLinks": [
+        {
+          "label": "Dow Suppliers",
+          "url": "https://corporate.dow.com/en-us/collaborations/suppliers.html"
+        },
+        {
+          "label": "Dow Portal Dupre Logistics",
+          "url": "https://dow.duprelogistics.com/"
+        },
+        {
+          "label": "DowGOL transportes",
+          "url": "https://www.quimica.com.br/logistica-dow-cria-programa-para-seguranca-de-transportes/"
+        }
+      ],
+      "transportadoraParceira": "Dupre Logistics portal / transportadores DowGOL não nominalizados",
+      "evidencia": "Dow possui página global de fornecedores e portal logístico; programa DowGOL envolve transportadores rodoviários, ferroviários, marítimos e armazéns.",
+      "fonte": "Dow / Química.com.br",
+      "fonteLinks": [
+        {
+          "label": "Dow Suppliers",
+          "url": "https://corporate.dow.com/en-us/collaborations/suppliers.html"
+        },
+        {
+          "label": "Dow Portal Dupre Logistics",
+          "url": "https://dow.duprelogistics.com/"
+        },
+        {
+          "label": "DowGOL transportes",
+          "url": "https://www.quimica.com.br/logistica-dow-cria-programa-para-seguranca-de-transportes/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Profarma",
+      "siteBid": "Portal de Fornecedores Profarma",
+      "siteBidLinks": [
+        {
+          "label": "Portal Profarma",
+          "url": "https://portal.profarma.com.br/portal/default.aspx?painel=4"
+        },
+        {
+          "label": "Portal fornecedor Profarma",
+          "url": "https://portalprofarma.com.br/"
+        },
+        {
+          "label": "Quem somos Profarma",
+          "url": "https://www.profarma.com.br/quem-somos/"
+        }
+      ],
+      "transportadoraParceira": "Frota própria e terceirizada não nominalizada",
+      "evidencia": "Profarma tem portal de fornecedores e informa frota própria e terceirizada, CDs posicionados e cobertura de mais de 4.500 cidades.",
+      "fonte": "Profarma",
+      "fonteLinks": [
+        {
+          "label": "Portal Profarma",
+          "url": "https://portal.profarma.com.br/portal/default.aspx?painel=4"
+        },
+        {
+          "label": "Portal fornecedor Profarma",
+          "url": "https://portalprofarma.com.br/"
+        },
+        {
+          "label": "Quem somos Profarma",
+          "url": "https://www.profarma.com.br/quem-somos/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Natura",
+      "siteBid": "Jornada do Fornecedor Natura",
+      "siteBidLinks": [
+        {
+          "label": "Patrus melhor transportadora Natura Avon",
+          "url": "https://setcesp.org.br/noticias/patrus-transportes-e-reconhecida-como-a-melhor-transportadora-natura-e-avon-do-ano-de-2022/"
+        },
+        {
+          "label": "TPC Natura&Co",
+          "url": "https://www.guiamaritimo.com.br/noticias/logistica/tpc-amplia-operacoes-logisticas-para-a-natura-co"
+        },
+        {
+          "label": "Jornada fornecedor Natura",
+          "url": "https://ri.natura.com.br/a-companhia/fornecedores/jornada-do-fornecedor/"
+        }
+      ],
+      "transportadoraParceira": "Patrus Transportes; TPC Logística",
+      "evidencia": "Patrus foi reconhecida como melhor transportadora Natura e Avon; TPC ampliou operações para Natura&Co, incluindo Avon e The Body Shop.",
+      "fonte": "SETCESP / Guia Marítimo",
+      "fonteLinks": [
+        {
+          "label": "Patrus melhor transportadora Natura Avon",
+          "url": "https://setcesp.org.br/noticias/patrus-transportes-e-reconhecida-como-a-melhor-transportadora-natura-e-avon-do-ano-de-2022/"
+        },
+        {
+          "label": "TPC Natura&Co",
+          "url": "https://www.guiamaritimo.com.br/noticias/logistica/tpc-amplia-operacoes-logisticas-para-a-natura-co"
+        },
+        {
+          "label": "Jornada fornecedor Natura",
+          "url": "https://ri.natura.com.br/a-companhia/fornecedores/jornada-do-fornecedor/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Pirelli Brasil",
+      "siteBid": "PirelliNet / Synertrade",
+      "siteBidLinks": [
+        {
+          "label": "PirelliNet",
+          "url": "https://www.pirellinet.com.br/"
+        },
+        {
+          "label": "Supplier area Pirelli",
+          "url": "https://corporate.pirelli.com/corporate/en-ww/supplierarea/index-pt-br"
+        },
+        {
+          "label": "Guia Synertrade",
+          "url": "https://corp-assets.pirelli.com/suppliers-portal/pt-br/Guia_de_Qualifica%C3%A7%C3%A3o_para_Fornecedores_%28Synertrade%29.pdf"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Pirelli usa portal de fornecedor/Synertrade para qualificação, banco de fornecedores e negociações online; manual cita serviços de logística.",
+      "fonte": "Pirelli",
+      "fonteLinks": [
+        {
+          "label": "PirelliNet",
+          "url": "https://www.pirellinet.com.br/"
+        },
+        {
+          "label": "Supplier area Pirelli",
+          "url": "https://corporate.pirelli.com/corporate/en-ww/supplierarea/index-pt-br"
+        },
+        {
+          "label": "Guia Synertrade",
+          "url": "https://corp-assets.pirelli.com/suppliers-portal/pt-br/Guia_de_Qualifica%C3%A7%C3%A3o_para_Fornecedores_%28Synertrade%29.pdf"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Obramax",
+      "siteBid": "Portal do Fornecedor Obramax",
+      "siteBidLinks": [
+        {
+          "label": "Obramax fornecedores",
+          "url": "https://www.obramax.com.br/fornecedores"
+        },
+        {
+          "label": "Post portal fornecedor",
+          "url": "https://pt.linkedin.com/posts/obramax_portaldofornecedor-supplychain-fornecedores-activity-7315389210268450818-51q8"
+        },
+        {
+          "label": "Prêmio fornecedores 2025",
+          "url": "https://www.revistaanamaco.com.br/premiacao-da-obramax-reconhece-os-fornecedores-que-foram-destaques-de-2025"
+        }
+      ],
+      "transportadoraParceira": "Fornecedores logísticos não nominalizados",
+      "evidencia": "Obramax divulga portal do fornecedor e prêmio que avalia organização da carga, segurança no transporte e descarregamento.",
+      "fonte": "Obramax / Anamaco",
+      "fonteLinks": [
+        {
+          "label": "Obramax fornecedores",
+          "url": "https://www.obramax.com.br/fornecedores"
+        },
+        {
+          "label": "Post portal fornecedor",
+          "url": "https://pt.linkedin.com/posts/obramax_portaldofornecedor-supplychain-fornecedores-activity-7315389210268450818-51q8"
+        },
+        {
+          "label": "Prêmio fornecedores 2025",
+          "url": "https://www.revistaanamaco.com.br/premiacao-da-obramax-reconhece-os-fornecedores-que-foram-destaques-de-2025"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "InterCement Brasil",
+      "siteBid": "Fornecedores InterCement",
+      "siteBidLinks": [
+        {
+          "label": "Fornecedores InterCement",
+          "url": "https://brasil.intercement.com/fornecedores/"
+        },
+        {
+          "label": "TransformaLog WhatsApp",
+          "url": "https://logweb.com.br/intercement-brasil-logistica-agendamento-whatsapp/"
+        }
+      ],
+      "transportadoraParceira": "Transportadores/motoristas via TransformaLog não nominalizados",
+      "evidencia": "InterCement possui política de cadastramento/homologação de fornecedores e programa TransformaLog para agendamento de carregamento via WhatsApp para cerca de 1.500 motoristas/dia.",
+      "fonte": "InterCement / Logweb",
+      "fonteLinks": [
+        {
+          "label": "Fornecedores InterCement",
+          "url": "https://brasil.intercement.com/fornecedores/"
+        },
+        {
+          "label": "TransformaLog WhatsApp",
+          "url": "https://logweb.com.br/intercement-brasil-logistica-agendamento-whatsapp/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Lojas Renner",
+      "siteBid": "Portal do Fornecedor Renner",
+      "siteBidLinks": [
+        {
+          "label": "Portal fornecedor Renner",
+          "url": "https://portaldofornecedor.lojasrenner.com.br/"
+        },
+        {
+          "label": "Nossos fornecedores Renner",
+          "url": "https://www.lojasrennersa.com.br/parceiros/fornecedores/"
+        },
+        {
+          "label": "CD Renner Logweb Instagram",
+          "url": "https://www.instagram.com/p/C3YWYYMp_ff/?hl=en"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "Portal de fornecedor permite verificar pedidos e organizar agendamentos; Renner publica fornecedores e tem operação logística omnichannel.",
+      "fonte": "Lojas Renner",
+      "fonteLinks": [
+        {
+          "label": "Portal fornecedor Renner",
+          "url": "https://portaldofornecedor.lojasrenner.com.br/"
+        },
+        {
+          "label": "Nossos fornecedores Renner",
+          "url": "https://www.lojasrennersa.com.br/parceiros/fornecedores/"
+        },
+        {
+          "label": "CD Renner Logweb Instagram",
+          "url": "https://www.instagram.com/p/C3YWYYMp_ff/?hl=en"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "PRIO",
+      "siteBid": "Portal de Suprimentos PRIO / V360",
+      "siteBidLinks": [
+        {
+          "label": "Portal de Suprimentos PRIO LinkedIn",
+          "url": "https://pt.linkedin.com/posts/prio3_portal-de-suprimentos-activity-7129831943646437376-pJsw"
+        },
+        {
+          "label": "V360 PRIO",
+          "url": "https://prio3.virtual360.io/"
+        },
+        {
+          "label": "PRIO",
+          "url": "https://prio3.com.br/en/home/"
+        }
+      ],
+      "transportadoraParceira": "Não identificado",
+      "evidencia": "PRIO divulgou página dedicada a fornecedores com acesso ao Portal de Suprimentos; V360 expõe acesso para fornecedor.",
+      "fonte": "PRIO",
+      "fonteLinks": [
+        {
+          "label": "Portal de Suprimentos PRIO LinkedIn",
+          "url": "https://pt.linkedin.com/posts/prio3_portal-de-suprimentos-activity-7129831943646437376-pJsw"
+        },
+        {
+          "label": "V360 PRIO",
+          "url": "https://prio3.virtual360.io/"
+        },
+        {
+          "label": "PRIO",
+          "url": "https://prio3.com.br/en/home/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Mosaic Fertilizantes",
+      "siteBid": "Fornecedores Mosaic / SAP Business Network",
+      "siteBidLinks": [
+        {
+          "label": "Fornecedores Mosaic",
+          "url": "https://mosaicco.com.br/fornecedores"
+        },
+        {
+          "label": "Melhores Transportadoras Mosaic",
+          "url": "https://logweb.com.br/mosaic-fertilizantes-reconhece-boas-praticas-nas-operacoes-logisticas/"
+        },
+        {
+          "label": "Manual cadastro Mosaic",
+          "url": "https://integra.integratio.com.br/upload/arquivo/395/15512888.PDF"
+        }
+      ],
+      "transportadoraParceira": "Transportadoras premiadas não nominalizadas",
+      "evidencia": "Mosaic usa SAP Business Network e realiza Workshop/Prêmio Melhores Transportadoras para cadeia logística.",
+      "fonte": "Mosaic / Logweb",
+      "fonteLinks": [
+        {
+          "label": "Fornecedores Mosaic",
+          "url": "https://mosaicco.com.br/fornecedores"
+        },
+        {
+          "label": "Melhores Transportadoras Mosaic",
+          "url": "https://logweb.com.br/mosaic-fertilizantes-reconhece-boas-praticas-nas-operacoes-logisticas/"
+        },
+        {
+          "label": "Manual cadastro Mosaic",
+          "url": "https://integra.integratio.com.br/upload/arquivo/395/15512888.PDF"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Nutrien Brasil",
+      "siteBid": "Nutrien Suppliers / Freight Web Portal",
+      "siteBidLinks": [
+        {
+          "label": "Nutrien Freight Web Portal",
+          "url": "https://freight.nutrien.com/"
+        },
+        {
+          "label": "Nutrien Suppliers",
+          "url": "https://www.nutrien.com/suppliers"
+        },
+        {
+          "label": "Nutrien Brasil",
+          "url": "https://www.nutrien.com.br/home"
+        }
+      ],
+      "transportadoraParceira": "Transportadoras via Nutrien Freight não nominalizadas",
+      "evidencia": "Nutrien possui portal específico de frete e página global para fornecedores.",
+      "fonte": "Nutrien",
+      "fonteLinks": [
+        {
+          "label": "Nutrien Freight Web Portal",
+          "url": "https://freight.nutrien.com/"
+        },
+        {
+          "label": "Nutrien Suppliers",
+          "url": "https://www.nutrien.com/suppliers"
+        },
+        {
+          "label": "Nutrien Brasil",
+          "url": "https://www.nutrien.com.br/home"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "Cofco Brasil",
+      "siteBid": "COFCO Transporte e distribuição / Freight",
+      "siteBidLinks": [
+        {
+          "label": "COFCO Brasil",
+          "url": "https://br.cofcointernational.com/"
+        },
+        {
+          "label": "COFCO Freight",
+          "url": "https://www.cofcointernational.com/products-services/freight/"
+        },
+        {
+          "label": "COFCO + Rumo",
+          "url": "https://www.rumolog.com/sala-de-imprensa/cofco-international-investe-r-12-bilhao-na-compra-de-vagoes-e-locomotivas-em-operacao-com-a-rumo/"
+        }
+      ],
+      "transportadoraParceira": "Rumo; frota/logística COFCO",
+      "evidencia": "COFCO informa rede logística marítima e terrestre e frota grande; investiu com Rumo em vagões e locomotivas.",
+      "fonte": "COFCO / Rumo",
+      "fonteLinks": [
+        {
+          "label": "COFCO Brasil",
+          "url": "https://br.cofcointernational.com/"
+        },
+        {
+          "label": "COFCO Freight",
+          "url": "https://www.cofcointernational.com/products-services/freight/"
+        },
+        {
+          "label": "COFCO + Rumo",
+          "url": "https://www.rumolog.com/sala-de-imprensa/cofco-international-investe-r-12-bilhao-na-compra-de-vagoes-e-locomotivas-em-operacao-com-a-rumo/"
+        }
+      ],
+      "confianca": "Alta"
+    },
+    {
+      "tier": 3,
+      "embarcador": "SLC Agrícola",
+      "siteBid": "Portal do Fornecedor SLC Agrícola",
+      "siteBidLinks": [
+        {
+          "label": "Portal fornecedor SLC",
+          "url": "https://www.slcagricola.com.br/fornecedores/portal-do-fornecedor"
+        },
+        {
+          "label": "SLC Gupy",
+          "url": "https://slcagricola.gupy.io/"
+        }
+      ],
+      "transportadoraParceira": "Transportes/colheita terceirizada não nominalizados",
+      "evidencia": "Portal SLC lista serviços e logística interna das fazendas, incluindo colheita terceirizada e transporte.",
+      "fonte": "SLC Agrícola",
+      "fonteLinks": [
+        {
+          "label": "Portal fornecedor SLC",
+          "url": "https://www.slcagricola.com.br/fornecedores/portal-do-fornecedor"
+        },
+        {
+          "label": "SLC Gupy",
+          "url": "https://slcagricola.gupy.io/"
+        }
+      ],
+      "confianca": "Alta"
+    }
+  ],
+  "filterApplied": "confianca == Alta OR (confianca == Media AND tier in [1,2])"
+}

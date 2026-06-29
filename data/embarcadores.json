@@ -1,0 +1,4345 @@
+[
+  {
+    "id": 1,
+    "name": "Amazon Brasil",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 115,
+    "decisors": [
+      {
+        "name": "Ricardo Pagani",
+        "role": "Diretor de Operações"
+      },
+      {
+        "name": "Rafael Caldas",
+        "role": "Diretor Geral Brasil"
+      },
+      {
+        "name": "Juliana Sztrajtman",
+        "role": "Diretora Geral de Varejo"
+      }
+    ],
+    "notes": "Mais de 150 polos logísticos no Brasil. CD Cajamar é o mais tecnológico da Latam.",
+    "tierScore": 98,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 15,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 2,
+    "name": "Mercado Livre",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 115,
+    "decisors": [
+      {
+        "name": "Luiz Vergueiro",
+        "role": "Diretor Sênior Operações Logística"
+      },
+      {
+        "name": "Davi Aguiar",
+        "role": "Gestor Cadeia Logística"
+      },
+      {
+        "name": "Nelson Teixeira",
+        "role": "Peak Season Operations"
+      }
+    ],
+    "notes": "120 mil funcionários, 77 milhões de compradores. Luiz tem 25 anos de experiência em logística.",
+    "tierScore": 95,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 15,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 3,
+    "name": "Shopee Brasil",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 75,
+    "decisors": [
+      {
+        "name": "Rafael Flores",
+        "role": "Diretor de Expansão e Malha Logística"
+      },
+      {
+        "name": "Felipe Cirne Lima",
+        "role": "Head of Business Development and Fulfillment Operations"
+      },
+      {
+        "name": "Jean Carlos Del Castillo",
+        "role": "Diretor Executivo"
+      }
+    ],
+    "notes": "25 mil colaboradores, 15 CDs, 200+ hubs logísticos.",
+    "tierScore": 93,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 4,
+    "name": "Magazine Luiza",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 75,
+    "decisors": [
+      {
+        "name": "Luis Kfouri",
+        "role": "Chief Supply Chain Officer"
+      },
+      {
+        "name": "Herbet Ferreira",
+        "role": "Diretor de Operações e Comercial"
+      },
+      {
+        "name": "Marcio Chammas",
+        "role": "CEO Magalu e Ex Diretor Executivo de Logística"
+      }
+    ],
+    "notes": "37 mil funcionários.",
+    "tierScore": 90,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 5,
+    "name": "Casas Bahia",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 50,
+    "decisors": [
+      {
+        "name": "Willemberg Cruz",
+        "role": "Diretor de Logística"
+      },
+      {
+        "name": "Leonardo Portela",
+        "role": "Head of Operations"
+      },
+      {
+        "name": "Renato Franklin",
+        "role": "CEO"
+      }
+    ],
+    "notes": "Willemberg tem mestrado em otimizações matemáticas aplicadas à logística (IPT). Formado em química pela USP.",
+    "tierScore": 83,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 7,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 6,
+    "name": "Shein Brasil",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Felipe Feistler",
+        "role": "Diretor Geral Shein Brasil"
+      },
+      {
+        "name": "Marcelo Claure",
+        "role": "Group Vice Chairman"
+      },
+      {
+        "name": "Johnny Cadina",
+        "role": "Diretor de Operações Logísticas"
+      }
+    ],
+    "notes": "Marketplace representa 55% das vendas no Brasil. Parceria com Jadlog. Cesar Borges (ex-Diretor de Logística Shein SA) saiu para Privalia onde é COO. Johnny Cadina permanece como Diretor de Operações Logísticas.",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 7,
+    "name": "AliExpress",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Briza Bueno",
+        "role": "Diretora Geral Brasil e Latam"
+      },
+      {
+        "name": "William Tang",
+        "role": "Diretor de Operações Brasil"
+      },
+      {
+        "name": "Priscila Mezzalira",
+        "role": "Diretora de Operações Cross Border"
+      }
+    ],
+    "notes": "Brasil é top 5 mercados do AliExpress. Planos de CD no Brasil. Parceria com Magalu.",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 8,
+    "name": "Temu",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Rafael Queiroz Alves",
+        "role": "User Experience Researcher"
+      },
+      {
+        "name": "Henrique Letoldo da Silva",
+        "role": "Gerente de Business Development"
+      }
+    ],
+    "notes": "Estrutura centralizada na China. Usa Correios no Brasil. Iniciou operações em Jun/2024.",
+    "tierScore": 75,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 9,
+    "name": "CIMED",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 95,
+    "decisors": [
+      {
+        "name": "Fernando Nadalini",
+        "role": "Diretor de Logística"
+      },
+      {
+        "name": "João Adibe Marques",
+        "role": "CEO"
+      },
+      {
+        "name": "José Roberto Lettiere",
+        "role": "CFO"
+      }
+    ],
+    "notes": "30+ anos de experiência. Ex-Ache, IBM, Westrock. 3ª maior farmacêutica do Brasil em volume.",
+    "tierScore": 87,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por boa operação física a validar; porte relevante; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 10,
+    "name": "Eurofarma",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 45,
+    "decisors": [
+      {
+        "name": "Rosalba Pantoja",
+        "role": "Diretora Executiva de Operações"
+      },
+      {
+        "name": "Tarcisio Siqueira Lima",
+        "role": "Coordenador de Logística"
+      },
+      {
+        "name": "Roberta Costa e Sousa Resende",
+        "role": "VP Global de Operações"
+      }
+    ],
+    "notes": "Multinacional brasileira em 22 países. 11 mil profissionais.",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 6,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 11,
+    "name": "Ache",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 45,
+    "decisors": [
+      {
+        "name": "Barbara Forlin",
+        "role": "Diretora de Suprimentos"
+      },
+      {
+        "name": "Humberto Costa Teixeira",
+        "role": "Gerente de Logística"
+      },
+      {
+        "name": "Paulo Quirino José dos Reis",
+        "role": "Chief Operating Officer"
+      }
+    ],
+    "notes": "Barbara gerencia compras diretas, estratégicas, indiretas e processo P2P.",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 6,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 12,
+    "name": "Neo Química / Hypera",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Daniela Castanho",
+        "role": "Diretora Executiva de Operações Industriais"
+      },
+      {
+        "name": "Jeandre Afeche Cohen",
+        "role": "Diretor Executivo"
+      },
+      {
+        "name": "Rafael Vito Batista",
+        "role": "Chief Operating Officer"
+      }
+    ],
+    "notes": "Maior parque fabril farmacêutico da Latam em Anápolis-GO.",
+    "tierScore": 83,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 13,
+    "name": "Bayer Brasil",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Roberto Saulo",
+        "role": "Diretor de Operações"
+      },
+      {
+        "name": "Marcio Santos",
+        "role": "CEO"
+      }
+    ],
+    "notes": "",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 14,
+    "name": "JBS",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 80,
+    "decisors": [
+      {
+        "name": "Hélio Rubens",
+        "role": "Diretor Global de Excelência Operacional"
+      },
+      {
+        "name": "Marlos Franco",
+        "role": "Diretor Executivo de Compliance e Gestão de Riscos"
+      },
+      {
+        "name": "Aecio Patuzzi",
+        "role": "Diretor Comercial e Supply Chain"
+      }
+    ],
+    "notes": "Um dos maiores processadores de proteína animal do mundo. Pendente: validar decisores atuais e elevar para VP-level em supply chain/operações Brasil.",
+    "tierScore": 92,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Confirmar qual decisor está incorreto. Mapear VP ou C-level de Supply Chain/Operações JBS Brasil (acima de Diretor). Aécio Patuzzi (Swift/JBS) confirmado ativo como Diretor SC.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 15,
+    "name": "Nestlé",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marcelo Maia do Nascimento",
+        "role": "Supply Chain Executive"
+      },
+      {
+        "name": "Paulo Aguiar",
+        "role": "Coordenador Operações Logística (30 anos de Nestlé)"
+      },
+      {
+        "name": "Luiz Marcelo Carvalho Lima Melchior",
+        "role": "CEO"
+      }
+    ],
+    "notes": "4º maior mercado Nestlé no mundo. Paulo opera CDs em SP, MG, RS, PR, BA, RJ.",
+    "tierScore": 89,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 16,
+    "name": "PepsiCo",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Raul Perez de Frias",
+        "role": "VP de Operações e Supply Chain"
+      },
+      {
+        "name": "Daniel Silber",
+        "role": "Diretor Geral Brasil"
+      },
+      {
+        "name": "Claudinei Silva",
+        "role": "Gerente de Logística e Transportes"
+      }
+    ],
+    "notes": "Raul tem 25+ anos de experiência em supply chain.",
+    "tierScore": 87,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 17,
+    "name": "Seara",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Joao Paulo Pereira",
+        "role": "Coordenador de Produção"
+      },
+      {
+        "name": "Miguel Anzolin",
+        "role": "Gerente Executivo de Logística"
+      },
+      {
+        "name": "Luciara Rech Peil",
+        "role": "Diretora Executiva de Inovação e P&D"
+      }
+    ],
+    "notes": "",
+    "tierScore": 84,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 18,
+    "name": "Bauducco",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Sergio Jose",
+        "role": "Logistics Business Partner"
+      },
+      {
+        "name": "Antonio Malheiro",
+        "role": "Diretor de Logística"
+      },
+      {
+        "name": "Adolpho Nunes de Souza Neto",
+        "role": "CFO"
+      }
+    ],
+    "notes": "5 unidades fabris, 12 filiais, 7 CDs, 6 mil funcionários, 180 mil pontos de venda.",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 19,
+    "name": "P&G",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Luis Fernandes",
+        "role": "Latam Planning Service Center Leader"
+      },
+      {
+        "name": "Jorge Patricio",
+        "role": "Director Customer Service Logistics"
+      },
+      {
+        "name": "Gustavo Oliveira Moraes",
+        "role": "Gerente Sênior de Logística"
+      }
+    ],
+    "notes": "Luiz foi responsável por Supply Network Operations no Brasil.",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 20,
+    "name": "Unilever",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Joao Nascimento",
+        "role": "Global Head of Supply Chain"
+      },
+      {
+        "name": "Fernanda Frezarin Kazakevicius",
+        "role": "Diretora Jurídico"
+      },
+      {
+        "name": "Renato Familiar",
+        "role": "Group Chief Accountant"
+      }
+    ],
+    "notes": "15 anos de Unilever. Participou do Forum ILOS 2025.",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por boa operação física a validar; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 21,
+    "name": "Natura",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 65,
+    "decisors": [
+      {
+        "name": "Joselena Peressinoto Romer",
+        "role": "VP de Operações, Logística e Suprimentos LATAM"
+      },
+      {
+        "name": "Eduardo Sa Freire",
+        "role": "Diretor Executivo de Supply Chain Brasil"
+      },
+      {
+        "name": "Mariela Valladao",
+        "role": "Gerente Estratégia e Projetos Logísticos Omnichannel"
+      }
+    ],
+    "notes": "Eduardo também é Head Supply Chain. Palestrante no Forum ILOS.",
+    "tierScore": 84,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 22,
+    "name": "Boticário",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 100,
+    "decisors": [
+      {
+        "name": "Uibira Bernardi",
+        "role": "Diretor Executivo de Logística"
+      },
+      {
+        "name": "Eduardo Javarotto",
+        "role": "VP de Operações"
+      },
+      {
+        "name": "Fabiana de Freitas",
+        "role": "VP Jurídico, Compliance e IA"
+      }
+    ],
+    "notes": "4 mil lojas físicas, 40+ países, 19 mil funcionários diretos.",
+    "tierScore": 91,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 13,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por boa operação física a validar; porte econômico alto; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 23,
+    "name": "L'Oréal",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Renan Loureiro",
+        "role": "Diretor Supply Chain Dermatological Beauty"
+      },
+      {
+        "name": "Guido Picaluga Cerveira",
+        "role": "Diretor de Operações Industriais"
+      },
+      {
+        "name": "Deyvid Gonçalves",
+        "role": "Diretor Supply Chain L'Oréal Luxe"
+      }
+    ],
+    "notes": "Implementou primeiras carretas a Biometano do Brasil.",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 24,
+    "name": "Raízen",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Leandro Silva",
+        "role": "Diretor de Operações e Logística"
+      },
+      {
+        "name": "Bruno Lopes",
+        "role": "Superintendente de Operações"
+      },
+      {
+        "name": "Leonardo Gadotti Filho",
+        "role": "VP de Mobilidade & Trading"
+      }
+    ],
+    "notes": "Leandro palestrou no Interlog Summit sobre produtividade, segurança e multimodalidade.",
+    "tierScore": 91,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 25,
+    "name": "Vibra Energia",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 115,
+    "decisors": [
+      {
+        "name": "Daniel Drummond Campos e Silva",
+        "role": "VP Executivo de Operações"
+      },
+      {
+        "name": "Jose Vianna Sampaio Neto",
+        "role": "VP Ipiranga Empresas"
+      },
+      {
+        "name": "Erica Saião",
+        "role": "Diretora de Logística"
+      }
+    ],
+    "notes": "Maior plataforma multi-energia do Brasil. Daniel tem 17+ anos em Supply Chain e IBP.",
+    "tierScore": 95,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 15,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 26,
+    "name": "Braskem",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 45,
+    "decisors": [
+      {
+        "name": "Luis Palhares",
+        "role": "Diretor de Logística"
+      },
+      {
+        "name": "Gustavo Prisco",
+        "role": "Diretor de Suprimentos"
+      },
+      {
+        "name": "Paulo Rigo",
+        "role": "Head of Supply Chain"
+      }
+    ],
+    "notes": "9 mil colaboradores. 40+ unidades industriais. Exporta para 80+ países.",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 6,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 27,
+    "name": "Gerdau",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 80,
+    "decisors": [
+      {
+        "name": "Mauricio Metz",
+        "role": "Head of Gerdau Brazilian Division"
+      },
+      {
+        "name": "Wilson Rodrigues",
+        "role": "Industrial Performance General Manager"
+      },
+      {
+        "name": "Flavia Dias Souza",
+        "role": "Diretora Global de Suprimentos"
+      }
+    ],
+    "notes": "124 anos de história, maior produtora de aço brasileiro. G2L Logística é subsidiária de logística da Gerdau.",
+    "tierScore": 87,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por boa operação física a validar; porte econômico alto; decisores já mapeados; sinais/timing favoráveis.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 28,
+    "name": "CSN",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Helton Weiss",
+        "role": "Diretor de Produção"
+      },
+      {
+        "name": "Eneas Diniz",
+        "role": "CEO"
+      },
+      {
+        "name": "VALIDAR",
+        "role": "Diretor de Logística/Planejamento — Nuno Saramago saiu (confirmar 2016). Mapear substituto."
+      }
+    ],
+    "notes": "Opera em 5 segmentos: Siderurgia, Mineração, Logística, Cimentos e Energia. Nuno Saramago (ex-Diretor de Planejamento, Logística e Vendas Especiais) não trabalha mais na CSN. Pendente: mapear novo decisor de logística.",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Identificar atual Diretor de Logística/Supply Chain CSN. Validar Helton Weiss e Eneas Diniz ainda ativos.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 29,
+    "name": "Usiminas",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 65,
+    "decisors": [
+      {
+        "name": "Vitor Soares",
+        "role": "Diretor Sênior Logística"
+      },
+      {
+        "name": "Américo Ferreira Neto",
+        "role": "Vice-Presidente Industrial"
+      },
+      {
+        "name": "Diego Garcia",
+        "role": "CFO"
+      }
+    ],
+    "notes": "Maior complexo siderúrgico de aços planos da América Latina. Vitor Soares (Diretor de Logística, ex-ArcelorMittal) confirmado ativo 2025. Pendente: mapear decisor adicional (VP ou C-level de Supply Chain).",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Validar Américo Ferreira Neto (VP Industrial) e Diego Garcia (CFO) ainda ativos. Mapear novo decisor em supply chain.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 30,
+    "name": "ArcelorMittal",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 65,
+    "decisors": [
+      {
+        "name": "Sergio Botelho",
+        "role": "Diretor Executivo Mineração Serra Azul"
+      },
+      {
+        "name": "Raquel Pitella Cancado",
+        "role": "Chief Procurement Officer"
+      },
+      {
+        "name": "Tatiana Nolasco de Abreu",
+        "role": "COO"
+      }
+    ],
+    "notes": "Maior produtora de aço do Brasil, +15,5 milhões ton/ano. Cerca de 20.000 funcionários.",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 31,
+    "name": "Continental Pneus",
+    "segment": "Automotivo & Pneus",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Diogo Lins",
+        "role": "Head of Supply Chain"
+      },
+      {
+        "name": "Rodrigo Bonilha",
+        "role": "VP América do Sul"
+      },
+      {
+        "name": "Raul Brandao",
+        "role": "Head of Production"
+      }
+    ],
+    "notes": "Diogo implementou o maior CD da empresa no mundo (100.000 pedidos/dia).",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 32,
+    "name": "XBRI",
+    "segment": "Automotivo & Pneus",
+    "uf": "PR",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Nabil Chamseddine",
+        "role": "CEO"
+      },
+      {
+        "name": "Jose Yizen Lu",
+        "role": "Diretor de Operações"
+      },
+      {
+        "name": "Samer Nasser",
+        "role": "Diretor de Relações Institucionais"
+      }
+    ],
+    "notes": "Investimento de R$ 6,2 bilhões em fábrica em SP. Será a maior fábrica de pneus comerciais do Brasil.",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 33,
+    "name": "Michelin",
+    "segment": "Automotivo & Pneus",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 45,
+    "decisors": [
+      {
+        "name": "Rafaela Senise",
+        "role": "Diretora Administrativa e de RH (Ex Supply Chain — não mais decisora SC/Logística)"
+      },
+      {
+        "name": "Artur Cruz",
+        "role": "Diretor Comercial América do Sul"
+      },
+      {
+        "name": "Lucas Mendes Junior",
+        "role": "CEO Latam"
+      }
+    ],
+    "notes": "Presente no Brasil desde 1927. 4 unidades industriais. Rafaela Senise migrou de Supply Chain para RH/Admin — pendente mapear novo Diretor de Supply Chain/Logística Brasil.",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 6,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Identificar atual Diretor de Supply Chain Michelin Brasil (possível candidato: Paulo Francischelli, 20+ anos na Michelin). Validar Lucas Mendes Junior como CEO Latam.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 34,
+    "name": "Yara Brasil",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 60,
+    "decisors": [
+      {
+        "name": "Alberto Rodrigues",
+        "role": "Diretor de Logística"
+      },
+      {
+        "name": "Andre Santos",
+        "role": "Gerente de Logística"
+      },
+      {
+        "name": "Marcelo Altieri",
+        "role": "Senior Vice President"
+      }
+    ],
+    "notes": "Alberto trabalhou em projeto de Supply Chain com McKinsey. Professor de MBA em Gestão de Transportes e Distribuição.",
+    "tierScore": 88,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 35,
+    "name": "Cargill",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Ricardo Bonetto Hartl",
+        "role": "Diretor Logístico América do Sul"
+      },
+      {
+        "name": "Artur Fuquim",
+        "role": "Diretor Industrial"
+      },
+      {
+        "name": "Luciano P.",
+        "role": "Diretor Sr Supply Chain"
+      }
+    ],
+    "notes": "President Awards 2025 (apenas 5% da empresa).",
+    "tierScore": 88,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 36,
+    "name": "ADM Brasil",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 45,
+    "decisors": [
+      {
+        "name": "Eduardo Rodrigues",
+        "role": "Diretor de Estratégia Comercial LATAM (Ex Diretor de Logística)"
+      },
+      {
+        "name": "Vitor Vinuesa",
+        "role": "Diretor Logístico South America"
+      },
+      {
+        "name": "Carrie Nichol",
+        "role": "Chief Accounting Officer"
+      }
+    ],
+    "notes": "Eduardo lidera operações rodoviárias, ferroviárias, fluviais, marítimas e portuárias.",
+    "tierScore": 86,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 6,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 37,
+    "name": "Messer Gases",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marcio Oliveira",
+        "role": "Diretor de Operações Brasil"
+      },
+      {
+        "name": "Daniel de Oliveira",
+        "role": "Coordenador de Operações"
+      },
+      {
+        "name": "Juliano Campaner",
+        "role": "Head of Supply Chain"
+      }
+    ],
+    "notes": "Maior empresa de capital fechado do segmento. Juliano teve passagem pela DHL.",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 38,
+    "name": "White Martins",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Carlos de Marco",
+        "role": "Diretor Executivo de Operações"
+      },
+      {
+        "name": "Paulo Petterle",
+        "role": "Diretor de Logística América do Sul"
+      },
+      {
+        "name": "Mario Simon",
+        "role": "Diretor Executivo de Negócios"
+      }
+    ],
+    "notes": "Fundada em 1912. Parte do grupo Linde plc. Líder mundial em gases industriais.",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 39,
+    "name": "Samsung Brasil",
+    "segment": "Eletro & Tecnologia",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Pedro Pereira",
+        "role": "VP de Logística e Inovação LATAM"
+      },
+      {
+        "name": "Fellipe Fortes",
+        "role": "Diretor Jurídico, Compliance e Privacidade de Dados"
+      },
+      {
+        "name": "Gustavo Assunção",
+        "role": "Sales & Marketing VP"
+      }
+    ],
+    "notes": "Pedro tem 25+ anos de experiência, ex-Renner, ex-Unilever LATAM, ex-Nike.",
+    "tierScore": 73,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 40,
+    "name": "Electrolux",
+    "segment": "Eletro & Tecnologia",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Jose Machado",
+        "role": "Diretor de Operações"
+      },
+      {
+        "name": "Ricardo Sales",
+        "role": "Gerente Sênior de Operações e Supply Chain"
+      },
+      {
+        "name": "Rodrigo Padilha",
+        "role": "VP de Negócios e Serviços ao Consumidor Latam"
+      }
+    ],
+    "notes": "Líder global de eletrodomésticos, 100+ anos de história.",
+    "tierScore": 73,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 41,
+    "name": "Bridgestone",
+    "segment": "Automotivo & Pneus",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": 55,
+    "decisors": [
+      {
+        "name": "Henrique Fonseca",
+        "role": "Diretor Supply Chain"
+      },
+      {
+        "name": "Agustin Pedroni",
+        "role": "VP Latam"
+      },
+      {
+        "name": "Lafaiete Oliveira",
+        "role": "Gerente Geral Brasil"
+      }
+    ],
+    "notes": "",
+    "tierScore": 70,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 7,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte/escala menos comprovado; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 42,
+    "name": "DHL",
+    "segment": "Logística & Transporte",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Rafael L. Carvalho",
+        "role": ""
+      },
+      {
+        "name": "Dra. Paula Ferraro",
+        "role": "Jurídico"
+      }
+    ],
+    "notes": "",
+    "tierScore": 53,
+    "tierBreakdown": {
+      "potencialLogistico": 18,
+      "aderenciaModeloPX": 14,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por aderência logística indireta; porte/escala menos comprovado; decisores já mapeados.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 44,
+    "name": "Coca-Cola FEMSA",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": 70,
+    "decisors": [
+      {
+        "name": "Thiago Rezende",
+        "role": "Gerente de Projetos"
+      },
+      {
+        "name": "Juliano Rigonato",
+        "role": ""
+      },
+      {
+        "name": "Eduardo Mareuse",
+        "role": "Diretor de Logística Brasil"
+      }
+    ],
+    "notes": "",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 45,
+    "name": "Petrobras",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "RJ",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Ricardo Capello",
+        "role": "Gerente de Logística"
+      }
+    ],
+    "notes": "",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 46,
+    "name": "Centauro",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Gustavo Souza",
+        "role": "Diretor de Supply Chain"
+      },
+      {
+        "name": "Millena Lacerda",
+        "role": "Gerente de Logística"
+      },
+      {
+        "name": "Gustavo Furtado",
+        "role": "CEO"
+      }
+    ],
+    "notes": "",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 47,
+    "name": "Americanas",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marcelo Arantes",
+        "role": "VP de Supply Chain"
+      },
+      {
+        "name": "Luiz Bentes",
+        "role": "Diretor de Logística"
+      }
+    ],
+    "notes": "VP Luiz Tavares não trabalha mais na Americanas. Atualizados: Marcelo Arantes (VP Supply Chain, +25 anos de experiência em LATAM Airlines, GPA, Leroy Merlin) e Luiz Bentes (Diretor Logística). Empresa em recuperação pós-crise 2023.",
+    "tierScore": 69,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Validar LinkedIn de Marcelo Arantes e Luiz Bentes. Acionar quando houver sinal de reestruturação logística.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 48,
+    "name": "Carrefour Brasil",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "João Dias",
+        "role": "Diretor de Logística"
+      }
+    ],
+    "notes": "",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 49,
+    "name": "Reckitt Brasil",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marcus Galvani",
+        "role": "Diretor de Operações / Supply Chain"
+      }
+    ],
+    "notes": "",
+    "tierScore": 65,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 50,
+    "name": "Colgate-Palmolive",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Thiago Brasil Coutinho",
+        "role": "Head of Supply Chain Brasil"
+      }
+    ],
+    "notes": "",
+    "tierScore": 65,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 51,
+    "name": "MBRF (Marfrig + BRF)",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Miguel Gularte",
+        "role": "CEO",
+        "confidence": "Alta",
+        "source": "LinkedIn Marfrig Global Foods: CEO da Companhia"
+      },
+      {
+        "name": "Leonardo Dall'Orto",
+        "role": "VP Mercado Internacional e Supply",
+        "confidence": "Alta",
+        "source": "LinkedIn Marfrig Global Foods: VP Mercado Internacional e Supply"
+      },
+      {
+        "name": "Loriano Andre Rigo",
+        "role": "Diretor de Logística (legado BRF)"
+      },
+      {
+        "name": "Alisson Navarro",
+        "role": "Vice-Presidente de Bovinos",
+        "confidence": "Alta",
+        "source": "LinkedIn Marfrig Global Foods: VP de Bovinos"
+      }
+    ],
+    "notes": "Fusão Marfrig + BRF (2025) formando a MBRF (B3: MBRF3), maior empresa de proteína animal do mundo. Legado Marfrig: 4º maior frigorífico global, exportador significativo de carne bovina, operações em múltiplos estados. Legado BRF: forte presença em frango/suínos e distribuição refrigerada em escala nacional e internacional.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 89,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade nacional e internacional; porte econômico de liderança global pós-fusão MBRF; decisores já mapeados.",
+    "nextResearchStep": "Validar estrutura organizacional pós-fusão MBRF e confirmar hierarquia de decisores combinada (logística, supply, bovinos, frango/suínos) antes de iniciar abordagem.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 53,
+    "name": "Heineken Brasil",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Olinto Lopes Neto",
+        "role": "Supply Chain Director",
+        "confidence": "Media",
+        "source": "Cadastro consolidado a partir de duplicidade Heineken/Heineken Brasil em embarcadores.json"
+      }
+    ],
+    "notes": "",
+    "tierScore": 83,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 54,
+    "name": "Mosaic Fertilizantes",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Joao Roberto Galhardo",
+        "role": "Diretor de Supply Chain Brasil"
+      }
+    ],
+    "notes": "",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 55,
+    "name": "Nutrien Brasil",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marco Ribeiro",
+        "role": "Head of Logistics / Supply Chain"
+      }
+    ],
+    "notes": "",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 56,
+    "name": "Cofco Brasil",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Fabricio Degani",
+        "role": "Supply Chain Director"
+      }
+    ],
+    "notes": "",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 57,
+    "name": "Vale",
+    "segment": "Indústria Pesada",
+    "uf": "MG",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Carlos Medeiros",
+        "role": "EVP de Operações"
+      }
+    ],
+    "notes": "",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte econômico alto; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 58,
+    "name": "Suzano",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Aires Galhardo",
+        "role": "Diretor de Logística / Supply Chain"
+      }
+    ],
+    "notes": "",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte econômico alto; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 59,
+    "name": "Votorantim",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marcio Yamachira",
+        "role": "Diretor de Supply Chain / Operações"
+      }
+    ],
+    "notes": "",
+    "tierScore": 66,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 60,
+    "name": "WEG",
+    "segment": "Indústria Pesada",
+    "uf": "SC",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Fernando Borges",
+        "role": "Diretor de Logística / Operações"
+      }
+    ],
+    "notes": "",
+    "tierScore": 66,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 61,
+    "name": "Embraer",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Luis Carlos Marinho da Silva",
+        "role": "Head of Supply Chain"
+      }
+    ],
+    "notes": "",
+    "tierScore": 66,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 62,
+    "name": "Sanofi Brasil",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Fernando Sampaio",
+        "role": "Head of Supply Chain"
+      }
+    ],
+    "notes": "",
+    "tierScore": 68,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte/escala menos comprovado; mapeamento parcial de decisores.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 63,
+    "name": "Ambev",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marcio Ferreira",
+        "role": "Diretor de Logística"
+      },
+      {
+        "name": "Felipe Oliveira Andrade",
+        "role": "Logistics Sr Manager"
+      }
+    ],
+    "notes": "Maior produtora de bebidas da América Latina. 100+ CDs, frota de ~3.100 veículos terceirizados. Market share de 60%+ em cervejas no Brasil. Volume de bilhões de litros/ano.",
+    "tierScore": 87,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 65,
+    "name": "Minerva Foods",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Fernando Queiroz",
+        "role": "CEO",
+        "confidence": "Alta",
+        "source": "LinkedIn Minerva Foods: CEO em painel Brazil Investment Forum"
+      },
+      {
+        "name": "Gustavo Miguel",
+        "role": "Gerente Executivo de Suprimentos Logísticos",
+        "confidence": "Alta",
+        "source": "LinkedIn/BuyCo: workshop Minerva Foods Intermodal"
+      },
+      {
+        "name": "Bruna Leutz",
+        "role": "Logística / Supply Chain",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn com mais de uma decada dedicada a logistica na Minerva Foods"
+      }
+    ],
+    "notes": "Um dos maiores exportadores de carne bovina do Brasil. Plantas em MT, MS, GO, SP, PA e no exterior. Volume expressivo de distribuição frigorífica.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 66,
+    "name": "Mondelez Brasil",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Detentora de Bis, Oreo, Lacta, Trident, Halls. Fábrica em Curitiba-PR. Distribuição capilar em todo o Brasil via rede de distribuidores.",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 67,
+    "name": "Grupo Petrópolis",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Gustavo Castanharo",
+        "role": "Logística / Supply Chain",
+        "confidence": "Baixa",
+        "source": "Perfil LinkedIn encontrado com experiencia em logistica e supply chain no Grupo Petropolis; cargo executivo a confirmar"
+      }
+    ],
+    "notes": "3ª maior cervejaria do Brasil (Itaipava, TNT, Black Princess). 8 plantas fabris, CDs em múltiplos estados. ~16% de market share em cervejas.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 68,
+    "name": "Mars Brasil",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Chocolates (Snickers, M&Ms), alimentos para pets (Pedigree, Whiskas, Royal Canin). Fábrica em Guararema-SP. Volume expressivo de distribuição.",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 69,
+    "name": "Vigor Alimentos",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Uma das maiores laticínios do Brasil. Marcas: Vigor, Danúbio, Forno de Minas. Fábrica em SP. Distribuição nacional de produtos refrigerados.",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 70,
+    "name": "Três Corações",
+    "segment": "Alimentos & Bebidas",
+    "uf": "CE",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Maior empresa de café do Brasil. Operações em 8 estados. 2ª marca de café mais vendida no país. Distribuição nacional.",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 71,
+    "name": "Ablac / Piracanjuba",
+    "segment": "Alimentos & Bebidas",
+    "uf": "GO",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Uma das maiores laticínios do Centro-Oeste. Marca Piracanjuba. Distribuição nacional de produtos lácteos.",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 72,
+    "name": "Pfizer Brasil",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marta Díez",
+        "role": "Presidente da Pfizer Brasil",
+        "confidence": "Alta",
+        "source": "Bloomberg Linea / Veja: presidente da Pfizer no Brasil"
+      }
+    ],
+    "notes": "Uma das maiores farmacêuticas globais. Vacinas, oncologia, imunologia. CD em Guarulhos-SP. Volume significativo com controle rigoroso de cadeia fria.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 73,
+    "name": "Roche Brasil",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Ricardo R.",
+        "role": "Global Procurement Director",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn cita Global Procurement Director e historico em transicao logistica da Roche Diagnostics no Brasil"
+      },
+      {
+        "name": "Erich W. Steiner",
+        "role": "Global Head of Logistics Procurement",
+        "confidence": "Media",
+        "source": "LinkedIn/TradeFlock: nomeado Global Head of Logistics Procurement na Roche"
+      }
+    ],
+    "notes": "Diagnósticos e medicamentos de alto custo. Referência em oncologia. Rigorosa cadeia fria e rastreabilidade. Operações em SP com distribuição nacional.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 83,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 74,
+    "name": "Johnson & Johnson Brasil",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Nilson Bertoldo",
+        "role": "Sr. Director, Global Logistics Strategy & Operations",
+        "confidence": "Média",
+        "source": "LinkedIn — busca por Diretor de Logística / Global Logistics na J&J Brasil"
+      }
+    ],
+    "notes": "MedTech e farmacêutica. Dispositivos médicos, ortopedia, estética. Fábrica em São José dos Campos-SP. Volume de distribuição hospitalar relevante.",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 75,
+    "name": "Abbott Brasil",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Eliézer M.",
+        "role": "Procurement, Supply Chain e Logística",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn Abbott em Sao Paulo com resumo executivo em procurement, supply chain e logistica"
+      },
+      {
+        "name": "Vincenzo Bianconi",
+        "role": "Director Supply Chain & Logistics CFS - CALA, EMEA",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn Abbott com escopo CALA/EMEA"
+      }
+    ],
+    "notes": "Diagnósticos, dispositivos médicos e nutrição. Fábrica em Cabo de Santo Agostinho-PE. Distribuição nacional com logística especializada.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 83,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 76,
+    "name": "União Química",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Um dos maiores laboratórios nacionais. Medicamentos genéricos e biotecnológicos. Fábrica em Brasília-DF e Pouso Alegre-MG. Distribuição ampla.",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 77,
+    "name": "Biolab Farmacêutica",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Laboratório farmacêutico nacional de médio porte. Medicamentos prescritos e OTC. Forte presença em ginecologia, endocrinologia e dermatologia.",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 78,
+    "name": "Kimberly-Clark Brasil",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Sergio Montanha",
+        "role": "Diretor de Supply Chain",
+        "confidence": "Média",
+        "source": "LinkedIn — busca por Diretor de Supply Chain Kimberly-Clark Brasil"
+      }
+    ],
+    "notes": "Fraldas Huggies, papel Neve, absorventes Intimus e Scott. 4 plantas no Brasil. Planejou dobrar operação até 2028. Investimento de R$ 500 mi.",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por boa operação física a validar; porte relevante; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 80,
+    "name": "Henkel Brasil",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Schwarzkopf, Bref, Pritt, Loctite. Fábrica em Jundiaí-SP. Distribuição para varejo e profissional em todo o Brasil.",
+    "tierScore": 72,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 81,
+    "name": "Beiersdorf Brasil",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Fátima Ribeiro",
+        "role": "Diretora de Supply Chain",
+        "confidence": "Média",
+        "source": "LinkedIn — busca por Diretora de Supply Chain Beiersdorf/Nivea Brasil"
+      }
+    ],
+    "notes": "Marca Nivea. Fábrica em Itatiba-SP. Uma das mais vendidas em dermocosméticos. Distribuição nacional em farmacias, supermercados e e-commerce.",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 82,
+    "name": "Coty Brasil",
+    "segment": "Cosméticos & Higiene",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Perfumes e cosméticos (Adidas, Gucci beauty, Rimmel, Sally Hansen). Operação em SP. Distribuição para varejo e duty free.",
+    "tierScore": 66,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 83,
+    "name": "Whirlpool Brasil",
+    "segment": "Eletro & Tecnologia",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Marcelo Ferretti",
+        "role": "Logística, Supply Chain e Procurement",
+        "confidence": "Alta",
+        "source": "Perfil LinkedIn Whirlpool Latin America com 25+ anos em logistica, supply chain e procurement"
+      },
+      {
+        "name": "Renato Costa Neto",
+        "role": "Supply Chain e Logística",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn Whirlpool Corporation em Rio Claro/SP com experiencia em supply chain e logistica"
+      }
+    ],
+    "notes": "Brastemp, Consul e KitchenAid. Maior fabricante de eletrodomésticos do Brasil. Fábrica em Joinville-SC e Rio Claro-SP. Volume de distribuição altíssimo.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 73,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 84,
+    "name": "LG Electronics Brasil",
+    "segment": "Eletro & Tecnologia",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "TVs, monitores, eletrodomésticos e ar-condicionado. Operações em Manaus (ZFM). CD em SP. Volume de distribuição nacional relevante.",
+    "tierScore": 70,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 85,
+    "name": "Philips Brasil",
+    "segment": "Eletro & Tecnologia",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Saúde (equipamentos hospitalares, imagem) e cuidados pessoais. Escritório em Barueri-SP. Distribuição hospitalar e varejo.",
+    "tierScore": 61,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 86,
+    "name": "Pirelli Brasil",
+    "segment": "Automotivo & Pneus",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Fábrica em Santo André-SP e Campinas-SP. 3 plantas. Líder em pneus premium. Volume expressivo de produção e distribuição para autopeças e varejo.",
+    "tierScore": 73,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 87,
+    "name": "Goodyear Brasil",
+    "segment": "Automotivo & Pneus",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Renato Rossoni",
+        "role": "Supply Chain Director",
+        "confidence": "Média",
+        "source": "LinkedIn — busca por Supply Chain Director Goodyear Brasil"
+      }
+    ],
+    "notes": "Fábrica em Americana-SP. Um dos líderes do mercado de pneus. Distribuição para revendas, frotas e montadoras.",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 88,
+    "name": "BASF Brasil",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Renan Rosauro",
+        "role": "Supply Chain, Procurement e Strategy",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn BASF com 20+ anos em supply chain, procurement e strategy"
+      },
+      {
+        "name": "Felipe Schreiner de Oliveira",
+        "role": "Supply Chain Management / S&OP / Logistics",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn BASF com Supply Chain Management, S&OP, Supply Planning, Logistics e Plant Operations"
+      }
+    ],
+    "notes": "Maior empresa química do mundo. Operações em SP, RJ e RS. Produtos: químicos, plásticos, agroquímicos, cosméticos. Volume de distribuição industrial muito alto.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 89,
+    "name": "Dow Brasil",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Polietilenos, embalagens, silicones, formulações. Planta em Aratu-BA. Um dos maiores embarcadores do setor químico no Brasil.",
+    "tierScore": 75,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 90,
+    "name": "Unipar Carbocloro",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "2º maior produtor de PVC na América do Sul. Cubatão-SP e Camaçari-BA. 355 mil ton cloro/ano. Distribuição para saneamento e construção civil.",
+    "tierScore": 73,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 91,
+    "name": "Huntsman Brasil",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Poliuretanos, epóxis, têxteis. Operações em SP. Distribuição industrial para calçados, colchões, construção e automotivo.",
+    "tierScore": 69,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 92,
+    "name": "Klabin",
+    "segment": "Indústria Pesada",
+    "uf": "PR",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Nivanieli Leandra",
+        "role": "Operações, Supply Chain e Análise de Dados",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn Klabin com atuacao na intersecao entre operacoes, supply chain e analise de dados"
+      }
+    ],
+    "notes": "Maior produtora e exportadora de papel para embalagens do Brasil. Fábrica em Telêmaco Borba-PR (maior planta de papel da América Latina). Volume de 1,7 mi ton/ano.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 93,
+    "name": "Dexco (ex-Duratex)",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Painéis de madeira, pisos e louças/metais sanitários (Deca, Hydra). Fábricas em SP, MG, RS, BA. Distribuição para construção civil em escala nacional.",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 94,
+    "name": "Saint-Gobain Brasil",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Vidros, isolação, gesso e argamassas (marcas Placo, Weber/Quartzolit, Isover). 16 plantas no Brasil. Maior fabricante de argamassas do mundo via linha Weber (17-20 fábricas + 8 CDs no Brasil, incluindo 3 unidades de Quartzolit/impermeabilizantes). Receita recorde de R$15bi no Brasil (+40% em um ano). Investimento recente de R$35mi em nova fábrica de argamassa em Planaltina-GO (140 mil toneladas/ano). Volume de distribuição enorme para construção civil.",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por altíssimo potencial logístico/capilaridade (16 plantas + linha Weber com 17-20 fábricas e 8 CDs no Brasil); porte relevante (R$15bi no Brasil, +40%); investimento recente em nova fábrica de argamassa; decisores ainda não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Saint-Gobain Brasil (linhas Weber/Quartzolit, Placo, Isover) via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 96,
+    "name": "Marcopolo",
+    "segment": "Automotivo & Pneus",
+    "uf": "RS",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Maior fabricante de carrocerias de ônibus do Brasil. Fábrica em Caxias do Sul-RS. Exportações para 100+ países. Distribuição de componentes e produtos acabados.",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 97,
+    "name": "Bunge Brasil",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Leandro Borges da Silva",
+        "role": "Logística e Supply Chain",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn Bunge: profissional de logistica e supply chain com 16+ anos de experiencia"
+      },
+      {
+        "name": "Linaldo Brandão",
+        "role": "Logística",
+        "confidence": "Baixa",
+        "source": "Perfil LinkedIn Bunge Brasil com objetivo ligado a inovacoes em logistica"
+      }
+    ],
+    "notes": "Uma das 5 maiores tradings globais. Processamento de soja, trigo, milho, açúcar. Operações em todo o Brasil. Volume de movimentação de grãos e fertilizantes muito alto.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 98,
+    "name": "Louis Dreyfus Brasil",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Maior trading privada do mundo. Grãos, açúcar, algodão, café, fertilizantes. Portos próprios. Co-fundadora da plataforma Strada com 100 mil motoristas cadastrados.",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 99,
+    "name": "Amaggi",
+    "segment": "Agro & Commodities",
+    "uf": "MT",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Claudinei Francisco Zenatti",
+        "role": "Diretor de Logística e Operações",
+        "confidence": "Alta",
+        "source": "LinkedIn / TheOrg / ZoomInfo — Diretor de Logística e Operações Amaggi"
+      }
+    ],
+    "notes": "Uma das maiores tradings do Brasil. Foco em soja, milho e fertilizantes. Frota de transporte própria. Co-fundadora da Strada. Maior produtor individual de soja do mundo.",
+    "tierScore": 84,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; mapeamento parcial de decisores.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 100,
+    "name": "Corteva Agriscience",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Carla Croce",
+        "role": "Diretora de Supply Chain",
+        "confidence": "Alta",
+        "source": "MundoLogistica/LinkedIn: diretora de Supply Chain da Corteva Agriscience"
+      },
+      {
+        "name": "Rilson Nogueira",
+        "role": "Supply Chain / Logistics",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn Corteva com atividade de oportunidade em supply chain logistics"
+      }
+    ],
+    "notes": "Sementes e defensivos agrícolas (Pioneer, Brevant, Mycogen). Operações em todo o Brasil. Volume de distribuição para revendas agrícolas em todo o país.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 101,
+    "name": "SLC Agrícola",
+    "segment": "Agro & Commodities",
+    "uf": "RS",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Maior empresa de agricultura do Brasil. 740 mil hectares cultivados. Produção de soja, milho e algodão. Alto volume de movimentação de grãos.",
+    "tierScore": 72,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 102,
+    "name": "Assaí Atacadista",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Belmiro Gomes",
+        "role": "Diretor Presidente (CEO)",
+        "confidence": "Alta",
+        "source": "RI Assai: Diretor Presidente desde fevereiro de 2011"
+      },
+      {
+        "name": "João Andrade",
+        "role": "Diretor de Logística",
+        "confidence": "Alta",
+        "source": "LinkedIn/Infor: Director of Logistics at Assai Atacadista"
+      },
+      {
+        "name": "Wlamir dos Anjos",
+        "role": "Vice-Presidente Comercial & Logística",
+        "confidence": "Media",
+        "source": "The Org / comunicado RI: VP responsavel por comercial e logistica"
+      }
+    ],
+    "notes": "2ª maior rede varejista do Brasil. 300+ lojas, 12 CDs, 257 mil m² de armazenagem. 3.000+ profissionais em logística. Crescimento acelerado.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 92,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico/capilaridade; porte econômico alto; decisores já mapeados.",
+    "nextResearchStep": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 103,
+    "name": "GPA / Grupo Pão de Açúcar",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Jonas Laurindvicius",
+        "role": "Diretor Executivo de Supply Chain",
+        "confidence": "Alta",
+        "source": "LinkedIn/Nosso Meio: chegada de Jonas Laurindvicius como Diretor Executivo de Supply Chain do GPA"
+      },
+      {
+        "name": "Jose Rafael Vasquez",
+        "role": "Diretor Executivo Comercial, Digital e Marketing",
+        "confidence": "Alta",
+        "source": "LinkedIn/Nosso Meio: novo diretor executivo do GPA"
+      }
+    ],
+    "notes": "Um dos maiores grupos varejistas. Pão de Açúcar, Extra, Compre Bem. CDs estratégicos em SP e RJ. Volume de distribuição relevante para supermercados.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 104,
+    "name": "Grupo Mateus",
+    "segment": "E-commerce & Varejo",
+    "uf": "MA",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Ilson Mateus",
+        "role": "Fundador / Presidente",
+        "confidence": "Media",
+        "source": "LinkedIn Grupo Mateus: historia institucional atribui origem e lideranca ao sr. Ilson Mateus"
+      },
+      {
+        "name": "Roberto Freitas",
+        "role": "Supply Chain / Operações Logísticas",
+        "confidence": "Baixa",
+        "source": "Perfil LinkedIn Grupo Mateus com area de supply chain e operacoes logisticas; senioridade a confirmar"
+      }
+    ],
+    "notes": "Maior rede varejista do Norte-Nordeste. Supermercados, atacarejo e farmácias. Foco em regiões subarradas. Crescimento acelerado nos últimos 5 anos.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 105,
+    "name": "Cencosud Brasil",
+    "segment": "E-commerce & Varejo",
+    "uf": "SC",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Gustavo Sorren Paraiso Colleto",
+        "role": "Procurement, Compras e Supply Chain",
+        "confidence": "Media",
+        "source": "Perfil LinkedIn Cencosud Brasil com 20+ anos em procurement, compras e supply chain"
+      },
+      {
+        "name": "Paula Castañeda",
+        "role": "Gerente Desenvolvimento Supply Chain Easy",
+        "confidence": "Baixa",
+        "source": "Perfil LinkedIn Cencosud com gerencia de desenvolvimento supply chain; escopo Chile/Easy, nao Brasil"
+      }
+    ],
+    "notes": "GBarbosa, Mercantil Rodrigues e Bretas. Presença forte em Nordeste e Centro-Oeste. Rede de supermercados com logística própria.",
+    "decisorMappingStatus": "mapped_2026-06-05_batch_1",
+    "tierScore": 75,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
+    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 106,
+    "name": "Ultrapar",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: UGPA3, receita 145,79 B. Grupo com Ipiranga, Ultragaz e Ultracargo; cadeia física relevante de combustíveis, GLP e armazenagem.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 107,
+    "name": "Raia Drogasil",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: RADL3, receita 44,77 B. Varejo farmacêutico nacional com alta capilaridade e operação de distribuição recorrente.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 108,
+    "name": "Cosan",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: CSAN3, receita 39,78 B. Grupo de energia e logística com exposição a combustíveis, açúcar/etanol e infraestrutura.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 109,
+    "name": "Motiva",
+    "segment": "Logística & Transporte",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: MOTV3, receita 18,63 B. Operadora de infraestrutura de mobilidade, rodovias e transporte; aderência por malha e fluxo logístico.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 62,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 14,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 110,
+    "name": "PRIO",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "RJ",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: PRIO3, receita 17,67 B. Petróleo e gás com cadeia operacional intensiva e fornecedores logísticos especializados.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 111,
+    "name": "Grupo GPS",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: GGPS3, receita 17,66 B. Serviços operacionais intensivos em mão de obra e facilities; incluída para apuração de aderência logística.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 112,
+    "name": "3tentos",
+    "segment": "Agro & Commodities",
+    "uf": "RS",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: TTEN3, receita 17,13 B. Agronegócio, originação, insumos e processamento; cadeia física relevante no Sul e Centro-Oeste.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 76,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 113,
+    "name": "Lojas Renner",
+    "segment": "Têxtil & Vestuário",
+    "uf": "RS",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: LREN3, receita 15,94 B. Varejo de moda com centros de distribuição e operação omnichannel.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 114,
+    "name": "Pague Menos",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "CE",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: PGMN3, receita 15,34 B. Varejo farmacêutico nacional; cadeia de abastecimento e distribuição recorrente.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 73,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 115,
+    "name": "Iochpe-Maxion",
+    "segment": "Automotivo & Pneus",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: MYPK3, receita 15,24 B. Autopeças e rodas; indústria com cadeia física B2B e distribuição para montadoras.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 116,
+    "name": "Rumo",
+    "segment": "Logística & Transporte",
+    "uf": "PR",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: RAIL3, receita 14,16 B. Operadora ferroviária e logística; potencial mais relacionado a cadeia intermodal do que embarcador final.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 58,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 14,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por aderência logística indireta; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 117,
+    "name": "Automob",
+    "segment": "Automotivo & Pneus",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: AMOB3, receita 12,95 B. Varejo automotivo/concessionárias; incluída para apuração de aderência logística.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 118,
+    "name": "Brava Energia",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "RJ",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: BRAV3, receita 11,88 B. Petróleo e gás; cadeia operacional intensiva e fornecedores logísticos especializados.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 119,
+    "name": "Ecorodovias",
+    "segment": "Logística & Transporte",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: ECOR3, receita 11,65 B. Infraestrutura rodoviária e concessões; aderência por malha, fluxo e ecossistema logístico.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 58,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 14,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por aderência logística indireta; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 120,
+    "name": "Profarma",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "RJ",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: PFRM3, receita 11,61 B. Distribuição farmacêutica e varejo; forte aderência a abastecimento capilar.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 75,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 121,
+    "name": "Azzas 2154",
+    "segment": "Têxtil & Vestuário",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: AZZA3, receita 11,60 B. Grupo de moda e varejo; operação de distribuição omnichannel.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 122,
+    "name": "MRV",
+    "segment": "Construção Civil",
+    "uf": "MG",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: MRVE3, receita 11,40 B. Construção civil/incorporação; incluída para apuração de demanda logística de materiais e obras.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por boa operação física a validar; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 123,
+    "name": "Camil",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: CAML3, receita 11,12 B. Alimentos básicos e marcas de grande giro; cadeia de distribuição nacional.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 124,
+    "name": "Riachuelo",
+    "segment": "Têxtil & Vestuário",
+    "uf": "RN",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: RIAA3, receita 10,61 B. Varejo de moda com operação logística e distribuição para lojas/e-commerce.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 76,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 125,
+    "name": "M. Dias Branco",
+    "segment": "Alimentos & Bebidas",
+    "uf": "CE",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "B3 maiores receitas: MDIA3, receita 10,45 B. Alimentos industrializados, biscoitos e massas; rede nacional de distribuição.",
+    "decisorMappingStatus": "pending_b3_gap_2026-06-10",
+    "tierScore": 76,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 24,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 3
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
+    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 126,
+    "name": "C&A Brasil",
+    "segment": "Têxtil & Vestuário",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Receita líquida ~R$6,7bi (2024), 333 lojas, 4 CDs somando 120 mil m² (SP-Raposo Tavares, SP-Tamboré, RJ-Pavuna, SC-Navegantes). Companhia aberta (CEAB3) com programa ativo de investimento em hubs logísticos regionais.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade (4 CDs, 333 lojas); porte relevante (R$6,7bi); programa ativo de investimento em hubs regionais; decisores ainda não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da C&A Brasil via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 127,
+    "name": "Marisa",
+    "segment": "Têxtil & Vestuário",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Receita líquida ~R$1,9-2,0bi/ano (4T24 = R$468,4mi), 233 lojas. Prejuízo líquido 2024 de R$315,8mi, em recuperação frente a R$520,8mi em 2023 - situação financeira ainda frágil.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 60,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 8,
+      "gatilhosTiming": 5,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte menor (R$1,9-2bi) e situação financeira ainda frágil (prejuízo em recuperação); rede de 233 lojas com potencial logístico moderado; decisores não mapeados.",
+    "nextResearchStep": "Acompanhar resultados trimestrais; só avançar se houver sinal de recuperação financeira sustentada ou investimento em logística.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 128,
+    "name": "Inditex Brasil (Zara)",
+    "segment": "Têxtil & Vestuário",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Operação brasileira da Inditex (marcas Zara, Bershka, Pull&Bear, Stradivarius, Massimo Dutti). Faturamento Brasil não divulgado separadamente (Inditex global ~US$31bi). Reduzindo presença física (-136 lojas até 2026, consolidando em megastores), mas investindo em novo CD de 40-50 mil m² em Cajamar/SP para virar hub regional de exportação (Argentina, Chile, Uruguai, Peru, África do Sul, Austrália).",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 66,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 10,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 4
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte da operação Brasil ainda não confirmado e consolidação recente de lojas; gatilho forte de novo CD/hub regional em Cajamar; decisores e estrutura local ainda não mapeados.",
+    "nextResearchStep": "Confirmar faturamento da operação Brasil e mapear decisores de Supply Chain da Inditex Brasil; monitorar inauguração do CD de Cajamar.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 129,
+    "name": "Tigre S.A.",
+    "segment": "Construção Civil",
+    "uf": "SC",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Faturamento bruto ~R$3,5bi (2018; ~60% da receita líquida consolidada vem das unidades brasileiras, set/2025). 11 unidades de negócio no Brasil + 9 no exterior (~5.000 funcionários). Centro Operacional Joinville (COJ) reúne produção, P&D e centro de distribuição, além de unidade fabril no Nordeste.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 7,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade (11 unidades de negócio, COJ com CD próprio); porte relevante (R$3,5bi+); decisores ainda não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Tigre S.A. via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 130,
+    "name": "Sherwin-Williams Brasil",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Após aquisição da divisão de tintas decorativas da BASF Brasil (Suvinil, Coral e outras marcas) por US$1,15bi (mais de 2x o faturamento anual da Suvinil de ~R$2,5bi/US$525mi), tornou-se a maior player de tintas decorativas no Brasil (~45% de market share). Opera ao menos 2 fábricas (Demarchi-SP, Jaboatão dos Guararapes-PE) com ~1.000 funcionários só na unidade adquirida, somados à operação pré-existente da Sherwin-Williams Brasil.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 84,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico (múltiplas fábricas, líder com ~45% de market share); porte alto; gatilho forte de integração pós-aquisição (BASF/Suvinil/Coral); decisores ainda não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Sherwin-Williams Brasil pós-integração com a divisão de tintas decorativas da BASF (Suvinil/Coral).",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 131,
+    "name": "Votorantim Cimentos",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Receita líquida no Brasil de R$12,9bi (2024, estável), receita global R$26,6bi. 35,4 milhões de toneladas de cimento vendidas (2024, +1%). Múltiplos projetos de expansão ativos: nova unidade em Itaperuçu-PR (Viter/Verdera), modernização e nova linha de moagem (+1Mt/ano) em Salto de Pirapora-SP, e investimento de R$200mi em Edealina-GO dobrando capacidade para 2Mt/ano. Subsidiária distinta da holding Votorantim (já cadastrada em Indústria Pesada).",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 89,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por altíssimo potencial logístico (cimento = transporte pesado de granel, fábricas distribuídas pelo Brasil); porte muito relevante (R$12,9bi); múltiplos gatilhos de expansão/timing (Itaperuçu-PR, Salto de Pirapora-SP, Edealina-GO); decisores ainda não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Votorantim Cimentos (distinta da holding Votorantim) via LinkedIn, priorizando contas ligadas aos projetos de expansão em Itaperuçu-PR, Salto de Pirapora-SP e Edealina-GO.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 132,
+    "name": "Amanco Wavin",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Receita Brasil ~US$250mi (~10% das vendas globais da Amanco Wavin, ~US$2,5bi; controladora Orbia tem receita global ~US$7,5bi). Maior operação da Amanco Wavin no mundo. 5 fábricas no Brasil (Sumaré-SP, Suape-PE recebendo US$92mi de investimento global para +47% de capacidade em linhas BIAX, Fábrica Floresta em Joinville-SC como polo de excelência).",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte menor (~R$1,3bi) frente aos demais players de Construção Civil mapeados; potencial logístico relevante (5 fábricas no Brasil) e gatilho de investimento em capacidade (Suape-PE, +47%); decisores não mapeados.",
+    "nextResearchStep": "Acompanhar conclusão do investimento de capacidade em Suape-PE; mapear decisores de Supply Chain da Amanco Wavin Brasil quando houver sinal adicional.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 133,
+    "name": "Leroy Merlin Brasil",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Líder do varejo de material de construção no Brasil: R$9,5bi de faturamento (2024, +6%), meta de R$10bi em 2025. 47-54 lojas, todas funcionando como centros de distribuição (atendem cidades em raio de até 400km). Plano de +15 lojas até fim de 2025, incluindo formato 'Express' (1 mil m²) para cidades médias. 'Novos serviços' já são 25% da receita.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por altíssimo potencial logístico/capilaridade (47-54 lojas-CD em raio de 400km); porte de líder de mercado (R$9,5-10bi); expansão ativa de rede e formatos; decisores ainda não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Leroy Merlin Brasil via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 134,
+    "name": "Lojas Quero-Quero",
+    "segment": "Construção Civil",
+    "uf": "RS",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Receita bruta de R$3,05bi em 2024 (+11,2%), 573 lojas em operação (+22 no ano), 2 centros de distribuição, 4.000+ funcionários. EBITDA ajustado +48,3% no ano, SSS +6,3%. Companhia aberta (LJQQ3) com plano de abrir 20-30 novas lojas em 2025.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 14,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade (573 lojas, 2 CDs); crescimento consistente de receita e EBITDA; companhia aberta com decisores potencialmente mapeáveis; decisores ainda não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Lojas Quero-Quero via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 135,
+    "name": "Obramax",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Atacarejo de material de construção do Grupo Adeo (mesmo grupo da Leroy Merlin). Faturou R$2,6bi em 2025 (+60% vs 2024), com apenas 12 megalojas que funcionam como centros de distribuição. Anunciou investimento de R$3,5bi até 2028 (R$1,9bi em infraestrutura própria), com plano de abrir 8-10 lojas/ano (Londrina-PR, Aricanduva-SP e Centro-Oeste em 2026).",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 13,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte ainda em formação (R$2,6bi, 12 lojas) frente aos líderes do setor; gatilho de timing muito forte (crescimento de +60% e investimento de R$3,5bi até 2028); decisores não mapeados.",
+    "nextResearchStep": "Acompanhar plano de expansão (8-10 lojas/ano) e mapear decisores de Supply Chain da Obramax quando a estrutura local crescer.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 136,
+    "name": "Portobello",
+    "segment": "Construção Civil",
+    "uf": "SC",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Fabricante e varejista de revestimentos cerâmicos (PTBL3): receita líquida ~R$525mi/trimestre (~R$2,1bi/ano), com a rede própria 'Portobello Shop' somando 163 lojas. Fábrica em Tijucas-SC, uma das maiores e mais modernas da América Latina (capacidade de ~30 milhões de m²/ano, 88,6% de utilização). Distribuição em todo o território nacional e exportação para ~60 países, com 2 CDs próprios nos EUA (Flórida e Tennessee).",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 73,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 13,
+      "gatilhosTiming": 7,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte intermediário (~R$2,1bi) frente aos líderes do varejo de construção; potencial logístico relevante (fábrica de grande capacidade + distribuição nacional/exportação + rede de 163 lojas); decisores não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Portobello via LinkedIn, acompanhando a recuperação operacional e redução de alavancagem em curso.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 137,
+    "name": "Sodimac Brasil",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Operação brasileira do grupo chileno Falabella (bandeiras Sodimac Homecenter/Constructor e Dicico): 51 lojas em São Paulo, 1 centro de distribuição em Guarulhos, 3.400+ funcionários. O segmento de materiais de construção e casa do Falabella fatura US$5,6bi globalmente, mas o porte específico da operação Brasil não é divulgado separadamente.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 62,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 10,
+      "gatilhosTiming": 6,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte da operação Brasil ainda não confirmado (concentrada em SP, 51 lojas + 1 CD); pertence a grupo regional relevante (Falabella); decisores não mapeados.",
+    "nextResearchStep": "Confirmar faturamento da operação Brasil e mapear decisores de Supply Chain da Sodimac Brasil via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 138,
+    "name": "Telhanorte / C&C (Grupo Mover)",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Redes de material de construção do Grupo Mover (ex-Camargo Corrêa, ex-Saint-Gobain Distribuição): Telhanorte (68 lojas, incluindo a bandeira Tumelero no RS) e C&C (36 lojas no Sudeste), juntas faturando ~R$1,87bi. Grupo Mover entrou em recuperação judicial em dez/2024 com dívida total de R$14,3bi, e ambas as redes estão à venda - situação societária e financeira muito instável.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 62,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 10,
+      "gatilhosTiming": 4,
+      "mapeabilidadeAcesso": 4
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por instabilidade societária e financeira (Grupo Mover em recuperação judicial, redes à venda); potencial logístico relevante (104 lojas somadas) caso a venda se concretize com novo controlador; decisores não mapeados.",
+    "nextResearchStep": "Acompanhar o processo de recuperação judicial do Grupo Mover e a venda da Telhanorte/C&C/Tumelero; reavaliar tier quando houver definição de novo controlador.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 139,
+    "name": "Decathlon Brasil",
+    "segment": "Têxtil & Vestuário",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Faturamento bruto de ~R$1,7bi (2024). ~50 lojas no país (50ª unidade inaugurada em mai/2025), com 1 centro de distribuição grande em Barueri-SP atendendo toda a rede. Possui produção própria local de bicicletas e linha têxtil/fitness. Estratégia ativa de modernização e formato de lojas menores para crescer em cidades médias.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 68,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte intermediário (R$1,7bi); potencial logístico relevante (CD central em Barueri + produção própria local); gatilho de expansão com novo formato de lojas menores; decisores não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Decathlon Brasil via LinkedIn, acompanhando a expansão de lojas menores em cidades médias.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 140,
+    "name": "Pernambucanas",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Varejista multicategoria (moda, casa, eletro) com braço financeiro próprio (Pefisa): faturamento de ~R$5bi (2024/2025), 485 lojas em 15 estados + DF. Receita líquida 2023 de R$5,1bi (+8%), encerrando o ano com 509 lojas. Pefisa (fintech) cresceu 38% no faturamento e está expandindo lojas físicas em novos formatos.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 75,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 7,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por potencial logístico relevante (485 lojas multicategoria em 15 estados + DF) e porte significativo (~R$5bi); gatilho moderado de expansão da fintech Pefisa; decisores não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Pernambucanas via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 141,
+    "name": "Tramontina",
+    "segment": "Construção Civil",
+    "uf": "RS",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Receita de R$9,6bi (2024), portfólio de 22.000+ itens incluindo ferramentas, materiais elétricos, ferragens e utensílios. Estrutura global de centros de distribuição (Colômbia, Chile, México, EUA, Alemanha) e ampla rede de distribuidores/representantes no Brasil. Em processo de internacionalização da produção (primeira fábrica fora do Brasil) para reduzir riscos logísticos e tarifários.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 19,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico (CDs em 5 países + rede nacional de distribuidores); porte muito relevante (R$9,6bi); reorganização e internacionalização recente da produção; decisores ainda não mapeados.",
+    "nextResearchStep": "Mapear decisores de Supply Chain/Logística da Tramontina via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 143,
+    "name": "Eliane",
+    "segment": "Construção Civil",
+    "uf": "SC",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Tornou-se a maior produtora de revestimentos cerâmicos do Brasil em receita após adquirir o Grupo Elizabeth; o segmento global do grupo soma ~US$3,4bi. 6 fábricas (5 no polo sul - 4 em Cocal do Sul/SC + porcelanato em Criciúma/SC - e 1 no polo nordeste em Camaçari/BA). Distribuição em mais de 15.000 pontos de venda no Brasil, além de escritório internacional em SP e 2 CDs (EUA e Canadá).",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 76,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte/receita específica do Brasil ainda não confirmada (apesar da liderança nacional pós-aquisição); potencial logístico relevante (6 fábricas, 15.000+ PDVs, 2 CDs internacionais); forte gatilho de integração da aquisição do Grupo Elizabeth; decisores não mapeados.",
+    "nextResearchStep": "Confirmar faturamento Brasil pós-aquisição do Grupo Elizabeth e mapear decisores de Supply Chain/Logística da Eliane via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 144,
+    "name": "InterCement Brasil",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Faturamento de R$3,3bi (2024), com 23 fábricas de cimento + 14 centrais de concreto + 2 unidades de agregados, capacidade instalada de ~28 milhões de toneladas/ano. Apresentou recuperação judicial em 2024 (dívidas de R$15,6bi) concluída em 2025/2026 com entrada de novos acionistas (grupo argentino LATCEM, ligado a Marcelo Mindlin) — situação semelhante à Telhanorte/C&C (Grupo Mover), porém com reestruturação societária já concluída.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 13,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 4
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por histórico recente de instabilidade financeira (recuperação judicial concluída em 2025/2026); potencial logístico muito relevante (23 fábricas + 14 centrais de concreto); gatilho forte de revisão operacional com a entrada de novos acionistas (LATCEM/Mindlin); decisores não mapeados.",
+    "nextResearchStep": "Acompanhar a integração da nova gestão (LATCEM/Mindlin) pós-recuperação judicial e mapear decisores de Supply Chain/Logística da InterCement Brasil via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 145,
+    "name": "Fortlev",
+    "segment": "Construção Civil",
+    "uf": "ES",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Maior fabricante de caixas d'água do Brasil, com atuação também em tubos e conexões de PVC, utilidades plásticas e energia solar. 8 fábricas presentes em 8 estados. Investimento recente de R$220mi na modernização da unidade de Camaçari-BA (que representa ~40% do faturamento do grupo, com mais de R$164mi já investidos e 425 funcionários diretos). Faturamento total do grupo não divulgado publicamente.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 67,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 10,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte/receita não confirmados publicamente; potencial logístico relevante (8 fábricas em 8 estados, líder nacional em caixas d'água); gatilho forte de investimento recente (R$220mi em Camaçari); decisores não mapeados.",
+    "nextResearchStep": "Confirmar faturamento da Fortlev e mapear decisores de Supply Chain/Logística via LinkedIn, acompanhando a modernização da unidade de Camaçari-BA.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 146,
+    "name": "Krona",
+    "segment": "Construção Civil",
+    "uf": "SC",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Uma das principais indústrias do Brasil em tubos e conexões de PVC para água fria, água quente, esgoto, elétrica e irrigação (~2.500 itens, 5 marcas: Krona, Viqua, Elleve, Novii, Top-max). 8 unidades fabris em 4 estados (4 em Joinville/SC, 2 em Blumenau/SC, 1 em Marechal Deodoro/AL, 1 em Aparecida de Goiânia/GO), com crescimento médio anual de 25%. Faturamento não divulgado publicamente.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 64,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 9,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte/receita não confirmados publicamente; potencial logístico relevante (8 fábricas em 4 estados); gatilho de crescimento consistente (~25% ao ano); decisores não mapeados.",
+    "nextResearchStep": "Confirmar faturamento da Krona e mapear decisores de Supply Chain/Logística via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 147,
+    "name": "Vonder (Grupo OVD)",
+    "segment": "Construção Civil",
+    "uf": "PR",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Marca de ferramentas, ferragens e EPIs do Grupo OVD (~8.000 itens), um dos maiores distribuidores atacadistas de ferragens/ferramentas/máquinas do Brasil (divisões Osten Ferragens, Vonder, Dismatal, VonderLog). 6 centros de distribuição estratégicos em regiões-chave do país. Faturamento não divulgado publicamente.",
+    "decisorMappingStatus": "pending_2026-06-10",
+    "tierScore": 62,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 9,
+      "gatilhosTiming": 6,
+      "mapeabilidadeAcesso": 5
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por porte/receita não confirmados publicamente; potencial logístico relevante (6 CDs estratégicos nacionais, ~8.000 itens); decisores não mapeados.",
+    "nextResearchStep": "Confirmar faturamento do Grupo OVD/Vonder e mapear decisores de Supply Chain/Logística via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 148,
+    "name": "CBA - Companhia Brasileira de Alumínio",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (CBAV3). Maior produtora integrada de alumínio do Brasil: receita líquida de R$8,2bi em 2024 e R$2,3bi no 1T25 (+38%). Unidades em 7 estados - mineração de bauxita (Miraí/MG, Itamarati de Minas/MG, Poços de Caldas/MG, Barro Alto/GO), usinagem/caldeiraria (Sorocaba/SP), fundição/reciclagem (Araçariguama/SP - Metalex) e fábricas em Alumínio/SP e Itapissuma/PE. Recebeu R$715,9mi do BNDES para modernizar a Fábrica Alumínio/SP e construir novo Pátio Santa Isabel/GO para carregamento de bauxita.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 89,
+    "tierBreakdown": {
+      "potencialLogistico": 30,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico em cadeia de mineração/produção multiestadual; porte econômico elevado (R$8bi+ de receita); investimento recente de R$715,9mi do BNDES em logística de bauxita configurando gatilho forte.",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da CBA e identificar responsáveis pelo projeto do novo Pátio Santa Isabel (GO).",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 149,
+    "name": "Alpargatas (Havaianas)",
+    "segment": "Têxtil & Vestuário",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (ALPA4). Receita líquida de R$4,56bi em 2025 (+11%). 4 fábricas: Campina Grande/PB, Santa Rita/PB, Carpina/PE e Montes Claros/MG. Em expansão: novo prédio de CD em Montes Claros/MG com 30 mil m² e capacidade para 19,1 milhões de pares, além de ampliação da estrutura logística em Campina Grande/PB. Operação internacional crescente - Europa com 9,2 milhões de pares vendidos e novo modelo de distribuição nos EUA via parceria com a Eastman (3 milhões de pares, +50%).",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 88,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 13,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico com expansão ativa de CD (Montes Claros/MG, 19,1 milhões de pares) e estrutura em Campina Grande/PB; porte relevante (R$4,56bi); gatilho forte de expansão logística e novo modelo de distribuição internacional.",
+    "nextResearchStep": "Validar o projeto de expansão do CD de Montes Claros/MG e mapear decisores de logística/distribuição da Alpargatas.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 150,
+    "name": "Grendene",
+    "segment": "Têxtil & Vestuário",
+    "uf": "CE",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (GRND3). Receita líquida de R$1,9bi nos 9M2025 (+6,2%); receita bruta de R$2,5bi no período (+13,3%). 11 fábricas de calçados totalmente integradas: Sobral/CE (6 fábricas + fábrica de PVC + CD), Fortaleza/CE (2), Crato/CE (2) e Farroupilha/RS (1). Capacidade instalada de 250 milhões de pares/ano. Exportações em forte alta: R$185,7mi no 1T25 (+38,5%, volume +21,1%).",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por potencial logístico elevado (11 fábricas, 250 milhões de pares/ano de capacidade, operação verticalizada com fábrica própria de PVC); porte relevante e exportações em forte crescimento, mas sem gatilho de expansão de CD mapeado.",
+    "nextResearchStep": "Mapear decisores de logística e distribuição da Grendene, com foco na operação de exportação a partir de Sobral/CE.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 151,
+    "name": "Vulcabras",
+    "segment": "Têxtil & Vestuário",
+    "uf": "CE",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (VULC3). Faturamento bruto recorde de R$4,2bi em 2025 (+16,7%). Estrutura: plantas fabris em Horizonte/CE e Itapetinga/BA, centro administrativo em Jundiaí/SP, Centro de Distribuição em Extrema/MG e Centro de P&D próprio. Empresa inicia 2026 com base operacional sólida e carteira de pedidos do 1º semestre já vendida.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 84,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por potencial logístico relevante (2 plantas fabris + CD dedicado em Extrema/MG); porte de R$4,2bi em receita recorde; gatilho de demanda forte com 1º semestre de 2026 já vendido.",
+    "nextResearchStep": "Mapear decisores de logística/distribuição da Vulcabras, com foco na operação do CD de Extrema/MG.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 152,
+    "name": "Intelbras",
+    "segment": "Eletro & Tecnologia",
+    "uf": "SC",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (INTB3). Receita operacional líquida de R$921,2mi no 1T25, com EBITDA de R$81,1mi. 5 unidades fabris: São José/SC, Tubarão/SC, Santa Rita do Sapucaí/MG, Manaus/AM e Jaboatão dos Guararapes/PE. Investiu mais de R$120mi em novo centro de distribuição em São José/SC, parte de uma expansão de capacidade produtiva e logística nos últimos 4 anos.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 84,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por potencial logístico elevado com 5 unidades fabris distribuídas pelo país; porte relevante (receita trimestral próxima de R$1bi); gatilho forte de investimento recente de R$120mi+ em novo CD em São José/SC.",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da Intelbras responsáveis pelo novo CD de São José/SC.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 153,
+    "name": "Multilaser (Grupo Multi)",
+    "segment": "Eletro & Tecnologia",
+    "uf": "MG",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (MLAS3). Receita de R$3,92bi em 2025, com receita líquida de R$1,16bi no 4T25 (+20,6%). Opera 2 complexos industriais (107 mil m²+) em Extrema/MG e Manaus/AM, com 3 fábricas, 2 grandes centros de distribuição e uma das maiores redes de pontos de venda do país. Recebeu R$294,1mi do BNDES para plano de indústria 4.0 nas fábricas de Manaus e Extrema, incluindo redução de custos logísticos.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 84,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por potencial logístico elevado com 2 complexos industriais e 2 grandes CDs; porte relevante (R$3,92bi de receita em 2025); gatilho forte de investimento de R$294,1mi do BNDES voltado à redução de custos logísticos.",
+    "nextResearchStep": "Mapear decisores de logística/supply chain do Grupo Multi (Multilaser) responsáveis pelos CDs de Extrema/MG e Manaus/AM.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 154,
+    "name": "Positivo Tecnologia",
+    "segment": "Eletro & Tecnologia",
+    "uf": "PR",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (POSI3). Receita bruta de R$564-567mi em 2025 (+20%). 3 plantas industriais: Manaus/AM (concentra 80% da produção, 4,3 milhões de dispositivos/ano - computadores, maquininhas de pagamento, tablets, componentes para urnas eletrônicas e servidores), Ilhéus/BA e Curitiba/PR. Investimentos recentes em automação industrial.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 68,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por potencial logístico moderado com 3 plantas industriais e produção concentrada em Manaus/AM; porte ainda pequeno frente a outros players do setor (receita de R$564-567mi); sem gatilho de expansão logística mapeado.",
+    "nextResearchStep": "Acompanhar evolução de receita e eventuais anúncios de expansão de capacidade/logística da Positivo antes de priorizar mapeamento de decisores.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 155,
+    "name": "Eternit",
+    "segment": "Construção Civil",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (ETER3). Receita bruta de R$1,15bi em 2025, com lucro líquido de R$49mi (+26,2%). Líder em telhas de fibrocimento com ~30% de market share e 672 mil toneladas vendidas (+2,3%). 7 fábricas no grupo, incluindo nova unidade no Complexo Industrial do Pecém, em Caucaia/CE. Distribuição via mais de 16 mil pontos de revenda em todo o Brasil, de revendas a home centers.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 13,
+      "gatilhosTiming": 9,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por potencial logístico relevante com 7 fábricas e rede de distribuição capilar de 16 mil pontos de revenda; porte intermediário (R$1,15bi de receita); gatilho moderado com a nova fábrica no Complexo do Pecém/CE.",
+    "nextResearchStep": "Mapear decisores de logística/distribuição da Eternit, com foco na nova unidade do Complexo Industrial do Pecém/CE.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 156,
+    "name": "Mahle Metal Leve",
+    "segment": "Automotivo & Pneus",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (LEVE3). Receita líquida de R$1,26bi no 1T25 (+24,1%) e R$1,32bi no 4T25, com ROE de 70% e lucro líquido de R$127-158,8mi por trimestre. 6 fábricas (5 no Brasil, 1 na Argentina) dedicadas à fabricação de componentes para motores de combustão interna. Exporta para mais de 60 países, incluindo EUA, Alemanha, México, Portugal e Espanha.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico com 5 fábricas no Brasil e exportação para mais de 60 países; porte relevante e crescimento consistente de receita (ROE de 70%); gatilho de expansão de exportações.",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da Mahle Metal Leve responsáveis pela operação de exportação.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 157,
+    "name": "Fras-le (Frasle Mobility)",
+    "segment": "Automotivo & Pneus",
+    "uf": "RS",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (FRAS3). Receita de R$3,97bi em 2024, com meta de crescimento de 50% para 2025 (~R$6bi). Complexo industrial de 75 mil m² em Caxias do Sul/RS com 5 fábricas sincronizadas. Expandiu de 5 para 12 parques industriais e de 5 para 15 países com operações entre 2016 e 2025. Uma das maiores fornecedoras mundiais de materiais de fricção, exportando para mais de 120 países; reposição representa ~91% da receita operacional líquida.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico com complexo industrial de 75 mil m² e operações internacionais em 12 parques industriais/15 países; porte relevante com meta de crescimento de 50% para 2025; gatilho forte de expansão acelerada de operações internacionais.",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da Fras-le, com foco na operação de exportação para mais de 120 países.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 158,
+    "name": "Tupy",
+    "segment": "Indústria Pesada",
+    "uf": "SC",
+    "tier": 1,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (TUPY3). Receita de R$10,7bi em 2024, com geração de caixa operacional recorde de ~R$1,4bi. Mais de 20 mil colaboradores. Fábricas em Joinville/SC (sede), São Paulo/SP, Betim/MG, Saltillo e Ramos Arizpe/México e Aveiro/Portugal. Em 2025, fechou contrato para produzir blocos de motor CGI 13L para fabricante global de veículos comerciais, na unidade de Ramos Arizpe/México, com receita anual estimada de R$200mi.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 88,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 19,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 1: conta estratégica para cadência ativa por alto potencial logístico com fundições multinacionais (Brasil, México, Portugal) e mais de 20 mil colaboradores; porte de liderança global (R$10,7bi de receita); gatilho forte do novo contrato de R$200mi/ano de blocos de motor para o México.",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da Tupy, com foco na operação entre Joinville/SC e as unidades mexicanas.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 159,
+    "name": "São Martinho",
+    "segment": "Agro & Commodities",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (SMTO3). Receita líquida total de R$7,4bi na safra 2025/26 (+3,3%), com EBITDA ajustado de R$3,5bi (margem de 47,1%) e lucro líquido de R$836,2mi (+50,2%). Investimento de R$1,1bi para dobrar a usina de etanol de milho em Quirinópolis/GO (capacidade de 500 mil toneladas de milho/ano). Projeção de crescimento de 10,7% em produção de ATR para a safra 2026/27.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 83,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por potencial logístico relevante em cadeia de açúcar/etanol com escoamento agroindustrial; porte elevado (R$7,4bi de receita); gatilho forte do investimento de R$1,1bi para dobrar a usina de etanol de milho em Quirinópolis/GO.",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da São Martinho, com foco na expansão da usina de etanol de milho de Quirinópolis/GO.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 160,
+    "name": "Grupo Petz Cobasi",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (AUAU3) desde a conclusão da fusão entre Petz e Cobasi em 5/jan/2026. Receita combinada de R$7,7bi nos 12 meses até o 3T2025 (Petz R$4,2bi + Cobasi R$3,5bi). Rede de 521 lojas em 23 estados + DF. Em curso, migração de centros de distribuição da Cobasi como alavanca de eficiência operacional pós-fusão, com sinergia estimada de R$200-260mi em Ebitda anual ao longo de 5 anos.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 13,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por potencial logístico relevante com rede de 521 lojas em 23 estados; porte elevado pós-fusão (R$7,7bi de receita combinada); gatilho forte de migração de CDs e captura de sinergias logísticas pós-fusão Petz+Cobasi.",
+    "nextResearchStep": "Acompanhar o cronograma de migração de centros de distribuição pós-fusão e mapear decisores de logística do Grupo Petz Cobasi.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 161,
+    "name": "Paranapanema",
+    "segment": "Indústria Pesada",
+    "uf": "BA",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Listada na B3 (PMAM3). Maior produtora não-integrada de cobre refinado do Brasil, fabricando fios, cabos, laminados, barras, tubos e conexões de cobre para os setores de energia, telecomunicações e construção. Opera 2 unidades industriais: Caraíba/BA e Eluma/SP. Expansão de R$330mi na unidade da Bahia elevou a capacidade de produção de cátodos de 215 mil para 280 mil toneladas/ano (+60%). Exporta ~35% da produção para cerca de 20 países.",
+    "decisorMappingStatus": "pending_2026-06-15",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por potencial logístico relevante com produção de fios/cabos/tubos em 2 unidades e exportação para ~20 países; porte intermediário no setor de cobre; gatilho de expansão recente de capacidade de R$330mi na Bahia (+60%).",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da Paranapanema, com foco na unidade de Caraíba/BA pós-expansão.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 162,
+    "name": "Cacau Show",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 0,
+    "decisors": [],
+    "notes": "Rede de chocolates com presença nacional. Já em abordagem ABM.",
+    "tierScore": 75,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Em abordagem ABM ativa.",
+    "nextResearchStep": "Mapear decisores de logística.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 163,
+    "name": "Kerry",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 0,
+    "decisors": [],
+    "notes": "Multinacional de ingredientes alimentícios. Já em abordagem ABM.",
+    "tierScore": 72,
+    "tierBreakdown": {
+      "potencialLogistico": 18,
+      "aderenciaModeloPX": 17,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Em abordagem ABM ativa.",
+    "nextResearchStep": "Mapear decisores de supply chain.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 165,
+    "name": "Opella",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": 0,
+    "decisors": [
+      {
+        "name": "Igor Costa",
+        "role": "Head de Supply Chain Brasil"
+      }
+    ],
+    "notes": "Divisão de consumer healthcare da Sanofi (CD&R assumiu 50% em abril 2025). Igor Costa (Head SC) possui 20+ anos em SC em multinacionais: Softys/CMPC, General Mills, Philips, Nestlé, Avon. Já em abordagem ABM.",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 18,
+      "aderenciaModeloPX": 17,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 13,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Em abordagem ABM ativa.",
+    "nextResearchStep": "Acompanhar cadência com Igor Costa. Mapear decisor adicional (GM/Diretor Geral Brasil).",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 166,
+    "name": "Arauco (CMPC Brasil)",
+    "segment": "Indústria Pesada",
+    "uf": "MS",
+    "tier": 1,
+    "scoreS13": null,
+    "notes": "Maior fábrica de celulose do mundo em construção em Mato Grosso do Sul (Projeto Sucuriu); ~3,5 mi t/ano até 2027. Mega-operação logística integrada: trens de 100 vagões (9,6 mil t/dia) Sucuriu→Santos. Fonte: Times Brasil (maior movimentação de carga).",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-06-23",
+    "tierScore": 93,
+    "tierBreakdown": {
+      "potencialLogistico": 29,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 14,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 1: conta estratégica de alto potencial — maior planta de celulose do mundo em implantação no MS (~3,5 mi t/ano), gerando fluxo logístico excepcional via ferrovia e rodovia até Santos; janela de oportunidade real para posicionamento de transportadora antes da operação plena (2027).",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da CMPC Brasil/Arauco e identificar responsáveis pelas contratações de transporte rodoviário do Projeto Sucuriu.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 167,
+    "name": "Bracell",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "notes": "Grupo RGE; planta operacional em Lençóis Paulista (SP); expansão prevista de ~2,8 mi t/ano com processos de licenciamento ativos em Água Clara e Bataguassu (MS). Fonte: Times Brasil (maior movimentação de carga).",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-06-23",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 1: conta estratégica por volume de celulose de grande escala (~2,8 mi t/ano previstas) e expansão com licenciamentos ativos em MS, criando janela de abordagem para posicionamento logístico antes da nova planta entrar em operação.",
+    "nextResearchStep": "Mapear decisores de logística e transporte da Bracell (SP e MS) e validar cronograma de implantação das novas plantas em Água Clara e Bataguassu.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 168,
+    "name": "Danone Brasil",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Laticínios, bebidas e nutrição; cadeia fria exigente; operação nacional com múltiplos centros de distribuição. Fonte: Times Brasil (maior movimentação de carga).",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-06-23",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 9
+    },
+    "tierRationale": "Tier 2: conta de desenvolvimento com operação nacional de cadeia fria (laticínios + bebidas) que demanda transportadoras especializadas; múltiplos CDs distribuídos pelo Brasil; porte econômico relevante e boa aderência ao modelo PX.",
+    "nextResearchStep": "Mapear decisores de logística/supply chain da Danone Brasil e identificar qual CD (SP, RJ, MG ou Sul) é o maior fluxo para priorizar abordagem.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  }
+]

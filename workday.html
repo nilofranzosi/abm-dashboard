@@ -1,0 +1,1492 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PX Outreach Engine - Ações de Hoje</title>
+  <style>
+    :root {
+      --blue: #0F52BA;
+      --blue-dark: #0A3C8A;
+      --ink: #172033;
+      --muted: #657083;
+      --line: #DDE3EC;
+      --soft: #F6F8FB;
+      --panel: #FFFFFF;
+      --bg: #EEF2F7;
+      --green: #158255;
+      --amber: #A05A00;
+      --red: #B42318;
+      --slate: #253047;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.35;
+    }
+
+    html.embedded-view .shell { grid-template-columns: 1fr; }
+    html.embedded-view .shell aside { display: none; }
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 236px 1fr;
+      gap: 14px;
+      padding: 14px;
+    }
+
+    aside {
+      background: #111827;
+      color: #FFFFFF;
+      border-radius: 6px;
+      padding: 18px 16px;
+    }
+
+    .brand {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .nav-label {
+      color: #AAB4C3;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin: 20px 0 8px;
+    }
+
+    .nav-item {
+      display: block;
+      border: 1px solid #334155;
+      background: #1F2937;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .nav-item.active {
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+
+    main {
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    header {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 18px 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button {
+      border: 1px solid var(--blue);
+      background: var(--blue);
+      color: #FFFFFF;
+      border-radius: 5px;
+      padding: 10px 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: #FFFFFF;
+      color: var(--blue);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .kpi {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--blue);
+      border-radius: 6px;
+      padding: 12px 13px;
+      min-height: 86px;
+    }
+
+    .kpi.warning { border-left-color: var(--amber); }
+    .kpi.critical { border-left-color: var(--red); }
+    .kpi.info { border-left-color: var(--blue); }
+    .kpi.success { border-left-color: var(--green); }
+
+    .kpi span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      min-height: 26px;
+    }
+
+    .kpi strong {
+      display: block;
+      font-size: 28px;
+      margin-top: 4px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .queue {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      min-height: 240px;
+      overflow: hidden;
+    }
+
+    .queue-head {
+      padding: 13px 15px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      background: #FFFFFF;
+    }
+
+    .queue-head h2 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .count {
+      min-width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      background: var(--slate);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .queue-body {
+      padding: 10px;
+      display: grid;
+      gap: 8px;
+      max-height: 440px;
+      overflow: auto;
+      background: var(--soft);
+    }
+
+    .action {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--blue);
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .action.warning { border-left-color: var(--amber); }
+    .action.critical { border-left-color: var(--red); }
+    .action.info { border-left-color: var(--blue); }
+
+    .action-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    .action strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      height: 22px;
+      padding: 0 7px;
+      border-radius: 999px;
+      background: #E8EDF5;
+      color: var(--slate);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .action p {
+      margin: 4px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .action-footer {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .empty,
+    .error,
+    .loading {
+      padding: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      background: #FFFFFF;
+      border: 1px dashed var(--line);
+      border-radius: 5px;
+    }
+
+    .error {
+      color: var(--red);
+      border-color: #F2B8B5;
+      background: #FFF7F7;
+    }
+
+    .action-toast {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 9999;
+      background: #FFF7F7;
+      border: 1px solid #F2B8B5;
+      border-left: 4px solid var(--red);
+      border-radius: 6px;
+      padding: 12px 16px;
+      color: var(--red);
+      font-size: 13px;
+      max-width: 360px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      display: none;
+    }
+    .action-toast.visible { display: block; }
+
+    .task-form {
+      display: flex;
+      gap: 8px;
+      padding: 10px;
+      border-top: 1px solid var(--line);
+      background: #FFFFFF;
+      flex-wrap: wrap;
+    }
+
+    .task-form input[type="text"] {
+      flex: 1 1 220px;
+      min-width: 160px;
+    }
+
+    .task-form input,
+    .task-form select {
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-family: inherit;
+      color: var(--ink);
+    }
+
+    .task-form button {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+
+    .action-controls {
+      margin-top: 8px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .action-controls button {
+      padding: 6px 10px;
+      font-size: 11px;
+    }
+
+    .inline-edit {
+      margin-top: 8px;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .inline-edit input {
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 6px 8px;
+      font-size: 11px;
+      font-family: inherit;
+      color: var(--ink);
+    }
+
+    .inline-edit input[type="text"] {
+      flex: 1 1 140px;
+      min-width: 120px;
+    }
+
+    .inline-edit button {
+      padding: 6px 10px;
+      font-size: 11px;
+    }
+
+    .kanban {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .kanban-add-form {
+      display: none;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .kanban-add-form.open { display: flex; }
+    .kanban-add-form input, .kanban-add-form select {
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 6px 8px;
+      font-size: 11px;
+      font-family: inherit;
+      color: var(--ink);
+    }
+    .kanban-add-form input[name="name"] { flex: 1 1 160px; min-width: 120px; }
+    .kanban-add-form input[name="segment"] { flex: 1 1 120px; min-width: 80px; }
+    .kanban-add-form select[name="abmStatus"] { flex: 0 0 auto; }
+    .kanban-add-form button { padding: 6px 10px; font-size: 11px; }
+
+    .kanban-card-menu {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+    }
+    .kanban-card:hover .kanban-card-menu { display: flex; }
+    .kanban-card-menu .inline-edit { margin-top: 0; }
+    .kanban-card-menu button.danger {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .kanban-board {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 10px;
+      background: var(--soft);
+      height: 420px;
+    }
+
+    .kanban-column {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      min-width: 220px;
+      flex: 0 0 220px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .kanban-column-head {
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 800;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .kanban-column-body {
+      padding: 8px;
+      display: grid;
+      gap: 8px;
+      align-content: start;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .kanban-column-body.drag-over {
+      background: #E8EDF5;
+    }
+
+    .kanban-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--blue);
+      border-radius: 5px;
+      padding: 8px;
+      font-size: 12px;
+      cursor: grab;
+    }
+
+    .kanban-card.dragging {
+      opacity: 0.4;
+    }
+
+    .kanban-card strong {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .kanban-card p {
+      margin: 2px 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    @media (max-width: 1120px) {
+      .shell { grid-template-columns: 1fr; }
+      .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid { grid-template-columns: 1fr; }
+      header { display: block; }
+      .header-actions { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (new URLSearchParams(location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embedded-view");
+    }
+  </script>
+  <div class="shell">
+    <aside>
+      <div class="brand">PX Outreach Engine</div>
+      <div class="nav-label">Operação</div>
+      <a class="nav-item active" href="/workday.html">Ações de Hoje</a>
+      <a class="nav-item" href="/signal-feed.html">Feed de Sinais</a>
+      <a class="nav-item" href="/thiago-abm-intelligence.html">Inteligência ABM</a>
+      <a class="nav-item" href="/embarcadores-market.html">Market Intelligence</a>
+      <div class="nav-label">Contexto</div>
+      <div class="nav-item">ABM Embarcadores</div>
+      <div class="nav-item">LinkedIn + Touchpoints</div>
+    </aside>
+
+    <div id="action-toast" class="action-toast"></div>
+    <main>
+      <header>
+        <div>
+          <div class="eyebrow">Operação ABM | fila diária</div>
+          <h1>Ações de Hoje</h1>
+          <div class="muted" id="generated-at">Carregando dados operacionais...</div>
+        </div>
+        <div class="header-actions">
+          <button class="secondary" type="button" id="open-api">Ver JSON</button>
+          <button type="button" id="refresh">Atualizar</button>
+        </div>
+      </header>
+
+      <section class="kpis" id="kpis"></section>
+
+      <section class="queue" id="my-actions">
+        <div class="queue-head">
+          <h2>Minhas Ações</h2>
+          <span class="count" id="my-actions-count">0</span>
+        </div>
+        <div class="queue-body" id="my-actions-body"></div>
+        <form id="my-actions-form" class="task-form">
+          <input type="text" id="task-title" placeholder="Nova ação..." required>
+          <input type="date" id="task-due">
+          <select id="task-severity">
+            <option value="INFO">Info</option>
+            <option value="WARNING">Atenção</option>
+            <option value="CRITICAL">Crítico</option>
+          </select>
+          <button type="submit">Adicionar</button>
+        </form>
+      </section>
+
+      <section class="kpis" id="kanban-kpis"></section>
+
+      <section class="kanban" id="kanban">
+        <div class="queue-head">
+          <h2>Pipeline de Contas Abordadas</h2>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="muted" id="kanban-hint">Arraste os cards para mudar a etapa</span>
+            <button id="kanban-add-btn" style="padding:4px 10px;font-size:11px;">+ Adicionar empresa</button>
+          </div>
+        </div>
+        <form class="kanban-add-form" id="kanban-add-form">
+          <input name="name" placeholder="Nome da empresa *" required>
+          <input name="segment" placeholder="Segmento">
+          <select name="abmStatus">
+            <option value="CONNECTION_SENT">Conexão Enviada</option>
+            <option value="CONNECTION_ACCEPTED">Conexão Aceita</option>
+            <option value="MESSAGE_SENT" selected>Mensagem Enviada</option>
+            <option value="FOLLOW_UP_SENT">Follow-Up Enviado</option>
+            <option value="REPLIED">Respondeu</option>
+            <option value="MEETING_BOOKED">Reunião Agendada</option>
+            <option value="MEETING_DONE">Reunião Realizada</option>
+            <option value="DEAL">Negócio</option>
+            <option value="PAUSED">Pausado</option>
+          </select>
+          <input name="nextAction" placeholder="Próxima ação">
+          <input name="nextActionDueAt" type="date">
+          <button type="submit">Salvar</button>
+          <button type="button" id="kanban-add-cancel">Cancelar</button>
+        </form>
+        <div class="kanban-board" id="kanban-board"></div>
+      </section>
+
+      <section class="grid" id="queues"></section>
+
+      <section class="panel" id="engagement-status-panel">
+        <div class="queue-head">
+          <div>
+            <h2 style="margin:0;">Status Empresas</h2>
+            <p class="muted" style="margin:2px 0 0;font-size:12px;">Contagem reseta na resposta do cliente — não no envio do Thiago</p>
+          </div>
+          <button id="eng-refresh-btn" class="secondary" style="padding:4px 12px;font-size:12px;">Atualizar</button>
+        </div>
+        <div id="eng-columns" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px;"></div>
+        <div id="eng-descartados" style="margin-top:16px;"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const queueMeta = [
+      {
+        key: "highTierNotStarted",
+        label: "Tier 1/2 sem abordagem",
+        short: "Tier sem contato",
+        empty: "Todas as contas de alto tier já têm abordagem iniciada."
+      },
+      {
+        key: "recentConnectionsSent",
+        label: "Conexões enviadas (últimos 7 dias)",
+        short: "Conexões enviadas",
+        empty: "Nenhuma conexão enviada nos últimos 7 dias."
+      },
+      {
+        key: "overdueNextActions",
+        label: "Próximas ações vencidas",
+        short: "Ações vencidas",
+        empty: "Nenhuma próxima ação vencida."
+      }
+    ];
+
+    const kpisEl = document.getElementById("kpis");
+    const queuesEl = document.getElementById("queues");
+    const generatedAtEl = document.getElementById("generated-at");
+    const myActionsBodyEl = document.getElementById("my-actions-body");
+    const myActionsCountEl = document.getElementById("my-actions-count");
+    const myActionsFormEl = document.getElementById("my-actions-form");
+    const kanbanBoardEl = document.getElementById("kanban-board");
+    const kanbanKpisEl = document.getElementById("kanban-kpis");
+
+    const apiBase = window.location.protocol === "file:" ? "http://localhost:3000" : "";
+
+    document.getElementById("refresh").addEventListener("click", () => {
+      loadActions();
+      loadMyActions();
+      loadKanban();
+    });
+
+    document.getElementById("open-api").addEventListener("click", () => {
+      window.open(`${apiBase}/api/workday/actions`, "_blank");
+    });
+
+    async function fetchJson(path, options) {
+      const response = await fetch(path, {
+        ...options,
+        headers: {
+          "Accept": "application/json",
+          ...(options && options.body ? { "Content-Type": "application/json" } : {}),
+          ...(options && options.headers ? options.headers : {})
+        }
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      if (response.status === 204) return null;
+      return response.json();
+    }
+
+    function formatDate(value) {
+      if (!value) return "Sem prazo";
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "Data inválida";
+      return new Intl.DateTimeFormat("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(date);
+    }
+
+    function severityLabel(value) {
+      if (value === "critical") return "Crítico";
+      if (value === "warning") return "Atenção";
+      return "Info";
+    }
+
+    function itemTitle(item) {
+      if (item.company?.name) return item.company.name;
+      if (item.contact?.name) return item.contact.name;
+      return "Item operacional";
+    }
+
+    function renderKpis(data) {
+      kpisEl.innerHTML = queueMeta.map((queue) => {
+        const value = data.summary?.[queue.key] ?? data[queue.key]?.length ?? 0;
+        const tone = value > 0 ? "critical" : "info";
+        return `
+          <article class="kpi ${tone}">
+            <span>${queue.short}</span>
+            <strong>${value}</strong>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderQueues(data) {
+      queuesEl.innerHTML = queueMeta.map((queue) => {
+        const items = data[queue.key] ?? [];
+        const body = items.length === 0
+          ? `<div class="empty">${queue.empty}</div>`
+          : items.map((item) => renderAction(item, queue.key)).join("");
+
+        return `
+          <article class="queue">
+            <div class="queue-head">
+              <h2>${queue.label}</h2>
+              <span class="count">${items.length}</span>
+            </div>
+            <div class="queue-body">${body}</div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function escapeAttr(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+
+    function renderNextActionForm(item, prefill) {
+      const nextActionValue = prefill && item.recommendedAction ? escapeAttr(item.recommendedAction) : "";
+      const dueValue = prefill && item.dueAt ? new Date(item.dueAt).toISOString().slice(0, 10) : "";
+      return `
+        <form class="inline-edit" data-action="save-next-action">
+          <input type="text" data-field="nextAction" placeholder="Próxima ação..." value="${nextActionValue}">
+          <input type="date" data-field="nextActionDueAt" value="${dueValue}">
+          <button type="submit" class="secondary">Salvar</button>
+        </form>
+      `;
+    }
+
+    function renderActionControls(item, queueKey) {
+      let inlineForm = "";
+      let buttons = "";
+
+      switch (queueKey) {
+        case "highTierNotStarted":
+          buttons += `<button class="secondary" type="button" data-action="mark-connection-sent">Enviar conexão</button>`;
+          if (item.company?.id) {
+            buttons += `<button class="secondary" type="button" data-action="defer-7d">Adiar 7 dias</button>`;
+          }
+          break;
+        case "recentConnectionsSent":
+          if (item.company?.id) {
+            buttons += `<button class="secondary" type="button" data-action="mark-accepted">Marcar conexão aceita</button>`;
+          }
+          break;
+        case "acceptedConnectionsWithoutMessage":
+          buttons += `<button class="secondary" type="button" data-action="mark-message-sent">Marcar mensagem enviada</button>`;
+          break;
+        case "overdueNextActions":
+          inlineForm = renderNextActionForm(item, true);
+          if (item.company?.id) {
+            buttons += `<button class="secondary" type="button" data-action="defer-7d">Adiar 7 dias</button>`;
+          }
+          break;
+        case "staleCompanies30Days":
+          if (item.company?.id) {
+            buttons += `<button class="secondary" type="button" data-action="touch-company">Marcar contatada hoje</button>`;
+          }
+          inlineForm = renderNextActionForm(item, false);
+          break;
+        case "unmatchedInboxThreads":
+          buttons += `<button class="secondary" type="button" data-action="archive-thread">Arquivar</button>`;
+          break;
+        case "pendingHandoffs":
+          if (item.company?.id) {
+            buttons += `<button class="secondary" type="button" data-action="resolve-handoff">Marcar handoff resolvido</button>`;
+          }
+          inlineForm = renderNextActionForm(item, true);
+          break;
+        case "newSignalsWithoutNextAction":
+          buttons += `<button class="secondary" type="button" data-action="convert-signal">Converter em ação</button>`;
+          buttons += `<button class="secondary" type="button" data-action="ignore-signal">Ignorar</button>`;
+          break;
+      }
+
+      if (queueKey !== "newSignalsWithoutNextAction") {
+        buttons += `<button class="secondary" type="button" data-action="create-task">Criar tarefa</button>`;
+        buttons += `<button class="secondary" type="button" data-action="dismiss">Dispensar</button>`;
+      }
+
+      return `${inlineForm}<div class="action-controls">${buttons}</div>`;
+    }
+
+    function renderAction(item, queueKey) {
+      const company = item.company?.name ? item.company.name : "Sem empresa vinculada";
+      const contact = item.contact?.name ? item.contact.name : "Sem contato específico";
+      const owner = item.owner?.name ? item.owner.name : "Sem owner";
+
+      return `
+        <div class="action ${item.severity}" data-item-id="${item.id}" data-queue-key="${queueKey}">
+          <div class="action-top">
+            <strong>${itemTitle(item)}</strong>
+            <span class="badge">${severityLabel(item.severity)}</span>
+          </div>
+          <p>${item.reason}</p>
+          <p><strong>Próximo passo:</strong> ${item.recommendedAction}</p>
+          <div class="action-footer">
+            <span>${company} · ${contact}</span>
+            <span>${owner} · ${formatDate(item.dueAt)}</span>
+          </div>
+          ${renderActionControls(item, queueKey)}
+        </div>
+      `;
+    }
+
+    function renderLoading() {
+      kpisEl.innerHTML = "";
+      queuesEl.innerHTML = `<div class="loading">Carregando filas operacionais...</div>`;
+    }
+
+    function renderError(error) {
+      kpisEl.innerHTML = "";
+      queuesEl.innerHTML = `<div class="error">Não foi possível carregar /api/workday/actions. ${error.message}</div>`;
+      generatedAtEl.textContent = "Falha ao carregar dados.";
+    }
+
+    let actionToastTimer = null;
+    const actionToastEl = document.getElementById("action-toast");
+    function showActionError(error, context) {
+      const msg = context
+        ? `Erro ao ${context}: ${error.message}`
+        : error.message;
+      actionToastEl.textContent = msg;
+      actionToastEl.classList.add("visible");
+      if (actionToastTimer) clearTimeout(actionToastTimer);
+      actionToastTimer = setTimeout(() => actionToastEl.classList.remove("visible"), 5000);
+    }
+
+    let lastActionsData = null;
+
+    async function loadActions() {
+      renderLoading();
+      try {
+        const payload = await fetchJson(`${apiBase}/api/workday/actions`);
+        const data = payload.data;
+        lastActionsData = data;
+        renderKpis(data);
+        renderQueues(data);
+        generatedAtEl.textContent = `Atualizado em ${formatDate(data.generatedAt)}`;
+      } catch (apiError) {
+        try {
+          const data = await fetchJson(`${apiBase}/data/workday-actions.json`);
+          lastActionsData = data;
+          renderKpis(data);
+          renderQueues(data);
+          generatedAtEl.textContent = `Atualizado em ${formatDate(data.generatedAt)} · fallback do scan LinkedIn`;
+        } catch (fallbackError) {
+          renderError(apiError);
+        }
+      }
+    }
+
+    function findQueueItem(queueKey, itemId) {
+      const items = lastActionsData?.[queueKey] ?? [];
+      return items.find((entry) => entry.id === itemId) ?? null;
+    }
+
+    queuesEl.addEventListener("click", async (event) => {
+      const button = event.target.closest("button[data-action]");
+      if (!button) return;
+      const card = button.closest(".action[data-item-id]");
+      if (!card) return;
+
+      const itemId = card.dataset.itemId;
+      const queueKey = card.dataset.queueKey;
+      const action = button.dataset.action;
+      const item = findQueueItem(queueKey, itemId);
+      if (!item) return;
+
+      try {
+        let reloadKanban = false;
+
+        if (action === "create-task") {
+          const title = item.company?.name
+            ? `${item.recommendedAction} (${item.company.name})`
+            : item.recommendedAction;
+          const body = {
+            title,
+            severity: (item.severity || "info").toUpperCase()
+          };
+          if (item.dueAt) body.dueAt = item.dueAt;
+          if (item.company?.id) body.companyId = item.company.id;
+          if (item.contact?.id && queueKey !== "unmatchedInboxThreads") body.contactId = item.contact.id;
+
+          await fetchJson(`${apiBase}/api/workday/tasks`, {
+            method: "POST",
+            body: JSON.stringify(body)
+          });
+          await loadMyActions();
+        } else if (action === "dismiss") {
+          await fetchJson(`${apiBase}/api/workday/actions/dismiss`, {
+            method: "POST",
+            body: JSON.stringify({ queueKey, itemKey: itemId })
+          });
+        } else if (action === "mark-connection-sent") {
+          await fetchJson(`${apiBase}/api/companies/ensure-connection-sent`, {
+            method: "POST",
+            body: JSON.stringify({ name: item.company.name })
+          });
+          reloadKanban = true;
+        } else if (action === "mark-accepted") {
+          await fetchJson(`${apiBase}/api/companies/${item.company.id}/abm-status`, {
+            method: "PATCH",
+            body: JSON.stringify({ abmStatus: "CONNECTION_ACCEPTED" })
+          });
+          reloadKanban = true;
+        } else if (action === "mark-message-sent") {
+          await fetchJson(`${apiBase}/api/workday/actions/accepted-connections/${itemId}/mark-message-sent`, {
+            method: "PATCH"
+          });
+          reloadKanban = true;
+        } else if (action === "touch-company") {
+          await fetchJson(`${apiBase}/api/companies/${item.company.id}/touch`, { method: "PATCH" });
+        } else if (action === "archive-thread") {
+          await fetchJson(`${apiBase}/api/workday/actions/inbox-threads/${itemId}/archive`, {
+            method: "PATCH"
+          });
+        } else if (action === "resolve-handoff") {
+          await fetchJson(`${apiBase}/api/companies/${item.company.id}/handoff`, {
+            method: "PATCH",
+            body: JSON.stringify({ handoffStatus: "NONE" })
+          });
+        } else if (action === "defer-7d") {
+          const due = new Date();
+          due.setUTCDate(due.getUTCDate() + 7);
+          await fetchJson(`${apiBase}/api/companies/${item.company.id}/next-action`, {
+            method: "PATCH",
+            body: JSON.stringify({ nextActionDueAt: due.toISOString() })
+          });
+        } else if (action === "convert-signal") {
+          await fetchJson(`${apiBase}/api/signals/${itemId}/convert-to-task`, { method: "POST" });
+          await loadMyActions();
+        } else if (action === "ignore-signal") {
+          await fetchJson(`${apiBase}/api/signals/${itemId}/status`, {
+            method: "PATCH",
+            body: JSON.stringify({ status: "IGNORED" })
+          });
+        }
+
+        await loadActions();
+        if (reloadKanban) await loadKanban();
+      } catch (error) {
+        showActionError(error, "executar ação");
+      }
+    });
+
+    queuesEl.addEventListener("submit", async (event) => {
+      const form = event.target.closest("form[data-action='save-next-action']");
+      if (!form) return;
+      event.preventDefault();
+
+      const card = form.closest(".action[data-item-id]");
+      if (!card) return;
+
+      const itemId = card.dataset.itemId;
+      const queueKey = card.dataset.queueKey;
+      const item = findQueueItem(queueKey, itemId);
+      if (!item || !item.company?.id) return;
+
+      const nextActionInput = form.querySelector("[data-field='nextAction']");
+      const dueInput = form.querySelector("[data-field='nextActionDueAt']");
+
+      const body = {};
+      if (nextActionInput.value.trim()) body.nextAction = nextActionInput.value.trim();
+      if (dueInput.value) body.nextActionDueAt = new Date(`${dueInput.value}T00:00:00`).toISOString();
+      if (Object.keys(body).length === 0) return;
+
+      try {
+        await fetchJson(`${apiBase}/api/companies/${item.company.id}/next-action`, {
+          method: "PATCH",
+          body: JSON.stringify(body)
+        });
+        await loadActions();
+      } catch (error) {
+        showActionError(error, "salvar próxima ação");
+      }
+    });
+
+    function taskSeverityClass(value) {
+      return (value || "INFO").toLowerCase();
+    }
+
+    function taskSeverityLabel(value) {
+      if (value === "CRITICAL") return "Crítico";
+      if (value === "WARNING") return "Atenção";
+      return "Info";
+    }
+
+    function renderTask(task) {
+      const company = task.company?.name ?? null;
+      const contact = task.contact?.name ?? null;
+      const linkLabel = [company, contact].filter(Boolean).join(" · ") || "Sem vínculo";
+
+      return `
+        <div class="action ${taskSeverityClass(task.severity)}" data-task-id="${task.id}">
+          <div class="action-top">
+            <strong>${task.title}</strong>
+            <span class="badge">${taskSeverityLabel(task.severity)}</span>
+          </div>
+          ${task.notes ? `<p>${task.notes}</p>` : ""}
+          <div class="action-footer">
+            <span>${linkLabel}</span>
+            <span>${formatDate(task.dueAt)}</span>
+          </div>
+          <div class="action-controls">
+            <button class="secondary" type="button" data-task-action="remove">Dispensar</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderMyActions(tasks) {
+      myActionsCountEl.textContent = tasks.length;
+      myActionsBodyEl.innerHTML = tasks.length === 0
+        ? `<div class="empty">Nenhuma ação pendente. Adicione uma abaixo.</div>`
+        : tasks.map(renderTask).join("");
+    }
+
+    async function loadMyActions() {
+      try {
+        const payload = await fetchJson(`${apiBase}/api/workday/tasks?status=OPEN`);
+        renderMyActions(payload.data ?? []);
+      } catch (error) {
+        myActionsBodyEl.innerHTML = `<div class="error">Não foi possível carregar /api/workday/tasks. ${error.message}</div>`;
+      }
+    }
+
+    myActionsBodyEl.addEventListener("click", async (event) => {
+      const button = event.target.closest("button[data-task-action]");
+      if (!button) return;
+      const card = button.closest("[data-task-id]");
+      if (!card) return;
+      const taskId = card.dataset.taskId;
+      const action = button.dataset.taskAction;
+
+      try {
+        if (action === "done") {
+          await fetchJson(`${apiBase}/api/workday/tasks/${taskId}`, {
+            method: "PATCH",
+            body: JSON.stringify({ status: "DONE" })
+          });
+        } else if (action === "remove") {
+          await fetchJson(`${apiBase}/api/workday/tasks/${taskId}`, { method: "DELETE" });
+        }
+        await loadMyActions();
+      } catch (error) {
+        myActionsBodyEl.innerHTML = `<div class="error">Não foi possível atualizar a ação. ${error.message}</div>`;
+      }
+    });
+
+    myActionsFormEl.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const titleInput = document.getElementById("task-title");
+      const dueInput = document.getElementById("task-due");
+      const severitySelect = document.getElementById("task-severity");
+
+      const title = titleInput.value.trim();
+      if (!title) return;
+
+      const body = { title, severity: severitySelect.value };
+      if (dueInput.value) {
+        body.dueAt = new Date(`${dueInput.value}T00:00:00`).toISOString();
+      }
+
+      try {
+        await fetchJson(`${apiBase}/api/workday/tasks`, {
+          method: "POST",
+          body: JSON.stringify(body)
+        });
+        titleInput.value = "";
+        dueInput.value = "";
+        severitySelect.value = "INFO";
+        await loadMyActions();
+      } catch (error) {
+        myActionsBodyEl.innerHTML = `<div class="error">Não foi possível criar a ação. ${error.message}</div>`;
+      }
+    });
+
+    let draggedCompanyId = null;
+
+    function renderKanbanCard(company) {
+      const nextActionDueVal = company.nextActionDueAt
+        ? new Date(company.nextActionDueAt).toISOString().slice(0, 10)
+        : "";
+      return `
+        <div class="kanban-card" draggable="true" data-company-id="${company.id}">
+          <strong>${company.name}</strong>
+          ${company.segment ? `<p>${company.segment}</p>` : ""}
+          <p>${company.nextAction ?? "Sem próxima ação"}</p>
+          <p>${company.owner?.name ?? "Sem owner"} · ${formatDate(company.nextActionDueAt)}</p>
+          <div class="kanban-card-menu">
+            <div class="inline-edit">
+              <input type="text" placeholder="Nome" value="${escapeAttr(company.name)}" data-field="name">
+              <input type="text" placeholder="Segmento" value="${escapeAttr(company.segment ?? "")}" data-field="segment">
+            </div>
+            <div class="inline-edit">
+              <input type="text" placeholder="Próxima ação" value="${escapeAttr(company.nextAction ?? "")}" data-field="nextAction" style="flex:1 1 180px">
+              <input type="date" value="${nextActionDueVal}" data-field="nextActionDueAt">
+            </div>
+            <div class="action-controls" style="justify-content:flex-start">
+              <button data-action="save-company" data-company-id="${company.id}">Salvar</button>
+              <button class="secondary" data-action="create-task-from-card" data-company-id="${company.id}" data-company-name="${escapeAttr(company.name)}">Criar tarefa</button>
+              <button data-action="delete-company" data-company-id="${company.id}" class="danger">Excluir</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    const KANBAN_SUCCESS_STAGES = new Set(["MEETING_BOOKED", "MEETING_DONE", "DEAL"]);
+
+    function renderKanbanKpis(data) {
+      const columns = data.columns ?? [];
+      kanbanKpisEl.innerHTML = columns.map((column) => {
+        const tone = KANBAN_SUCCESS_STAGES.has(column.stage) ? "success" : "info";
+        return `
+          <article class="kpi ${tone}">
+            <span>${column.label}</span>
+            <strong>${column.companies.length}</strong>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderKanban(data) {
+      const columns = data.columns ?? [];
+      kanbanBoardEl.innerHTML = columns.map((column) => `
+        <div class="kanban-column">
+          <div class="kanban-column-head">
+            <span>${column.label}</span>
+            <span class="count">${column.companies.length}</span>
+          </div>
+          <div class="kanban-column-body" data-stage="${column.stage}">
+            ${column.companies.map(renderKanbanCard).join("")}
+          </div>
+        </div>
+      `).join("");
+    }
+
+    async function loadKanban() {
+      try {
+        const payload = await fetchJson(`${apiBase}/api/workday/kanban`);
+        renderKanbanKpis(payload.data);
+        renderKanban(payload.data);
+      } catch (_apiError) {
+        try {
+          const snapshot = await fetchJson(`${apiBase}/data/workday-kanban-snapshot.json`);
+          renderKanbanKpis(snapshot);
+          renderKanban(snapshot);
+          kanbanBoardEl.dataset.fromSnapshot = "1";
+        } catch (_snapError) {
+          kanbanKpisEl.innerHTML = "";
+          kanbanBoardEl.innerHTML = `<div class="error">Pipeline indisponível. API e snapshot offline.</div>`;
+        }
+      }
+    }
+
+    kanbanBoardEl.addEventListener("dragstart", (event) => {
+      const card = event.target.closest(".kanban-card");
+      if (!card) return;
+      draggedCompanyId = card.dataset.companyId;
+      card.classList.add("dragging");
+    });
+
+    kanbanBoardEl.addEventListener("dragend", (event) => {
+      const card = event.target.closest(".kanban-card");
+      if (card) card.classList.remove("dragging");
+    });
+
+    kanbanBoardEl.addEventListener("dragover", (event) => {
+      const column = event.target.closest(".kanban-column-body");
+      if (!column) return;
+      event.preventDefault();
+      column.classList.add("drag-over");
+    });
+
+    kanbanBoardEl.addEventListener("dragleave", (event) => {
+      const column = event.target.closest(".kanban-column-body");
+      if (column) column.classList.remove("drag-over");
+    });
+
+    kanbanBoardEl.addEventListener("drop", async (event) => {
+      const column = event.target.closest(".kanban-column-body");
+      if (!column) return;
+      event.preventDefault();
+      column.classList.remove("drag-over");
+
+      if (!draggedCompanyId) return;
+      const stage = column.dataset.stage;
+      const companyId = draggedCompanyId;
+      draggedCompanyId = null;
+
+      try {
+        await fetchJson(`${apiBase}/api/companies/${companyId}/abm-status`, {
+          method: "PATCH",
+          body: JSON.stringify({ abmStatus: stage })
+        });
+      } catch (error) {
+        kanbanBoardEl.innerHTML = `<div class="error">Não foi possível mover a empresa. ${error.message}</div>`;
+      } finally {
+        await loadKanban();
+      }
+    });
+
+    // --- Formulário de adicionar empresa ---
+    const kanbanAddForm = document.getElementById("kanban-add-form");
+    const kanbanAddBtn = document.getElementById("kanban-add-btn");
+
+    kanbanAddBtn.addEventListener("click", () => {
+      kanbanAddForm.classList.toggle("open");
+    });
+
+    document.getElementById("kanban-add-cancel").addEventListener("click", () => {
+      kanbanAddForm.classList.remove("open");
+      kanbanAddForm.reset();
+    });
+
+    kanbanAddForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const fd = new FormData(kanbanAddForm);
+      const body = {};
+      for (const [k, v] of fd.entries()) {
+        if (String(v).trim()) body[k] = String(v).trim();
+      }
+      if (body.nextActionDueAt) {
+        body.nextActionDueAt = new Date(`${body.nextActionDueAt}T00:00:00`).toISOString();
+      }
+      if (!body.name) return;
+      try {
+        await fetchJson(`${apiBase}/api/companies`, {
+          method: "POST",
+          body: JSON.stringify(body)
+        });
+        kanbanAddForm.classList.remove("open");
+        kanbanAddForm.reset();
+        await loadKanban();
+      } catch (error) {
+        showActionError(error, "adicionar empresa");
+      }
+    });
+
+    // --- Editar / excluir cards do Kanban ---
+    kanbanBoardEl.addEventListener("click", async (event) => {
+      const btn = event.target.closest("[data-action]");
+      if (!btn) return;
+      const action = btn.dataset.action;
+      const companyId = btn.dataset.companyId;
+      if (!companyId) return;
+
+      if (action === "save-company") {
+        const card = btn.closest(".kanban-card");
+        const body = {};
+        card.querySelectorAll("[data-field]").forEach((input) => {
+          const val = input.value.trim();
+          if (val) body[input.dataset.field] = val;
+        });
+        if (body.nextActionDueAt) {
+          body.nextActionDueAt = new Date(`${body.nextActionDueAt}T00:00:00`).toISOString();
+        }
+        try {
+          await fetchJson(`${apiBase}/api/companies/${companyId}`, {
+            method: "PATCH",
+            body: JSON.stringify(body)
+          });
+          await loadKanban();
+        } catch (error) {
+          showActionError(error, "salvar empresa");
+        }
+      }
+
+      if (action === "create-task-from-card") {
+        const companyName = btn.dataset.companyName || companyId;
+        const card = btn.closest(".kanban-card");
+        const nextActionInput = card.querySelector("[data-field='nextAction']");
+        const dueInput = card.querySelector("[data-field='nextActionDueAt']");
+        const nextActionText = nextActionInput?.value.trim();
+        const title = nextActionText
+          ? `${nextActionText} (${companyName})`
+          : `Ação ABM — ${companyName}`;
+        const body = { title, companyId, severity: "INFO" };
+        if (dueInput?.value) {
+          body.dueAt = new Date(`${dueInput.value}T00:00:00`).toISOString();
+        }
+        try {
+          await fetchJson(`${apiBase}/api/workday/tasks`, {
+            method: "POST",
+            body: JSON.stringify(body)
+          });
+          await loadMyActions();
+        } catch (error) {
+          showActionError(error, "criar tarefa");
+        }
+      }
+
+      if (action === "delete-company") {
+        if (!confirm(`Excluir esta empresa do pipeline?`)) return;
+        try {
+          await fetchJson(`${apiBase}/api/companies/${companyId}`, { method: "DELETE" });
+          await loadKanban();
+        } catch (error) {
+          showActionError(error, "excluir empresa");
+        }
+      }
+    });
+
+    // ─── Status Empresas ───────────────────────────────────────────────────────
+
+    const ENG_COLUMNS = [
+      { key: "ativo",             label: "Ativo",           color: "#158255", subtitle: "Resposta nos últimos 15 dias" },
+      { key: "segundaAbordagem",  label: "2° Abordagem",    color: "#A05A00", subtitle: "15 a 30 dias sem resposta" },
+      { key: "terceiraAbordagem", label: "3° Abordagem",    color: "#C2410C", subtitle: "30 a 45 dias sem resposta" },
+      { key: "novoDecisor",       label: "Novo Decisor",    color: "#B42318", subtitle: "Mais de 45 dias sem resposta" }
+    ];
+
+    function renderEngCard(item, bucket) {
+      const tier = item.icpTier ? `<span style="font-size:10px;background:var(--blue);color:#fff;border-radius:3px;padding:1px 5px;flex-shrink:0;">${escapeAttr(item.icpTier)}</span>` : "";
+      const days = item.daysSinceLastReply;
+      const daysLabel = days === 0 ? "Hoje" : `${days}d sem resposta`;
+
+      let extra = "";
+      if (bucket === "maturacao") {
+        const reentryLabel = item.daysUntilReentry > 0
+          ? `Disponível em ${item.daysUntilReentry}d`
+          : "Disponível para reentrada";
+        const tentativa = item.attemptNumber ? `Tentativa ${item.attemptNumber}/3` : "";
+        extra = `
+          <div style="margin-top:6px;font-size:11px;color:var(--muted);display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line);padding-top:6px;">
+            ${item.nomeDecisorDescartado ? `<span><strong>Decisor descartado:</strong> ${escapeAttr(item.nomeDecisorDescartado)} (${escapeAttr(item.cargoDecisorDescartado || "")})</span>` : ""}
+            <span style="color:var(--blue);">${reentryLabel}</span>
+            ${tentativa ? `<span>${tentativa}</span>` : ""}
+          </div>`;
+      } else if (bucket === "reentrada") {
+        const tentativa = item.attemptNumber ? `Tentativa ${item.attemptNumber}/3` : "";
+        extra = `
+          <div style="margin-top:6px;font-size:11px;display:flex;flex-direction:column;gap:4px;border-top:1px solid var(--line);padding-top:6px;">
+            ${item.nomeDecisorDescartado ? `<span style="color:var(--muted);font-size:11px;"><strong>Decisor descartado:</strong> ${escapeAttr(item.nomeDecisorDescartado)} (${escapeAttr(item.cargoDecisorDescartado || "")})</span>` : ""}
+            ${tentativa ? `<span style="color:var(--muted);font-size:11px;">${tentativa}</span>` : ""}
+            <button class="secondary" style="font-size:11px;padding:3px 10px;" data-action="eng-retornar" data-company-id="${item.id}">Retomar Abordagem</button>
+          </div>`;
+      } else if (bucket === "arquivados") {
+        const dateStr = item.discardedAt ? new Date(item.discardedAt).toLocaleDateString("pt-BR") : "—";
+        extra = `
+          <div style="margin-top:6px;font-size:11px;color:var(--muted);display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line);padding-top:6px;">
+            ${item.nomeDecisor ? `<span><strong>Último decisor:</strong> ${escapeAttr(item.nomeDecisor)} (${escapeAttr(item.cargoDecisor || "")})</span>` : ""}
+            <span><strong>Arquivado em:</strong> ${dateStr}</span>
+            <span style="color:#B42318;font-weight:600;">3 tentativas esgotadas</span>
+          </div>`;
+      } else if (bucket !== "descartados") {
+        extra = `
+          <form data-action="eng-dispensar-form" data-company-id="${item.id}" style="margin-top:8px;display:flex;flex-direction:column;gap:4px;">
+            <input name="nomeDecisor" placeholder="Nome do Decisor*" style="font-size:11px;padding:4px 6px;border:1px solid var(--line);border-radius:4px;width:100%;box-sizing:border-box;">
+            <input name="cargoDecisor" placeholder="Cargo do Decisor*" style="font-size:11px;padding:4px 6px;border:1px solid var(--line);border-radius:4px;width:100%;box-sizing:border-box;">
+            <button type="submit" class="danger" style="font-size:11px;padding:3px 10px;margin-top:2px;">Dispensar</button>
+          </form>`;
+      }
+
+      return `
+        <div style="background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:8px 10px;" data-eng-id="${item.id}">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin-bottom:2px;">
+            <span style="font-weight:600;font-size:12px;line-height:1.3;">${escapeAttr(item.name)}</span>
+            ${tier}
+          </div>
+          ${item.segment ? `<p style="color:var(--muted);margin:0;font-size:11px;">${escapeAttr(item.segment)}</p>` : ""}
+          <p style="color:var(--muted);margin:4px 0 0;font-size:11px;">${daysLabel}</p>
+          ${item.nextAction ? `<p style="margin:4px 0 0;font-size:11px;color:var(--ink);">→ ${escapeAttr(item.nextAction)}</p>` : ""}
+          ${extra}
+        </div>`;
+    }
+
+    function renderEngagementStatus(data) {
+      const columnsEl = document.getElementById("eng-columns");
+      columnsEl.innerHTML = ENG_COLUMNS.map(col => {
+        const items = data[col.key] || [];
+        const cards = items.length === 0
+          ? `<p style="font-size:12px;color:var(--muted);margin:0;">Nenhuma empresa neste estágio.</p>`
+          : items.map(item => renderEngCard(item, col.key)).join("");
+        return `
+          <div style="background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+              <span style="font-weight:700;font-size:13px;color:${col.color};">${col.label}</span>
+              <span style="background:${col.color};color:#fff;border-radius:999px;padding:1px 9px;font-size:11px;font-weight:700;">${items.length}</span>
+            </div>
+            <p style="font-size:11px;color:var(--muted);margin:0 0 10px;">${col.subtitle}</p>
+            <div style="display:flex;flex-direction:column;gap:6px;">${cards}</div>
+          </div>`;
+      }).join("");
+
+      function renderSecondarySection(title, color, items, bucket, emptyText) {
+        const badge = items.length > 0
+          ? `<span style="background:${color};color:#fff;border-radius:999px;padding:1px 9px;font-size:11px;font-weight:700;">${items.length}</span>`
+          : "";
+        const body = items.length === 0
+          ? `<p style="color:var(--muted);font-size:12px;margin:0;">${emptyText}</p>`
+          : `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;">${items.map(i => renderEngCard(i, bucket)).join("")}</div>`;
+        return `
+          <div style="background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:14px;margin-top:12px;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+              <span style="font-weight:700;font-size:13px;color:${color};">${title}</span>${badge}
+            </div>
+            ${body}
+          </div>`;
+      }
+
+      const descEl = document.getElementById("eng-descartados");
+      descEl.innerHTML =
+        renderSecondarySection("⚠ Prazo Esgotado — Dispensar Decisor", "#B42318", data.prazoEsgotado || [], "prazoEsgotado", "Nenhuma empresa com prazo esgotado.") +
+        renderSecondarySection("Em Maturação", "#6B5B07", data.maturacao || [], "maturacao", "Nenhuma empresa em período de maturação.") +
+        renderSecondarySection("Reentrada Disponível", "#0A7B3E", data.reentrada || [], "reentrada", "Nenhuma empresa aguardando reentrada.") +
+        renderSecondarySection("Arquivado", "#6B7280", data.arquivados || [], "arquivados", "Nenhuma empresa arquivada.");
+    }
+
+    async function loadEngagementStatus() {
+      document.getElementById("eng-columns").innerHTML =
+        `<div style="grid-column:1/-1;color:var(--muted);font-size:13px;padding:8px 0;">Carregando…</div>`;
+      try {
+        const res = await fetchJson(`${apiBase}/api/companies/engagement-status`);
+        renderEngagementStatus(res.data);
+      } catch (e) {
+        document.getElementById("eng-columns").innerHTML =
+          `<div style="grid-column:1/-1;color:var(--red);font-size:13px;">Erro ao carregar status de empresas.</div>`;
+      }
+    }
+
+    document.getElementById("eng-refresh-btn").addEventListener("click", loadEngagementStatus);
+
+    document.getElementById("eng-columns").addEventListener("submit", async (e) => {
+      const form = e.target.closest("[data-action='eng-dispensar-form']");
+      if (!form) return;
+      e.preventDefault();
+      const companyId = form.dataset.companyId;
+      if (!companyId) return;
+      const nomeDecisor = form.querySelector("[name='nomeDecisor']").value.trim();
+      const cargoDecisor = form.querySelector("[name='cargoDecisor']").value.trim();
+      if (!nomeDecisor || !cargoDecisor) {
+        alert("Preencha o nome e o cargo do decisor.");
+        return;
+      }
+      const submitBtn = form.querySelector("button[type='submit']");
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = "Dispensando…"; }
+      try {
+        const result = await fetchJson(`${apiBase}/api/workday/actions/dispensar-decisor`, {
+          method: "POST",
+          body: JSON.stringify({ companyId, nomeDecisor, cargoDecisor })
+        });
+        if (result.data?.archived) {
+          alert(`Empresa arquivada após 3 tentativas. Status atualizado para Descartado.`);
+        }
+        await loadEngagementStatus();
+        await loadMyActions();
+      } catch (err) {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = "Dispensar"; }
+        showActionError(err, "dispensar decisor");
+      }
+    });
+
+    document.getElementById("eng-descartados").addEventListener("click", async (e) => {
+      const btn = e.target.closest("[data-action='eng-retornar']");
+      if (!btn) return;
+      const companyId = btn.dataset.companyId;
+      if (!companyId) return;
+      btn.disabled = true;
+      btn.textContent = "Retomando…";
+      try {
+        await fetchJson(`${apiBase}/api/workday/actions/retornar-decisor`, {
+          method: "POST",
+          body: JSON.stringify({ companyId })
+        });
+        await Promise.all([loadEngagementStatus(), loadMyActions()]);
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = "Retomar Abordagem";
+        showActionError(err, "retomar empresa");
+      }
+    });
+
+    loadActions();
+    loadMyActions();
+    loadKanban();
+    loadEngagementStatus();
+  </script>
+</body>
+</html>

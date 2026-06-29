@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inteligência ABM Thiago - PX Outreach Engine</title>
+  <style>
+    :root {
+      --blue:#0F52BA; --ink:#172033; --muted:#667085; --line:#D9E2F2; --bg:#EEF2F7; --panel:#FFFFFF; --green:#087443; --slate:#111827;
+      --color-primary:#2563EB; --color-primary-light:#3B82F6; --color-primary-dark:#1D4ED8;
+      --color-success:#10B981; --color-warning:#F59E0B; --color-sidebar-bg:#1A1A2E;
+      --color-text-primary:#111827; --color-text-secondary:#6B7280; --color-border:#E5E7EB; --color-bg-subtle:#F9FAFB;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:var(--bg); }
+    .shell { min-height:100vh; display:grid; grid-template-columns:240px 1fr; gap:14px; padding:14px; }
+    aside { background:var(--color-sidebar-bg); color:white; border-radius:6px; padding:18px 0; position:sticky; top:14px; height:calc(100vh - 28px); }
+    .brand { display:flex; align-items:center; gap:8px; font-size:15px; font-weight:800; margin-bottom:24px; padding:0 20px; }
+    .brand img { width:28px; height:28px; padding:4px; border-radius:6px; background:#FFFFFF; object-fit:contain; }
+    .nav-label { color:#6B7280; font-size:0.65rem; text-transform:uppercase; font-weight:800; letter-spacing:0.12em; margin:20px 20px 8px; }
+    .nav-item {
+      display:block; width:100%; padding:10px 20px; color:#CBD5E1; font-size:0.875rem; font-weight:500;
+      border-left:3px solid transparent; border-top:none; border-right:none; border-bottom:none;
+      cursor:pointer; background:transparent; font-family:inherit; text-align:left; text-decoration:none; transition:background 0.15s ease;
+    }
+    .nav-item:hover { background:rgba(255,255,255,0.07); color:#FFFFFF; }
+    .nav-item.active { border-left:3px solid #3B82F6; background:rgba(59,130,246,0.12); color:#FFFFFF; font-weight:600; }
+    main { display:grid; gap:14px; min-width:0; }
+    .topbar, .panel-card { background:var(--panel); border:1px solid var(--line); border-radius:6px; }
+    .topbar.page-header { padding:18px 20px; display:flex; justify-content:space-between; align-items:flex-start; gap:18px; }
+    h1 { margin:0 0 5px; font-size:1.5rem; font-weight:700; color:var(--color-text-primary); letter-spacing:0; }
+    h2 { margin:0 0 14px; font-size:16px; color:var(--blue); }
+    p { margin:0; }
+    .muted, .subtitle { color:var(--muted); font-size:13px; }
+    .subtitle { margin-top:4px; }
+    .week-badge { background:#DBEAFE; color:#1E40AF; font-size:0.75rem; font-weight:600; padding:4px 12px; border-radius:100px; letter-spacing:0.03em; white-space:nowrap; }
+    .section-view { display:none; gap:14px; }
+    .section-view.active { display:grid; }
+    .grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; }
+    .kpi { background:white; border:1px solid var(--line); border-top:3px solid transparent; border-radius:8px; padding:20px; min-height:98px; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+    .kpi.volume { border-top-color:#2563EB; }
+    .kpi.conversion { border-top-color:#10B981; }
+    .kpi.time { border-top-color:#F59E0B; }
+    .kpi-label { display:block; font-size:0.72rem; font-weight:500; color:#6B7280; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; }
+    .kpi-value { display:block; font-size:2rem; font-weight:800; color:#111827; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .panel-card { padding:18px; }
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    th { text-align:left; color:#344054; background:#F2F5FA; border-bottom:1px solid var(--line); padding:10px; }
+    td { border-bottom:1px solid #EEF2F7; padding:10px; vertical-align:top; }
+    .num { text-align:right; font-variant-numeric:tabular-nums; }
+    .barrow { display:grid; grid-template-columns:150px 1fr 42px; gap:10px; align-items:center; margin-bottom:10px; font-size:13px; }
+    .bar { height:10px; background:#E8EFFE; border-radius:6px; overflow:hidden; }
+    .bar span { display:block; height:100%; background:linear-gradient(90deg, #1D4ED8 0%, #3B82F6 100%); border-radius:6px; transition:width 0.4s ease; }
+    .funnel-value { font-weight:700; color:#1D4ED8; min-width:28px; text-align:right; }
+    .touchpoints-table td { padding:10px 0; border-bottom:1px solid #F3F4F6; }
+    .touchpoints-table td:last-child { text-align:right; font-weight:700; color:#111827; }
+    .touchpoints-table tr.time td:last-child { color:#F59E0B; }
+    .ranking-table th { font-size:0.75rem; font-weight:600; color:#6B7280; text-transform:uppercase; letter-spacing:0.05em; padding:8px 12px; border-bottom:2px solid #E5E7EB; background:none; }
+    .ranking-table td { padding:12px 12px; font-size:0.875rem; }
+    .ranking-table tr:nth-child(even) td { background:#F9FAFB; }
+    .status-badge { display:inline-block; padding:2px 10px; border-radius:100px; font-size:0.72rem; font-weight:600; background:#F3F4F6; color:#374151; }
+    .status-badge.is-meeting-done { background:#D1FAE5; color:#065F46; }
+    .status-badge.is-meeting-scheduled { background:#DBEAFE; color:#1E40AF; }
+    .status-badge.is-routed { background:#FEF3C7; color:#92400E; }
+    .status-badge.is-positive { background:#EDE9FE; color:#5B21B6; }
+    .status-badge.is-negative { background:#FEE2E2; color:#991B1B; }
+    .insights { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .insight { border-left:4px solid var(--blue); background:#FBFCFF; padding:12px 14px; line-height:1.45; }
+    .insight strong { display:block; margin-bottom:5px; }
+    .trigger-badge { display:inline-block; padding:2px 8px; border-radius:100px; font-size:0.7rem; font-weight:600; white-space:nowrap; }
+    .trigger-badge.tl { background:#D1FAE5; color:#065F46; }
+    .trigger-badge.direct { background:#F3F4F6; color:#374151; }
+    .objection-tag { display:inline-block; padding:2px 7px; border-radius:4px; font-size:0.7rem; background:#FEF3C7; color:#92400E; margin:2px 2px 0 0; line-height:1.6; }
+    .blocker-tag { display:inline-block; padding:2px 7px; border-radius:4px; font-size:0.7rem; background:#FEE2E2; color:#991B1B; margin:2px 2px 0 0; line-height:1.6; }
+    .error-block { border-radius:6px; padding:14px 16px; margin-bottom:10px; }
+    .error-block.severity-high { background:#FFF1F0; border-left:4px solid #B42318; }
+    .error-block.severity-mid { background:#FFFAEB; border-left:4px solid #D97706; }
+    .error-block.severity-low { background:#F0F9FF; border-left:4px solid #0369A1; }
+    .error-block .error-title { font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:6px; }
+    .error-block.severity-high .error-title { color:#B42318; }
+    .error-block.severity-mid .error-title { color:#92400E; }
+    .error-block.severity-low .error-title { color:#0369A1; }
+    .error-items { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px; }
+    .error-items li { font-size:0.8rem; color:#374151; }
+    .error-items li strong { color:#111827; }
+    .form-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:12px; }
+    .full { grid-column:1 / -1; }
+    label { display:grid; gap:5px; color:var(--muted); font-size:11px; font-weight:800; text-transform:uppercase; }
+    input, select, textarea { width:100%; border:1px solid var(--line); border-radius:5px; padding:10px; font:inherit; color:var(--ink); background:white; }
+    textarea { min-height:86px; resize:vertical; }
+    .action-button { border:1px solid var(--blue); background:var(--blue); color:white; border-radius:5px; padding:10px 13px; font-weight:800; cursor:pointer; min-height:40px; }
+    .action-button.secondary { background:white; color:var(--blue); }
+    .action-button.danger { background:white; border-color:#B42318; color:#B42318; }
+    .toolbar { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .registry-layout { display:grid; grid-template-columns:minmax(360px, .45fr) minmax(580px, 1fr); gap:14px; align-items:start; }
+    .registry-list { overflow:auto; max-height:620px; }
+    .pill { display:inline-block; border:1px solid var(--line); background:#F2F5FA; border-radius:999px; padding:3px 7px; font-size:11px; font-weight:800; color:#344054; white-space:nowrap; }
+    .pill.good { color:#087443; background:#ECFDF3; border-color:#ABEFC6; }
+    .pill.warn { color:#A15C07; background:#FFFAEB; border-color:#FEDF89; }
+    .pill.bad { color:#B42318; background:#FEF3F2; border-color:#FECDCA; }
+    .export-box { min-height:95px; font-family:Consolas, monospace; font-size:12px; }
+    .empty { color:var(--muted); padding:18px; border:1px dashed var(--line); border-radius:6px; text-align:center; }
+    .embedded-frame { width:100%; height:calc(100vh - 80px); border:0; border-radius:10px; background:white; display:block; }
+    @media (max-width:1100px) { .shell { grid-template-columns:1fr; } aside { position:static; height:auto; } .grid, .two-col, .insights, .registry-layout, .form-grid { grid-template-columns:1fr; } }
+    .btn-refresh { display:inline-flex; align-items:center; gap:7px; background:var(--blue); color:white; border:none; border-radius:6px; padding:9px 16px; font-size:13px; font-weight:700; cursor:pointer; white-space:nowrap; transition:background .15s; }
+    .btn-refresh:hover { background:#0A3C8A; }
+    .btn-refresh:disabled { background:#94A3B8; cursor:not-allowed; }
+    .btn-refresh .spin { display:inline-block; }
+    .btn-refresh.loading .spin { animation:spin .8s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .weekly-toolbar { display:flex; justify-content:space-between; align-items:center; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:12px 18px; }
+    .weekly-toolbar .meta { font-size:13px; color:var(--muted); }
+    .weekly-toolbar .meta strong { color:var(--ink); }
+    #refresh-status { font-size:12px; color:var(--muted); }
+    /* ICP Coverage */
+    .icp-coverage { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:20px 24px; }
+    .icp-coverage h2 { font-size:14px; font-weight:700; color:var(--ink); margin:0 0 18px; }
+    .icp-coverage-inner { display:grid; grid-template-columns:180px 1fr; gap:28px; align-items:start; }
+    .icp-donut-wrap { display:flex; flex-direction:column; align-items:center; gap:12px; }
+    .icp-donut-legend { font-size:12px; color:var(--text); display:flex; flex-direction:column; gap:5px; align-self:stretch; }
+    .icp-legend-item { display:flex; align-items:center; gap:6px; }
+    .icp-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+    .icp-dot.approached { background:#0F52BA; }
+    .icp-dot.remaining { background:#e5e7eb; border:1px solid #d1d5db; }
+    .icp-legend-total { font-size:11px; color:var(--muted); margin-top:2px; }
+    .icp-seg-header { display:grid; grid-template-columns:170px 1fr 80px 42px; gap:8px; font-size:11px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em; padding-bottom:6px; border-bottom:1px solid var(--line); margin-bottom:4px; }
+    .icp-seg-row { display:grid; grid-template-columns:170px 1fr 80px 42px; gap:8px; align-items:center; padding:4px 0; border-bottom:1px solid #f3f4f6; font-size:12px; }
+    .icp-seg-row:last-child { border-bottom:none; }
+    .icp-seg-label { color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .icp-seg-bar-bg { height:7px; background:#f3f4f6; border-radius:999px; overflow:hidden; }
+    .icp-seg-bar-fill { height:100%; background:#0F52BA; border-radius:999px; }
+    .icp-seg-counts { font-size:11px; color:var(--ink); text-align:right; white-space:nowrap; }
+    .icp-seg-total { color:var(--muted); }
+    .icp-seg-pct { font-size:11px; font-weight:600; color:#0F52BA; text-align:right; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><img src="/px-logo.png" alt="PX"> PX Outreach Engine</div>
+      <button class="nav-item active" data-view="weekly">Dashboard Semanal</button>
+      <button class="nav-item" data-view="patterns">Estudo de Padrões</button>
+      <button class="nav-item" data-view="embarcadores">Painel Embarcadores</button>
+      <button class="nav-item" data-view="bid">BID Embarcadores</button>
+      <div class="nav-label">Compartilhar</div>
+      <a class="nav-item" id="share-link" href="#" onclick="copyShareLink(event)">
+        <span id="share-label">Copiar link</span>
+      </a>
+    </aside>
+
+    <main>
+      <div class="topbar page-header">
+        <div>
+          <h1>Inteligência ABM Thiago</h1>
+          <p class="subtitle">Três sessões separadas: acompanhamento semanal, estudo de padrões e cadastro de campanhas.</p>
+        </div>
+        <span class="week-badge">Semana 2026-S27</span>
+      </div>
+
+      <div id="weekly" class="section-view active">
+        <div class="weekly-toolbar">
+          <div class="meta">Pipeline de Contas Abordadas · <strong>29/06/2026, 09:16:37</strong></div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <span id="refresh-status"></span>
+            <button class="btn-refresh" id="btn-refresh" onclick="refreshDashboard()"><span class="spin">↻</span> Atualizar</button>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="kpi volume"><span class="kpi-label">Empresas no pipeline</span><strong class="kpi-value">48</strong></div>
+          <div class="kpi volume"><span class="kpi-label">Total abordadas</span><strong class="kpi-value">63</strong></div>
+          <div class="kpi volume"><span class="kpi-label">Pausadas</span><strong class="kpi-value">15</strong></div>
+          <div class="kpi volume"><span class="kpi-label">Com resposta ou mais</span><strong class="kpi-value">13</strong></div>
+          <div class="kpi conversion"><span class="kpi-label">Taxa de resposta</span><strong class="kpi-value">27,1%</strong></div>
+          <div class="kpi conversion"><span class="kpi-label">Taxa de reunião</span><strong class="kpi-value">12,5%</strong></div>
+          <div class="kpi conversion"><span class="kpi-label">Taxa de negócio</span><strong class="kpi-value">10,4%</strong></div>
+          <div class="kpi time"><span class="kpi-label">Tempo até 1ª resposta</span><strong class="kpi-value">6,7 dias</strong></div>
+        </div>
+
+        <div class="icp-coverage">
+            <h2>Cobertura ICP</h2>
+            <div class="icp-coverage-inner">
+              <div class="icp-donut-wrap">
+                <svg width="120" height="120" viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="48" fill="none" stroke="#e5e7eb" stroke-width="12"/>
+                  <circle cx="60" cy="60" r="48" fill="none" stroke="#0F52BA" stroke-width="12"
+                    stroke-dasharray="118.01 301.59"
+                    stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                  <text x="60" y="56" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">39%</text>
+                  <text x="60" y="72" text-anchor="middle" font-size="10" fill="#6b7280">abordadas</text>
+                </svg>
+                <div class="icp-donut-legend">
+                  <div class="icp-legend-item"><span class="icp-dot approached"></span>63 abordadas</div>
+                  <div class="icp-legend-item"><span class="icp-dot remaining"></span>98 a abordar</div>
+                  <div class="icp-legend-total">161 mapeadas</div>
+                </div>
+              </div>
+              <div>
+                <div class="icp-seg-header"><span>Segmento</span><span></span><span style="text-align:right">Abord./Total</span><span style="text-align:right">Cob.</span></div>
+                <div class="icp-seg-row">
+              <div class="icp-seg-label">Alimentos &amp; Bebidas</div>
+              <div><div class="icp-seg-bar-bg" style="width:100%"><div class="icp-seg-bar-fill" style="width:57%"></div></div></div>
+              <div class="icp-seg-counts">12<span class="icp-seg-total">/21</span></div>
+              <div class="icp-seg-pct">57%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Construção Civil</div>
+              <div><div class="icp-seg-bar-bg" style="width:95%"><div class="icp-seg-bar-fill" style="width:25%"></div></div></div>
+              <div class="icp-seg-counts">5<span class="icp-seg-total">/20</span></div>
+              <div class="icp-seg-pct">25%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">E-commerce &amp; Varejo</div>
+              <div><div class="icp-seg-bar-bg" style="width:81%"><div class="icp-seg-bar-fill" style="width:41%"></div></div></div>
+              <div class="icp-seg-counts">7<span class="icp-seg-total">/17</span></div>
+              <div class="icp-seg-pct">41%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Farmacêutico &amp; Saúde</div>
+              <div><div class="icp-seg-bar-bg" style="width:76%"><div class="icp-seg-bar-fill" style="width:44%"></div></div></div>
+              <div class="icp-seg-counts">7<span class="icp-seg-total">/16</span></div>
+              <div class="icp-seg-pct">44%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Indústria Pesada</div>
+              <div><div class="icp-seg-bar-bg" style="width:76%"><div class="icp-seg-bar-fill" style="width:56%"></div></div></div>
+              <div class="icp-seg-counts">9<span class="icp-seg-total">/16</span></div>
+              <div class="icp-seg-pct">56%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Combustíveis, Energia &amp; Química</div>
+              <div><div class="icp-seg-bar-bg" style="width:67%"><div class="icp-seg-bar-fill" style="width:29%"></div></div></div>
+              <div class="icp-seg-counts">4<span class="icp-seg-total">/14</span></div>
+              <div class="icp-seg-pct">29%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Agro &amp; Commodities</div>
+              <div><div class="icp-seg-bar-bg" style="width:62%"><div class="icp-seg-bar-fill" style="width:38%"></div></div></div>
+              <div class="icp-seg-counts">5<span class="icp-seg-total">/13</span></div>
+              <div class="icp-seg-pct">38%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Cosméticos &amp; Higiene</div>
+              <div><div class="icp-seg-bar-bg" style="width:52%"><div class="icp-seg-bar-fill" style="width:45%"></div></div></div>
+              <div class="icp-seg-counts">5<span class="icp-seg-total">/11</span></div>
+              <div class="icp-seg-pct">45%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Automotivo &amp; Pneus</div>
+              <div><div class="icp-seg-bar-bg" style="width:52%"><div class="icp-seg-bar-fill" style="width:18%"></div></div></div>
+              <div class="icp-seg-counts">2<span class="icp-seg-total">/11</span></div>
+              <div class="icp-seg-pct">18%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Têxtil &amp; Vestuário</div>
+              <div><div class="icp-seg-bar-bg" style="width:48%"><div class="icp-seg-bar-fill" style="width:40%"></div></div></div>
+              <div class="icp-seg-counts">4<span class="icp-seg-total">/10</span></div>
+              <div class="icp-seg-pct">40%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Eletro &amp; Tecnologia</div>
+              <div><div class="icp-seg-bar-bg" style="width:38%"><div class="icp-seg-bar-fill" style="width:25%"></div></div></div>
+              <div class="icp-seg-counts">2<span class="icp-seg-total">/8</span></div>
+              <div class="icp-seg-pct">25%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Logística &amp; Transporte</div>
+              <div><div class="icp-seg-bar-bg" style="width:19%"><div class="icp-seg-bar-fill" style="width:25%"></div></div></div>
+              <div class="icp-seg-counts">1<span class="icp-seg-total">/4</span></div>
+              <div class="icp-seg-pct">25%</div>
+            </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="two-col">
+          <section class="panel-card">
+            <h2>Funil Da Semana</h2>
+            <div class="barrow"><div>Conexão Enviada</div><div class="bar"><span style="width:62%"></span></div><div class="funnel-value">8</div></div>
+<div class="barrow"><div>Conexão Aceita</div><div class="bar"><span style="width:46%"></span></div><div class="funnel-value">6</div></div>
+<div class="barrow"><div>Mensagem Enviada</div><div class="bar"><span style="width:100%"></span></div><div class="funnel-value">13</div></div>
+<div class="barrow"><div>Follow-Up Enviado</div><div class="bar"><span style="width:62%"></span></div><div class="funnel-value">8</div></div>
+<div class="barrow"><div>Respondeu</div><div class="bar"><span style="width:54%"></span></div><div class="funnel-value">7</div></div>
+<div class="barrow"><div>Reunião Realizada</div><div class="bar"><span style="width:8%"></span></div><div class="funnel-value">1</div></div>
+<div class="barrow"><div>Negócio</div><div class="bar"><span style="width:38%"></span></div><div class="funnel-value">5</div></div>
+          </section>
+          <section class="panel-card">
+            <h2>Touchpoints E Tempo</h2>
+            <table class="touchpoints-table"><tbody>
+              <tr><td>Touchpoints enviados</td><td class="num">24</td></tr>
+              <tr><td>Touchpoints recebidos</td><td class="num">10</td></tr>
+              <tr class="time"><td>Média desde último outbound</td><td class="num">2,1 dias</td></tr>
+              <tr class="time"><td>Tempo médio até 1ª resposta</td><td class="num">6,7 dias</td></tr>
+            </tbody></table>
+          </section>
+        </div>
+        <section class="panel-card">
+          <h2>Ranking De Contas</h2>
+          <table class="ranking-table">
+            <thead><tr><th>Empresa</th><th class="num">Contatos</th><th class="num">TP enviados</th><th class="num">TP recebidos</th><th>Status da conta</th><th class="num">Score</th></tr></thead>
+            <tbody><tr><td><strong>XBRI</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Negócio</span></td><td class="num">90</td></tr>
+<tr><td><strong>Natura</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Negócio</span></td><td class="num">90</td></tr>
+<tr><td><strong>CIMED</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Negócio</span></td><td class="num">90</td></tr>
+<tr><td><strong>Magazine Luiza</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Negócio</span></td><td class="num">90</td></tr>
+<tr><td><strong>Petrobras</strong></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Negócio</span></td><td class="num">90</td></tr>
+<tr><td><strong>Gerdau</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Reunião Realizada</span></td><td class="num">80</td></tr>
+<tr><td><strong>Vibra Energia</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>Casas Bahia</strong></td><td class="num">1</td><td class="num">4</td><td class="num">1</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>L'Oréal</strong></td><td class="num">1</td><td class="num">2</td><td class="num">2</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>Continental Pneus</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>Minerva Foods</strong></td><td class="num">1</td><td class="num">1</td><td class="num">1</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>Tramontina</strong></td><td class="num">2</td><td class="num">6</td><td class="num">5</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>Boticário</strong></td><td class="num">1</td><td class="num">2</td><td class="num">1</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>Amazon Brasil</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge ">Follow-up</span></td><td class="num">50</td></tr>
+<tr><td><strong>LG Electronics Brasil</strong></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge ">Follow-up</span></td><td class="num">50</td></tr></tbody>
+          </table>
+        </section>
+        <section class="panel-card">
+          <h2>Contatos Ativos (revisão/limpeza)</h2>
+          <p class="muted" style="margin-bottom:14px;">Lista completa dos 76 contatos ativos da semana atual, para apoiar a revisão de quais contatos não fazem parte do escopo ABM.</p>
+          <table class="ranking-table">
+            <thead><tr><th>Contato</th><th>Empresa</th><th>Cargo/Headline</th><th>Status</th><th class="num">TP enviados</th><th class="num">TP recebidos</th><th class="num">Dias desde último contato</th></tr></thead>
+            <tbody><tr><td><strong>Alex Soares</strong></td><td>A apurar</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Felipe Romera</strong></td><td>A apurar</td><td>Environmental &amp; Sustainability Executive | Industrial &amp; Environmental Operations | ESG Strategy &amp; Performance | Supply Chain</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">2</td><td class="num">4</td><td class="num">24</td></tr>
+<tr><td><strong>Felipe Rosa</strong></td><td>A apurar</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>José Amaral</strong></td><td>A apurar</td><td>Início</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">1</td><td class="num">0</td><td class="num">10</td></tr>
+<tr><td><strong>Thomas Gris</strong></td><td>A apurar</td><td>Início</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">1</td><td class="num">0</td><td class="num">10</td></tr>
+<tr><td><strong>Bárbara Forlin</strong></td><td>Aché</td><td>Diretora de suprimentos | Head de suprimentos | Aché Laboratórios Farmacêuticos</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Rafael Caldas</strong></td><td>Amazon</td><td>Country Leader - Amazon Logistics Brazil</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">29</td></tr>
+<tr><td><strong>Alexandre Westphalen</strong></td><td>Americanas</td><td>Início</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Sérgio Botelho</strong></td><td>Arcelor Mittal</td><td>Diretor Executivo Mineração Serra Azul - Arcelor Mittal</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Eduardo Rodrigues</strong></td><td>Archer Daniels Midland Company</td><td>Commercial Strategy Director - Latam at Archer Daniels Midland Company</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">72</td></tr>
+<tr><td><strong>Vítor Vinuesa</strong></td><td>Archer Daniels Midland Company</td><td>South America Logistics Director na Archer Daniels Midland Company</td><td><span class="status-badge ">Follow-up</span></td><td class="num">3</td><td class="num">0</td><td class="num">51</td></tr>
+<tr><td><strong>Marcelo Simões Pato</strong></td><td>Assai Atacadista</td><td>5 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Antonio Malheiro</strong></td><td>Bauducco</td><td></td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">70</td></tr>
+<tr><td><strong>Eduardo JAVAROTTO</strong></td><td>Boticário</td><td></td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">70</td></tr>
+<tr><td><strong>Laís Marangoni Matschulat</strong></td><td>Boticário</td><td></td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">77</td></tr>
+<tr><td><strong>Luciano Xavier de Miranda</strong></td><td>Boticário</td><td>5 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">2</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td><strong>Marcelo Fornereto</strong></td><td>Braskem</td><td>1 sugestão disponível. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Henrique Fonseca</strong></td><td>Bridgestone</td><td>Início</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Claudia Simon</strong></td><td>C&amp;A</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">13</td></tr>
+<tr><td><strong>Ricardo Bonetto HARTL</strong></td><td>Cargill</td><td>Director | Supply Chain | Logistics | Mentor | Speaker | Board Member | Advisor</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Andre Botelho de Carvalho</strong></td><td>Casas Bahia</td><td>Diretor Logística Grupo Casas Bahia</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">28</td></tr>
+<tr><td><strong>Diego Garcia</strong></td><td>Casas Bahia</td><td>10 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">4</td><td class="num">1</td><td class="num">7</td></tr>
+<tr><td><strong>Willemberg Cruz</strong></td><td>Casas Bahia</td><td>Diretor | COO | Logística | Supply Chain | Operações | Planejamento | E-commerce</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">60</td></tr>
+<tr><td><strong>Leandro Pinho</strong></td><td>Catupiry</td><td>Diretor de Logística</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Fernando Nadalini</strong></td><td>CIMED</td><td>Logística | Supply Chain | Operações</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">5</td><td class="num">2</td><td class="num">37</td></tr>
+<tr><td><strong>Eduardo Mareuse</strong></td><td>Coca-Cola FEMSA</td><td>Diretor de Planejamento Logístico na Coca-Cola FEMSA</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">32</td></tr>
+<tr><td><strong>Rodrigo Bonilha</strong></td><td>Continental Pneus</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">9</td></tr>
+<tr><td><strong>Nuno Saramago</strong></td><td>CSN</td><td>Industrial Turnaround &amp; Cultural Transformation | Author of “Liderança em Cena” (Portfolio Penguin) | Managing Director, CSN | Board Member</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Leonardo Alfaro</strong></td><td>DHL</td><td>10 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Marcos Notari</strong></td><td>Frimesa</td><td>Chief Supply Chain Officer</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Artur Izaias</strong></td><td>Gerdau</td><td>Início</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">3</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td><strong>Flavia Dias Souza</strong></td><td>Gerdau</td><td>CPO - Diretora Global de Energia e Suprimentos GERDAU</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">38</td></tr>
+<tr><td><strong>Marco Antônio Silva, M.Sc.</strong></td><td>Gerdau</td><td>CapEx Technical Procurement and Contracts Manager - Gerdau Corporate</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">51</td></tr>
+<tr><td><strong>Olinto Lopes Neto</strong></td><td>Heineken</td><td>Diretor Sênior de Logística | The HEINEKEN Company</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">32</td></tr>
+<tr><td><strong>Rafael Batista</strong></td><td>Hypera</td><td>COO</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">39</td></tr>
+<tr><td><strong>Aécio Patuzzi</strong></td><td>JBS</td><td>Diretor Comercial e Supply Chain na JBS</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Cláudio Rosa, CPIM</strong></td><td>Kerry</td><td>Supply Chain Director Brazil &amp; South Cone at Kerry</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">25</td></tr>
+<tr><td><strong>Deyvid Gonçalves</strong></td><td>L'Oreal</td><td>Diretor de Supply Chain L’Oréal Luxe | MBA em Supply Chain Management</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">39</td></tr>
+<tr><td><strong>Felipe Feteira do Vale</strong></td><td>L'Oréal</td><td>1 sugestão disponível. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">2</td><td class="num">2</td><td class="num">10</td></tr>
+<tr><td><strong>Ricardo Dinelli</strong></td><td>Leroy Merlin</td><td>10 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><strong>Luciana de Andrade</strong></td><td>LG</td><td>Início</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Eduardo De Camargo Filho</strong></td><td>Magazine Luiza</td><td>Head Nacional de Transportes Magalog| Magazine Luiza| Black belt</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">6</td><td class="num">5</td><td class="num">20</td></tr>
+<tr><td><strong>Daniel Castello Branco Augusto</strong></td><td>Mars</td><td>Executivo com sólida carreira nas áreas de Supply Chain, Logística, S&amp;OP e Comercial.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">25</td></tr>
+<tr><td><strong>Felipe Bueno</strong></td><td>Mercado Livre</td><td>Procurement Specialist at Mercado Livre</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">67</td></tr>
+<tr><td><strong>Juliano Campaner</strong></td><td>Messer Gases</td><td>Diretor de logística | Diretor de supply chain | Diretor de processos e melhoria contínua | Logística | Supply Chain | G</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">39</td></tr>
+<tr><td><strong>Márcio Oliveira</strong></td><td>Messer Gases</td><td>COO - Director of Operations - Brazil</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Rafaela Senise</strong></td><td>Michelin</td><td>Diretora Administrativa e de Recursos Humanos na Michelin | Remuneração e benefícios</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>ADRIANO ROSA DELFINO</strong></td><td>Minerva Foods</td><td>5 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td><strong>Eduardo Sá Freire</strong></td><td>Natura</td><td>Head of Supply Chain at Natura Latam | Angel Investor | Mentor | Advisor</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">2</td><td class="num">1</td><td class="num">43</td></tr>
+<tr><td><strong>Matheus Cardoso de Freitas</strong></td><td>Natura</td><td>Business Transformation | S&amp;OP | Logistics | S&amp;OE | Supply Planning | Project Management | Last Mile | Supply Chain Operations Management</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">1</td><td class="num">1</td><td class="num">22</td></tr>
+<tr><td><strong>Igor Costa</strong></td><td>Opella</td><td>Início</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">1</td><td class="num">0</td><td class="num">17</td></tr>
+<tr><td><strong>Rafael Romani</strong></td><td>P&amp;G</td><td>Rafael Romani</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Anderson Pinheiro</strong></td><td>PepSico</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Eduardo Loyola</strong></td><td>PepSico</td><td>10 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><strong>Ricardo Capello</strong></td><td>Petrobras</td><td>Gerente de Logística | Petrobras | Especialista em Gestão de Frotas e Mobilidade | Lean Six Sigma | Auditor ISO 39001 | Melhor Gestor de Frotas 2025 – AIAFA | Conselheiro CGFM | Global Fleet Managers Member</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">4</td><td class="num">2</td><td class="num">59</td></tr>
+<tr><td><strong>Marcelo Maia</strong></td><td>Petz</td><td>VP Digital, Marketing, IT and Supply Chain at Petz</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">32</td></tr>
+<tr><td><strong>Carlos Marcelo Oba</strong></td><td>Samsung</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Fellipe Fortes</strong></td><td>Samsung</td><td>Diretor Jurídico, Compliance e Proteção de Dados da Samsung | Estruturando operações do ponto de vista Jurídico e de Compliance, com estratégias sólidas, visando resultados sustentáveis e éticos.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">51</td></tr>
+<tr><td><strong>Fabio Artifon</strong></td><td>Seara</td><td>4 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Felipe Feistler, CFA</strong></td><td>Shein</td><td></td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">71</td></tr>
+<tr><td><strong>Johnny Cadina</strong></td><td>Shein</td><td>Director of operations at Shein</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">29</td></tr>
+<tr><td><strong>Felipe Cirne Lima</strong></td><td>Shopee</td><td>Início</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Fernando Ferreira</strong></td><td>Shopee</td><td>Gerente de Operações</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Rafael Flores</strong></td><td>Shopee</td><td>Head of Expansion at Shopee</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">29</td></tr>
+<tr><td><strong>Nabil Chamseddine</strong></td><td>Sunset Tires com foco em Importação e Exportação de Pneus.</td><td>Presidente na XBRI a marca de Pneus do Brasil | XBRI Presente em mais de 30 Países | CEO do grupo @Sunset Tires com foco em Importação e Exportação de Pneus.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">65</td></tr>
+<tr><td><strong>Rafael Ferreira Costa</strong></td><td>Tirolez</td><td>Gerente | Logística | Torre de Controle | Transportes | Distribuição Urbana | Warehouse | Operações Logísticas | Projetos Logísticos</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">23</td></tr>
+<tr><td><strong>Rodrigo Lima</strong></td><td>Tirolez</td><td>Diretor de Operações | COO</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">2</td><td class="num">1</td><td class="num">24</td></tr>
+<tr><td><strong>Leandro Luiz Katayama Ribeiro</strong></td><td>Tramontina</td><td>1 sugestão disponível. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Marcos Parodes</strong></td><td>Tramontina</td><td>2 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">5</td><td class="num">5</td><td class="num">0</td></tr>
+<tr><td><strong>João Nascimento</strong></td><td>Unilever</td><td>Logistics Director na Unilever</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Vitor Soares</strong></td><td>Usiminas</td><td>Logistics Sênior Director | Diretor de Logística | Head Logistica | Diretor Executivo | Board Member</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Carlos H. Medeiros</strong></td><td>Vale</td><td>10 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Daniel Drumond</strong></td><td>Vibra</td><td>VP de Operações @Vibra</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">67</td></tr>
+<tr><td><strong>Rodrigo Barbosa</strong></td><td>Vigor</td><td>Diretor de Compras</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Fábio José Silva</strong></td><td>Vulcabras</td><td>10 sugestões disponíveis. Use as setas para navegar para cima e para baixo</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Alberto Rodrigues</strong></td><td>Yara Brasil</td><td>Logística | Supply Chain | Transporte | Armazenagem</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr></tbody>
+          </table>
+        </section>
+      </div>
+
+      <div id="patterns" class="section-view">
+        <div class="grid">
+          <div class="kpi"><span class="kpi-label">Contatos analisados</span><strong class="kpi-value">71</strong></div>
+          <div class="kpi"><span class="kpi-label">Com resposta</span><strong class="kpi-value">12</strong></div>
+          <div class="kpi"><span class="kpi-label">Avanço qualificado</span><strong class="kpi-value">8</strong></div>
+          <div class="kpi"><span class="kpi-label">Sem resposta</span><strong class="kpi-value">49</strong></div>
+        </div>
+        <section class="panel-card">
+          <h2>Leitura Do Estudo</h2>
+          <div class="insights">
+            <div class="insight"><strong>Champion com referência prévia acelera conversão</strong>Natura: Matheus veio da Ambev (cliente PX) — conversa foi direto para viabilização, sem fricção de explicação do modelo. Petrobras e Magalog: chegaram aquecidos via evento de thought leadership. Ao mapear decisores, priorizar perfis com histórico em clientes PX ou participantes de eventos do Thiago.</div>
+            <div class="insight"><strong>Objeção de vínculo trabalhista: 4 de 4 reuniões</strong>Petrobras (CLT/Economia Mista), CIMED (pós-pago), Magazine Luiza (imagem de terceirizar), Gerdau (dúvida sobre vínculo) — padrão universal. Preparar resposta específica por tipo antes de qualquer reunião: modelo jurídico, pagamento, percepção de terceirização.</div>
+            <div class="insight"><strong>Logística abre, Compras bloqueia</strong>CIMED: Fernando Nadalini (champion de Logística) puxou reunião ampliada; Diego de Compras foi o principal bloqueador. Antes de avançar para reunião ampliada, mapear quem decide contratação de terceiros — Compras, Financeiro ou RH.</div>
+            <div class="insight"><strong>Produto certo por perfil operacional</strong>Natura: sem frota própria → Ajudante PX, não Motorista PX. Gerdau: embarcadora pura → Academia PX, não marketplace. Identificar o produto correto antes da reunião evita pitch errado e perda de credibilidade.</div>
+            <div class="insight"><strong>Função do decisor confirma hipótese</strong>Gerente de Transporte (Petrobras e Gerdau), Diretor de Logística (CIMED), Head de Transportes (Magalog) — Supply, Logística e Operações é o alvo correto para a abertura. Confirmado em todas as reuniões realizadas.</div>
+          </div>
+        </section>
+        <section class="panel-card">
+    <h2>Resposta Por Segmento</h2>
+    <table>
+      <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativas</th><th class="num">Tempo</th></tr></thead>
+      <tbody><tr>
+        <td><strong>Indústria Pesada</strong></td>
+        <td class="num">6</td>
+        <td class="num">16,7%</td>
+        <td class="num">50,0%</td>
+        <td class="num">0</td>
+        <td class="num">7,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>Cosméticos &amp; Higiene</strong></td>
+        <td class="num">5</td>
+        <td class="num">60,0%</td>
+        <td class="num">40,0%</td>
+        <td class="num">0</td>
+        <td class="num">0,7 dias</td>
+      </tr>
+<tr>
+        <td><strong>Farmacêutico &amp; Saúde</strong></td>
+        <td class="num">4</td>
+        <td class="num">25,0%</td>
+        <td class="num">25,0%</td>
+        <td class="num">0</td>
+        <td class="num">1,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>Combustíveis, Energia &amp; Química</strong></td>
+        <td class="num">4</td>
+        <td class="num">25,0%</td>
+        <td class="num">25,0%</td>
+        <td class="num">0</td>
+        <td class="num">17,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>E-commerce &amp; Varejo</strong></td>
+        <td class="num">13</td>
+        <td class="num">15,4%</td>
+        <td class="num">7,7%</td>
+        <td class="num">0</td>
+        <td class="num">23,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>Segmento a classificar</strong></td>
+        <td class="num">15</td>
+        <td class="num">20,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">0,3 dias</td>
+      </tr>
+<tr>
+        <td><strong>Alimentos &amp; Bebidas</strong></td>
+        <td class="num">13</td>
+        <td class="num">7,7%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">0,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>Agro &amp; Commodities</strong></td>
+        <td class="num">4</td>
+        <td class="num">0,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr>
+<tr>
+        <td><strong>Eletro &amp; Tecnologia</strong></td>
+        <td class="num">3</td>
+        <td class="num">0,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr>
+<tr>
+        <td><strong>Automotivo &amp; Pneus</strong></td>
+        <td class="num">3</td>
+        <td class="num">0,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr>
+<tr>
+        <td><strong>Têxtil &amp; Vestuário</strong></td>
+        <td class="num">1</td>
+        <td class="num">0,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr></tbody>
+    </table>
+  </section>
+        <section class="panel-card">
+    <h2>Resposta Por Perfil Hierárquico</h2>
+    <table>
+      <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativas</th><th class="num">Tempo</th></tr></thead>
+      <tbody><tr>
+        <td><strong>Gerência / Especialista</strong></td>
+        <td class="num">4</td>
+        <td class="num">25,0%</td>
+        <td class="num">50,0%</td>
+        <td class="num">0</td>
+        <td class="num">17,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>Diretoria / Head</strong></td>
+        <td class="num">25</td>
+        <td class="num">12,0%</td>
+        <td class="num">12,0%</td>
+        <td class="num">0</td>
+        <td class="num">0,7 dias</td>
+      </tr>
+<tr>
+        <td><strong>Não identificado</strong></td>
+        <td class="num">36</td>
+        <td class="num">22,2%</td>
+        <td class="num">8,3%</td>
+        <td class="num">0</td>
+        <td class="num">6,9 dias</td>
+      </tr>
+<tr>
+        <td><strong>C-level / VP</strong></td>
+        <td class="num">6</td>
+        <td class="num">0,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr></tbody>
+    </table>
+  </section>
+        <section class="panel-card">
+    <h2>Resposta Por Função</h2>
+    <table>
+      <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativas</th><th class="num">Tempo</th></tr></thead>
+      <tbody><tr>
+        <td><strong>Procurement / Suprimentos</strong></td>
+        <td class="num">5</td>
+        <td class="num">0,0%</td>
+        <td class="num">40,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr>
+<tr>
+        <td><strong>Supply / Logística / Operações</strong></td>
+        <td class="num">30</td>
+        <td class="num">20,0%</td>
+        <td class="num">16,7%</td>
+        <td class="num">0</td>
+        <td class="num">3,3 dias</td>
+      </tr>
+<tr>
+        <td><strong>Função a classificar</strong></td>
+        <td class="num">35</td>
+        <td class="num">17,1%</td>
+        <td class="num">2,9%</td>
+        <td class="num">0</td>
+        <td class="num">9,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>Alta gestão</strong></td>
+        <td class="num">1</td>
+        <td class="num">0,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr></tbody>
+    </table>
+  </section>
+        <section class="panel-card">
+    <h2>Resposta Por Horário</h2>
+    <table>
+      <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativas</th><th class="num">Tempo</th></tr></thead>
+      <tbody><tr>
+        <td><strong>12h-17h59</strong></td>
+        <td class="num">17</td>
+        <td class="num">23,5%</td>
+        <td class="num">23,5%</td>
+        <td class="num">0</td>
+        <td class="num">6,3 dias</td>
+      </tr>
+<tr>
+        <td><strong>Antes das 08h</strong></td>
+        <td class="num">29</td>
+        <td class="num">20,7%</td>
+        <td class="num">10,3%</td>
+        <td class="num">0</td>
+        <td class="num">8,2 dias</td>
+      </tr>
+<tr>
+        <td><strong>08h-11h59</strong></td>
+        <td class="num">16</td>
+        <td class="num">12,5%</td>
+        <td class="num">6,3%</td>
+        <td class="num">0</td>
+        <td class="num">0,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>18h+</strong></td>
+        <td class="num">5</td>
+        <td class="num">0,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr>
+<tr>
+        <td><strong>Sem horário</strong></td>
+        <td class="num">4</td>
+        <td class="num">0,0%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">n/d</td>
+      </tr></tbody>
+    </table>
+  </section>
+        <section class="panel-card">
+    <h2>Intel de Contas — Reuniões Realizadas (5)</h2>
+    <table>
+      <thead><tr><th>Empresa</th><th>Contato / Função</th><th>Gatilho</th><th>Objeção principal</th><th>Bloqueador</th><th>Próximo passo</th></tr></thead>
+      <tbody><tr>
+        <td>
+          <strong>Petrobras</strong>
+          <div class="muted" style="font-size:11px;margin-top:2px">Energia / combustíveis</div>
+        </td>
+        <td>
+          Ricardo Capello
+          <div class="muted" style="font-size:11px;margin-top:2px">Gerente Sênior de Transporte</div>
+        </td>
+        <td><span class="trigger-badge tl">Evento/Thought leadership</span></td>
+        <td><span class="objection-tag">Empresa de Economia Mista</span></td>
+        <td><span class="muted">—</span></td>
+        <td><span class="muted">—</span></td>
+      </tr>
+<tr>
+        <td>
+          <strong>CIMED</strong>
+          <div class="muted" style="font-size:11px;margin-top:2px">Farma / saúde</div>
+        </td>
+        <td>
+          Fernando Nadalini
+          <div class="muted" style="font-size:11px;margin-top:2px">Diretor de Logística</div>
+        </td>
+        <td><span class="trigger-badge direct">Abordagem direta</span></td>
+        <td><span class="objection-tag">Precisa de formato pós-pago com lançamento de crédito na plataforma</span> <span class="objection-tag">Já contrata ajudantes terceirizados via empresas de prestação de serviço</span></td>
+        <td><span class="blocker-tag">Diego (Compras)</span></td>
+        <td>Avaliar envolver líder de RH para apresentar modalidade de contratação</td>
+      </tr>
+<tr>
+        <td>
+          <strong>Magazine Luiza</strong>
+          <div class="muted" style="font-size:11px;margin-top:2px">Varejo / logística</div>
+        </td>
+        <td>
+          Eduardo Filho
+          <div class="muted" style="font-size:11px;margin-top:2px">Head de Transportes — Magalog</div>
+        </td>
+        <td><span class="trigger-badge tl">Evento/Thought leadership</span></td>
+        <td><span class="objection-tag">Imagem de terceirizar é mal vista dentro da Magalu</span></td>
+        <td><span class="muted">—</span></td>
+        <td>Avançar com proposta de teste 1-2 motoristas Last-mile</td>
+      </tr>
+<tr>
+        <td>
+          <strong>Gerdau</strong>
+          <div class="muted" style="font-size:11px;margin-top:2px">Indústria Pesada</div>
+        </td>
+        <td>
+          Artur Izaias
+          <div class="muted" style="font-size:11px;margin-top:2px">Gerente de Transporte</div>
+        </td>
+        <td><span class="trigger-badge direct">Abordagem direta</span></td>
+        <td><span class="objection-tag">Gerdau é só embarcadora</span> <span class="objection-tag">Dúvidas sobre garantia de ausência de vínculo trabalhista</span> <span class="objection-tag">Não consegue realizar evento para transportadoras parceiras por política de compliance da Gerdau</span></td>
+        <td><span class="blocker-tag">Compliance / Política Interna (Institucional)</span></td>
+        <td>G2L já é cliente PX — avaliar ABM de Expansão com G2L no futuro (aprofundar uso ou novos produtos)</td>
+      </tr>
+<tr>
+        <td>
+          <strong>Natura &amp;Co</strong>
+          <div class="muted" style="font-size:11px;margin-top:2px">Cosméticos &amp; Higiene</div>
+        </td>
+        <td>
+          Matheus Cardoso de Freitas
+          <div class="muted" style="font-size:11px;margin-top:2px">Não especificado — área de mão de obra / operações</div>
+        </td>
+        <td><span class="trigger-badge direct">Abordagem direta</span></td>
+        <td><span class="objection-tag">Transporte não usa frota própria</span> <span class="objection-tag">BID exige precificação no formato de edital</span></td>
+        <td><span class="muted">—</span></td>
+        <td>Preparar tabela de média de valores de Ajudante PX por região para adequação ao formato de edital</td>
+      </tr></tbody>
+    </table>
+  </section>
+  <section class="panel-card">
+    <h2>Padrões Transversais Das Reuniões</h2>
+    <div class="insights"><div class="insight"><strong>Thought leadership como gatilho de aquecimento</strong>Petrobras (Webinar ILOS) e Magazine Luiza (Logística do Futuro) chegaram à reunião já conhecendo a plataforma — conversas mais rápidas e mais abertas. <em style="display:block;margin-top:6px;color:#0F52BA">Priorizar contas ABM onde haja registro de participação em eventos do setor ou interação com conteúdo do Thiago.</em></div>
+<div class="insight"><strong>Objeção de modelo de contratação / vínculo trabalhista</strong>Petrobras (CLT/Economia Mista), CIMED (pós-pago), Magazine Luiza (imagem de terceirizar), Gerdau (dúvida sobre vínculo) — 4 de 4 reuniões com alguma variação desse bloqueio. <em style="display:block;margin-top:6px;color:#0F52BA">Preparar resposta padrão por tipo antes de cada reunião: (1) modelo jurídico/CLT, (2) modelo de pagamento/pós-pago, (3) percepção de terceirização, (4) dúvida sobre vínculo trabalhista.</em></div>
+<div class="insight"><strong>Embarcadora pura ≠ cliente final — fit está nas transportadoras parceiras</strong>Gerdau: empresa só embarcadora, contrata transportadoras (G2L) que fazem a contratação dos motoristas. Produto principal não se encaixa; Academia PX foi o único ponto de interesse. <em style="display:block;margin-top:6px;color:#0F52BA">Ao identificar embarcadoras puras no painel, mapear suas transportadoras parceiras como contas ABM autônomas. Usar a reunião com a embarcadora para conseguir indicação/introdução às transportadoras.</em></div>
+<div class="insight"><strong>Champion ex-cliente ou com exposição prévia ao modelo PX acelera a conversa</strong>Natura: Matheus veio da Ambev (que conhece PX) — não precisou explicar o modelo do zero, conversa foi direto para viabilização. Petrobras/Magalog: chegaram aquecidos via evento de thought leadership. <em style="display:block;margin-top:6px;color:#0F52BA">Ao mapear decisores no LinkedIn, priorizar perfis com histórico em empresas que já são clientes PX ou que participaram de eventos onde Thiago esteve presente.</em></div>
+<div class="insight"><strong>Logística/Transporte abre, Compras bloqueia</strong>CIMED: Fernando Nadalini (champion) abriu e puxou reunião ampliada; Diego de Compras foi o principal bloqueador. <em style="display:block;margin-top:6px;color:#0F52BA">Antes de avançar para reunião ampliada, perguntar ao champion quem decide a contratação de terceiros (Compras, Financeiro, RH?) e preparar argumento específico para esse stakeholder.</em></div></div>
+  </section>
+        <section class="panel-card" id="copy-analysis-section">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+      <div>
+        <h2 style="margin:0">Análise de Copy &amp; Abordagem</h2>
+        <p class="muted" style="margin:4px 0 0">Leitura automática das mensagens enviadas — padrões de ângulo, prova social, timing e palavras que geram resposta.</p>
+      </div>
+      <button id="analyze-btn" onclick="runAnalysis()" style="padding:10px 18px;background:var(--blue);color:white;border:none;border-radius:6px;font-size:13px;cursor:pointer;white-space:nowrap;">Analisar mensagens</button>
+    </div>
+    <div id="analysis-result" style="margin-top:4px"></div>
+    <div id="review-section" style="margin-top:20px"></div>
+  </section>
+  <script>
+    const COPY_LABELS = {
+      messageAngle: {'dor-logistica':'Dor logística','crescimento':'Crescimento','eficiencia':'Eficiência','reducao-custo':'Redução de custo','capacidade':'Capacidade / demanda'},
+      triggerType: {'cargo-novo':'Cargo novo','expansao':'Expansão','vaga-logistica':'Vaga logística','mudanca-lideranca':'Mudança liderança','evento-setor':'Evento do setor','sem-gatilho':'Sem gatilho'},
+      proofType: {'case-cliente':'Case de cliente','dado-mercado':'Dado de mercado','benchmarking':'Benchmark','sem-prova':'Sem prova social'},
+      copyVariant: {'direto':'Direto','consultivo':'Consultivo','provocativo':'Provocativo','educativo':'Educativo'},
+      replyOutcome: {'POSITIVE':'Positiva','NEUTRAL':'Neutra','NEGATIVE':'Negativa','HOT_LEAD':'Lead quente','MEETING_BOOKED':'Reunião marcada','NO_RESPONSE':'Sem resposta'}
+    };
+    const COPY_OPTIONS = {
+      copyVariant: [['direto','Direto — vai ao ponto'],['consultivo','Consultivo — foco em dor'],['provocativo','Provocativo — insight ou dado'],['educativo','Educativo — contexto e problema']],
+      triggerType: [['cargo-novo','Cargo novo'],['expansao','Expansão / crescimento'],['vaga-logistica','Vaga logística aberta'],['mudanca-lideranca','Mudança de liderança'],['evento-setor','Evento ou notícia do setor'],['sem-gatilho','Sem gatilho específico']],
+      messageAngle: [['dor-logistica','Dor / gargalo logístico'],['crescimento','Crescimento / expansão'],['eficiencia','Eficiência operacional'],['reducao-custo','Redução de custo'],['capacidade','Capacidade / escala']],
+      proofType: [['case-cliente','Case de cliente'],['dado-mercado','Dado ou estudo de mercado'],['benchmarking','Benchmark do setor'],['sem-prova','Sem prova social']],
+      replyOutcome: [['POSITIVE','Resposta positiva'],['NEUTRAL','Resposta neutra'],['NEGATIVE','Resposta negativa / objeção'],['HOT_LEAD','Lead quente'],['MEETING_BOOKED','Reunião marcada'],['NO_RESPONSE','Sem resposta']]
+    };
+    function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+    function pct(r){return r!=null?Math.round(r*100)+'%':'—';}
+    function buildSel(name, opts, cur) {
+      return '<select name="'+name+'" style="padding:6px;border:1px solid #D0D5DD;border-radius:4px;font-size:12px;width:100%;">'
+        + [['','— selecionar —'],...opts].map(([v,l])=>'<option value="'+v+'"'+(cur===v?' selected':'')+'>'+l+'</option>').join('')
+        + '</select>';
+    }
+    function miniTable(title, rows, labelField) {
+      if(!rows||!rows.length) return '';
+      const cols = ['total','responded','replyRate'];
+      const headers = {'total':'Total','responded':'Resp.','replyRate':'Taxa'};
+      return '<div style="margin-bottom:16px"><h4 style="font-size:13px;color:#344054;margin:0 0 8px">'+esc(title)+'</h4>'
+        +'<table style="width:100%;border-collapse:collapse;font-size:12px">'
+        +'<thead><tr style="background:#F9FAFB"><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #EAECF0">'+labelField+'</th>'
+        +cols.map(c=>'<th style="text-align:right;padding:6px 8px;border-bottom:1px solid #EAECF0">'+headers[c]+'</th>').join('')+'</tr></thead>'
+        +'<tbody>'+rows.slice(0,6).map((r,i)=>{
+          const bg = i%2===0?'white':'#F9FAFB';
+          const label = COPY_LABELS[labelField]?.[r.label] || r.label;
+          return '<tr style="background:'+bg+'">'
+            +'<td style="padding:5px 8px;border-bottom:1px solid #F2F4F7">'+esc(label)+'</td>'
+            +cols.map(c=>{
+              const v = r[c];
+              const isRate = c==='replyRate';
+              const color = isRate&&v>0.3?'color:#087443;font-weight:600':isRate&&v===0?'color:#B42318':'';
+              return '<td style="text-align:right;padding:5px 8px;border-bottom:1px solid #F2F4F7;'+color+'">'+(isRate?pct(v):v)+'</td>';
+            }).join('')+'</tr>';
+        }).join('')+'</tbody></table></div>';
+    }
+    function renderPatterns(d) {
+      const sum = d.summary;
+      const timingTop = (d.timingByHour||[]).filter(h=>h.total>0).sort((a,b)=>b.replyRate-a.replyRate).slice(0,3);
+      const clientTop = (d.clientCitations||[]).filter(c=>c.citations>0).slice(0,6);
+      const wordsTop = (d.topWordsByResponse||[]).filter(w=>w.replyRate>0.5&&w.total>=2).slice(0,10);
+
+      let html = '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">'
+        +'<div style="background:#F0F9FF;border-radius:6px;padding:12px;text-align:center"><div style="font-size:22px;font-weight:700;color:#0F52BA">'+sum.autoClassified+'</div><div style="font-size:11px;color:#667085">Auto-classificados</div></div>'
+        +'<div style="background:#FFF7ED;border-radius:6px;padding:12px;text-align:center"><div style="font-size:22px;font-weight:700;color:#DC6803">'+sum.needsReview+'</div><div style="font-size:11px;color:#667085">Para revisar</div></div>'
+        +'<div style="background:#F9FAFB;border-radius:6px;padding:12px;text-align:center"><div style="font-size:22px;font-weight:700;color:#344054">'+sum.dismissed+'</div><div style="font-size:11px;color:#667085">Sem dados</div></div>'
+        +'</div>';
+
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">';
+      html += '<div>'+miniTable('Por Ângulo de Abordagem', d.byAngle, 'messageAngle')+'</div>';
+      html += '<div>'+miniTable('Por Tipo de Prova Social', d.byProof, 'proofType')+'</div>';
+      html += '<div>'+miniTable('Por Gatilho', d.byTrigger, 'triggerType')+'</div>';
+      html += '<div>'+miniTable('Por Variante de Copy', d.byVariant, 'copyVariant')+'</div>';
+      html += '</div>';
+
+      if(timingTop.length) {
+        html += '<div style="margin-top:12px"><h4 style="font-size:13px;color:#344054;margin:0 0 8px">Melhor horário de envio</h4>'
+          +'<div style="display:flex;gap:8px">'+timingTop.map(h=>'<div style="background:#F0F9FF;border-radius:6px;padding:8px 12px;text-align:center">'
+            +'<div style="font-size:16px;font-weight:700;color:#0F52BA">'+h.hour+'h</div>'
+            +'<div style="font-size:11px;color:#667085">'+pct(h.replyRate)+' ('+h.total+' msgs)</div></div>').join('')+'</div></div>';
+      }
+
+      if(wordsTop.length) {
+        html += '<div style="margin-top:12px"><h4 style="font-size:13px;color:#344054;margin:0 0 8px">Palavras com maior taxa de resposta</h4>'
+          +'<div style="display:flex;flex-wrap:wrap;gap:6px">'+wordsTop.map(w=>'<span style="background:#DCFCE7;color:#166534;border-radius:100px;padding:3px 10px;font-size:12px;font-weight:500">'+esc(w.word)+' '+pct(w.replyRate)+'</span>').join('')+'</div></div>';
+      }
+
+      if(clientTop.length) {
+        html += '<div style="margin-top:12px"><h4 style="font-size:13px;color:#344054;margin:0 0 8px">Clientes PX citados nas mensagens</h4>'
+          +'<div style="display:flex;flex-wrap:wrap;gap:6px">'+clientTop.map(c=>'<span style="background:#F2F5FA;border-radius:100px;padding:3px 10px;font-size:12px">'
+            +esc(c.client)+' <span style="color:#667085">('+c.citations+'x · '+pct(c.replyRate)+')</span></span>').join('')+'</div></div>';
+      }
+
+      return html;
+    }
+    function renderReviewCard(c) {
+      const cl = c.classification || {};
+      const slug = encodeURIComponent(c.contactName);
+      return '<div id="card-'+slug+'" style="border:1px solid #FEF3C7;border-radius:6px;padding:16px;margin-bottom:10px;background:#FFFBEB;">'
+        +'<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">'
+        +'<div><strong style="font-size:13px">'+esc(c.contactName)+'</strong> · <span style="color:#667085;font-size:12px">'+esc(c.company)+'</span>'
+        +(c.role?'<br><span style="color:#667085;font-size:11px">'+esc(c.role)+'</span>':'')+'</div>'
+        +'<button onclick="dismissContact(event)" data-slug="'+slug+'" style="background:none;border:1px solid #D0D5DD;border-radius:4px;padding:4px 10px;font-size:11px;cursor:pointer;color:#667085">Dispensar</button></div>'
+        +'<p style="font-size:11px;color:#B45309;margin:0 0 10px">Baixa confiança na classificação automática — verifique</p>'
+        +'<form id="form-'+slug+'" data-contact-name="'+esc(c.contactName)+'" onsubmit="saveContactClass(event)" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">'
+        +'<label style="font-size:11px;color:#344054;">Ângulo<br>'+buildSel('messageAngle',COPY_OPTIONS.messageAngle,cl.messageAngle)+'</label>'
+        +'<label style="font-size:11px;color:#344054;">Gatilho<br>'+buildSel('triggerType',COPY_OPTIONS.triggerType,cl.triggerType)+'</label>'
+        +'<label style="font-size:11px;color:#344054;">Prova social<br>'+buildSel('proofType',COPY_OPTIONS.proofType,cl.proofType)+'</label>'
+        +'<label style="font-size:11px;color:#344054;">Resultado<br>'+buildSel('replyOutcome',COPY_OPTIONS.replyOutcome,cl.replyOutcome)+'</label>'
+        +'<div style="grid-column:1/-1;display:flex;gap:8px;align-items:center;">'
+        +'<button type="submit" style="padding:6px 14px;background:var(--blue);color:white;border:none;border-radius:4px;font-size:12px;cursor:pointer;">Confirmar</button>'
+        +'<span id="st-'+slug+'" style="font-size:11px;color:#667085;"></span>'
+        +'</div></form></div>';
+    }
+    async function runAnalysis() {
+      const btn=document.getElementById('analyze-btn');
+      const result=document.getElementById('analysis-result');
+      const review=document.getElementById('review-section');
+      btn.disabled=true; btn.textContent='Analisando…';
+      result.innerHTML='<p style="color:#667085;font-size:13px">Lendo mensagens e classificando padrões…</p>';
+      try {
+        const postRes = await fetch('/api/abm-interaction-log/auto-classify',{method:'POST'});
+        if(!postRes.ok){const e=await postRes.json().catch(()=>({}));throw new Error(e.error||'Falha na análise (HTTP '+postRes.status+')');}
+        const pRes = await fetch('/api/abm-interaction-log/patterns').then(r=>r.json());
+        if(!pRes||!pRes.data){throw new Error(pRes&&pRes.error?pRes.error:'Padrões não encontrados após análise');}
+        const patterns = pRes.data;
+        result.innerHTML = renderPatterns(patterns);
+        btn.textContent='Reanalisar mensagens';
+        btn.disabled=false;
+        await loadReviewQueue(review, patterns.summary.needsReview);
+      } catch(e){result.innerHTML='<p style="color:#B42318;font-size:13px">Erro: '+e.message+'</p><p style="color:#667085;font-size:12px;margin-top:4px">Verifique se o Engine está rodando na porta 3000.</p>';btn.disabled=false;btn.textContent='Tentar novamente';}
+    }
+    async function loadReviewQueue(container, count) {
+      if(!count){container.innerHTML='';return;}
+      try {
+        const res = await fetch('/api/abm-interaction-log?needsReview=true').then(r=>r.json());
+        const data = (res.data||[]).filter(c=>c.classification&&c.classification.needsReview&&!c.classification.dismissed);
+        if(!data.length){container.innerHTML='';return;}
+        container.innerHTML='<h4 style="font-size:13px;color:#B45309;margin:0 0 10px">'+data.length+' contato(s) para revisão manual</h4>'+data.map(renderReviewCard).join('');
+      } catch(e){}
+    }
+    async function dismissContact(ev) {
+      const btn = ev.currentTarget;
+      const slug = btn.dataset.slug;
+      const contactName = decodeURIComponent(slug);
+      try {
+        await fetch('/api/abm-interaction-log/'+slug+'/dismiss',{method:'PATCH'});
+        const card = document.getElementById('card-'+slug);
+        card.style.opacity='0.3';
+        setTimeout(()=>card.remove(),500);
+      } catch(e){alert('Erro ao dispensar: '+e.message);}
+    }
+    async function saveContactClass(ev) {
+      ev.preventDefault();
+      const form=ev.currentTarget;
+      const contactName=form.dataset.contactName;
+      const slug=encodeURIComponent(contactName);
+      const st=document.getElementById('st-'+slug);
+      const body={};
+      for(const [k,v] of new FormData(form).entries()){if(v)body[k]=v;}
+      st.textContent='Salvando…';
+      try {
+        const r=await fetch('/api/abm-interaction-log/'+slug,{method:'PATCH',headers:{'content-type':'application/json'},body:JSON.stringify(body)});
+        if(!r.ok){const e=await r.json();throw new Error(e.message||r.statusText);}
+        const card=document.getElementById('card-'+slug);
+        card.style.opacity='0.4'; st.style.color='#087443'; st.textContent='Confirmado ✓';
+        setTimeout(()=>card.remove(),700);
+      } catch(e){st.style.color='#B42318';st.textContent='Erro: '+e.message;}
+    }
+    // Auto-load patterns if already analyzed
+    (async()=>{
+      try {
+        const pRes = await fetch('/api/abm-interaction-log/patterns').then(r=>r.json());
+        if(pRes.data){
+          document.getElementById('analysis-result').innerHTML=renderPatterns(pRes.data);
+          await loadReviewQueue(document.getElementById('review-section'), pRes.data.summary.needsReview);
+        }
+      } catch(e){}
+    })();
+  </script>
+      </div>
+
+      <div id="registry" class="section-view" style="display:none!important">
+        <section class="panel-card">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap;">
+            <h2>Empresas A Apurar (5)</h2>
+            <div style="display:flex; flex-direction:column; align-items:flex-end; gap:6px;">
+              <button class="action-button" type="button" id="regenerateDashboardsBtn">Regenerar dashboards</button>
+              <span class="muted" id="regenerateDashboardsStatus"></span>
+            </div>
+          </div>
+          <p class="muted" style="margin-bottom:12px;">Preencha a empresa correta para os contatos abaixo e clique em "Salvar". Depois, clique em "Regenerar dashboards" para aplicar a mudança em todas as visões (a página será recarregada).</p>
+          <table>
+            <thead><tr><th>Contato</th><th>Cargo/Headline</th><th>Empresa correta</th><th></th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Felipe Romera</strong></td>
+                <td>Environmental &amp; Sustainability Executive | Industrial &amp; Environmental Operations | ESG Strategy &amp; Performance | Supply Chain</td>
+                <td><input class="company-override-input" data-contact="Felipe Romera" placeholder="Ex.: Natura"></td>
+                <td><button class="action-button secondary company-override-save" data-contact="Felipe Romera" type="button">Salvar</button></td>
+              </tr>
+<tr>
+                <td><strong>Thomas Gris</strong></td>
+                <td>Início</td>
+                <td><input class="company-override-input" data-contact="Thomas Gris" placeholder="Ex.: Natura"></td>
+                <td><button class="action-button secondary company-override-save" data-contact="Thomas Gris" type="button">Salvar</button></td>
+              </tr>
+<tr>
+                <td><strong>José Amaral</strong></td>
+                <td>Início</td>
+                <td><input class="company-override-input" data-contact="José Amaral" placeholder="Ex.: Natura"></td>
+                <td><button class="action-button secondary company-override-save" data-contact="José Amaral" type="button">Salvar</button></td>
+              </tr>
+<tr>
+                <td><strong>Alex Soares</strong></td>
+                <td>Início</td>
+                <td><input class="company-override-input" data-contact="Alex Soares" placeholder="Ex.: Natura"></td>
+                <td><button class="action-button secondary company-override-save" data-contact="Alex Soares" type="button">Salvar</button></td>
+              </tr>
+<tr>
+                <td><strong>Felipe Rosa</strong></td>
+                <td>Início</td>
+                <td><input class="company-override-input" data-contact="Felipe Rosa" placeholder="Ex.: Natura"></td>
+                <td><button class="action-button secondary company-override-save" data-contact="Felipe Rosa" type="button">Salvar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <div class="registry-layout">
+          <section class="panel-card">
+            <h2 id="registryFormTitle">Novo registro de campanha</h2>
+            <form id="registryForm" class="form-grid">
+              <input type="hidden" id="entryId">
+              <label class="full">Campanha
+                <input id="campaignName" required placeholder="Ex.: Onda S23 - Embarcadores com sinal logístico">
+              </label>
+              <label>Empresa
+                <input id="company" required placeholder="Ex.: Opella">
+              </label>
+              <label>Decisor
+                <input id="contactName" required placeholder="Ex.: Igor Costa">
+              </label>
+              <label>Cargo
+                <input id="role" placeholder="Ex.: Diretor de Supply Chain">
+              </label>
+              <label>Segmento
+                <input id="segment" placeholder="Ex.: Farma / saúde">
+              </label>
+              <label>Remetente
+                <select id="senderProfile">
+                  <option>Thiago</option>
+                  <option>André</option>
+                  <option>Michel</option>
+                  <option>Djefrei</option>
+                </select>
+              </label>
+              <label>Data planejada
+                <input id="plannedDate" type="date">
+              </label>
+              <label>Status
+                <select id="status">
+                  <option value="PLANNED">Planejado</option>
+                  <option value="CONNECTION_SENT">Conexão enviada</option>
+                  <option value="CONNECTION_ACCEPTED">Conexão aceita</option>
+                  <option value="MESSAGE_SENT">Mensagem enviada</option>
+                  <option value="FOLLOW_UP_DUE">Follow-up devido</option>
+                  <option value="REPLIED_NEUTRAL">Resposta neutra</option>
+                  <option value="REPLIED_POSITIVE">Resposta positiva</option>
+                  <option value="REPLIED_NEGATIVE">Resposta negativa</option>
+                  <option value="CONTACT_ROUTED">Contato encaminhado</option>
+                  <option value="MEETING_BOOKED">Reunião marcada</option>
+                  <option value="PAUSED">Pausado</option>
+                  <option value="EXCLUDED">Fora de escopo</option>
+                </select>
+              </label>
+              <label>Prioridade
+                <select id="priority">
+                  <option>Alta</option>
+                  <option selected>Média</option>
+                  <option>Baixa</option>
+                </select>
+              </label>
+              <label>Tipo de sinal
+                <select id="triggerType">
+                  <option value="JOB_OPENING">Vaga logística</option>
+                  <option value="EXPANSION_NEWS">Expansão / CD / operação</option>
+                  <option value="ROLE_CHANGE">Mudança de cargo</option>
+                  <option value="LINKEDIN_POST">Post LinkedIn</option>
+                  <option value="COMPANY_NEWS">Notícia da empresa</option>
+                  <option value="MARKET_SIGNAL">Sinal de mercado</option>
+                  <option value="MANUAL_RESEARCH" selected>Pesquisa manual</option>
+                  <option value="OTHER">Outro</option>
+                </select>
+              </label>
+              <label>Ângulo
+                <select id="messageAngle">
+                  <option value="SCALE">Escala operacional</option>
+                  <option value="COST_VARIABILITY">Custo variável</option>
+                  <option value="REGIONAL_COVERAGE">Cobertura regional</option>
+                  <option value="SERVICE_LEVEL">Nível de serviço</option>
+                  <option value="COMPLIANCE">Compliance</option>
+                  <option value="SEASONAL_PEAK">Pico sazonal</option>
+                  <option value="SUPPLIER_NETWORK">Rede de transportadoras</option>
+                  <option value="OTHER">Outro</option>
+                </select>
+              </label>
+              <label>Prova
+                <select id="proofType">
+                  <option value="SAME_SECTOR_CLIENT">Cliente mesmo setor</option>
+                  <option value="COMPETITOR_REFERENCE">Concorrente/referência</option>
+                  <option value="MARKET_DATA">Dado de mercado</option>
+                  <option value="INTELLIGENCE_MONDAY_SIGNAL" selected>Sinal Intelligence Monday</option>
+                  <option value="PX_CASE">Caso PX</option>
+                  <option value="NO_PROOF">Sem prova</option>
+                  <option value="OTHER">Outro</option>
+                </select>
+              </label>
+              <label class="full">URL LinkedIn
+                <input id="linkedinUrl" placeholder="https://www.linkedin.com/in/...">
+              </label>
+              <label class="full">Resumo do sinal
+                <textarea id="signalSummary" placeholder="Ex.: Assumiu Supply Chain recentemente; empresa tem operação nacional."></textarea>
+              </label>
+              <label class="full">Rascunho da primeira mensagem
+                <textarea id="firstMessageDraft" placeholder="Mensagem que será revisada antes do envio."></textarea>
+              </label>
+              <label class="full">Próxima ação
+                <input id="nextAction" placeholder="Ex.: Enviar conexão sem mensagem em 04/06">
+              </label>
+              <label class="full">Observações
+                <textarea id="notes" placeholder="Notas internas, validações, fonte do sinal etc."></textarea>
+              </label>
+              <div class="toolbar full">
+                <button class="action-button" type="submit">Salvar registro</button>
+                <button class="action-button secondary" type="button" id="newRegistryBtn">Limpar</button>
+                <button class="action-button danger" type="button" id="deleteRegistryBtn">Excluir</button>
+              </div>
+            </form>
+            <textarea class="export-box" id="registryExportBox" placeholder="Exportações aparecem aqui..."></textarea>
+          </section>
+
+          <section class="panel-card">
+            <div class="toolbar" style="justify-content:space-between; margin-bottom:12px;">
+              <div>
+                <h2>Registros cadastrados</h2>
+                <p class="muted" id="registryMeta">Carregando...</p>
+              </div>
+              <div class="toolbar">
+                <button class="action-button secondary" id="refreshRegistryBtn">Atualizar</button>
+                <button class="action-button secondary" id="exportRegistryCsvBtn">CSV</button>
+                <button class="action-button secondary" id="exportRegistryJsonBtn">JSON</button>
+              </div>
+            </div>
+            <label style="margin-bottom:12px;">Filtro
+              <input id="registryFilterInput" placeholder="Empresa, decisor, status, gancho...">
+            </label>
+            <div class="grid" style="grid-template-columns:repeat(4, 1fr); margin-bottom:12px;">
+              <div class="kpi"><span class="kpi-label">Total</span><strong class="kpi-value" id="registryKpiTotal">0</strong></div>
+              <div class="kpi"><span class="kpi-label">Planejados</span><strong class="kpi-value" id="registryKpiPlanned">0</strong></div>
+              <div class="kpi"><span class="kpi-label">Enviados</span><strong class="kpi-value" id="registryKpiSent">0</strong></div>
+              <div class="kpi"><span class="kpi-label">Avanços</span><strong class="kpi-value" id="registryKpiAdvanced">0</strong></div>
+            </div>
+            <div class="registry-list">
+              <table>
+                <thead>
+                  <tr><th>Empresa / Decisor</th><th>Campanha</th><th>Sinal</th><th>Ângulo</th><th>Prova</th><th>Status</th><th>Data</th></tr>
+                </thead>
+                <tbody id="registryRows"></tbody>
+              </table>
+              <div class="empty" id="registryEmptyState">Nenhum registro cadastrado ainda.</div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="embarcadores" class="section-view">
+        <iframe class="embedded-frame" src="/embarcadores-market.html?embed=1" title="Painel Embarcadores"></iframe>
+      </div>
+
+      <div id="bid" class="section-view">
+        <iframe class="embedded-frame" src="/bid-embarcadores.html?embed=1" title="BID Embarcadores"></iframe>
+      </div>
+
+      <div id="workday" class="section-view" style="display:none!important">
+        <iframe class="embedded-frame" src="/workday.html?embed=1" title="Ações de Hoje"></iframe>
+      </div>
+
+      <div id="signals" class="section-view" style="display:none!important">
+        <iframe class="embedded-frame" src="/signal-feed.html?embed=1" title="Feed de Sinais"></iframe>
+      </div>
+
+      <div id="validation" class="section-view" style="display:none!important">
+        <iframe class="embedded-frame" src="/linkedin-validation.html?embed=1" title="Validação LinkedIn"></iframe>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function copyShareLink(e) {
+      e.preventDefault();
+      const url = 'https://nilofranzosi.github.io/abm-dashboard/';
+      navigator.clipboard.writeText(url).then(() => {
+        const label = document.getElementById('share-label');
+        label.textContent = 'Link copiado!';
+        setTimeout(() => { label.textContent = 'Copiar link'; }, 2000);
+      });
+    }
+
+    const buttons = Array.from(document.querySelectorAll(".nav-item[data-view]"));
+    const views = Array.from(document.querySelectorAll(".section-view"));
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = button.dataset.view;
+        buttons.forEach((item) => item.classList.toggle("active", item === button));
+        views.forEach((view) => view.classList.toggle("active", view.id === target));
+      });
+    });
+
+    const registryApiPath = "/api/abm-campaign-registry";
+    const registryFields = [
+      "campaignName", "company", "contactName", "role", "linkedinUrl", "segment", "senderProfile",
+      "plannedDate", "status", "triggerType", "messageAngle", "proofType", "signalSummary",
+      "firstMessageDraft", "priority", "nextAction", "notes"
+    ];
+    const registryLabels = {
+      PLANNED: "Planejado",
+      CONNECTION_SENT: "Conexão enviada",
+      CONNECTION_ACCEPTED: "Conexão aceita",
+      MESSAGE_SENT: "Mensagem enviada",
+      FOLLOW_UP_DUE: "Follow-up devido",
+      REPLIED_NEUTRAL: "Resposta neutra",
+      REPLIED_POSITIVE: "Resposta positiva",
+      REPLIED_NEGATIVE: "Resposta negativa",
+      CONTACT_ROUTED: "Contato encaminhado",
+      MEETING_BOOKED: "Reunião marcada",
+      PAUSED: "Pausado",
+      EXCLUDED: "Fora de escopo"
+    };
+    const registryState = { entries: [], selectedId: null };
+
+    function byId(id) { return document.getElementById(id); }
+    function registryStatusClass(status) {
+      if (["REPLIED_POSITIVE", "CONTACT_ROUTED", "MEETING_BOOKED"].includes(status)) return "good";
+      if (["FOLLOW_UP_DUE", "REPLIED_NEUTRAL", "PAUSED"].includes(status)) return "warn";
+      if (["REPLIED_NEGATIVE", "EXCLUDED"].includes(status)) return "bad";
+      return "";
+    }
+    async function registryApi(path = "", options = {}) {
+      const response = await fetch(registryApiPath + path, {
+        ...options,
+        headers: { "Content-Type": "application/json", ...(options.headers || {}) }
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(payload.error || "Erro na operação");
+      return payload;
+    }
+    function registryPayload() {
+      return Object.fromEntries(registryFields.map((field) => [field, byId(field).value.trim()]));
+    }
+    function fillRegistryForm(entry) {
+      registryState.selectedId = entry?.id || null;
+      byId("entryId").value = registryState.selectedId || "";
+      registryFields.forEach((field) => {
+        byId(field).value = entry?.[field] || (field === "senderProfile" ? "Thiago" : field === "status" ? "PLANNED" : field === "priority" ? "Média" : "");
+      });
+      if (!entry) {
+        byId("triggerType").value = "MANUAL_RESEARCH";
+        byId("messageAngle").value = "SCALE";
+        byId("proofType").value = "INTELLIGENCE_MONDAY_SIGNAL";
+      }
+      byId("registryFormTitle").textContent = entry ? "Editar registro de campanha" : "Novo registro de campanha";
+    }
+    function renderRegistry() {
+      const filter = byId("registryFilterInput").value.toLowerCase();
+      const filtered = registryState.entries.filter((entry) => JSON.stringify(entry).toLowerCase().includes(filter));
+      byId("registryEmptyState").style.display = filtered.length ? "none" : "block";
+      byId("registryRows").innerHTML = filtered.map((entry) =>
+        "<tr>" +
+          "<td><strong>" + entry.company + "</strong><br><span class='muted'>" + entry.contactName + (entry.role ? " · " + entry.role : "") + "</span></td>" +
+          "<td>" + entry.campaignName + "<br><span class='muted'>" + entry.senderProfile + " · " + (entry.segment || "sem segmento") + "</span></td>" +
+          "<td>" + entry.triggerType + "<br><span class='muted'>" + (entry.signalSummary || "-") + "</span></td>" +
+          "<td>" + entry.messageAngle + "</td>" +
+          "<td>" + entry.proofType + "</td>" +
+          "<td><span class='pill " + registryStatusClass(entry.status) + "'>" + (registryLabels[entry.status] || entry.status) + "</span></td>" +
+          "<td>" + (entry.plannedDate || "-") + "<br><button class='action-button secondary registry-edit' data-id='" + entry.id + "'>Editar</button></td>" +
+        "</tr>"
+      ).join("");
+      byId("registryKpiTotal").textContent = registryState.entries.length;
+      byId("registryKpiPlanned").textContent = registryState.entries.filter((entry) => entry.status === "PLANNED").length;
+      byId("registryKpiSent").textContent = registryState.entries.filter((entry) => ["CONNECTION_SENT", "CONNECTION_ACCEPTED", "MESSAGE_SENT", "FOLLOW_UP_DUE"].includes(entry.status)).length;
+      byId("registryKpiAdvanced").textContent = registryState.entries.filter((entry) => ["REPLIED_POSITIVE", "CONTACT_ROUTED", "MEETING_BOOKED"].includes(entry.status)).length;
+      document.querySelectorAll(".registry-edit").forEach((button) => {
+        button.addEventListener("click", () => {
+          const entry = registryState.entries.find((item) => item.id === button.dataset.id);
+          if (entry) fillRegistryForm(entry);
+        });
+      });
+    }
+    async function loadRegistry() {
+      const payload = await registryApi();
+      registryState.entries = payload.data.entries || [];
+      byId("registryMeta").textContent = "Atualizado em " + new Date(payload.data.metadata.updatedAt).toLocaleString("pt-BR");
+      renderRegistry();
+    }
+    function registryCsvEscape(value) {
+      return '"' + String(value || "").replace(/"/g, '""') + '"';
+    }
+    function exportRegistryCsv() {
+      const header = ["campaignName", "company", "contactName", "role", "segment", "senderProfile", "plannedDate", "status", "triggerType", "messageAngle", "proofType", "signalSummary", "firstMessageDraft", "priority", "nextAction", "notes"];
+      const rows = registryState.entries.map((entry) => header.map((key) => registryCsvEscape(entry[key])).join(";"));
+      byId("registryExportBox").value = [header.join(";"), ...rows].join("\n");
+    }
+    byId("registryForm").addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const id = registryState.selectedId;
+      await registryApi(id ? "/" + id : "", { method: id ? "PATCH" : "POST", body: JSON.stringify(registryPayload()) });
+      fillRegistryForm(null);
+      await loadRegistry();
+    });
+    byId("deleteRegistryBtn").addEventListener("click", async () => {
+      if (!registryState.selectedId) return;
+      await registryApi("/" + registryState.selectedId, { method: "DELETE" });
+      fillRegistryForm(null);
+      await loadRegistry();
+    });
+    byId("newRegistryBtn").addEventListener("click", () => fillRegistryForm(null));
+    byId("refreshRegistryBtn").addEventListener("click", loadRegistry);
+    byId("registryFilterInput").addEventListener("input", renderRegistry);
+    byId("exportRegistryCsvBtn").addEventListener("click", exportRegistryCsv);
+    byId("exportRegistryJsonBtn").addEventListener("click", () => {
+      byId("registryExportBox").value = JSON.stringify(registryState.entries, null, 2);
+    });
+    fillRegistryForm(null);
+    loadRegistry().catch((error) => {
+      byId("registryMeta").textContent = error.message;
+    });
+
+    byId("regenerateDashboardsBtn").addEventListener("click", async () => {
+      const button = byId("regenerateDashboardsBtn");
+      const status = byId("regenerateDashboardsStatus");
+      button.disabled = true;
+      status.textContent = "Regenerando...";
+      try {
+        const response = await fetch("/api/abm-dashboards/regenerate", { method: "POST" });
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) throw new Error(payload.error || "Erro ao regenerar");
+        status.textContent = "Concluído! Recarregando...";
+        setTimeout(() => window.location.reload(), 600);
+      } catch (error) {
+        button.disabled = false;
+        status.textContent = error.message;
+      }
+    });
+
+    document.querySelectorAll(".company-override-save").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const contactName = button.dataset.contact;
+        const input = document.querySelector(".company-override-input[data-contact='" + contactName + "']");
+        const company = input.value.trim();
+        if (!company) {
+          input.focus();
+          return;
+        }
+        const original = button.textContent;
+        button.disabled = true;
+        button.textContent = "Salvando...";
+        try {
+          const response = await fetch("/api/abm-company-overrides", {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ contactName, company })
+          });
+          const payload = await response.json().catch(() => ({}));
+          if (!response.ok) throw new Error(payload.error || "Erro ao salvar");
+          button.textContent = "Salvo!";
+          input.disabled = true;
+          setTimeout(() => {
+            button.textContent = "Regenere os dashboards";
+          }, 1200);
+        } catch (error) {
+          button.disabled = false;
+          button.textContent = original;
+          alert(error.message);
+        }
+      });
+    });
+    async function refreshDashboard() {
+      const btn = document.getElementById('btn-refresh');
+      const status = document.getElementById('refresh-status');
+      btn.disabled = true;
+      btn.classList.add('loading');
+      status.textContent = 'Atualizando…';
+      try {
+        const res = await fetch('/api/abm-dashboards/regenerate', { method: 'POST' });
+        if (!res.ok) throw new Error('Erro ' + res.status);
+        status.textContent = 'Atualizado! Recarregando…';
+        setTimeout(() => location.reload(), 800);
+      } catch (e) {
+        status.textContent = 'Erro. Tente novamente.';
+        btn.disabled = false;
+        btn.classList.remove('loading');
+      }
+    }
+  </script>
+</body>
+</html>

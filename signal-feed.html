@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PX Outreach Engine - Feed de Sinais</title>
+  <style>
+    :root {
+      --blue: #0F52BA;
+      --blue-dark: #0A3C8A;
+      --ink: #172033;
+      --muted: #657083;
+      --line: #DDE3EC;
+      --soft: #F6F8FB;
+      --panel: #FFFFFF;
+      --bg: #EEF2F7;
+      --green: #158255;
+      --amber: #A05A00;
+      --red: #B42318;
+      --slate: #253047;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.35;
+    }
+
+    html.embedded-view .shell { grid-template-columns: 1fr; }
+    html.embedded-view .shell aside { display: none; }
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 236px 1fr;
+      gap: 14px;
+      padding: 14px;
+    }
+
+    aside {
+      background: #111827;
+      color: #FFFFFF;
+      border-radius: 6px;
+      padding: 18px 16px;
+    }
+
+    .brand {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .nav-label {
+      color: #AAB4C3;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin: 20px 0 8px;
+    }
+
+    .nav-item {
+      display: block;
+      border: 1px solid #334155;
+      background: #1F2937;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .nav-item.active {
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+
+    main {
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    header {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 18px 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button {
+      border: 1px solid var(--blue);
+      background: var(--blue);
+      color: #FFFFFF;
+      border-radius: 5px;
+      padding: 10px 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: #FFFFFF;
+      color: var(--blue);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .kpi {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--blue);
+      border-radius: 6px;
+      padding: 12px 13px;
+      min-height: 86px;
+    }
+
+    .kpi.warning { border-left-color: var(--amber); }
+    .kpi.critical { border-left-color: var(--red); }
+    .kpi.info { border-left-color: var(--blue); }
+
+    .kpi span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      min-height: 26px;
+    }
+
+    .kpi strong {
+      display: block;
+      font-size: 28px;
+      margin-top: 4px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .queue {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      min-height: 240px;
+      overflow: hidden;
+    }
+
+    .queue-head {
+      padding: 13px 15px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      background: #FFFFFF;
+    }
+
+    .queue-head h2 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .count {
+      min-width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      background: var(--slate);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .queue-body {
+      padding: 10px;
+      display: grid;
+      gap: 8px;
+      max-height: 440px;
+      overflow: auto;
+      background: var(--soft);
+    }
+
+    .action {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--blue);
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .action.warning { border-left-color: var(--amber); }
+    .action.critical { border-left-color: var(--red); }
+    .action.info { border-left-color: var(--blue); }
+
+    .action-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    .action strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      height: 22px;
+      padding: 0 7px;
+      border-radius: 999px;
+      background: #E8EDF5;
+      color: var(--slate);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .action p {
+      margin: 4px 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .action-footer {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .action-buttons {
+      margin-top: 8px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .action-buttons button {
+      padding: 6px 10px;
+      font-size: 11px;
+    }
+
+    .empty,
+    .error,
+    .loading {
+      padding: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      background: #FFFFFF;
+      border: 1px dashed var(--line);
+      border-radius: 5px;
+    }
+
+    .error {
+      color: var(--red);
+      border-color: #F2B8B5;
+      background: #FFF7F7;
+    }
+
+    .feed-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    @media (max-width: 1120px) {
+      .shell { grid-template-columns: 1fr; }
+      .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid { grid-template-columns: 1fr; }
+      header { display: block; }
+      .header-actions { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (new URLSearchParams(location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embedded-view");
+    }
+  </script>
+  <div class="shell">
+    <aside>
+      <div class="brand">PX Outreach Engine</div>
+      <div class="nav-label">Operação</div>
+      <a class="nav-item" href="/workday.html">Ações de Hoje</a>
+      <a class="nav-item active" href="/signal-feed.html">Feed de Sinais</a>
+      <a class="nav-item" href="/thiago-abm-intelligence.html">Inteligência ABM</a>
+      <a class="nav-item" href="/embarcadores-market.html">Market Intelligence</a>
+      <div class="nav-label">Contexto</div>
+      <div class="nav-item">ABM Embarcadores</div>
+      <div class="nav-item">LinkedIn + Touchpoints</div>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <div class="eyebrow">Operação ABM | sinais priorizados</div>
+          <h1>Feed de Sinais</h1>
+          <div class="muted" id="generated-at">Carregando dados operacionais...</div>
+        </div>
+        <div class="header-actions">
+          <button class="secondary" type="button" id="open-api">Ver JSON</button>
+          <button type="button" id="refresh">Atualizar</button>
+        </div>
+      </header>
+
+      <section class="kpis" id="kpis"></section>
+      <section class="queue" id="feed-queue">
+        <div class="queue-head">
+          <h2>Sinais priorizados</h2>
+          <span class="count" id="feed-count">0</span>
+        </div>
+        <div class="queue-body" id="feed-body"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const kpisEl = document.getElementById("kpis");
+    const feedBodyEl = document.getElementById("feed-body");
+    const feedCountEl = document.getElementById("feed-count");
+    const generatedAtEl = document.getElementById("generated-at");
+
+    const apiBase = window.location.protocol === "file:" ? "http://localhost:3000" : "";
+
+    document.getElementById("refresh").addEventListener("click", () => {
+      loadSignalFeed();
+    });
+
+    document.getElementById("open-api").addEventListener("click", () => {
+      window.open(`${apiBase}/api/signals/feed`, "_blank");
+    });
+
+    async function fetchJson(path, options) {
+      const response = await fetch(path, {
+        ...options,
+        headers: {
+          "Accept": "application/json",
+          ...(options && options.body ? { "Content-Type": "application/json" } : {}),
+          ...(options && options.headers ? options.headers : {})
+        }
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    }
+
+    function formatDate(value) {
+      if (!value) return "Sem prazo";
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "Data inválida";
+      return new Intl.DateTimeFormat("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(date);
+    }
+
+    function severityLabel(value) {
+      if (value === "critical") return "Crítico";
+      if (value === "warning") return "Atenção";
+      return "Info";
+    }
+
+    function renderKpis(summary) {
+      const cards = [
+        { short: "Total", value: summary?.total ?? 0, tone: "info" },
+        { short: "Priorizados", value: summary?.boosted ?? 0, tone: summary?.boosted > 0 ? "critical" : "info" },
+        { short: "Não mapeadas", value: summary?.unmapped ?? 0, tone: summary?.unmapped > 0 ? "warning" : "info" }
+      ];
+
+      kpisEl.innerHTML = cards.map((card) => `
+        <article class="kpi ${card.tone}">
+          <span>${card.short}</span>
+          <strong>${card.value}</strong>
+        </article>
+      `).join("");
+    }
+
+    function renderAbmBlock(item) {
+      const correlation = item.companyAbmCorrelation;
+      if (!correlation || correlation.mapped === false) {
+        return `<span class="badge">Não mapeada ainda</span>`;
+      }
+
+      const ownerName = correlation.owner?.name ? correlation.owner.name : "Sem owner";
+
+      return `
+        <p><strong>Score da conta:</strong> ${correlation.accountScore ?? "Sem score"}</p>
+        <p><strong>Próxima ação (conta):</strong> ${correlation.nextAction ?? "Sem próxima ação"} · ${formatDate(correlation.nextActionDueAt)}</p>
+        <p><strong>Owner:</strong> ${ownerName}</p>
+        <p><strong>Status do handoff:</strong> ${correlation.handoffStatus ?? "Sem handoff"}</p>
+        <p><strong>Última interação:</strong> ${formatDate(correlation.lastInteractionAt)}</p>
+      `;
+    }
+
+    function renderContactCorrelationBlock(item) {
+      const correlation = item.contactCampaignCorrelation;
+      if (!correlation) return "";
+
+      const campaignName = correlation.campaign?.name ? correlation.campaign.name : "Sem campanha ativa";
+      const senderName = correlation.senderProfile?.name ? correlation.senderProfile.name : "Sem perfil definido";
+
+      return `
+        <p><strong>Contato:</strong> ${correlation.contactName ?? "Sem contato"}</p>
+        <p><strong>Status na campanha:</strong> ${correlation.campaignContactStatus ?? "Sem status"}</p>
+        <p><strong>Campanha:</strong> ${campaignName}</p>
+        <p>Perfil: ${senderName}</p>
+      `;
+    }
+
+    function renderSignalCard(item) {
+      const evidence = item.evidenceUrl
+        ? `<a href="${item.evidenceUrl}" target="_blank" rel="noopener">Ver evidência</a>`
+        : "Sem evidência";
+
+      const boostedBadge = item.boosted ? `<span class="badge">Priorizado</span>` : "";
+
+      const contactBlock = renderContactCorrelationBlock(item);
+
+      return `
+        <div class="action" data-signal-id="${item.id}">
+          <div class="action-top">
+            <strong>${item.type} · score ${item.score}</strong>
+            ${boostedBadge}
+          </div>
+          <p><strong>Fonte:</strong> ${item.source ?? "Sem fonte"}</p>
+          <p><strong>Detectado em:</strong> ${formatDate(item.detectedAt)}</p>
+          <p>${evidence}</p>
+          <p><strong>Ação sugerida:</strong> ${item.suggestedAction ?? "Sem sugestão"}</p>
+          ${renderAbmBlock(item)}
+          ${contactBlock}
+          <div class="action-buttons">
+            <button class="secondary" type="button" data-action="review">Revisar</button>
+            <button class="secondary" type="button" data-action="ignore">Ignorar</button>
+            <button class="secondary" type="button" data-action="convert-to-task">Mover para Ações de Hoje</button>
+            <button type="button" data-action="convert">Converter em touchpoint</button>
+          </div>
+        </div>
+      `;
+    }
+
+    async function handleSignalAction(signalId, action) {
+      try {
+        if (action === "review") {
+          await fetchJson(`${apiBase}/api/signals/${signalId}/status`, {
+            method: "PATCH",
+            body: JSON.stringify({ status: "REVIEWED" })
+          });
+        } else if (action === "ignore") {
+          await fetchJson(`${apiBase}/api/signals/${signalId}/status`, {
+            method: "PATCH",
+            body: JSON.stringify({ status: "IGNORED" })
+          });
+        } else if (action === "convert") {
+          await fetchJson(`${apiBase}/api/signals/${signalId}/convert`, {
+            method: "POST"
+          });
+        } else if (action === "convert-to-task") {
+          await fetchJson(`${apiBase}/api/signals/${signalId}/convert-to-task`, {
+            method: "POST"
+          });
+        }
+        await loadSignalFeed();
+      } catch (error) {
+        renderError(error);
+      }
+    }
+
+    feedBodyEl.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-action]");
+      if (!button) return;
+      const card = button.closest("[data-signal-id]");
+      if (!card) return;
+      handleSignalAction(card.dataset.signalId, button.dataset.action);
+    });
+
+    function renderFeed(data) {
+      const items = data.items ?? [];
+      feedCountEl.textContent = items.length;
+      feedBodyEl.innerHTML = items.length === 0
+        ? `<div class="empty">Nenhum sinal priorizado no momento.</div>`
+        : items.map(renderSignalCard).join("");
+    }
+
+    function renderLoading() {
+      kpisEl.innerHTML = "";
+      feedBodyEl.innerHTML = `<div class="loading">Carregando feed de sinais...</div>`;
+    }
+
+    function renderError(error) {
+      kpisEl.innerHTML = "";
+      feedBodyEl.innerHTML = `<div class="error">Não foi possível carregar /api/signals/feed. ${error.message}</div>`;
+      generatedAtEl.textContent = "Falha ao carregar dados.";
+    }
+
+    async function loadSignalFeed() {
+      renderLoading();
+      try {
+        const payload = await fetchJson(`${apiBase}/api/signals/feed`);
+        const data = payload.data;
+        renderKpis(data.summary);
+        renderFeed(data);
+        generatedAtEl.textContent = `Atualizado em ${formatDate(data.generatedAt)}`;
+      } catch (error) {
+        renderError(error);
+      }
+    }
+
+    loadSignalFeed();
+  </script>
+</body>
+</html>

@@ -1,0 +1,920 @@
+[
+  {
+    "weekKey": "2026-S23",
+    "generatedAt": "2026-06-05T19:13:30.673Z",
+    "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-06-05.json",
+    "activeContacts": 47,
+    "excludedContacts": 7,
+    "unresolvedCompanies": 0,
+    "uniqueCompanies": 39,
+    "replyRate": 0.1276595744680851,
+    "qualifiedAdvanceRate": 0.1702127659574468,
+    "meetingRate": 0.06382978723404255,
+    "avgDaysToFirstReply": 3.3333333333333335,
+    "avgDaysSinceLastOutbound": 34.808510638297875,
+    "totalOutboundTouchpoints": 67,
+    "totalInboundTouchpoints": 12,
+    "funnel": [
+      {
+        "status": "FIRST_CONTACT_SENT",
+        "label": "1º contato",
+        "count": 24
+      },
+      {
+        "status": "FOLLOW_UP_SENT",
+        "label": "Follow-up",
+        "count": 14
+      },
+      {
+        "status": "REPLIED_POSITIVE",
+        "label": "Resposta positiva",
+        "count": 3
+      },
+      {
+        "status": "MEETING_BOOKED",
+        "label": "Reunião marcada",
+        "count": 2
+      },
+      {
+        "status": "CONTACT_ROUTED",
+        "label": "Contato encaminhado",
+        "count": 2
+      },
+      {
+        "status": "MEETING_DONE",
+        "label": "Reunião realizada",
+        "count": 1
+      },
+      {
+        "status": "REPLIED_NEGATIVE",
+        "label": "Resposta negativa",
+        "count": 1
+      }
+    ],
+    "topCompanies": [
+      {
+        "company": "Natura & Co",
+        "contacts": 2,
+        "outboundTouchpoints": 3,
+        "inboundTouchpoints": 2,
+        "bestStatus": "CONTACT_ROUTED",
+        "score": 96
+      },
+      {
+        "company": "Magalog / Magazine Luiza",
+        "contacts": 1,
+        "outboundTouchpoints": 6,
+        "inboundTouchpoints": 5,
+        "bestStatus": "MEETING_BOOKED",
+        "score": 80
+      },
+      {
+        "company": "Petrobras",
+        "contacts": 1,
+        "outboundTouchpoints": 4,
+        "inboundTouchpoints": 2,
+        "bestStatus": "MEETING_DONE",
+        "score": 56
+      },
+      {
+        "company": "CIMED",
+        "contacts": 1,
+        "outboundTouchpoints": 5,
+        "inboundTouchpoints": 2,
+        "bestStatus": "MEETING_BOOKED",
+        "score": 53
+      },
+      {
+        "company": "Tirolez",
+        "contacts": 2,
+        "outboundTouchpoints": 3,
+        "inboundTouchpoints": 1,
+        "bestStatus": "CONTACT_ROUTED",
+        "score": 48
+      },
+      {
+        "company": "XBRI",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED_POSITIVE",
+        "score": 40
+      },
+      {
+        "company": "ADM Brasil",
+        "contacts": 2,
+        "outboundTouchpoints": 4,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED_POSITIVE",
+        "score": 34
+      },
+      {
+        "company": "Opella",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      },
+      {
+        "company": "Kerry",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      },
+      {
+        "company": "Kellanova",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      },
+      {
+        "company": "Casas Bahia",
+        "contacts": 2,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 0
+      },
+      {
+        "company": "LG",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "weekKey": "2026-S24",
+    "generatedAt": "2026-06-11T18:06:28.587Z",
+    "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-06-11.json",
+    "activeContacts": 54,
+    "excludedContacts": 0,
+    "unresolvedCompanies": 25,
+    "uniqueCompanies": 29,
+    "replyRate": 0.18518518518518517,
+    "qualifiedAdvanceRate": 0.05555555555555555,
+    "meetingRate": 0,
+    "avgDaysToFirstReply": 2.8,
+    "avgDaysSinceLastOutbound": 40.22222222222222,
+    "totalOutboundTouchpoints": 79,
+    "totalInboundTouchpoints": 20,
+    "funnel": [
+      {
+        "status": "FIRST_CONTACT_SENT",
+        "label": "1º contato",
+        "count": 37
+      },
+      {
+        "status": "REPLIED_NEUTRAL",
+        "label": "Resposta neutra",
+        "count": 7
+      },
+      {
+        "status": "FOLLOW_UP_SENT",
+        "label": "Follow-up",
+        "count": 7
+      },
+      {
+        "status": "REPLIED_POSITIVE",
+        "label": "Resposta positiva",
+        "count": 3
+      }
+    ],
+    "topCompanies": [
+      {
+        "company": "A apurar",
+        "contacts": 25,
+        "outboundTouchpoints": 36,
+        "inboundTouchpoints": 14,
+        "bestStatus": "REPLIED_POSITIVE",
+        "score": 92
+      },
+      {
+        "company": "CISLOG USP",
+        "contacts": 1,
+        "outboundTouchpoints": 3,
+        "inboundTouchpoints": 2,
+        "bestStatus": "REPLIED_POSITIVE",
+        "score": 56
+      },
+      {
+        "company": "CIMED",
+        "contacts": 1,
+        "outboundTouchpoints": 5,
+        "inboundTouchpoints": 2,
+        "bestStatus": "REPLIED_POSITIVE",
+        "score": 53
+      },
+      {
+        "company": "Natura",
+        "contacts": 1,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED_NEUTRAL",
+        "score": 8
+      },
+      {
+        "company": "Universidade Presbiteriana Mackenzie",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED_NEUTRAL",
+        "score": 8
+      },
+      {
+        "company": "C&A",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      },
+      {
+        "company": "Opella",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      },
+      {
+        "company": "empresa Cacau Show",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      },
+      {
+        "company": "Amazon",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      },
+      {
+        "company": "Kerry",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FIRST_CONTACT_SENT",
+        "score": 0
+      },
+      {
+        "company": "Shein",
+        "contacts": 1,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 0
+      },
+      {
+        "company": "Shopee",
+        "contacts": 1,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "weekKey": "2026-S25",
+    "generatedAt": "2026-06-19T18:28:37.131Z",
+    "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
+    "totalApproached": 47,
+    "activePipeline": 40,
+    "pausedCount": 7,
+    "repliedOrBetter": 9,
+    "meetingOrBetter": 2,
+    "dealCount": 2,
+    "replyRate": 0.225,
+    "meetingRate": 0.05,
+    "dealRate": 0.05,
+    "avgDaysToFirstReply": 8.333333333333334,
+    "avgDaysSinceLastOutbound": 3.066666666666667,
+    "totalOutboundTouchpoints": 22,
+    "totalInboundTouchpoints": 2,
+    "funnel": [
+      {
+        "stage": "CONNECTION_SENT",
+        "label": "Conexão Enviada",
+        "count": 2
+      },
+      {
+        "stage": "MESSAGE_SENT",
+        "label": "Mensagem Enviada",
+        "count": 9
+      },
+      {
+        "stage": "FOLLOW_UP_SENT",
+        "label": "Follow-Up Enviado",
+        "count": 20
+      },
+      {
+        "stage": "REPLIED",
+        "label": "Respondeu",
+        "count": 5
+      },
+      {
+        "stage": "MEETING_DONE",
+        "label": "Reunião Realizada",
+        "count": 2
+      },
+      {
+        "stage": "DEAL",
+        "label": "Negócio",
+        "count": 2
+      }
+    ],
+    "topCompanies": [
+      {
+        "company": "CIMED",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-07T17:29:00.000Z"
+      },
+      {
+        "company": "Magazine Luiza",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-31T21:09:00.000Z"
+      },
+      {
+        "company": "Natura",
+        "stage": "MEETING_DONE",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "MEETING_DONE",
+        "score": 80,
+        "nextActionDueAt": "2026-05-01T22:52:00.000Z"
+      },
+      {
+        "company": "Gerdau",
+        "stage": "MEETING_DONE",
+        "contacts": 1,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 1,
+        "bestStatus": "MEETING_DONE",
+        "score": 80,
+        "nextActionDueAt": "2026-06-21T11:30:00.000Z"
+      },
+      {
+        "company": "Vibra Energia",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-04-13T03:00:00.000Z"
+      },
+      {
+        "company": "XBRI",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-04-15T03:00:00.000Z"
+      },
+      {
+        "company": "Casas Bahia",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 3,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-21T18:34:00.000Z"
+      },
+      {
+        "company": "L'Oréal",
+        "stage": "REPLIED",
+        "contacts": 0,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-22T03:00:00.000Z"
+      },
+      {
+        "company": "Continental",
+        "stage": "REPLIED",
+        "contacts": 0,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": null
+      },
+      {
+        "company": "JBS",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-05-06T03:00:00.000Z"
+      },
+      {
+        "company": "Usiminas",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-05-06T03:00:00.000Z"
+      },
+      {
+        "company": "CSN",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-05-06T03:00:00.000Z"
+      },
+      {
+        "company": "Michelin",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-05-06T03:00:00.000Z"
+      },
+      {
+        "company": "Unilever",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-05-06T03:00:00.000Z"
+      },
+      {
+        "company": "Yara Brasil",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-05-06T03:00:00.000Z"
+      }
+    ],
+    "activeContacts": 40,
+    "excludedContacts": 7,
+    "unresolvedCompanies": 0,
+    "uniqueCompanies": 47,
+    "qualifiedAdvanceRate": 0.05
+  },
+  {
+    "weekKey": "2026-S26",
+    "generatedAt": "2026-06-26T17:54:05.097Z",
+    "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
+    "totalApproached": 63,
+    "activePipeline": 48,
+    "pausedCount": 15,
+    "repliedOrBetter": 13,
+    "meetingOrBetter": 6,
+    "dealCount": 5,
+    "replyRate": 0.2708333333333333,
+    "meetingRate": 0.125,
+    "dealRate": 0.10416666666666667,
+    "avgDaysToFirstReply": 7.4,
+    "avgDaysSinceLastOutbound": 0.4666666666666667,
+    "totalOutboundTouchpoints": 24,
+    "totalInboundTouchpoints": 10,
+    "funnel": [
+      {
+        "stage": "CONNECTION_SENT",
+        "label": "Conexão Enviada",
+        "count": 8
+      },
+      {
+        "stage": "CONNECTION_ACCEPTED",
+        "label": "Conexão Aceita",
+        "count": 7
+      },
+      {
+        "stage": "MESSAGE_SENT",
+        "label": "Mensagem Enviada",
+        "count": 12
+      },
+      {
+        "stage": "FOLLOW_UP_SENT",
+        "label": "Follow-Up Enviado",
+        "count": 8
+      },
+      {
+        "stage": "REPLIED",
+        "label": "Respondeu",
+        "count": 7
+      },
+      {
+        "stage": "MEETING_DONE",
+        "label": "Reunião Realizada",
+        "count": 1
+      },
+      {
+        "stage": "DEAL",
+        "label": "Negócio",
+        "count": 5
+      }
+    ],
+    "topCompanies": [
+      {
+        "company": "XBRI",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-04-15T03:00:00.000Z"
+      },
+      {
+        "company": "Natura",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-01T22:52:00.000Z"
+      },
+      {
+        "company": "CIMED",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-07T17:29:00.000Z"
+      },
+      {
+        "company": "Magazine Luiza",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-31T21:09:00.000Z"
+      },
+      {
+        "company": "Petrobras",
+        "stage": "DEAL",
+        "contacts": 0,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-06-23T03:00:00.000Z"
+      },
+      {
+        "company": "Gerdau",
+        "stage": "MEETING_DONE",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "MEETING_DONE",
+        "score": 80,
+        "nextActionDueAt": "2026-06-20T11:30:00.000Z"
+      },
+      {
+        "company": "Vibra Energia",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-04-13T03:00:00.000Z"
+      },
+      {
+        "company": "Casas Bahia",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 4,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-19T18:34:00.000Z"
+      },
+      {
+        "company": "L'Oréal",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 2,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-21T17:36:00.000Z"
+      },
+      {
+        "company": "Continental Pneus",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-22T03:00:00.000Z"
+      },
+      {
+        "company": "Minerva Foods",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-28T03:00:00.000Z"
+      },
+      {
+        "company": "Boticário",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-28T15:24:00.000Z"
+      },
+      {
+        "company": "Tramontina",
+        "stage": "REPLIED",
+        "contacts": 0,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": null
+      },
+      {
+        "company": "Amazon Brasil",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-06-16T03:00:00.000Z"
+      },
+      {
+        "company": "LG Electronics Brasil",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-06-25T03:00:00.000Z"
+      }
+    ],
+    "activeContacts": 48,
+    "excludedContacts": 15,
+    "unresolvedCompanies": 0,
+    "uniqueCompanies": 63,
+    "qualifiedAdvanceRate": 0.125
+  },
+  {
+    "weekKey": "2026-S27",
+    "generatedAt": "2026-06-29T19:44:17.930Z",
+    "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
+    "totalApproached": 65,
+    "activePipeline": 62,
+    "pausedCount": 3,
+    "repliedOrBetter": 13,
+    "meetingOrBetter": 6,
+    "dealCount": 5,
+    "replyRate": 0.20967741935483872,
+    "meetingRate": 0.0967741935483871,
+    "dealRate": 0.08064516129032258,
+    "avgDaysToFirstReply": 6.7272727272727275,
+    "avgDaysSinceLastOutbound": 2.8666666666666667,
+    "totalOutboundTouchpoints": 24,
+    "totalInboundTouchpoints": 10,
+    "funnel": [
+      {
+        "stage": "CONNECTION_SENT",
+        "label": "Conexão Enviada",
+        "count": 8
+      },
+      {
+        "stage": "CONNECTION_ACCEPTED",
+        "label": "Conexão Aceita",
+        "count": 19
+      },
+      {
+        "stage": "MESSAGE_SENT",
+        "label": "Mensagem Enviada",
+        "count": 14
+      },
+      {
+        "stage": "FOLLOW_UP_SENT",
+        "label": "Follow-Up Enviado",
+        "count": 8
+      },
+      {
+        "stage": "REPLIED",
+        "label": "Respondeu",
+        "count": 7
+      },
+      {
+        "stage": "MEETING_DONE",
+        "label": "Reunião Realizada",
+        "count": 1
+      },
+      {
+        "stage": "DEAL",
+        "label": "Negócio",
+        "count": 5
+      }
+    ],
+    "topCompanies": [
+      {
+        "company": "XBRI",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-04-15T03:00:00.000Z"
+      },
+      {
+        "company": "Natura",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-01T22:52:00.000Z"
+      },
+      {
+        "company": "CIMED",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-07T17:29:00.000Z"
+      },
+      {
+        "company": "Magazine Luiza",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-31T21:09:00.000Z"
+      },
+      {
+        "company": "Petrobras",
+        "stage": "DEAL",
+        "contacts": 0,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-06-23T03:00:00.000Z"
+      },
+      {
+        "company": "Gerdau",
+        "stage": "MEETING_DONE",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "MEETING_DONE",
+        "score": 80,
+        "nextActionDueAt": "2026-06-20T11:30:00.000Z"
+      },
+      {
+        "company": "Vibra Energia",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-04-13T03:00:00.000Z"
+      },
+      {
+        "company": "Casas Bahia",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 4,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-19T18:34:00.000Z"
+      },
+      {
+        "company": "L'Oréal",
+        "stage": "REPLIED",
+        "contacts": 2,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 2,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-21T17:36:00.000Z"
+      },
+      {
+        "company": "Continental Pneus",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-22T03:00:00.000Z"
+      },
+      {
+        "company": "Minerva Foods",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-01T03:00:00.000Z"
+      },
+      {
+        "company": "Tramontina",
+        "stage": "REPLIED",
+        "contacts": 2,
+        "outboundTouchpoints": 6,
+        "inboundTouchpoints": 5,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-01T14:15:00.000Z"
+      },
+      {
+        "company": "Boticário",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-01T15:24:00.000Z"
+      },
+      {
+        "company": "Amazon Brasil",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-06-16T03:00:00.000Z"
+      },
+      {
+        "company": "LG Electronics Brasil",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-06-25T03:00:00.000Z"
+      }
+    ],
+    "activeContacts": 62,
+    "excludedContacts": 3,
+    "unresolvedCompanies": 0,
+    "uniqueCompanies": 65,
+    "qualifiedAdvanceRate": 0.0967741935483871
+  }
+]

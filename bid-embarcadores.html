@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<script>
+(function(){
+  var _fetch = window.fetch;
+  window.fetch = function(url, opts) {
+    if (typeof url === 'string') {
+      var path = url.replace(/^https?:\/\/[^/]+/, '');
+      if (/\/api\/market\/embarcadores(?!.*bid)/.test(path)) {
+        return _fetch('/data/embarcadores.json', opts).then(function(r){ return r.json(); })
+          .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
+      }
+      if (path.indexOf('/api/market/abm-coverage') !== -1) {
+        return _fetch('/data/abm-coverage.json', opts).then(function(r){ return r.json(); })
+          .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
+      }
+      if (path.indexOf('/api/market/bid-embarcadores') !== -1) {
+        return _fetch('/data/bid-embarcadores.json', opts).then(function(r){ return r.json(); })
+          .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
+      }
+    }
+    return _fetch.apply(this, arguments);
+  };
+})();
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PX - BID Embarcadores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:#0F52BA; --blue-50:#EFF6FF; --blue-100:#DBEAFE;
+      --ink:#1A202C; --muted:#64748B; --line:#E2E8F0;
+      --bg:#F0F4F8; --panel:#FFFFFF;
+      --green:#057A55; --green-bg:#ECFDF3;
+      --amber:#92400E; --amber-bg:#FFFBEB;
+      --red:#9B1C1C; --red-bg:#FEF2F2;
+      --gray-bg:#F1F5F9; --sidebar-bg:#0B1628;
+      --shadow-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+      --radius:10px; --radius-sm:6px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Inter',Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.5}
+    .shell{min-height:100vh;display:grid;grid-template-columns:256px 1fr}
+    html.embedded-view .shell{grid-template-columns:1fr}
+    html.embedded-view aside{display:none}
+    aside{background:var(--sidebar-bg);color:#CBD5E1;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
+    .brand-header{padding:22px 16px 18px;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:11px}
+    .brand-logo{width:34px;height:34px;background:linear-gradient(135deg,#2979FF 0%,#0F52BA 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff}
+    .brand-name{font-size:13px;font-weight:700;color:#F1F5F9;line-height:1.2}
+    .brand-sub{font-size:10px;font-weight:500;color:#475569;text-transform:uppercase;letter-spacing:.7px;margin-top:2px}
+    .nav-section{padding:8px 10px 4px}
+    .nav-label{color:#475569;font-size:10px;text-transform:uppercase;font-weight:600;letter-spacing:.7px;padding:10px 8px 5px}
+    .side-link{display:flex;align-items:center;gap:9px;color:#94A3B8;padding:8px 10px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:13px;font-weight:500;text-decoration:none;border-left:2px solid transparent;margin-bottom:1px}
+    .side-link:hover{background:rgba(255,255,255,.05);color:#E2E8F0}
+    .side-link.active{background:rgba(15,82,186,.18);border-left-color:#3B82F6;color:#BFDBFE;font-weight:600}
+    .nav-icon{width:15px;height:15px;opacity:.75;flex-shrink:0}
+    .sidebar-footer{margin-top:auto;padding:12px 10px 16px;border-top:1px solid rgba(255,255,255,.06)}
+    .foot-link{display:flex;align-items:center;gap:8px;color:#64748B;font-size:12px;padding:6px 10px;border-radius:var(--radius-sm);text-decoration:none}
+    .foot-link:hover{color:#CBD5E1;background:rgba(255,255,255,.05)}
+    main{padding:20px 24px 36px;display:flex;flex-direction:column;gap:18px;min-width:0}
+    .topbar{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;box-shadow:var(--shadow-sm)}
+    .topbar-left{display:flex;align-items:center;gap:12px}
+    .topbar-icon{width:40px;height:40px;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    h1{margin:0 0 2px;font-size:18px;font-weight:700;letter-spacing:-.4px}
+    .muted{color:var(--muted);font-size:13px}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+    .btn{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:var(--radius-sm);padding:7px 10px;font-size:12px;font-weight:700;color:#334155;background:#fff;text-decoration:none;cursor:pointer}
+    .btn:hover{border-color:var(--blue);color:var(--blue)}
+    .btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+    .kpi-row{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .kpi{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow-sm)}
+    .kpi.green{border-left-color:#10B981}.kpi.amber{border-left-color:#F59E0B}.kpi.red{border-left-color:#EF4444}.kpi.gray{border-left-color:#94A3B8}
+    .kpi-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin-bottom:8px}
+    .kpi-value{font-size:24px;font-weight:800;letter-spacing:-.5px;line-height:1}
+    .kpi-pct{font-size:13px;font-weight:600;color:var(--muted);margin-left:6px;}
+    .kpi-sub{font-size:11px;color:var(--muted);margin-top:4px}
+    .filter-bar{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;box-shadow:var(--shadow-sm)}
+    .filter-bar label{font-size:12px;font-weight:700;color:var(--muted);white-space:nowrap}
+    select,input[type=text]{border:1px solid var(--line);border-radius:var(--radius-sm);padding:7px 10px;font-size:13px;font-family:inherit;color:var(--ink);background:#F8FAFC;outline:none}
+    input[type=text]{min-width:280px;flex:1}
+    select:focus,input[type=text]:focus{border-color:var(--blue)}
+    .filter-count{margin-left:auto;font-size:12px;font-weight:700;color:var(--muted)}
+    .table-wrap{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+    table{width:100%;border-collapse:collapse}
+    thead{background:#F8FAFC}
+    th{padding:10px 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+    td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px}
+    tr:last-child td{border-bottom:none}
+    tr:hover td{background:#FAFBFC}
+    .company{font-weight:700;margin-bottom:4px}
+    .partner{font-weight:700;color:#0F172A}
+    .evidence{max-width:440px;color:#334155;line-height:1.45}
+    .links{display:flex;flex-direction:column;gap:5px;max-width:260px}
+    .links a{color:var(--blue);font-weight:600;text-decoration:none;font-size:12px;line-height:1.25}
+    .links a:hover{text-decoration:underline}
+    .badge{display:inline-flex;align-items:center;height:22px;padding:0 9px;border-radius:999px;font-size:11px;font-weight:800;white-space:nowrap}
+    .badge-alta{background:var(--green-bg);color:var(--green)}
+    .badge-media{background:var(--amber-bg);color:var(--amber)}
+    .badge-baixa{background:var(--red-bg);color:var(--red)}
+    .badge-nao{background:var(--gray-bg);color:#475569}
+    .empty{padding:32px;text-align:center;color:var(--muted)}
+    .info-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;box-shadow:var(--shadow-sm)}
+    .info-card h2{margin:0 0 4px;font-size:16px;font-weight:800;letter-spacing:-.3px}
+    .info-card .muted{margin-bottom:12px}
+    .info-card h3{margin:18px 0 8px;font-size:13px;font-weight:800;color:var(--blue)}
+    .info-card h3:first-of-type{margin-top:4px}
+    .info-card p{margin:0 0 10px;font-size:13px;line-height:1.65;color:#334155}
+    .info-card ul,.info-card ol{margin:0 0 10px;padding-left:22px;font-size:13px;line-height:1.75;color:#334155}
+    .info-card li{margin-bottom:5px}
+    .info-card strong{color:#0F172A}
+    .info-card a{color:var(--blue);font-weight:600;text-decoration:none}
+    .info-card a:hover{text-decoration:underline}
+    .highlight-list{background:var(--blue-50);border:1px solid var(--blue-100);border-radius:var(--radius-sm);padding:14px 16px 10px;margin:8px 0 14px}
+    .highlight-list ol{margin-bottom:0}
+    .note-box{background:var(--gray-bg);border-left:3px solid var(--muted);border-radius:var(--radius-sm);padding:10px 14px;font-size:12px;color:#475569;margin-top:6px}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    @media(max-width:1000px){.two-col{grid-template-columns:1fr}}
+    .col-canal{max-width:280px}
+    .col-tipo{max-width:200px;color:#334155}
+    @media(max-width:1200px){.kpi-row{grid-template-columns:repeat(2,1fr)}.shell{grid-template-columns:220px 1fr}}
+    @media(max-width:820px){.shell{grid-template-columns:1fr}aside{display:none}.kpi-row{grid-template-columns:1fr}main{padding:14px}.topbar{align-items:flex-start;flex-direction:column}.filter-count{margin-left:0}}
+  </style>
+</head>
+<body>
+<script>
+  if (new URLSearchParams(location.search).get("embed") === "1") {
+    document.documentElement.classList.add("embedded-view");
+  }
+</script>
+<div class="shell">
+  <aside>
+    <div class="brand-header">
+      <div class="brand-logo">PX</div>
+      <div>
+        <div class="brand-name">PX Outreach Engine</div>
+        <div class="brand-sub">Market Intelligence</div>
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Inteligência</div>
+      <a class="side-link" href="/embarcadores-market.html">
+        <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="8" width="3" height="7" rx="1"/><rect x="6" y="5" width="3" height="10" rx="1"/><rect x="11" y="1" width="3" height="14" rx="1"/></svg>
+        Embarcadores Brasil
+      </a>
+      <a class="side-link active" href="/bid-embarcadores.html">
+        <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M3 4v9h10V4"/><path d="M5 7h6M5 10h4M6 2h4"/></svg>
+        BID Embarcadores
+      </a>
+      <a class="side-link" href="/thiago-abm-intelligence.html">
+        <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s2-2 4-2 3 2 5 2 3-2 3-2V4s-1 2-3 2-3-2-5-2-4 2-4 2z"/></svg>
+        ABM Intelligence
+      </a>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Operação</div>
+      <a class="side-link" href="/workday.html">
+        <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M5 1v4M11 1v4M2 8h12"/></svg>
+        Ações de Hoje
+      </a>
+    </div>
+    <div class="sidebar-footer">
+      <div class="nav-label" style="padding-bottom:6px">Atalhos</div>
+      <a class="foot-link" href="#" onclick="copyLink(event)">Copiar link</a>
+    </div>
+  </aside>
+
+  <main>
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="topbar-icon">
+          <svg width="21" height="21" viewBox="0 0 20 20" fill="none" stroke="#0F52BA" stroke-width="1.8"><path d="M3 5h14M4 5v11h12V5"/><path d="M7 9h6M7 12h4M8 2h4v3H8z"/></svg>
+        </div>
+        <div>
+          <h1>BID Embarcadores</h1>
+          <div class="muted">Alta confiança em todos os tiers; média confiança somente para Tier 1 e Tier 2.</div>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/data/bid-embarcadores.json" target="_blank" rel="noreferrer">JSON</a>
+        <a class="btn primary" href="../reports/Mapa_Transportadoras_por_Embarcador_Tier1_2026-06-10.xlsx">Excel</a>
+      </div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi"><div class="kpi-label">Vínculos mapeados</div><div class="kpi-value" id="k-total">-</div><div class="kpi-sub">transportadora x embarcador</div></div>
+      <div class="kpi green"><div class="kpi-label">Alta confiança</div><div class="kpi-value" id="k-alta">-</div><div class="kpi-sub">fonte forte/oficial</div></div>
+      <div class="kpi amber"><div class="kpi-label">Tier 1</div><div class="kpi-value" id="k-tier1">-</div><div class="kpi-sub">vínculos acionáveis</div></div>
+      <div class="kpi red"><div class="kpi-label">Tier 2</div><div class="kpi-value" id="k-tier2">-</div><div class="kpi-sub">vínculos acionáveis</div></div>
+      <div class="kpi gray"><div class="kpi-label">Embarcadores</div><div class="kpi-value"><span id="k-emb">-</span><span class="kpi-pct" id="k-emb-pct"></span></div><div class="kpi-sub">Tier 1 + Tier 2 cobertos</div></div>
+    </div>
+
+    <div class="filter-bar">
+      <label for="f-embarcador">Embarcador</label>
+      <select id="f-embarcador"><option value="">Todos</option></select>
+      <label for="f-tier">Tier</label>
+      <select id="f-tier">
+        <option value="">Todos</option>
+        <option value="1">Tier 1</option>
+        <option value="2">Tier 2</option>
+        <option value="3">Tier 3</option>
+      </select>
+      <label for="f-confianca">Confiança</label>
+      <select id="f-confianca">
+        <option value="">Todas</option>
+        <option value="Alta">Alta</option>
+        <option value="Media">Média</option>
+      </select>
+      <input id="f-search" type="text" placeholder="Buscar por transportadora, evidência, portal ou fonte">
+      <button class="btn" type="button" onclick="resetFilters()">Limpar</button>
+      <div class="filter-count" id="filter-count">-</div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Embarcador</th>
+            <th>Tier</th>
+            <th>Site BID</th>
+            <th>Transportadora parceira</th>
+            <th>Evidência</th>
+            <th>Fonte</th>
+            <th>Confiança</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr><td colspan="7" class="empty">Carregando dados...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="info-card">
+      <h2>Análise: portais de BID/cotação de frete — Embarcadores Tier 1</h2>
+      <div class="muted">Mapeamento de 2026-06-11 — fontes: pesquisa do Codex (bid-embarcadores.json), base completa antes do filtro de confiança e pesquisa web complementar para os 5 embarcadores ainda não cobertos.</div>
+      <p><strong>Não existe, na prática, um "marketplace de BID aberto"</strong> (edital público + candidatura livre) na maioria dos embarcadores Tier 1. O padrão dominante se divide em 4 modelos:</p>
+      <ol>
+        <li><strong>Portal corporativo de fornecedores</strong> (SAP Ariba, Coupa, SAP Business Network, Synertrade ou portal próprio) — exige pré-cadastro/homologação. As cotações de frete (RFQs, leilões reversos) acontecem dentro dessas plataformas, normalmente após triagem do time de Compras/Logística — não é autoatendimento livre.</li>
+        <li><strong>Plataformas digitais de frete nascidas do próprio embarcador</strong> — funcionam como "marketplace aberto" de cadastro de transportadoras/motoristas (ex.: Vector da Bunge, ADM Truck Logistics).</li>
+        <li><strong>Programas de parceiro de last-mile/e-commerce</strong> (Amazon Relay, SPX/Shopee, Magalu Entregas, Mercado Envios Flex) — cadastro aberto, mas voltado a entrega/last-mile, perfil diferente de frota dedicada/longo curso.</li>
+        <li><strong>Sem portal público identificado</strong> — relacionamento via contato direto/Compras (CIMED, Unilever, PepsiCo).</li>
+      </ol>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Embarcador</th>
+            <th>Canal de acesso para transportadoras</th>
+            <th>Tipo</th>
+            <th>Confiança</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><div class="company">Amazon Brasil</div></td>
+            <td class="col-canal"><div class="links"><a href="https://relay.amazon.com/get-started" target="_blank" rel="noreferrer">Amazon Relay</a></div></td>
+            <td class="col-tipo">Marketplace aberto (last-mile)</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><div class="company">Mercado Livre</div></td>
+            <td class="col-canal"><div class="links"><a href="https://envios.mercadolivre.com.br/envios-extra/ajuda/18624" target="_blank" rel="noreferrer">Mercado Envios Extra/Flex</a></div></td>
+            <td class="col-tipo">Marketplace last-mile (regional)</td>
+            <td><span class="badge badge-media">Média</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><div class="company">Shopee Brasil</div></td>
+            <td class="col-canal"><div class="links"><a href="https://help.shopee.com.br/4/article/100043" target="_blank" rel="noreferrer">Form. transportadora parceira</a><a href="https://spx.com.br/" target="_blank" rel="noreferrer">SPX Express</a></div></td>
+            <td class="col-tipo">Marketplace aberto (last-mile)</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><div class="company">Magazine Luiza</div></td>
+            <td class="col-canal"><div class="links"><a href="https://magaluentregas.com.br/" target="_blank" rel="noreferrer">Magalu Entregas</a><a href="https://empresas.magazineluiza.com.br/" target="_blank" rel="noreferrer">Magalu Empresas</a></div></td>
+            <td class="col-tipo">Marketplace last-mile</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><div class="company">CIMED</div></td>
+            <td class="col-canal"><span class="muted">Não encontrado — contato via fornecedores@grupocimed.com.br</span></td>
+            <td class="col-tipo">Sem portal / contato direto</td>
+            <td><span class="badge badge-baixa">Baixa</span></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><div class="company">JBS</div></td>
+            <td class="col-canal"><div class="links"><a href="https://jbs.yms.trizy.com.br/" target="_blank" rel="noreferrer">JBS YMS/Trizy</a><a href="https://www.uboi.com.br/" target="_blank" rel="noreferrer">Uboi (gado vivo)</a></div></td>
+            <td class="col-tipo">YMS para já homologados</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><div class="company">Nestlé Brasil</div></td>
+            <td class="col-canal"><div class="links"><a href="https://supplier.nestle.com/" target="_blank" rel="noreferrer">Nestlé Supplier Portal</a></div><span class="muted">+ Ariba eSourcing</span></td>
+            <td class="col-tipo">Portal corporativo (Ariba)</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><div class="company">Unilever Brasil</div></td>
+            <td class="col-canal"><span class="muted">Não encontrado portal aberto — fornecedores logísticos avaliados via USQS, modelo "no compliance, no contract"</span></td>
+            <td class="col-tipo">Sem portal aberto / homologação por convite</td>
+            <td><span class="badge badge-alta">Alta*</span></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><div class="company">Grupo Boticário</div></td>
+            <td class="col-canal"><div class="links"><a href="https://fornecedores.grupoboticario.com.br/" target="_blank" rel="noreferrer">Portal dos Fornecedores</a><a href="https://plataformalogistica.grupoboticario.com.br/" target="_blank" rel="noreferrer">Plataforma Logística GB</a></div></td>
+            <td class="col-tipo">Portal corporativo + plataforma logística dedicada</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><div class="company">Raízen</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.raizen.com.br/sobre-a-raizen/portal-dos-fornecedores" target="_blank" rel="noreferrer">Portal dos Fornecedores</a></div></td>
+            <td class="col-tipo">Portal corporativo</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td><div class="company">Vibra Energia</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.vibraenergia.com.br/quero-ser-um-fornecedor" target="_blank" rel="noreferrer">Quero ser fornecedor</a><a href="https://play.google.com/store/apps/details?hl=pt&id=br.com.vibraenergia.maistransportes" target="_blank" rel="noreferrer">App +Transportes</a></div></td>
+            <td class="col-tipo">App dedicado a transportadoras</td>
+            <td><span class="badge badge-media">Média/Alta</span></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td><div class="company">Braskem</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.braskem.com.br/fornecedores" target="_blank" rel="noreferrer">Fornecedores Braskem / Coupa</a></div></td>
+            <td class="col-tipo">Portal corporativo (Coupa)</td>
+            <td><span class="badge badge-media">Média</span></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td><div class="company">Gerdau</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www2.gerdau.com.br/fornecedores/" target="_blank" rel="noreferrer">Seja Fornecedor Gerdau / Ariba</a></div></td>
+            <td class="col-tipo">Portal corporativo (Ariba)</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td><div class="company">Cargill</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.cargill.com/supplier-central/pt_BR/ariba-network" target="_blank" rel="noreferrer">Central de Fornecedores — Ariba Network</a></div></td>
+            <td class="col-tipo">Portal corporativo (Ariba)</td>
+            <td><span class="badge badge-media">Média</span></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td><div class="company">PepsiCo Brasil</div></td>
+            <td class="col-canal"><span class="muted">Não encontrado — possui Torre de Controle de Transporte (Itu/SP); já chegou a ofertar frete a terceiros</span></td>
+            <td class="col-tipo">Sem portal aberto</td>
+            <td><span class="badge badge-baixa">Baixa</span></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td><div class="company">Coca-Cola FEMSA</div></td>
+            <td class="col-canal"><div class="links"><a href="https://coca-colafemsa.com/pt/global/fornecedores.html" target="_blank" rel="noreferrer">Fornecedores Coca-Cola FEMSA</a></div></td>
+            <td class="col-tipo">Portal corporativo institucional</td>
+            <td><span class="badge badge-media">Média</span></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td><div class="company">MBRF (Marfrig + BRF)</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.mbrf.com/portal-do-fornecedor/" target="_blank" rel="noreferrer">Portal do Fornecedor MBRF</a></div></td>
+            <td class="col-tipo">Portal corporativo dedicado</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td><div class="company">Ambev</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.suprimentosambev.com.br/vl" target="_blank" rel="noreferrer">Vendor List Portal</a><a href="https://connect.ambev.com.br/" target="_blank" rel="noreferrer">Connect</a></div><span class="muted">+ SAP Ariba/Business Network</span></td>
+            <td class="col-tipo">Portal corporativo (múltiplos canais)</td>
+            <td><span class="badge badge-media">Média</span></td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td><div class="company">Minerva Foods</div></td>
+            <td class="col-canal"><div class="links"><a href="https://minervafoods.com/en/suppliers/" target="_blank" rel="noreferrer">Suppliers Minerva</a></div><span class="muted">genérico, sem módulo de frete claro</span></td>
+            <td class="col-tipo">Portal corporativo genérico</td>
+            <td><span class="badge badge-baixa">Baixa</span></td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td><div class="company">Yara Brasil</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.yarabrasil.com.br/sobre-yara/fornecedores/" target="_blank" rel="noreferrer">Fornecedores Yara</a><a href="https://www.yarabrasil.com.br/globalassets/manual-da-transportadora-versao-4.0_v2.pdf" target="_blank" rel="noreferrer">Manual da Transportadora (Moniloc)</a></div></td>
+            <td class="col-tipo">Portal corporativo + homologação formal de transportadora</td>
+            <td><span class="badge badge-media">Média</span></td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td><div class="company">ADM Brasil</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.adm.com/en-us/products-services/services/transportation-logistics/customer-portal/" target="_blank" rel="noreferrer">ADM Logistics Customer Portal</a><a href="https://play.google.com/store/apps/details?hl=pt&id=com.adm.admoperationsfacilitiesmobile.dev" target="_blank" rel="noreferrer">ADM Truck Logistics app</a></div></td>
+            <td class="col-tipo">App/portal de logística próprio</td>
+            <td><span class="badge badge-media">Média</span></td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td><div class="company">Bunge Brasil</div></td>
+            <td class="col-canal"><div class="links"><a href="https://bunge.yms.trizy.com.br/" target="_blank" rel="noreferrer">Bunge YMS/Trizy</a><a href="https://www.vector-unitech.com/" target="_blank" rel="noreferrer">Vector</a></div></td>
+            <td class="col-tipo">Plataforma digital de frete (cadastro de transportadoras/motoristas)</td>
+            <td><span class="badge badge-alta">Alta</span></td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td><div class="company">Assaí Atacadista</div></td>
+            <td class="col-canal"><div class="links"><a href="https://www.assai.com.br/fornecedores" target="_blank" rel="noreferrer">Vitrine do Fornecedor Assaí</a></div><span class="muted">foco em produto p/ revenda, não logística</span></td>
+            <td class="col-tipo">Portal corporativo genérico</td>
+            <td><span class="badge badge-baixa">Baixa</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="info-card">
+      <h3>Os 4 achados mais "BID-like" (cadastro aberto, foco em frete/transportadora)</h3>
+      <p>Canais que mais se aproximam de um "painel de BID" real — cadastro direto, sem necessidade de convite prévio do Compras:</p>
+      <div class="highlight-list">
+        <ol>
+          <li><strong>Bunge Brasil → Vector</strong> (<a href="https://www.vector-unitech.com/" target="_blank" rel="noreferrer">vector-unitech.com</a>) — plataforma digital nasceu dentro da Bunge para conectar embarcadores, transportadoras e motoristas autônomos; já movimentou ~1,5 milhão de toneladas de grãos via digitalização de fretes.</li>
+          <li><strong>ADM Brasil → ADM Truck Logistics app</strong> + ADM Logistics Customer Portal — app próprio da ADM para logística rodoviária, disponível na Play Store.</li>
+          <li><strong>Vibra Energia → app "+Transportes"</strong> — app dedicado especificamente a transportadoras parceiras, somado ao formulário "Quero ser fornecedor".</li>
+          <li><strong>Amazon Brasil → Amazon Relay</strong> — cadastro 100% self-service, mas o perfil é last-mile/entrega de pacotes, não necessariamente o core de frota dedicada da PX.</li>
+        </ol>
+      </div>
+      <div class="note-box">Fora do Tier 1 da PX, vale registrar como referência de modelo: <strong>Votorantim Cimentos → Motz</strong>, transportadora digital criada pela própria Votorantim para conectar embarcadores e caminhoneiros autônomos — mesmo padrão do Vector (Bunge).</div>
+    </div>
+
+    <div class="two-col">
+      <div class="info-card">
+        <h3>Canais de pré-cadastro corporativo (requerem follow-up institucional)</h3>
+        <p>Raízen, Boticário, Braskem (Coupa), Gerdau (Ariba), Cargill (Ariba), MBRF, Nestlé (Ariba), Ambev (Ariba/SAP Business Network/Connect), Coca-Cola FEMSA, Yara (com Manual da Transportadora — processo formal de homologação).</p>
+        <p>Nestes casos, o cadastro no portal por si só raramente gera uma cotação — o time de Compras/Logística costuma convidar fornecedores já triados para participar de eventos de sourcing/RFQ. O cadastro é <strong>pré-requisito</strong>, não <strong>gatilho</strong>.</p>
+      </div>
+      <div class="info-card">
+        <h3>Sem portal público identificado — abordagem direta via ABM</h3>
+        <ul>
+          <li><strong>CIMED</strong> — fornecedores@grupocimed.com.br; usa transportadoras terceirizadas regionais (Isa's Transportes, Prolog).</li>
+          <li><strong>Unilever Brasil</strong> — sem portal aberto; fornecedores logísticos avaliados via USQS, contato institucional (11) 3568-8000.</li>
+          <li><strong>PepsiCo Brasil</strong> — sem portal; possui Torre de Controle de Transporte própria (Itu/SP).</li>
+          <li><strong>Minerva Foods</strong> e <strong>Assaí Atacadista</strong> — portais de fornecedores existem, mas são genéricos (pagamentos/produtos), sem módulo de frete identificável.</li>
+        </ul>
+        <div class="note-box">Para esses 5, a via mais rápida é a abordagem direta aos decisores já mapeados no painel de embarcadores (hierarquia Thiago → Michel → Djefrei → André), em vez de aguardar um processo de portal que não existe publicamente.</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3>Sugestão de próximos passos (aguardando validação)</h3>
+      <ol>
+        <li>Validar <strong>Vector (Bunge)</strong> e <strong>ADM Truck Logistics</strong> como prioridades — verificar se o cadastro como transportadora está aberto a empresas de fora da base homologada e qual o perfil de frota exigido.</li>
+        <li>Mapear se a PX já possui CNPJ cadastrado em algum dos portais Ariba/Coupa/SAP Business Network listados (Nestlé, Gerdau, Cargill, Braskem, Ambev) — cadastro único pode valer para múltiplos embarcadores que usam a mesma plataforma.</li>
+        <li>Para CIMED, Unilever e PepsiCo, priorizar abordagem ABM direta em vez de canal de portal.</li>
+      </ol>
+    </div>
+  </main>
+</div>
+
+<script>
+  let rows = [];
+  let filtered = [];
+
+  const confidenceClass = {
+    "Alta": "badge-alta",
+    "Media": "badge-media",
+    "Baixa": "badge-baixa",
+    "Nao encontrado": "badge-nao"
+  };
+
+  function esc(value) {
+    return String(value || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function linksHtml(list, fallback) {
+    if (!list || list.length === 0) return `<span class="muted">${esc(fallback || "-")}</span>`;
+    return `<div class="links">${list.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noreferrer">${esc(l.label)}</a>`).join("")}</div>`;
+  }
+
+  let totalEmbarcadores = 0;
+
+  async function loadData() {
+    const apiBase = window.location.origin;
+    const [bidRes, embRes] = await Promise.allSettled([
+      fetch(`${apiBase}/api/market/bid-embarcadores`),
+      fetch(`${apiBase}/api/market/embarcadores`)
+    ]);
+
+    const bidPayload = bidRes.status === "fulfilled" && bidRes.value.ok ? await bidRes.value.json() : { data: { rows: [] } };
+    rows = (bidPayload.data?.rows ?? bidPayload.rows) || [];
+    filtered = [...rows];
+
+    if (embRes.status === "fulfilled" && embRes.value.ok) {
+      const { data } = await embRes.value.json();
+      totalEmbarcadores = Array.isArray(data) ? data.length : 0;
+    }
+
+    renderKpis();
+    renderFilters();
+    renderTable();
+    bindFilters();
+  }
+
+  function renderKpis() {
+    const counts = rows.reduce((acc, r) => {
+      acc[r.confianca] = (acc[r.confianca] || 0) + 1;
+      return acc;
+    }, {});
+    document.getElementById("k-total").textContent = rows.length;
+    document.getElementById("k-alta").textContent = counts.Alta || 0;
+    document.getElementById("k-tier1").textContent = rows.filter(r => Number(r.tier) === 1).length;
+    document.getElementById("k-tier2").textContent = rows.filter(r => Number(r.tier) === 2).length;
+    const embCount = new Set(rows.map(r => r.embarcador)).size;
+    document.getElementById("k-emb").textContent = embCount;
+    document.getElementById("k-emb-pct").textContent = totalEmbarcadores
+      ? `(${((embCount / totalEmbarcadores) * 100).toFixed(1).replace(".", ",")}%)`
+      : "";
+  }
+
+  function renderFilters() {
+    const select = document.getElementById("f-embarcador");
+    const embarcadores = [...new Set(rows.map(r => r.embarcador))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+    select.innerHTML = `<option value="">Todos</option>` + embarcadores.map(e => `<option value="${esc(e)}">${esc(e)}</option>`).join("");
+  }
+
+  function bindFilters() {
+    ["f-embarcador", "f-tier", "f-confianca", "f-search"].forEach(id => {
+      document.getElementById(id).addEventListener("input", applyFilters);
+      document.getElementById(id).addEventListener("change", applyFilters);
+    });
+  }
+
+  function applyFilters() {
+    const emb = document.getElementById("f-embarcador").value;
+    const tier = document.getElementById("f-tier").value;
+    const conf = document.getElementById("f-confianca").value;
+    const q = document.getElementById("f-search").value.trim().toLowerCase();
+    filtered = rows.filter(r => {
+      if (emb && r.embarcador !== emb) return false;
+      if (tier && String(r.tier || "") !== tier) return false;
+      if (conf && r.confianca !== conf) return false;
+      if (q) {
+        const haystack = [r.embarcador, r.siteBid, r.transportadoraParceira, r.evidencia, r.fonte, r.confianca].join(" ").toLowerCase();
+        if (!haystack.includes(q)) return false;
+      }
+      return true;
+    });
+    renderTable();
+  }
+
+  function resetFilters() {
+    document.getElementById("f-embarcador").value = "";
+    document.getElementById("f-tier").value = "";
+    document.getElementById("f-confianca").value = "";
+    document.getElementById("f-search").value = "";
+    applyFilters();
+  }
+
+  function renderTable() {
+    const tbody = document.getElementById("tbody");
+    document.getElementById("filter-count").textContent = `${filtered.length} de ${rows.length} vínculos`;
+    if (filtered.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="7" class="empty">Nenhum vínculo encontrado com os filtros aplicados.</td></tr>`;
+      return;
+    }
+    tbody.innerHTML = filtered.map(r => {
+      const badgeClass = confidenceClass[r.confianca] || "badge-nao";
+      return `<tr>
+        <td><div class="company">${esc(r.embarcador)}</div></td>
+        <td><span class="badge badge-nao">Tier ${esc(r.tier || "-")}</span></td>
+        <td>${linksHtml(r.siteBidLinks, r.siteBid)}</td>
+        <td><div class="partner">${esc(r.transportadoraParceira)}</div></td>
+        <td><div class="evidence">${esc(r.evidencia)}</div></td>
+        <td>${linksHtml(r.fonteLinks, r.fonte)}</td>
+        <td><span class="badge ${badgeClass}">${esc(r.confianca)}</span></td>
+      </tr>`;
+    }).join("");
+  }
+
+  function copyLink(e) {
+    e.preventDefault();
+    const url = window.location.href.replace(/^https?:\/\/[^/]+/, "http://192.168.10.63:3000");
+    navigator.clipboard.writeText(url);
+  }
+
+  loadData().catch(err => {
+    document.getElementById("tbody").innerHTML = `<tr><td colspan="7" class="empty">Erro ao carregar dados: ${esc(err.message)}</td></tr>`;
+  });
+</script>
+</body>
+</html>

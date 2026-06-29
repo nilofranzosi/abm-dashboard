@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudo de Padrões - ABM Embarcadores Thiago</title>
+  <style>
+    :root { --blue:#0F52BA; --ink:#172033; --muted:#667085; --line:#D9E2F2; --bg:#EEF2F7; --panel:#FFFFFF; --green:#087443; --amber:#A15C07; --red:#B42318; --slate:#111827; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--ink); background:var(--bg); }
+    .shell { min-height:100vh; display:grid; grid-template-columns:236px 1fr; gap:14px; padding:14px; }
+    aside { background:var(--slate); color:white; border-radius:6px; padding:18px 16px; }
+    .brand { font-size:15px; font-weight:800; margin-bottom:24px; }
+    .nav-label { color:#AAB4C3; font-size:11px; text-transform:uppercase; font-weight:800; margin:20px 0 8px; }
+    .nav-item { display:block; border:1px solid #334155; background:#1F2937; color:white; text-decoration:none; padding:10px; border-radius:6px; font-size:13px; margin-bottom:8px; }
+    .nav-item.active { background:var(--blue); border-color:var(--blue); }
+    main { display:grid; gap:14px; }
+    .topbar, section { background:var(--panel); border:1px solid var(--line); border-radius:6px; }
+    .topbar { padding:18px 20px; display:flex; justify-content:space-between; gap:18px; align-items:center; }
+    section { padding:18px; }
+    h1 { margin:0 0 5px; font-size:22px; letter-spacing:0; }
+    h2 { margin:0 0 14px; font-size:16px; color:var(--blue); }
+    p { margin:0; }
+    .muted { color:var(--muted); font-size:13px; }
+    .grid { display:grid; grid-template-columns:repeat(5, 1fr); gap:12px; }
+    .kpi { border:1px solid var(--line); border-left:4px solid var(--blue); border-radius:6px; padding:14px; background:white; }
+    .kpi span { display:block; color:var(--muted); font-size:12px; margin-bottom:8px; }
+    .kpi strong { display:block; font-size:25px; }
+    .insights { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .insight { border-left:4px solid var(--blue); background:#FBFCFF; padding:12px 14px; line-height:1.45; }
+    .insight strong { display:block; margin-bottom:5px; }
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    th { text-align:left; color:#344054; background:#F2F5FA; border-bottom:1px solid var(--line); padding:10px; }
+    td { border-bottom:1px solid #EEF2F7; padding:10px; vertical-align:top; }
+    .num { text-align:right; font-variant-numeric:tabular-nums; }
+    .note { color:var(--muted); font-size:12px; line-height:1.45; }
+    @media (max-width:1100px) { .shell { grid-template-columns:1fr; } aside { display:none; } .grid, .insights { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand">PX Outreach Engine</div>
+      <div class="nav-label">Inteligência</div>
+      <a class="nav-item" href="/thiago-abm-weekly-dashboard.html">Dashboard Semanal</a>
+      <a class="nav-item active" href="/thiago-abm-pattern-study.html">Estudo de Padrões</a>
+      <div class="nav-label">Base</div>
+      <div class="muted">65 empresas / 62 ativas<br>29/06/2026</div>
+    </aside>
+    <main>
+      <div class="topbar">
+        <div>
+          <h1>Estudo de Padrões - ABM Embarcadores Thiago</h1>
+          <p class="muted">Base semanal do dashboard, com leitura complementar por contato, segmento, perfil, função e horário do primeiro outbound.</p>
+        </div>
+        <div class="muted">Fonte: mesma base semanal do dashboard + LinkedIn Thiago</div>
+      </div>
+
+      <div class="grid">
+        <div class="kpi"><span>Empresas abordadas</span><strong>65</strong></div>
+        <div class="kpi"><span>Pipeline ativo</span><strong>62</strong></div>
+        <div class="kpi"><span>Com resposta ou mais avançado</span><strong>13</strong></div>
+        <div class="kpi"><span>Taxa de resposta da empresa</span><strong>21,0%</strong></div>
+        <div class="kpi"><span>Tempo 1ª resposta no contato</span><strong>6,2d</strong></div>
+      </div>
+
+      <section>
+        <h2>Leitura Executiva</h2>
+        <div class="insights">
+          <div class="insight"><strong>Amostra ainda é direcional, mas já separa hipóteses acionáveis.</strong>71 contatos ativos, 12 com resposta e 8 com avanço qualificado. Use como leitura de tendência, não como estatística definitiva.</div>
+<div class="insight"><strong>Avanço qualificado concentra-se em contas com dor operacional clara ou handoff interno.</strong>Os melhores sinais não são apenas respostas positivas: contato encaminhado e reunião marcada indicam que o decisor reconheceu alguma aderência e transferiu a conversa para a área correta.</div>
+<div class="insight"><strong>Cargo importa mais pela função do que pelo seniority puro.</strong>Perfis de Supply, Logística, Transportes e Operações tendem a ser mais interpretáveis para o funil; perfis jurídicos, comerciais ou alta gestão precisam de gancho mais específico.</div>
+<div class="insight"><strong>Horário já pode virar hipótese de teste A/B.</strong>O dado de horário está instrumentado pelo primeiro outbound. Na próxima onda, vale padronizar envios em 2 ou 3 janelas para comparar resposta com amostra controlada.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Base Semanal Compartilhada</h2>
+        <table>
+          <thead><tr><th>Semana</th><th class="num">Empresas abordadas</th><th class="num">Pipeline ativo</th><th class="num">Com resposta ou mais avançado</th><th class="num">Taxa de resposta</th><th class="num">Taxa de reunião</th><th class="num">Taxa de negócio</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>2026-S27</strong></td>
+              <td class="num">65</td>
+              <td class="num">62</td>
+              <td class="num">13</td>
+              <td class="num">21,0%</td>
+              <td class="num">9,7%</td>
+              <td class="num">8,1%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+    <h2>Resposta Por Segmento Do Embarcador</h2>
+    <table>
+      <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativa</th><th class="num">Tempo 1ª resposta</th></tr></thead>
+      <tbody>
+        <tr>
+              <td><strong>Indústria Pesada</strong></td>
+              <td class="num">6</td>
+              <td class="num">16,7%</td>
+              <td class="num">50,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">7,0 dias</td>
+            </tr>
+<tr>
+              <td><strong>Cosméticos &amp; Higiene</strong></td>
+              <td class="num">5</td>
+              <td class="num">60,0%</td>
+              <td class="num">40,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,7 dias</td>
+            </tr>
+<tr>
+              <td><strong>Farmacêutico &amp; Saúde</strong></td>
+              <td class="num">4</td>
+              <td class="num">25,0%</td>
+              <td class="num">25,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">1,0 dias</td>
+            </tr>
+<tr>
+              <td><strong>Combustíveis, Energia &amp; Química</strong></td>
+              <td class="num">4</td>
+              <td class="num">25,0%</td>
+              <td class="num">25,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">17,0 dias</td>
+            </tr>
+<tr>
+              <td><strong>E-commerce &amp; Varejo</strong></td>
+              <td class="num">13</td>
+              <td class="num">15,4%</td>
+              <td class="num">7,7%</td>
+              <td class="num">0,0%</td>
+              <td class="num">23,0 dias</td>
+            </tr>
+<tr>
+              <td><strong>Segmento a classificar</strong></td>
+              <td class="num">15</td>
+              <td class="num">20,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,3 dias</td>
+            </tr>
+<tr>
+              <td><strong>Alimentos &amp; Bebidas</strong></td>
+              <td class="num">13</td>
+              <td class="num">7,7%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0 dias</td>
+            </tr>
+<tr>
+              <td><strong>Agro &amp; Commodities</strong></td>
+              <td class="num">4</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+<tr>
+              <td><strong>Eletro &amp; Tecnologia</strong></td>
+              <td class="num">3</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+<tr>
+              <td><strong>Automotivo &amp; Pneus</strong></td>
+              <td class="num">3</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+<tr>
+              <td><strong>Têxtil &amp; Vestuário</strong></td>
+              <td class="num">1</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+      </tbody>
+    </table>
+  </section>
+      <section>
+    <h2>Resposta Por Perfil Hierárquico</h2>
+    <table>
+      <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativa</th><th class="num">Tempo 1ª resposta</th></tr></thead>
+      <tbody>
+        <tr>
+              <td><strong>Gerência / Especialista</strong></td>
+              <td class="num">4</td>
+              <td class="num">25,0%</td>
+              <td class="num">50,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">17,0 dias</td>
+            </tr>
+<tr>
+              <td><strong>Diretoria / Head</strong></td>
+              <td class="num">25</td>
+              <td class="num">12,0%</td>
+              <td class="num">12,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,7 dias</td>
+            </tr>
+<tr>
+              <td><strong>Não identificado</strong></td>
+              <td class="num">36</td>
+              <td class="num">22,2%</td>
+              <td class="num">8,3%</td>
+              <td class="num">0,0%</td>
+              <td class="num">6,9 dias</td>
+            </tr>
+<tr>
+              <td><strong>C-level / VP</strong></td>
+              <td class="num">6</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+      </tbody>
+    </table>
+  </section>
+      <section>
+    <h2>Resposta Por Função Do Decisor</h2>
+    <table>
+      <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativa</th><th class="num">Tempo 1ª resposta</th></tr></thead>
+      <tbody>
+        <tr>
+              <td><strong>Procurement / Suprimentos</strong></td>
+              <td class="num">5</td>
+              <td class="num">0,0%</td>
+              <td class="num">40,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+<tr>
+              <td><strong>Supply / Logística / Operações</strong></td>
+              <td class="num">30</td>
+              <td class="num">20,0%</td>
+              <td class="num">16,7%</td>
+              <td class="num">0,0%</td>
+              <td class="num">3,3 dias</td>
+            </tr>
+<tr>
+              <td><strong>Função a classificar</strong></td>
+              <td class="num">35</td>
+              <td class="num">17,1%</td>
+              <td class="num">2,9%</td>
+              <td class="num">0,0%</td>
+              <td class="num">9,0 dias</td>
+            </tr>
+<tr>
+              <td><strong>Alta gestão</strong></td>
+              <td class="num">1</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+      </tbody>
+    </table>
+  </section>
+      <section>
+    <h2>Resposta Por Horário Do Primeiro Outbound</h2>
+    <table>
+      <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativa</th><th class="num">Tempo 1ª resposta</th></tr></thead>
+      <tbody>
+        <tr>
+              <td><strong>12h-17h59</strong></td>
+              <td class="num">17</td>
+              <td class="num">23,5%</td>
+              <td class="num">23,5%</td>
+              <td class="num">0,0%</td>
+              <td class="num">6,3 dias</td>
+            </tr>
+<tr>
+              <td><strong>Antes das 08h</strong></td>
+              <td class="num">29</td>
+              <td class="num">20,7%</td>
+              <td class="num">10,3%</td>
+              <td class="num">0,0%</td>
+              <td class="num">8,2 dias</td>
+            </tr>
+<tr>
+              <td><strong>08h-11h59</strong></td>
+              <td class="num">16</td>
+              <td class="num">12,5%</td>
+              <td class="num">6,3%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0 dias</td>
+            </tr>
+<tr>
+              <td><strong>18h+</strong></td>
+              <td class="num">5</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+<tr>
+              <td><strong>Sem horário</strong></td>
+              <td class="num">4</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
+      </tbody>
+    </table>
+  </section>
+
+      <section>
+        <h2>Casos Que Explicam O Padrão</h2>
+        <table>
+          <thead><tr><th>Empresa</th><th>Contato</th><th>Segmento</th><th>Perfil</th><th>Função</th><th>Horário</th><th>Resultado</th><th class="num">Dias até resposta</th></tr></thead>
+          <tbody><tr>
+        <td><strong>CIMED</strong></td>
+        <td>Fernando Nadalini</td>
+        <td>Farmacêutico &amp; Saúde</td>
+        <td>Não identificado</td>
+        <td>Supply / Logística / Operações</td>
+        <td>12h-17h59</td>
+        <td>Avanço qualificado</td>
+        <td class="num">1</td>
+      </tr>
+<tr>
+        <td><strong>Gerdau</strong></td>
+        <td>Flavia Dias Souza</td>
+        <td>Indústria Pesada</td>
+        <td>Diretoria / Head</td>
+        <td>Procurement / Suprimentos</td>
+        <td>08h-11h59</td>
+        <td>Avanço qualificado</td>
+        <td class="num">n/d</td>
+      </tr>
+<tr>
+        <td><strong>Gerdau</strong></td>
+        <td>Marco Antônio Silva, M.Sc.</td>
+        <td>Indústria Pesada</td>
+        <td>Gerência / Especialista</td>
+        <td>Procurement / Suprimentos</td>
+        <td>Antes das 08h</td>
+        <td>Avanço qualificado</td>
+        <td class="num">n/d</td>
+      </tr>
+<tr>
+        <td><strong>Gerdau</strong></td>
+        <td>Artur Izaias</td>
+        <td>Indústria Pesada</td>
+        <td>Não identificado</td>
+        <td>Função a classificar</td>
+        <td>12h-17h59</td>
+        <td>Avanço qualificado</td>
+        <td class="num">7</td>
+      </tr>
+<tr>
+        <td><strong>Magazine Luiza</strong></td>
+        <td>Eduardo De Camargo Filho</td>
+        <td>E-commerce &amp; Varejo</td>
+        <td>Diretoria / Head</td>
+        <td>Supply / Logística / Operações</td>
+        <td>Antes das 08h</td>
+        <td>Avanço qualificado</td>
+        <td class="num">1</td>
+      </tr>
+<tr>
+        <td><strong>Natura</strong></td>
+        <td>Matheus Cardoso de Freitas</td>
+        <td>Cosméticos &amp; Higiene</td>
+        <td>Não identificado</td>
+        <td>Supply / Logística / Operações</td>
+        <td>12h-17h59</td>
+        <td>Avanço qualificado</td>
+        <td class="num">0</td>
+      </tr>
+<tr>
+        <td><strong>Natura</strong></td>
+        <td>Eduardo Sá Freire</td>
+        <td>Cosméticos &amp; Higiene</td>
+        <td>Diretoria / Head</td>
+        <td>Supply / Logística / Operações</td>
+        <td>Antes das 08h</td>
+        <td>Avanço qualificado</td>
+        <td class="num">1</td>
+      </tr>
+<tr>
+        <td><strong>Petrobras</strong></td>
+        <td>Ricardo Capello</td>
+        <td>Combustíveis, Energia &amp; Química</td>
+        <td>Gerência / Especialista</td>
+        <td>Supply / Logística / Operações</td>
+        <td>12h-17h59</td>
+        <td>Avanço qualificado</td>
+        <td class="num">17</td>
+      </tr></tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Hipóteses Para Novas Conexões</h2>
+        <table>
+          <thead><tr><th>Padrão observado</th><th>Como usar na próxima onda</th></tr></thead>
+          <tbody><tr><td><strong>Segmentos com operação distribuída e alta pressão logística</strong></td><td>Priorizar e-commerce, varejo, farma, bens de consumo, alimentos e indústria pesada com sinal recente de expansão, vaga logística ou mudança de liderança.</td></tr>
+<tr><td><strong>Diretores/Heads de Supply, Logística, Transportes e Operações</strong></td><td>Usar como primeiro alvo do Thiago. Mensagem deve conectar sinal real da empresa com impacto na cadeia logística.</td></tr>
+<tr><td><strong>Handoff para outra área</strong></td><td>Classificar como avanço qualificado, criar tarefa de continuidade e medir empresa como conta ativa, não como resposta neutra.</td></tr>
+<tr><td><strong>Sem resposta após 2+ touchpoints</strong></td><td>Não insistir sem gancho novo. Reativar somente com sinal do Intelligence Monday ou mudança de decisor.</td></tr>
+<tr><td><strong>Novas contas fora do radar</strong></td><td>Buscar empresas com perfil parecido às que avançaram: alto volume logístico, malha nacional, picos sazonais, CDs ou dependência forte de transportadoras.</td></tr></tbody>
+        </table>
+      </section>
+
+      <section>
+        <p class="note">Dimensões de copy ainda sem dados. Use a seção abaixo para classificar as mensagens enviadas e ativar a análise de ângulo, gatilho, variante e prova social.</p>
+      </section>
+
+      <section id="classify-section">
+        <h2>Classificar Mensagens</h2>
+        <p class="muted">Preencha os campos de copy para cada mensagem. Isso alimenta as dimensões de análise acima.</p>
+        <button id="load-btn" onclick="loadMessages()" style="margin:12px 0;padding:10px 20px;background:var(--blue);color:white;border:none;border-radius:6px;font-size:14px;cursor:pointer;">Carregar mensagens não classificadas</button>
+        <div id="msg-list"></div>
+      </section>
+
+      <script>
+        const COPY_OPTIONS = {
+          copyVariant: [['direto','Direto — vai ao ponto'],['consultivo','Consultivo — foco em dor'],['provocativo','Provocativo — insight ou dado'],['educativo','Educativo — contexto e problema']],
+          triggerType: [['cargo-novo','Cargo novo'],['expansao','Expansão / crescimento'],['vaga-logistica','Vaga logística aberta'],['mudanca-lideranca','Mudança de liderança'],['evento-setor','Evento ou notícia do setor'],['sem-gatilho','Sem gatilho específico']],
+          messageAngle: [['dor-logistica','Dor / gargalo logístico'],['crescimento','Crescimento / expansão'],['eficiencia','Eficiência operacional'],['reducao-custo','Redução de custo'],['capacidade','Capacidade / escala']],
+          proofType: [['case-cliente','Case de cliente'],['dado-mercado','Dado ou estudo de mercado'],['benchmarking','Benchmark do setor'],['sem-prova','Sem prova social']],
+          replyOutcome: [['POSITIVE','Resposta positiva'],['NEUTRAL','Resposta neutra'],['NEGATIVE','Resposta negativa / objeção'],['HOT_LEAD','Lead quente'],['MEETING_BOOKED','Reunião marcada'],['NO_RESPONSE','Sem resposta']]
+        };
+
+        function buildSelect(name, opts, current) {
+          const options = [['','— selecionar —'], ...opts].map(([v,l]) =>
+            '<option value="'+v+'"'+(current===v?' selected':'')+'>'+l+'</option>'
+          ).join('');
+          return '<select name="'+name+'" style="padding:6px;border:1px solid #D0D5DD;border-radius:4px;font-size:13px;width:100%;">'+options+'</select>';
+        }
+
+        function renderCard(msg) {
+          const preview = msg.redactedPreview || (msg.body ? msg.body.slice(0,120)+'…' : '(sem prévia)');
+          const contact = msg.contact ? msg.contact.fullName : 'Contato desconhecido';
+          const company = msg.company ? msg.company.name : '—';
+          const date = msg.sentAt ? new Date(msg.sentAt).toLocaleDateString('pt-BR') : new Date(msg.createdAt).toLocaleDateString('pt-BR');
+
+          return '<div id="card-'+msg.id+'" style="border:1px solid #D9E2F2;border-radius:6px;padding:16px;margin-bottom:12px;background:#FBFCFF;">' +
+            '<div style="margin-bottom:10px;"><strong>'+escapeHtml(contact)+'</strong> · <span style="color:#667085;">'+escapeHtml(company)+'</span> · <span style="color:#667085;font-size:12px;">'+date+'</span></div>' +
+            '<p style="font-size:13px;color:#344054;margin:0 0 12px;line-height:1.5;background:#F2F5FA;padding:10px;border-radius:4px;">'+escapeHtml(preview)+'</p>' +
+            '<form id="form-'+msg.id+'" onsubmit="saveClassification(event,''+msg.id+'')" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">' +
+              '<label style="font-size:12px;color:#344054;">Variante de copy<br>'+buildSelect('copyVariant',COPY_OPTIONS.copyVariant,msg.copyVariant)+'</label>' +
+              '<label style="font-size:12px;color:#344054;">Gatilho<br>'+buildSelect('triggerType',COPY_OPTIONS.triggerType,msg.triggerType)+'</label>' +
+              '<label style="font-size:12px;color:#344054;">Ângulo de abordagem<br>'+buildSelect('messageAngle',COPY_OPTIONS.messageAngle,msg.messageAngle)+'</label>' +
+              '<label style="font-size:12px;color:#344054;">Tipo de prova<br>'+buildSelect('proofType',COPY_OPTIONS.proofType,msg.proofType)+'</label>' +
+              '<label style="font-size:12px;color:#344054;grid-column:1/-1;">Resultado<br>'+buildSelect('replyOutcome',COPY_OPTIONS.replyOutcome,msg.replyOutcome)+'</label>' +
+              '<div style="grid-column:1/-1;display:flex;gap:8px;align-items:center;">' +
+                '<button type="submit" style="padding:8px 18px;background:var(--blue);color:white;border:none;border-radius:5px;font-size:13px;cursor:pointer;">Salvar</button>' +
+                '<span id="status-'+msg.id+'" style="font-size:12px;color:var(--muted);"></span>' +
+              '</div>' +
+            '</form>' +
+          '</div>';
+        }
+
+        function escapeHtml(str) {
+          return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+
+        async function loadMessages() {
+          const btn = document.getElementById('load-btn');
+          const list = document.getElementById('msg-list');
+          btn.disabled = true;
+          btn.textContent = 'Carregando…';
+          try {
+            const res = await fetch('/api/messages?classified=false&limit=30');
+            const { data } = await res.json();
+            if (!data.length) {
+              list.innerHTML = '<p style="color:var(--muted);font-size:14px;">Nenhuma mensagem pendente de classificação.</p>';
+              btn.textContent = 'Todas classificadas ✓';
+              return;
+            }
+            list.innerHTML = data.map(renderCard).join('');
+            btn.textContent = data.length+' mensagens carregadas';
+          } catch(e) {
+            list.innerHTML = '<p style="color:var(--red);font-size:13px;">Erro ao carregar mensagens. O Engine precisa estar rodando.</p>';
+            btn.disabled = false;
+            btn.textContent = 'Tentar novamente';
+          }
+        }
+
+        async function saveClassification(event, messageId) {
+          event.preventDefault();
+          const form = document.getElementById('form-'+messageId);
+          const status = document.getElementById('status-'+messageId);
+          const body = {};
+          for (const [k,v] of new FormData(form).entries()) {
+            if (v) body[k] = v;
+          }
+          status.textContent = 'Salvando…';
+          try {
+            const res = await fetch('/api/messages/'+messageId+'/instrumentation', {
+              method: 'PATCH',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify(body)
+            });
+            if (!res.ok) { const err = await res.json(); throw new Error(err.message || res.statusText); }
+            const card = document.getElementById('card-'+messageId);
+            card.style.opacity = '0.4';
+            status.style.color = 'var(--green)';
+            status.textContent = 'Salvo ✓';
+            setTimeout(() => card.remove(), 800);
+          } catch(e) {
+            status.style.color = 'var(--red)';
+            status.textContent = 'Erro: '+e.message;
+          }
+        }
+      </script>
+
+      <section>
+        <p class="note">O estudo usa a mesma base semanal do dashboard para métricas de empresa; os blocos por contato, segmento e perfil descem para a amostra LinkedIn sem misturar unidades de análise. Dimensões de copy são alimentadas via classificação manual acima.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PX Outreach Engine - Validação LinkedIn</title>
+  <style>
+    :root {
+      --blue: #0F52BA; --blue-dark: #0A3C8A; --ink: #172033; --muted: #657083;
+      --line: #DDE3EC; --soft: #F6F8FB; --panel: #FFFFFF; --bg: #EEF2F7;
+      --green: #158255; --amber: #A05A00; --red: #B42318;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.35; }
+    html.embedded-view .shell { grid-template-columns: 1fr; }
+    html.embedded-view .shell aside { display: none; }
+    .shell { min-height: 100vh; display: grid; grid-template-columns: 236px 1fr; gap: 14px; padding: 14px; }
+    aside { background: #111827; color: #fff; border-radius: 6px; padding: 18px 16px; }
+    .brand { font-size: 15px; font-weight: 800; margin-bottom: 24px; }
+    main { display: grid; gap: 14px; align-content: start; }
+    header { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px 22px; }
+    .eyebrow { color: var(--blue); font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 5px; }
+    h1 { margin: 0; font-size: 24px; }
+    .muted { color: var(--muted); font-size: 12px; }
+    .kpis { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; }
+    .kpi { background: var(--panel); border: 1px solid var(--line); border-left: 5px solid var(--blue); border-radius: 6px; padding: 12px 13px; }
+    .kpi.replied { border-left-color: var(--amber); }
+    .kpi.unknown { border-left-color: var(--red); }
+    .kpi.overdue { border-left-color: #9333ea; }
+    .kpi span { display: block; color: var(--muted); font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .kpi strong { display: block; font-size: 28px; margin-top: 4px; }
+    .cards { display: grid; gap: 12px; }
+
+    /* Company card */
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; transition: opacity 0.3s; }
+    .card.removing { opacity: 0; }
+    .card-company-header { padding: 14px 16px 10px; border-bottom: 1px solid var(--soft); display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+    .company-name { font-size: 17px; font-weight: 800; margin: 0 0 6px; }
+    .company-badge { display: inline-block; border-radius: 4px; padding: 3px 10px; font-size: 12px; font-weight: 700; background: var(--soft); border: 1px solid var(--line); color: var(--ink); }
+    .company-badge.unknown { background: #FFF3CD; border-color: #FFC107; color: var(--amber); }
+    .touchpoint-count { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .reason-tags { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+    .reason-tag { font-size: 11px; font-weight: 700; border-radius: 4px; padding: 2px 8px; }
+    .reason-tag.replied { background: #FFF3CD; color: var(--amber); }
+    .reason-tag.company-unknown { background: #FEE2E2; color: var(--red); }
+    .reason-tag.overdue { background: #EDE9FE; color: #6D28D9; }
+
+    /* Contacts list inside the company card */
+    .contacts-list { padding: 0 16px 10px; display: grid; gap: 8px; margin-top: 10px; }
+    .contact-row { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+    .contact-row-header { padding: 8px 12px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; cursor: pointer; user-select: none; background: var(--soft); }
+    .contact-row-header:hover { background: #e8edf5; }
+    .contact-fullname { font-weight: 700; font-size: 13px; flex: 1; }
+    .status-badge { border-radius: 4px; padding: 2px 8px; font-size: 11px; font-weight: 700; }
+    .status-REPLIED_NEUTRAL,  .status-REPLIED   { background: #FFF3CD; color: var(--amber); }
+    .status-REPLIED_POSITIVE                     { background: #D1FAE5; color: var(--green); }
+    .status-REPLIED_NEGATIVE                     { background: #FEE2E2; color: var(--red); }
+    .status-FIRST_CONTACT_SENT, .status-MESSAGE_SENT { background: #DBEAFE; color: var(--blue); }
+    .status-FOLLOW_UP_SENT                       { background: #EDE9FE; color: #6D28D9; }
+    .status-MEETING_BOOKED                       { background: #D1FAE5; color: #065F46; }
+    .status-MEETING_DONE                         { background: #BBF7D0; color: #064E3B; font-weight: 800; }
+    .status-EXCLUDED, .status-DISQUALIFIED       { background: #F3F4F6; color: var(--muted); }
+    .contact-status-form { display: none; padding: 6px 12px 8px; border-top: 1px dashed var(--line); background: #f9fafb; gap: 6px; align-items: center; }
+    .contact-status-form.open { display: flex; }
+    .contact-status-form select { flex: 1; border: 1px solid var(--line); border-radius: 5px; padding: 5px 8px; font-size: 12px; }
+    .contact-role { font-size: 11px; color: var(--muted); }
+    .toggle-icon { font-size: 11px; color: var(--muted); margin-left: 4px; }
+    .messages-body { display: none; padding: 10px 12px; border-top: 1px solid var(--line); background: #fff; }
+    .messages-body.open { display: block; }
+    .msg { padding: 7px 10px; border-radius: 5px; margin-bottom: 6px; font-size: 12px; line-height: 1.45; }
+    .msg.outbound { background: #DBEAFE; color: var(--blue-dark); }
+    .msg.inbound { background: #D1FAE5; color: #065F46; }
+    .msg-meta { font-size: 10px; opacity: 0.7; margin-bottom: 3px; }
+    .no-messages { color: var(--muted); font-size: 12px; font-style: italic; }
+
+    /* Actions */
+    .actions { padding: 10px 16px 14px; display: flex; gap: 8px; flex-wrap: wrap; align-items: flex-start; border-top: 1px solid var(--soft); }
+    .btn { border: none; border-radius: 5px; padding: 7px 14px; font-size: 13px; font-weight: 700; cursor: pointer; }
+    .btn-approve { background: #D1FAE5; color: var(--green); }
+    .btn-approve:hover { background: #A7F3D0; }
+    .btn-correct { background: #DBEAFE; color: var(--blue); }
+    .btn-correct:hover { background: #BFDBFE; }
+    .btn-discard { background: #FEE2E2; color: var(--red); }
+    .btn-discard:hover { background: #FECACA; }
+    .btn-confirm { background: var(--blue); color: #fff; }
+    .btn-cancel { background: var(--soft); color: var(--ink); }
+    .inline-input { display: none; gap: 6px; align-items: center; margin-top: 6px; width: 100%; }
+    .inline-input.open { display: flex; }
+    .inline-input input { flex: 1; border: 1px solid var(--line); border-radius: 5px; padding: 6px 10px; font-size: 13px; }
+
+    /* Toast */
+    .toast-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 999; }
+    .toast { background: var(--slate, #253047); color: #fff; border-radius: 6px; padding: 10px 16px; font-size: 13px; animation: fadein 0.2s; }
+    @keyframes fadein { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .empty-state { text-align: center; padding: 48px 24px; color: var(--muted); }
+    .empty-state strong { display: block; font-size: 18px; color: var(--ink); margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+<div class="shell">
+  <aside>
+    <div class="brand">PX Outreach Engine</div>
+  </aside>
+  <main>
+    <header>
+      <div>
+        <div class="eyebrow">LinkedIn</div>
+        <h1>Validação de Contatos</h1>
+        <p class="muted" id="generated-at">Carregando...</p>
+      </div>
+    </header>
+
+    <div class="kpis">
+      <div class="kpi"><span>Total Pendente</span><strong id="kpi-total">—</strong></div>
+      <div class="kpi replied"><span>Com Resposta</span><strong id="kpi-replied">—</strong></div>
+      <div class="kpi unknown"><span>Empresa Desconhecida</span><strong id="kpi-unknown">—</strong></div>
+      <div class="kpi overdue"><span>Sem Retorno</span><strong id="kpi-overdue">—</strong></div>
+    </div>
+
+    <div class="cards" id="cards-container">
+      <div class="empty-state"><strong>Carregando...</strong><span>Aguarde.</span></div>
+    </div>
+  </main>
+</div>
+<div class="toast-container" id="toast-container"></div>
+
+<script>
+  if (new URLSearchParams(location.search).get("embed") === "1") {
+    document.documentElement.classList.add("embedded-view");
+  }
+
+  // Rótulos alinhados ao pipeline de Ações de Hoje
+  const STATUS_LABELS = {
+    FIRST_CONTACT_SENT: "Mensagem Enviada",
+    MESSAGE_SENT:       "Mensagem Enviada",
+    FOLLOW_UP_SENT:     "Follow-Up Enviado",
+    REPLIED:            "Respondeu",
+    REPLIED_NEUTRAL:    "Respondeu",
+    REPLIED_POSITIVE:   "Respondeu — Positivo",
+    REPLIED_NEGATIVE:   "Respondeu — Negativo",
+    MEETING_BOOKED:     "Reunião Agendada",
+    MEETING_DONE:       "Reunião Realizada",
+    EXCLUDED:           "Descartado",
+    DISQUALIFIED:       "Descartado"
+  };
+
+  // Opções disponíveis para alterar status (mesmo funil do pipeline de Ações de Hoje)
+  const STATUS_OPTIONS = [
+    { value: "MESSAGE_SENT",     label: "Mensagem Enviada" },
+    { value: "FOLLOW_UP_SENT",   label: "Follow-Up Enviado" },
+    { value: "REPLIED",          label: "Respondeu" },
+    { value: "REPLIED_POSITIVE", label: "Respondeu — Positivo" },
+    { value: "REPLIED_NEGATIVE", label: "Respondeu — Negativo" },
+    { value: "MEETING_BOOKED",   label: "Reunião Agendada" },
+    { value: "MEETING_DONE",     label: "Reunião Realizada" },
+    { value: "EXCLUDED",         label: "Descartado" }
+  ];
+
+  const REASON_LABELS = {
+    replied: "Respondeu",
+    "company-unknown": "Empresa desconhecida",
+    overdue: "Sem retorno >7d"
+  };
+
+  // ── data ──────────────────────────────────────────────────────────────────
+
+  async function loadData() {
+    const res = await fetch("/api/linkedin/validate");
+    if (!res.ok) throw new Error("Falha ao carregar dados da API");
+    const json = await res.json();
+    return json.data;
+  }
+
+  // ── api ───────────────────────────────────────────────────────────────────
+
+  async function submitAction(payload) {
+    const res = await fetch("/api/linkedin/validate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(json.error || json.message || "Erro ao processar ação");
+    return json.data;
+  }
+
+  // ── KPIs ──────────────────────────────────────────────────────────────────
+
+  function updateKpisFromSummary(summary) {
+    if (!summary) return;
+    document.getElementById("kpi-total").textContent = summary.total;
+    document.getElementById("kpi-replied").textContent = summary.replied;
+    document.getElementById("kpi-unknown").textContent = summary.companyUnknown;
+    document.getElementById("kpi-overdue").textContent = summary.overdue;
+  }
+
+  // ── toast ─────────────────────────────────────────────────────────────────
+
+  function showToast(msg, duration = 3000) {
+    const t = document.createElement("div");
+    t.className = "toast";
+    t.textContent = msg;
+    document.getElementById("toast-container").appendChild(t);
+    setTimeout(() => t.remove(), duration);
+  }
+
+  // ── card removal ──────────────────────────────────────────────────────────
+
+  function removeCard(companyId) {
+    const card = document.getElementById(`card-${companyId}`);
+    if (!card) return;
+    card.classList.add("removing");
+    setTimeout(() => {
+      card.remove();
+      if (document.querySelectorAll(".card").length === 0) {
+        document.getElementById("cards-container").innerHTML =
+          `<div class="empty-state"><strong>Tudo validado!</strong><span>Nenhum item pendente.</span></div>`;
+      }
+    }, 320);
+  }
+
+  // ── actions ───────────────────────────────────────────────────────────────
+
+  async function approve(companyId) {
+    try {
+      const result = await submitAction({ action: "approve", companyId });
+      removeCard(companyId);
+      showToast(`✓ Aprovado e enviado ao Dashboard: ${result.resolvedCompany || companyId}`);
+      updateKpisFromSummary(result.summary);
+    } catch (e) {
+      showToast("Erro: " + e.message);
+    }
+  }
+
+  async function discard(companyId, companyName) {
+    if (!confirm(`Descartar "${companyName}"? Todos os contatos serão marcados como excluídos.`)) return;
+    try {
+      const result = await submitAction({ action: "discard", companyId });
+      removeCard(companyId);
+      showToast(`Descartado: ${companyName}`);
+      updateKpisFromSummary(result.summary);
+    } catch (e) {
+      showToast("Erro: " + e.message);
+    }
+  }
+
+  async function confirmCompany(companyId) {
+    const input = document.getElementById(`company-val-${companyId}`);
+    const company = input.value.trim();
+    if (!company) return;
+    try {
+      const result = await submitAction({ action: "correct-company", companyId, company });
+      closeInputs(companyId);
+      if (result.removedFromQueue) {
+        removeCard(companyId);
+        showToast(`✓ Empresa corrigida e aprovada: ${company}`);
+      } else {
+        const header = document.querySelector(`#card-${companyId} .company-name`);
+        if (header) header.textContent = company;
+        const badge = document.querySelector(`#card-${companyId} .company-badge`);
+        if (badge) { badge.textContent = company; badge.classList.remove("unknown"); }
+        const unknownTag = document.querySelector(`#card-${companyId} .reason-tag.company-unknown`);
+        if (unknownTag) unknownTag.remove();
+        showToast(`Empresa atualizada → ${company}`);
+      }
+      updateKpisFromSummary(result.summary);
+    } catch (e) {
+      showToast("Erro: " + e.message);
+    }
+  }
+
+  function openCorrectCompany(companyId) {
+    closeInputs(companyId);
+    document.getElementById(`input-company-${companyId}`).classList.add("open");
+    document.getElementById(`company-val-${companyId}`).focus();
+  }
+
+  function closeInputs(companyId) {
+    document.querySelectorAll(`#card-${companyId} .inline-input`).forEach(el => el.classList.remove("open"));
+  }
+
+  function toggleMessages(contactKey) {
+    const body = document.getElementById(`msgs-${contactKey}`);
+    const icon = document.getElementById(`toggle-${contactKey}`);
+    body.classList.toggle("open");
+    icon.textContent = body.classList.contains("open") ? "▲" : "▼";
+  }
+
+  // ── rendering ─────────────────────────────────────────────────────────────
+
+  function renderMessages(inbound, outbound) {
+    const all = [
+      ...inbound.map(m => ({ ...m, dir: "inbound" })),
+      ...outbound.map(m => ({ ...m, dir: "outbound" }))
+    ].sort((a, b) => (a.occurredAt || "").localeCompare(b.occurredAt || ""));
+
+    if (all.length === 0) return `<div class="no-messages">Nenhuma mensagem capturada neste ciclo.</div>`;
+    return all.map(m => {
+      const date = m.occurredAt ? new Date(m.occurredAt).toLocaleDateString("pt-BR") : "";
+      const body = (m.body || "").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return `<div class="msg ${m.dir}">
+        <div class="msg-meta">${m.dir === "inbound" ? "Recebida" : "Enviada"} ${date}</div>
+        ${body}
+      </div>`;
+    }).join("");
+  }
+
+  function renderContactRow(contact, groupId) {
+    const key = `${groupId}-${contact.contactName.replace(/\s+/g, "-").toLowerCase()}`;
+    const statusLabel = STATUS_LABELS[contact.funnelStatus] || contact.funnelStatus;
+    const totalMsgs = contact.inboundMessages.length + contact.outboundMessages.length;
+    const msgsHtml = renderMessages(contact.inboundMessages, contact.outboundMessages);
+    const nameEscaped = contact.contactName.replace(/'/g, "\\'");
+    const statusOptionsHtml = STATUS_OPTIONS.map(o =>
+      `<option value="${o.value}" ${o.value === contact.funnelStatus || (o.value === "MESSAGE_SENT" && contact.funnelStatus === "FIRST_CONTACT_SENT") ? "selected" : ""}>${o.label}</option>`
+    ).join("");
+
+    return `
+    <div class="contact-row" id="contact-row-${key}">
+      <div class="contact-row-header" onclick="toggleMessages('${key}')">
+        <span class="contact-fullname">${contact.contactName}</span>
+        <span class="status-badge status-${contact.funnelStatus}" id="status-badge-${key}">${statusLabel}</span>
+        ${contact.roleOrHeadline ? `<span class="contact-role">${contact.roleOrHeadline.replace(/</g,"&lt;")}</span>` : ""}
+        ${contact.daysSinceLastOutbound ? `<span class="contact-role">${contact.daysSinceLastOutbound}d sem resposta</span>` : ""}
+        <button class="btn btn-correct" style="font-size:11px;padding:3px 8px;margin-left:auto" onclick="event.stopPropagation();toggleStatusForm('${key}')">Alterar Status</button>
+        <span class="toggle-icon" id="toggle-${key}">${totalMsgs > 0 ? "▼ " + totalMsgs + " msgs" : "▼"}</span>
+      </div>
+      <div class="contact-status-form" id="status-form-${key}">
+        <select id="status-select-${key}">${statusOptionsHtml}</select>
+        <button class="btn btn-confirm" style="font-size:12px;padding:4px 10px" onclick="confirmContactStatus('${groupId}', '${nameEscaped}', '${key}')">Salvar</button>
+        <button class="btn btn-cancel" style="font-size:12px;padding:4px 10px" onclick="toggleStatusForm('${key}')">Cancelar</button>
+      </div>
+      <div class="messages-body" id="msgs-${key}">
+        ${msgsHtml}
+      </div>
+    </div>`;
+  }
+
+  function toggleStatusForm(key) {
+    const form = document.getElementById(`status-form-${key}`);
+    form.classList.toggle("open");
+  }
+
+  async function confirmContactStatus(groupId, contactName, key) {
+    const select = document.getElementById(`status-select-${key}`);
+    const funnelStatus = select.value;
+    try {
+      const result = await submitAction({ action: "correct-contact-status", companyId: groupId, contactName, funnelStatus });
+      // Update badge in place
+      const badge = document.getElementById(`status-badge-${key}`);
+      if (badge) {
+        badge.className = `status-badge status-${funnelStatus}`;
+        badge.textContent = STATUS_LABELS[funnelStatus] || funnelStatus;
+      }
+      toggleStatusForm(key);
+      updateKpisFromSummary(result.summary);
+      showToast(`Status atualizado → ${STATUS_LABELS[funnelStatus] || funnelStatus}`);
+    } catch (e) {
+      showToast("Erro: " + e.message);
+    }
+  }
+
+  function renderCompanyCard(group) {
+    const isUnknown = group.resolvedCompany === "A apurar";
+    const reasonTagsHtml = group.reviewReasons.map(r =>
+      `<span class="reason-tag ${r}">${REASON_LABELS[r] || r}</span>`
+    ).join("");
+
+    const contactsHtml = group.contacts.map(c => renderContactRow(c, group.id)).join("");
+    const touchLabel = group.contacts.length === 1 ? "1 contato" : `${group.contacts.length} contatos`;
+    const companyName = group.resolvedCompany.replace(/'/g, "\\'");
+
+    return `
+    <div class="card" id="card-${group.id}">
+      <div class="card-company-header">
+        <div style="flex:1">
+          <div class="company-name">${group.resolvedCompany}</div>
+          <div>
+            <span class="company-badge ${isUnknown ? "unknown" : ""}">${isUnknown ? "Empresa desconhecida" : group.resolvedCompany}</span>
+            <span class="touchpoint-count">${touchLabel}</span>
+          </div>
+          <div class="reason-tags">${reasonTagsHtml}</div>
+        </div>
+      </div>
+
+      <div class="contacts-list">${contactsHtml}</div>
+
+      <div class="actions">
+        <button class="btn btn-approve" onclick="approve('${group.id}')">Aprovar Empresa</button>
+        ${isUnknown ? `<button class="btn btn-correct" onclick="openCorrectCompany('${group.id}')">Identificar Empresa</button>` : ""}
+        <button class="btn btn-discard" onclick="discard('${group.id}', '${companyName}')">Descartar</button>
+
+        <div class="inline-input" id="input-company-${group.id}">
+          <input type="text" id="company-val-${group.id}" placeholder="Nome da empresa..." />
+          <button class="btn btn-confirm" onclick="confirmCompany('${group.id}')">Salvar</button>
+          <button class="btn btn-cancel" onclick="closeInputs('${group.id}')">Cancelar</button>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // ── init ──────────────────────────────────────────────────────────────────
+
+  async function init() {
+    const container = document.getElementById("cards-container");
+    try {
+      const data = await loadData();
+      if (data.generatedAt) {
+        const d = new Date(data.generatedAt);
+        document.getElementById("generated-at").textContent = `Gerado em ${d.toLocaleDateString("pt-BR")} às ${d.toLocaleTimeString("pt-BR")}`;
+      }
+      updateKpisFromSummary(data.summary);
+
+      const companies = data.companies || [];
+      if (companies.length === 0) {
+        container.innerHTML = `<div class="empty-state"><strong>Nenhum item pendente</strong><span>Execute o scan e tente novamente.</span></div>`;
+      } else {
+        container.innerHTML = companies.map(renderCompanyCard).join("");
+      }
+    } catch (e) {
+      container.innerHTML = `<div class="empty-state"><strong>Erro ao carregar dados</strong><span>${e.message}. Verifique se o servidor está rodando e se o scan já foi executado.</span></div>`;
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>

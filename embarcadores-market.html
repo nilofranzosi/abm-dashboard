@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<script>
+(function(){
+  var _fetch = window.fetch;
+  window.fetch = function(url, opts) {
+    if (typeof url === 'string') {
+      var path = url.replace(/^https?:\/\/[^/]+/, '');
+      if (/\/api\/market\/embarcadores(?!.*bid)/.test(path)) {
+        return _fetch('/data/embarcadores.json', opts).then(function(r){ return r.json(); })
+          .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
+      }
+      if (path.indexOf('/api/market/abm-coverage') !== -1) {
+        return _fetch('/data/abm-coverage.json', opts).then(function(r){ return r.json(); })
+          .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
+      }
+      if (path.indexOf('/api/market/bid-embarcadores') !== -1) {
+        return _fetch('/data/bid-embarcadores.json', opts).then(function(r){ return r.json(); })
+          .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
+      }
+    }
+    return _fetch.apply(this, arguments);
+  };
+})();
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PX — Market Intelligence · Embarcadores Brasil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:#0F52BA; --blue-50:#EFF6FF; --blue-100:#DBEAFE;
+      --ink:#1A202C; --muted:#64748B; --line:#E2E8F0;
+      --bg:#F0F4F8; --panel:#FFFFFF;
+      --green:#057A55; --green-bg:#ECFDF3;
+      --amber:#92400E; --amber-bg:#FFFBEB;
+      --red:#9B1C1C; --red-bg:#FEF2F2;
+      --purple:#5521B5; --purple-bg:#F5F3FF;
+      --sidebar-bg:#0B1628;
+      --shadow-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+      --shadow:0 4px 16px rgba(0,0,0,.07),0 1px 4px rgba(0,0,0,.04);
+      --radius:10px; --radius-sm:6px;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:'Inter',Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+
+    .shell{min-height:100vh;display:grid;grid-template-columns:256px 1fr;}
+    html.embedded-view .shell{grid-template-columns:1fr;}
+    html.embedded-view .shell aside{display:none;}
+
+    /* sidebar */
+    aside{background:var(--sidebar-bg);color:#CBD5E1;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;}
+    .brand-header{padding:22px 16px 18px;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:11px;}
+    .brand-logo{width:34px;height:34px;background:linear-gradient(135deg,#2979FF 0%,#0F52BA 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:white;letter-spacing:-.5px;flex-shrink:0;}
+    .brand-name{font-size:13px;font-weight:700;color:#F1F5F9;letter-spacing:-.2px;line-height:1.2;}
+    .brand-sub{font-size:10px;font-weight:500;color:#475569;text-transform:uppercase;letter-spacing:.7px;margin-top:2px;}
+    .nav-section{padding:8px 10px 4px;}
+    .nav-label{color:#475569;font-size:10px;text-transform:uppercase;font-weight:600;letter-spacing:.7px;padding:10px 8px 5px;}
+    .side-link{display:flex;align-items:center;gap:9px;color:#94A3B8;padding:8px 10px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:13px;font-weight:500;text-decoration:none;border-left:2px solid transparent;margin-bottom:1px;transition:background .12s,color .12s;}
+    .side-link:hover{background:rgba(255,255,255,.05);color:#E2E8F0;}
+    .side-link.active{background:rgba(15,82,186,.18);border-left-color:#3B82F6;color:#BFDBFE;font-weight:600;}
+    .nav-icon{width:15px;height:15px;opacity:.6;flex-shrink:0;}
+    .side-link.active .nav-icon{opacity:1;}
+    .sidebar-footer{margin-top:auto;padding:12px 10px 16px;border-top:1px solid rgba(255,255,255,.06);}
+    .foot-link{display:flex;align-items:center;gap:8px;color:#64748B;font-size:12px;padding:6px 10px;border-radius:var(--radius-sm);text-decoration:none;transition:color .12s,background .12s;}
+    .foot-link:hover{color:#CBD5E1;background:rgba(255,255,255,.05);}
+
+    /* main */
+    main{padding:20px 24px 36px;display:flex;flex-direction:column;gap:18px;min-width:0;}
+
+    /* topbar */
+    .topbar{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;box-shadow:var(--shadow-sm);}
+    .topbar-left{display:flex;align-items:center;gap:12px;}
+    .topbar-icon{width:40px;height:40px;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    h1{margin:0 0 2px;font-size:18px;font-weight:700;letter-spacing:-.4px;}
+    .muted{color:var(--muted);font-size:13px;}
+
+    /* kpis */
+    .kpi-row{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;}
+    .kpi{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow-sm);}
+    .kpi.green{border-left-color:#10B981;}
+    .kpi.amber{border-left-color:#F59E0B;}
+    .kpi.red{border-left-color:#EF4444;}
+    .kpi.purple{border-left-color:#7C3AED;}
+    .kpi.gray{border-left-color:#94A3B8;}
+    .kpi-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin-bottom:8px;}
+    .kpi-value{font-size:24px;font-weight:700;letter-spacing:-.5px;line-height:1;}
+    .kpi-sub{font-size:11px;color:var(--muted);margin-top:4px;}
+
+    /* segment charts */
+    .charts-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    .chart-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow-sm);}
+    .chart-title{font-size:13px;font-weight:700;margin-bottom:12px;}
+    .chart-body{display:flex;gap:18px;align-items:center;}
+    .chart-legend{flex:1;display:flex;flex-direction:column;gap:5px;min-width:0;}
+    .chart-legend-item{display:flex;align-items:center;gap:7px;font-size:12px;}
+    .chart-legend-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+    .chart-legend-label{flex:1;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+    .chart-legend-pct{font-weight:700;color:var(--muted);}
+
+    /* segment overview */
+    .seg-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
+    .seg-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow-sm);cursor:pointer;transition:box-shadow .15s,transform .15s;border-top:3px solid var(--line);}
+    .seg-card:hover{box-shadow:var(--shadow);transform:translateY(-1px);}
+    .seg-card.selected{border-top-color:var(--blue);background:var(--blue-50);}
+    .seg-name{font-size:12px;font-weight:600;margin-bottom:6px;line-height:1.3;}
+    .seg-meta{display:flex;gap:8px;font-size:11px;color:var(--muted);}
+    .seg-meta span{display:flex;align-items:center;gap:3px;}
+
+    /* market size + coverage badges */
+    .seg-market{display:flex;align-items:center;gap:6px;margin-top:8px;flex-wrap:wrap;}
+    .seg-market-badge{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:999px;font-size:10px;font-weight:700;background:#F1F5F9;color:#475569;cursor:help;}
+    .seg-coverage-badge{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:999px;font-size:10px;font-weight:700;}
+    .seg-coverage-badge.cov-red{background:var(--red-bg);color:var(--red);}
+    .seg-coverage-badge.cov-amber{background:var(--amber-bg);color:var(--amber);}
+    .seg-coverage-badge.cov-green{background:var(--green-bg);color:var(--green);}
+
+    /* segments without PX coverage */
+    .gaps-section{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);}
+    .gaps-toggle{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;cursor:pointer;font-size:13px;font-weight:600;}
+    .gaps-toggle:hover{color:var(--blue);}
+    .gaps-body{display:none;padding:0 16px 14px;}
+    .gaps-body.open{display:block;}
+    .gaps-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
+    .gap-card{border:1px dashed var(--line);border-radius:var(--radius-sm);padding:10px 12px;}
+    .gap-card .seg-name{margin-bottom:4px;}
+
+    /* filter bar */
+    .filter-bar{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;box-shadow:var(--shadow-sm);}
+    .filter-bar label{font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap;}
+    select, input[type=text]{border:1px solid var(--line);border-radius:var(--radius-sm);padding:6px 10px;font-size:13px;font-family:inherit;color:var(--ink);background:var(--bg);outline:none;}
+    select:focus, input[type=text]:focus{border-color:var(--blue);}
+    .filter-reset{background:none;border:1px solid var(--line);border-radius:var(--radius-sm);padding:6px 12px;font-size:12px;font-weight:600;color:var(--muted);cursor:pointer;font-family:inherit;}
+    .filter-reset:hover{border-color:var(--blue);color:var(--blue);}
+    .filter-count{margin-left:auto;font-size:12px;font-weight:600;color:var(--muted);}
+
+    /* table */
+    .table-wrap{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);}
+    table{width:100%;border-collapse:collapse;}
+    thead{background:#F8FAFC;}
+    th{padding:10px 14px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;}
+    td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px;}
+    tr:last-child td{border-bottom:none;}
+    tr:hover td{background:#FAFBFC;}
+
+    .company-name{font-weight:600;font-size:13px;margin-bottom:2px;}
+    .company-uf{font-size:11px;color:var(--muted);}
+
+    /* badges */
+    .badge{display:inline-flex;align-items:center;height:20px;padding:0 8px;border-radius:999px;font-size:11px;font-weight:600;white-space:nowrap;}
+    .badge-t1{background:#DBEAFE;color:#1D4ED8;}
+    .badge-t2{background:#FEF3C7;color:#92400E;}
+    .badge-t3{background:#F1F5F9;color:#475569;}
+    .badge-t-null{background:#F1F5F9;color:#64748B;}
+    .badge-abm{background:var(--green-bg);color:var(--green);}
+    .badge-gap{background:#F1F5F9;color:#64748B;}
+    .badge-active{background:#EDE9FE;color:#5521B5;}
+    .badge-sim{background:#ECFDF3;color:#057A55;}
+    .badge-nao{background:#FEF2F2;color:#9B1C1C;}
+
+    /* score bar */
+    .score-bar{width:60px;height:5px;background:var(--line);border-radius:3px;overflow:hidden;}
+    .score-fill{height:100%;border-radius:3px;background:var(--blue);}
+    .score-val{font-size:12px;font-weight:600;color:var(--ink);min-width:28px;}
+    .tier-score{display:flex;flex-direction:column;gap:5px;min-width:118px;}
+    .tier-score-head{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+    .tier-score-label{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;}
+    .tier-breakdown{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;}
+    .tier-breakdown span{height:17px;border-radius:4px;background:#F8FAFC;border:1px solid var(--line);font-size:9px;font-weight:700;color:#475569;display:flex;align-items:center;justify-content:center;}
+    .tier-rationale{font-size:11px;color:#475569;line-height:1.45;margin-bottom:8px;}
+    .next-step{font-size:11px;color:#1D4ED8;line-height:1.4;background:#EFF6FF;border:1px solid #DBEAFE;border-radius:6px;padding:6px 8px;}
+
+    /* decisors */
+    .decisor{margin-bottom:6px;}
+    .decisor:last-child{margin-bottom:0;}
+    .decisor-name{font-size:12px;font-weight:600;}
+    .decisor-role{font-size:11px;color:var(--muted);line-height:1.3;}
+    .decisor-meta{font-size:10px;color:#64748B;margin-top:1px;}
+    .decisor-confidence{font-weight:700;text-transform:uppercase;letter-spacing:.3px;}
+    .decisor-confidence.alta{color:#057A55;}
+    .decisor-confidence.media{color:#92400E;}
+    .decisor-confidence.baixa{color:#9B1C1C;}
+
+    /* segment dot colors */
+    .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;display:inline-block;margin-right:5px;}
+    .dot-ecommerce{background:#3B82F6;}
+    .dot-farma{background:#10B981;}
+    .dot-alimentos{background:#F59E0B;}
+    .dot-cosmeticos{background:#EC4899;}
+    .dot-combustiveis{background:#EF4444;}
+    .dot-industria{background:#8B5CF6;}
+    .dot-pneus{background:#06B6D4;}
+    .dot-agro{background:#84CC16;}
+    .dot-eletro{background:#F97316;}
+    .dot-logistica{background:#6B7280;}
+
+    .empty{padding:32px;text-align:center;color:var(--muted);font-size:14px;}
+
+    @media(max-width:1200px){
+      .kpi-row{grid-template-columns:repeat(3,1fr);}
+      .seg-row{grid-template-columns:repeat(3,1fr);}
+      .charts-row{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+<script>
+  if (new URLSearchParams(location.search).get("embed") === "1") {
+    document.documentElement.classList.add("embedded-view");
+  }
+</script>
+<div class="shell">
+  <aside>
+    <div class="brand-header">
+      <div class="brand-logo">PX</div>
+      <div>
+        <div class="brand-name">PX Outreach Engine</div>
+        <div class="brand-sub">Market Intelligence</div>
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Inteligência</div>
+      <a class="side-link active" href="/embarcadores-market.html">
+        <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="8" width="3" height="7" rx="1"/><rect x="6" y="5" width="3" height="10" rx="1"/><rect x="11" y="1" width="3" height="14" rx="1"/></svg>
+        Embarcadores Brasil
+      </a>
+      <a class="side-link" href="/bid-embarcadores.html">
+        <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M3 4v9h10V4"/><path d="M5 7h6M5 10h4M6 2h4"/></svg>
+        BID Embarcadores
+      </a>
+      <a class="side-link" href="/thiago-abm-intelligence.html">
+        <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s2-2 4-2 3 2 5 2 3-2 3-2V4s-1 2-3 2-3-2-5-2-4 2-4 2z"/></svg>
+        ABM Intelligence
+      </a>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Operação</div>
+      <a class="side-link" href="/workday.html">
+        <svg class="nav-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M5 1v4M11 1v4M2 8h12"/></svg>
+        Ações de Hoje
+      </a>
+    </div>
+    <div class="sidebar-footer">
+      <div class="nav-label" style="padding-bottom:6px">Atalhos</div>
+      <a class="foot-link" href="#" onclick="copyLink(event)">
+        <svg style="width:13px;height:13px;opacity:.6" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="2.5" r="1.5"/><circle cx="2.5" cy="6.5" r="1.5"/><circle cx="10" cy="10.5" r="1.5"/><path d="M4 7.3l4.5 2.5M8.5 3.2L4 5.7"/></svg>
+        <span id="copy-label">Copiar link</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- topbar -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="topbar-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#0F52BA" stroke-width="1.8"><rect x="2" y="10" width="4" height="8" rx="1"/><rect x="8" y="6" width="4" height="12" rx="1"/><rect x="14" y="2" width="4" height="16" rx="1"/></svg>
+        </div>
+        <div>
+          <h1>Embarcadores Brasil</h1>
+          <div class="muted">Tierização de mercado · <span id="updated-at">Carregando...</span></div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button onclick="exportCsv()" style="border:1px solid var(--blue);background:#fff;color:var(--blue);border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v8M7 9 4 6M7 9l3-3M2 11h10v2H2z"/></svg>
+          Exportar CSV
+        </button>
+        <button onclick="loadAll()" style="border:1px solid var(--blue);background:var(--blue);color:#fff;border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12.5 7A5.5 5.5 0 1 1 7 1.5"/><path d="M12.5 1.5v4h-4"/></svg>
+          Atualizar
+        </button>
+      </div>
+    </div>
+
+    <!-- methodology note -->
+    <div style="background:var(--blue-50);border:1px solid var(--blue-100);border-radius:var(--radius);padding:10px 16px;font-size:12px;color:var(--ink);display:flex;align-items:center;gap:8px;">
+      <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#0F52BA" stroke-width="1.8" style="flex-shrink:0;"><circle cx="10" cy="10" r="8"/><path d="M10 9v4.5M10 6.5v.01"/></svg>
+      <span><strong>Metodologia:</strong> este painel combina (1) a participação percentual de cada setor no PIB brasileiro, (2) a lista das maiores empresas não-financeiras e não-prestadoras de serviço do Índice Brasil 100 (IBrX 100) da B3, ranqueadas por receita, e (3) empresas com maior movimentação de carga segundo o <strong>Times Brasil</strong>.</span>
+    </div>
+
+    <!-- kpis -->
+    <div class="kpi-row" id="kpi-row">
+      <div class="kpi"><div class="kpi-label">Total mapeado</div><div class="kpi-value" id="k-total">—</div><div class="kpi-sub">embarcadores</div></div>
+      <div class="kpi blue"><div class="kpi-label">Tier 1</div><div class="kpi-value" id="k-t1">—</div><div class="kpi-sub">estratégicos</div></div>
+      <div class="kpi amber"><div class="kpi-label">Tier 2</div><div class="kpi-value" id="k-t2">—</div><div class="kpi-sub">desenvolvimento</div></div>
+      <div class="kpi gray"><div class="kpi-label">Tier 3</div><div class="kpi-value" id="k-t3">—</div><div class="kpi-sub">observação</div></div>
+      <div class="kpi green"><div class="kpi-label">Em abordagem</div><div class="kpi-value" id="k-abm">—</div><div class="kpi-sub">no ABM</div></div>
+      <div class="kpi red"><div class="kpi-label">Gaps</div><div class="kpi-value" id="k-gap">—</div><div class="kpi-sub">não abordados</div></div>
+      <div class="kpi purple"><div class="kpi-label">Cobertura de mercado</div><div class="kpi-value" id="k-market-coverage">—</div><div class="kpi-sub">do PIB mapeado</div></div>
+    </div>
+
+    <!-- segment distribution charts -->
+    <div class="charts-row">
+      <div class="chart-card">
+        <div class="chart-title">Embarcadores por Segmento</div>
+        <div class="chart-body">
+          <div id="chart-embarcadores"></div>
+          <div class="chart-legend" id="legend-embarcadores"></div>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Participação dos Setores no PIB Brasileiro</div>
+        <div class="chart-body">
+          <div id="chart-pib"></div>
+          <div class="chart-legend" id="legend-pib"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- segment overview -->
+    <div class="seg-row" id="seg-row"></div>
+
+    <!-- segments without PX coverage -->
+    <div class="gaps-section" id="gaps-wrap" style="display:none">
+      <div class="gaps-toggle" onclick="toggleGaps()">
+        <span>Segmentos sem cobertura PX (<span id="gaps-count">0</span>)</span>
+        <span id="gaps-arrow">▾</span>
+      </div>
+      <div class="gaps-body" id="gaps-body"></div>
+    </div>
+
+    <!-- filters -->
+    <div class="filter-bar">
+      <label>Segmento</label>
+      <select id="f-segment" onchange="applyFilters()">
+        <option value="">Todos</option>
+      </select>
+      <label>Tier</label>
+      <select id="f-tier" onchange="applyFilters()">
+        <option value="">Todos</option>
+        <option value="1">Tier 1</option>
+        <option value="2">Tier 2</option>
+        <option value="3">Tier 3</option>
+        <option value="null">Sem tier</option>
+      </select>
+      <label>Já abordado?</label>
+      <select id="f-abm" onchange="applyFilters()">
+        <option value="">Todos</option>
+        <option value="yes">Sim</option>
+        <option value="no">Não</option>
+      </select>
+      <label>Buscar</label>
+      <input type="text" id="f-search" placeholder="empresa ou decisor..." oninput="applyFilters()" style="width:200px;">
+      <label>Ranking</label>
+      <select id="f-sort" onchange="applyFilters()">
+        <option value="">Padrão</option>
+        <option value="tier-score-desc">Tier score ↓ maior → menor</option>
+        <option value="tier-score-asc">Tier score ↑ menor → maior</option>
+        <option value="market-size-desc">Por tamanho de mercado ↓</option>
+      </select>
+      <button class="filter-reset" onclick="resetFilters()">Limpar</button>
+      <span class="filter-count" id="filter-count"></span>
+    </div>
+
+    <!-- table -->
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Tier</th>
+            <th>Embarcador</th>
+            <th>Segmento</th>
+            <th>Já abordado?</th>
+            <th>Tier Score</th>
+            <th>Decisores</th>
+            <th>Status ABM</th>
+            <th>Critério e próximo passo</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script>
+  const SEGMENT_COLORS = {
+    "E-commerce & Varejo":               { dot: "#3B82F6", top: "#3B82F6" },
+    "Farmacêutico & Saúde":              { dot: "#10B981", top: "#10B981" },
+    "Alimentos & Bebidas":               { dot: "#F59E0B", top: "#F59E0B" },
+    "Cosméticos & Higiene":              { dot: "#EC4899", top: "#EC4899" },
+    "Combustíveis, Energia & Química":   { dot: "#EF4444", top: "#EF4444" },
+    "Indústria Pesada":                  { dot: "#8B5CF6", top: "#8B5CF6" },
+    "Automotivo & Pneus":                { dot: "#06B6D4", top: "#06B6D4" },
+    "Agro & Commodities":                { dot: "#84CC16", top: "#84CC16" },
+    "Eletro & Tecnologia":                { dot: "#F97316", top: "#F97316" },
+    "Logística & Transporte":            { dot: "#6B7280", top: "#6B7280" },
+    "Construção Civil":                  { dot: "#78716C", top: "#78716C" },
+    "Têxtil & Vestuário":                { dot: "#D946EF", top: "#D946EF" }
+  };
+
+  // Tamanho relativo do mercado em relação ao PIB (Top Down: faturamento setorial / PIB Brasil 2024 = R$ 11,7tri, IBGE)
+  const TAMANHO_MERCADO_SEGMENTOS = {
+    "Alimentos & Bebidas":             { pct: 11.0, posicao: 1,  nota: "≈R$1,3tri/ano (ABIA, receita líquida da indústria de alimentos e bebidas) ÷ PIB R$11,7tri (IBGE, 2024)." },
+    "Combustíveis, Energia & Química": { pct: 9.0,  posicao: 2,  nota: "Distribuição de combustíveis (~6,5% do PIB) + indústria química/petroquímica (ABIQUIM, ~2,5% do PIB) ÷ PIB R$11,7tri." },
+    "Agro & Commodities":              { pct: 8.0,  posicao: 3,  nota: "Valor adicionado da agropecuária — produção e logística de commodities (IBGE/CNA) ÷ PIB R$11,7tri. Não inclui agroindústria de alimentos." },
+    "E-commerce & Varejo":             { pct: 7.7,  posicao: 4,  nota: "GMV do e-commerce (ABComm, ~R$200bi/ano) + faturamento de redes de supermercados (ABRAS, ~R$700bi/ano) ÷ PIB R$11,7tri." },
+    "Logística & Transporte":          { pct: 6.8,  posicao: 5,  nota: "Movimentação do transporte de cargas (CNT, ~R$800bi/ano), excluindo Correios ÷ PIB R$11,7tri." },
+    "Indústria Pesada":                { pct: 6.3,  posicao: 6,  nota: "Mineração (IBRAM) + siderurgia (Aço Brasil) + papel e celulose (Ibá) + indústria extrativa ÷ PIB R$11,7tri." },
+    "Automotivo & Pneus":              { pct: 6.0,  posicao: 7,  nota: "Indústria automotiva (Anfavea) + autopeças (Sindipeças) + pneus (ANIP, ~0,3% do PIB) ÷ PIB R$11,7tri." },
+    "Construção Civil":                { pct: 4.8,  posicao: 8,  nota: "Valor adicionado da construção civil (CBIC/IBGE) ÷ PIB R$11,7tri." },
+    "Eletro & Tecnologia":             { pct: 1.9,  posicao: 9,  nota: "Receita da indústria eletroeletrônica (Abinee, ~R$220bi/ano) ÷ PIB R$11,7tri." },
+    "Têxtil & Vestuário":              { pct: 1.9,  posicao: 10, nota: "Receita da cadeia têxtil e de confecção (ABIT, ~R$220bi/ano) ÷ PIB R$11,7tri." },
+    "Farmacêutico & Saúde":            { pct: 1.4,  posicao: 11, nota: "Mercado farmacêutico brasileiro — apenas farma (Interfarma/IQVIA, ~R$160,7bi/ano) ÷ PIB R$11,7tri." },
+    "Cosméticos & Higiene":            { pct: 1.3,  posicao: 12, nota: "Estimativa de receita de higiene pessoal, perfumaria e cosméticos (ABIHPEC, ~R$140bi/ano) ÷ PIB R$11,7tri. Confiança baixa — sem total consolidado oficial." }
+  };
+
+  const apiBase = window.location.protocol === "file:" ? "http://localhost:3000" : "";
+
+  let allEmb = [];
+  let abmMap = {}; // name (lowercase) → { handoffStatus, contactCount, touchpointCount }
+  let filteredEmb = [];
+  let selectedSegment = null;
+
+  const ABORD_KEY = "px-abordado-overrides";
+  let abordOverrides = {};
+
+  function loadAbordOverrides() {
+    try { abordOverrides = JSON.parse(localStorage.getItem(ABORD_KEY) || "{}"); }
+    catch { abordOverrides = {}; }
+  }
+
+  function saveAbordOverrides() {
+    localStorage.setItem(ABORD_KEY, JSON.stringify(abordOverrides));
+  }
+
+  function embKey(e) { return String(e.id ?? e.name); }
+
+  function getAbordado(e) {
+    const k = embKey(e);
+    return k in abordOverrides ? abordOverrides[k] : !!getAbm(e.name);
+  }
+
+  function toggleAbordado(key) {
+    const e = allEmb.find(x => embKey(x) === key);
+    if (!e) return;
+    const autoVal = !!getAbm(e.name);
+    const newVal = !getAbordado(e);
+    if (newVal === autoVal) delete abordOverrides[key]; // back to auto
+    else abordOverrides[key] = newVal;
+    saveAbordOverrides();
+    renderKpis();
+    applyFilters();
+  }
+
+  async function loadAll() {
+    document.getElementById("updated-at").textContent = "Carregando...";
+
+    const [embRes, abmRes] = await Promise.allSettled([
+      fetch(`${apiBase}/api/market/embarcadores`),
+      fetch(`${apiBase}/api/market/abm-coverage`)
+    ]);
+
+    if (embRes.status === "fulfilled" && embRes.value.ok) {
+      const { data } = await embRes.value.json();
+      allEmb = data;
+    }
+
+    if (abmRes.status === "fulfilled" && abmRes.value.ok) {
+      const { data } = await abmRes.value.json();
+      abmMap = {};
+      data.forEach(c => { abmMap[c.name.toLowerCase().trim()] = c; });
+    }
+
+    buildSegmentFilter();
+    applyFilters();
+    renderKpis();
+    renderSegments();
+    renderCharts();
+    document.getElementById("updated-at").textContent = `Atualizado em ${new Date().toLocaleString("pt-BR")}`;
+  }
+
+  function getAbm(name) {
+    const key = name.toLowerCase().trim();
+    if (abmMap[key]) return abmMap[key];
+    // fuzzy: check if any abm name contains the market name or vice versa
+    for (const [k, v] of Object.entries(abmMap)) {
+      if (k.includes(key) || key.includes(k)) return v;
+    }
+    return null;
+  }
+
+  function buildSegmentFilter() {
+    const segs = [...new Set(allEmb.map(e => e.segment))].sort();
+    const sel = document.getElementById("f-segment");
+    sel.innerHTML = '<option value="">Todos</option>' +
+      segs.map(s => `<option value="${s}">${s}</option>`).join("");
+  }
+
+  function applyFilters() {
+    const seg = document.getElementById("f-segment").value;
+    const tier = document.getElementById("f-tier").value;
+    const abm = document.getElementById("f-abm").value;
+    const q = document.getElementById("f-search").value.toLowerCase().trim();
+
+    const sort = document.getElementById("f-sort").value;
+
+    filteredEmb = allEmb.filter(e => {
+      if (selectedSegment && e.segment !== selectedSegment) return false;
+      if (seg && e.segment !== seg) return false;
+      if (tier === "null" && e.tier !== null) return false;
+      if (tier === "1" && e.tier !== 1) return false;
+      if (tier === "2" && e.tier !== 2) return false;
+      if (tier === "3" && e.tier !== 3) return false;
+      const jaAbordado = getAbordado(e);
+      if (abm === "yes" && !jaAbordado) return false;
+      if (abm === "no" && jaAbordado) return false;
+      if (q) {
+        const haystack = [
+          e.name,
+          e.segment,
+          e.tierRationale,
+          e.nextResearchStep,
+          e.notes,
+          ...e.decisors.map(d => d.name + " " + d.role)
+        ].join(" ").toLowerCase();
+        if (!haystack.includes(q)) return false;
+      }
+      return true;
+    });
+
+    if (sort === "tier-score-desc") {
+      filteredEmb.sort((a, b) => (b.tierScore ?? -1) - (a.tierScore ?? -1));
+    } else if (sort === "tier-score-asc") {
+      filteredEmb.sort((a, b) => (a.tierScore ?? -1) - (b.tierScore ?? -1));
+    } else if (sort === "market-size-desc") {
+      filteredEmb.sort((a, b) => (TAMANHO_MERCADO_SEGMENTOS[b.segment]?.pct ?? 0) - (TAMANHO_MERCADO_SEGMENTOS[a.segment]?.pct ?? 0) || (b.tierScore ?? -1) - (a.tierScore ?? -1));
+    } else {
+      filteredEmb.sort((a, b) => (a.tier ?? 99) - (b.tier ?? 99) || (b.tierScore ?? -1) - (a.tierScore ?? -1) || a.name.localeCompare(b.name));
+    }
+
+    renderTable();
+    document.getElementById("filter-count").textContent = `${filteredEmb.length} de ${allEmb.length} empresas`;
+  }
+
+  function csvEscape(value) {
+    const s = (value ?? "").toString().replace(/\r?\n/g, " ");
+    return /[",;]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  }
+
+  function exportCsv() {
+    const headers = ["Tier", "Embarcador", "Segmento", "UF", "Já abordado?", "Tier Score", "Decisores", "Status ABM", "Critério e próximo passo"];
+    const rows = filteredEmb.map(e => {
+      const tierLabel = e.tier ? `Tier ${e.tier}` : "Sem tier";
+      const decisores = e.decisors.map(d => `${d.name} (${d.role})`).join("; ");
+      const jaAbordado = getAbordado(e) ? "Sim" : "Não";
+      const abm = getAbm(e.name) ? "Em abordagem" : "Gap";
+      const criterio = [e.tierRationale, e.nextResearchStep].filter(Boolean).join(" ");
+      return [tierLabel, e.name, e.segment, e.uf ?? "", jaAbordado, e.tierScore ?? "", decisores, abm, criterio];
+    });
+
+    const csv = [headers, ...rows].map(r => r.map(csvEscape).join(";")).join("\r\n");
+    const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `embarcadores-painel-${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  function resetFilters() {
+    document.getElementById("f-segment").value = "";
+    document.getElementById("f-tier").value = "";
+    document.getElementById("f-abm").value = "";
+    document.getElementById("f-search").value = "";
+    document.getElementById("f-sort").value = "";
+    selectedSegment = null;
+    document.querySelectorAll(".seg-card").forEach(c => c.classList.remove("selected"));
+    applyFilters();
+  }
+
+  function renderKpis() {
+    const total = allEmb.length;
+    const t1 = allEmb.filter(e => e.tier === 1).length;
+    const t2 = allEmb.filter(e => e.tier === 2).length;
+    const t3 = allEmb.filter(e => e.tier === 3).length;
+    const inAbm = allEmb.filter(e => getAbordado(e)).length;
+    const gap = total - inAbm;
+
+    document.getElementById("k-total").textContent = total;
+    document.getElementById("k-t1").textContent = t1;
+    document.getElementById("k-t2").textContent = t2;
+    document.getElementById("k-t3").textContent = t3;
+    document.getElementById("k-abm").textContent = inAbm;
+    document.getElementById("k-gap").textContent = gap;
+  }
+
+  function renderSegments() {
+    const segs = {};
+    allEmb.forEach(e => {
+      if (!segs[e.segment]) segs[e.segment] = { total: 0, abm: 0, t1: 0, avg: 0, scoreSum: 0 };
+      segs[e.segment].total++;
+      segs[e.segment].scoreSum += e.tierScore || 0;
+      if (getAbm(e.name)) segs[e.segment].abm++;
+      if (e.tier === 1) segs[e.segment].t1++;
+    });
+
+    const container = document.getElementById("seg-row");
+    container.innerHTML = Object.entries(segs).sort((a, b) => b[1].total - a[1].total).map(([seg, d]) => {
+      const color = SEGMENT_COLORS[seg]?.top || "#64748B";
+      return `
+        <div class="seg-card" onclick="filterBySeg('${seg.replace(/'/g,"\\'")}', this)" style="border-top-color:${color}">
+          <div class="seg-name"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>${seg}</div>
+          <div class="seg-meta">
+            <span>${d.total} total</span>
+            <span style="color:#10B981">${d.abm} ABM</span>
+            <span style="color:#64748B">${d.t1} T1</span>
+            <span style="color:#1D4ED8">${Math.round(d.scoreSum / d.total)} pts</span>
+          </div>
+        </div>`;
+    }).join("");
+  }
+
+  function donutSvg(items, size) {
+    const r = 60;
+    const circumference = 2 * Math.PI * r;
+    let offset = 0;
+    const circles = items.map(item => {
+      const dash = (item.pct / 100) * circumference;
+      const circle = `<circle cx="80" cy="80" r="${r}" fill="none" stroke="${item.color}" stroke-width="22" stroke-dasharray="${dash} ${circumference - dash}" stroke-dashoffset="${-offset}" transform="rotate(-90 80 80)"></circle>`;
+      offset += dash;
+      return circle;
+    }).join("");
+    return `<svg width="${size}" height="${size}" viewBox="0 0 160 160">${circles}</svg>`;
+  }
+
+  function chartLegendHtml(items) {
+    return items.map(item => `
+      <div class="chart-legend-item">
+        <span class="chart-legend-dot" style="background:${item.color}"></span>
+        <span class="chart-legend-label">${esc(item.label)}</span>
+        <span class="chart-legend-pct">${item.pct.toFixed(1).replace(".", ",")}%</span>
+      </div>`).join("");
+  }
+
+  function renderCharts() {
+    // Chart 1: embarcadores por segmento
+    const counts = {};
+    allEmb.forEach(e => { counts[e.segment] = (counts[e.segment] || 0) + 1; });
+    const total = allEmb.length || 1;
+    const embItems = Object.entries(counts)
+      .map(([seg, count]) => ({ label: seg, pct: (count / total) * 100, color: SEGMENT_COLORS[seg]?.dot || "#94A3B8" }))
+      .sort((a, b) => b.pct - a.pct);
+
+    document.getElementById("chart-embarcadores").innerHTML = donutSvg(embItems, 130);
+    document.getElementById("legend-embarcadores").innerHTML = chartLegendHtml(embItems);
+
+    // Chart 2: participação dos setores no PIB brasileiro
+    const pibItems = Object.entries(TAMANHO_MERCADO_SEGMENTOS)
+      .map(([seg, d]) => ({ label: seg, pct: d.pct, color: SEGMENT_COLORS[seg]?.dot || "#94A3B8" }))
+      .sort((a, b) => b.pct - a.pct);
+    const pibSum = pibItems.reduce((sum, item) => sum + item.pct, 0);
+    pibItems.push({ label: "Outros setores da economia", pct: Math.max(0, 100 - pibSum), color: "#CBD5E1" });
+
+    document.getElementById("chart-pib").innerHTML = donutSvg(pibItems, 130);
+    document.getElementById("legend-pib").innerHTML = chartLegendHtml(pibItems);
+  }
+
+  function filterBySeg(seg, el) {
+    if (selectedSegment === seg) {
+      selectedSegment = null;
+      el.classList.remove("selected");
+    } else {
+      selectedSegment = seg;
+      document.querySelectorAll(".seg-card").forEach(c => c.classList.remove("selected"));
+      el.classList.add("selected");
+    }
+    applyFilters();
+  }
+
+  function abordadoCell(e) {
+    const key = embKey(e);
+    const val = getAbordado(e);
+    const isManual = key in abordOverrides;
+    const cls = val ? "badge-sim" : "badge-nao";
+    const label = val ? "Sim" : "Não";
+    const editIcon = isManual ? '<span style="font-size:9px;margin-left:3px;opacity:.75">✎</span>' : '';
+    const tip = isManual
+      ? `Marcado manualmente · clique para ${val ? "marcar Não" : "marcar Sim"}`
+      : `Detectado via LinkedIn · clique para sobrescrever`;
+    return `<button class="badge ${cls}" data-key="${esc(key)}" onclick="toggleAbordado(this.dataset.key)" title="${esc(tip)}" style="cursor:pointer;border:none;font-family:inherit;padding:0 8px;height:20px;">${label}${editIcon}</button>`;
+  }
+
+  function tierBadge(t) {
+    if (t === 1) return '<span class="badge badge-t1">Tier 1</span>';
+    if (t === 2) return '<span class="badge badge-t2">Tier 2</span>';
+    if (t === 3) return '<span class="badge badge-t3">Tier 3</span>';
+    return '<span class="badge badge-t-null">A classificar</span>';
+  }
+
+  function abmBadge(abmData) {
+    if (!abmData) return '<span class="badge badge-gap">Gap</span>';
+    if (abmData.handoffStatus && abmData.handoffStatus !== "NONE") {
+      return `<span class="badge badge-active">${statusLabel(abmData.handoffStatus)}</span>`;
+    }
+    return `<span class="badge badge-abm">No ABM · ${abmData.contactCount}c</span>`;
+  }
+
+  function statusLabel(s) {
+    const m = { CONTACT_ROUTED:"Roteado", COMMERCIAL_PENDING:"Comercial", COMMERCIAL_ACCEPTED:"Aceito",
+      ONBOARDING_PENDING:"Onboarding", ONBOARDING_ACCEPTED:"Cliente", STALE:"Inativo", NONE:"No ABM" };
+    return m[s] || s;
+  }
+
+  function tierScoreCell(e) {
+    const score = e.tierScore;
+    if (!score) return '<span class="muted">—</span>';
+    const pct = Math.min(100, score);
+    const b = e.tierBreakdown || {};
+    const title = [
+      `Logística: ${b.potencialLogistico ?? "—"}/30`,
+      `Aderência PX: ${b.aderenciaModeloPX ?? "—"}/25`,
+      `Porte: ${b.porteRelevancia ?? "—"}/20`,
+      `Timing: ${b.gatilhosTiming ?? "—"}/15`,
+      `Acesso: ${b.mapeabilidadeAcesso ?? "—"}/10`
+    ].join(" · ");
+    return `
+      <div class="tier-score" title="${esc(title)}">
+        <div class="tier-score-head">
+          <span class="tier-score-label">Total</span>
+          <span class="score-val">${score}</span>
+        </div>
+        <div class="score-bar" style="width:100%"><div class="score-fill" style="width:${pct}%"></div></div>
+        <div class="tier-breakdown" aria-label="${esc(title)}">
+          <span title="Potencial logístico">${b.potencialLogistico ?? "—"}</span>
+          <span title="Aderência ao modelo PX">${b.aderenciaModeloPX ?? "—"}</span>
+          <span title="Porte / relevância econômica">${b.porteRelevancia ?? "—"}</span>
+          <span title="Gatilhos / timing">${b.gatilhosTiming ?? "—"}</span>
+          <span title="Mapeabilidade / acesso">${b.mapeabilidadeAcesso ?? "—"}</span>
+        </div>
+      </div>`;
+  }
+
+  function segDot(seg) {
+    const color = SEGMENT_COLORS[seg]?.dot || "#64748B";
+    return `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${color};margin-right:5px;vertical-align:middle;flex-shrink:0"></span>`;
+  }
+
+  function esc(s) { return String(s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+  function renderTable() {
+    const tbody = document.getElementById("tbody");
+    if (filteredEmb.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="8" class="empty">Nenhuma empresa encontrada com os filtros aplicados.</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = filteredEmb.map(e => {
+      const abmData = getAbm(e.name);
+      const decisorsHtml = e.decisors.length
+        ? e.decisors.map(d => {
+            const confidence = d.confidence ? String(d.confidence).toLowerCase() : "";
+            const meta = d.confidence
+              ? `<div class="decisor-meta" title="${esc(d.source || "")}">Confiança: <span class="decisor-confidence ${confidence}">${esc(d.confidence)}</span></div>`
+              : "";
+            return `<div class="decisor"><div class="decisor-name">${esc(d.name)}</div><div class="decisor-role">${esc(d.role)}</div>${meta}</div>`;
+          }).join("")
+        : '<span class="muted">—</span>';
+
+      return `<tr>
+        <td>${tierBadge(e.tier)}</td>
+        <td>
+          <div class="company-name">${esc(e.name)}</div>
+          <div class="company-uf">${esc(e.uf || "")}</div>
+        </td>
+        <td><span style="font-size:12px">${segDot(e.segment)}${esc(e.segment)}</span></td>
+        <td>${abordadoCell(e)}</td>
+        <td>${tierScoreCell(e)}</td>
+        <td>${decisorsHtml}</td>
+        <td>${abmBadge(abmData)}</td>
+        <td style="max-width:320px">
+          <div class="tier-rationale">${esc(e.tierRationale || e.notes || "")}</div>
+          <div class="next-step">${esc(e.nextResearchStep || "Validar próximo passo operacional.")}</div>
+        </td>
+      </tr>`;
+    }).join("");
+  }
+
+  function copyLink(e) {
+    e.preventDefault();
+    const url = window.location.href.replace(/^https?:\/\/[^/]+/, "http://192.168.10.63:3000");
+    navigator.clipboard.writeText(url).then(() => {
+      const el = document.getElementById("copy-label");
+      el.textContent = "Link copiado!";
+      setTimeout(() => { el.textContent = "Copiar link"; }, 2000);
+    });
+  }
+
+  loadAbordOverrides();
+  loadAll();
+</script>
+</body>
+</html>
