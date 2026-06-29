@@ -8,15 +8,15 @@
     if (typeof url === 'string') {
       var path = url.replace(/^https?:\/\/[^/]+/, '');
       if (/\/api\/market\/embarcadores(?!.*bid)/.test(path)) {
-        return _fetch('/data/embarcadores.json', opts).then(function(r){ return r.json(); })
+        return _fetch('data/embarcadores.json', opts).then(function(r){ return r.json(); })
           .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
       }
       if (path.indexOf('/api/market/abm-coverage') !== -1) {
-        return _fetch('/data/abm-coverage.json', opts).then(function(r){ return r.json(); })
+        return _fetch('data/abm-coverage.json', opts).then(function(r){ return r.json(); })
           .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
       }
       if (path.indexOf('/api/market/bid-embarcadores') !== -1) {
-        return _fetch('/data/bid-embarcadores.json', opts).then(function(r){ return r.json(); })
+        return _fetch('data/bid-embarcadores.json', opts).then(function(r){ return r.json(); })
           .then(function(d){ return new Response(JSON.stringify({data:d}),{status:200,headers:{'Content-Type':'application/json'}}); });
       }
     }
