@@ -707,21 +707,21 @@
   },
   {
     "weekKey": "2026-S27",
-    "generatedAt": "2026-06-30T11:47:56.669Z",
+    "generatedAt": "2026-07-01T11:57:43.941Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 65,
-    "activePipeline": 62,
+    "totalApproached": 67,
+    "activePipeline": 64,
     "pausedCount": 3,
     "repliedOrBetter": 13,
     "meetingOrBetter": 6,
     "dealCount": 5,
-    "replyRate": 0.20967741935483872,
-    "meetingRate": 0.0967741935483871,
-    "dealRate": 0.08064516129032258,
+    "replyRate": 0.203125,
+    "meetingRate": 0.09375,
+    "dealRate": 0.078125,
     "avgDaysToFirstReply": 6.7272727272727275,
-    "avgDaysSinceLastOutbound": 3.7333333333333334,
+    "avgDaysSinceLastOutbound": 2.4,
     "totalOutboundTouchpoints": 24,
-    "totalInboundTouchpoints": 10,
+    "totalInboundTouchpoints": 8,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -731,12 +731,12 @@
       {
         "stage": "CONNECTION_ACCEPTED",
         "label": "Conexão Aceita",
-        "count": 19
+        "count": 16
       },
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 14
+        "count": 19
       },
       {
         "stage": "FOLLOW_UP_SENT",
@@ -834,7 +834,7 @@
         "company": "Casas Bahia",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 4,
+        "outboundTouchpoints": 5,
         "inboundTouchpoints": 1,
         "bestStatus": "REPLIED",
         "score": 60,
@@ -844,8 +844,8 @@
         "company": "L'Oréal",
         "stage": "REPLIED",
         "contacts": 2,
-        "outboundTouchpoints": 2,
-        "inboundTouchpoints": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-21T17:36:00.000Z"
@@ -911,10 +911,10 @@
         "nextActionDueAt": "2026-06-25T03:00:00.000Z"
       }
     ],
-    "activeContacts": 62,
+    "activeContacts": 64,
     "excludedContacts": 3,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 65,
-    "qualifiedAdvanceRate": 0.0967741935483871
+    "uniqueCompanies": 67,
+    "qualifiedAdvanceRate": 0.09375
   }
 ]
