@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-01T11:57:03.756Z",
+  "generatedAt": "2026-07-01T20:56:28.968Z",
   "source": {
     "type": "static-linkedin-scan-fallback",
     "inputPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-01.json",
-    "scannedAt": "2026-07-01T11:54:42.423Z",
+    "scannedAt": "2026-07-01T20:53:57.825Z",
     "matchedThreads": 55,
-    "kanbanSnapshotAt": "2026-06-30T20:48:07.472Z",
+    "kanbanSnapshotAt": "2026-07-01T20:27:57.669Z",
     "embarcadoresCount": 161,
     "note": "Fallback usado quando /api/workday/actions nao consegue consultar o Postgres local."
   },
@@ -726,40 +726,6 @@
   ],
   "acceptedConnectionsWithoutMessage": [
     {
-      "id": "michelin-accepted-no-msg",
-      "company": {
-        "id": "michelin",
-        "name": "Michelin",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Rafaela Senise (Diretora Administrativa e de RH (Ex Supply Chain — não mais decisora SC/Logística)).",
-      "recommendedAction": "Identificar atual Diretor de Supply Chain Michelin Brasil (possível candidato: Paulo Francischelli, 20+ anos na Michelin). Validar Lucas Mendes Junior como CEO Latam.",
-      "dueAt": "2026-06-18T17:50:46.779Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cargill-accepted-no-msg",
-      "company": {
-        "id": "cargill",
-        "name": "Cargill",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Ricardo Bonetto Hartl (Diretor Logístico América do Sul).",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-06-18T17:50:17.221Z",
-      "severity": "critical"
-    },
-    {
       "id": "csn-accepted-no-msg",
       "company": {
         "id": "csn",
@@ -777,6 +743,23 @@
       "severity": "critical"
     },
     {
+      "id": "michelin-accepted-no-msg",
+      "company": {
+        "id": "michelin",
+        "name": "Michelin",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Rafaela Senise (Diretora Administrativa e de RH (Ex Supply Chain — não mais decisora SC/Logística)).",
+      "recommendedAction": "Identificar atual Diretor de Supply Chain Michelin Brasil (possível candidato: Paulo Francischelli, 20+ anos na Michelin). Validar Lucas Mendes Junior como CEO Latam.",
+      "dueAt": "2026-06-18T17:50:46.779Z",
+      "severity": "critical"
+    },
+    {
       "id": "yara-brasil-accepted-no-msg",
       "company": {
         "id": "yara-brasil",
@@ -791,6 +774,23 @@
       "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Alberto Rodrigues (Diretor de Logística).",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-18T17:50:23.856Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cargill-accepted-no-msg",
+      "company": {
+        "id": "cargill",
+        "name": "Cargill",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Ricardo Bonetto Hartl (Diretor Logístico América do Sul).",
+      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "dueAt": "2026-06-18T17:50:17.221Z",
       "severity": "critical"
     },
     {
@@ -1017,40 +1017,6 @@
       "severity": "critical"
     },
     {
-      "id": "michelin-kanban-overdue",
-      "company": {
-        "id": "michelin",
-        "name": "Michelin",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 56 dias (CONNECTION ACCEPTED). [Tier 2 · Score 77] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Identificar atual Diretor de Supply Chain Michelin Brasil (possível candidato: Paulo Francischelli, 20+ anos na Michelin). Validar Lucas Mendes Junior como CEO Latam.",
-      "dueAt": "2026-05-06T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cargill-kanban-overdue",
-      "company": {
-        "id": "cargill",
-        "name": "Cargill",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 56 dias (CONNECTION ACCEPTED). [Tier 1 · Score 88] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-05-06T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "csn-kanban-overdue",
       "company": {
         "id": "csn",
@@ -1068,10 +1034,44 @@
       "severity": "critical"
     },
     {
+      "id": "michelin-kanban-overdue",
+      "company": {
+        "id": "michelin",
+        "name": "Michelin",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 56 dias (CONNECTION ACCEPTED). [Tier 2 · Score 77] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Identificar atual Diretor de Supply Chain Michelin Brasil (possível candidato: Paulo Francischelli, 20+ anos na Michelin). Validar Lucas Mendes Junior como CEO Latam.",
+      "dueAt": "2026-05-06T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
       "id": "yara-brasil-kanban-overdue",
       "company": {
         "id": "yara-brasil",
         "name": "Yara Brasil",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 56 dias (CONNECTION ACCEPTED). [Tier 1 · Score 88] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "dueAt": "2026-05-06T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cargill-kanban-overdue",
+      "company": {
+        "id": "cargill",
+        "name": "Cargill",
         "status": "CONNECTION_ACCEPTED"
       },
       "contact": null,
@@ -1232,7 +1232,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 11 dias (REPLIED). [Tier 2 · Score 83] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 12 dias (REPLIED). [Tier 2 · Score 83] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-19T18:34:00.000Z",
       "severity": "warning"
@@ -1266,7 +1266,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 9 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 10 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-21T17:36:00.000Z",
       "severity": "warning"
@@ -1391,6 +1391,23 @@
       "severity": "warning"
     },
     {
+      "id": "boticario-kanban-overdue",
+      "company": {
+        "id": "boticario",
+        "name": "Boticário",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 5 dias (REPLIED). [Tier 1 · Score 91] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "dueAt": "2026-06-26T15:24:00.000Z",
+      "severity": "warning"
+    },
+    {
       "id": "leroy-merlin-kanban-overdue",
       "company": {
         "id": "leroy-merlin",
@@ -1453,9 +1470,43 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 0 dias (MESSAGE SENT). [Tier 1 · Score 92] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 1 dia (MESSAGE SENT). [Tier 1 · Score 92] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-30T17:57:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "braskem-kanban-overdue",
+      "company": {
+        "id": "braskem",
+        "name": "Braskem",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 0 dias (MESSAGE SENT). [Tier 1 · Score 85] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "dueAt": "2026-07-01T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "vulcabras-kanban-overdue",
+      "company": {
+        "id": "vulcabras",
+        "name": "Vulcabras",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 0 dias (MESSAGE SENT). [Tier 2 · Score 84] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Mapear decisores de logística/distribuição da Vulcabras, com foco na operação do CD de Extrema/MG.",
+      "dueAt": "2026-07-01T03:00:00.000Z",
       "severity": "warning"
     },
     {
@@ -1473,47 +1524,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "7 dias desde o último outbound sem resposta capturada.",
-      "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
-      "dueAt": "2026-06-24T03:00:00.000Z",
-      "severity": "warning"
-    },
-    {
-      "id": "fabio-jose-silva-overdue",
-      "company": {
-        "id": "vulcabras",
-        "name": "Vulcabras",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "fabio-jose-silva",
-        "name": "Fábio José Silva"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "7 dias desde o último outbound sem resposta capturada.",
-      "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
-      "dueAt": "2026-06-24T03:00:00.000Z",
-      "severity": "warning"
-    },
-    {
-      "id": "marcelo-fornereto-overdue",
-      "company": {
-        "id": "braskem",
-        "name": "Braskem",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "marcelo-fornereto",
-        "name": "Marcelo Fornereto"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "7 dias desde o último outbound sem resposta capturada.",
+      "reason": "8 dias desde o último outbound sem resposta capturada.",
       "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
       "dueAt": "2026-06-24T03:00:00.000Z",
       "severity": "warning"
@@ -1562,7 +1573,7 @@
     "highTierNotStarted": 25,
     "recentConnectionsSent": 13,
     "acceptedConnectionsWithoutMessage": 16,
-    "overdueNextActions": 30,
+    "overdueNextActions": 31,
     "staleCompanies30Days": 2,
     "unmatchedInboxThreads": 0,
     "pendingHandoffs": 0,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T11:57:57.694Z",
+  "generatedAt": "2026-07-01T20:57:57.863Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -100,17 +100,6 @@
       "label": "Conexão Aceita",
       "companies": [
         {
-          "id": "cmq9t45nr002zk7o0jh6xri5p",
-          "name": "CSN",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
-          "lastInteractionAt": "2026-06-18T17:50:52.611Z",
-          "owner": null,
-          "contactCount": 1
-        },
-        {
           "id": "cmq9t45ou003gk7o0jb6grra2",
           "name": "Yara Brasil",
           "segment": null,
@@ -118,6 +107,17 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-05-06T03:00:00.000Z",
           "lastInteractionAt": "2026-06-18T17:50:23.856Z",
+          "owner": null,
+          "contactCount": 1
+        },
+        {
+          "id": "cmq9t45p8003lk7o0jcpftg3k",
+          "name": "Cargill",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
+          "lastInteractionAt": "2026-06-18T17:50:17.221Z",
           "owner": null,
           "contactCount": 1
         },
@@ -133,13 +133,13 @@
           "contactCount": 1
         },
         {
-          "id": "cmq9t45p8003lk7o0jcpftg3k",
-          "name": "Cargill",
+          "id": "cmq9t45nr002zk7o0jh6xri5p",
+          "name": "CSN",
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-05-06T03:00:00.000Z",
-          "lastInteractionAt": "2026-06-18T17:50:17.221Z",
+          "lastInteractionAt": "2026-06-18T17:50:52.611Z",
           "owner": null,
           "contactCount": 1
         },
