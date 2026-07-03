@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T11:57:45.630Z",
+  "generatedAt": "2026-07-02T18:46:20.885Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
@@ -139,37 +139,37 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 41,
-      "responded": 8,
+      "total": 29,
+      "responded": 5,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.1951219512195122,
-      "advancedRate": 0.07317073170731707,
-      "avgDaysToFirstReply": 6.875
+      "replyRate": 0.1724137931034483,
+      "advancedRate": 0.10344827586206896,
+      "avgDaysToFirstReply": 10.8
     },
     {
       "seniority": "Diretoria / Head",
-      "total": 25,
-      "responded": 3,
+      "total": 32,
+      "responded": 6,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.12,
-      "advancedRate": 0.12,
-      "avgDaysToFirstReply": 0.6666666666666666
+      "replyRate": 0.1875,
+      "advancedRate": 0.09375,
+      "avgDaysToFirstReply": 0.5
     },
     {
       "seniority": "Gerência / Especialista",
-      "total": 4,
+      "total": 6,
       "responded": 1,
       "advanced": 2,
       "negative": 0,
-      "replyRate": 0.25,
-      "advancedRate": 0.5,
+      "replyRate": 0.16666666666666666,
+      "advancedRate": 0.3333333333333333,
       "avgDaysToFirstReply": 17
     },
     {
       "seniority": "C-level / VP",
-      "total": 6,
+      "total": 9,
       "responded": 0,
       "advanced": 0,
       "negative": 0,
@@ -181,32 +181,32 @@
   "byFunctionArea": [
     {
       "functionArea": "Função a classificar",
-      "total": 40,
-      "responded": 6,
+      "total": 26,
+      "responded": 3,
       "advanced": 1,
       "negative": 0,
-      "replyRate": 0.15,
-      "advancedRate": 0.025,
-      "avgDaysToFirstReply": 9
+      "replyRate": 0.11538461538461539,
+      "advancedRate": 0.038461538461538464,
+      "avgDaysToFirstReply": 2.6666666666666665
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 30,
-      "responded": 6,
+      "total": 43,
+      "responded": 9,
       "advanced": 5,
       "negative": 0,
-      "replyRate": 0.2,
-      "advancedRate": 0.16666666666666666,
-      "avgDaysToFirstReply": 3.3333333333333335
+      "replyRate": 0.20930232558139536,
+      "advancedRate": 0.11627906976744186,
+      "avgDaysToFirstReply": 7.333333333333333
     },
     {
       "functionArea": "Procurement / Suprimentos",
-      "total": 5,
+      "total": 6,
       "responded": 0,
       "advanced": 2,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0.4,
+      "advancedRate": 0.3333333333333333,
       "avgDaysToFirstReply": null
     },
     {
@@ -272,5 +272,104 @@
       "avgDaysToFirstReply": null
     }
   ],
-  "copyStats": null
+  "copyStats": {
+    "totalClassified": 23,
+    "totalOutbound": 87,
+    "byCopyVariant": [
+      {
+        "label": "direto",
+        "total": 23,
+        "responded": 6,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.2608695652173913
+      }
+    ],
+    "byTriggerType": [
+      {
+        "label": "sem-gatilho",
+        "total": 18,
+        "responded": 6,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.3333333333333333
+      },
+      {
+        "label": "cargo-novo",
+        "total": 3,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "vaga-logistica",
+        "total": 1,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "expansao",
+        "total": 1,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      }
+    ],
+    "byMessageAngle": [
+      {
+        "label": "eficiencia",
+        "total": 2,
+        "responded": 2,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 1
+      },
+      {
+        "label": "dor-logistica",
+        "total": 15,
+        "responded": 4,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0.26666666666666666
+      },
+      {
+        "label": "crescimento",
+        "total": 4,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "capacidade",
+        "total": 2,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      }
+    ],
+    "byProofType": [
+      {
+        "label": "case-cliente",
+        "total": 18,
+        "responded": 6,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.3333333333333333
+      },
+      {
+        "label": "sem-prova",
+        "total": 5,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      }
+    ]
+  }
 }

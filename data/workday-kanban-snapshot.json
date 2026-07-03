@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T20:57:57.863Z",
+  "generatedAt": "2026-07-02T20:46:17.343Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -100,28 +100,6 @@
       "label": "Conexão Aceita",
       "companies": [
         {
-          "id": "cmq9t45ou003gk7o0jb6grra2",
-          "name": "Yara Brasil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
-          "lastInteractionAt": "2026-06-18T17:50:23.856Z",
-          "owner": null,
-          "contactCount": 1
-        },
-        {
-          "id": "cmq9t45p8003lk7o0jcpftg3k",
-          "name": "Cargill",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
-          "lastInteractionAt": "2026-06-18T17:50:17.221Z",
-          "owner": null,
-          "contactCount": 1
-        },
-        {
           "id": "cmq9t45o20034k7o03j7iwxh7",
           "name": "Michelin",
           "segment": null,
@@ -140,6 +118,28 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-05-06T03:00:00.000Z",
           "lastInteractionAt": "2026-06-18T17:50:52.611Z",
+          "owner": null,
+          "contactCount": 1
+        },
+        {
+          "id": "cmq9t45p8003lk7o0jcpftg3k",
+          "name": "Cargill",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
+          "lastInteractionAt": "2026-06-18T17:50:17.221Z",
+          "owner": null,
+          "contactCount": 1
+        },
+        {
+          "id": "cmq9t45ou003gk7o0jb6grra2",
+          "name": "Yara Brasil",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
+          "lastInteractionAt": "2026-06-18T17:50:23.856Z",
           "owner": null,
           "contactCount": 1
         },
@@ -408,8 +408,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-08T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-01T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-02T03:00:00.000Z",
+          "lastInteractionAt": "2026-06-25T03:00:00.000Z",
           "owner": null,
           "contactCount": 1
         },
@@ -419,8 +419,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-08T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-01T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-02T03:00:00.000Z",
+          "lastInteractionAt": "2026-06-25T03:00:00.000Z",
           "owner": null,
           "contactCount": 1
         },
@@ -430,8 +430,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-08T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-01T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-09T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-02T03:00:00.000Z",
           "owner": null,
           "contactCount": 2
         },
@@ -441,8 +441,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-08T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-01T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-09T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-02T03:00:00.000Z",
           "owner": null,
           "contactCount": 1
         },
@@ -452,8 +452,8 @@
           "segment": "Têxtil & Vestuário",
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-08T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-01T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-09T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-02T03:00:00.000Z",
           "owner": null,
           "contactCount": 1
         },
@@ -463,8 +463,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-08T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-01T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-09T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-02T03:00:00.000Z",
           "owner": null,
           "contactCount": 2
         },
@@ -535,8 +535,8 @@
           "segment": "Indústria Pesada",
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-08T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-01T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-09T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-02T03:00:00.000Z",
           "owner": null,
           "contactCount": 2
         },
@@ -608,7 +608,7 @@
           "accountScore": 0,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-06-19T18:34:00.000Z",
-          "lastInteractionAt": "2026-07-01T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-02T03:00:00.000Z",
           "owner": null,
           "contactCount": 1
         },
@@ -662,8 +662,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-07-03T14:15:00.000Z",
-          "lastInteractionAt": "2026-07-01T14:15:00.000Z",
+          "nextActionDueAt": "2026-06-27T14:15:00.000Z",
+          "lastInteractionAt": "2026-06-25T14:15:00.000Z",
           "owner": null,
           "contactCount": 2
         }
@@ -698,7 +698,7 @@
     },
     {
       "stage": "DEAL",
-      "label": "Negócio",
+      "label": "Em negociação",
       "companies": [
         {
           "id": "cmq9t45rj004hk7o0wbufp8au",

@@ -707,7 +707,7 @@
   },
   {
     "weekKey": "2026-S27",
-    "generatedAt": "2026-07-01T11:57:43.941Z",
+    "generatedAt": "2026-07-02T18:46:19.301Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 67,
     "activePipeline": 64,
@@ -719,7 +719,7 @@
     "meetingRate": 0.09375,
     "dealRate": 0.078125,
     "avgDaysToFirstReply": 6.7272727272727275,
-    "avgDaysSinceLastOutbound": 2.4,
+    "avgDaysSinceLastOutbound": 5.533333333333333,
     "totalOutboundTouchpoints": 24,
     "totalInboundTouchpoints": 8,
     "funnel": [
@@ -871,16 +871,6 @@
         "nextActionDueAt": "2026-06-25T03:00:00.000Z"
       },
       {
-        "company": "Tramontina",
-        "stage": "REPLIED",
-        "contacts": 2,
-        "outboundTouchpoints": 6,
-        "inboundTouchpoints": 5,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-07-02T14:15:00.000Z"
-      },
-      {
         "company": "Boticário",
         "stage": "REPLIED",
         "contacts": 1,
@@ -888,7 +878,17 @@
         "inboundTouchpoints": 1,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-07-02T15:24:00.000Z"
+        "nextActionDueAt": "2026-06-26T15:24:00.000Z"
+      },
+      {
+        "company": "Tramontina",
+        "stage": "REPLIED",
+        "contacts": 2,
+        "outboundTouchpoints": 6,
+        "inboundTouchpoints": 5,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-27T14:15:00.000Z"
       },
       {
         "company": "Amazon Brasil",
