@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-03T13:23:25.822Z",
+  "generatedAt": "2026-07-07T11:34:51.593Z",
   "source": {
     "type": "static-linkedin-scan-fallback",
-    "inputPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-03.json",
-    "scannedAt": "2026-07-03T13:20:28.751Z",
-    "matchedThreads": 55,
-    "kanbanSnapshotAt": "2026-07-02T20:46:17.343Z",
+    "inputPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-07.json",
+    "scannedAt": "2026-07-07T11:31:15.246Z",
+    "matchedThreads": 54,
+    "kanbanSnapshotAt": "2026-07-06T20:54:56.454Z",
     "embarcadoresCount": 161,
     "note": "Fallback usado quando /api/workday/actions nao consegue consultar o Postgres local."
   },
@@ -26,6 +26,54 @@
       },
       "reason": "Tier 1 | Score 95/100 | E-commerce & Varejo. Sinal de timing forte. Decisor mapeado: Luiz Vergueiro (Diretor Sênior Operações Logística).",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "dueAt": null,
+      "severity": "critical"
+    },
+    {
+      "id": "cba-companhia-brasileira-de-aluminio-tier-not-started",
+      "company": {
+        "id": "cba-companhia-brasileira-de-aluminio",
+        "name": "CBA - Companhia Brasileira de Alumínio"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 1 | Score 89/100 | Indústria Pesada. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear decisores de logística/supply chain da CBA e identificar responsáveis pelo projeto do novo Pátio Santa Isabel (GO).",
+      "dueAt": null,
+      "severity": "critical"
+    },
+    {
+      "id": "alpargatas-havaianas-tier-not-started",
+      "company": {
+        "id": "alpargatas-havaianas",
+        "name": "Alpargatas (Havaianas)"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 1 | Score 88/100 | Têxtil & Vestuário. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Validar o projeto de expansão do CD de Montes Claros/MG e mapear decisores de logística/distribuição da Alpargatas.",
+      "dueAt": null,
+      "severity": "critical"
+    },
+    {
+      "id": "tupy-tier-not-started",
+      "company": {
+        "id": "tupy",
+        "name": "Tupy"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 1 | Score 88/100 | Indústria Pesada. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear decisores de logística/supply chain da Tupy, com foco na operação entre Joinville/SC e as unidades mexicanas.",
       "dueAt": null,
       "severity": "critical"
     },
@@ -163,6 +211,22 @@
       },
       "reason": "Tier 2 | Score 82/100 | Combustíveis, Energia & Química. Decisor ainda não mapeado — pesquisar antes de abordar.",
       "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "grendene-tier-not-started",
+      "company": {
+        "id": "grendene",
+        "name": "Grendene"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 82/100 | Têxtil & Vestuário. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear decisores de logística e distribuição da Grendene, com foco na operação de exportação a partir de Sobral/CE.",
       "dueAt": null,
       "severity": "warning"
     },
@@ -387,82 +451,249 @@
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": null,
       "severity": "warning"
-    },
-    {
-      "id": "klabin-tier-not-started",
-      "company": {
-        "id": "klabin",
-        "name": "Klabin"
-      },
-      "contact": {
-        "id": "nivanieli-leandra",
-        "name": "Nivanieli Leandra — Operações, Supply Chain e Análise de Dados"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 79/100 | Indústria Pesada. Decisor mapeado: Nivanieli Leandra (Operações, Supply Chain e Análise de Dados).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "grupo-mateus-tier-not-started",
-      "company": {
-        "id": "grupo-mateus",
-        "name": "Grupo Mateus"
-      },
-      "contact": {
-        "id": "ilson-mateus",
-        "name": "Ilson Mateus — Fundador / Presidente"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 79/100 | E-commerce & Varejo. Decisor mapeado: Ilson Mateus (Fundador / Presidente).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "paranapanema-tier-not-started",
-      "company": {
-        "id": "paranapanema",
-        "name": "Paranapanema"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 79/100 | Indústria Pesada. Decisor ainda não mapeado — pesquisar antes de abordar.",
-      "recommendedAction": "Mapear decisores de logística/supply chain da Paranapanema, com foco na unidade de Caraíba/BA pós-expansão.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "suzano-tier-not-started",
-      "company": {
-        "id": "suzano",
-        "name": "Suzano"
-      },
-      "contact": {
-        "id": "aires-galhardo",
-        "name": "Aires Galhardo — Diretor de Logística / Supply Chain"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 78/100 | Indústria Pesada. Decisor mapeado: Aires Galhardo (Diretor de Logística / Supply Chain).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": null,
-      "severity": "warning"
     }
   ],
   "recentConnectionsSent": [
+    {
+      "id": "marcelo-tadeu-dos-santos-recent",
+      "company": {
+        "id": "nestle",
+        "name": "Nestlé",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "marcelo-tadeu-dos-santos",
+        "name": "Marcelo Tadeu dos Santos"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "luis-felipe-dovichi-mendes-recent",
+      "company": {
+        "id": "grupo-tigre",
+        "name": "Grupo Tigre",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "luis-felipe-dovichi-mendes",
+        "name": "Luis Felipe Dovichi Mendes"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "andre-freire-recent",
+      "company": {
+        "id": "kenvue",
+        "name": "Kenvue",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "andre-freire",
+        "name": "André Freire"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "pedro-machado-recent",
+      "company": {
+        "id": "yara-brasil",
+        "name": "Yara Brasil",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "pedro-machado",
+        "name": "Pedro Machado"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "otavio-mendonca-recent",
+      "company": {
+        "id": "amanco-wavin",
+        "name": "Amanco Wavin",
+        "status": "REPLIED_NEUTRAL"
+      },
+      "contact": {
+        "id": "otavio-mendonca",
+        "name": "Otavio Mendonça"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "luciano-sousa-recent",
+      "company": {
+        "id": "shein",
+        "name": "SHEIN",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "luciano-sousa",
+        "name": "Luciano Sousa"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "renato-marostica-recent",
+      "company": {
+        "id": "cargill",
+        "name": "Cargill",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "renato-marostica",
+        "name": "Renato Marostica"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "cynthia-lopes-recent",
+      "company": {
+        "id": "unilever",
+        "name": "Unilever",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "cynthia-lopes",
+        "name": "Cynthia Lopes"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "antonio-correa-g-neto-recent",
+      "company": {
+        "id": "michelin",
+        "name": "Michelin",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "antonio-correa-g-neto",
+        "name": "Antonio Correa G Neto"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "maiara-carlesso-recent",
+      "company": {
+        "id": "saint-gobain-brasil",
+        "name": "Saint-Gobain Brasil",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "maiara-carlesso",
+        "name": "Maiara Carlesso"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "renata-cristina-lourenco-fioravante-recent",
+      "company": {
+        "id": "campari-group",
+        "name": "Campari Group",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "renata-cristina-lourenco-fioravante",
+        "name": "RENATA CRISTINA LOURENÇO FIORAVANTE"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "diego-coelho-recent",
+      "company": {
+        "id": "descomplica-faculdade-digital",
+        "name": "Descomplica Faculdade Digital",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "diego-coelho",
+        "name": "Diego Coelho"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
+      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "dueAt": "2026-07-07T03:00:00.000Z",
+      "severity": "info"
+    },
     {
       "id": "vinicius-benincasa-recent",
       "company": {
@@ -480,7 +711,7 @@
       },
       "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
       "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-07-03T03:00:00.000Z",
+      "dueAt": "2026-06-30T03:00:00.000Z",
       "severity": "info"
     },
     {
@@ -500,447 +731,26 @@
       },
       "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
       "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-07-03T03:00:00.000Z",
-      "severity": "info"
-    },
-    {
-      "id": "cristiano-quadros-recent",
-      "company": {
-        "id": "arcelormittal",
-        "name": "ArcelorMittal",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "cristiano-quadros",
-        "name": "Cristiano Quadros"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-07-03T03:00:00.000Z",
-      "severity": "info"
-    },
-    {
-      "id": "gabriel-dal-sasso-recent",
-      "company": {
-        "id": "shopee-brasil",
-        "name": "Shopee Brasil",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "gabriel-dal-sasso",
-        "name": "Gabriel Dal Sasso"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-07-03T03:00:00.000Z",
-      "severity": "info"
-    },
-    {
-      "id": "maximiliano-limberger-recent",
-      "company": {
-        "id": "jbs",
-        "name": "JBS",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "maximiliano-limberger",
-        "name": "Maximiliano Limberger"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-07-03T03:00:00.000Z",
-      "severity": "info"
-    },
-    {
-      "id": "rafael-romani-recent",
-      "company": {
-        "id": "p-g",
-        "name": "P&G",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "rafael-romani",
-        "name": "Rafael Romani"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-06-25T14:12:00.000Z",
+      "dueAt": "2026-06-30T03:00:00.000Z",
       "severity": "info"
     }
   ],
-  "acceptedConnectionsWithoutMessage": [
-    {
-      "id": "michelin-accepted-no-msg",
-      "company": {
-        "id": "michelin",
-        "name": "Michelin",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Rafaela Senise (Diretora Administrativa e de RH (Ex Supply Chain — não mais decisora SC/Logística)).",
-      "recommendedAction": "Identificar atual Diretor de Supply Chain Michelin Brasil (possível candidato: Paulo Francischelli, 20+ anos na Michelin). Validar Lucas Mendes Junior como CEO Latam.",
-      "dueAt": "2026-06-18T17:50:46.779Z",
-      "severity": "critical"
-    },
-    {
-      "id": "csn-accepted-no-msg",
-      "company": {
-        "id": "csn",
-        "name": "CSN",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Helton Weiss (Diretor de Produção).",
-      "recommendedAction": "Identificar atual Diretor de Logística/Supply Chain CSN. Validar Helton Weiss e Eneas Diniz ainda ativos.",
-      "dueAt": "2026-06-18T17:50:52.611Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cargill-accepted-no-msg",
-      "company": {
-        "id": "cargill",
-        "name": "Cargill",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Ricardo Bonetto Hartl (Diretor Logístico América do Sul).",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-06-18T17:50:17.221Z",
-      "severity": "critical"
-    },
-    {
-      "id": "yara-brasil-accepted-no-msg",
-      "company": {
-        "id": "yara-brasil",
-        "name": "Yara Brasil",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Alberto Rodrigues (Diretor de Logística).",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-06-18T17:50:23.856Z",
-      "severity": "critical"
-    },
-    {
-      "id": "coca-cola-femsa-accepted-no-msg",
-      "company": {
-        "id": "coca-cola-femsa",
-        "name": "Coca-Cola FEMSA",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Thiago Rezende (Gerente de Projetos).",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-05-11T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "shein-brasil-accepted-no-msg",
-      "company": {
-        "id": "shein-brasil",
-        "name": "Shein Brasil",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Felipe Feistler (Diretor Geral Shein Brasil).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-06-18T17:52:07.451Z",
-      "severity": "critical"
-    },
-    {
-      "id": "opella-accepted-no-msg",
-      "company": {
-        "id": "opella",
-        "name": "Opella",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Igor Costa (Head de Supply Chain Brasil).",
-      "recommendedAction": "Acompanhar cadência com Igor Costa. Mapear decisor adicional (GM/Diretor Geral Brasil).",
-      "dueAt": "2026-06-02T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "americanas-accepted-no-msg",
-      "company": {
-        "id": "americanas",
-        "name": "Americanas",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Marcelo Arantes (VP de Supply Chain).",
-      "recommendedAction": "Validar LinkedIn de Marcelo Arantes e Luiz Bentes. Acionar quando houver sinal de reestruturação logística.",
-      "dueAt": "2026-06-17T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "bridgestone-accepted-no-msg",
-      "company": {
-        "id": "bridgestone",
-        "name": "Bridgestone",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Henrique Fonseca (Diretor Supply Chain).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-06-17T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "samsung-brasil-accepted-no-msg",
-      "company": {
-        "id": "samsung-brasil",
-        "name": "Samsung Brasil",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Pedro Pereira (VP de Logística e Inovação LATAM).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-06-18T17:51:48.347Z",
-      "severity": "critical"
-    },
-    {
-      "id": "saint-gobain-brasil-accepted-no-msg",
-      "company": {
-        "id": "saint-gobain-brasil",
-        "name": "Saint-Gobain Brasil",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Mapear decisores de Supply Chain/Logística da Saint-Gobain Brasil (linhas Weber/Quartzolit, Placo, Isover) via LinkedIn.",
-      "dueAt": "2026-06-25T14:10:03.439Z",
-      "severity": "critical"
-    },
-    {
-      "id": "grendene-accepted-no-msg",
-      "company": {
-        "id": "grendene",
-        "name": "Grendene",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Mapear decisores de logística e distribuição da Grendene, com foco na operação de exportação a partir de Sobral/CE.",
-      "dueAt": "2026-06-25T12:56:50.763Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cba-companhia-brasileira-de-aluminio-accepted-no-msg",
-      "company": {
-        "id": "cba-companhia-brasileira-de-aluminio",
-        "name": "CBA - Companhia Brasileira de Alumínio",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Mapear decisores de logística/supply chain da CBA e identificar responsáveis pelo projeto do novo Pátio Santa Isabel (GO).",
-      "dueAt": "2026-06-23T14:23:28.942Z",
-      "severity": "critical"
-    },
-    {
-      "id": "votorantim-cimentos-accepted-no-msg",
-      "company": {
-        "id": "votorantim-cimentos",
-        "name": "Votorantim Cimentos",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Mapear decisores de Supply Chain/Logística da Votorantim Cimentos (distinta da holding Votorantim) via LinkedIn, priorizando contas ligadas aos projetos de expansão em Itaperuçu-PR, Salto de Pirapora-SP e Edealina-GO.",
-      "dueAt": "2026-06-23T14:23:28.044Z",
-      "severity": "critical"
-    },
-    {
-      "id": "alpargatas-havaianas-accepted-no-msg",
-      "company": {
-        "id": "alpargatas-havaianas",
-        "name": "Alpargatas (Havaianas)",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Validar o projeto de expansão do CD de Montes Claros/MG e mapear decisores de logística/distribuição da Alpargatas.",
-      "dueAt": "2026-06-23T14:23:22.692Z",
-      "severity": "critical"
-    },
-    {
-      "id": "tupy-accepted-no-msg",
-      "company": {
-        "id": "tupy",
-        "name": "Tupy",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Mapear decisores de logística/supply chain da Tupy, com foco na operação entre Joinville/SC e as unidades mexicanas.",
-      "dueAt": "2026-06-23T14:23:20.214Z",
-      "severity": "critical"
-    }
-  ],
+  "acceptedConnectionsWithoutMessage": [],
   "overdueNextActions": [
-    {
-      "id": "vibra-energia-kanban-overdue",
-      "company": {
-        "id": "vibra-energia",
-        "name": "Vibra Energia",
-        "status": "REPLIED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 81 dias (REPLIED). [Tier 1 · Score 95] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-04-13T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "michelin-kanban-overdue",
-      "company": {
-        "id": "michelin",
-        "name": "Michelin",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 58 dias (CONNECTION ACCEPTED). [Tier 2 · Score 77] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Identificar atual Diretor de Supply Chain Michelin Brasil (possível candidato: Paulo Francischelli, 20+ anos na Michelin). Validar Lucas Mendes Junior como CEO Latam.",
-      "dueAt": "2026-05-06T03:00:00.000Z",
-      "severity": "critical"
-    },
     {
       "id": "csn-kanban-overdue",
       "company": {
         "id": "csn",
         "name": "CSN",
-        "status": "CONNECTION_ACCEPTED"
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": {
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 58 dias (CONNECTION ACCEPTED). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 62 dias (MESSAGE SENT). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Identificar atual Diretor de Logística/Supply Chain CSN. Validar Helton Weiss e Eneas Diniz ainda ativos.",
-      "dueAt": "2026-05-06T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cargill-kanban-overdue",
-      "company": {
-        "id": "cargill",
-        "name": "Cargill",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 58 dias (CONNECTION ACCEPTED). [Tier 1 · Score 88] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-05-06T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "yara-brasil-kanban-overdue",
-      "company": {
-        "id": "yara-brasil",
-        "name": "Yara Brasil",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 58 dias (CONNECTION ACCEPTED). [Tier 1 · Score 88] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-05-06T03:00:00.000Z",
       "severity": "critical"
     },
@@ -949,14 +759,14 @@
       "company": {
         "id": "coca-cola-femsa",
         "name": "Coca-Cola FEMSA",
-        "status": "CONNECTION_ACCEPTED"
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": {
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 46 dias (CONNECTION ACCEPTED). [Tier 1 · Score 85] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 50 dias (MESSAGE SENT). [Tier 1 · Score 85] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-05-18T03:00:00.000Z",
       "severity": "critical"
@@ -973,7 +783,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 46 dias (MESSAGE SENT). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 50 dias (MESSAGE SENT). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Acompanhar o cronograma de migração de centros de distribuição pós-fusão e mapear decisores de logística do Grupo Petz Cobasi.",
       "dueAt": "2026-05-18T03:00:00.000Z",
       "severity": "critical"
@@ -983,14 +793,14 @@
       "company": {
         "id": "shein-brasil",
         "name": "Shein Brasil",
-        "status": "CONNECTION_ACCEPTED"
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": {
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 43 dias (CONNECTION ACCEPTED). [Tier 2 · Score 77] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 47 dias (MESSAGE SENT). [Tier 2 · Score 77] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-05-21T03:00:00.000Z",
       "severity": "critical"
@@ -1007,7 +817,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 39 dias (MESSAGE SENT). [Tier 2 · Score 72] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 43 dias (MESSAGE SENT). [Tier 2 · Score 72] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Mapear decisores de supply chain.",
       "dueAt": "2026-05-25T03:00:00.000Z",
       "severity": "critical"
@@ -1017,14 +827,14 @@
       "company": {
         "id": "opella",
         "name": "Opella",
-        "status": "CONNECTION_ACCEPTED"
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": {
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 24 dias (CONNECTION ACCEPTED). [Tier 2 · Score 74] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 28 dias (MESSAGE SENT). [Tier 2 · Score 74] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Acompanhar cadência com Igor Costa. Mapear decisor adicional (GM/Diretor Geral Brasil).",
       "dueAt": "2026-06-09T03:00:00.000Z",
       "severity": "critical"
@@ -1041,7 +851,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 17 dias (MESSAGE SENT). [Tier 2 · Score 75] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 21 dias (MESSAGE SENT). [Tier 2 · Score 75] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Mapear decisores de logística.",
       "dueAt": "2026-06-16T03:00:00.000Z",
       "severity": "critical"
@@ -1058,7 +868,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 17 dias (FOLLOW UP SENT). [Tier 1 · Score 98] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 21 dias (FOLLOW UP SENT). [Tier 1 · Score 98] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-16T03:00:00.000Z",
       "severity": "critical"
@@ -1075,7 +885,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 16 dias (MESSAGE SENT). [Tier 2 · Score 81] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 20 dias (MESSAGE SENT). [Tier 2 · Score 81] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Mapear decisores de Supply Chain/Logística da C&A Brasil via LinkedIn.",
       "dueAt": "2026-06-17T03:00:00.000Z",
       "severity": "critical"
@@ -1092,10 +902,10 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 13 dias (REPLIED). [Tier 2 · Score 83] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 17 dias (REPLIED). [Tier 2 · Score 83] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-19T18:34:00.000Z",
-      "severity": "warning"
+      "severity": "critical"
     },
     {
       "id": "gerdau-kanban-overdue",
@@ -1109,10 +919,10 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 13 dias (MEETING DONE). [Tier 1 · Score 87] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 17 dias (MEETING DONE). [Tier 1 · Score 87] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-20T11:30:00.000Z",
-      "severity": "warning"
+      "severity": "critical"
     },
     {
       "id": "l-oreal-kanban-overdue",
@@ -1126,10 +936,10 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 11 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 15 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-21T17:36:00.000Z",
-      "severity": "warning"
+      "severity": "critical"
     },
     {
       "id": "continental-pneus-kanban-overdue",
@@ -1143,9 +953,26 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 11 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 15 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-22T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "bridgestone-kanban-overdue",
+      "company": {
+        "id": "bridgestone",
+        "name": "Bridgestone",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 13 dias (FOLLOW UP SENT). [Tier 3 · Score 70] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "dueAt": "2026-06-24T03:00:00.000Z",
       "severity": "warning"
     },
     {
@@ -1153,32 +980,15 @@
       "company": {
         "id": "americanas",
         "name": "Americanas",
-        "status": "CONNECTION_ACCEPTED"
+        "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
       "owner": {
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 9 dias (CONNECTION ACCEPTED). [Tier 3 · Score 69] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 13 dias (FOLLOW UP SENT). [Tier 3 · Score 69] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar LinkedIn de Marcelo Arantes e Luiz Bentes. Acionar quando houver sinal de reestruturação logística.",
-      "dueAt": "2026-06-24T03:00:00.000Z",
-      "severity": "warning"
-    },
-    {
-      "id": "bridgestone-kanban-overdue",
-      "company": {
-        "id": "bridgestone",
-        "name": "Bridgestone",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 9 dias (CONNECTION ACCEPTED). [Tier 3 · Score 70] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-24T03:00:00.000Z",
       "severity": "warning"
     },
@@ -1187,14 +997,14 @@
       "company": {
         "id": "samsung-brasil",
         "name": "Samsung Brasil",
-        "status": "CONNECTION_ACCEPTED"
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": {
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 8 dias (CONNECTION ACCEPTED). [Tier 3 · Score 73] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 12 dias (MESSAGE SENT). [Tier 3 · Score 73] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "warning"
@@ -1211,7 +1021,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 8 dias (MESSAGE SENT). [Tier 1 · Score 93] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 12 dias (MESSAGE SENT). [Tier 1 · Score 93] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "warning"
@@ -1228,7 +1038,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 8 dias (FOLLOW UP SENT). [Tier 3 · Score 70] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 12 dias (FOLLOW UP SENT). [Tier 3 · Score 70] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "warning"
@@ -1245,7 +1055,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 8 dias (REPLIED). [Tier 1 · Score 85] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 12 dias (REPLIED). [Tier 1 · Score 85] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "warning"
@@ -1262,7 +1072,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 6 dias (REPLIED). [Tier 1 · Score 91] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 10 dias (REPLIED). [Tier 1 · Score 91] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-26T15:24:00.000Z",
       "severity": "warning"
@@ -1279,7 +1089,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 5 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 9 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Mapear decisores de Supply Chain/Logística da Tramontina via LinkedIn.",
       "dueAt": "2026-06-27T14:15:00.000Z",
       "severity": "warning"
@@ -1296,7 +1106,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 4 dias (MESSAGE SENT). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 8 dias (MESSAGE SENT). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Mapear decisores de Supply Chain/Logística da Leroy Merlin Brasil via LinkedIn.",
       "dueAt": "2026-06-29T03:00:00.000Z",
       "severity": "warning"
@@ -1313,7 +1123,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 4 dias (FOLLOW UP SENT). [Tier 1 · Score 87] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 8 dias (FOLLOW UP SENT). [Tier 1 · Score 87] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-29T03:00:00.000Z",
       "severity": "warning"
@@ -1330,7 +1140,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 3 dias (MESSAGE SENT). [Tier 2 · Score 84] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 7 dias (MESSAGE SENT). [Tier 2 · Score 84] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-30T03:00:00.000Z",
       "severity": "warning"
@@ -1347,7 +1157,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 2 dias (MESSAGE SENT). [Tier 1 · Score 92] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 6 dias (MESSAGE SENT). [Tier 1 · Score 92] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-30T17:57:00.000Z",
       "severity": "warning"
@@ -1364,110 +1174,121 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 2 dias (MESSAGE SENT). [Tier 1 · Score 85] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 6 dias (MESSAGE SENT). [Tier 1 · Score 85] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-07-01T03:00:00.000Z",
       "severity": "warning"
     },
     {
-      "id": "leonardo-alfaro-overdue",
-      "company": {
-        "id": "dhl",
-        "name": "DHL",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "leonardo-alfaro",
-        "name": "Leonardo Alfaro"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "9 dias desde o último outbound sem resposta capturada.",
-      "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
-      "dueAt": "2026-06-24T03:00:00.000Z",
-      "severity": "warning"
-    },
-    {
-      "id": "fabio-jose-silva-overdue",
+      "id": "vulcabras-kanban-overdue",
       "company": {
         "id": "vulcabras",
         "name": "Vulcabras",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "fabio-jose-silva",
-        "name": "Fábio José Silva"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "9 dias desde o último outbound sem resposta capturada.",
-      "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
-      "dueAt": "2026-06-24T03:00:00.000Z",
-      "severity": "warning"
-    },
-    {
-      "id": "rafael-romani-overdue",
-      "company": {
-        "id": "p-g",
-        "name": "P&G",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "rafael-romani",
-        "name": "Rafael Romani"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "8 dias desde o último outbound sem resposta capturada.",
-      "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
-      "dueAt": "2026-06-25T03:00:00.000Z",
-      "severity": "warning"
-    },
-    {
-      "id": "carlos-h-medeiros-overdue",
-      "company": {
-        "id": "vale",
-        "name": "Vale",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "carlos-h-medeiros",
-        "name": "Carlos H. Medeiros"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "8 dias desde o último outbound sem resposta capturada.",
-      "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
-      "dueAt": "2026-06-25T03:00:00.000Z",
-      "severity": "warning"
-    }
-  ],
-  "staleCompanies30Days": [
-    {
-      "id": "coca-cola-femsa-kanban-stale",
-      "company": {
-        "id": "coca-cola-femsa",
-        "name": "Coca-Cola FEMSA",
-        "status": "CONNECTION_ACCEPTED"
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": {
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 53 dias (CONNECTION ACCEPTED). [Tier 1 · Score 85]",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-05-11T03:00:00.000Z",
-      "severity": "critical"
+      "reason": "Ação vencida há 6 dias (MESSAGE SENT). [Tier 2 · Score 84] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Mapear decisores de logística/distribuição da Vulcabras, com foco na operação do CD de Extrema/MG.",
+      "dueAt": "2026-07-01T03:00:00.000Z",
+      "severity": "warning"
     },
+    {
+      "id": "dhl-kanban-overdue",
+      "company": {
+        "id": "dhl",
+        "name": "DHL",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 6 dias (MESSAGE SENT). [Tier 3 · Score 53] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Manter em observação; só avançar com sinal forte ou confirmação de dor logística relevante.",
+      "dueAt": "2026-07-01T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "vale-kanban-overdue",
+      "company": {
+        "id": "vale",
+        "name": "Vale",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 5 dias (MESSAGE SENT). [Tier 2 · Score 78] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "dueAt": "2026-07-02T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "p-g-kanban-overdue",
+      "company": {
+        "id": "p-g",
+        "name": "P&G",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Ação vencida há 5 dias (MESSAGE SENT). [Tier 2 · Score 81] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "dueAt": "2026-07-02T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "vinicius-benincasa-overdue",
+      "company": {
+        "id": "usiminas",
+        "name": "Usiminas",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "vinicius-benincasa",
+        "name": "Vinicius Benincasa"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "7 dias desde o último outbound sem resposta capturada.",
+      "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "ricardo-schilder-lima-overdue",
+      "company": {
+        "id": "lojas-renner",
+        "name": "Lojas Renner",
+        "status": "FIRST_CONTACT_SENT"
+      },
+      "contact": {
+        "id": "ricardo-schilder-lima",
+        "name": "Ricardo Schilder Lima"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "7 dias desde o último outbound sem resposta capturada.",
+      "recommendedAction": "Revisar se cabe follow-up com conteúdo novo; se já bateu 3 tentativas, pausar por 60 dias.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    }
+  ],
+  "staleCompanies30Days": [
     {
       "id": "kerry-kanban-stale",
       "company": {
@@ -1480,27 +1301,10 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 46 dias (MESSAGE SENT). [Tier 2 · Score 72]",
+      "reason": "Sem interação há 50 dias (MESSAGE SENT). [Tier 2 · Score 72]",
       "recommendedAction": "Mapear decisores de supply chain.",
       "dueAt": "2026-05-18T03:00:00.000Z",
       "severity": "critical"
-    },
-    {
-      "id": "opella-kanban-stale",
-      "company": {
-        "id": "opella",
-        "name": "Opella",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 31 dias (CONNECTION ACCEPTED). [Tier 2 · Score 74]",
-      "recommendedAction": "Acompanhar cadência com Igor Costa. Mapear decisor adicional (GM/Diretor Geral Brasil).",
-      "dueAt": "2026-06-02T03:00:00.000Z",
-      "severity": "warning"
     }
   ],
   "unmatchedInboxThreads": [],
@@ -1508,10 +1312,10 @@
   "newSignalsWithoutNextAction": [],
   "summary": {
     "highTierNotStarted": 25,
-    "recentConnectionsSent": 6,
-    "acceptedConnectionsWithoutMessage": 16,
-    "overdueNextActions": 34,
-    "staleCompanies30Days": 3,
+    "recentConnectionsSent": 14,
+    "acceptedConnectionsWithoutMessage": 0,
+    "overdueNextActions": 32,
+    "staleCompanies30Days": 1,
     "unmatchedInboxThreads": 0,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0

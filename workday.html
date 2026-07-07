@@ -1095,6 +1095,7 @@
       return `
         <div class="kanban-card" draggable="true" data-company-id="${company.id}">
           <strong>${company.name}</strong>
+          ${company.activeDecisor ? `<p style="font-size:11px;color:var(--text-muted,#888);margin-top:-2px;font-style:italic;">👤 ${company.activeDecisor}</p>` : ""}
           ${company.segment ? `<p>${company.segment}</p>` : ""}
           <p>${company.nextAction ?? "Sem próxima ação"}</p>
           <p>${company.owner?.name ?? "Sem owner"} · ${formatDate(company.nextActionDueAt)}</p>
@@ -1433,7 +1434,7 @@
 
     document.getElementById("eng-refresh-btn").addEventListener("click", loadEngagementStatus);
 
-    document.getElementById("eng-columns").addEventListener("submit", async (e) => {
+    async function handleDispensarForm(e) {
       const form = e.target.closest("[data-action='eng-dispensar-form']");
       if (!form) return;
       e.preventDefault();
@@ -1461,7 +1462,10 @@
         if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = "Dispensar"; }
         showActionError(err, "dispensar decisor");
       }
-    });
+    }
+
+    document.getElementById("eng-columns").addEventListener("submit", handleDispensarForm);
+    document.getElementById("eng-descartados").addEventListener("submit", handleDispensarForm);
 
     document.getElementById("eng-descartados").addEventListener("click", async (e) => {
       const btn = e.target.closest("[data-action='eng-retornar']");

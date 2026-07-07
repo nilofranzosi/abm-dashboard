@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-07-03T18:31:06.588Z",
+  "generatedAt": "2026-07-07T11:43:23.379Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
-    "weekKey": "2026-S27",
-    "totalCompanies": 67,
+    "weekKey": "2026-S28",
+    "totalCompanies": 69,
     "activeCompanies": 64,
-    "pausedCompanies": 3,
-    "repliedOrBetterCompanies": 13,
-    "meetingOrBetterCompanies": 6,
-    "dealCompanies": 5,
-    "companyReplyRate": 0.203125,
-    "companyMeetingRate": 0.09375,
-    "companyDealRate": 0.078125
+    "pausedCompanies": 5,
+    "repliedOrBetterCompanies": 14,
+    "meetingOrBetterCompanies": 7,
+    "dealCompanies": 6,
+    "companyReplyRate": 0.21875,
+    "companyMeetingRate": 0.109375,
+    "companyDealRate": 0.09375
   },
   "sample": {
-    "activeContacts": 76,
-    "replies": 12,
-    "advanced": 8,
-    "negatives": 0,
-    "noResponse": 54,
-    "replyRate": 0.15789473684210525,
-    "advancedRate": 0.10526315789473684,
-    "avgDaysToFirstReply": 6.166666666666667
+    "activeContacts": 88,
+    "replies": 13,
+    "advanced": 9,
+    "negatives": 1,
+    "noResponse": 64,
+    "replyRate": 0.14772727272727273,
+    "advancedRate": 0.10227272727272728,
+    "avgDaysToFirstReply": 5.769230769230769
   },
   "bySegment": [
     {
@@ -37,22 +37,22 @@
     },
     {
       "segment": "E-commerce & Varejo",
-      "total": 14,
+      "total": 15,
       "responded": 2,
       "advanced": 1,
       "negative": 0,
-      "replyRate": 0.14285714285714285,
-      "advancedRate": 0.07142857142857142,
+      "replyRate": 0.13333333333333333,
+      "advancedRate": 0.06666666666666667,
       "avgDaysToFirstReply": 23
     },
     {
       "segment": "Cosméticos & Higiene",
-      "total": 5,
+      "total": 6,
       "responded": 3,
       "advanced": 2,
       "negative": 0,
-      "replyRate": 0.6,
-      "advancedRate": 0.4,
+      "replyRate": 0.5,
+      "advancedRate": 0.3333333333333333,
       "avgDaysToFirstReply": 0.6666666666666666
     },
     {
@@ -89,24 +89,14 @@
       "segment": "Combustíveis, Energia & Química",
       "total": 4,
       "responded": 1,
-      "advanced": 1,
+      "advanced": 2,
       "negative": 0,
       "replyRate": 0.25,
-      "advancedRate": 0.25,
+      "advancedRate": 0.5,
       "avgDaysToFirstReply": 17
     },
     {
       "segment": "Automotivo & Pneus",
-      "total": 3,
-      "responded": 0,
-      "advanced": 0,
-      "negative": 0,
-      "replyRate": 0,
-      "advancedRate": 0,
-      "avgDaysToFirstReply": null
-    },
-    {
-      "segment": "Agro & Commodities",
       "total": 4,
       "responded": 0,
       "advanced": 0,
@@ -116,14 +106,24 @@
       "avgDaysToFirstReply": null
     },
     {
-      "segment": "Segmento a classificar",
-      "total": 16,
-      "responded": 3,
+      "segment": "Agro & Commodities",
+      "total": 6,
+      "responded": 0,
       "advanced": 0,
       "negative": 0,
-      "replyRate": 0.1875,
+      "replyRate": 0,
       "advancedRate": 0,
-      "avgDaysToFirstReply": 0.3333333333333333
+      "avgDaysToFirstReply": null
+    },
+    {
+      "segment": "Segmento a classificar",
+      "total": 23,
+      "responded": 4,
+      "advanced": 0,
+      "negative": 1,
+      "replyRate": 0.17391304347826086,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": 0.5
     },
     {
       "segment": "Têxtil & Vestuário",
@@ -139,74 +139,74 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 29,
+      "total": 31,
       "responded": 5,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.1724137931034483,
-      "advancedRate": 0.10344827586206896,
+      "replyRate": 0.16129032258064516,
+      "advancedRate": 0.0967741935483871,
       "avgDaysToFirstReply": 10.8
     },
     {
       "seniority": "Diretoria / Head",
-      "total": 32,
+      "total": 38,
       "responded": 6,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.1875,
-      "advancedRate": 0.09375,
+      "replyRate": 0.15789473684210525,
+      "advancedRate": 0.07894736842105263,
       "avgDaysToFirstReply": 0.5
     },
     {
       "seniority": "Gerência / Especialista",
-      "total": 6,
+      "total": 9,
       "responded": 1,
       "advanced": 2,
       "negative": 0,
-      "replyRate": 0.16666666666666666,
-      "advancedRate": 0.3333333333333333,
+      "replyRate": 0.1111111111111111,
+      "advancedRate": 0.2222222222222222,
       "avgDaysToFirstReply": 17
     },
     {
       "seniority": "C-level / VP",
-      "total": 9,
-      "responded": 0,
-      "advanced": 0,
-      "negative": 0,
-      "replyRate": 0,
-      "advancedRate": 0,
-      "avgDaysToFirstReply": null
+      "total": 10,
+      "responded": 1,
+      "advanced": 1,
+      "negative": 1,
+      "replyRate": 0.1,
+      "advancedRate": 0.1,
+      "avgDaysToFirstReply": 1
     }
   ],
   "byFunctionArea": [
     {
       "functionArea": "Função a classificar",
-      "total": 26,
+      "total": 29,
       "responded": 3,
       "advanced": 1,
       "negative": 0,
-      "replyRate": 0.11538461538461539,
-      "advancedRate": 0.038461538461538464,
+      "replyRate": 0.10344827586206896,
+      "advancedRate": 0.034482758620689655,
       "avgDaysToFirstReply": 2.6666666666666665
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 43,
-      "responded": 9,
-      "advanced": 5,
-      "negative": 0,
-      "replyRate": 0.20930232558139536,
-      "advancedRate": 0.11627906976744186,
-      "avgDaysToFirstReply": 7.333333333333333
+      "total": 51,
+      "responded": 10,
+      "advanced": 6,
+      "negative": 1,
+      "replyRate": 0.19607843137254902,
+      "advancedRate": 0.11764705882352941,
+      "avgDaysToFirstReply": 6.7
     },
     {
       "functionArea": "Procurement / Suprimentos",
-      "total": 6,
+      "total": 7,
       "responded": 0,
       "advanced": 2,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0.3333333333333333,
+      "advancedRate": 0.2857142857142857,
       "avgDaysToFirstReply": null
     },
     {
@@ -223,13 +223,13 @@
   "byTimeBand": [
     {
       "timeBand": "Antes das 08h",
-      "total": 34,
-      "responded": 6,
-      "advanced": 3,
-      "negative": 0,
-      "replyRate": 0.17647058823529413,
-      "advancedRate": 0.08823529411764706,
-      "avgDaysToFirstReply": 8.166666666666666
+      "total": 46,
+      "responded": 7,
+      "advanced": 4,
+      "negative": 1,
+      "replyRate": 0.15217391304347827,
+      "advancedRate": 0.08695652173913043,
+      "avgDaysToFirstReply": 7.142857142857143
     },
     {
       "timeBand": "12h-17h59",
@@ -272,104 +272,5 @@
       "avgDaysToFirstReply": null
     }
   ],
-  "copyStats": {
-    "totalClassified": 23,
-    "totalOutbound": 87,
-    "byCopyVariant": [
-      {
-        "label": "direto",
-        "total": 23,
-        "responded": 6,
-        "advanced": 2,
-        "negative": 0,
-        "replyRate": 0.2608695652173913
-      }
-    ],
-    "byTriggerType": [
-      {
-        "label": "sem-gatilho",
-        "total": 18,
-        "responded": 6,
-        "advanced": 2,
-        "negative": 0,
-        "replyRate": 0.3333333333333333
-      },
-      {
-        "label": "cargo-novo",
-        "total": 3,
-        "responded": 0,
-        "advanced": 0,
-        "negative": 0,
-        "replyRate": 0
-      },
-      {
-        "label": "vaga-logistica",
-        "total": 1,
-        "responded": 0,
-        "advanced": 0,
-        "negative": 0,
-        "replyRate": 0
-      },
-      {
-        "label": "expansao",
-        "total": 1,
-        "responded": 0,
-        "advanced": 0,
-        "negative": 0,
-        "replyRate": 0
-      }
-    ],
-    "byMessageAngle": [
-      {
-        "label": "eficiencia",
-        "total": 2,
-        "responded": 2,
-        "advanced": 2,
-        "negative": 0,
-        "replyRate": 1
-      },
-      {
-        "label": "dor-logistica",
-        "total": 15,
-        "responded": 4,
-        "advanced": 0,
-        "negative": 0,
-        "replyRate": 0.26666666666666666
-      },
-      {
-        "label": "crescimento",
-        "total": 4,
-        "responded": 0,
-        "advanced": 0,
-        "negative": 0,
-        "replyRate": 0
-      },
-      {
-        "label": "capacidade",
-        "total": 2,
-        "responded": 0,
-        "advanced": 0,
-        "negative": 0,
-        "replyRate": 0
-      }
-    ],
-    "byProofType": [
-      {
-        "label": "case-cliente",
-        "total": 18,
-        "responded": 6,
-        "advanced": 2,
-        "negative": 0,
-        "replyRate": 0.3333333333333333
-      },
-      {
-        "label": "sem-prova",
-        "total": 5,
-        "responded": 0,
-        "advanced": 0,
-        "negative": 0,
-        "replyRate": 0
-      }
-    ]
-  }
+  "copyStats": null
 }
