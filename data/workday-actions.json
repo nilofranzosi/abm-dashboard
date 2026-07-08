@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-07T11:34:51.593Z",
+  "generatedAt": "2026-07-07T18:30:31.304Z",
   "source": {
     "type": "static-linkedin-scan-fallback",
     "inputPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-07.json",
     "scannedAt": "2026-07-07T11:31:15.246Z",
     "matchedThreads": 54,
-    "kanbanSnapshotAt": "2026-07-06T20:54:56.454Z",
+    "kanbanSnapshotAt": "2026-07-07T18:30:05.738Z",
     "embarcadoresCount": 161,
     "note": "Fallback usado quando /api/workday/actions nao consegue consultar o Postgres local."
   },
@@ -936,7 +936,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 15 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 16 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-21T17:36:00.000Z",
       "severity": "critical"
@@ -1072,7 +1072,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 10 dias (REPLIED). [Tier 1 · Score 91] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 11 dias (REPLIED). [Tier 1 · Score 91] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-26T15:24:00.000Z",
       "severity": "warning"
@@ -1089,7 +1089,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 9 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 10 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Mapear decisores de Supply Chain/Logística da Tramontina via LinkedIn.",
       "dueAt": "2026-06-27T14:15:00.000Z",
       "severity": "warning"
@@ -1157,7 +1157,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 6 dias (MESSAGE SENT). [Tier 1 · Score 92] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 7 dias (MESSAGE SENT). [Tier 1 · Score 92] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-30T17:57:00.000Z",
       "severity": "warning"

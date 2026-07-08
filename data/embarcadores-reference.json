@@ -1,0 +1,1296 @@
+{
+  "_placeholder": false,
+  "generatedFrom": "public/data/embarcadores.json",
+  "generatedAt": "2026-07-08T11:53:11.529Z",
+  "count": 161,
+  "entries": [
+    {
+      "id": 1,
+      "name": "Amazon Brasil",
+      "normalizedName": "amazon-brasil",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 2,
+      "name": "Mercado Livre",
+      "normalizedName": "mercado-livre",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 3,
+      "name": "Shopee Brasil",
+      "normalizedName": "shopee-brasil",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 4,
+      "name": "Magazine Luiza",
+      "normalizedName": "magazine-luiza",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 5,
+      "name": "Casas Bahia",
+      "normalizedName": "casas-bahia",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 6,
+      "name": "Shein Brasil",
+      "normalizedName": "shein-brasil",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 7,
+      "name": "AliExpress",
+      "normalizedName": "aliexpress",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 8,
+      "name": "Temu",
+      "normalizedName": "temu",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 9,
+      "name": "CIMED",
+      "normalizedName": "cimed",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 10,
+      "name": "Eurofarma",
+      "normalizedName": "eurofarma",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 11,
+      "name": "Ache",
+      "normalizedName": "ache",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 12,
+      "name": "Neo Química / Hypera",
+      "normalizedName": "neo-quimica-hypera",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 13,
+      "name": "Bayer Brasil",
+      "normalizedName": "bayer-brasil",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 14,
+      "name": "JBS",
+      "normalizedName": "jbs",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 15,
+      "name": "Nestlé",
+      "normalizedName": "nestle",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 16,
+      "name": "PepsiCo",
+      "normalizedName": "pepsico",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 17,
+      "name": "Seara",
+      "normalizedName": "seara",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 18,
+      "name": "Bauducco",
+      "normalizedName": "bauducco",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 19,
+      "name": "P&G",
+      "normalizedName": "p-g",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 20,
+      "name": "Unilever",
+      "normalizedName": "unilever",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 21,
+      "name": "Natura",
+      "normalizedName": "natura",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 22,
+      "name": "Boticário",
+      "normalizedName": "boticario",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 23,
+      "name": "L'Oréal",
+      "normalizedName": "l-oreal",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 24,
+      "name": "Raízen",
+      "normalizedName": "raizen",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 25,
+      "name": "Vibra Energia",
+      "normalizedName": "vibra-energia",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 26,
+      "name": "Braskem",
+      "normalizedName": "braskem",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 27,
+      "name": "Gerdau",
+      "normalizedName": "gerdau",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 28,
+      "name": "CSN",
+      "normalizedName": "csn",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 29,
+      "name": "Usiminas",
+      "normalizedName": "usiminas",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 30,
+      "name": "ArcelorMittal",
+      "normalizedName": "arcelormittal",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 31,
+      "name": "Continental Pneus",
+      "normalizedName": "continental-pneus",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 32,
+      "name": "XBRI",
+      "normalizedName": "xbri",
+      "segment": "Automotivo & Pneus",
+      "uf": "PR",
+      "tier": 2
+    },
+    {
+      "id": 33,
+      "name": "Michelin",
+      "normalizedName": "michelin",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 34,
+      "name": "Yara Brasil",
+      "normalizedName": "yara-brasil",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 35,
+      "name": "Cargill",
+      "normalizedName": "cargill",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 36,
+      "name": "ADM Brasil",
+      "normalizedName": "adm-brasil",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 37,
+      "name": "Messer Gases",
+      "normalizedName": "messer-gases",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 38,
+      "name": "White Martins",
+      "normalizedName": "white-martins",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 39,
+      "name": "Samsung Brasil",
+      "normalizedName": "samsung-brasil",
+      "segment": "Eletro & Tecnologia",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 40,
+      "name": "Electrolux",
+      "normalizedName": "electrolux",
+      "segment": "Eletro & Tecnologia",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 41,
+      "name": "Bridgestone",
+      "normalizedName": "bridgestone",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 42,
+      "name": "DHL",
+      "normalizedName": "dhl",
+      "segment": "Logística & Transporte",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 44,
+      "name": "Coca-Cola FEMSA",
+      "normalizedName": "coca-cola-femsa",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 45,
+      "name": "Petrobras",
+      "normalizedName": "petrobras",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "RJ",
+      "tier": 2
+    },
+    {
+      "id": 46,
+      "name": "Centauro",
+      "normalizedName": "centauro",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 47,
+      "name": "Americanas",
+      "normalizedName": "americanas",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 48,
+      "name": "Carrefour Brasil",
+      "normalizedName": "carrefour-brasil",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 49,
+      "name": "Reckitt Brasil",
+      "normalizedName": "reckitt-brasil",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 50,
+      "name": "Colgate-Palmolive",
+      "normalizedName": "colgate-palmolive",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 51,
+      "name": "MBRF (Marfrig + BRF)",
+      "normalizedName": "mbrf-marfrig-brf",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 53,
+      "name": "Heineken Brasil",
+      "normalizedName": "heineken-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 54,
+      "name": "Mosaic Fertilizantes",
+      "normalizedName": "mosaic-fertilizantes",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 55,
+      "name": "Nutrien Brasil",
+      "normalizedName": "nutrien-brasil",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 56,
+      "name": "Cofco Brasil",
+      "normalizedName": "cofco-brasil",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 57,
+      "name": "Vale",
+      "normalizedName": "vale",
+      "segment": "Indústria Pesada",
+      "uf": "MG",
+      "tier": 2
+    },
+    {
+      "id": 58,
+      "name": "Suzano",
+      "normalizedName": "suzano",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 59,
+      "name": "Votorantim",
+      "normalizedName": "votorantim",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 60,
+      "name": "WEG",
+      "normalizedName": "weg",
+      "segment": "Indústria Pesada",
+      "uf": "SC",
+      "tier": 3
+    },
+    {
+      "id": 61,
+      "name": "Embraer",
+      "normalizedName": "embraer",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 62,
+      "name": "Sanofi Brasil",
+      "normalizedName": "sanofi-brasil",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 63,
+      "name": "Ambev",
+      "normalizedName": "ambev",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 65,
+      "name": "Minerva Foods",
+      "normalizedName": "minerva-foods",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 66,
+      "name": "Mondelez Brasil",
+      "normalizedName": "mondelez-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 67,
+      "name": "Grupo Petrópolis",
+      "normalizedName": "grupo-petropolis",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 68,
+      "name": "Mars Brasil",
+      "normalizedName": "mars-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 69,
+      "name": "Vigor Alimentos",
+      "normalizedName": "vigor-alimentos",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 70,
+      "name": "Três Corações",
+      "normalizedName": "tres-coracoes",
+      "segment": "Alimentos & Bebidas",
+      "uf": "CE",
+      "tier": 3
+    },
+    {
+      "id": 71,
+      "name": "Ablac / Piracanjuba",
+      "normalizedName": "ablac-piracanjuba",
+      "segment": "Alimentos & Bebidas",
+      "uf": "GO",
+      "tier": 3
+    },
+    {
+      "id": 72,
+      "name": "Pfizer Brasil",
+      "normalizedName": "pfizer-brasil",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 73,
+      "name": "Roche Brasil",
+      "normalizedName": "roche-brasil",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 74,
+      "name": "Johnson & Johnson Brasil",
+      "normalizedName": "johnson-johnson-brasil",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 75,
+      "name": "Abbott Brasil",
+      "normalizedName": "abbott-brasil",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 76,
+      "name": "União Química",
+      "normalizedName": "uniao-quimica",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 77,
+      "name": "Biolab Farmacêutica",
+      "normalizedName": "biolab-farmaceutica",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 78,
+      "name": "Kimberly-Clark Brasil",
+      "normalizedName": "kimberly-clark-brasil",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 80,
+      "name": "Henkel Brasil",
+      "normalizedName": "henkel-brasil",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 81,
+      "name": "Beiersdorf Brasil",
+      "normalizedName": "beiersdorf-brasil",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 82,
+      "name": "Coty Brasil",
+      "normalizedName": "coty-brasil",
+      "segment": "Cosméticos & Higiene",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 83,
+      "name": "Whirlpool Brasil",
+      "normalizedName": "whirlpool-brasil",
+      "segment": "Eletro & Tecnologia",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 84,
+      "name": "LG Electronics Brasil",
+      "normalizedName": "lg-electronics-brasil",
+      "segment": "Eletro & Tecnologia",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 85,
+      "name": "Philips Brasil",
+      "normalizedName": "philips-brasil",
+      "segment": "Eletro & Tecnologia",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 86,
+      "name": "Pirelli Brasil",
+      "normalizedName": "pirelli-brasil",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 87,
+      "name": "Goodyear Brasil",
+      "normalizedName": "goodyear-brasil",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 88,
+      "name": "BASF Brasil",
+      "normalizedName": "basf-brasil",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 89,
+      "name": "Dow Brasil",
+      "normalizedName": "dow-brasil",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 90,
+      "name": "Unipar Carbocloro",
+      "normalizedName": "unipar-carbocloro",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 91,
+      "name": "Huntsman Brasil",
+      "normalizedName": "huntsman-brasil",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 92,
+      "name": "Klabin",
+      "normalizedName": "klabin",
+      "segment": "Indústria Pesada",
+      "uf": "PR",
+      "tier": 2
+    },
+    {
+      "id": 93,
+      "name": "Dexco (ex-Duratex)",
+      "normalizedName": "dexco-ex-duratex",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 94,
+      "name": "Saint-Gobain Brasil",
+      "normalizedName": "saint-gobain-brasil",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 96,
+      "name": "Marcopolo",
+      "normalizedName": "marcopolo",
+      "segment": "Automotivo & Pneus",
+      "uf": "RS",
+      "tier": 3
+    },
+    {
+      "id": 97,
+      "name": "Bunge Brasil",
+      "normalizedName": "bunge-brasil",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 98,
+      "name": "Louis Dreyfus Brasil",
+      "normalizedName": "louis-dreyfus-brasil",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 99,
+      "name": "Amaggi",
+      "normalizedName": "amaggi",
+      "segment": "Agro & Commodities",
+      "uf": "MT",
+      "tier": 2
+    },
+    {
+      "id": 100,
+      "name": "Corteva Agriscience",
+      "normalizedName": "corteva-agriscience",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 101,
+      "name": "SLC Agrícola",
+      "normalizedName": "slc-agricola",
+      "segment": "Agro & Commodities",
+      "uf": "RS",
+      "tier": 3
+    },
+    {
+      "id": 102,
+      "name": "Assaí Atacadista",
+      "normalizedName": "assai-atacadista",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 103,
+      "name": "GPA / Grupo Pão de Açúcar",
+      "normalizedName": "gpa-grupo-pao-de-acucar",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 104,
+      "name": "Grupo Mateus",
+      "normalizedName": "grupo-mateus",
+      "segment": "E-commerce & Varejo",
+      "uf": "MA",
+      "tier": 2
+    },
+    {
+      "id": 105,
+      "name": "Cencosud Brasil",
+      "normalizedName": "cencosud-brasil",
+      "segment": "E-commerce & Varejo",
+      "uf": "SC",
+      "tier": 3
+    },
+    {
+      "id": 106,
+      "name": "Ultrapar",
+      "normalizedName": "ultrapar",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 107,
+      "name": "Raia Drogasil",
+      "normalizedName": "raia-drogasil",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 108,
+      "name": "Cosan",
+      "normalizedName": "cosan",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 109,
+      "name": "Motiva",
+      "normalizedName": "motiva",
+      "segment": "Logística & Transporte",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 110,
+      "name": "PRIO",
+      "normalizedName": "prio",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "RJ",
+      "tier": 3
+    },
+    {
+      "id": 111,
+      "name": "Grupo GPS",
+      "normalizedName": "grupo-gps",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 112,
+      "name": "3tentos",
+      "normalizedName": "3tentos",
+      "segment": "Agro & Commodities",
+      "uf": "RS",
+      "tier": 3
+    },
+    {
+      "id": 113,
+      "name": "Lojas Renner",
+      "normalizedName": "lojas-renner",
+      "segment": "Têxtil & Vestuário",
+      "uf": "RS",
+      "tier": 3
+    },
+    {
+      "id": 114,
+      "name": "Pague Menos",
+      "normalizedName": "pague-menos",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "CE",
+      "tier": 3
+    },
+    {
+      "id": 115,
+      "name": "Iochpe-Maxion",
+      "normalizedName": "iochpe-maxion",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 116,
+      "name": "Rumo",
+      "normalizedName": "rumo",
+      "segment": "Logística & Transporte",
+      "uf": "PR",
+      "tier": 3
+    },
+    {
+      "id": 117,
+      "name": "Automob",
+      "normalizedName": "automob",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 118,
+      "name": "Brava Energia",
+      "normalizedName": "brava-energia",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "RJ",
+      "tier": 3
+    },
+    {
+      "id": 119,
+      "name": "Ecorodovias",
+      "normalizedName": "ecorodovias",
+      "segment": "Logística & Transporte",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 120,
+      "name": "Profarma",
+      "normalizedName": "profarma",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "RJ",
+      "tier": 3
+    },
+    {
+      "id": 121,
+      "name": "Azzas 2154",
+      "normalizedName": "azzas-2154",
+      "segment": "Têxtil & Vestuário",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 122,
+      "name": "MRV",
+      "normalizedName": "mrv",
+      "segment": "Construção Civil",
+      "uf": "MG",
+      "tier": 3
+    },
+    {
+      "id": 123,
+      "name": "Camil",
+      "normalizedName": "camil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 124,
+      "name": "Riachuelo",
+      "normalizedName": "riachuelo",
+      "segment": "Têxtil & Vestuário",
+      "uf": "RN",
+      "tier": 3
+    },
+    {
+      "id": 125,
+      "name": "M. Dias Branco",
+      "normalizedName": "m-dias-branco",
+      "segment": "Alimentos & Bebidas",
+      "uf": "CE",
+      "tier": 3
+    },
+    {
+      "id": 126,
+      "name": "C&A Brasil",
+      "normalizedName": "c-a-brasil",
+      "segment": "Têxtil & Vestuário",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 127,
+      "name": "Marisa",
+      "normalizedName": "marisa",
+      "segment": "Têxtil & Vestuário",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 128,
+      "name": "Inditex Brasil (Zara)",
+      "normalizedName": "inditex-brasil-zara",
+      "segment": "Têxtil & Vestuário",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 129,
+      "name": "Tigre S.A.",
+      "normalizedName": "tigre-s-a",
+      "segment": "Construção Civil",
+      "uf": "SC",
+      "tier": 2
+    },
+    {
+      "id": 130,
+      "name": "Sherwin-Williams Brasil",
+      "normalizedName": "sherwin-williams-brasil",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 131,
+      "name": "Votorantim Cimentos",
+      "normalizedName": "votorantim-cimentos",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 132,
+      "name": "Amanco Wavin",
+      "normalizedName": "amanco-wavin",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 133,
+      "name": "Leroy Merlin Brasil",
+      "normalizedName": "leroy-merlin-brasil",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 134,
+      "name": "Lojas Quero-Quero",
+      "normalizedName": "lojas-quero-quero",
+      "segment": "Construção Civil",
+      "uf": "RS",
+      "tier": 2
+    },
+    {
+      "id": 135,
+      "name": "Obramax",
+      "normalizedName": "obramax",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 136,
+      "name": "Portobello",
+      "normalizedName": "portobello",
+      "segment": "Construção Civil",
+      "uf": "SC",
+      "tier": 3
+    },
+    {
+      "id": 137,
+      "name": "Sodimac Brasil",
+      "normalizedName": "sodimac-brasil",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 138,
+      "name": "Telhanorte / C&C (Grupo Mover)",
+      "normalizedName": "telhanorte-c-c-grupo-mover",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 139,
+      "name": "Decathlon Brasil",
+      "normalizedName": "decathlon-brasil",
+      "segment": "Têxtil & Vestuário",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 140,
+      "name": "Pernambucanas",
+      "normalizedName": "pernambucanas",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 141,
+      "name": "Tramontina",
+      "normalizedName": "tramontina",
+      "segment": "Construção Civil",
+      "uf": "RS",
+      "tier": 2
+    },
+    {
+      "id": 143,
+      "name": "Eliane",
+      "normalizedName": "eliane",
+      "segment": "Construção Civil",
+      "uf": "SC",
+      "tier": 3
+    },
+    {
+      "id": 144,
+      "name": "InterCement Brasil",
+      "normalizedName": "intercement-brasil",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 145,
+      "name": "Fortlev",
+      "normalizedName": "fortlev",
+      "segment": "Construção Civil",
+      "uf": "ES",
+      "tier": 3
+    },
+    {
+      "id": 146,
+      "name": "Krona",
+      "normalizedName": "krona",
+      "segment": "Construção Civil",
+      "uf": "SC",
+      "tier": 3
+    },
+    {
+      "id": 147,
+      "name": "Vonder (Grupo OVD)",
+      "normalizedName": "vonder-grupo-ovd",
+      "segment": "Construção Civil",
+      "uf": "PR",
+      "tier": 3
+    },
+    {
+      "id": 148,
+      "name": "CBA - Companhia Brasileira de Alumínio",
+      "normalizedName": "cba-companhia-brasileira-de-aluminio",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 149,
+      "name": "Alpargatas (Havaianas)",
+      "normalizedName": "alpargatas-havaianas",
+      "segment": "Têxtil & Vestuário",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 150,
+      "name": "Grendene",
+      "normalizedName": "grendene",
+      "segment": "Têxtil & Vestuário",
+      "uf": "CE",
+      "tier": 2
+    },
+    {
+      "id": 151,
+      "name": "Vulcabras",
+      "normalizedName": "vulcabras",
+      "segment": "Têxtil & Vestuário",
+      "uf": "CE",
+      "tier": 2
+    },
+    {
+      "id": 152,
+      "name": "Intelbras",
+      "normalizedName": "intelbras",
+      "segment": "Eletro & Tecnologia",
+      "uf": "SC",
+      "tier": 2
+    },
+    {
+      "id": 153,
+      "name": "Multilaser (Grupo Multi)",
+      "normalizedName": "multilaser-grupo-multi",
+      "segment": "Eletro & Tecnologia",
+      "uf": "MG",
+      "tier": 2
+    },
+    {
+      "id": 154,
+      "name": "Positivo Tecnologia",
+      "normalizedName": "positivo-tecnologia",
+      "segment": "Eletro & Tecnologia",
+      "uf": "PR",
+      "tier": 3
+    },
+    {
+      "id": 155,
+      "name": "Eternit",
+      "normalizedName": "eternit",
+      "segment": "Construção Civil",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 156,
+      "name": "Mahle Metal Leve",
+      "normalizedName": "mahle-metal-leve",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 157,
+      "name": "Fras-le (Frasle Mobility)",
+      "normalizedName": "fras-le-frasle-mobility",
+      "segment": "Automotivo & Pneus",
+      "uf": "RS",
+      "tier": 1
+    },
+    {
+      "id": 158,
+      "name": "Tupy",
+      "normalizedName": "tupy",
+      "segment": "Indústria Pesada",
+      "uf": "SC",
+      "tier": 1
+    },
+    {
+      "id": 159,
+      "name": "São Martinho",
+      "normalizedName": "sao-martinho",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 160,
+      "name": "Grupo Petz Cobasi",
+      "normalizedName": "grupo-petz-cobasi",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 161,
+      "name": "Paranapanema",
+      "normalizedName": "paranapanema",
+      "segment": "Indústria Pesada",
+      "uf": "BA",
+      "tier": 2
+    },
+    {
+      "id": 162,
+      "name": "Cacau Show",
+      "normalizedName": "cacau-show",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 163,
+      "name": "Kerry",
+      "normalizedName": "kerry",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 165,
+      "name": "Opella",
+      "normalizedName": "opella",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 166,
+      "name": "Arauco (CMPC Brasil)",
+      "normalizedName": "arauco-cmpc-brasil",
+      "segment": "Indústria Pesada",
+      "uf": "MS",
+      "tier": 1
+    },
+    {
+      "id": 167,
+      "name": "Bracell",
+      "normalizedName": "bracell",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 168,
+      "name": "Danone Brasil",
+      "normalizedName": "danone-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    }
+  ]
+}

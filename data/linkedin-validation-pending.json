@@ -1,56 +1,11 @@
 {
-  "generatedAt": "2026-07-07T11:43:24.659Z",
+  "generatedAt": "2026-07-07T18:29:53.288Z",
   "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-07.json",
   "summary": {
-    "total": 1,
-    "replied": 1,
+    "total": 0,
+    "replied": 0,
     "companyUnknown": 0,
     "overdue": 0
   },
-  "companies": [
-    {
-      "id": "amanco-wavin",
-      "resolvedCompany": "Amanco Wavin",
-      "reviewReasons": [
-        "replied"
-      ],
-      "contacts": [
-        {
-          "contactName": "Otavio Mendonça",
-          "funnelStatus": "REPLIED_NEUTRAL",
-          "roleOrHeadline": "Executivo de Operações | Logística, Transportes & Customer Service | Gestão de Estruturas Multiplantas | Eficiência Operacional e Desenvolvimento de Lideranças | LinkedIn Top Voice em Gestão de Logística e de Transportes",
-          "confidence": "Media",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-07-07T17:11:00.000Z",
-          "lastInboundAt": "2026-07-07T17:06:00.000Z",
-          "outboundTouchpoints": 2,
-          "inboundMessages": [
-            {
-              "occurredAt": "2026-07-07T17:06:00.000Z",
-              "body": "Boa tarde, Thiago! Td bem e vc?A Amanco opera com quase 80% de autônomos no carregamento e já tem um processo bem estruturado pra isso, com sistemas e gestão de pagamentos. Obrigado pelo contato, mas neste momento não vejo aderência.Abraço"
-            }
-          ],
-          "outboundMessages": [
-            {
-              "occurredAt": "2026-07-07T03:00:00.000Z",
-              "body": "Otavio, a PX atua fornecendo motoristas e ajudantes sob demanda, sem necessidade de contratação fixa via RH."
-            },
-            {
-              "occurredAt": "2026-07-07T03:00:00.000Z",
-              "body": "Temos atuação em todo o território brasileiro, em empresas como Bridgestone, Ambev e Gerdau. Acredito que temos oportunidades concretas para a cadeia logística da Amanco."
-            },
-            {
-              "occurredAt": "2026-07-07T03:00:00.000Z",
-              "body": "Vamos marcar uma conversa?"
-            },
-            {
-              "occurredAt": "2026-07-07T17:11:00.000Z",
-              "body": "Tudo certo também! Tranquilo, fico à disposição para futuros contatos! Abraço"
-            }
-          ]
-        }
-      ],
-      "reviewedAt": null
-    }
-  ]
+  "companies": []
 }

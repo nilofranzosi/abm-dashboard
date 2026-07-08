@@ -919,7 +919,7 @@
   },
   {
     "weekKey": "2026-S28",
-    "generatedAt": "2026-07-07T11:43:21.701Z",
+    "generatedAt": "2026-07-07T18:31:15.684Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 69,
     "activePipeline": 64,
@@ -1105,7 +1105,7 @@
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-07-13T03:00:00.000Z"
+        "nextActionDueAt": "2026-07-14T20:30:00.000Z"
       },
       {
         "company": "Amazon Brasil",

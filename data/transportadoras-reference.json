@@ -1,0 +1,49 @@
+{
+  "_placeholder": true,
+  "generatedFrom": null,
+  "generatedAt": null,
+  "count": 5,
+  "note": "STUB: este arquivo eh um placeholder de exemplo. A base real de transportadoras (clientes do churn-report, com CNPJ/nome/Tier extraidos de view_kpi_gs_v2) e a lista Top 10/20 de novos logos alvo NAO existem neste repositorio e devem ser fornecidas manualmente pelo Nilo (ver checkpoint no Plano 24-04) antes de este arquivo ser usado em producao. As entradas abaixo sao fictícias, apenas para validar o formato lido pelo classificador.",
+  "entries": [
+    {
+      "_seed": true,
+      "cnpj": "00.000.000/0001-00",
+      "name": "Transportes Rápido Sul Ltda",
+      "normalizedName": "transportes-rapido-sul-ltda",
+      "tier": 1,
+      "listType": "client"
+    },
+    {
+      "_seed": true,
+      "cnpj": "00.000.000/0002-00",
+      "name": "Log Express Cargas",
+      "normalizedName": "log-express-cargas",
+      "tier": 2,
+      "listType": "client"
+    },
+    {
+      "_seed": true,
+      "cnpj": "00.000.000/0003-00",
+      "name": "Norte Transportes de Carga",
+      "normalizedName": "norte-transportes-de-carga",
+      "tier": 3,
+      "listType": "client"
+    },
+    {
+      "_seed": true,
+      "cnpj": "00.000.000/0004-00",
+      "name": "Via Rota Logística",
+      "normalizedName": "via-rota-logistica",
+      "tier": 1,
+      "listType": "new-logo-target"
+    },
+    {
+      "_seed": true,
+      "cnpj": "00.000.000/0005-00",
+      "name": "Cerrado Cargas Ltda",
+      "normalizedName": "cerrado-cargas-ltda",
+      "tier": 2,
+      "listType": "new-logo-target"
+    }
+  ]
+}

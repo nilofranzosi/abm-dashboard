@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T11:43:23.379Z",
+  "generatedAt": "2026-07-07T18:31:18.626Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
@@ -272,5 +272,104 @@
       "avgDaysToFirstReply": null
     }
   ],
-  "copyStats": null
+  "copyStats": {
+    "totalClassified": 23,
+    "totalOutbound": 99,
+    "byCopyVariant": [
+      {
+        "label": "direto",
+        "total": 23,
+        "responded": 6,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.2608695652173913
+      }
+    ],
+    "byTriggerType": [
+      {
+        "label": "sem-gatilho",
+        "total": 18,
+        "responded": 6,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.3333333333333333
+      },
+      {
+        "label": "cargo-novo",
+        "total": 3,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "vaga-logistica",
+        "total": 1,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "expansao",
+        "total": 1,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      }
+    ],
+    "byMessageAngle": [
+      {
+        "label": "eficiencia",
+        "total": 2,
+        "responded": 2,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 1
+      },
+      {
+        "label": "dor-logistica",
+        "total": 15,
+        "responded": 4,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0.26666666666666666
+      },
+      {
+        "label": "crescimento",
+        "total": 4,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "capacidade",
+        "total": 2,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      }
+    ],
+    "byProofType": [
+      {
+        "label": "case-cliente",
+        "total": 18,
+        "responded": 6,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.3333333333333333
+      },
+      {
+        "label": "sem-prova",
+        "total": 5,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      }
+    ]
+  }
 }
