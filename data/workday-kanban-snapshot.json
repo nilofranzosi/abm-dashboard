@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T20:30:05.196Z",
+  "generatedAt": "2026-07-08T20:49:23.059Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -147,18 +147,6 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Johnny Cadina"
-        },
-        {
-          "id": "cmq9t45hn0010k7o0tt6vj3u7",
-          "name": "Kerry",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-25T03:00:00.000Z",
-          "lastInteractionAt": "2026-05-18T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Cláudio Rosa, CPIM"
         },
         {
           "id": "cmq9t45fl0007k7o001t4o1aw",
@@ -370,8 +358,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Diego Coelho"
@@ -382,8 +370,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "RENATA CRISTINA LOURENÇO FIORAVANTE"
@@ -394,8 +382,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Maiara Carlesso"
@@ -406,8 +394,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Antonio Correa G Neto"
@@ -418,8 +406,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Renato Marostica"
@@ -430,8 +418,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Luciano Sousa"
@@ -442,8 +430,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Pedro Machado"
@@ -454,8 +442,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "André Freire"
@@ -466,8 +454,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-07T03:00:00.000Z",
+          "nextActionDueAt": "2026-07-15T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-08T03:00:00.000Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Luis Felipe Dovichi Mendes"
@@ -563,18 +551,6 @@
           "activeDecisor": "Eduardo Loyola"
         },
         {
-          "id": "cmqjvk2sz0006k7s0lv9seb1b",
-          "name": "ArcelorMittal",
-          "segment": "Indústria Pesada",
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-06T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Cristiano Quadros"
-        },
-        {
           "id": "cmqjvk2tb0008k7s0ojv863er",
           "name": "Eurofarma",
           "segment": "Farmacêutico & Saúde",
@@ -587,18 +563,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cmqjvk2sp0005k7s0j588f8k1",
-          "name": "Ache",
-          "segment": "Farmacêutico & Saúde",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-06-18T19:16:26.778Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Bárbara Forlin"
-        },
-        {
           "id": "cmqjvk2sc0003k7s032rc28s2",
           "name": "Heineken Brasil",
           "segment": "Alimentos & Bebidas",
@@ -609,18 +573,6 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Olinto Lopes Neto"
-        },
-        {
-          "id": "cmqjvk2sj0004k7s00fywqvtk",
-          "name": "Neo Química / Hypera",
-          "segment": "Farmacêutico & Saúde",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-06-18T19:15:46.525Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Rafael Batista"
         }
       ]
     },
@@ -639,18 +591,6 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Diego Garcia"
-        },
-        {
-          "id": "cmql5g0sf0000k7q80ihp0ek3",
-          "name": "L'Oréal",
-          "segment": "Cosméticos & Higiene",
-          "accountScore": 0,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-06-21T17:36:00.000Z",
-          "lastInteractionAt": "2026-06-19T17:36:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Felipe Feteira do Vale"
         },
         {
           "id": "cmqp6w551000qk7r4xs866fpz",
@@ -706,8 +646,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-14T20:30:00.000Z",
-          "lastInteractionAt": "2026-07-07T20:30:00.000Z",
+          "nextActionDueAt": "2026-07-15T20:30:00.000Z",
+          "lastInteractionAt": "2026-07-08T20:30:00.000Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Marcelo Tadeu dos Santos"
@@ -724,8 +664,8 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-07-09T17:06:00.000Z",
-          "lastInteractionAt": "2026-07-07T17:11:00.000Z",
+          "nextActionDueAt": "2026-07-10T17:06:00.000Z",
+          "lastInteractionAt": "2026-07-08T17:11:00.000Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Otavio Mendonça"
@@ -837,6 +777,66 @@
       "stage": "PAUSED",
       "label": "Pausado",
       "companies": [
+        {
+          "id": "cmq9t45hn0010k7o0tt6vj3u7",
+          "name": "Kerry",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-05-25T03:00:00.000Z",
+          "lastInteractionAt": "2026-05-18T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Cláudio Rosa, CPIM"
+        },
+        {
+          "id": "cmql5g0sf0000k7q80ihp0ek3",
+          "name": "L'Oréal",
+          "segment": "Cosméticos & Higiene",
+          "accountScore": 0,
+          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+          "nextActionDueAt": "2026-06-21T17:36:00.000Z",
+          "lastInteractionAt": "2026-06-19T17:36:00.000Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Felipe Feteira do Vale"
+        },
+        {
+          "id": "cmqjvk2sz0006k7s0lv9seb1b",
+          "name": "ArcelorMittal",
+          "segment": "Indústria Pesada",
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-13T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-06T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Cristiano Quadros"
+        },
+        {
+          "id": "cmqjvk2sj0004k7s00fywqvtk",
+          "name": "Neo Química / Hypera",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-06-18T19:15:46.525Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Rafael Batista"
+        },
+        {
+          "id": "cmqjvk2sp0005k7s0j588f8k1",
+          "name": "Ache",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-06-18T19:16:26.778Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Bárbara Forlin"
+        },
         {
           "id": "cmqqnssur0009k7o889yyn6m2",
           "name": "Votorantim Cimentos",

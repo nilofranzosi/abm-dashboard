@@ -919,19 +919,19 @@
   },
   {
     "weekKey": "2026-S28",
-    "generatedAt": "2026-07-07T18:31:15.684Z",
+    "generatedAt": "2026-07-08T20:52:22.659Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 69,
-    "activePipeline": 64,
-    "pausedCount": 5,
-    "repliedOrBetter": 14,
+    "activePipeline": 59,
+    "pausedCount": 10,
+    "repliedOrBetter": 13,
     "meetingOrBetter": 7,
     "dealCount": 6,
-    "replyRate": 0.21875,
-    "meetingRate": 0.109375,
-    "dealRate": 0.09375,
-    "avgDaysToFirstReply": 6.7272727272727275,
-    "avgDaysSinceLastOutbound": 1.4,
+    "replyRate": 0.22033898305084745,
+    "meetingRate": 0.11864406779661017,
+    "dealRate": 0.1016949152542373,
+    "avgDaysToFirstReply": 7.3,
+    "avgDaysSinceLastOutbound": 1.6,
     "totalOutboundTouchpoints": 20,
     "totalInboundTouchpoints": 2,
     "funnel": [
@@ -943,17 +943,17 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 33
+        "count": 32
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 10
+        "count": 7
       },
       {
         "stage": "REPLIED",
         "label": "Respondeu",
-        "count": 7
+        "count": 6
       },
       {
         "stage": "MEETING_DONE",
@@ -1048,16 +1048,6 @@
         "nextActionDueAt": "2026-06-19T18:34:00.000Z"
       },
       {
-        "company": "L'Oréal",
-        "stage": "REPLIED",
-        "contacts": 2,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-06-21T17:36:00.000Z"
-      },
-      {
         "company": "Continental Pneus",
         "stage": "REPLIED",
         "contacts": 1,
@@ -1105,7 +1095,7 @@
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-07-14T20:30:00.000Z"
+        "nextActionDueAt": "2026-07-15T20:30:00.000Z"
       },
       {
         "company": "Amazon Brasil",
@@ -1116,12 +1106,22 @@
         "bestStatus": "FOLLOW_UP_SENT",
         "score": 50,
         "nextActionDueAt": "2026-06-16T03:00:00.000Z"
+      },
+      {
+        "company": "Bridgestone",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-06-24T03:00:00.000Z"
       }
     ],
-    "activeContacts": 64,
-    "excludedContacts": 5,
+    "activeContacts": 59,
+    "excludedContacts": 10,
     "unresolvedCompanies": 0,
     "uniqueCompanies": 69,
-    "qualifiedAdvanceRate": 0.109375
+    "qualifiedAdvanceRate": 0.11864406779661017
   }
 ]
