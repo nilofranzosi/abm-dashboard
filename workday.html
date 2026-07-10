@@ -519,6 +519,8 @@
       <div class="nav-label">Contexto</div>
       <div class="nav-item">ABM Embarcadores</div>
       <div class="nav-item">LinkedIn + Touchpoints</div>
+      <div class="nav-label" style="margin-top:16px">Segmento ICP</div>
+      <div id="icp-switcher"></div>
     </aside>
 
     <div id="action-toast" class="action-toast"></div>
@@ -531,6 +533,7 @@
         </div>
         <div class="header-actions">
           <button class="secondary" type="button" id="open-api">Ver JSON</button>
+          <button class="secondary" type="button" id="regen-snapshot">Atualizar snapshot</button>
           <button type="button" id="refresh">Atualizar</button>
         </div>
       </header>
@@ -603,6 +606,7 @@
     </main>
   </div>
 
+  <script src="/js/icp-segment.js"></script>
   <script>
     const queueMeta = [
       {
@@ -636,6 +640,8 @@
 
     const apiBase = window.location.protocol === "file:" ? "http://localhost:3000" : "";
 
+    PxIcpSegment.renderIcpSwitcher(document.getElementById("icp-switcher"));
+
     document.getElementById("refresh").addEventListener("click", () => {
       loadActions();
       loadMyActions();
@@ -643,7 +649,19 @@
     });
 
     document.getElementById("open-api").addEventListener("click", () => {
-      window.open(`${apiBase}/api/workday/actions`, "_blank");
+      window.open(PxIcpSegment.withIcpParam(`${apiBase}/api/workday/actions`), "_blank");
+    });
+
+    document.getElementById("regen-snapshot").addEventListener("click", async () => {
+      try {
+        await fetchJson(PxIcpSegment.withIcpParam(`${apiBase}/api/workday/snapshot/run`), { method: "POST" });
+        actionToastEl.textContent = "Snapshot atualizado.";
+        actionToastEl.classList.add("visible");
+        if (actionToastTimer) clearTimeout(actionToastTimer);
+        actionToastTimer = setTimeout(() => actionToastEl.classList.remove("visible"), 5000);
+      } catch (err) {
+        showActionError(err, "atualizar snapshot");
+      }
     });
 
     async function fetchJson(path, options) {
@@ -841,7 +859,7 @@
     async function loadActions() {
       renderLoading();
       try {
-        const payload = await fetchJson(`${apiBase}/api/workday/actions`);
+        const payload = await fetchJson(PxIcpSegment.withIcpParam(`${apiBase}/api/workday/actions`));
         const data = payload.data;
         lastActionsData = data;
         renderKpis(data);
@@ -849,7 +867,9 @@
         generatedAtEl.textContent = `Atualizado em ${formatDate(data.generatedAt)}`;
       } catch (apiError) {
         try {
-          const data = await fetchJson(`${apiBase}/data/workday-actions.json`);
+          const segment = PxIcpSegment.getIcpSegment();
+          const suffix = segment === "TRANSPORTADORA" ? "-transportadora" : "";
+          const data = await fetchJson(`${apiBase}/data/workday-actions${suffix}.json`);
           lastActionsData = data;
           renderKpis(data);
           renderQueues(data);
@@ -1150,12 +1170,14 @@
 
     async function loadKanban() {
       try {
-        const payload = await fetchJson(`${apiBase}/api/workday/kanban`);
+        const payload = await fetchJson(PxIcpSegment.withIcpParam(`${apiBase}/api/workday/kanban`));
         renderKanbanKpis(payload.data);
         renderKanban(payload.data);
       } catch (_apiError) {
         try {
-          const snapshot = await fetchJson(`${apiBase}/data/workday-kanban-snapshot.json`);
+          const segment = PxIcpSegment.getIcpSegment();
+          const suffix = segment === "TRANSPORTADORA" ? "-transportadora" : "";
+          const snapshot = await fetchJson(`${apiBase}/data/workday-kanban-snapshot${suffix}.json`);
           renderKanbanKpis(snapshot);
           renderKanban(snapshot);
           kanbanBoardEl.dataset.fromSnapshot = "1";
@@ -1424,7 +1446,7 @@
       document.getElementById("eng-columns").innerHTML =
         `<div style="grid-column:1/-1;color:var(--muted);font-size:13px;padding:8px 0;">Carregando…</div>`;
       try {
-        const res = await fetchJson(`${apiBase}/api/companies/engagement-status`);
+        const res = await fetchJson(PxIcpSegment.withIcpParam(`${apiBase}/api/companies/engagement-status`));
         renderEngagementStatus(res.data);
       } catch (e) {
         document.getElementById("eng-columns").innerHTML =

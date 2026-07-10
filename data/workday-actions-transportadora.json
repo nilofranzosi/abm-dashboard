@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-07-09T18:33:31.351Z",
+  "highTierNotStarted": [],
+  "recentConnectionsSent": [],
+  "acceptedConnectionsWithoutMessage": [
+    {
+      "id": "cmrduhrym0019k7pg8vg0u6br",
+      "company": {
+        "id": "cmrduhry30012k7pghqmxvc92",
+        "name": "Snapshot Co explicit-tra",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": {
+        "id": "cmrduhry90014k7pg62dopndw",
+        "name": "Contato Snapshot explicit-tra"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-05-19T12:00:00.000Z",
+      "severity": "critical"
+    }
+  ],
+  "overdueNextActions": [
+    {
+      "id": "cmrduhry30012k7pghqmxvc92",
+      "company": {
+        "id": "cmrduhry30012k7pghqmxvc92",
+        "name": "Snapshot Co explicit-tra",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "cmrduhrxz0010k7pg9lps7lrz",
+        "name": "Nilo Snapshot explicit-tra"
+      },
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Definir e executar o próximo passo da conta.",
+      "dueAt": "2026-05-01T12:00:00.000Z",
+      "severity": "critical"
+    }
+  ],
+  "staleCompanies30Days": [
+    {
+      "id": "cmrduhry30012k7pghqmxvc92",
+      "company": {
+        "id": "cmrduhry30012k7pghqmxvc92",
+        "name": "Snapshot Co explicit-tra",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "cmrduhrxz0010k7pg9lps7lrz",
+        "name": "Nilo Snapshot explicit-tra"
+      },
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    }
+  ],
+  "unmatchedInboxThreads": [],
+  "pendingHandoffs": [
+    {
+      "id": "cmrduhry30012k7pghqmxvc92",
+      "company": {
+        "id": "cmrduhry30012k7pghqmxvc92",
+        "name": "Snapshot Co explicit-tra",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": null,
+      "owner": {
+        "id": "cmrduhrxz0010k7pg9lps7lrz",
+        "name": "Nilo Snapshot explicit-tra"
+      },
+      "reason": "Handoff pendente: CONTACT_ROUTED.",
+      "recommendedAction": "Completar checklist de handoff e confirmar owner responsável.",
+      "dueAt": "2026-05-01T12:00:00.000Z",
+      "severity": "critical"
+    }
+  ],
+  "newSignalsWithoutNextAction": [
+    {
+      "id": "cmrduhrys001bk7pg2dv6d06g",
+      "company": {
+        "id": "cmrduhry30012k7pghqmxvc92",
+        "name": "Snapshot Co explicit-tra",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": {
+        "id": "cmrduhry90014k7pg62dopndw",
+        "name": "Contato Snapshot explicit-tra"
+      },
+      "owner": {
+        "id": "cmrduhrxz0010k7pg9lps7lrz",
+        "name": "Nilo Snapshot explicit-tra"
+      },
+      "reason": "Novo sinal JOB_OPENING sem próxima ação definida.",
+      "recommendedAction": "Converter sinal em próxima ação ou ignorar após revisão.",
+      "dueAt": "2026-05-19T14:00:00.000Z",
+      "severity": "info"
+    }
+  ],
+  "summary": {
+    "highTierNotStarted": 0,
+    "recentConnectionsSent": 0,
+    "acceptedConnectionsWithoutMessage": 1,
+    "overdueNextActions": 1,
+    "staleCompanies30Days": 1,
+    "unmatchedInboxThreads": 0,
+    "pendingHandoffs": 1,
+    "newSignalsWithoutNextAction": 1
+  }
+}

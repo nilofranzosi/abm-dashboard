@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-07-09T18:33:31.370Z",
+  "columns": [
+    {
+      "stage": "CONNECTION_SENT",
+      "label": "Conexão Enviada",
+      "companies": [
+        {
+          "id": "cmrduhry30012k7pghqmxvc92",
+          "name": "Snapshot Co explicit-tra",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": "2026-05-01T12:00:00.000Z",
+          "lastInteractionAt": "2026-04-01T12:00:00.000Z",
+          "owner": {
+            "id": "cmrduhrxz0010k7pg9lps7lrz",
+            "name": "Nilo Snapshot explicit-tra"
+          },
+          "contactCount": 1,
+          "activeDecisor": "Contato Snapshot explicit-tra"
+        }
+      ]
+    },
+    {
+      "stage": "CONNECTION_ACCEPTED",
+      "label": "Conexão Aceita",
+      "companies": []
+    },
+    {
+      "stage": "MESSAGE_SENT",
+      "label": "Mensagem Enviada",
+      "companies": []
+    },
+    {
+      "stage": "FOLLOW_UP_SENT",
+      "label": "Follow-Up Enviado",
+      "companies": []
+    },
+    {
+      "stage": "REPLIED",
+      "label": "Respondeu",
+      "companies": []
+    },
+    {
+      "stage": "REPLIED_NEGATIVE",
+      "label": "Resposta Negativa",
+      "companies": []
+    },
+    {
+      "stage": "MEETING_BOOKED",
+      "label": "Reunião Agendada",
+      "companies": []
+    },
+    {
+      "stage": "MEETING_DONE",
+      "label": "Reunião Realizada",
+      "companies": []
+    },
+    {
+      "stage": "DEAL",
+      "label": "Em negociação",
+      "companies": []
+    },
+    {
+      "stage": "PAUSED",
+      "label": "Pausado",
+      "companies": []
+    },
+    {
+      "stage": "DISQUALIFIED",
+      "label": "Desqualificado",
+      "companies": []
+    }
+  ]
+}

@@ -244,6 +244,10 @@
         Ações de Hoje
       </a>
     </div>
+    <div class="nav-section">
+      <div class="nav-label">Segmento ICP</div>
+      <div id="icp-switcher"></div>
+    </div>
     <div class="sidebar-footer">
       <div class="nav-label" style="padding-bottom:6px">Atalhos</div>
       <a class="foot-link" href="#" onclick="copyLink(event)">
@@ -261,7 +265,7 @@
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#0F52BA" stroke-width="1.8"><rect x="2" y="10" width="4" height="8" rx="1"/><rect x="8" y="6" width="4" height="12" rx="1"/><rect x="14" y="2" width="4" height="16" rx="1"/></svg>
         </div>
         <div>
-          <h1>Embarcadores Brasil</h1>
+          <h1 id="page-title">Embarcadores Brasil</h1>
           <div class="muted">Tierização de mercado · <span id="updated-at">Carregando...</span></div>
         </div>
       </div>
@@ -277,25 +281,25 @@
       </div>
     </div>
 
-    <!-- methodology note -->
-    <div style="background:var(--blue-50);border:1px solid var(--blue-100);border-radius:var(--radius);padding:10px 16px;font-size:12px;color:var(--ink);display:flex;align-items:center;gap:8px;">
+    <!-- methodology note (Embarcador only) -->
+    <div id="methodology-note" style="background:var(--blue-50);border:1px solid var(--blue-100);border-radius:var(--radius);padding:10px 16px;font-size:12px;color:var(--ink);display:flex;align-items:center;gap:8px;">
       <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#0F52BA" stroke-width="1.8" style="flex-shrink:0;"><circle cx="10" cy="10" r="8"/><path d="M10 9v4.5M10 6.5v.01"/></svg>
       <span><strong>Metodologia:</strong> este painel combina (1) a participação percentual de cada setor no PIB brasileiro, (2) a lista das maiores empresas não-financeiras e não-prestadoras de serviço do Índice Brasil 100 (IBrX 100) da B3, ranqueadas por receita, e (3) empresas com maior movimentação de carga segundo o <strong>Times Brasil</strong>.</span>
     </div>
 
     <!-- kpis -->
     <div class="kpi-row" id="kpi-row">
-      <div class="kpi"><div class="kpi-label">Total mapeado</div><div class="kpi-value" id="k-total">—</div><div class="kpi-sub">embarcadores</div></div>
+      <div class="kpi"><div class="kpi-label">Total mapeado</div><div class="kpi-value" id="k-total">—</div><div class="kpi-sub" id="k-total-sub">embarcadores</div></div>
       <div class="kpi blue"><div class="kpi-label">Tier 1</div><div class="kpi-value" id="k-t1">—</div><div class="kpi-sub">estratégicos</div></div>
       <div class="kpi amber"><div class="kpi-label">Tier 2</div><div class="kpi-value" id="k-t2">—</div><div class="kpi-sub">desenvolvimento</div></div>
       <div class="kpi gray"><div class="kpi-label">Tier 3</div><div class="kpi-value" id="k-t3">—</div><div class="kpi-sub">observação</div></div>
       <div class="kpi green"><div class="kpi-label">Em abordagem</div><div class="kpi-value" id="k-abm">—</div><div class="kpi-sub">no ABM</div></div>
       <div class="kpi red"><div class="kpi-label">Gaps</div><div class="kpi-value" id="k-gap">—</div><div class="kpi-sub">não abordados</div></div>
-      <div class="kpi purple"><div class="kpi-label">Cobertura de mercado</div><div class="kpi-value" id="k-market-coverage">—</div><div class="kpi-sub">do PIB mapeado</div></div>
+      <div class="kpi purple" id="kpi-market-coverage"><div class="kpi-label">Cobertura de mercado</div><div class="kpi-value" id="k-market-coverage">—</div><div class="kpi-sub">do PIB mapeado</div></div>
     </div>
 
-    <!-- segment distribution charts -->
-    <div class="charts-row">
+    <!-- segment distribution charts (Embarcador only — Transportadora entries have no `segment` field) -->
+    <div class="charts-row" id="charts-row">
       <div class="chart-card">
         <div class="chart-title">Embarcadores por Segmento</div>
         <div class="chart-body">
@@ -312,7 +316,7 @@
       </div>
     </div>
 
-    <!-- segment overview -->
+    <!-- segment overview (Embarcador only) -->
     <div class="seg-row" id="seg-row"></div>
 
     <!-- segments without PX coverage -->
@@ -326,7 +330,7 @@
 
     <!-- filters -->
     <div class="filter-bar">
-      <label>Segmento</label>
+      <label id="f-segment-label">Segmento</label>
       <select id="f-segment" onchange="applyFilters()">
         <option value="">Todos</option>
       </select>
@@ -363,13 +367,13 @@
         <thead>
           <tr>
             <th>Tier</th>
-            <th>Embarcador</th>
-            <th>Segmento</th>
+            <th id="th-name">Embarcador</th>
+            <th id="th-segmento">Segmento</th>
             <th>Já abordado?</th>
-            <th>Tier Score</th>
-            <th>Decisores</th>
+            <th id="th-tier-score">Tier Score</th>
+            <th id="th-decisores">Decisores</th>
             <th>Status ABM</th>
-            <th>Critério e próximo passo</th>
+            <th id="th-detalhe">Critério e próximo passo</th>
           </tr>
         </thead>
         <tbody id="tbody"></tbody>
@@ -378,6 +382,7 @@
   </main>
 </div>
 
+<script src="/js/icp-segment.js"></script>
 <script>
   const SEGMENT_COLORS = {
     "E-commerce & Varejo":               { dot: "#3B82F6", top: "#3B82F6" },
@@ -411,6 +416,11 @@
   };
 
   const apiBase = window.location.protocol === "file:" ? "http://localhost:3000" : "";
+
+  const currentSegment = PxIcpSegment.getIcpSegment();
+  const isTransportadora = currentSegment === "TRANSPORTADORA";
+
+  const LIST_TYPE_LABELS = { client: "Cliente", "new-logo-target": "Novo-logo" };
 
   let allEmb = [];
   let abmMap = {}; // name (lowercase) → { handoffStatus, contactCount, touchpointCount }
@@ -448,12 +458,32 @@
     applyFilters();
   }
 
+  function applySegmentUiSetup() {
+    document.getElementById("page-title").textContent = isTransportadora ? "Transportadoras Brasil" : "Embarcadores Brasil";
+    document.getElementById("k-total-sub").textContent = isTransportadora ? "transportadoras" : "embarcadores";
+
+    if (isTransportadora) {
+      // TAM-by-sector charts, segment overview cards, and the Embarcador-only
+      // methodology note all depend on fields (`segment`, PIB share) that do
+      // not exist for Transportadora — hide rather than show broken/fabricated data.
+      document.getElementById("methodology-note").style.display = "none";
+      document.getElementById("charts-row").style.display = "none";
+      document.getElementById("seg-row").style.display = "none";
+      document.getElementById("kpi-market-coverage").style.display = "none";
+
+      document.getElementById("f-segment-label").textContent = "Tipo";
+      document.getElementById("th-segmento").textContent = "Tipo";
+      document.getElementById("th-decisores").textContent = "Filiais";
+      document.getElementById("th-detalhe").textContent = "Detalhes";
+    }
+  }
+
   async function loadAll() {
     document.getElementById("updated-at").textContent = "Carregando...";
 
     const [embRes, abmRes] = await Promise.allSettled([
-      fetch(`${apiBase}/api/market/embarcadores`),
-      fetch(`${apiBase}/api/market/abm-coverage`)
+      fetch(PxIcpSegment.withIcpParam(`${apiBase}/api/market/embarcadores`)),
+      fetch(PxIcpSegment.withIcpParam(`${apiBase}/api/market/abm-coverage`))
     ]);
 
     if (embRes.status === "fulfilled" && embRes.value.ok) {
@@ -467,11 +497,14 @@
       data.forEach(c => { abmMap[c.name.toLowerCase().trim()] = c; });
     }
 
+    applySegmentUiSetup();
     buildSegmentFilter();
     applyFilters();
     renderKpis();
-    renderSegments();
-    renderCharts();
+    if (!isTransportadora) {
+      renderSegments();
+      renderCharts();
+    }
     document.getElementById("updated-at").textContent = `Atualizado em ${new Date().toLocaleString("pt-BR")}`;
   }
 
@@ -486,8 +519,15 @@
   }
 
   function buildSegmentFilter() {
-    const segs = [...new Set(allEmb.map(e => e.segment))].sort();
     const sel = document.getElementById("f-segment");
+
+    if (isTransportadora) {
+      sel.innerHTML = '<option value="">Todos</option>' +
+        Object.entries(LIST_TYPE_LABELS).map(([value, label]) => `<option value="${value}">${label}</option>`).join("");
+      return;
+    }
+
+    const segs = [...new Set(allEmb.map(e => e.segment))].sort();
     sel.innerHTML = '<option value="">Todos</option>' +
       segs.map(s => `<option value="${s}">${s}</option>`).join("");
   }
@@ -501,8 +541,12 @@
     const sort = document.getElementById("f-sort").value;
 
     filteredEmb = allEmb.filter(e => {
-      if (selectedSegment && e.segment !== selectedSegment) return false;
-      if (seg && e.segment !== seg) return false;
+      if (isTransportadora) {
+        if (seg && e.listType !== seg) return false;
+      } else {
+        if (selectedSegment && e.segment !== selectedSegment) return false;
+        if (seg && e.segment !== seg) return false;
+      }
       if (tier === "null" && e.tier !== null) return false;
       if (tier === "1" && e.tier !== 1) return false;
       if (tier === "2" && e.tier !== 2) return false;
@@ -517,7 +561,8 @@
           e.tierRationale,
           e.nextResearchStep,
           e.notes,
-          ...e.decisors.map(d => d.name + " " + d.role)
+          e.cnpj,
+          ...(e.decisors || []).map(d => d.name + " " + d.role)
         ].join(" ").toLowerCase();
         if (!haystack.includes(q)) return false;
       }
@@ -544,12 +589,28 @@
   }
 
   function exportCsv() {
-    const headers = ["Tier", "Embarcador", "Segmento", "UF", "Já abordado?", "Tier Score", "Decisores", "Status ABM", "Critério e próximo passo"];
+    const headers = isTransportadora
+      ? ["Tier", "Nome", "Tipo", "CNPJ", "Já abordado?", "Tier Score", "Filiais", "Status ABM"]
+      : ["Tier", "Embarcador", "Segmento", "UF", "Já abordado?", "Tier Score", "Decisores", "Status ABM", "Critério e próximo passo"];
     const rows = filteredEmb.map(e => {
       const tierLabel = e.tier ? `Tier ${e.tier}` : "Sem tier";
-      const decisores = e.decisors.map(d => `${d.name} (${d.role})`).join("; ");
       const jaAbordado = getAbordado(e) ? "Sim" : "Não";
       const abm = getAbm(e.name) ? "Em abordagem" : "Gap";
+
+      if (isTransportadora) {
+        return [
+          tierLabel,
+          e.name,
+          LIST_TYPE_LABELS[e.listType] || e.listType || "",
+          e.cnpj ?? "",
+          jaAbordado,
+          e.tierScore ?? "",
+          e.branchCount ?? "",
+          abm
+        ];
+      }
+
+      const decisores = (e.decisors || []).map(d => `${d.name} (${d.role})`).join("; ");
       const criterio = [e.tierRationale, e.nextResearchStep].filter(Boolean).join(" ");
       return [tierLabel, e.name, e.segment, e.uf ?? "", jaAbordado, e.tierScore ?? "", decisores, abm, criterio];
     });
@@ -702,6 +763,7 @@
     if (t === 1) return '<span class="badge badge-t1">Tier 1</span>';
     if (t === 2) return '<span class="badge badge-t2">Tier 2</span>';
     if (t === 3) return '<span class="badge badge-t3">Tier 3</span>';
+    if (typeof t === "number") return `<span class="badge badge-t3">Tier ${esc(t)}</span>`;
     return '<span class="badge badge-t-null">A classificar</span>';
   }
 
@@ -764,15 +826,28 @@
 
     tbody.innerHTML = filteredEmb.map(e => {
       const abmData = getAbm(e.name);
-      const decisorsHtml = e.decisors.length
-        ? e.decisors.map(d => {
-            const confidence = d.confidence ? String(d.confidence).toLowerCase() : "";
-            const meta = d.confidence
-              ? `<div class="decisor-meta" title="${esc(d.source || "")}">Confiança: <span class="decisor-confidence ${confidence}">${esc(d.confidence)}</span></div>`
-              : "";
-            return `<div class="decisor"><div class="decisor-name">${esc(d.name)}</div><div class="decisor-role">${esc(d.role)}</div>${meta}</div>`;
-          }).join("")
-        : '<span class="muted">—</span>';
+
+      const segmentoCell = isTransportadora
+        ? `<span style="font-size:12px">${esc(LIST_TYPE_LABELS[e.listType] || e.listType || "—")}</span>`
+        : `<span style="font-size:12px">${segDot(e.segment)}${esc(e.segment)}</span>`;
+
+      const decisorsHtml = isTransportadora
+        ? `<span class="muted">${esc(e.branchCount != null ? `${e.branchCount} filial(is)` : "—")}</span>`
+        : (e.decisors || []).length
+          ? e.decisors.map(d => {
+              const confidence = d.confidence ? String(d.confidence).toLowerCase() : "";
+              const meta = d.confidence
+                ? `<div class="decisor-meta" title="${esc(d.source || "")}">Confiança: <span class="decisor-confidence ${confidence}">${esc(d.confidence)}</span></div>`
+                : "";
+              return `<div class="decisor"><div class="decisor-name">${esc(d.name)}</div><div class="decisor-role">${esc(d.role)}</div>${meta}</div>`;
+            }).join("")
+          : '<span class="muted">—</span>';
+
+      const detalheCell = isTransportadora
+        ? `<div class="tier-rationale">${esc(e.cnpj || "")}</div>`
+        : `
+          <div class="tier-rationale">${esc(e.tierRationale || e.notes || "")}</div>
+          <div class="next-step">${esc(e.nextResearchStep || "Validar próximo passo operacional.")}</div>`;
 
       return `<tr>
         <td>${tierBadge(e.tier)}</td>
@@ -780,15 +855,12 @@
           <div class="company-name">${esc(e.name)}${joinvilleTag(e)}</div>
           <div class="company-uf">${esc(e.uf || "")}</div>
         </td>
-        <td><span style="font-size:12px">${segDot(e.segment)}${esc(e.segment)}</span></td>
+        <td>${segmentoCell}</td>
         <td>${abordadoCell(e)}</td>
         <td>${tierScoreCell(e)}</td>
         <td>${decisorsHtml}</td>
         <td>${abmBadge(abmData)}</td>
-        <td style="max-width:320px">
-          <div class="tier-rationale">${esc(e.tierRationale || e.notes || "")}</div>
-          <div class="next-step">${esc(e.nextResearchStep || "Validar próximo passo operacional.")}</div>
-        </td>
+        <td style="max-width:320px">${detalheCell}</td>
       </tr>`;
     }).join("");
   }
@@ -803,6 +875,7 @@
     });
   }
 
+  PxIcpSegment.renderIcpSwitcher(document.getElementById("icp-switcher"));
   loadAbordOverrides();
   loadAll();
 </script>

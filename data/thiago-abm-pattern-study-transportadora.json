@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-07-09T12:35:52.280Z",
+  "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
+  "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots-transportadora.json",
+  "companySummary": {
+    "weekKey": "2026-S28",
+    "totalCompanies": 0,
+    "activeCompanies": 0,
+    "pausedCompanies": 0,
+    "repliedOrBetterCompanies": 0,
+    "meetingOrBetterCompanies": 0,
+    "dealCompanies": 0,
+    "companyReplyRate": 0,
+    "companyMeetingRate": 0,
+    "companyDealRate": 0
+  },
+  "sample": {
+    "activeContacts": 0,
+    "replies": 0,
+    "advanced": 0,
+    "negatives": 0,
+    "noResponse": 0,
+    "replyRate": 0,
+    "advancedRate": 0,
+    "avgDaysToFirstReply": null
+  },
+  "bySegment": [],
+  "bySeniority": [],
+  "byFunctionArea": [],
+  "byTimeBand": [],
+  "copyStats": null
+}

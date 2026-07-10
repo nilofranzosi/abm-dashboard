@@ -919,19 +919,19 @@
   },
   {
     "weekKey": "2026-S28",
-    "generatedAt": "2026-07-08T20:52:22.659Z",
+    "generatedAt": "2026-07-09T14:25:55.249Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 69,
-    "activePipeline": 59,
+    "totalApproached": 71,
+    "activePipeline": 61,
     "pausedCount": 10,
     "repliedOrBetter": 13,
     "meetingOrBetter": 7,
     "dealCount": 6,
-    "replyRate": 0.22033898305084745,
-    "meetingRate": 0.11864406779661017,
-    "dealRate": 0.1016949152542373,
+    "replyRate": 0.21311475409836064,
+    "meetingRate": 0.11475409836065574,
+    "dealRate": 0.09836065573770492,
     "avgDaysToFirstReply": 7.3,
-    "avgDaysSinceLastOutbound": 1.6,
+    "avgDaysSinceLastOutbound": 0.6,
     "totalOutboundTouchpoints": 20,
     "totalInboundTouchpoints": 2,
     "funnel": [
@@ -943,7 +943,7 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 32
+        "count": 34
       },
       {
         "stage": "FOLLOW_UP_SENT",
@@ -1095,7 +1095,7 @@
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-07-15T20:30:00.000Z"
+        "nextActionDueAt": "2026-07-16T20:30:00.000Z"
       },
       {
         "company": "Amazon Brasil",
@@ -1118,10 +1118,10 @@
         "nextActionDueAt": "2026-06-24T03:00:00.000Z"
       }
     ],
-    "activeContacts": 59,
+    "activeContacts": 61,
     "excludedContacts": 10,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 69,
-    "qualifiedAdvanceRate": 0.11864406779661017
+    "uniqueCompanies": 71,
+    "qualifiedAdvanceRate": 0.11475409836065574
   }
 ]

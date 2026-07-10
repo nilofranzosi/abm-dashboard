@@ -1,0 +1,27 @@
+[
+  {
+    "weekKey": "2026-S28",
+    "generatedAt": "2026-07-09T12:35:42.966Z",
+    "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
+    "totalApproached": 0,
+    "activePipeline": 0,
+    "pausedCount": 0,
+    "repliedOrBetter": 0,
+    "meetingOrBetter": 0,
+    "dealCount": 0,
+    "replyRate": 0,
+    "meetingRate": 0,
+    "dealRate": 0,
+    "avgDaysToFirstReply": null,
+    "avgDaysSinceLastOutbound": null,
+    "totalOutboundTouchpoints": 0,
+    "totalInboundTouchpoints": 0,
+    "funnel": [],
+    "topCompanies": [],
+    "activeContacts": 0,
+    "excludedContacts": 0,
+    "unresolvedCompanies": 0,
+    "uniqueCompanies": 0,
+    "qualifiedAdvanceRate": 0
+  }
+]

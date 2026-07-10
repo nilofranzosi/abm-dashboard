@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Semanal ABM Thiago</title>
+  <style>
+    :root { --blue:#0F52BA; --blue2:#0A3C8A; --ink:#172033; --muted:#667085; --line:#D9E2F2; --bg:#EEF2F7; --panel:#FFFFFF; --green:#087443; --amber:#A15C07; --red:#B42318; --slate:#111827; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); }
+    .shell { min-height: 100vh; display: grid; grid-template-columns: 236px 1fr; gap: 14px; padding: 14px; }
+    aside { background: var(--slate); color: white; border-radius: 6px; padding: 18px 16px; }
+    .brand { font-size: 15px; font-weight: 800; margin-bottom: 24px; }
+    .nav-label { color: #AAB4C3; font-size: 11px; text-transform: uppercase; font-weight: 800; margin: 20px 0 8px; }
+    .nav-item { display: block; border: 1px solid #334155; background: #1F2937; color: white; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; margin-bottom: 8px; }
+    .nav-item.active { background: var(--blue); border-color: var(--blue); }
+    main { display: grid; gap: 14px; }
+    .topbar, section { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+    .topbar { padding: 18px 20px; display: flex; justify-content: space-between; gap: 18px; align-items: center; }
+    .btn-refresh { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; padding: 10px 18px; font-size: 13px; font-weight: 700; cursor: pointer; white-space: nowrap; transition: background 0.15s; }
+    .btn-refresh:hover { background: var(--blue2); }
+    .btn-refresh:disabled { background: #94A3B8; cursor: not-allowed; }
+    .btn-refresh .icon { font-size: 15px; display: inline-block; transition: transform 0.6s linear; }
+    .btn-refresh.loading .icon { animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .refresh-status { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    h1 { margin: 0 0 5px; font-size: 22px; }
+    h2 { margin: 0 0 14px; font-size: 16px; color: var(--blue); }
+    p { margin: 0; }
+    .muted { color: var(--muted); font-size: 13px; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .kpi { background: white; border: 1px solid var(--line); border-left: 4px solid var(--blue); border-radius: 6px; padding: 14px; min-height: 104px; }
+    .kpi.kpi-green { border-left-color: var(--green); }
+    .kpi.kpi-amber { border-left-color: var(--amber); }
+    .kpi span { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+    .kpi strong { display: block; font-size: 26px; margin-bottom: 8px; }
+    .trend { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 7px; border-radius: 999px; }
+    .trend.up { color: var(--green); background: #ECFDF3; }
+    .trend.down { color: var(--red); background: #FEF3F2; }
+    .trend.neutral { color: var(--muted); background: #F2F4F7; }
+    section { padding: 18px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; color: #344054; background: #F2F5FA; border-bottom: 1px solid var(--line); padding: 10px; }
+    td { border-bottom: 1px solid #EEF2F7; padding: 10px; vertical-align: middle; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .num.overdue { color: var(--red); font-weight: 700; }
+    .barrow { display: grid; grid-template-columns: 160px 1fr 42px; gap: 10px; align-items: center; margin-bottom: 10px; font-size: 13px; }
+    .bar { height: 10px; background: #E4E7EC; border-radius: 999px; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: var(--blue); }
+    .stage-badge { display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 12px; white-space: nowrap; font-weight: 600; }
+    .badge-deal { background: #ECFDF3; color: #087443; }
+    .badge-meeting { background: #EFF6FF; color: #1D4ED8; }
+    .badge-replied { background: #FFF7ED; color: #C2410C; }
+    .badge-paused { background: #F2F4F7; color: #667085; }
+    .badge-default { background: #EEF2F7; color: #344054; }
+    .footer-note { color: var(--muted); font-size: 12px; line-height: 1.45; }
+    /* ICP Coverage */
+    .icp-coverage-section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px 28px; }
+    .icp-coverage-section .section-title { font-size: 15px; font-weight: 700; color: #111827; margin: 0 0 20px; }
+    .icp-coverage-inner { display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: start; }
+    .icp-donut-wrap { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .icp-donut-legend { font-size: 12px; color: var(--text); display: flex; flex-direction: column; gap: 6px; align-self: stretch; }
+    .icp-legend-item { display: flex; align-items: center; gap: 7px; }
+    .icp-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .icp-dot.approached { background: #0F52BA; }
+    .icp-dot.remaining { background: #e5e7eb; border: 1px solid #d1d5db; }
+    .icp-legend-total { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .icp-segments { display: flex; flex-direction: column; gap: 0; }
+    .icp-seg-header { display: grid; grid-template-columns: 180px 1fr 90px 46px; gap: 8px; align-items: center; font-size: 11px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 6px; }
+    .icp-seg-row { display: grid; grid-template-columns: 180px 1fr 90px 46px; gap: 8px; align-items: center; padding: 5px 0; border-bottom: 1px solid #f3f4f6; font-size: 13px; }
+    .icp-seg-row:last-child { border-bottom: none; }
+    .icp-seg-label { color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .icp-seg-bar-wrap { padding: 0 4px; }
+    .icp-seg-bar-bg { height: 8px; background: #f3f4f6; border-radius: 999px; overflow: hidden; }
+    .icp-seg-bar-fill { height: 100%; background: #0F52BA; border-radius: 999px; }
+    .icp-seg-counts { font-size: 12px; color: var(--text); text-align: right; white-space: nowrap; }
+    .icp-seg-total { color: var(--muted); }
+    .icp-seg-pct { font-size: 12px; font-weight: 600; color: #0F52BA; text-align: right; }
+    @media (max-width: 1100px) { .shell { grid-template-columns: 1fr; } aside { display: none; } .grid, .two-col { grid-template-columns: 1fr; } .icp-coverage-inner { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand">PX Outreach Engine</div>
+      <div class="nav-label">Operação</div>
+      <a class="nav-item" href="/workday.html">Ações de Hoje</a>
+      <a class="nav-item" href="/campaigns.html">Campanhas</a>
+      <a class="nav-item active" href="/thiago-abm-weekly-dashboard.html">Dashboard ABM Thiago</a>
+      <div class="nav-label">Referência</div>
+      <div class="muted">Semana 2026-S28<br>0 empresas abordadas</div>
+    </aside>
+    <main>
+      <div class="topbar">
+        <div>
+          <h1>Dashboard Semanal ABM — Thiago</h1>
+          <p class="muted">Pipeline de Contas Abordadas · atualizado em 09/07/2026, 09:35:42</p>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+          <button class="btn-refresh" id="btn-refresh" onclick="refreshDashboard()">
+            <span class="icon">↻</span> Atualizar
+          </button>
+          <span class="refresh-status" id="refresh-status">Histórico: 1 semana(s)</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="kpi"><span>Empresas abordadas (total)</span><strong>0</strong><span class="trend neutral">sem histórico</span></div>
+        <div class="kpi"><span>Pipeline ativo</span><strong>0</strong><span class="trend neutral">sem histórico</span></div>
+        <div class="kpi kpi-amber"><span>Pausadas</span><strong>0</strong><span class="trend neutral">sem histórico</span></div>
+        <div class="kpi"><span>Com resposta ou mais avançado</span><strong>0</strong><span class="trend neutral">sem histórico</span></div>
+        <div class="kpi"><span>Taxa de resposta</span><strong>0,0%</strong><span class="trend neutral">sem histórico</span></div>
+        <div class="kpi"><span>Taxa de reunião</span><strong>0,0%</strong><span class="trend neutral">sem histórico</span></div>
+        <div class="kpi kpi-green"><span>Taxa de negócio (DEAL)</span><strong>0,0%</strong><span class="trend neutral">sem histórico</span></div>
+        <div class="kpi"><span>Tempo médio até 1ª resposta</span><strong>n/d</strong><span class="trend neutral">sem histórico</span></div>
+      </div>
+
+      
+  <section class="icp-coverage-section">
+    <h2 class="section-title">Cobertura ICP</h2>
+    <div class="icp-coverage-inner">
+      <div class="icp-donut-wrap">
+        <svg width="132" height="132" viewBox="0 0 132 132">
+          <circle cx="66" cy="66" r="54" fill="none" stroke="#e5e7eb" stroke-width="14"/>
+          <circle cx="66" cy="66" r="54" fill="none" stroke="#0F52BA" stroke-width="14"
+            stroke-dasharray="0.00 339.29"
+            stroke-linecap="round"
+            transform="rotate(-90 66 66)"/>
+          <text x="66" y="61" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">0%</text>
+          <text x="66" y="78" text-anchor="middle" font-size="10" fill="#6b7280">abordadas</text>
+        </svg>
+        <div class="icp-donut-legend">
+          <div class="icp-legend-item"><span class="icp-dot approached"></span>0 abordadas</div>
+          <div class="icp-legend-item"><span class="icp-dot remaining"></span>161 a abordar</div>
+          <div class="icp-legend-total">161 mapeadas</div>
+        </div>
+      </div>
+      <div class="icp-segments">
+        <div class="icp-seg-header">
+          <span>Segmento</span><span></span><span>Abord./Total</span><span>Cob.</span>
+        </div>
+        
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Alimentos &amp; Bebidas</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:100%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/21</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Construção Civil</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:95%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/20</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">E-commerce &amp; Varejo</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:81%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/17</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Farmacêutico &amp; Saúde</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:76%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/16</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Indústria Pesada</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:76%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/16</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Combustíveis, Energia &amp; Química</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:67%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/14</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Agro &amp; Commodities</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:62%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/13</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Cosméticos &amp; Higiene</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:52%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/11</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Automotivo &amp; Pneus</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:52%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/11</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Têxtil &amp; Vestuário</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:48%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/10</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Eletro &amp; Tecnologia</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:38%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/8</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Logística &amp; Transporte</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:19%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/4</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+      <div class="two-col">
+        <section>
+          <h2>Funil de Contas</h2>
+          
+          
+        </section>
+
+        <section>
+          <h2>Touchpoints LinkedIn</h2>
+          <table>
+            <tbody>
+              <tr><td>Touchpoints enviados</td><td class="num">—</td></tr>
+              <tr><td>Touchpoints recebidos</td><td class="num">—</td></tr>
+              <tr><td>Tempo médio até 1ª resposta</td><td class="num">n/d</td></tr>
+              <tr><td>Dias médio sem novo outbound</td><td class="num">n/d</td></tr>
+            </tbody>
+          </table>
+          <p class="muted" style="margin-top:12px;font-size:11px;">Dados LinkedIn disponíveis apenas para contatos com threads ativas no scan mais recente.</p>
+        </section>
+      </div>
+
+      
+
+      <section>
+        <h2>Pipeline de Contas — Ranking por Estágio</h2>
+        <table>
+          <thead><tr><th>Empresa</th><th>Estágio</th><th class="num">Decisores</th><th class="num">TP enviados</th><th class="num">TP recebidos</th><th class="num">Próxima ação</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Histórico Semanal</h2>
+        <table>
+          <thead><tr><th>Semana</th><th class="num">Total abordadas</th><th class="num">Pipeline ativo</th><th class="num">Taxa resposta</th><th class="num">Taxa reunião</th><th class="num">Taxa negócio</th><th class="num">Tempo 1ª resp.</th></tr></thead>
+          <tbody><tr>
+          <td><strong>2026-S28</strong></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0,0%</td>
+          <td class="num">0,0%</td>
+          <td class="num">0,0%</td>
+          <td class="num">n/d</td>
+        </tr></tbody>
+        </table>
+      </section>
+
+      <section>
+        <p class="footer-note">
+          Fonte: <strong>Pipeline de Contas Abordadas</strong> (Ações de Hoje) · Touchpoints LinkedIn complementados pelo scan do Thiago.<br>
+          Para atualizar: rode <strong>.scan-thiago-linkedin-update.ps1</strong> e depois <strong>npm run dashboard:thiago-abm-weekly</strong>. O snapshot da semana atual é substituído; semanas anteriores ficam preservadas.
+        </p>
+      </section>
+    </main>
+  </div>
+  <script>
+    async function refreshDashboard() {
+      const btn = document.getElementById('btn-refresh');
+      const status = document.getElementById('refresh-status');
+      btn.disabled = true;
+      btn.classList.add('loading');
+      status.textContent = 'Atualizando…';
+      try {
+        const res = await fetch('/api/abm-dashboards/regenerate', { method: 'POST' });
+        if (!res.ok) throw new Error('Erro ' + res.status);
+        status.textContent = 'Atualizado! Recarregando…';
+        setTimeout(() => location.reload(), 800);
+      } catch (e) {
+        status.textContent = 'Erro ao atualizar. Tente novamente.';
+        btn.disabled = false;
+        btn.classList.remove('loading');
+      }
+    }
+  </script>
+</body>
+</html>
