@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PX Outreach Engine - Transportadoras</title>
+  <style>
+    :root {
+      --blue: #0F52BA;
+      --blue-dark: #0A3C8A;
+      --ink: #172033;
+      --muted: #657083;
+      --line: #DDE3EC;
+      --soft: #F6F8FB;
+      --panel: #FFFFFF;
+      --bg: #EEF2F7;
+      --green: #158255;
+      --amber: #A05A00;
+      --red: #B42318;
+      --slate: #253047;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.35;
+    }
+
+    html.embedded-view .shell { grid-template-columns: 1fr; }
+    html.embedded-view .shell aside { display: none; }
+    .shell {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 236px 1fr;
+      gap: 14px;
+      padding: 14px;
+    }
+
+    aside {
+      background: #111827;
+      color: #FFFFFF;
+      border-radius: 6px;
+      padding: 18px 16px;
+    }
+
+    .brand {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .nav-label {
+      color: #AAB4C3;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin: 20px 0 8px;
+    }
+
+    .nav-item {
+      display: block;
+      border: 1px solid #334155;
+      background: #1F2937;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .nav-item.active {
+      background: var(--blue);
+      border-color: var(--blue);
+    }
+
+    main {
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    header {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 18px 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button {
+      border: 1px solid var(--blue);
+      background: var(--blue);
+      color: #FFFFFF;
+      border-radius: 5px;
+      padding: 10px 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: #FFFFFF;
+      color: var(--blue);
+    }
+
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+    }
+
+    .tab-btn {
+      background: #FFFFFF;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 9px 16px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .tab-btn.active {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #FFFFFF;
+    }
+
+    .tab-view { display: none; }
+    .tab-view.active { display: grid; gap: 14px; }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .kpi {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--blue);
+      border-radius: 6px;
+      padding: 12px 13px;
+      min-height: 86px;
+    }
+
+    .kpi.warning { border-left-color: var(--amber); }
+    .kpi.critical { border-left-color: var(--red); }
+    .kpi.info { border-left-color: var(--blue); }
+    .kpi.success { border-left-color: var(--green); }
+
+    .kpi span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      min-height: 26px;
+    }
+
+    .kpi strong {
+      display: block;
+      font-size: 28px;
+      margin-top: 4px;
+    }
+
+    .kpi .kpi-caption {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .queue {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      min-height: 200px;
+      overflow: hidden;
+    }
+
+    .queue-head {
+      padding: 13px 15px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      background: #FFFFFF;
+    }
+
+    .queue-head h2 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .count {
+      min-width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      background: var(--slate);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .queue-body {
+      padding: 10px;
+      display: grid;
+      gap: 8px;
+      max-height: 320px;
+      overflow: auto;
+      background: var(--soft);
+    }
+
+    .queue-row {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--blue);
+      border-radius: 5px;
+      padding: 8px 10px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .queue-row.risco { border-left-color: var(--red); }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      height: 22px;
+      padding: 0 7px;
+      border-radius: 999px;
+      background: #E8EDF5;
+      color: var(--slate);
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .empty,
+    .error,
+    .loading {
+      padding: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      background: #FFFFFF;
+      border: 1px dashed var(--line);
+      border-radius: 5px;
+    }
+
+    .error {
+      color: var(--red);
+      border-color: #F2B8B5;
+      background: #FFF7F7;
+    }
+
+    .filters {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 12px 15px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filters select,
+    .filters input {
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-family: inherit;
+      color: var(--ink);
+    }
+
+    .table-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: auto;
+    }
+
+    table.clientes-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    table.clientes-table th {
+      position: sticky;
+      top: 0;
+      background: var(--slate);
+      color: #FFFFFF;
+      text-align: left;
+      padding: 10px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    table.clientes-table th.no-sort { cursor: default; }
+
+    table.clientes-table td {
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--line);
+      white-space: nowrap;
+    }
+
+    table.clientes-table tr:nth-child(even) td {
+      background: var(--soft);
+    }
+
+    .status-pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      background: #F3F4F6;
+      color: #374151;
+    }
+
+    .status-pill.is-churn { background: #FEE2E2; color: #991B1B; }
+    .status-pill.is-inativo { background: #FEF3C7; color: #92400E; }
+    .status-pill.is-ativo,
+    .status-pill.is-recorrente { background: #D1FAE5; color: #065F46; }
+    .status-pill.is-sem-dado { background: #F3F4F6; color: #6B7280; font-style: italic; }
+
+    .pending {
+      color: var(--muted);
+      cursor: help;
+    }
+
+    @media (max-width: 1120px) {
+      .shell { grid-template-columns: 1fr; }
+      .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid { grid-template-columns: 1fr; }
+      header { display: block; }
+      .header-actions { margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (new URLSearchParams(location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embedded-view");
+    }
+  </script>
+  <div class="shell">
+    <aside>
+      <div class="brand">PX Outreach Engine</div>
+      <div class="nav-label">Operação</div>
+      <a class="nav-item" href="/workday.html">Ações de Hoje</a>
+      <a class="nav-item active" href="/transportadoras.html">Transportadoras</a>
+      <a class="nav-item" href="/signal-feed.html">Feed de Sinais</a>
+      <a class="nav-item" href="/thiago-abm-intelligence.html">Inteligência ABM</a>
+      <a class="nav-item" href="/embarcadores-market.html">Market Intelligence</a>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <div class="eyebrow">ICP-06 | Transportadoras</div>
+          <h1>Transportadoras</h1>
+          <div class="muted" id="generated-at">Carregando dados...</div>
+        </div>
+        <div class="header-actions">
+          <div class="tabs">
+            <button class="tab-btn active" type="button" id="tab-btn-overview">Visão Geral</button>
+            <button class="tab-btn" type="button" id="tab-btn-clientes">Clientes</button>
+            <button class="tab-btn" type="button" id="tab-btn-prospects">Prospects</button>
+          </div>
+          <button class="secondary" type="button" id="refresh">Atualizar</button>
+        </div>
+      </header>
+
+      <section id="tab-overview" class="tab-view active">
+        <section class="kpis" id="overview-kpis"></section>
+
+        <section class="grid">
+          <article class="queue" id="block-top-prioridades">
+            <div class="queue-head">
+              <h2>Top prioridades</h2>
+              <span class="count" id="count-top-prioridades">0</span>
+            </div>
+            <div class="queue-body" id="body-top-prioridades"></div>
+          </article>
+
+          <article class="queue" id="block-oportunidades-growth">
+            <div class="queue-head">
+              <h2>Oportunidades Growth</h2>
+              <span class="count" id="count-oportunidades-growth">0</span>
+            </div>
+            <div class="queue-body" id="body-oportunidades-growth"></div>
+          </article>
+
+          <article class="queue" id="block-alertas-gs">
+            <div class="queue-head">
+              <h2>Alertas GS</h2>
+              <span class="count" id="count-alertas-gs">0</span>
+            </div>
+            <div class="queue-body" id="body-alertas-gs"></div>
+          </article>
+
+          <article class="queue" id="block-sinais-recentes">
+            <div class="queue-head">
+              <h2>Sinais recentes</h2>
+              <span class="count" id="count-sinais-recentes">0</span>
+            </div>
+            <div class="queue-body" id="body-sinais-recentes"></div>
+          </article>
+        </section>
+      </section>
+
+      <section id="tab-clientes" class="tab-view">
+        <section class="filters">
+          <select id="clientes-status-filter">
+            <option value="">Todos</option>
+            <option value="RECORRENTE">Recorrente</option>
+            <option value="ATIVO">Ativo</option>
+            <option value="INATIVO">Inativo</option>
+            <option value="CHURN">Churn</option>
+            <option value="__SEM_DADO__">Sem dado</option>
+          </select>
+          <input type="text" id="clientes-search" placeholder="Buscar empresa...">
+          <span class="muted" id="clientes-count-label"></span>
+        </section>
+
+        <section class="table-panel">
+          <table class="clientes-table" id="clientes-table">
+            <thead>
+              <tr>
+                <th data-sort="rank">Rank</th>
+                <th data-sort="empresa">Empresa</th>
+                <th data-sort="status">Status</th>
+                <th data-sort="scoreTotal">Score total</th>
+                <th data-sort="tier">Tier</th>
+                <th data-sort="diasVendidos">Dias vendidos</th>
+                <th data-sort="contratosPrestados">Contratos</th>
+                <th data-sort="valorEmAndamento">Valor</th>
+                <th data-sort="ultimoTouchpoint">Último touchpoint</th>
+                <th data-sort="sinalPrincipal">Sinal principal</th>
+                <th data-sort="proximaAcao">Próxima ação</th>
+                <th data-sort="dono">Dono</th>
+                <th class="no-sort">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="clientes-tbody">
+              <tr><td colspan="13" class="loading">Carregando clientes...</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <section id="tab-prospects" class="tab-view">
+        <section class="filters">
+          <input type="text" id="prospects-search" placeholder="Buscar empresa...">
+          <select id="prospects-decisor-filter">
+            <option value="">Decisor mapeado: Todos</option>
+            <option value="sim">Sim</option>
+            <option value="parcial">Parcial</option>
+            <option value="não">Não</option>
+          </select>
+          <span class="muted" id="prospects-count-label"></span>
+        </section>
+
+        <section class="table-panel">
+          <table class="clientes-table" id="prospects-table">
+            <thead>
+              <tr>
+                <th data-sort="rank">Rank</th>
+                <th data-sort="empresa">Empresa</th>
+                <th data-sort="scorePotencial">Score potencial</th>
+                <th data-sort="regiao">Região</th>
+                <th data-sort="segmento">Segmento</th>
+                <th data-sort="sinalExterno">Sinal externo</th>
+                <th data-sort="decisorMapeado">Decisor mapeado</th>
+                <th data-sort="similaridadeIcp">Similaridade ICP</th>
+                <th data-sort="interacaoPx">Interação PX</th>
+                <th data-sort="acaoSugerida">Ação sugerida</th>
+                <th data-sort="dono">Dono</th>
+                <th class="no-sort">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="prospects-tbody">
+              <tr><td colspan="12" class="loading">Carregando prospects...</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const apiBase = window.location.protocol === "file:" ? "http://localhost:3000" : "";
+
+    async function fetchJson(path, options) {
+      const response = await fetch(path, {
+        ...options,
+        headers: {
+          "Accept": "application/json",
+          ...(options && options.body ? { "Content-Type": "application/json" } : {}),
+          ...(options && options.headers ? options.headers : {})
+        }
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      if (response.status === 204) return null;
+      return response.json();
+    }
+
+    function escapeAttr(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+
+    function formatDate(value) {
+      if (!value) return "–";
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "Data inválida";
+      return new Intl.DateTimeFormat("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+      }).format(date);
+    }
+
+    // ─── Tabs ───────────────────────────────────────────────────────────────
+
+    const tabOverviewEl = document.getElementById("tab-overview");
+    const tabClientesEl = document.getElementById("tab-clientes");
+    const tabProspectsEl = document.getElementById("tab-prospects");
+    const tabBtnOverviewEl = document.getElementById("tab-btn-overview");
+    const tabBtnClientesEl = document.getElementById("tab-btn-clientes");
+    const tabBtnProspectsEl = document.getElementById("tab-btn-prospects");
+
+    let clientesLoaded = false;
+    let prospectsLoaded = false;
+
+    function showTab(name) {
+      tabOverviewEl.classList.toggle("active", name === "overview");
+      tabClientesEl.classList.toggle("active", name === "clientes");
+      tabProspectsEl.classList.toggle("active", name === "prospects");
+      tabBtnOverviewEl.classList.toggle("active", name === "overview");
+      tabBtnClientesEl.classList.toggle("active", name === "clientes");
+      tabBtnProspectsEl.classList.toggle("active", name === "prospects");
+      if (name === "clientes" && !clientesLoaded) {
+        loadClientes();
+      }
+      if (name === "prospects" && !prospectsLoaded) {
+        loadProspects();
+      }
+    }
+
+    tabBtnOverviewEl.addEventListener("click", () => showTab("overview"));
+    tabBtnClientesEl.addEventListener("click", () => showTab("clientes"));
+    tabBtnProspectsEl.addEventListener("click", () => showTab("prospects"));
+
+    document.getElementById("refresh").addEventListener("click", () => {
+      loadOverview();
+      if (clientesLoaded) loadClientes();
+      if (prospectsLoaded) loadProspects();
+    });
+
+    // ─── Visão Geral ────────────────────────────────────────────────────────
+
+    const OVERVIEW_CARDS = [
+      { key: "totalTransportadoras", label: "Total de transportadoras", tone: "info" },
+      { key: "clientesAtivos", label: "Clientes ativos", tone: "success" },
+      { key: "prospectsPriorizados", label: "Prospects priorizados", tone: "info" },
+      { key: "contasEmRisco", label: "Contas em risco", tone: "critical" },
+      { key: "sinaisNovos", label: "Sinais novos", tone: "info" },
+      { key: "demandasAbertas", label: "Demandas abertas", tone: "warning" }
+    ];
+
+    function renderOverviewKpis(cards) {
+      const el = document.getElementById("overview-kpis");
+      el.innerHTML = OVERVIEW_CARDS.map((card) => {
+        const raw = cards[card.key];
+        if (card.key === "demandasAbertas" && raw === null) {
+          return `
+            <article class="kpi ${card.tone}">
+              <span>${card.label}</span>
+              <strong>N/A</strong>
+              <span class="kpi-caption">Fila de demandas ainda não existe (Fase 34)</span>
+            </article>
+          `;
+        }
+        return `
+          <article class="kpi ${card.tone}">
+            <span>${card.label}</span>
+            <strong>${raw ?? 0}</strong>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderPrioridadeRow(item) {
+      const statusLabel = item.accountStatus ?? "Sem dado sincronizado";
+      return `
+        <div class="queue-row risco">
+          <span>${escapeAttr(item.name)}</span>
+          <span class="badge">${escapeAttr(statusLabel)}</span>
+          <span class="muted">${item.gsOwner ? escapeAttr(item.gsOwner) : "Sem owner"}</span>
+        </div>
+      `;
+    }
+
+    function renderSinalRow(item) {
+      return `
+        <div class="queue-row">
+          <span>${escapeAttr(item.companyName || "Sem empresa vinculada")}</span>
+          <span class="badge">${escapeAttr(item.type)}</span>
+          <span class="muted">${formatDate(item.detectedAt)}</span>
+        </div>
+      `;
+    }
+
+    function renderQueueBlock(idSuffix, items, emptyText, rowRenderer) {
+      document.getElementById(`count-${idSuffix}`).textContent = items.length;
+      const bodyEl = document.getElementById(`body-${idSuffix}`);
+      bodyEl.innerHTML = items.length === 0
+        ? `<div class="empty">${emptyText}</div>`
+        : items.map(rowRenderer).join("");
+    }
+
+    function renderOverview(data) {
+      renderOverviewKpis(data.cards);
+      renderQueueBlock(
+        "top-prioridades",
+        data.topPrioridades ?? [],
+        "Nenhuma conta prioritária no momento.",
+        renderPrioridadeRow
+      );
+      // Always the honest empty state — no região/segmento data source exists.
+      renderQueueBlock(
+        "oportunidades-growth",
+        [],
+        "Sem dados de cluster regional/setorial disponíveis ainda — nenhuma fonte de região/segmento existe hoje.",
+        () => ""
+      );
+      renderQueueBlock(
+        "alertas-gs",
+        data.alertasGs ?? [],
+        "Nenhum alerta de GS no momento.",
+        renderPrioridadeRow
+      );
+      renderQueueBlock(
+        "sinais-recentes",
+        data.sinaisRecentes ?? [],
+        "Nenhum sinal novo detectado recentemente.",
+        renderSinalRow
+      );
+    }
+
+    function renderOverviewError(error) {
+      document.getElementById("overview-kpis").innerHTML = "";
+      generatedAtEl.textContent = "Falha ao carregar dados.";
+      ["top-prioridades", "oportunidades-growth", "alertas-gs", "sinais-recentes"].forEach((idSuffix) => {
+        document.getElementById(`body-${idSuffix}`).innerHTML =
+          `<div class="error">Não foi possível carregar /api/transportadoras/overview. ${error.message}</div>`;
+      });
+    }
+
+    const generatedAtEl = document.getElementById("generated-at");
+
+    async function loadOverview() {
+      generatedAtEl.textContent = "Carregando dados...";
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/overview`);
+        renderOverview(payload.data);
+        generatedAtEl.textContent = "Dados atualizados";
+      } catch (error) {
+        renderOverviewError(error);
+      }
+    }
+
+    // ─── Clientes ───────────────────────────────────────────────────────────
+
+    let clientesData = [];
+    let currentSort = { column: "rank", dir: "asc" };
+
+    const statusFilterEl = document.getElementById("clientes-status-filter");
+    const searchEl = document.getElementById("clientes-search");
+    const tbodyEl = document.getElementById("clientes-tbody");
+    const countLabelEl = document.getElementById("clientes-count-label");
+
+    function statusPillClass(status) {
+      if (status === "CHURN") return "is-churn";
+      if (status === "INATIVO") return "is-inativo";
+      if (status === "ATIVO") return "is-ativo";
+      if (status === "RECORRENTE") return "is-recorrente";
+      return "is-sem-dado";
+    }
+
+    function statusLabel(status) {
+      if (status === "RECORRENTE") return "Recorrente";
+      if (status === "ATIVO") return "Ativo";
+      if (status === "INATIVO") return "Inativo";
+      if (status === "CHURN") return "Churn";
+      return "Sem dado sincronizado";
+    }
+
+    function renderClienteRow(row) {
+      const valor = row.valorEmAndamento !== null && row.valorEmAndamento !== undefined
+        ? row.valorEmAndamento
+        : "–";
+      return `
+        <tr>
+          <td>${row.rank}</td>
+          <td>${escapeAttr(row.empresa)}</td>
+          <td><span class="status-pill ${statusPillClass(row.status)}">${statusLabel(row.status)}</span></td>
+          <td><span class="pending" title="Score engine chega na Fase 32">–</span></td>
+          <td>${row.tier ?? "–"}</td>
+          <td>${row.diasVendidos ?? "–"}</td>
+          <td>${row.contratosPrestados ?? "–"}</td>
+          <td>${valor}</td>
+          <td>${row.ultimoTouchpoint ? formatDate(row.ultimoTouchpoint) : "–"}</td>
+          <td>${row.sinalPrincipal ? escapeAttr(row.sinalPrincipal.type) : "–"}</td>
+          <td>${row.proximaAcao ? escapeAttr(row.proximaAcao) : "–"}</td>
+          <td>${row.dono ? escapeAttr(row.dono) : "–"}</td>
+          <td>
+            <button disabled title="Disponível na Fase 32/33/34">Ver conta</button>
+            <button disabled title="Disponível na Fase 32/33/34">Gerar demanda</button>
+            <button disabled title="Disponível na Fase 32/33/34">Registrar touchpoint</button>
+            <button disabled title="Disponível na Fase 32/33/34">Recalcular score</button>
+          </td>
+        </tr>
+      `;
+    }
+
+    function applyFiltersAndSort() {
+      const statusValue = statusFilterEl.value;
+      const search = searchEl.value.trim().toLowerCase();
+
+      let filtered = clientesData.filter((row) => {
+        if (statusValue === "__SEM_DADO__" && row.status !== null) return false;
+        if (statusValue && statusValue !== "__SEM_DADO__" && row.status !== statusValue) return false;
+        if (search && !row.empresa.toLowerCase().includes(search)) return false;
+        return true;
+      });
+
+      const { column, dir } = currentSort;
+      filtered = [...filtered].sort((a, b) => {
+        let aVal = a[column];
+        let bVal = b[column];
+        if (column === "sinalPrincipal") {
+          aVal = a.sinalPrincipal?.type ?? "";
+          bVal = b.sinalPrincipal?.type ?? "";
+        }
+        if (aVal === null || aVal === undefined) aVal = "";
+        if (bVal === null || bVal === undefined) bVal = "";
+        if (typeof aVal === "string") aVal = aVal.toLowerCase();
+        if (typeof bVal === "string") bVal = bVal.toLowerCase();
+        if (aVal < bVal) return dir === "asc" ? -1 : 1;
+        if (aVal > bVal) return dir === "asc" ? 1 : -1;
+        return 0;
+      });
+
+      countLabelEl.textContent = `${filtered.length} de ${clientesData.length} empresas`;
+      tbodyEl.innerHTML = filtered.length === 0
+        ? `<tr><td colspan="13" class="empty">Nenhuma empresa encontrada com os filtros atuais.</td></tr>`
+        : filtered.map(renderClienteRow).join("");
+    }
+
+    statusFilterEl.addEventListener("change", applyFiltersAndSort);
+    searchEl.addEventListener("input", applyFiltersAndSort);
+
+    document.querySelectorAll("#clientes-table th[data-sort]").forEach((th) => {
+      th.addEventListener("click", () => {
+        const column = th.dataset.sort;
+        if (currentSort.column === column) {
+          currentSort.dir = currentSort.dir === "asc" ? "desc" : "asc";
+        } else {
+          currentSort = { column, dir: "asc" };
+        }
+        applyFiltersAndSort();
+      });
+    });
+
+    async function loadClientes() {
+      tbodyEl.innerHTML = `<tr><td colspan="13" class="loading">Carregando clientes...</td></tr>`;
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/clientes`);
+        clientesData = payload.data ?? [];
+        clientesLoaded = true;
+        applyFiltersAndSort();
+      } catch (error) {
+        tbodyEl.innerHTML = `<tr><td colspan="13" class="error">Não foi possível carregar /api/transportadoras/clientes. ${error.message}</td></tr>`;
+      }
+    }
+
+    // ─── Prospects ──────────────────────────────────────────────────────────
+
+    let prospectsData = [];
+    let prospectsSort = { column: "rank", dir: "asc" };
+
+    const prospectsSearchEl = document.getElementById("prospects-search");
+    const prospectsDecisorFilterEl = document.getElementById("prospects-decisor-filter");
+    const prospectsTbodyEl = document.getElementById("prospects-tbody");
+    const prospectsCountLabelEl = document.getElementById("prospects-count-label");
+
+    function decisorLabel(value) {
+      if (value === "sim") return "Sim";
+      if (value === "parcial") return "Parcial";
+      return "Não";
+    }
+
+    function renderProspectRow(row) {
+      return `
+        <tr>
+          <td>${row.rank}</td>
+          <td>${escapeAttr(row.empresa)}</td>
+          <td><span class="pending" title="Score engine chega na Fase 32">–</span></td>
+          <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
+          <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
+          <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
+          <td><span class="badge">${decisorLabel(row.decisorMapeado)}</span></td>
+          <td><span class="pending" title="Score engine chega na Fase 32">–</span></td>
+          <td>${row.interacaoPx ? formatDate(row.interacaoPx) : "–"}</td>
+          <td>${row.acaoSugerida ? escapeAttr(row.acaoSugerida) : "–"}</td>
+          <td>${row.dono ? escapeAttr(row.dono) : "–"}</td>
+          <td>
+            <button disabled title="Sem tela de conta dedicada a prospects ainda">Ver prospect</button>
+            <button disabled title="Disponível na Fase 34">Criar demanda Growth</button>
+            <button disabled title="Sem fluxo de tarefas de pesquisa ainda">Criar tarefa de pesquisa</button>
+            <button disabled title="Disponível na Fase 33">Adicionar sinal</button>
+          </td>
+        </tr>
+      `;
+    }
+
+    function applyProspectsFiltersAndSort() {
+      const search = prospectsSearchEl.value.trim().toLowerCase();
+      const decisorValue = prospectsDecisorFilterEl.value;
+
+      let filtered = prospectsData.filter((row) => {
+        if (decisorValue && row.decisorMapeado !== decisorValue) return false;
+        if (search && !row.empresa.toLowerCase().includes(search)) return false;
+        return true;
+      });
+
+      const { column, dir } = prospectsSort;
+      filtered = [...filtered].sort((a, b) => {
+        let aVal = a[column];
+        let bVal = b[column];
+        if (aVal === null || aVal === undefined) aVal = "";
+        if (bVal === null || bVal === undefined) bVal = "";
+        if (typeof aVal === "string") aVal = aVal.toLowerCase();
+        if (typeof bVal === "string") bVal = bVal.toLowerCase();
+        if (aVal < bVal) return dir === "asc" ? -1 : 1;
+        if (aVal > bVal) return dir === "asc" ? 1 : -1;
+        return 0;
+      });
+
+      prospectsCountLabelEl.textContent = `${filtered.length} de ${prospectsData.length} empresas`;
+      prospectsTbodyEl.innerHTML = filtered.length === 0
+        ? `<tr><td colspan="12" class="empty">Nenhuma empresa encontrada com os filtros atuais.</td></tr>`
+        : filtered.map(renderProspectRow).join("");
+    }
+
+    prospectsSearchEl.addEventListener("input", applyProspectsFiltersAndSort);
+    prospectsDecisorFilterEl.addEventListener("change", applyProspectsFiltersAndSort);
+
+    document.querySelectorAll("#prospects-table th[data-sort]").forEach((th) => {
+      th.addEventListener("click", () => {
+        const column = th.dataset.sort;
+        if (prospectsSort.column === column) {
+          prospectsSort.dir = prospectsSort.dir === "asc" ? "desc" : "asc";
+        } else {
+          prospectsSort = { column, dir: "asc" };
+        }
+        applyProspectsFiltersAndSort();
+      });
+    });
+
+    async function loadProspects() {
+      prospectsTbodyEl.innerHTML = `<tr><td colspan="12" class="loading">Carregando prospects...</td></tr>`;
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/prospects`);
+        prospectsData = payload.data ?? [];
+        prospectsLoaded = true;
+        applyProspectsFiltersAndSort();
+      } catch (error) {
+        prospectsTbodyEl.innerHTML = `<tr><td colspan="12" class="error">Não foi possível carregar /api/transportadoras/prospects. ${error.message}</td></tr>`;
+      }
+    }
+
+    loadOverview();
+  </script>
+</body>
+</html>

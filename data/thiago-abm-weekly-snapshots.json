@@ -919,21 +919,21 @@
   },
   {
     "weekKey": "2026-S28",
-    "generatedAt": "2026-07-09T14:25:55.249Z",
+    "generatedAt": "2026-07-10T12:03:46.587Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 71,
-    "activePipeline": 61,
+    "totalApproached": 72,
+    "activePipeline": 62,
     "pausedCount": 10,
     "repliedOrBetter": 13,
     "meetingOrBetter": 7,
     "dealCount": 6,
-    "replyRate": 0.21311475409836064,
-    "meetingRate": 0.11475409836065574,
-    "dealRate": 0.09836065573770492,
+    "replyRate": 0.20967741935483872,
+    "meetingRate": 0.11290322580645161,
+    "dealRate": 0.0967741935483871,
     "avgDaysToFirstReply": 7.3,
-    "avgDaysSinceLastOutbound": 0.6,
-    "totalOutboundTouchpoints": 20,
-    "totalInboundTouchpoints": 2,
+    "avgDaysSinceLastOutbound": 0,
+    "totalOutboundTouchpoints": 19,
+    "totalInboundTouchpoints": 1,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -943,7 +943,7 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 34
+        "count": 35
       },
       {
         "stage": "FOLLOW_UP_SENT",
@@ -1041,8 +1041,8 @@
         "company": "Casas Bahia",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 5,
-        "inboundTouchpoints": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-19T18:34:00.000Z"
@@ -1091,11 +1091,11 @@
         "company": "Nestlé",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 1,
+        "outboundTouchpoints": 2,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-07-16T20:30:00.000Z"
+        "nextActionDueAt": "2026-07-17T20:30:00.000Z"
       },
       {
         "company": "Amazon Brasil",
@@ -1118,10 +1118,10 @@
         "nextActionDueAt": "2026-06-24T03:00:00.000Z"
       }
     ],
-    "activeContacts": 61,
+    "activeContacts": 62,
     "excludedContacts": 10,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 71,
-    "qualifiedAdvanceRate": 0.11475409836065574
+    "uniqueCompanies": 72,
+    "qualifiedAdvanceRate": 0.11290322580645161
   }
 ]

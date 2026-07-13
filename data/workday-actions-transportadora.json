@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-07-09T18:33:31.351Z",
+  "generatedAt": "2026-07-10T20:27:33.804Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
   "acceptedConnectionsWithoutMessage": [
     {
-      "id": "cmrduhrym0019k7pg8vg0u6br",
+      "id": "cmrfe0aat0019k70ovgf4fxlm",
       "company": {
-        "id": "cmrduhry30012k7pghqmxvc92",
+        "id": "cmrfe0aad0012k70oluu52foc",
         "name": "Snapshot Co explicit-tra",
         "status": "CONNECTION_SENT"
       },
       "contact": {
-        "id": "cmrduhry90014k7pg62dopndw",
+        "id": "cmrfe0aaj0014k70ox7bwib7p",
         "name": "Contato Snapshot explicit-tra"
       },
       "owner": null,
@@ -23,15 +23,15 @@
   ],
   "overdueNextActions": [
     {
-      "id": "cmrduhry30012k7pghqmxvc92",
+      "id": "cmrfe0aad0012k70oluu52foc",
       "company": {
-        "id": "cmrduhry30012k7pghqmxvc92",
+        "id": "cmrfe0aad0012k70oluu52foc",
         "name": "Snapshot Co explicit-tra",
         "status": "CONNECTION_SENT"
       },
       "contact": null,
       "owner": {
-        "id": "cmrduhrxz0010k7pg9lps7lrz",
+        "id": "cmrfe0aaa0010k70ojwkdyu4m",
         "name": "Nilo Snapshot explicit-tra"
       },
       "reason": "Próxima ação da empresa está vencida.",
@@ -42,15 +42,15 @@
   ],
   "staleCompanies30Days": [
     {
-      "id": "cmrduhry30012k7pghqmxvc92",
+      "id": "cmrfe0aad0012k70oluu52foc",
       "company": {
-        "id": "cmrduhry30012k7pghqmxvc92",
+        "id": "cmrfe0aad0012k70oluu52foc",
         "name": "Snapshot Co explicit-tra",
         "status": "CONNECTION_SENT"
       },
       "contact": null,
       "owner": {
-        "id": "cmrduhrxz0010k7pg9lps7lrz",
+        "id": "cmrfe0aaa0010k70ojwkdyu4m",
         "name": "Nilo Snapshot explicit-tra"
       },
       "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
@@ -62,15 +62,15 @@
   "unmatchedInboxThreads": [],
   "pendingHandoffs": [
     {
-      "id": "cmrduhry30012k7pghqmxvc92",
+      "id": "cmrfe0aad0012k70oluu52foc",
       "company": {
-        "id": "cmrduhry30012k7pghqmxvc92",
+        "id": "cmrfe0aad0012k70oluu52foc",
         "name": "Snapshot Co explicit-tra",
         "status": "CONNECTION_SENT"
       },
       "contact": null,
       "owner": {
-        "id": "cmrduhrxz0010k7pg9lps7lrz",
+        "id": "cmrfe0aaa0010k70ojwkdyu4m",
         "name": "Nilo Snapshot explicit-tra"
       },
       "reason": "Handoff pendente: CONTACT_ROUTED.",
@@ -81,18 +81,18 @@
   ],
   "newSignalsWithoutNextAction": [
     {
-      "id": "cmrduhrys001bk7pg2dv6d06g",
+      "id": "cmrfe0aax001bk70oot2th3f2",
       "company": {
-        "id": "cmrduhry30012k7pghqmxvc92",
+        "id": "cmrfe0aad0012k70oluu52foc",
         "name": "Snapshot Co explicit-tra",
         "status": "CONNECTION_SENT"
       },
       "contact": {
-        "id": "cmrduhry90014k7pg62dopndw",
+        "id": "cmrfe0aaj0014k70ox7bwib7p",
         "name": "Contato Snapshot explicit-tra"
       },
       "owner": {
-        "id": "cmrduhrxz0010k7pg9lps7lrz",
+        "id": "cmrfe0aaa0010k70ojwkdyu4m",
         "name": "Nilo Snapshot explicit-tra"
       },
       "reason": "Novo sinal JOB_OPENING sem próxima ação definida.",
