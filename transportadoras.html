@@ -424,6 +424,7 @@
             <button class="tab-btn active" type="button" id="tab-btn-overview">Visão Geral</button>
             <button class="tab-btn" type="button" id="tab-btn-clientes">Clientes</button>
             <button class="tab-btn" type="button" id="tab-btn-prospects">Prospects</button>
+            <button class="tab-btn" type="button" id="tab-btn-sinais">Sinais</button>
           </div>
           <button class="secondary" type="button" id="refresh">Atualizar</button>
         </div>
@@ -489,6 +490,7 @@
                 <th data-sort="empresa">Empresa</th>
                 <th data-sort="status">Status</th>
                 <th data-sort="scoreTotal">Score total</th>
+                <th data-sort="motivoPrioridade">Motivo prioridade</th>
                 <th data-sort="tier">Tier</th>
                 <th data-sort="diasVendidos">Dias vendidos</th>
                 <th data-sort="contratosPrestados">Contratos</th>
@@ -501,7 +503,7 @@
               </tr>
             </thead>
             <tbody id="clientes-tbody">
-              <tr><td colspan="13" class="loading">Carregando clientes...</td></tr>
+              <tr><td colspan="14" class="loading">Carregando clientes...</td></tr>
             </tbody>
           </table>
         </section>
@@ -526,6 +528,7 @@
                 <th data-sort="rank">Rank</th>
                 <th data-sort="empresa">Empresa</th>
                 <th data-sort="scorePotencial">Score potencial</th>
+                <th data-sort="motivoPrioridade">Motivo prioridade</th>
                 <th data-sort="regiao">Região</th>
                 <th data-sort="segmento">Segmento</th>
                 <th data-sort="sinalExterno">Sinal externo</th>
@@ -538,7 +541,102 @@
               </tr>
             </thead>
             <tbody id="prospects-tbody">
-              <tr><td colspan="12" class="loading">Carregando prospects...</td></tr>
+              <tr><td colspan="13" class="loading">Carregando prospects...</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <section id="tab-sinais" class="tab-view">
+        <section class="filters">
+          <select id="sinais-tipo-filter">
+            <option value="">Tipo: Todos</option>
+          </select>
+          <select id="sinais-status-filter">
+            <option value="">Status: Todos</option>
+            <option value="NOVO">Novo</option>
+            <option value="VALIDADO">Validado</option>
+            <option value="APLICADO">Aplicado ao ranking</option>
+            <option value="DESCARTADO">Descartado</option>
+          </select>
+          <input type="text" id="sinais-search" placeholder="Buscar empresa...">
+          <span class="muted" id="sinais-count-label"></span>
+          <button type="button" class="secondary" id="sinais-novo-btn" style="margin-left:auto;">Novo sinal</button>
+        </section>
+
+        <section class="table-panel" id="sinais-form-panel" style="display:none; padding:15px;">
+          <form id="sinais-form" style="display:grid; gap:10px; grid-template-columns: repeat(2, minmax(0,1fr));">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Empresa
+              <select id="sinal-form-company" required>
+                <option value="">Selecione...</option>
+              </select>
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Tipo
+              <select id="sinal-form-tipo" required>
+                <option value="MARKETING">Marketing</option>
+                <option value="GS">GS</option>
+              </select>
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700; grid-column: span 2;">
+              Fonte comum (opcional — prefila fonte e impacto no score, editável antes de salvar)
+              <select id="sinal-form-fonte-preset">
+                <option value="">Selecionar fonte comum...</option>
+                <option value="Evento PX|20">Evento PX (20 pts)</option>
+                <option value="Webinar|15">Webinar (15 pts)</option>
+                <option value="Podcast/Conteúdo|15">Podcast/Conteúdo (15 pts)</option>
+                <option value="Campanha - abertura/clique|10">Campanha - abertura/clique (10 pts)</option>
+                <option value="Conteúdo ABM|10">Conteúdo ABM (10 pts)</option>
+                <option value="Visita GS|25">Visita GS (25 pts)</option>
+                <option value="PX Day|30">PX Day (30 pts)</option>
+                <option value="Reunião estratégica|20">Reunião estratégica (20 pts)</option>
+                <option value="Sinal de expansão ou risco|15">Sinal de expansão ou risco (15 pts)</option>
+                <option value="Sem touchpoint em 60 dias|-20">Sem touchpoint em 60 dias (-20 pts)</option>
+              </select>
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Fonte
+              <input type="text" id="sinal-form-fonte" required placeholder="Ex.: Webinar Logtech 2026">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Impacto no score
+              <input type="number" id="sinal-form-impacto" required step="1" value="10">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700; grid-column: span 2;">
+              Descrição
+              <textarea id="sinal-form-descricao" required rows="2" placeholder="Descreva o sinal observado..." style="font-family:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:5px;"></textarea>
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Validade (opcional)
+              <input type="date" id="sinal-form-validade">
+            </label>
+            <div style="grid-column: span 2; display:flex; gap:8px; align-items:center;">
+              <button type="submit">Salvar sinal</button>
+              <button type="button" class="secondary" id="sinal-form-cancel">Cancelar</button>
+            </div>
+            <div class="error" id="sinal-form-error" style="display:none; grid-column: span 2;"></div>
+          </form>
+        </section>
+
+        <div class="error" id="sinais-action-error" style="display:none;"></div>
+
+        <section class="table-panel">
+          <table class="clientes-table" id="sinais-table">
+            <thead>
+              <tr>
+                <th class="no-sort">Empresa</th>
+                <th class="no-sort">Tipo de sinal</th>
+                <th class="no-sort">Fonte</th>
+                <th class="no-sort">Descrição</th>
+                <th class="no-sort">Impacto no score</th>
+                <th class="no-sort">Validade</th>
+                <th class="no-sort">Status</th>
+                <th class="no-sort">Ação</th>
+              </tr>
+            </thead>
+            <tbody id="sinais-tbody">
+              <tr><td colspan="8" class="loading">Carregando sinais...</td></tr>
             </tbody>
           </table>
         </section>
@@ -587,36 +685,46 @@
     const tabOverviewEl = document.getElementById("tab-overview");
     const tabClientesEl = document.getElementById("tab-clientes");
     const tabProspectsEl = document.getElementById("tab-prospects");
+    const tabSinaisEl = document.getElementById("tab-sinais");
     const tabBtnOverviewEl = document.getElementById("tab-btn-overview");
     const tabBtnClientesEl = document.getElementById("tab-btn-clientes");
     const tabBtnProspectsEl = document.getElementById("tab-btn-prospects");
+    const tabBtnSinaisEl = document.getElementById("tab-btn-sinais");
 
     let clientesLoaded = false;
     let prospectsLoaded = false;
+    let sinaisLoaded = false;
 
     function showTab(name) {
       tabOverviewEl.classList.toggle("active", name === "overview");
       tabClientesEl.classList.toggle("active", name === "clientes");
       tabProspectsEl.classList.toggle("active", name === "prospects");
+      tabSinaisEl.classList.toggle("active", name === "sinais");
       tabBtnOverviewEl.classList.toggle("active", name === "overview");
       tabBtnClientesEl.classList.toggle("active", name === "clientes");
       tabBtnProspectsEl.classList.toggle("active", name === "prospects");
+      tabBtnSinaisEl.classList.toggle("active", name === "sinais");
       if (name === "clientes" && !clientesLoaded) {
         loadClientes();
       }
       if (name === "prospects" && !prospectsLoaded) {
         loadProspects();
       }
+      if (name === "sinais" && !sinaisLoaded) {
+        loadSinais();
+      }
     }
 
     tabBtnOverviewEl.addEventListener("click", () => showTab("overview"));
     tabBtnClientesEl.addEventListener("click", () => showTab("clientes"));
     tabBtnProspectsEl.addEventListener("click", () => showTab("prospects"));
+    tabBtnSinaisEl.addEventListener("click", () => showTab("sinais"));
 
     document.getElementById("refresh").addEventListener("click", () => {
       loadOverview();
       if (clientesLoaded) loadClientes();
       if (prospectsLoaded) loadProspects();
+      if (sinaisLoaded) loadSinais();
     });
 
     // ─── Visão Geral ────────────────────────────────────────────────────────
@@ -767,7 +875,8 @@
           <td>${row.rank}</td>
           <td>${escapeAttr(row.empresa)}</td>
           <td><span class="status-pill ${statusPillClass(row.status)}">${statusLabel(row.status)}</span></td>
-          <td><span class="pending" title="Score engine chega na Fase 32">–</span></td>
+          <td>${row.scoreTotal}</td>
+          <td>${escapeAttr(row.motivoPrioridade)}</td>
           <td>${row.tier ?? "–"}</td>
           <td>${row.diasVendidos ?? "–"}</td>
           <td>${row.contratosPrestados ?? "–"}</td>
@@ -816,7 +925,7 @@
 
       countLabelEl.textContent = `${filtered.length} de ${clientesData.length} empresas`;
       tbodyEl.innerHTML = filtered.length === 0
-        ? `<tr><td colspan="13" class="empty">Nenhuma empresa encontrada com os filtros atuais.</td></tr>`
+        ? `<tr><td colspan="14" class="empty">Nenhuma empresa encontrada com os filtros atuais.</td></tr>`
         : filtered.map(renderClienteRow).join("");
     }
 
@@ -836,14 +945,14 @@
     });
 
     async function loadClientes() {
-      tbodyEl.innerHTML = `<tr><td colspan="13" class="loading">Carregando clientes...</td></tr>`;
+      tbodyEl.innerHTML = `<tr><td colspan="14" class="loading">Carregando clientes...</td></tr>`;
       try {
         const payload = await fetchJson(`${apiBase}/api/transportadoras/clientes`);
         clientesData = payload.data ?? [];
         clientesLoaded = true;
         applyFiltersAndSort();
       } catch (error) {
-        tbodyEl.innerHTML = `<tr><td colspan="13" class="error">Não foi possível carregar /api/transportadoras/clientes. ${error.message}</td></tr>`;
+        tbodyEl.innerHTML = `<tr><td colspan="14" class="error">Não foi possível carregar /api/transportadoras/clientes. ${error.message}</td></tr>`;
       }
     }
 
@@ -868,7 +977,8 @@
         <tr>
           <td>${row.rank}</td>
           <td>${escapeAttr(row.empresa)}</td>
-          <td><span class="pending" title="Score engine chega na Fase 32">–</span></td>
+          <td>${row.scorePotencial}</td>
+          <td>${escapeAttr(row.motivoPrioridade)}</td>
           <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
           <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
           <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
@@ -881,7 +991,7 @@
             <button disabled title="Sem tela de conta dedicada a prospects ainda">Ver prospect</button>
             <button disabled title="Disponível na Fase 34">Criar demanda Growth</button>
             <button disabled title="Sem fluxo de tarefas de pesquisa ainda">Criar tarefa de pesquisa</button>
-            <button disabled title="Disponível na Fase 33">Adicionar sinal</button>
+            <button type="button" data-adicionar-sinal="${escapeAttr(row.id)}" title="Abrir aba Sinais com esta empresa pré-selecionada">Adicionar sinal</button>
           </td>
         </tr>
       `;
@@ -912,7 +1022,7 @@
 
       prospectsCountLabelEl.textContent = `${filtered.length} de ${prospectsData.length} empresas`;
       prospectsTbodyEl.innerHTML = filtered.length === 0
-        ? `<tr><td colspan="12" class="empty">Nenhuma empresa encontrada com os filtros atuais.</td></tr>`
+        ? `<tr><td colspan="13" class="empty">Nenhuma empresa encontrada com os filtros atuais.</td></tr>`
         : filtered.map(renderProspectRow).join("");
     }
 
@@ -932,16 +1042,293 @@
     });
 
     async function loadProspects() {
-      prospectsTbodyEl.innerHTML = `<tr><td colspan="12" class="loading">Carregando prospects...</td></tr>`;
+      prospectsTbodyEl.innerHTML = `<tr><td colspan="13" class="loading">Carregando prospects...</td></tr>`;
       try {
         const payload = await fetchJson(`${apiBase}/api/transportadoras/prospects`);
         prospectsData = payload.data ?? [];
         prospectsLoaded = true;
         applyProspectsFiltersAndSort();
       } catch (error) {
-        prospectsTbodyEl.innerHTML = `<tr><td colspan="12" class="error">Não foi possível carregar /api/transportadoras/prospects. ${error.message}</td></tr>`;
+        prospectsTbodyEl.innerHTML = `<tr><td colspan="13" class="error">Não foi possível carregar /api/transportadoras/prospects. ${error.message}</td></tr>`;
       }
     }
+
+    prospectsTbodyEl.addEventListener("click", (event) => {
+      const btn = event.target.closest("button[data-adicionar-sinal]");
+      if (!btn) return;
+      const companyId = btn.dataset.adicionarSinal;
+      showTab("sinais");
+      openSinalForm(companyId);
+    });
+
+    // ─── Sinais ─────────────────────────────────────────────────────────────
+
+    // Real, closed set of tipo values this feed can ever produce: MARKETING/GS
+    // from manual entry, plus every SignalType this project's schema defines
+    // for the pre-existing LinkedIn/social Signal pipeline. No fabricated
+    // "LinkedIn"/"Social"/"Notícia" buckets — those don't match the real
+    // SignalType enum, so the filter reflects the real underlying values.
+    const TIPO_LABELS = {
+      MARKETING: "Marketing",
+      GS: "GS",
+      POST_LOGISTICS: "Post logística",
+      JOB_OPENING: "Vaga de emprego",
+      ENGAGEMENT: "Engajamento",
+      PROFILE_VISIT: "Visita de perfil",
+      COMPANY_NEWS: "Notícia da empresa",
+      RECENT_POST: "Post recente",
+      ENRICHMENT: "Enriquecimento"
+    };
+
+    function tipoLabel(tipo) {
+      return TIPO_LABELS[tipo] ?? tipo;
+    }
+
+    const sinaisTipoFilterEl = document.getElementById("sinais-tipo-filter");
+    sinaisTipoFilterEl.innerHTML = `<option value="">Tipo: Todos</option>` +
+      Object.entries(TIPO_LABELS).map(([value, label]) => `<option value="${escapeAttr(value)}">${escapeAttr(label)}</option>`).join("");
+
+    // Manual signals use TransportadoraSinalStatus (NOVO/VALIDADO/APLICADO_AO_RANKING/DESCARTADO),
+    // pre-existing Signal rows use SignalStatus (NEW/REVIEWED/APPLIED_TO_SCORE/IGNORED) —
+    // both map onto the same generic lifecycle for display/filtering purposes.
+    function sinalGenericStatus(status) {
+      if (status === "NOVO" || status === "NEW") return "NOVO";
+      if (status === "VALIDADO" || status === "REVIEWED") return "VALIDADO";
+      if (status === "APLICADO_AO_RANKING" || status === "APPLIED_TO_SCORE") return "APLICADO";
+      if (status === "DESCARTADO" || status === "IGNORED") return "DESCARTADO";
+      if (status === "CONVERTIDO_EM_DEMANDA") return "CONVERTIDO";
+      return status;
+    }
+
+    function sinalStatusLabel(generic) {
+      if (generic === "NOVO") return "Novo";
+      if (generic === "VALIDADO") return "Validado";
+      if (generic === "APLICADO") return "Aplicado ao ranking";
+      if (generic === "DESCARTADO") return "Descartado";
+      if (generic === "CONVERTIDO") return "Convertido em demanda";
+      return generic;
+    }
+
+    function sinalStatusPillClass(generic) {
+      if (generic === "APLICADO" || generic === "CONVERTIDO") return "is-ativo";
+      if (generic === "VALIDADO") return "is-inativo";
+      if (generic === "DESCARTADO") return "is-churn";
+      return "is-sem-dado";
+    }
+
+    let sinaisData = [];
+
+    const sinaisStatusFilterEl = document.getElementById("sinais-status-filter");
+    const sinaisSearchEl = document.getElementById("sinais-search");
+    const sinaisTbodyEl = document.getElementById("sinais-tbody");
+    const sinaisCountLabelEl = document.getElementById("sinais-count-label");
+    const sinaisActionErrorEl = document.getElementById("sinais-action-error");
+
+    function showSinaisActionError(message) {
+      sinaisActionErrorEl.textContent = message;
+      sinaisActionErrorEl.style.display = "block";
+    }
+
+    function hideSinaisActionError() {
+      sinaisActionErrorEl.style.display = "none";
+    }
+
+    const ACTION_LABELS = { validar: "Validar", aplicar: "Aplicar ao score", descartar: "Descartar" };
+
+    function renderSinalActions(item) {
+      const actions = item.acaoDisponivel || [];
+      const actionButtons = ["validar", "aplicar", "descartar"].map((action) => {
+        const enabled = actions.includes(action);
+        return `<button type="button" ${enabled ? "" : "disabled"} data-sinal-action="${action}" data-sinal-id="${escapeAttr(item.id)}" title="${enabled ? "" : "Ação não disponível para o status atual"}">${ACTION_LABELS[action]}</button>`;
+      }).join("");
+      return `${actionButtons}<button disabled title="Disponível na Fase 34">Criar demanda</button>`;
+    }
+
+    function renderSinaisTabRow(item) {
+      const generic = sinalGenericStatus(item.status);
+      return `
+        <tr>
+          <td>${escapeAttr(item.empresa)}</td>
+          <td>${escapeAttr(tipoLabel(item.tipo))}</td>
+          <td>${escapeAttr(item.fonte)}</td>
+          <td>${escapeAttr(item.descricao)}</td>
+          <td>${item.impactoScore}</td>
+          <td>${item.validade ? formatDate(item.validade) : "–"}</td>
+          <td><span class="status-pill ${sinalStatusPillClass(generic)}">${sinalStatusLabel(generic)}</span></td>
+          <td>${renderSinalActions(item)}</td>
+        </tr>
+      `;
+    }
+
+    function applySinaisFiltersAndSort() {
+      const tipoValue = sinaisTipoFilterEl.value;
+      const statusValue = sinaisStatusFilterEl.value;
+      const search = sinaisSearchEl.value.trim().toLowerCase();
+
+      const filtered = sinaisData.filter((row) => {
+        if (tipoValue && row.tipo !== tipoValue) return false;
+        if (statusValue && sinalGenericStatus(row.status) !== statusValue) return false;
+        if (search && !row.empresa.toLowerCase().includes(search)) return false;
+        return true;
+      });
+
+      sinaisCountLabelEl.textContent = `${filtered.length} de ${sinaisData.length} sinais`;
+      sinaisTbodyEl.innerHTML = filtered.length === 0
+        ? `<tr><td colspan="8" class="empty">Nenhum sinal encontrado com os filtros atuais.</td></tr>`
+        : filtered.map(renderSinaisTabRow).join("");
+    }
+
+    sinaisTipoFilterEl.addEventListener("change", applySinaisFiltersAndSort);
+    sinaisStatusFilterEl.addEventListener("change", applySinaisFiltersAndSort);
+    sinaisSearchEl.addEventListener("input", applySinaisFiltersAndSort);
+
+    async function loadSinais() {
+      sinaisTbodyEl.innerHTML = `<tr><td colspan="8" class="loading">Carregando sinais...</td></tr>`;
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/sinais`);
+        sinaisData = payload.data ?? [];
+        sinaisLoaded = true;
+        applySinaisFiltersAndSort();
+      } catch (error) {
+        sinaisTbodyEl.innerHTML = `<tr><td colspan="8" class="error">Não foi possível carregar /api/transportadoras/sinais. ${error.message}</td></tr>`;
+      }
+    }
+
+    sinaisTbodyEl.addEventListener("click", async (event) => {
+      const btn = event.target.closest("button[data-sinal-action]");
+      if (!btn || btn.disabled) return;
+      hideSinaisActionError();
+      const action = btn.dataset.sinalAction;
+      const id = btn.dataset.sinalId;
+      btn.disabled = true;
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/sinais/${encodeURIComponent(id)}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ action })
+        });
+        if (!response.ok) {
+          const body = await response.json().catch(() => ({}));
+          showSinaisActionError(`Não foi possível aplicar a ação "${ACTION_LABELS[action] ?? action}": ${body.error || `HTTP ${response.status}`}`);
+          btn.disabled = false;
+          return;
+        }
+        await loadSinais();
+      } catch (error) {
+        showSinaisActionError(`Erro de rede ao aplicar a ação "${ACTION_LABELS[action] ?? action}": ${error.message}`);
+        btn.disabled = false;
+      }
+    });
+
+    // ─── Sinais: capture form ───────────────────────────────────────────────
+
+    const sinaisNovoBtnEl = document.getElementById("sinais-novo-btn");
+    const sinaisFormPanelEl = document.getElementById("sinais-form-panel");
+    const sinaisFormEl = document.getElementById("sinais-form");
+    const sinalFormCompanyEl = document.getElementById("sinal-form-company");
+    const sinalFormTipoEl = document.getElementById("sinal-form-tipo");
+    const sinalFormFontePresetEl = document.getElementById("sinal-form-fonte-preset");
+    const sinalFormFonteEl = document.getElementById("sinal-form-fonte");
+    const sinalFormImpactoEl = document.getElementById("sinal-form-impacto");
+    const sinalFormDescricaoEl = document.getElementById("sinal-form-descricao");
+    const sinalFormValidadeEl = document.getElementById("sinal-form-validade");
+    const sinalFormErrorEl = document.getElementById("sinal-form-error");
+    const sinalFormCancelEl = document.getElementById("sinal-form-cancel");
+
+    function showSinalFormError(message) {
+      sinalFormErrorEl.textContent = message;
+      sinalFormErrorEl.style.display = "block";
+    }
+
+    function hideSinalFormError() {
+      sinalFormErrorEl.style.display = "none";
+    }
+
+    // Preset only prefills on selection — never re-overrides after the
+    // operator has started editing fonte/impacto by hand.
+    sinalFormFontePresetEl.addEventListener("change", () => {
+      const value = sinalFormFontePresetEl.value;
+      if (!value) return;
+      const [fonte, pontos] = value.split("|");
+      sinalFormFonteEl.value = fonte;
+      sinalFormImpactoEl.value = pontos;
+    });
+
+    async function ensureCompanyOptionsLoaded() {
+      const tasks = [];
+      if (!clientesLoaded) tasks.push(loadClientes());
+      if (!prospectsLoaded) tasks.push(loadProspects());
+      if (tasks.length) await Promise.all(tasks);
+    }
+
+    function buildCompanyOptions() {
+      const map = new Map();
+      clientesData.forEach((row) => map.set(row.id, row.empresa));
+      prospectsData.forEach((row) => map.set(row.id, row.empresa));
+      return Array.from(map.entries()).sort((a, b) => a[1].localeCompare(b[1]));
+    }
+
+    function populateCompanySelect(preselectId) {
+      const options = buildCompanyOptions();
+      sinalFormCompanyEl.innerHTML = options.length === 0
+        ? `<option value="">Nenhuma empresa Transportadora encontrada</option>`
+        : `<option value="">Selecione...</option>` +
+          options.map(([id, name]) => `<option value="${escapeAttr(id)}">${escapeAttr(name)}</option>`).join("");
+      if (preselectId) sinalFormCompanyEl.value = preselectId;
+    }
+
+    async function openSinalForm(preselectCompanyId) {
+      await ensureCompanyOptionsLoaded();
+      populateCompanySelect(preselectCompanyId);
+      sinaisFormPanelEl.style.display = "block";
+    }
+
+    function closeSinalForm() {
+      sinaisFormPanelEl.style.display = "none";
+      sinaisFormEl.reset();
+      hideSinalFormError();
+    }
+
+    sinaisNovoBtnEl.addEventListener("click", () => openSinalForm());
+    sinalFormCancelEl.addEventListener("click", () => closeSinalForm());
+
+    sinaisFormEl.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      hideSinalFormError();
+
+      if (!sinalFormCompanyEl.value) {
+        showSinalFormError("Selecione uma empresa.");
+        return;
+      }
+
+      const payload = {
+        companyId: sinalFormCompanyEl.value,
+        tipo: sinalFormTipoEl.value,
+        fonte: sinalFormFonteEl.value.trim(),
+        descricao: sinalFormDescricaoEl.value.trim(),
+        impactoScore: Number(sinalFormImpactoEl.value)
+      };
+      if (sinalFormValidadeEl.value) {
+        payload.validadeAte = sinalFormValidadeEl.value;
+      }
+
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/sinais`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) {
+          const body = await response.json().catch(() => ({}));
+          showSinalFormError(body.error || `HTTP ${response.status}`);
+          return;
+        }
+        closeSinalForm();
+        await loadSinais();
+      } catch (error) {
+        showSinalFormError(`Erro de rede: ${error.message}`);
+      }
+    });
 
     loadOverview();
   </script>
