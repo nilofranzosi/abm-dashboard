@@ -425,6 +425,7 @@
             <button class="tab-btn" type="button" id="tab-btn-clientes">Clientes</button>
             <button class="tab-btn" type="button" id="tab-btn-prospects">Prospects</button>
             <button class="tab-btn" type="button" id="tab-btn-sinais">Sinais</button>
+            <button class="tab-btn" type="button" id="tab-btn-demandas">Demandas</button>
           </div>
           <button class="secondary" type="button" id="refresh">Atualizar</button>
         </div>
@@ -641,6 +642,103 @@
           </table>
         </section>
       </section>
+
+      <section id="tab-demandas" class="tab-view">
+        <section class="filters">
+          <select id="demandas-status-filter">
+            <option value="">Status: Todas</option>
+            <option value="SUGERIDA">Sugerida</option>
+            <option value="APROVADA">Aprovada</option>
+            <option value="EM_PRODUCAO">Em produção</option>
+            <option value="EXECUTADA">Executada</option>
+            <option value="MEDIR_RETORNO">Medir retorno</option>
+          </select>
+          <select id="demandas-tipo-filter">
+            <option value="">Tipo: Todos</option>
+            <option value="CONTEUDO_THIAGO">Conteúdo Thiago</option>
+            <option value="ACAO_GS">Ação GS</option>
+            <option value="CAMPANHA_ABM">Campanha ABM</option>
+            <option value="GROWTH">Growth</option>
+            <option value="PESQUISA">Pesquisa</option>
+          </select>
+          <input type="text" id="demandas-search" placeholder="Buscar empresa...">
+          <span class="muted" id="demandas-count-label"></span>
+        </section>
+
+        <section class="table-panel" id="demanda-form-panel" style="display:none; padding:15px;">
+          <form id="demanda-form" style="display:grid; gap:10px; grid-template-columns: repeat(2, minmax(0,1fr));">
+            <div class="muted" id="demanda-form-origem-label" style="grid-column: span 2;"></div>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700; grid-column: span 2;">
+              Título
+              <input type="text" id="demanda-form-titulo" required placeholder="Ex.: Case de sucesso para campanha ABM">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Tipo
+              <select id="demanda-form-tipo" required>
+                <option value="CONTEUDO_THIAGO">Conteúdo Thiago</option>
+                <option value="ACAO_GS">Ação GS</option>
+                <option value="CAMPANHA_ABM">Campanha ABM</option>
+                <option value="GROWTH">Growth</option>
+                <option value="PESQUISA">Pesquisa</option>
+              </select>
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Dono
+              <input type="text" id="demanda-form-dono" required placeholder="Ex.: Thiago">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Formato sugerido (opcional)
+              <input type="text" id="demanda-form-formato" placeholder="Ex.: Vídeo curto">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Prazo (opcional)
+              <input type="date" id="demanda-form-prazo">
+            </label>
+            <div style="grid-column: span 2; display:flex; gap:8px; align-items:center;">
+              <button type="submit">Salvar demanda</button>
+              <button type="button" class="secondary" id="demanda-form-cancel">Cancelar</button>
+            </div>
+            <div class="error" id="demanda-form-error" style="display:none; grid-column: span 2;"></div>
+          </form>
+        </section>
+
+        <section class="table-panel" id="demanda-briefing-panel" style="display:none; padding:15px;">
+          <div class="muted" style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
+            <strong id="demanda-briefing-title">Briefing</strong>
+            <span>
+              <button type="button" class="secondary" id="demanda-briefing-copy">Copiar</button>
+              <button type="button" class="secondary" id="demanda-briefing-close">Fechar</button>
+            </span>
+          </div>
+          <pre id="demanda-briefing-text" style="white-space:pre-wrap; font-family:inherit; font-size:12px; margin:10px 0 0;"></pre>
+        </section>
+
+        <div class="error" id="demandas-action-error" style="display:none;"></div>
+
+        <section class="table-panel">
+          <table class="clientes-table" id="demandas-table">
+            <thead>
+              <tr>
+                <th class="no-sort">Empresa</th>
+                <th class="no-sort">Título</th>
+                <th class="no-sort">Tipo</th>
+                <th class="no-sort">Status</th>
+                <th class="no-sort">Motivo</th>
+                <th class="no-sort">Fonte do sinal</th>
+                <th class="no-sort">Formato sugerido</th>
+                <th class="no-sort">Dono</th>
+                <th class="no-sort">Prazo</th>
+                <th class="no-sort">Link do material</th>
+                <th class="no-sort">Resultado</th>
+                <th class="no-sort">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="demandas-tbody">
+              <tr><td colspan="12" class="loading">Carregando demandas...</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
     </main>
   </div>
 
@@ -686,24 +784,29 @@
     const tabClientesEl = document.getElementById("tab-clientes");
     const tabProspectsEl = document.getElementById("tab-prospects");
     const tabSinaisEl = document.getElementById("tab-sinais");
+    const tabDemandasEl = document.getElementById("tab-demandas");
     const tabBtnOverviewEl = document.getElementById("tab-btn-overview");
     const tabBtnClientesEl = document.getElementById("tab-btn-clientes");
     const tabBtnProspectsEl = document.getElementById("tab-btn-prospects");
     const tabBtnSinaisEl = document.getElementById("tab-btn-sinais");
+    const tabBtnDemandasEl = document.getElementById("tab-btn-demandas");
 
     let clientesLoaded = false;
     let prospectsLoaded = false;
     let sinaisLoaded = false;
+    let demandasLoaded = false;
 
     function showTab(name) {
       tabOverviewEl.classList.toggle("active", name === "overview");
       tabClientesEl.classList.toggle("active", name === "clientes");
       tabProspectsEl.classList.toggle("active", name === "prospects");
       tabSinaisEl.classList.toggle("active", name === "sinais");
+      tabDemandasEl.classList.toggle("active", name === "demandas");
       tabBtnOverviewEl.classList.toggle("active", name === "overview");
       tabBtnClientesEl.classList.toggle("active", name === "clientes");
       tabBtnProspectsEl.classList.toggle("active", name === "prospects");
       tabBtnSinaisEl.classList.toggle("active", name === "sinais");
+      tabBtnDemandasEl.classList.toggle("active", name === "demandas");
       if (name === "clientes" && !clientesLoaded) {
         loadClientes();
       }
@@ -713,18 +816,23 @@
       if (name === "sinais" && !sinaisLoaded) {
         loadSinais();
       }
+      if (name === "demandas" && !demandasLoaded) {
+        loadDemandas();
+      }
     }
 
     tabBtnOverviewEl.addEventListener("click", () => showTab("overview"));
     tabBtnClientesEl.addEventListener("click", () => showTab("clientes"));
     tabBtnProspectsEl.addEventListener("click", () => showTab("prospects"));
     tabBtnSinaisEl.addEventListener("click", () => showTab("sinais"));
+    tabBtnDemandasEl.addEventListener("click", () => showTab("demandas"));
 
     document.getElementById("refresh").addEventListener("click", () => {
       loadOverview();
       if (clientesLoaded) loadClientes();
       if (prospectsLoaded) loadProspects();
       if (sinaisLoaded) loadSinais();
+      if (demandasLoaded) loadDemandas();
     });
 
     // ─── Visão Geral ────────────────────────────────────────────────────────
@@ -887,7 +995,7 @@
           <td>${row.dono ? escapeAttr(row.dono) : "–"}</td>
           <td>
             <button disabled title="Disponível na Fase 32/33/34">Ver conta</button>
-            <button disabled title="Disponível na Fase 32/33/34">Gerar demanda</button>
+            <button type="button" data-gerar-demanda-cliente="${escapeAttr(row.id)}">Gerar demanda</button>
             <button disabled title="Disponível na Fase 32/33/34">Registrar touchpoint</button>
             <button disabled title="Disponível na Fase 32/33/34">Recalcular score</button>
           </td>
@@ -931,6 +1039,12 @@
 
     statusFilterEl.addEventListener("change", applyFiltersAndSort);
     searchEl.addEventListener("input", applyFiltersAndSort);
+
+    tbodyEl.addEventListener("click", (event) => {
+      const btn = event.target.closest("button[data-gerar-demanda-cliente]");
+      if (!btn) return;
+      openDemandaForm({ origem: "cliente", companyId: btn.dataset.gerarDemandaCliente });
+    });
 
     document.querySelectorAll("#clientes-table th[data-sort]").forEach((th) => {
       th.addEventListener("click", () => {
@@ -989,7 +1103,7 @@
           <td>${row.dono ? escapeAttr(row.dono) : "–"}</td>
           <td>
             <button disabled title="Sem tela de conta dedicada a prospects ainda">Ver prospect</button>
-            <button disabled title="Disponível na Fase 34">Criar demanda Growth</button>
+            <button type="button" data-gerar-demanda-prospect="${escapeAttr(row.id)}">Criar demanda Growth</button>
             <button disabled title="Sem fluxo de tarefas de pesquisa ainda">Criar tarefa de pesquisa</button>
             <button type="button" data-adicionar-sinal="${escapeAttr(row.id)}" title="Abrir aba Sinais com esta empresa pré-selecionada">Adicionar sinal</button>
           </td>
@@ -1054,11 +1168,17 @@
     }
 
     prospectsTbodyEl.addEventListener("click", (event) => {
-      const btn = event.target.closest("button[data-adicionar-sinal]");
-      if (!btn) return;
-      const companyId = btn.dataset.adicionarSinal;
-      showTab("sinais");
-      openSinalForm(companyId);
+      const sinalBtn = event.target.closest("button[data-adicionar-sinal]");
+      if (sinalBtn) {
+        const companyId = sinalBtn.dataset.adicionarSinal;
+        showTab("sinais");
+        openSinalForm(companyId);
+        return;
+      }
+      const demandaBtn = event.target.closest("button[data-gerar-demanda-prospect]");
+      if (demandaBtn) {
+        openDemandaForm({ origem: "prospect", companyId: demandaBtn.dataset.gerarDemandaProspect });
+      }
     });
 
     // ─── Sinais ─────────────────────────────────────────────────────────────
@@ -1141,7 +1261,7 @@
         const enabled = actions.includes(action);
         return `<button type="button" ${enabled ? "" : "disabled"} data-sinal-action="${action}" data-sinal-id="${escapeAttr(item.id)}" title="${enabled ? "" : "Ação não disponível para o status atual"}">${ACTION_LABELS[action]}</button>`;
       }).join("");
-      return `${actionButtons}<button disabled title="Disponível na Fase 34">Criar demanda</button>`;
+      return `${actionButtons}<button type="button" ${item.podeGerarDemanda ? "" : "disabled"} data-gerar-demanda-sinal="${escapeAttr(item.id)}" title="${item.podeGerarDemanda ? "" : "Disponível quando o sinal estiver Aplicado ao ranking"}">Criar demanda</button>`;
     }
 
     function renderSinaisTabRow(item) {
@@ -1195,6 +1315,12 @@
     }
 
     sinaisTbodyEl.addEventListener("click", async (event) => {
+      const demandaBtn = event.target.closest("button[data-gerar-demanda-sinal]");
+      if (demandaBtn && !demandaBtn.disabled) {
+        openDemandaForm({ origem: "sinal", sinalId: demandaBtn.dataset.gerarDemandaSinal });
+        return;
+      }
+
       const btn = event.target.closest("button[data-sinal-action]");
       if (!btn || btn.disabled) return;
       hideSinaisActionError();
@@ -1327,6 +1453,334 @@
         await loadSinais();
       } catch (error) {
         showSinalFormError(`Erro de rede: ${error.message}`);
+      }
+    });
+
+    // ─── Demandas ───────────────────────────────────────────────────────────
+
+    const DEMANDA_TIPO_LABELS = {
+      CONTEUDO_THIAGO: "Conteúdo Thiago",
+      ACAO_GS: "Ação GS",
+      CAMPANHA_ABM: "Campanha ABM",
+      GROWTH: "Growth",
+      PESQUISA: "Pesquisa"
+    };
+
+    const DEMANDA_TIPO_DONO_DEFAULT = {
+      CONTEUDO_THIAGO: "Thiago",
+      ACAO_GS: "GS",
+      CAMPANHA_ABM: "Marketing",
+      GROWTH: "Growth",
+      PESQUISA: "Thiago"
+    };
+
+    const DEMANDA_STATUS_LABELS = {
+      SUGERIDA: "Sugerida",
+      APROVADA: "Aprovada",
+      EM_PRODUCAO: "Em produção",
+      EXECUTADA: "Executada",
+      MEDIR_RETORNO: "Medir retorno"
+    };
+
+    function demandaTipoLabel(tipo) {
+      return DEMANDA_TIPO_LABELS[tipo] ?? tipo;
+    }
+
+    function demandaStatusLabel(status) {
+      return DEMANDA_STATUS_LABELS[status] ?? status;
+    }
+
+    function demandaStatusPillClass(status) {
+      if (status === "MEDIR_RETORNO" || status === "EXECUTADA") return "is-ativo";
+      if (status === "EM_PRODUCAO" || status === "APROVADA") return "is-inativo";
+      return "is-sem-dado";
+    }
+
+    let demandasData = [];
+
+    const demandasStatusFilterEl = document.getElementById("demandas-status-filter");
+    const demandasTipoFilterEl = document.getElementById("demandas-tipo-filter");
+    const demandasSearchEl = document.getElementById("demandas-search");
+    const demandasTbodyEl = document.getElementById("demandas-tbody");
+    const demandasCountLabelEl = document.getElementById("demandas-count-label");
+    const demandasActionErrorEl = document.getElementById("demandas-action-error");
+
+    function showDemandasActionError(message) {
+      demandasActionErrorEl.textContent = message;
+      demandasActionErrorEl.style.display = "block";
+    }
+
+    function hideDemandasActionError() {
+      demandasActionErrorEl.style.display = "none";
+    }
+
+    function renderDemandaActions(item) {
+      const status = item.status;
+      const aprovarEnabled = status === "SUGERIDA";
+      const clickupEnabled = status === "APROVADA";
+      const executadaEnabled = status === "EM_PRODUCAO";
+      const resultadoEnabled = status === "EXECUTADA";
+      return `
+        <button type="button" ${aprovarEnabled ? "" : "disabled"} data-demanda-action="aprovar" data-demanda-id="${escapeAttr(item.id)}" title="${aprovarEnabled ? "" : "Ação não disponível para o status atual"}">Aprovar</button>
+        <button type="button" data-demanda-briefing="${escapeAttr(item.id)}">Gerar briefing</button>
+        <button type="button" ${clickupEnabled ? "" : "disabled"} data-demanda-action="enviarClickup" data-demanda-id="${escapeAttr(item.id)}" title="${clickupEnabled ? "" : "Ação não disponível para o status atual"}">Enviar para ClickUp</button>
+        <button type="button" ${executadaEnabled ? "" : "disabled"} data-demanda-action="marcarExecutada" data-demanda-id="${escapeAttr(item.id)}" title="${executadaEnabled ? "" : "Ação não disponível para o status atual"}">Marcar executada</button>
+        <button type="button" ${resultadoEnabled ? "" : "disabled"} data-demanda-action="registrarResultado" data-demanda-id="${escapeAttr(item.id)}" title="${resultadoEnabled ? "" : "Ação não disponível para o status atual"}">Registrar resultado</button>
+      `;
+    }
+
+    function renderDemandaRow(item) {
+      return `
+        <tr>
+          <td>${escapeAttr(item.empresa)}</td>
+          <td>${escapeAttr(item.titulo)}</td>
+          <td>${escapeAttr(demandaTipoLabel(item.tipo))}</td>
+          <td><span class="status-pill ${demandaStatusPillClass(item.status)}">${demandaStatusLabel(item.status)}</span></td>
+          <td>${escapeAttr(item.motivo)}</td>
+          <td>${item.fonteDoSinal ? escapeAttr(item.fonteDoSinal) : "–"}</td>
+          <td>${item.formatoSugerido ? escapeAttr(item.formatoSugerido) : "–"}</td>
+          <td>${escapeAttr(item.dono)}</td>
+          <td>${item.prazo ? formatDate(item.prazo) : "–"}</td>
+          <td>${item.linkMaterial ? escapeAttr(item.linkMaterial) : "–"}</td>
+          <td>${item.resultado ? escapeAttr(item.resultado) : "–"}</td>
+          <td>${renderDemandaActions(item)}</td>
+        </tr>
+      `;
+    }
+
+    function applyDemandasFiltersAndSort() {
+      const statusValue = demandasStatusFilterEl.value;
+      const tipoValue = demandasTipoFilterEl.value;
+      const search = demandasSearchEl.value.trim().toLowerCase();
+
+      const filtered = demandasData.filter((row) => {
+        if (statusValue && row.status !== statusValue) return false;
+        if (tipoValue && row.tipo !== tipoValue) return false;
+        if (search && !row.empresa.toLowerCase().includes(search)) return false;
+        return true;
+      });
+
+      demandasCountLabelEl.textContent = `${filtered.length} de ${demandasData.length} demandas`;
+      demandasTbodyEl.innerHTML = filtered.length === 0
+        ? `<tr><td colspan="12" class="empty">Nenhuma demanda encontrada com os filtros atuais.</td></tr>`
+        : filtered.map(renderDemandaRow).join("");
+    }
+
+    demandasStatusFilterEl.addEventListener("change", applyDemandasFiltersAndSort);
+    demandasTipoFilterEl.addEventListener("change", applyDemandasFiltersAndSort);
+    demandasSearchEl.addEventListener("input", applyDemandasFiltersAndSort);
+
+    async function loadDemandas() {
+      demandasTbodyEl.innerHTML = `<tr><td colspan="12" class="loading">Carregando demandas...</td></tr>`;
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/demandas`);
+        demandasData = payload.data ?? [];
+        demandasLoaded = true;
+        applyDemandasFiltersAndSort();
+      } catch (error) {
+        demandasTbodyEl.innerHTML = `<tr><td colspan="12" class="error">Não foi possível carregar /api/transportadoras/demandas. ${error.message}</td></tr>`;
+      }
+    }
+
+    // ─── Demandas: briefing panel ───────────────────────────────────────────
+
+    const demandaBriefingPanelEl = document.getElementById("demanda-briefing-panel");
+    const demandaBriefingTitleEl = document.getElementById("demanda-briefing-title");
+    const demandaBriefingTextEl = document.getElementById("demanda-briefing-text");
+    const demandaBriefingCopyEl = document.getElementById("demanda-briefing-copy");
+    const demandaBriefingCloseEl = document.getElementById("demanda-briefing-close");
+
+    async function openDemandaBriefing(id) {
+      hideDemandasActionError();
+      demandaBriefingTitleEl.textContent = "Carregando briefing...";
+      demandaBriefingTextEl.textContent = "";
+      demandaBriefingPanelEl.style.display = "block";
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/demandas/${encodeURIComponent(id)}/briefing`);
+        demandaBriefingTitleEl.textContent = "Briefing";
+        demandaBriefingTextEl.textContent = payload.data.text;
+      } catch (error) {
+        demandaBriefingTitleEl.textContent = "Briefing";
+        demandaBriefingTextEl.textContent = "";
+        showDemandasActionError(`Não foi possível gerar o briefing: ${error.message}`);
+        demandaBriefingPanelEl.style.display = "none";
+      }
+    }
+
+    demandaBriefingCopyEl.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(demandaBriefingTextEl.textContent || "");
+      } catch (error) {
+        showDemandasActionError(`Não foi possível copiar o briefing: ${error.message}`);
+      }
+    });
+
+    demandaBriefingCloseEl.addEventListener("click", () => {
+      demandaBriefingPanelEl.style.display = "none";
+    });
+
+    // ─── Demandas: lifecycle actions ────────────────────────────────────────
+
+    demandasTbodyEl.addEventListener("click", async (event) => {
+      const briefingBtn = event.target.closest("button[data-demanda-briefing]");
+      if (briefingBtn) {
+        openDemandaBriefing(briefingBtn.dataset.demandaBriefing);
+        return;
+      }
+
+      const btn = event.target.closest("button[data-demanda-action]");
+      if (!btn || btn.disabled) return;
+      hideDemandasActionError();
+      const action = btn.dataset.demandaAction;
+      const id = btn.dataset.demandaId;
+
+      const body = { action };
+      if (action === "marcarExecutada") {
+        const linkMaterial = window.prompt("Link do material (opcional):", "");
+        if (linkMaterial === null) return;
+        if (linkMaterial.trim()) body.linkMaterial = linkMaterial.trim();
+      }
+      if (action === "registrarResultado") {
+        const resultado = window.prompt("Resultado (obrigatório):", "");
+        if (resultado === null) return;
+        if (!resultado.trim()) {
+          showDemandasActionError("Registrar resultado exige um texto de resultado não vazio.");
+          return;
+        }
+        body.resultado = resultado.trim();
+      }
+
+      btn.disabled = true;
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/demandas/${encodeURIComponent(id)}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body)
+        });
+        if (!response.ok) {
+          const responseBody = await response.json().catch(() => ({}));
+          showDemandasActionError(`Não foi possível aplicar a ação "${action}": ${responseBody.error || `HTTP ${response.status}`}`);
+          btn.disabled = false;
+          return;
+        }
+        await loadDemandas();
+      } catch (error) {
+        showDemandasActionError(`Erro de rede ao aplicar a ação "${action}": ${error.message}`);
+        btn.disabled = false;
+      }
+    });
+
+    // ─── Demandas: shared "Nova demanda" creation form ──────────────────────
+
+    const demandaFormPanelEl = document.getElementById("demanda-form-panel");
+    const demandaFormEl = document.getElementById("demanda-form");
+    const demandaFormOrigemLabelEl = document.getElementById("demanda-form-origem-label");
+    const demandaFormTituloEl = document.getElementById("demanda-form-titulo");
+    const demandaFormTipoEl = document.getElementById("demanda-form-tipo");
+    const demandaFormDonoEl = document.getElementById("demanda-form-dono");
+    const demandaFormFormatoEl = document.getElementById("demanda-form-formato");
+    const demandaFormPrazoEl = document.getElementById("demanda-form-prazo");
+    const demandaFormErrorEl = document.getElementById("demanda-form-error");
+    const demandaFormCancelEl = document.getElementById("demanda-form-cancel");
+
+    let demandaFormOrigemContext = null;
+    let demandaFormDonoEdited = false;
+
+    function showDemandaFormError(message) {
+      demandaFormErrorEl.textContent = message;
+      demandaFormErrorEl.style.display = "block";
+    }
+
+    function hideDemandaFormError() {
+      demandaFormErrorEl.style.display = "none";
+    }
+
+    // Prefill dono only on tipo change — never re-override once the operator
+    // has edited it by hand (same discipline as sinalFormFontePresetEl).
+    demandaFormTipoEl.addEventListener("change", () => {
+      if (demandaFormDonoEdited) return;
+      demandaFormDonoEl.value = DEMANDA_TIPO_DONO_DEFAULT[demandaFormTipoEl.value] ?? "";
+    });
+
+    demandaFormDonoEl.addEventListener("input", () => {
+      demandaFormDonoEdited = true;
+    });
+
+    function origemLabel(context) {
+      if (context.origem === "cliente") return "Origem: Cliente selecionado";
+      if (context.origem === "prospect") return "Origem: Prospect selecionado";
+      return "Origem: Sinal selecionado";
+    }
+
+    function openDemandaForm(context) {
+      demandaFormOrigemContext = context;
+      demandaFormOrigemLabelEl.textContent = origemLabel(context);
+      demandaFormEl.reset();
+      demandaFormDonoEdited = false;
+      demandaFormDonoEl.value = DEMANDA_TIPO_DONO_DEFAULT[demandaFormTipoEl.value] ?? "";
+      hideDemandaFormError();
+      demandaBriefingPanelEl.style.display = "none";
+      showTab("demandas");
+      demandaFormPanelEl.style.display = "block";
+    }
+
+    function closeDemandaForm() {
+      demandaFormPanelEl.style.display = "none";
+      demandaFormEl.reset();
+      demandaFormOrigemContext = null;
+      demandaFormDonoEdited = false;
+      hideDemandaFormError();
+    }
+
+    demandaFormCancelEl.addEventListener("click", () => closeDemandaForm());
+
+    demandaFormEl.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      hideDemandaFormError();
+
+      if (!demandaFormOrigemContext) {
+        showDemandaFormError("Nenhuma origem selecionada para esta demanda.");
+        return;
+      }
+
+      const titulo = demandaFormTituloEl.value.trim();
+      const dono = demandaFormDonoEl.value.trim();
+      if (!titulo) {
+        showDemandaFormError("Título é obrigatório.");
+        return;
+      }
+      if (!dono) {
+        showDemandaFormError("Dono é obrigatório.");
+        return;
+      }
+
+      const payload = {
+        origem: demandaFormOrigemContext.origem,
+        titulo,
+        tipo: demandaFormTipoEl.value,
+        dono
+      };
+      if (demandaFormOrigemContext.companyId) payload.companyId = demandaFormOrigemContext.companyId;
+      if (demandaFormOrigemContext.sinalId) payload.sinalId = demandaFormOrigemContext.sinalId;
+      if (demandaFormFormatoEl.value.trim()) payload.formatoSugerido = demandaFormFormatoEl.value.trim();
+      if (demandaFormPrazoEl.value) payload.prazo = demandaFormPrazoEl.value;
+
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/demandas`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) {
+          const body = await response.json().catch(() => ({}));
+          showDemandaFormError(body.error || `HTTP ${response.status}`);
+          return;
+        }
+        closeDemandaForm();
+        showTab("demandas");
+        await loadDemandas();
+      } catch (error) {
+        showDemandaFormError(`Erro de rede: ${error.message}`);
       }
     });
 

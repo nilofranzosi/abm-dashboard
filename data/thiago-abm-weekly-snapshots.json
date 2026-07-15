@@ -1126,21 +1126,21 @@
   },
   {
     "weekKey": "2026-S29",
-    "generatedAt": "2026-07-14T11:53:36.710Z",
+    "generatedAt": "2026-07-15T11:40:42.616Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 78,
-    "activePipeline": 68,
+    "totalApproached": 83,
+    "activePipeline": 73,
     "pausedCount": 10,
     "repliedOrBetter": 13,
     "meetingOrBetter": 7,
     "dealCount": 6,
-    "replyRate": 0.19117647058823528,
-    "meetingRate": 0.10294117647058823,
-    "dealRate": 0.08823529411764706,
+    "replyRate": 0.1780821917808219,
+    "meetingRate": 0.0958904109589041,
+    "dealRate": 0.0821917808219178,
     "avgDaysToFirstReply": 7.3,
     "avgDaysSinceLastOutbound": 0,
-    "totalOutboundTouchpoints": 29,
-    "totalInboundTouchpoints": 0,
+    "totalOutboundTouchpoints": 25,
+    "totalInboundTouchpoints": 1,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -1150,12 +1150,12 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 41
+        "count": 30
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 7
+        "count": 23
       },
       {
         "stage": "REPLIED",
@@ -1305,30 +1305,30 @@
         "nextActionDueAt": "2026-07-13T20:30:00.000Z"
       },
       {
-        "company": "Amazon Brasil",
-        "stage": "FOLLOW_UP_SENT",
-        "contacts": 2,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "FOLLOW_UP_SENT",
-        "score": 50,
-        "nextActionDueAt": "2026-06-16T03:00:00.000Z"
-      },
-      {
-        "company": "Bridgestone",
+        "company": "Grupo Petz Cobasi",
         "stage": "FOLLOW_UP_SENT",
         "contacts": 1,
         "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "FOLLOW_UP_SENT",
         "score": 50,
-        "nextActionDueAt": "2026-06-24T03:00:00.000Z"
+        "nextActionDueAt": "2026-05-18T03:00:00.000Z"
+      },
+      {
+        "company": "Coca-Cola FEMSA",
+        "stage": "FOLLOW_UP_SENT",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "FOLLOW_UP_SENT",
+        "score": 50,
+        "nextActionDueAt": "2026-05-18T03:00:00.000Z"
       }
     ],
-    "activeContacts": 68,
+    "activeContacts": 73,
     "excludedContacts": 10,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 78,
-    "qualifiedAdvanceRate": 0.10294117647058823
+    "uniqueCompanies": 83,
+    "qualifiedAdvanceRate": 0.0958904109589041
   }
 ]
