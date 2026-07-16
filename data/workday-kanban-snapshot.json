@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T12:00:00.384Z",
+  "generatedAt": "2026-07-15T21:21:32.294Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -389,8 +389,8 @@
           "activeDecisor": "Alessandra M. Montenegro Lippi da Cruz"
         },
         {
-          "id": "cmrl2cad1000uk774bixw7047",
-          "name": "DMA Distribuidora S/A - EPA",
+          "id": "cmrml4xk4000mk7d0q2vlfbcn",
+          "name": "Mission of Brazil to the European Communities",
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
@@ -447,6 +447,18 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Carlos Marcelo Oba"
+        },
+        {
+          "id": "cmrl2cad1000uk774bixw7047",
+          "name": "DMA Distribuidora S/A - EPA",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-22T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-15T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Marco Túlio Cabral"
         },
         {
           "id": "cmqs2b9lx000ak7ag6omeybf4",
@@ -611,18 +623,6 @@
           "activeDecisor": "Fábio José Silva"
         },
         {
-          "id": "cmrjiqytn0002k794d8hxl6z2",
-          "name": "empresa Cacau Show",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-21T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-14T20:45:45.642Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "José Amaral"
-        },
-        {
           "id": "cmrjiqyvj000hk79429zocex1",
           "name": "Petz",
           "segment": null,
@@ -647,18 +647,6 @@
           "activeDecisor": "Olinto Lopes Neto"
         },
         {
-          "id": "cmqqle46c0000k79sd3t0zgym",
-          "name": "Leroy Merlin",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-22T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-15T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Ricardo Dinelli"
-        },
-        {
           "id": "cmqjsbye70015k7zwh88ujxnp",
           "name": "PepsiCo",
           "segment": null,
@@ -681,6 +669,30 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Marcelo Fornereto"
+        },
+        {
+          "id": "cmrjiqytn0002k794d8hxl6z2",
+          "name": "empresa Cacau Show",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-22T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-15T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "José Amaral"
+        },
+        {
+          "id": "cmqqle46c0000k79sd3t0zgym",
+          "name": "Leroy Merlin",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-22T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-15T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Ricardo Dinelli"
         },
         {
           "id": "cmqti1t0i000bk7gc5guq6ez7",

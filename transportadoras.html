@@ -426,6 +426,8 @@
             <button class="tab-btn" type="button" id="tab-btn-prospects">Prospects</button>
             <button class="tab-btn" type="button" id="tab-btn-sinais">Sinais</button>
             <button class="tab-btn" type="button" id="tab-btn-demandas">Demandas</button>
+            <button class="tab-btn" type="button" id="tab-btn-risco-churn">Risco/Churn</button>
+            <button class="tab-btn" type="button" id="tab-btn-score">Score</button>
           </div>
           <button class="secondary" type="button" id="refresh">Atualizar</button>
         </div>
@@ -739,6 +741,129 @@
           </table>
         </section>
       </section>
+
+      <section id="tab-risco-churn" class="tab-view">
+        <div class="error" id="risco-churn-action-error" style="display:none;"></div>
+
+        <section class="table-panel">
+          <table class="clientes-table" id="risco-churn-table">
+            <thead>
+              <tr>
+                <th class="no-sort">Empresa</th>
+                <th class="no-sort">Status</th>
+                <th class="no-sort">Score</th>
+                <th class="no-sort">Motivo provável</th>
+                <th class="no-sort">Dias sem touchpoint</th>
+                <th class="no-sort">Última operação</th>
+                <th class="no-sort">Ação sugerida</th>
+                <th class="no-sort">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="risco-churn-tbody">
+              <tr><td colspan="8" class="loading">Carregando contas em risco...</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+
+      <section id="tab-score" class="tab-view">
+        <section class="table-panel" id="score-weights-panel" style="padding:15px;">
+          <div class="queue-head" style="padding:0 0 10px; border-bottom:none;">
+            <h2>Editar pesos</h2>
+          </div>
+          <form id="score-weights-form" style="display:grid; gap:10px; grid-template-columns: repeat(2, minmax(0,1fr));">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Tier GS
+              <input type="number" id="score-weight-tier" required step="1">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Status da conta
+              <input type="number" id="score-weight-status" required step="1">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Dias vendidos
+              <input type="number" id="score-weight-dias-vendidos" required step="1">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Contratos prestados
+              <input type="number" id="score-weight-contratos-prestados" required step="1">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Valor em andamento
+              <input type="number" id="score-weight-valor-em-andamento" required step="1">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+              Sinais aplicados
+              <input type="number" id="score-weight-sinais-aplicados" required step="1">
+            </label>
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:700; grid-column: span 2;">
+              Nome da versão (para salvar)
+              <input type="text" id="score-weight-label" placeholder="Ex.: Score v2 - Agosto/2026">
+            </label>
+            <div style="grid-column: span 2; display:flex; gap:8px; align-items:center;">
+              <button type="submit">Salvar versão</button>
+              <button type="button" class="secondary" id="score-simular-btn">Simular ranking</button>
+              <button type="button" class="secondary" id="score-restaurar-btn">Restaurar padrão</button>
+            </div>
+            <div class="error" id="score-form-error" style="display:none; grid-column: span 2;"></div>
+          </form>
+        </section>
+
+        <section class="table-panel" id="score-versions-panel" style="padding:15px;">
+          <div class="queue-head" style="padding:0 0 10px; border-bottom:none;">
+            <h2>Versões de score</h2>
+          </div>
+          <table class="clientes-table" id="score-versions-table">
+            <thead>
+              <tr>
+                <th class="no-sort">Versão</th>
+                <th class="no-sort">Criado em</th>
+                <th class="no-sort">Ativa?</th>
+                <th class="no-sort">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="score-versions-tbody">
+              <tr><td colspan="4" class="loading">Carregando versões...</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="table-panel" id="score-simulate-panel" style="padding:15px;">
+          <div class="queue-head" style="padding:0 0 10px; border-bottom:none;">
+            <h2>Simular ranking</h2>
+          </div>
+          <div class="empty" id="score-simulate-empty">Ajuste os pesos acima e clique em &quot;Simular ranking&quot; para comparar o ranking atual com o hipotético.</div>
+          <div class="grid" id="score-simulate-result" style="display:none;">
+            <div>
+              <div class="muted" style="margin-bottom:6px; font-weight:700;">Ranking atual</div>
+              <table class="clientes-table" id="score-simulate-current-table">
+                <thead>
+                  <tr>
+                    <th class="no-sort">Empresa</th>
+                    <th class="no-sort">Status</th>
+                    <th class="no-sort">Score</th>
+                  </tr>
+                </thead>
+                <tbody id="score-simulate-current-tbody"></tbody>
+              </table>
+            </div>
+            <div>
+              <div class="muted" style="margin-bottom:6px; font-weight:700;">Ranking simulado</div>
+              <table class="clientes-table" id="score-simulate-simulated-table">
+                <thead>
+                  <tr>
+                    <th class="no-sort">Empresa</th>
+                    <th class="no-sort">Status</th>
+                    <th class="no-sort">Score</th>
+                  </tr>
+                </thead>
+                <tbody id="score-simulate-simulated-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="error" id="score-action-error" style="display:none;"></div>
+        </section>
+      </section>
     </main>
   </div>
 
@@ -785,16 +910,22 @@
     const tabProspectsEl = document.getElementById("tab-prospects");
     const tabSinaisEl = document.getElementById("tab-sinais");
     const tabDemandasEl = document.getElementById("tab-demandas");
+    const tabRiscoChurnEl = document.getElementById("tab-risco-churn");
+    const tabScoreEl = document.getElementById("tab-score");
     const tabBtnOverviewEl = document.getElementById("tab-btn-overview");
     const tabBtnClientesEl = document.getElementById("tab-btn-clientes");
     const tabBtnProspectsEl = document.getElementById("tab-btn-prospects");
     const tabBtnSinaisEl = document.getElementById("tab-btn-sinais");
     const tabBtnDemandasEl = document.getElementById("tab-btn-demandas");
+    const tabBtnRiscoChurnEl = document.getElementById("tab-btn-risco-churn");
+    const tabBtnScoreEl = document.getElementById("tab-btn-score");
 
     let clientesLoaded = false;
     let prospectsLoaded = false;
     let sinaisLoaded = false;
     let demandasLoaded = false;
+    let riscoChurnLoaded = false;
+    let scoreLoaded = false;
 
     function showTab(name) {
       tabOverviewEl.classList.toggle("active", name === "overview");
@@ -802,11 +933,15 @@
       tabProspectsEl.classList.toggle("active", name === "prospects");
       tabSinaisEl.classList.toggle("active", name === "sinais");
       tabDemandasEl.classList.toggle("active", name === "demandas");
+      tabRiscoChurnEl.classList.toggle("active", name === "risco-churn");
+      tabScoreEl.classList.toggle("active", name === "score");
       tabBtnOverviewEl.classList.toggle("active", name === "overview");
       tabBtnClientesEl.classList.toggle("active", name === "clientes");
       tabBtnProspectsEl.classList.toggle("active", name === "prospects");
       tabBtnSinaisEl.classList.toggle("active", name === "sinais");
       tabBtnDemandasEl.classList.toggle("active", name === "demandas");
+      tabBtnRiscoChurnEl.classList.toggle("active", name === "risco-churn");
+      tabBtnScoreEl.classList.toggle("active", name === "score");
       if (name === "clientes" && !clientesLoaded) {
         loadClientes();
       }
@@ -819,6 +954,12 @@
       if (name === "demandas" && !demandasLoaded) {
         loadDemandas();
       }
+      if (name === "risco-churn" && !riscoChurnLoaded) {
+        loadRiscoChurn();
+      }
+      if (name === "score" && !scoreLoaded) {
+        loadScore();
+      }
     }
 
     tabBtnOverviewEl.addEventListener("click", () => showTab("overview"));
@@ -826,6 +967,8 @@
     tabBtnProspectsEl.addEventListener("click", () => showTab("prospects"));
     tabBtnSinaisEl.addEventListener("click", () => showTab("sinais"));
     tabBtnDemandasEl.addEventListener("click", () => showTab("demandas"));
+    tabBtnRiscoChurnEl.addEventListener("click", () => showTab("risco-churn"));
+    tabBtnScoreEl.addEventListener("click", () => showTab("score"));
 
     document.getElementById("refresh").addEventListener("click", () => {
       loadOverview();
@@ -833,6 +976,8 @@
       if (prospectsLoaded) loadProspects();
       if (sinaisLoaded) loadSinais();
       if (demandasLoaded) loadDemandas();
+      if (riscoChurnLoaded) loadRiscoChurn();
+      if (scoreLoaded) loadScore();
     });
 
     // ─── Visão Geral ────────────────────────────────────────────────────────
@@ -1716,6 +1861,9 @@
       demandaFormOrigemContext = context;
       demandaFormOrigemLabelEl.textContent = origemLabel(context);
       demandaFormEl.reset();
+      // Risco/Churn row actions (Phase 35) pass a mapped tipo to pre-select —
+      // Clientes/Prospects callers omit it and keep the form's default option.
+      if (context.tipo) demandaFormTipoEl.value = context.tipo;
       demandaFormDonoEdited = false;
       demandaFormDonoEl.value = DEMANDA_TIPO_DONO_DEFAULT[demandaFormTipoEl.value] ?? "";
       hideDemandaFormError();
@@ -1781,6 +1929,325 @@
         await loadDemandas();
       } catch (error) {
         showDemandaFormError(`Erro de rede: ${error.message}`);
+      }
+    });
+
+    // ─── Risco/Churn ────────────────────────────────────────────────────────
+
+    let riscoChurnData = [];
+
+    const riscoChurnTbodyEl = document.getElementById("risco-churn-tbody");
+    const riscoChurnActionErrorEl = document.getElementById("risco-churn-action-error");
+
+    function showRiscoChurnActionError(message) {
+      riscoChurnActionErrorEl.textContent = message;
+      riscoChurnActionErrorEl.style.display = "block";
+    }
+
+    function hideRiscoChurnActionError() {
+      riscoChurnActionErrorEl.style.display = "none";
+    }
+
+    // D-04 mapping (Phase 35 CONTEXT.md): "Acionar GS" -> ACAO_GS, both
+    // "Criar plano de recuperação" and "Gerar campanha reativação" -> CAMPANHA_ABM
+    // (closest existing DemandTipo intent, no new enum value).
+    function findExecutadaDemandaForCompany(companyId) {
+      return demandasData.find((item) => item.companyId === companyId && item.status === "EXECUTADA") ?? null;
+    }
+
+    function renderRiscoChurnActions(row) {
+      const executada = findExecutadaDemandaForCompany(row.id);
+      const registrarRetornoTitle = executada ? "" : "Nenhuma demanda executada para registrar retorno";
+      return `
+        <button type="button" data-risco-churn-tipo="CAMPANHA_ABM" data-risco-churn-company="${escapeAttr(row.id)}">Criar plano de recuperação</button>
+        <button type="button" data-risco-churn-tipo="ACAO_GS" data-risco-churn-company="${escapeAttr(row.id)}">Acionar GS</button>
+        <button type="button" data-risco-churn-tipo="CAMPANHA_ABM" data-risco-churn-company="${escapeAttr(row.id)}">Gerar campanha reativação</button>
+        <button type="button" ${executada ? "" : "disabled"} title="${registrarRetornoTitle}" data-risco-churn-registrar-retorno="${escapeAttr(executada ? executada.id : "")}">Registrar retorno</button>
+      `;
+    }
+
+    function renderRiscoChurnRow(row) {
+      const diasCell = row.diasSemTouchpoint !== null
+        ? row.diasSemTouchpoint
+        : `<span class="pending" title="Nenhum touchpoint registrado">–</span>`;
+      const ultimaCell = row.ultimaOperacao
+        ? formatDate(row.ultimaOperacao)
+        : `<span class="pending" title="Nenhum touchpoint registrado">–</span>`;
+      return `
+        <tr>
+          <td>${escapeAttr(row.empresa)}</td>
+          <td><span class="status-pill ${statusPillClass(row.status)}">${statusLabel(row.status)}</span></td>
+          <td>${row.score}</td>
+          <td>${escapeAttr(row.motivoProvavel)}</td>
+          <td>${diasCell}</td>
+          <td>${ultimaCell}</td>
+          <td>${escapeAttr(row.acaoSugerida)}</td>
+          <td>${renderRiscoChurnActions(row)}</td>
+        </tr>
+      `;
+    }
+
+    function applyRiscoChurnRender() {
+      riscoChurnTbodyEl.innerHTML = riscoChurnData.length === 0
+        ? `<tr><td colspan="8" class="empty"><strong>Nenhuma conta em risco no momento</strong><br>Todas as contas monitoradas estão com status saudável. Quando uma conta entrar em Inativo, Churn, ou dentro da janela de 30 dias para inatividade/churn, ela aparece aqui automaticamente.</td></tr>`
+        : riscoChurnData.map(renderRiscoChurnRow).join("");
+    }
+
+    async function loadRiscoChurn() {
+      riscoChurnTbodyEl.innerHTML = `<tr><td colspan="8" class="loading">Carregando contas em risco...</td></tr>`;
+      try {
+        // "Registrar retorno" needs the Demandas feed (EXECUTADA lookup by
+        // companyId) even if the operator never visited the Demandas tab.
+        if (!demandasLoaded) await loadDemandas();
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/risco-churn`);
+        riscoChurnData = payload.data ?? [];
+        riscoChurnLoaded = true;
+        applyRiscoChurnRender();
+      } catch (error) {
+        riscoChurnTbodyEl.innerHTML = `<tr><td colspan="8" class="error">Não foi possível carregar /api/transportadoras/risco-churn. ${error.message}</td></tr>`;
+      }
+    }
+
+    riscoChurnTbodyEl.addEventListener("click", (event) => {
+      const tipoBtn = event.target.closest("button[data-risco-churn-tipo]");
+      if (tipoBtn) {
+        hideRiscoChurnActionError();
+        openDemandaForm({
+          origem: "cliente",
+          companyId: tipoBtn.dataset.riscoChurnCompany,
+          tipo: tipoBtn.dataset.riscoChurnTipo
+        });
+        return;
+      }
+
+      const retornoBtn = event.target.closest("button[data-risco-churn-registrar-retorno]");
+      if (!retornoBtn || retornoBtn.disabled) return;
+      hideRiscoChurnActionError();
+      const demandaId = retornoBtn.dataset.riscoChurnRegistrarRetorno;
+      const resultado = window.prompt("Resultado (obrigatório):", "");
+      if (resultado === null) return;
+      if (!resultado.trim()) {
+        showRiscoChurnActionError("Registrar retorno exige um texto de resultado não vazio.");
+        return;
+      }
+      registrarRetornoFromRiscoChurn(retornoBtn, demandaId, resultado.trim());
+    });
+
+    async function registrarRetornoFromRiscoChurn(btn, demandaId, resultado) {
+      btn.disabled = true;
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/demandas/${encodeURIComponent(demandaId)}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ action: "registrarResultado", resultado })
+        });
+        if (!response.ok) {
+          const body = await response.json().catch(() => ({}));
+          showRiscoChurnActionError(`Não foi possível registrar retorno: ${body.error || `HTTP ${response.status}`}`);
+          btn.disabled = false;
+          return;
+        }
+        await loadDemandas();
+        await loadRiscoChurn();
+      } catch (error) {
+        showRiscoChurnActionError(`Erro de rede ao registrar retorno: ${error.message}`);
+        btn.disabled = false;
+      }
+    }
+
+    // ─── Score ──────────────────────────────────────────────────────────────
+
+    let scoreVersionsData = [];
+
+    const scoreWeightsFormEl = document.getElementById("score-weights-form");
+    const scoreWeightInputs = {
+      TIER: document.getElementById("score-weight-tier"),
+      STATUS: document.getElementById("score-weight-status"),
+      DIAS_VENDIDOS: document.getElementById("score-weight-dias-vendidos"),
+      CONTRATOS_PRESTADOS: document.getElementById("score-weight-contratos-prestados"),
+      VALOR_EM_ANDAMENTO: document.getElementById("score-weight-valor-em-andamento"),
+      SINAIS_APLICADOS: document.getElementById("score-weight-sinais-aplicados")
+    };
+    const scoreWeightLabelEl = document.getElementById("score-weight-label");
+    const scoreFormErrorEl = document.getElementById("score-form-error");
+    const scoreVersionsTbodyEl = document.getElementById("score-versions-tbody");
+    const scoreSimularBtnEl = document.getElementById("score-simular-btn");
+    const scoreRestaurarBtnEl = document.getElementById("score-restaurar-btn");
+    const scoreActionErrorEl = document.getElementById("score-action-error");
+    const scoreSimulateEmptyEl = document.getElementById("score-simulate-empty");
+    const scoreSimulateResultEl = document.getElementById("score-simulate-result");
+    const scoreSimulateCurrentTbodyEl = document.getElementById("score-simulate-current-tbody");
+    const scoreSimulateSimulatedTbodyEl = document.getElementById("score-simulate-simulated-tbody");
+
+    function showScoreFormError(message) {
+      scoreFormErrorEl.textContent = message;
+      scoreFormErrorEl.style.display = "block";
+    }
+
+    function hideScoreFormError() {
+      scoreFormErrorEl.style.display = "none";
+    }
+
+    function showScoreActionError(message) {
+      scoreActionErrorEl.textContent = message;
+      scoreActionErrorEl.style.display = "block";
+    }
+
+    function hideScoreActionError() {
+      scoreActionErrorEl.style.display = "none";
+    }
+
+    function fillScoreWeightInputs(weights) {
+      Object.keys(scoreWeightInputs).forEach((key) => {
+        scoreWeightInputs[key].value = weights[key] ?? 0;
+      });
+    }
+
+    function readScoreWeightInputs() {
+      const weights = {};
+      Object.keys(scoreWeightInputs).forEach((key) => {
+        weights[key] = Number(scoreWeightInputs[key].value);
+      });
+      return weights;
+    }
+
+    function renderScoreVersionRow(version) {
+      return `
+        <tr>
+          <td>${escapeAttr(version.label)}</td>
+          <td>${formatDate(version.createdAt)}</td>
+          <td>${version.isActive ? "Sim" : "Não"}</td>
+          <td>
+            <button type="button" ${version.isActive ? "disabled" : ""} title="${version.isActive ? "Já é a versão ativa" : ""}" data-score-ativar-version="${escapeAttr(version.id)}">Ativar</button>
+          </td>
+        </tr>
+      `;
+    }
+
+    function renderScoreVersions() {
+      scoreVersionsTbodyEl.innerHTML = scoreVersionsData.length === 0
+        ? `<tr><td colspan="4" class="empty">Nenhuma versão de score registrada.</td></tr>`
+        : scoreVersionsData.map(renderScoreVersionRow).join("");
+    }
+
+    async function loadScore() {
+      scoreVersionsTbodyEl.innerHTML = `<tr><td colspan="4" class="loading">Carregando versões...</td></tr>`;
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/score/weights`);
+        fillScoreWeightInputs(payload.data.active);
+        scoreVersionsData = payload.data.versions ?? [];
+        scoreLoaded = true;
+        renderScoreVersions();
+      } catch (error) {
+        scoreVersionsTbodyEl.innerHTML = `<tr><td colspan="4" class="error">Não foi possível carregar /api/transportadoras/score/weights. ${error.message}</td></tr>`;
+      }
+    }
+
+    scoreWeightsFormEl.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      hideScoreFormError();
+      const label = scoreWeightLabelEl.value.trim();
+      if (!label) {
+        showScoreFormError("Nome da versão é obrigatório para salvar.");
+        return;
+      }
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/score/weights/versions`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ label, weights: readScoreWeightInputs() })
+        });
+        if (!response.ok) {
+          const body = await response.json().catch(() => ({}));
+          showScoreFormError(`Não foi possível salvar a versão de pesos: ${body.error || `HTTP ${response.status}`}`);
+          return;
+        }
+        scoreWeightLabelEl.value = "";
+        await loadScore();
+      } catch (error) {
+        showScoreFormError(`Não foi possível salvar a versão de pesos: ${error.message}`);
+      }
+    });
+
+    // Live-effect action (T-35-08, D-03) — native confirm() gate before the POST.
+    scoreRestaurarBtnEl.addEventListener("click", async () => {
+      hideScoreActionError();
+      const confirmed = window.confirm("Restaurar os pesos originais? Isso muda imediatamente o ranking usado em Clientes, Prospects (não editável, mas o dono do row continua vendo o score) e Risco/Churn.");
+      if (!confirmed) return;
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/score/weights/restore-default`, { method: "POST" });
+        if (!response.ok) {
+          const body = await response.json().catch(() => ({}));
+          showScoreActionError(`Não foi possível restaurar o padrão: ${body.error || `HTTP ${response.status}`}`);
+          return;
+        }
+        await loadScore();
+        if (clientesLoaded) await loadClientes();
+        if (riscoChurnLoaded) await loadRiscoChurn();
+      } catch (error) {
+        showScoreActionError(`Não foi possível restaurar o padrão: ${error.message}`);
+      }
+    });
+
+    // Live-effect action (T-35-08, D-03) — native confirm() gate before the POST.
+    scoreVersionsTbodyEl.addEventListener("click", async (event) => {
+      const btn = event.target.closest("button[data-score-ativar-version]");
+      if (!btn || btn.disabled) return;
+      hideScoreActionError();
+      const confirmed = window.confirm("Ativar esta versão de pesos? O ranking de Clientes e Risco/Churn é recalculado imediatamente com estes pesos.");
+      if (!confirmed) return;
+      const id = btn.dataset.scoreAtivarVersion;
+      btn.disabled = true;
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/score/weights/versions/${encodeURIComponent(id)}/activate`, { method: "POST" });
+        if (!response.ok) {
+          const body = await response.json().catch(() => ({}));
+          showScoreActionError(`Não foi possível ativar a versão: ${body.error || `HTTP ${response.status}`}`);
+          btn.disabled = false;
+          return;
+        }
+        await loadScore();
+        if (clientesLoaded) await loadClientes();
+        if (riscoChurnLoaded) await loadRiscoChurn();
+      } catch (error) {
+        showScoreActionError(`Não foi possível ativar a versão: ${error.message}`);
+        btn.disabled = false;
+      }
+    });
+
+    function renderScoreSimRow(row) {
+      return `
+        <tr>
+          <td>${escapeAttr(row.empresa)}</td>
+          <td><span class="status-pill ${statusPillClass(row.status)}">${statusLabel(row.status)}</span></td>
+          <td>${row.scoreTotal}</td>
+        </tr>
+      `;
+    }
+
+    // Dumb render of server output only — no client-side score math (UI-SPEC
+    // Note 4 / RESEARCH.md Pattern 6): /score/simulate already scores+sorts
+    // both arrays.
+    scoreSimularBtnEl.addEventListener("click", async () => {
+      hideScoreActionError();
+      try {
+        const response = await fetch(`${apiBase}/api/transportadoras/score/simulate`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ weights: readScoreWeightInputs() })
+        });
+        if (!response.ok) {
+          const body = await response.json().catch(() => ({}));
+          showScoreActionError(`Não foi possível simular o ranking: ${body.error || `HTTP ${response.status}`}`);
+          return;
+        }
+        const payload = await response.json();
+        scoreSimulateCurrentTbodyEl.innerHTML = payload.data.current.map(renderScoreSimRow).join("");
+        scoreSimulateSimulatedTbodyEl.innerHTML = payload.data.simulated.map(renderScoreSimRow).join("");
+        scoreSimulateEmptyEl.style.display = "none";
+        scoreSimulateResultEl.style.display = "grid";
+      } catch (error) {
+        showScoreActionError(`Não foi possível simular o ranking: ${error.message}`);
       }
     });
 

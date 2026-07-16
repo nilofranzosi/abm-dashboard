@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T11:40:44.571Z",
+  "generatedAt": "2026-07-15T21:21:18.312Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
@@ -7,10 +7,10 @@
     "totalCompanies": 83,
     "activeCompanies": 73,
     "pausedCompanies": 10,
-    "repliedOrBetterCompanies": 13,
+    "repliedOrBetterCompanies": 14,
     "meetingOrBetterCompanies": 7,
     "dealCompanies": 6,
-    "companyReplyRate": 0.1780821917808219,
+    "companyReplyRate": 0.1917808219178082,
     "companyMeetingRate": 0.0958904109589041,
     "companyDealRate": 0.0821917808219178
   },
@@ -139,22 +139,22 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 26,
+      "total": 27,
       "responded": 5,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.19230769230769232,
-      "advancedRate": 0.11538461538461539,
+      "replyRate": 0.18518518518518517,
+      "advancedRate": 0.1111111111111111,
       "avgDaysToFirstReply": 10.8
     },
     {
       "seniority": "Diretoria / Head",
-      "total": 48,
+      "total": 47,
       "responded": 7,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.14583333333333334,
-      "advancedRate": 0.0625,
+      "replyRate": 0.14893617021276595,
+      "advancedRate": 0.06382978723404255,
       "avgDaysToFirstReply": 3.2857142857142856
     },
     {
