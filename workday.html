@@ -541,6 +541,20 @@
 
       <section class="kpis" id="kpis"></section>
 
+      <!-- Tracker de Conexões Semanais -->
+      <section class="queue" id="conn-tracker" style="display:none">
+        <div class="queue-head">
+          <h2>Tracker de Conexões — Semana</h2>
+          <span class="count" id="conn-tracker-updated" style="background:var(--muted);font-size:10px;padding:0 8px;border-radius:4px;height:20px"></span>
+        </div>
+        <div style="padding:12px 14px;background:var(--soft)">
+          <!-- Funil compacto -->
+          <div id="conn-funnel" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:12px"></div>
+          <!-- Lista de enviadas esta semana -->
+          <div id="conn-sent-list"></div>
+        </div>
+      </section>
+
       <section class="queue" id="my-actions">
         <div class="queue-head">
           <h2>Minhas Ações</h2>
@@ -647,6 +661,7 @@
       loadActions();
       loadMyActions();
       loadKanban();
+      loadConnectionTracker();
     });
 
     document.getElementById("open-api").addEventListener("click", () => {
@@ -1053,6 +1068,81 @@
         renderMyActions(payload.data ?? []);
       } catch (error) {
         myActionsBodyEl.innerHTML = `<div class="error">Não foi possível carregar /api/workday/tasks. ${error.message}</div>`;
+      }
+    }
+
+    // ─── Connection Tracker ────────────────────────────────────────────────
+
+    const connTrackerEl = document.getElementById("conn-tracker");
+    const connFunnelEl = document.getElementById("conn-funnel");
+    const connSentListEl = document.getElementById("conn-sent-list");
+    const connTrackerUpdatedEl = document.getElementById("conn-tracker-updated");
+
+    function funnelTile(label, value, color) {
+      return `
+        <div style="background:#fff;border:1px solid var(--line);border-top:4px solid ${color};border-radius:5px;padding:10px 12px;text-align:center">
+          <div style="font-size:10px;font-weight:800;text-transform:uppercase;color:var(--muted);margin-bottom:4px">${label}</div>
+          <div style="font-size:26px;font-weight:800;color:var(--ink)">${value}</div>
+        </div>`;
+    }
+
+    function statusBadge(status, hasReply) {
+      if (hasReply) return `<span style="background:#D1FAE5;color:#065F46;font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px">Respondeu</span>`;
+      if (status === "CONNECTION_PENDING") return `<span style="background:#FEF3C7;color:#92400E;font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px">Pendente</span>`;
+      if (status === "CONNECTION_ACCEPTED") return `<span style="background:#DBEAFE;color:#1E40AF;font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px">Aceita</span>`;
+      return `<span style="background:#F3F4F6;color:var(--muted);font-size:10px;font-weight:800;padding:2px 7px;border-radius:999px">Enviada</span>`;
+    }
+
+    function renderConnectionTracker(data) {
+      if (!data || !connTrackerEl) return;
+      connTrackerEl.style.display = "";
+
+      const s = data.summary;
+      const pendingKnown = s.pendingConnections > 0;
+
+      connFunnelEl.innerHTML = [
+        funnelTile("Enviadas 7d", s.sentThisWeek, "var(--blue)"),
+        funnelTile("Pendentes", pendingKnown ? s.pendingConnections : "?", pendingKnown ? "var(--amber)" : "var(--line)"),
+        funnelTile("Aceitas", s.acceptedThisWeek > 0 ? s.acceptedThisWeek : "?", s.acceptedThisWeek > 0 ? "var(--green)" : "var(--line)"),
+        funnelTile("Responderam", s.repliedThisWeek, s.repliedThisWeek > 0 ? "var(--green)" : "var(--line)"),
+        funnelTile("Atraso follow-up", s.overdueFollowUp, s.overdueFollowUp > 0 ? "var(--red)" : "var(--line)")
+      ].join("");
+
+      const rows = data.sentThisWeek ?? [];
+      if (rows.length === 0) {
+        connSentListEl.innerHTML = `<div class="empty" style="margin-top:0">Nenhuma conexão enviada nos últimos 7 dias.</div>`;
+      } else {
+        connSentListEl.innerHTML = `
+          <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--muted);margin-bottom:6px">Enviadas esta semana</div>
+          <div style="display:grid;gap:6px">
+            ${rows.map(c => `
+              <div style="background:#fff;border:1px solid var(--line);border-radius:5px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <div>
+                  <strong style="font-size:12px">${c.name}</strong>
+                  <span style="color:var(--muted);font-size:11px"> · ${c.company}</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px">
+                  ${statusBadge(c.status, c.hasReply)}
+                  <span style="color:var(--muted);font-size:11px">${c.daysSinceSent !== null ? `há ${c.daysSinceSent}d` : ""}</span>
+                  ${c.profileUrl ? `<a href="${c.profileUrl}" target="_blank" style="font-size:10px;color:var(--blue);font-weight:800">LinkedIn ↗</a>` : ""}
+                </div>
+              </div>
+            `).join("")}
+          </div>
+          ${!pendingKnown ? `<div style="margin-top:8px;font-size:11px;color:var(--muted);background:#FFFBEB;border:1px solid #FDE68A;border-radius:4px;padding:6px 10px">⚠ Contagem de pendentes indisponível — rode o scan para estabelecer baseline de snapshot.</div>` : ""}
+        `;
+      }
+
+      const updatedAt = data.generatedAt ? new Date(data.generatedAt).toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" }) : "";
+      if (connTrackerUpdatedEl) connTrackerUpdatedEl.textContent = `Atualizado ${updatedAt}`;
+    }
+
+    async function loadConnectionTracker() {
+      try {
+        const data = await fetchJson(`${apiBase}/data/connections-tracker.json`);
+        renderConnectionTracker(data);
+      } catch {
+        // silencioso se ainda não existe o arquivo
       }
     }
 

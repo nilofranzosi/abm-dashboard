@@ -1126,21 +1126,21 @@
   },
   {
     "weekKey": "2026-S29",
-    "generatedAt": "2026-07-15T21:21:16.964Z",
+    "generatedAt": "2026-07-17T11:57:40.498Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 83,
-    "activePipeline": 73,
+    "totalApproached": 104,
+    "activePipeline": 94,
     "pausedCount": 10,
-    "repliedOrBetter": 14,
+    "repliedOrBetter": 15,
     "meetingOrBetter": 7,
     "dealCount": 6,
-    "replyRate": 0.1917808219178082,
-    "meetingRate": 0.0958904109589041,
-    "dealRate": 0.0821917808219178,
-    "avgDaysToFirstReply": 8.454545454545455,
-    "avgDaysSinceLastOutbound": 0.8666666666666667,
-    "totalOutboundTouchpoints": 25,
-    "totalInboundTouchpoints": 1,
+    "replyRate": 0.1595744680851064,
+    "meetingRate": 0.07446808510638298,
+    "dealRate": 0.06382978723404255,
+    "avgDaysToFirstReply": 7.916666666666667,
+    "avgDaysSinceLastOutbound": 0,
+    "totalOutboundTouchpoints": 22,
+    "totalInboundTouchpoints": 2,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -1150,7 +1150,7 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 30
+        "count": 50
       },
       {
         "stage": "FOLLOW_UP_SENT",
@@ -1160,7 +1160,7 @@
       {
         "stage": "REPLIED",
         "label": "Respondeu",
-        "count": 7
+        "count": 8
       },
       {
         "stage": "MEETING_DONE",
@@ -1305,6 +1305,16 @@
         "nextActionDueAt": "2026-07-13T20:30:00.000Z"
       },
       {
+        "company": "Theo e Bia",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-19T03:00:00.000Z"
+      },
+      {
         "company": "P&G",
         "stage": "REPLIED",
         "contacts": 1,
@@ -1312,23 +1322,13 @@
         "inboundTouchpoints": 1,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-07-17T11:26:00.000Z"
-      },
-      {
-        "company": "Grupo Petz Cobasi",
-        "stage": "FOLLOW_UP_SENT",
-        "contacts": 1,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "FOLLOW_UP_SENT",
-        "score": 50,
-        "nextActionDueAt": "2026-05-18T03:00:00.000Z"
+        "nextActionDueAt": "2026-07-19T11:26:00.000Z"
       }
     ],
-    "activeContacts": 73,
+    "activeContacts": 94,
     "excludedContacts": 10,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 83,
-    "qualifiedAdvanceRate": 0.0958904109589041
+    "uniqueCompanies": 104,
+    "qualifiedAdvanceRate": 0.07446808510638298
   }
 ]

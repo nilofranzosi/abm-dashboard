@@ -273,7 +273,13 @@
   function openCorrectCompany(companyId) {
     closeInputs(companyId);
     document.getElementById(`input-company-${companyId}`).classList.add("open");
-    document.getElementById(`company-val-${companyId}`).focus();
+    const input = document.getElementById(`company-val-${companyId}`);
+    // Pré-preenche com a empresa atual (quando conhecida) para corrigir editando,
+    // em vez de redigitar. "Empresa desconhecida"/"A apurar" começam vazios.
+    const current = document.querySelector(`#card-${companyId} .company-name`)?.textContent?.trim() ?? "";
+    if (!input.value && current && current.toLowerCase() !== "a apurar") input.value = current;
+    input.focus();
+    input.select();
   }
 
   function closeInputs(companyId) {
@@ -388,7 +394,7 @@
 
       <div class="actions">
         <button class="btn btn-approve" onclick="approve('${group.id}')">Aprovar Empresa</button>
-        ${isUnknown ? `<button class="btn btn-correct" onclick="openCorrectCompany('${group.id}')">Identificar Empresa</button>` : ""}
+        <button class="btn btn-correct" onclick="openCorrectCompany('${group.id}')">${isUnknown ? "Identificar Empresa" : "Alterar Empresa"}</button>
         <button class="btn btn-discard" onclick="discard('${group.id}', '${companyName}')">Descartar</button>
 
         <div class="inline-input" id="input-company-${group.id}">

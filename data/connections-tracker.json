@@ -1,0 +1,898 @@
+{
+  "generatedAt": "2026-07-17T11:50:24.636Z",
+  "enrichedFile": "2026-07-17T11:44:39.267Z",
+  "pendingSnapshotAt": "2026-07-17T11:38:49.055Z",
+  "summary": {
+    "sentThisWeek": 10,
+    "pendingConnections": 70,
+    "acceptedThisWeek": 5,
+    "repliedThisWeek": 2,
+    "overdueFollowUp": 0,
+    "acceptanceRateEst": 10
+  },
+  "funnelBreakdown": {
+    "FIRST_CONTACT_SENT": 9,
+    "REPLIED_NEUTRAL": 2,
+    "FOLLOW_UP_SENT": 4,
+    "CONNECTION_SENT": 12
+  },
+  "sentThisWeek": [
+    {
+      "name": "Alexandro A. A. Cruz",
+      "company": "Grupo Carrefour Brasil",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/alexandro-a-a-cruz-11623642/",
+      "firstOutboundAt": "2026-07-17T21:17:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Luciana Bueno",
+      "company": "Grupo São Vicente",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/luciana-bueno-33445623/",
+      "firstOutboundAt": "2026-07-17T21:12:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Rogério Andrade",
+      "company": "Grupo Mateus - Novo Mateus",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rogeriosandrade/",
+      "firstOutboundAt": "2026-07-17T21:07:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Mauro Loureiro Jr",
+      "company": "Theo e Bia",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": -1,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/mauroloureirojr/",
+      "firstOutboundAt": "2026-07-17T19:57:00.000Z",
+      "lastInboundAt": "2026-07-17T03:00:00.000Z"
+    },
+    {
+      "name": "Mario Augusto Neto",
+      "company": "GPA",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/mario-augusto-neto/",
+      "firstOutboundAt": "2026-07-17T18:45:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Luciano Demicheli",
+      "company": "RodOil",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/luciano-demicheli-797a1253/",
+      "firstOutboundAt": "2026-07-17T18:38:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marco Túlio Cabral",
+      "company": "DMA Distribuidora S/A - EPA",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marcotuliocabral/",
+      "firstOutboundAt": "2026-07-17T18:35:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Grasiella Nascimento",
+      "company": "MadeiraMadeira",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/grasiella-nascimento-0b54aa22/",
+      "firstOutboundAt": "2026-07-17T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Arthur Klann Vieira",
+      "company": "MadeiraMadeira",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/arthur-klann-vieira/",
+      "firstOutboundAt": "2026-07-17T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Ramon Castro de Matos",
+      "company": "Amazon",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/ramoncastromatos/",
+      "firstOutboundAt": "2026-07-17T03:00:00.000Z",
+      "lastInboundAt": null
+    }
+  ],
+  "pendingConnections": [
+    {
+      "name": "Fabiana Taccola",
+      "company": "Lojas Renner S.A.",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fabiana-taccola-557a0935/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Fábio Ozorio",
+      "company": "Instituto Strabos",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/f%c3%a1bioozorio/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Humberto Pereira",
+      "company": "Soluções eSales",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/humberto-pereira-0bbab320/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Michel Fidelis",
+      "company": "Freshworks",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/michelfidelis/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Mauricio Garcia",
+      "company": "Inteli - Instituto de Tecnologia e Liderança",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/mauriciogarciavieira/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Leo Cotosck",
+      "company": "Grupo AG Capital",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/leo-cotosck-8a6a0b11/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Ricardo Costa Rodrigues",
+      "company": "Toré Gestão e Representação Comercial",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/ricardorodrigues1/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Ana Letícia Imparato",
+      "company": "Giovanna / Legalização de Imóveis / Varejo /Industrias / EVTLS/ Alvarás / Licenças / Projetos",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/ana-let%c3%adcia-imparato-8333237/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "FERNANDO JAEGER",
+      "company": "LGMG",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fernando-jaeger-6a5a781b/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Alexandre Valin",
+      "company": "Movida Aluguel de Carros",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/alexandre-valin-5a839718/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Bruno Fantaguzzi",
+      "company": "Tahto",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/brunofantaguzzi/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marcos Oscar Cardaci",
+      "company": "Nordex Group",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marcoscardaci/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Luiz Fabio R.",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/luizfabioravagnani/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Michelle Almeida",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/michelle-almeida/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Daniela Cunha",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/danielapazcunha/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Leonidas Nora Junior",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/leonidas-nora-junior-54274321/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Júlia Martins",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/j%c3%balia-martins-10160313b/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Ana Lúcia Gomes Resende Souza",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/ana-l%c3%bacia-gomes-resende-souza-8b4a79bb/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Lucio Centeno dos Santos",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/luciocentenologistica/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Aurélio Souza",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/aurelioasouza/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Pedro Guedes",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/pedro-guedes-a442a4bb/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Danilo Zanela, MBA",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/danilo-zanela/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Roberto Tonietto",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/robertotonietto/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Fernando Alfano",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Jose Rafael Vasquez",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/jose-rafael-vasquez-3415bb30/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Everton Nogueira",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/everton-nogueira-4914b52b/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Thiago Moreira",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/thiago-moreira-52a36097/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Jefferson George Nunes",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/jefferson-george-nunes-b0973a165/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Fernando Alves Teixeira",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fernando-alves-teixeira-a66297138/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Fabio Mattos",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fabiomattos/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Roberval Anias",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/robervalanias/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Fábio Araújo",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/f%c3%a1bio-ara%c3%bajo-a7576278/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Frederico Pereira",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fredericoaraujopereira/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Roberto Soares",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/robertosoares-ss/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Júlio Cézar de Oliveira",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/julio-cezar-de-oliveira-oficial/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Leonardo Gallo",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/galloleonardo/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Paulo Sérgio de Carvalho Araújo",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/paulo-araujo1964/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Cleyton Oliveira",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/cleyton-oliveira-06a55a158/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Ronaldo dos Santos",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/ronaldo-dos-santos/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Gustavo Manfrin",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/gusmanfrin/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Sergio Biagioli",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/sergiobiagioli/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Jussara Timbola",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/jussara-timbola-/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Claiton Santin",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/claiton-santin-6575a434/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Celso Oliveira",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/celso-oliveira-784a9b9/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Rafael Scarpin",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rafael-scarpin-a5b7aa32/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Flávio Pioltini",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/pioltini/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Beatriz Gomes Lima",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/biafgomes/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Mariana Pimentel",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/mariana-pimentel-b1336431/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Michelle Auad Peixoto da Costa",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/michelleauad/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marcela Lemos Andriewiski",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marcela-lemos-andriewiski-48286239/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Márcia Andrade",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marciacandrade/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Wilson Junior",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/wilson-junior-72809b19/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Andreia Vitoriano",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/andreiavitoriano/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "ROGERIO KOHNTOPP",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rogerio-kohntopp-1b8530102/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "André Duran",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/andr%c3%a9-duran-78209a51/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Fabricio Kendi Kojima",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fabricio-kendi-kojima/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Leandro Dias",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/leandro-a-c-dias/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "João Mário Lourenço Filho",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/jo%c3%a3o-m%c3%a1rio-louren%c3%a7o-filho-3a4b7452/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Felipe Duvivier de Albuquerque Mello",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/felipe-duvivier-de-albuquerque-mello-9b8a4ba1/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Gustavo P.",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/gustavo-polo/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marcelle Guerra",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marcelle-guerra-447981b4/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Gustavo Brasil Niemxeski",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/gustavo-brasil-niemxeski-5a62a9/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Arnaldo Oliveira",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/arnaldo-oliveira-226b8b120/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Rafael H.",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rafaelhashiba/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Felipe Ferreira Dutra",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/felipe-ferreira-dutra-73818040/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Diego R.",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/diego-robles-r/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Antonio Cota",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/antonio-cota-7b7a2a26/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Luiz Thiebaut",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/luiz-thiebaut-082baa35/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Tufi Daher Filho",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/tufi-daher-filho-3a309337/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Arivaldo Bento",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/arivaldo-bento-34819858/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    }
+  ],
+  "acceptedThisWeek": [
+    {
+      "name": "Marcus Vinícius Amaral dos Anjos",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/mvanjos/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Roberto Moura de Castro",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/robertomcastro/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Thiago Brito",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/thiago-brito-83619b109/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Ana Júlia Fantucci",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/ana-j%c3%balia-fantucci-266392244/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "José Roberto Braga",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/jos%c3%a9-roberto-braga/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    }
+  ],
+  "repliedThisWeek": [
+    {
+      "name": "Rafael Romani",
+      "company": "Procter & Gamble",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 21,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/rafael-romani-28842019/",
+      "firstOutboundAt": "2026-06-25T14:12:00.000Z",
+      "lastInboundAt": "2026-07-17T11:26:00.000Z"
+    },
+    {
+      "name": "Mauro Loureiro Jr",
+      "company": "Theo e Bia",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": -1,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/mauroloureirojr/",
+      "firstOutboundAt": "2026-07-17T19:57:00.000Z",
+      "lastInboundAt": "2026-07-17T03:00:00.000Z"
+    }
+  ],
+  "overdueFollowUp": []
+}
