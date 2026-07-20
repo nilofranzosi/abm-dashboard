@@ -148,6 +148,7 @@
 
     .company-name{font-weight:600;font-size:13px;margin-bottom:2px;}
     .company-uf{font-size:11px;color:var(--muted);}
+    .company-aliases{font-size:10px;color:var(--muted);margin-top:1px;font-style:italic;}
 
     /* badges */
     .badge{display:inline-flex;align-items:center;height:20px;padding:0 8px;border-radius:999px;font-size:11px;font-weight:600;white-space:nowrap;}
@@ -762,6 +763,11 @@
     return `<button class="badge ${cls}" data-key="${esc(key)}" onclick="toggleAbordado(this.dataset.key)" title="${esc(tip)}" style="cursor:pointer;border:none;font-family:inherit;padding:0 8px;height:20px;">${label}${editIcon}</button>`;
   }
 
+  function aliasesLine(e) {
+    if (!e.aliases || e.aliases.length === 0) return '';
+    return `<div class="company-aliases">tb. conhecida como: ${e.aliases.map(a => esc(a)).join(', ')}</div>`;
+  }
+
   function joinvilleTag(e) {
     const txt = ((e.notes || '') + ' ' + (e.uf || '')).toLowerCase();
     if (txt.includes('joinville') || txt.includes('araquari')) {
@@ -885,6 +891,7 @@
         <td>
           <div class="company-name">${esc(e.name)}${joinvilleTag(e)}</div>
           <div class="company-uf">${esc(e.uf || "")}</div>
+          ${aliasesLine(e)}
         </td>
         <td>${segmentoCell}</td>${estadoCell}
         <td>${abordadoCell(e)}</td>

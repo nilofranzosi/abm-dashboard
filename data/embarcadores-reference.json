@@ -1,8 +1,8 @@
 {
   "_placeholder": false,
   "generatedFrom": "public/data/embarcadores.json",
-  "generatedAt": "2026-07-08T11:53:11.529Z",
-  "count": 161,
+  "generatedAt": "2026-07-17T14:18:56.526Z",
+  "count": 194,
   "entries": [
     {
       "id": 1,
@@ -378,7 +378,7 @@
       "normalizedName": "carrefour-brasil",
       "segment": "E-commerce & Varejo",
       "uf": "SP",
-      "tier": 2
+      "tier": 1
     },
     {
       "id": 49,
@@ -782,11 +782,11 @@
     },
     {
       "id": 103,
-      "name": "GPA / Grupo Pão de Açúcar",
+      "name": "GPA — Grupo Pão de Açúcar",
       "normalizedName": "gpa-grupo-pao-de-acucar",
       "segment": "E-commerce & Varejo",
       "uf": "SP",
-      "tier": 2
+      "tier": 1
     },
     {
       "id": 104,
@@ -794,7 +794,7 @@
       "normalizedName": "grupo-mateus",
       "segment": "E-commerce & Varejo",
       "uf": "MA",
-      "tier": 2
+      "tier": 1
     },
     {
       "id": 105,
@@ -802,7 +802,7 @@
       "normalizedName": "cencosud-brasil",
       "segment": "E-commerce & Varejo",
       "uf": "SC",
-      "tier": 3
+      "tier": 1
     },
     {
       "id": 106,
@@ -1290,6 +1290,270 @@
       "normalizedName": "danone-brasil",
       "segment": "Alimentos & Bebidas",
       "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 174,
+      "name": "Grupo Koch",
+      "normalizedName": "grupo-koch",
+      "segment": "E-commerce & Varejo",
+      "uf": "SC",
+      "tier": 1
+    },
+    {
+      "id": 175,
+      "name": "Giassi Supermercados",
+      "normalizedName": "giassi-supermercados",
+      "segment": "E-commerce & Varejo",
+      "uf": "SC",
+      "tier": 1
+    },
+    {
+      "id": 176,
+      "name": "Atakarejo",
+      "normalizedName": "atakarejo",
+      "segment": "E-commerce & Varejo",
+      "uf": "BA",
+      "tier": 1
+    },
+    {
+      "id": 177,
+      "name": "Grupo Guanabara",
+      "normalizedName": "grupo-guanabara",
+      "segment": "E-commerce & Varejo",
+      "uf": "RJ",
+      "tier": 1
+    },
+    {
+      "id": 178,
+      "name": "Supermercados BH (Grupo BH)",
+      "normalizedName": "supermercados-bh-grupo-bh",
+      "segment": "E-commerce & Varejo",
+      "uf": "MG",
+      "tier": 1
+    },
+    {
+      "id": 179,
+      "name": "Grupo Savegnago",
+      "normalizedName": "grupo-savegnago",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 180,
+      "name": "Sonda Supermercados",
+      "normalizedName": "sonda-supermercados",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 181,
+      "name": "Comercial Zaragoza",
+      "normalizedName": "comercial-zaragoza",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 182,
+      "name": "Pague Menos Supermercados",
+      "normalizedName": "pague-menos-supermercados",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 183,
+      "name": "Roldão Atacadista",
+      "normalizedName": "roldao-atacadista",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 184,
+      "name": "Plurix",
+      "normalizedName": "plurix",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 185,
+      "name": "Covabra Supermercados",
+      "normalizedName": "covabra-supermercados",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 186,
+      "name": "Coop — Cooperativa de Consumo",
+      "normalizedName": "coop-cooperativa-de-consumo",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 187,
+      "name": "Grupo Angeloni",
+      "normalizedName": "grupo-angeloni",
+      "segment": "E-commerce & Varejo",
+      "uf": "SC",
+      "tier": 2
+    },
+    {
+      "id": 188,
+      "name": "Bistek Supermercados",
+      "normalizedName": "bistek-supermercados",
+      "segment": "E-commerce & Varejo",
+      "uf": "SC",
+      "tier": 2
+    },
+    {
+      "id": 189,
+      "name": "Fort Atacadista",
+      "normalizedName": "fort-atacadista",
+      "segment": "E-commerce & Varejo",
+      "uf": "SC",
+      "tier": 2
+    },
+    {
+      "id": 190,
+      "name": "Bahamas Supermercados",
+      "normalizedName": "bahamas-supermercados",
+      "segment": "E-commerce & Varejo",
+      "uf": "BA",
+      "tier": 2
+    },
+    {
+      "id": 191,
+      "name": "Rede Mix Atacarejo",
+      "normalizedName": "rede-mix-atacarejo",
+      "segment": "E-commerce & Varejo",
+      "uf": "BA",
+      "tier": 2
+    },
+    {
+      "id": 192,
+      "name": "Hiperideal",
+      "normalizedName": "hiperideal",
+      "segment": "E-commerce & Varejo",
+      "uf": "BA",
+      "tier": 2
+    },
+    {
+      "id": 193,
+      "name": "Torre e Cia Supermercados",
+      "normalizedName": "torre-e-cia-supermercados",
+      "segment": "E-commerce & Varejo",
+      "uf": "RJ",
+      "tier": 2
+    },
+    {
+      "id": 194,
+      "name": "Super Nosso",
+      "normalizedName": "super-nosso",
+      "segment": "E-commerce & Varejo",
+      "uf": "MG",
+      "tier": 2
+    },
+    {
+      "id": 195,
+      "name": "Grupo DMA / Epa",
+      "normalizedName": "grupo-dma-epa",
+      "segment": "E-commerce & Varejo",
+      "uf": "MG",
+      "tier": 2
+    },
+    {
+      "id": 196,
+      "name": "Grupo Barcelos",
+      "normalizedName": "grupo-barcelos",
+      "segment": "E-commerce & Varejo",
+      "uf": "RJ",
+      "tier": 3
+    },
+    {
+      "id": 197,
+      "name": "Comercial de Alimentos Gilmar",
+      "normalizedName": "comercial-de-alimentos-gilmar",
+      "segment": "E-commerce & Varejo",
+      "uf": "BA",
+      "tier": 3
+    },
+    {
+      "id": 198,
+      "name": "Novo Mix Atacado",
+      "normalizedName": "novo-mix-atacado",
+      "segment": "E-commerce & Varejo",
+      "uf": "BA",
+      "tier": 3
+    },
+    {
+      "id": 199,
+      "name": "Tenda Atacado",
+      "normalizedName": "tenda-atacado",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 200,
+      "name": "ALE Combustíveis",
+      "normalizedName": "ale-combustiveis",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "MG",
+      "tier": 3
+    },
+    {
+      "id": 201,
+      "name": "Rodoil Distribuidora de Combustíveis",
+      "normalizedName": "rodoil-distribuidora-de-combustiveis",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "RS",
+      "tier": 3
+    },
+    {
+      "id": 202,
+      "name": "Atacadão",
+      "normalizedName": "atacadao",
+      "segment": "E-commerce & Varejo",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 203,
+      "name": "Kenvue",
+      "normalizedName": "kenvue",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 204,
+      "name": "Campari Group",
+      "normalizedName": "campari-group",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 205,
+      "name": "Grupo São Vicente",
+      "normalizedName": "grupo-sao-vicente",
+      "segment": "E-commerce & Varejo",
+      "uf": "RJ",
+      "tier": 2
+    },
+    {
+      "id": 206,
+      "name": "MadeiraMadeira",
+      "normalizedName": "madeiramadeira",
+      "segment": "E-commerce & Varejo",
+      "uf": "PR",
       "tier": 2
     }
   ]

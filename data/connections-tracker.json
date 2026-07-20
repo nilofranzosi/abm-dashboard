@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-17T11:50:24.636Z",
-  "enrichedFile": "2026-07-17T11:44:39.267Z",
-  "pendingSnapshotAt": "2026-07-17T11:38:49.055Z",
+  "generatedAt": "2026-07-17T13:01:05.030Z",
+  "enrichedFile": "2026-07-17T12:52:37.270Z",
+  "pendingSnapshotAt": "2026-07-17T12:47:10.431Z",
   "summary": {
     "sentThisWeek": 10,
     "pendingConnections": 70,
@@ -14,7 +14,8 @@
     "FIRST_CONTACT_SENT": 9,
     "REPLIED_NEUTRAL": 2,
     "FOLLOW_UP_SENT": 4,
-    "CONNECTION_SENT": 12
+    "CONNECTION_ACCEPTED": 4,
+    "CONNECTION_SENT": 27
   },
   "sentThisWeek": [
     {
@@ -78,13 +79,13 @@
       "lastInboundAt": null
     },
     {
-      "name": "Marco Túlio Cabral",
-      "company": "DMA Distribuidora S/A - EPA",
+      "name": "José Roberto Braga",
+      "company": "A apurar",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": -1,
+      "daysSinceSent": 0,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/marcotuliocabral/",
-      "firstOutboundAt": "2026-07-17T18:35:00.000Z",
+      "profileUrl": "https://www.linkedin.com/in/jos%C3%A9-roberto-braga/pt/",
+      "firstOutboundAt": "2026-07-17T12:21:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -119,6 +120,16 @@
     }
   ],
   "pendingConnections": [
+    {
+      "name": "Graziella Lourenço",
+      "company": "Ultra",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/graziella-louren%c3%a7o-29b7bb31/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
     {
       "name": "Fabiana Taccola",
       "company": "Lojas Renner S.A.",
@@ -241,7 +252,7 @@
     },
     {
       "name": "Luiz Fabio R.",
-      "company": "A apurar",
+      "company": "Ocean Network Express",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -251,7 +262,7 @@
     },
     {
       "name": "Michelle Almeida",
-      "company": "A apurar",
+      "company": "8M Negócios - Estratégia e Operações",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -261,7 +272,7 @@
     },
     {
       "name": "Daniela Cunha",
-      "company": "A apurar",
+      "company": "NTT DATA",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -271,7 +282,7 @@
     },
     {
       "name": "Leonidas Nora Junior",
-      "company": "A apurar",
+      "company": "ASTRA - Associação das Tradings de Santa Catarina",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -281,7 +292,7 @@
     },
     {
       "name": "Júlia Martins",
-      "company": "A apurar",
+      "company": "AMTRANS LOGISTICS",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -291,7 +302,7 @@
     },
     {
       "name": "Ana Lúcia Gomes Resende Souza",
-      "company": "A apurar",
+      "company": "Procter & Gamble",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -301,7 +312,7 @@
     },
     {
       "name": "Lucio Centeno dos Santos",
-      "company": "A apurar",
+      "company": "Amazon",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -311,7 +322,7 @@
     },
     {
       "name": "Aurélio Souza",
-      "company": "A apurar",
+      "company": "ALE Combustíveis",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -321,7 +332,7 @@
     },
     {
       "name": "Pedro Guedes",
-      "company": "A apurar",
+      "company": "Ipiranga",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -331,7 +342,7 @@
     },
     {
       "name": "Danilo Zanela, MBA",
-      "company": "A apurar",
+      "company": "Ipiranga",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -341,7 +352,7 @@
     },
     {
       "name": "Roberto Tonietto",
-      "company": "A apurar",
+      "company": "Rodoil Distribuidora de Combustíveis S.A.",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -351,7 +362,7 @@
     },
     {
       "name": "Fernando Alfano",
-      "company": "A apurar",
+      "company": "Tenda Atacado",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -361,7 +372,7 @@
     },
     {
       "name": "Jose Rafael Vasquez",
-      "company": "A apurar",
+      "company": "Tenda Atacado",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -371,7 +382,7 @@
     },
     {
       "name": "Everton Nogueira",
-      "company": "A apurar",
+      "company": "Cencosud S.A.",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
@@ -808,22 +819,12 @@
       "profileUrl": "https://www.linkedin.com/in/tufi-daher-filho-3a309337/",
       "firstOutboundAt": null,
       "lastInboundAt": null
-    },
-    {
-      "name": "Arivaldo Bento",
-      "company": "A apurar",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/arivaldo-bento-34819858/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
     }
   ],
   "acceptedThisWeek": [
     {
       "name": "Marcus Vinícius Amaral dos Anjos",
-      "company": "A apurar",
+      "company": "Vini Anjos Gestão e Negócios",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
@@ -833,7 +834,7 @@
     },
     {
       "name": "Roberto Moura de Castro",
-      "company": "A apurar",
+      "company": "Desenvolvimento Humano",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
@@ -843,7 +844,7 @@
     },
     {
       "name": "Thiago Brito",
-      "company": "A apurar",
+      "company": "FLYPACK Transporte e Logística ltda",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,

@@ -1126,17 +1126,17 @@
   },
   {
     "weekKey": "2026-S29",
-    "generatedAt": "2026-07-17T11:57:40.498Z",
+    "generatedAt": "2026-07-17T18:57:43.953Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 104,
-    "activePipeline": 94,
+    "totalApproached": 83,
+    "activePipeline": 73,
     "pausedCount": 10,
     "repliedOrBetter": 15,
     "meetingOrBetter": 7,
     "dealCount": 6,
-    "replyRate": 0.1595744680851064,
-    "meetingRate": 0.07446808510638298,
-    "dealRate": 0.06382978723404255,
+    "replyRate": 0.2054794520547945,
+    "meetingRate": 0.0958904109589041,
+    "dealRate": 0.0821917808219178,
     "avgDaysToFirstReply": 7.916666666666667,
     "avgDaysSinceLastOutbound": 0,
     "totalOutboundTouchpoints": 22,
@@ -1145,17 +1145,17 @@
       {
         "stage": "CONNECTION_SENT",
         "label": "Conexão Enviada",
-        "count": 7
+        "count": 10
       },
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 50
+        "count": 30
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 22
+        "count": 18
       },
       {
         "stage": "REPLIED",
@@ -1305,30 +1305,30 @@
         "nextActionDueAt": "2026-07-13T20:30:00.000Z"
       },
       {
-        "company": "Theo e Bia",
+        "company": "P&G",
+        "stage": "REPLIED",
+        "contacts": 2,
+        "outboundTouchpoints": 3,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-19T11:26:00.000Z"
+      },
+      {
+        "company": "Atacadão",
         "stage": "REPLIED",
         "contacts": 1,
         "outboundTouchpoints": 2,
         "inboundTouchpoints": 1,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-07-19T03:00:00.000Z"
-      },
-      {
-        "company": "P&G",
-        "stage": "REPLIED",
-        "contacts": 1,
-        "outboundTouchpoints": 3,
-        "inboundTouchpoints": 1,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-07-19T11:26:00.000Z"
+        "nextActionDueAt": null
       }
     ],
-    "activeContacts": 94,
+    "activeContacts": 73,
     "excludedContacts": 10,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 104,
-    "qualifiedAdvanceRate": 0.07446808510638298
+    "uniqueCompanies": 83,
+    "qualifiedAdvanceRate": 0.0958904109589041
   }
 ]

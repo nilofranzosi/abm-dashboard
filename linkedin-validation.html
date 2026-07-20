@@ -44,6 +44,8 @@
     .reason-tag.replied { background: #FFF3CD; color: var(--amber); }
     .reason-tag.company-unknown { background: #FEE2E2; color: var(--red); }
     .reason-tag.overdue { background: #EDE9FE; color: #6D28D9; }
+    .reason-tag.icp-unknown { background: #FEE2E2; color: var(--red); }
+    .reason-tag.company-off-list { background: #DBEAFE; color: #1D4ED8; }
 
     /* Contacts list inside the company card */
     .contacts-list { padding: 0 16px 10px; display: grid; gap: 8px; margin-top: 10px; }
@@ -87,6 +89,7 @@
     .inline-input { display: none; gap: 6px; align-items: center; margin-top: 6px; width: 100%; }
     .inline-input.open { display: flex; }
     .inline-input input { flex: 1; border: 1px solid var(--line); border-radius: 5px; padding: 6px 10px; font-size: 13px; }
+    .inline-input select { flex: 1; border: 1px solid var(--line); border-radius: 5px; padding: 6px 10px; font-size: 13px; font-family: inherit; background: #FFF; }
 
     /* Toast */
     .toast-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 999; }
@@ -160,7 +163,9 @@
   const REASON_LABELS = {
     replied: "Respondeu",
     "company-unknown": "Empresa desconhecida",
-    overdue: "Sem retorno >7d"
+    overdue: "Sem retorno >7d",
+    "icp-unknown": "ICP nao resolvido",
+    "company-off-list": "Fora da lista mestre"
   };
 
   // ── data ──────────────────────────────────────────────────────────────────
@@ -270,6 +275,35 @@
     }
   }
 
+  // Resolve o segmento ICP do grupo. Sem isto o backend bloqueia "Aprovar" com
+  // "Resolva o segmento (ICP) antes de aprovar" e nao havia como destravar.
+  async function confirmIcpSegment(companyId) {
+    const icpSegment = document.getElementById(`icp-val-${companyId}`).value;
+    try {
+      const result = await submitAction({ action: "correct-icp-segment", companyId, icpSegment });
+      closeInputs(companyId);
+      if (result.removedFromQueue) {
+        removeCard(companyId);
+        showToast(`✓ ICP definido (${icpSegment}) e grupo resolvido`);
+      } else {
+        const tag = document.querySelector(`#card-${companyId} .reason-tag.icp-unknown`);
+        if (tag) tag.remove();
+        const btn = document.querySelector(`#card-${companyId} button[onclick*="openCorrectIcp"]`);
+        if (btn) btn.remove();
+        showToast(`ICP definido: ${icpSegment} — ja pode aprovar`);
+      }
+      updateKpisFromSummary(result.summary);
+    } catch (e) {
+      showToast("Erro: " + e.message);
+    }
+  }
+
+  function openCorrectIcp(companyId) {
+    closeInputs(companyId);
+    document.getElementById(`input-icp-${companyId}`).classList.add("open");
+    document.getElementById(`icp-val-${companyId}`).focus();
+  }
+
   function openCorrectCompany(companyId) {
     closeInputs(companyId);
     document.getElementById(`input-company-${companyId}`).classList.add("open");
@@ -369,6 +403,8 @@
 
   function renderCompanyCard(group) {
     const isUnknown = group.resolvedCompany === "A apurar";
+    // ICP pendente => aprovar esta bloqueado no backend; mostra o seletor de ICP.
+    const needsIcp = group.reviewReasons.includes("icp-unknown") || !group.icpSegment;
     const reasonTagsHtml = group.reviewReasons.map(r =>
       `<span class="reason-tag ${r}">${REASON_LABELS[r] || r}</span>`
     ).join("");
@@ -395,11 +431,21 @@
       <div class="actions">
         <button class="btn btn-approve" onclick="approve('${group.id}')">Aprovar Empresa</button>
         <button class="btn btn-correct" onclick="openCorrectCompany('${group.id}')">${isUnknown ? "Identificar Empresa" : "Alterar Empresa"}</button>
+        ${needsIcp ? `<button class="btn btn-correct" onclick="openCorrectIcp('${group.id}')">Definir ICP</button>` : ""}
         <button class="btn btn-discard" onclick="discard('${group.id}', '${companyName}')">Descartar</button>
 
         <div class="inline-input" id="input-company-${group.id}">
           <input type="text" id="company-val-${group.id}" placeholder="Nome da empresa..." />
           <button class="btn btn-confirm" onclick="confirmCompany('${group.id}')">Salvar</button>
+          <button class="btn btn-cancel" onclick="closeInputs('${group.id}')">Cancelar</button>
+        </div>
+
+        <div class="inline-input" id="input-icp-${group.id}">
+          <select id="icp-val-${group.id}">
+            <option value="EMBARCADOR">Embarcador</option>
+            <option value="TRANSPORTADORA">Transportadora</option>
+          </select>
+          <button class="btn btn-confirm" onclick="confirmIcpSegment('${group.id}')">Salvar ICP</button>
           <button class="btn btn-cancel" onclick="closeInputs('${group.id}')">Cancelar</button>
         </div>
       </div>

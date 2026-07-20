@@ -1,66 +1,11 @@
 {
-  "generatedAt": "2026-07-17T11:51:27.100Z",
+  "generatedAt": "2026-07-17T18:57:46.027Z",
   "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-17.json",
   "summary": {
-    "total": 1,
-    "replied": 1,
+    "total": 0,
+    "replied": 0,
     "companyUnknown": 0,
     "overdue": 0
   },
-  "companies": [
-    {
-      "id": "theo-e-bia",
-      "resolvedCompany": "Theo e Bia",
-      "reviewReasons": [
-        "replied"
-      ],
-      "contacts": [
-        {
-          "contactName": "Mauro Loureiro Jr",
-          "funnelStatus": "REPLIED_NEUTRAL",
-          "roleOrHeadline": "Senior Executive – Operations, Supply, CX & E-commerce | PhD student | Governance, Strategy, Digital Transformation & OpEx | Pai do Theo e Bia",
-          "confidence": "Media",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-07-17T03:00:00.000Z",
-          "lastInboundAt": "2026-07-17T03:00:00.000Z",
-          "outboundTouchpoints": 2,
-          "inboundMessages": [
-            {
-              "occurredAt": "2026-07-17T19:59:00.000Z",
-              "body": "Olá Thiago, obrigado.Ainda estou em fase de aprendizado"
-            },
-            {
-              "occurredAt": "2026-07-17T03:00:00.000Z",
-              "body": "Me mande a apresentação no meu e-mail"
-            },
-            {
-              "occurredAt": "2026-07-17T03:00:00.000Z",
-              "body": "mauro_loureiro_junior@atacadao.com.br"
-            }
-          ],
-          "outboundMessages": [
-            {
-              "occurredAt": "2026-07-17T19:57:00.000Z",
-              "body": "Mauro, vi aqui que você assumiu como Diretor no Atacadão, primeiramente queria te parabenizar e desejar muito sucesso nesse novo desafio!"
-            },
-            {
-              "occurredAt": "2026-07-17T19:58:00.000Z",
-              "body": "A PX atua hoje fornecendo mão de obra para a operação logística, com um novo modelo de contratação conhecido como Profissional Digital.(Editada)"
-            },
-            {
-              "occurredAt": "2026-07-17T20:02:00.000Z",
-              "body": "Beleza, vou encaminhar aqui nossa apresentação."
-            },
-            {
-              "occurredAt": "2026-07-17T03:00:00.000Z",
-              "body": "Obrigado!"
-            }
-          ],
-          "icpSegment": "EMBARCADOR"
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": "EMBARCADOR"
-    }
-  ]
+  "companies": []
 }
