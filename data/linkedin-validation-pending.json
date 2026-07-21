@@ -1,11 +1,361 @@
 {
-  "generatedAt": "2026-07-17T18:57:46.027Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-17.json",
+  "generatedAt": "2026-07-21T11:57:53.266Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-21.json",
   "summary": {
-    "total": 0,
+    "total": 14,
     "replied": 0,
-    "companyUnknown": 0,
+    "companyUnknown": 4,
     "overdue": 0
   },
-  "companies": []
+  "companies": [
+    {
+      "id": "delly-s",
+      "resolvedCompany": "Delly's",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Rafael Andrade",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "CEO Delly’s",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-beatriz-gomes-lima",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Beatriz Gomes Lima",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Executiva de Operações | Franquias | Comercial",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "pernod-ricard",
+      "resolvedCompany": "Pernod Ricard",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Mariana Pimentel",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "LATAM Legal Director",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-andreia-vitoriano",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Andreia Vitoriano",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "CHRO | Executiva de RH | Certificada em Coaching",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "conlog-sa",
+      "resolvedCompany": "Conlog SA",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Leandro Dias",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Gerente Regional de Operações - Sudeste - Cliente Ambev",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "csn-companhia-siderurgica-nacional",
+      "resolvedCompany": "CSN - Companhia Siderúrgica Nacional",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "João Mário Lourenço Filho",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Diretor de Logística",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "movecta",
+      "resolvedCompany": "Movecta",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Gustavo P.",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Driving sustainable logistics through integration, people, and innovation | CCO at Movecta",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "TRANSPORTADORA"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "TRANSPORTADORA"
+    },
+    {
+      "id": "logistica-consultor",
+      "resolvedCompany": "Logística Consultor",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Arnaldo Oliveira",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Gerente de Logística I Coordenador de Logística I Gerente de Operações I Gestão de Estoque I Green Belt Seis Sigma",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-rafael-h",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Rafael H.",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "A Nerd who became a Data Driven Marketing Gangster, AI Enthusiast, Branding Growth Specialist.",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "movemais",
+      "resolvedCompany": "MoveMais",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Diego R.",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "CFO | Diretor Financeiro | Planejamento Estratégico | Controladoria | Finanças | Meios de Pagamento | Infraestrutura | Transformação Financeira e Crescimento de Negócios",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "cia-siregurgica-nacional",
+      "resolvedCompany": "Cia Siregurgica Nacional",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Tufi Daher Filho",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Diretor Executivo logística e Infraestrutura CSN",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "abiomed-j-j-medtech",
+      "resolvedCompany": "Abiomed - J&J MedTech",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "João Bruno Pereira",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Director, Global Supply Chain Planning at Abiomed - J&J MedTech",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-felipe-figueiredo-goncalves",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Felipe Figueiredo Gonçalves",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Vice Presidente de SC Latam - Home Care e Presidente Unilever Brasil Industrial",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "byd",
+      "resolvedCompany": "BYD",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Marcello Von Schneider",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Electric Mobility - New Energy Solutions - Institutional & Corporate Affairs - Sales & Marketing",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    }
+  ]
 }

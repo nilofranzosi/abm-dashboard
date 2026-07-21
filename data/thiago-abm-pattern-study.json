@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-07-17T18:57:45.065Z",
+  "generatedAt": "2026-07-21T11:57:51.536Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
-    "weekKey": "2026-S29",
-    "totalCompanies": 83,
-    "activeCompanies": 73,
+    "weekKey": "2026-S30",
+    "totalCompanies": 93,
+    "activeCompanies": 83,
     "pausedCompanies": 10,
-    "repliedOrBetterCompanies": 15,
+    "repliedOrBetterCompanies": 16,
     "meetingOrBetterCompanies": 7,
     "dealCompanies": 6,
-    "companyReplyRate": 0.2054794520547945,
-    "companyMeetingRate": 0.0958904109589041,
-    "companyDealRate": 0.0821917808219178
+    "companyReplyRate": 0.1927710843373494,
+    "companyMeetingRate": 0.08433734939759036,
+    "companyDealRate": 0.07228915662650602
   },
   "sample": {
-    "activeContacts": 137,
-    "replies": 15,
-    "advanced": 9,
+    "activeContacts": 190,
+    "replies": 16,
+    "advanced": 10,
     "negatives": 1,
-    "noResponse": 112,
-    "replyRate": 0.10948905109489052,
-    "advancedRate": 0.06569343065693431,
-    "avgDaysToFirstReply": 6.466666666666667
+    "noResponse": 162,
+    "replyRate": 0.08421052631578947,
+    "advancedRate": 0.05263157894736842,
+    "avgDaysToFirstReply": 5.875
   },
   "bySegment": [
     {
       "segment": "Farmacêutico & Saúde",
-      "total": 4,
+      "total": 5,
       "responded": 1,
       "advanced": 1,
       "negative": 0,
-      "replyRate": 0.25,
-      "advancedRate": 0.25,
+      "replyRate": 0.2,
+      "advancedRate": 0.2,
       "avgDaysToFirstReply": 1
     },
     {
@@ -47,21 +47,21 @@
     },
     {
       "segment": "Cosméticos & Higiene",
-      "total": 6,
+      "total": 8,
       "responded": 3,
       "advanced": 2,
       "negative": 0,
-      "replyRate": 0.5,
-      "advancedRate": 0.3333333333333333,
+      "replyRate": 0.375,
+      "advancedRate": 0.25,
       "avgDaysToFirstReply": 0.6666666666666666
     },
     {
       "segment": "Alimentos & Bebidas",
-      "total": 14,
+      "total": 15,
       "responded": 1,
       "advanced": 0,
       "negative": 0,
-      "replyRate": 0.07142857142857142,
+      "replyRate": 0.06666666666666667,
       "advancedRate": 0,
       "avgDaysToFirstReply": 0
     },
@@ -77,27 +77,27 @@
     },
     {
       "segment": "Indústria Pesada",
-      "total": 8,
+      "total": 9,
       "responded": 1,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.125,
-      "advancedRate": 0.375,
+      "replyRate": 0.1111111111111111,
+      "advancedRate": 0.3333333333333333,
       "avgDaysToFirstReply": 7
     },
     {
       "segment": "Combustíveis, Energia & Química",
-      "total": 4,
+      "total": 5,
       "responded": 1,
-      "advanced": 2,
+      "advanced": 3,
       "negative": 0,
-      "replyRate": 0.25,
-      "advancedRate": 0.5,
+      "replyRate": 0.2,
+      "advancedRate": 0.6,
       "avgDaysToFirstReply": 17
     },
     {
       "segment": "Automotivo & Pneus",
-      "total": 4,
+      "total": 7,
       "responded": 0,
       "advanced": 0,
       "negative": 0,
@@ -107,7 +107,7 @@
     },
     {
       "segment": "Agro & Commodities",
-      "total": 6,
+      "total": 7,
       "responded": 0,
       "advanced": 0,
       "negative": 0,
@@ -117,13 +117,13 @@
     },
     {
       "segment": "Segmento a classificar",
-      "total": 68,
-      "responded": 6,
+      "total": 111,
+      "responded": 7,
       "advanced": 0,
       "negative": 1,
-      "replyRate": 0.08823529411764706,
+      "replyRate": 0.06306306306306306,
       "advancedRate": 0,
-      "avgDaysToFirstReply": 4
+      "avgDaysToFirstReply": 3
     },
     {
       "segment": "Têxtil & Vestuário",
@@ -139,79 +139,79 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 40,
-      "responded": 6,
+      "total": 47,
+      "responded": 5,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.15,
-      "advancedRate": 0.075,
-      "avgDaysToFirstReply": 9
+      "replyRate": 0.10638297872340426,
+      "advancedRate": 0.06382978723404255,
+      "avgDaysToFirstReply": 10.6
     },
     {
       "seniority": "Diretoria / Head",
-      "total": 56,
-      "responded": 7,
+      "total": 80,
+      "responded": 9,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.125,
-      "advancedRate": 0.05357142857142857,
-      "avgDaysToFirstReply": 3.5714285714285716
+      "replyRate": 0.1125,
+      "advancedRate": 0.0375,
+      "avgDaysToFirstReply": 2.5555555555555554
     },
     {
       "seniority": "Gerência / Especialista",
-      "total": 17,
+      "total": 25,
       "responded": 1,
-      "advanced": 2,
+      "advanced": 3,
       "negative": 0,
-      "replyRate": 0.058823529411764705,
-      "advancedRate": 0.11764705882352941,
+      "replyRate": 0.04,
+      "advancedRate": 0.12,
       "avgDaysToFirstReply": 17
     },
     {
       "seniority": "C-level / VP",
-      "total": 24,
+      "total": 38,
       "responded": 1,
       "advanced": 1,
       "negative": 1,
-      "replyRate": 0.041666666666666664,
-      "advancedRate": 0.041666666666666664,
+      "replyRate": 0.02631578947368421,
+      "advancedRate": 0.02631578947368421,
       "avgDaysToFirstReply": 1
     }
   ],
   "byFunctionArea": [
     {
       "functionArea": "Função a classificar",
-      "total": 36,
-      "responded": 3,
+      "total": 43,
+      "responded": 2,
       "advanced": 1,
       "negative": 0,
-      "replyRate": 0.08333333333333333,
-      "advancedRate": 0.027777777777777776,
-      "avgDaysToFirstReply": 2.6666666666666665
+      "replyRate": 0.046511627906976744,
+      "advancedRate": 0.023255813953488372,
+      "avgDaysToFirstReply": 3.5
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 83,
-      "responded": 12,
-      "advanced": 6,
+      "total": 120,
+      "responded": 14,
+      "advanced": 7,
       "negative": 1,
-      "replyRate": 0.14457831325301204,
-      "advancedRate": 0.07228915662650602,
-      "avgDaysToFirstReply": 7.416666666666667
+      "replyRate": 0.11666666666666667,
+      "advancedRate": 0.058333333333333334,
+      "avgDaysToFirstReply": 6.214285714285714
     },
     {
       "functionArea": "Procurement / Suprimentos",
-      "total": 8,
+      "total": 9,
       "responded": 0,
       "advanced": 2,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0.25,
+      "advancedRate": 0.2222222222222222,
       "avgDaysToFirstReply": null
     },
     {
       "functionArea": "Alta gestão",
-      "total": 4,
+      "total": 10,
       "responded": 0,
       "advanced": 0,
       "negative": 0,
@@ -221,7 +221,7 @@
     },
     {
       "functionArea": "Jurídico / Compliance",
-      "total": 2,
+      "total": 4,
       "responded": 0,
       "advanced": 0,
       "negative": 0,
@@ -243,13 +243,13 @@
   "byTimeBand": [
     {
       "timeBand": "Antes das 08h",
-      "total": 52,
-      "responded": 7,
+      "total": 56,
+      "responded": 8,
       "advanced": 4,
       "negative": 1,
-      "replyRate": 0.1346153846153846,
-      "advancedRate": 0.07692307692307693,
-      "avgDaysToFirstReply": 7.142857142857143
+      "replyRate": 0.14285714285714285,
+      "advancedRate": 0.07142857142857142,
+      "avgDaysToFirstReply": 6.25
     },
     {
       "timeBand": "12h-17h59",
@@ -269,7 +269,7 @@
       "negative": 0,
       "replyRate": 0.15789473684210525,
       "advancedRate": 0.05263157894736842,
-      "avgDaysToFirstReply": 7.333333333333333
+      "avgDaysToFirstReply": 6.333333333333333
     },
     {
       "timeBand": "18h+",
@@ -283,12 +283,12 @@
     },
     {
       "timeBand": "Sem horário",
-      "total": 33,
+      "total": 82,
       "responded": 0,
-      "advanced": 0,
+      "advanced": 1,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0,
+      "advancedRate": 0.012195121951219513,
       "avgDaysToFirstReply": null
     }
   ],
