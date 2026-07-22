@@ -1,13 +1,63 @@
 {
-  "generatedAt": "2026-07-21T11:57:53.266Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-21.json",
+  "generatedAt": "2026-07-22T11:39:22.382Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-22.json",
   "summary": {
-    "total": 14,
+    "total": 16,
     "replied": 0,
-    "companyUnknown": 4,
+    "companyUnknown": 6,
     "overdue": 0
   },
   "companies": [
+    {
+      "id": "unknown-valeria-estelita",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Valéria Estelita",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "--",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-vania-ferreira-xavier",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Vânia Ferreira Xavier",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Diretora de Suprimentos | Grupo Cimed",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
     {
       "id": "delly-s",
       "resolvedCompany": "Delly's",

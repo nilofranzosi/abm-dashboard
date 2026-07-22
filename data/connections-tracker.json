@@ -1,64 +1,24 @@
 {
-  "generatedAt": "2026-07-21T11:51:31.758Z",
-  "enrichedFile": "2026-07-21T11:44:35.343Z",
-  "pendingSnapshotAt": "2026-07-21T11:39:15.236Z",
+  "generatedAt": "2026-07-22T11:38:28.634Z",
+  "enrichedFile": "2026-07-22T11:34:34.779Z",
+  "pendingSnapshotAt": "2026-07-22T11:29:14.392Z",
   "summary": {
-    "sentThisWeek": 12,
+    "sentThisWeek": 7,
     "pendingConnections": 70,
     "acceptedThisWeek": 1,
-    "repliedThisWeek": 3,
+    "repliedThisWeek": 1,
     "overdueFollowUp": 0,
-    "acceptanceRateEst": 17
+    "acceptanceRateEst": 14
   },
   "funnelBreakdown": {
-    "FIRST_CONTACT_SENT": 9,
-    "REPLIED_NEUTRAL": 3,
+    "FIRST_CONTACT_SENT": 5,
+    "FOLLOW_UP_SENT": 7,
+    "REPLIED_NEUTRAL": 2,
     "REPLIED_POSITIVE": 1,
-    "FOLLOW_UP_SENT": 2,
-    "CONNECTION_ACCEPTED": 5,
+    "CONNECTION_ACCEPTED": 8,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
-    {
-      "name": "Alexandro A. A. Cruz",
-      "company": "Grupo Carrefour Brasil",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": -1,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/alexandro-a-a-cruz-11623642/",
-      "firstOutboundAt": "2026-07-21T21:17:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Luciana Bueno",
-      "company": "Grupo São Vicente",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": -1,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/luciana-bueno-33445623/",
-      "firstOutboundAt": "2026-07-21T21:12:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Rogério Andrade",
-      "company": "Grupo Mateus - Novo Mateus",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": -1,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/rogeriosandrade/",
-      "firstOutboundAt": "2026-07-21T21:07:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Mauro Loureiro Jr",
-      "company": "Theo e Bia",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": -1,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/mauroloureirojr/",
-      "firstOutboundAt": "2026-07-21T19:57:00.000Z",
-      "lastInboundAt": "2026-07-21T03:00:00.000Z"
-    },
     {
       "name": "José Roberto Braga",
       "company": "A apurar",
@@ -66,7 +26,7 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/jos%C3%A9-roberto-braga/pt/",
-      "firstOutboundAt": "2026-07-21T12:21:00.000Z",
+      "firstOutboundAt": "2026-07-22T12:21:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -76,7 +36,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/fabiana-taccola-557a0935/",
-      "firstOutboundAt": "2026-07-21T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -86,7 +46,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/graziella-louren%C3%A7o-29b7bb31/",
-      "firstOutboundAt": "2026-07-21T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -96,7 +56,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/luciocentenologistica/",
-      "firstOutboundAt": "2026-07-21T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -106,7 +66,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
-      "firstOutboundAt": "2026-07-21T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -116,31 +76,41 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/grasiella-nascimento-0b54aa22/",
-      "firstOutboundAt": "2026-07-21T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
       "lastInboundAt": "2026-07-18T21:27:00.000Z"
     },
     {
       "name": "Arthur Klann Vieira",
       "company": "MadeiraMadeira",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
+      "status": "FOLLOW_UP_SENT",
+      "daysSinceSent": 7,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/arthur-klann-vieira/",
-      "firstOutboundAt": "2026-07-21T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Mario Augusto Neto",
-      "company": "GPA",
-      "status": "FOLLOW_UP_SENT",
-      "daysSinceSent": 6,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/mario-augusto-neto/",
-      "firstOutboundAt": "2026-07-14T18:45:00.000Z",
+      "firstOutboundAt": "2026-07-15T03:00:00.000Z",
       "lastInboundAt": null
     }
   ],
   "pendingConnections": [
+    {
+      "name": "Valéria Estelita",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/val%c3%a9ria-estelita/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Vânia Ferreira Xavier",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/vaniafxavier/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
     {
       "name": "Rafael Andrade",
       "company": "Delly's",
@@ -168,16 +138,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/bernardom-senior-trading-commodities/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Fábio Ozorio",
-      "company": "Instituto Strabos",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/f%c3%a1bioozorio/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -830,51 +790,21 @@
       "profileUrl": "https://www.linkedin.com/in/barbara-lyra/",
       "firstOutboundAt": null,
       "lastInboundAt": null
-    },
-    {
-      "name": "Rodrigo Tosi Chiacho",
-      "company": "Johnson & Johnson",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/rodrigo-chiacho/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
     }
   ],
   "acceptedThisWeek": [
     {
-      "name": "Zener Costa",
-      "company": "LLZ Garantidora",
+      "name": "Fábio Ozorio",
+      "company": "A apurar",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/zener-costa-359ba116/",
+      "profileUrl": "https://www.linkedin.com/in/f%c3%a1bioozorio/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     }
   ],
   "repliedThisWeek": [
-    {
-      "name": "Rafael Romani",
-      "company": "Procter & Gamble",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 25,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/rafael-romani-28842019/",
-      "firstOutboundAt": "2026-06-25T14:12:00.000Z",
-      "lastInboundAt": "2026-07-21T11:26:00.000Z"
-    },
-    {
-      "name": "Mauro Loureiro Jr",
-      "company": "Theo e Bia",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": -1,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/mauroloureirojr/",
-      "firstOutboundAt": "2026-07-21T19:57:00.000Z",
-      "lastInboundAt": "2026-07-21T03:00:00.000Z"
-    },
     {
       "name": "Grasiella Nascimento",
       "company": "MadeiraMadeira",
@@ -882,7 +812,7 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/grasiella-nascimento-0b54aa22/",
-      "firstOutboundAt": "2026-07-21T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
       "lastInboundAt": "2026-07-18T21:27:00.000Z"
     }
   ],

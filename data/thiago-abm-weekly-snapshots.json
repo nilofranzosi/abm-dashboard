@@ -1333,7 +1333,7 @@
   },
   {
     "weekKey": "2026-S30",
-    "generatedAt": "2026-07-21T11:57:49.447Z",
+    "generatedAt": "2026-07-22T11:39:38.928Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 93,
     "activePipeline": 83,
@@ -1344,10 +1344,10 @@
     "replyRate": 0.1927710843373494,
     "meetingRate": 0.08433734939759036,
     "dealRate": 0.07228915662650602,
-    "avgDaysToFirstReply": 7.076923076923077,
-    "avgDaysSinceLastOutbound": 2.6666666666666665,
-    "totalOutboundTouchpoints": 21,
-    "totalInboundTouchpoints": 6,
+    "avgDaysToFirstReply": 6.615384615384615,
+    "avgDaysSinceLastOutbound": 2.2,
+    "totalOutboundTouchpoints": 26,
+    "totalInboundTouchpoints": 4,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -1357,12 +1357,12 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 30
+        "count": 25
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 18
+        "count": 23
       },
       {
         "stage": "REPLIED",
@@ -1445,8 +1445,8 @@
         "company": "Gerdau",
         "stage": "MEETING_DONE",
         "contacts": 2,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
+        "outboundTouchpoints": 4,
+        "inboundTouchpoints": 1,
         "bestStatus": "MEETING_DONE",
         "score": 80,
         "nextActionDueAt": "2026-06-20T11:30:00.000Z"
@@ -1465,7 +1465,7 @@
         "company": "Continental Pneus",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 0,
+        "outboundTouchpoints": 2,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
@@ -1495,7 +1495,7 @@
         "company": "Tramontina",
         "stage": "REPLIED",
         "contacts": 2,
-        "outboundTouchpoints": 0,
+        "outboundTouchpoints": 2,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
@@ -1515,8 +1515,8 @@
         "company": "P&G",
         "stage": "REPLIED",
         "contacts": 2,
-        "outboundTouchpoints": 3,
-        "inboundTouchpoints": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-07-19T11:26:00.000Z"
@@ -1525,7 +1525,7 @@
         "company": "MadeiraMadeira",
         "stage": "REPLIED",
         "contacts": 2,
-        "outboundTouchpoints": 2,
+        "outboundTouchpoints": 3,
         "inboundTouchpoints": 1,
         "bestStatus": "REPLIED",
         "score": 60,

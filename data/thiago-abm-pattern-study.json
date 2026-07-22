@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T11:57:51.536Z",
+  "generatedAt": "2026-07-22T11:39:41.037Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
@@ -22,7 +22,7 @@
     "noResponse": 162,
     "replyRate": 0.08421052631578947,
     "advancedRate": 0.05263157894736842,
-    "avgDaysToFirstReply": 5.875
+    "avgDaysToFirstReply": 5.5
   },
   "bySegment": [
     {
@@ -83,7 +83,7 @@
       "negative": 0,
       "replyRate": 0.1111111111111111,
       "advancedRate": 0.3333333333333333,
-      "avgDaysToFirstReply": 7
+      "avgDaysToFirstReply": 1
     },
     {
       "segment": "Combustíveis, Energia & Química",
@@ -139,13 +139,13 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 47,
-      "responded": 5,
-      "advanced": 3,
+      "total": 45,
+      "responded": 4,
+      "advanced": 2,
       "negative": 0,
-      "replyRate": 0.10638297872340426,
-      "advancedRate": 0.06382978723404255,
-      "avgDaysToFirstReply": 10.6
+      "replyRate": 0.08888888888888889,
+      "advancedRate": 0.044444444444444446,
+      "avgDaysToFirstReply": 11.5
     },
     {
       "seniority": "Diretoria / Head",
@@ -159,45 +159,45 @@
     },
     {
       "seniority": "Gerência / Especialista",
-      "total": 25,
-      "responded": 1,
-      "advanced": 3,
+      "total": 26,
+      "responded": 2,
+      "advanced": 4,
       "negative": 0,
-      "replyRate": 0.04,
-      "advancedRate": 0.12,
-      "avgDaysToFirstReply": 17
+      "replyRate": 0.07692307692307693,
+      "advancedRate": 0.15384615384615385,
+      "avgDaysToFirstReply": 9
     },
     {
       "seniority": "C-level / VP",
-      "total": 38,
+      "total": 39,
       "responded": 1,
       "advanced": 1,
       "negative": 1,
-      "replyRate": 0.02631578947368421,
-      "advancedRate": 0.02631578947368421,
+      "replyRate": 0.02564102564102564,
+      "advancedRate": 0.02564102564102564,
       "avgDaysToFirstReply": 1
     }
   ],
   "byFunctionArea": [
     {
       "functionArea": "Função a classificar",
-      "total": 43,
-      "responded": 2,
-      "advanced": 1,
+      "total": 41,
+      "responded": 1,
+      "advanced": 0,
       "negative": 0,
-      "replyRate": 0.046511627906976744,
-      "advancedRate": 0.023255813953488372,
-      "avgDaysToFirstReply": 3.5
+      "replyRate": 0.024390243902439025,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": 0
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 120,
-      "responded": 14,
-      "advanced": 7,
+      "total": 122,
+      "responded": 15,
+      "advanced": 8,
       "negative": 1,
-      "replyRate": 0.11666666666666667,
-      "advancedRate": 0.058333333333333334,
-      "avgDaysToFirstReply": 6.214285714285714
+      "replyRate": 0.12295081967213115,
+      "advancedRate": 0.06557377049180328,
+      "avgDaysToFirstReply": 5.866666666666666
     },
     {
       "functionArea": "Procurement / Suprimentos",
@@ -259,7 +259,7 @@
       "negative": 0,
       "replyRate": 0.2,
       "advancedRate": 0.16,
-      "avgDaysToFirstReply": 5
+      "avgDaysToFirstReply": 3.8
     },
     {
       "timeBand": "08h-11h59",
@@ -292,5 +292,120 @@
       "avgDaysToFirstReply": null
     }
   ],
-  "copyStats": null
+  "copyStats": {
+    "totalClassified": 65,
+    "totalOutbound": 209,
+    "byCopyVariant": [
+      {
+        "label": "direto",
+        "total": 65,
+        "responded": 11,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.16923076923076924
+      }
+    ],
+    "byTriggerType": [
+      {
+        "label": "evento-setor",
+        "total": 4,
+        "responded": 1,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0.25
+      },
+      {
+        "label": "sem-gatilho",
+        "total": 55,
+        "responded": 10,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.18181818181818182
+      },
+      {
+        "label": "cargo-novo",
+        "total": 4,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "vaga-logistica",
+        "total": 1,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "expansao",
+        "total": 1,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      }
+    ],
+    "byMessageAngle": [
+      {
+        "label": "eficiencia",
+        "total": 2,
+        "responded": 2,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 1
+      },
+      {
+        "label": "dor-logistica",
+        "total": 52,
+        "responded": 9,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0.17307692307692307
+      },
+      {
+        "label": "capacidade",
+        "total": 7,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      },
+      {
+        "label": "crescimento",
+        "total": 4,
+        "responded": 0,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0
+      }
+    ],
+    "byProofType": [
+      {
+        "label": "dado-mercado",
+        "total": 5,
+        "responded": 1,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0.2
+      },
+      {
+        "label": "case-cliente",
+        "total": 54,
+        "responded": 9,
+        "advanced": 2,
+        "negative": 0,
+        "replyRate": 0.16666666666666666
+      },
+      {
+        "label": "sem-prova",
+        "total": 6,
+        "responded": 1,
+        "advanced": 0,
+        "negative": 0,
+        "replyRate": 0.16666666666666666
+      }
+    ]
+  }
 }
