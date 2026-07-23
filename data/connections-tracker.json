@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-22T11:38:28.634Z",
-  "enrichedFile": "2026-07-22T11:34:34.779Z",
-  "pendingSnapshotAt": "2026-07-22T11:29:14.392Z",
+  "generatedAt": "2026-07-22T19:18:34.478Z",
+  "enrichedFile": "2026-07-22T19:15:10.211Z",
+  "pendingSnapshotAt": "2026-07-22T19:09:58.524Z",
   "summary": {
     "sentThisWeek": 7,
     "pendingConnections": 70,
-    "acceptedThisWeek": 1,
+    "acceptedThisWeek": 2,
     "repliedThisWeek": 1,
     "overdueFollowUp": 0,
     "acceptanceRateEst": 14
@@ -23,7 +23,7 @@
       "name": "José Roberto Braga",
       "company": "A apurar",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": -1,
+      "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/jos%C3%A9-roberto-braga/pt/",
       "firstOutboundAt": "2026-07-22T12:21:00.000Z",
@@ -138,16 +138,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/bernardom-senior-trading-commodities/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Humberto Pereira",
-      "company": "Soluções eSales",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/humberto-pereira-0bbab320/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -790,6 +780,16 @@
       "profileUrl": "https://www.linkedin.com/in/barbara-lyra/",
       "firstOutboundAt": null,
       "lastInboundAt": null
+    },
+    {
+      "name": "Rodrigo Tosi Chiacho",
+      "company": "Johnson & Johnson",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rodrigo-chiacho/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
     }
   ],
   "acceptedThisWeek": [
@@ -800,6 +800,16 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/f%c3%a1bioozorio/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Humberto Pereira",
+      "company": "Soluções eSales",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/humberto-pereira-0bbab320/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     }

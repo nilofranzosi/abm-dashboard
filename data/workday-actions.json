@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T12:00:00.189Z",
+  "generatedAt": "2026-07-22T21:00:00.422Z",
   "highTierNotStarted": [
     {
       "id": "cba-companhia-brasileira-de-aluminio-tier-not-started",
@@ -402,88 +402,20 @@
   ],
   "recentConnectionsSent": [
     {
-      "id": "cmrulev6n003lk7loaxx3m4vu",
+      "id": "cmrulev74003pk7lospphldgh",
       "company": {
-        "id": "cmq9t45gg000jk7o0qkpnf88n",
-        "name": "Amazon Brasil",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": {
-        "id": "cmrulev6h003jk7loqcmwp54b",
-        "name": "Barbara Lyra"
-      },
-      "owner": null,
-      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
-      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
-      "severity": "info"
-    },
-    {
-      "id": "cmrt9u79e001yk7186co2c6mn",
-      "company": {
-        "id": "cmqqwt16f000ik7o8il8uzjxj",
-        "name": "Minerva Foods",
-        "status": "REPLIED"
-      },
-      "contact": {
-        "id": "cmrt9u795001wk718588ao7qo",
-        "name": "Frederico Pereira"
-      },
-      "owner": null,
-      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
-      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
-      "severity": "info"
-    },
-    {
-      "id": "cmrt9u7aj0023k718le5p1dym",
-      "company": {
-        "id": "cmrt9u79u001zk718q2relpay",
-        "name": "Atakarejo",
+        "id": "cmqtrcyhm000rk7gcbz2uhmg1",
+        "name": "Johnson & Johnson Brasil",
         "status": "CONNECTION_SENT"
       },
       "contact": {
-        "id": "cmrt9u7a90021k7183qy47bzg",
-        "name": "Júlio Cézar de Oliveira"
+        "id": "cmrulev6z003nk7lou885euo5",
+        "name": "Rodrigo Tosi Chiacho"
       },
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
-      "severity": "info"
-    },
-    {
-      "id": "cmrtplb4i0025k7uwmvkjj996",
-      "company": {
-        "id": "cmqjvk2sj0004k7s00fywqvtk",
-        "name": "Neo Química / Hypera",
-        "status": "PAUSED"
-      },
-      "contact": {
-        "id": "cmrtplb480023k7uw3ggz5fbz",
-        "name": "Flávio Pioltini"
-      },
-      "owner": null,
-      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
-      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
-      "severity": "info"
-    },
-    {
-      "id": "cmrtplb5e0029k7uwiy0w68kt",
-      "company": {
-        "id": "cmql5g0sf0000k7q80ihp0ek3",
-        "name": "L'Oréal",
-        "status": "PAUSED"
-      },
-      "contact": {
-        "id": "cmrtplb550027k7uwzjetr169",
-        "name": "Michelle Auad Peixoto da Costa"
-      },
-      "owner": null,
-      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
-      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -500,7 +432,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -517,7 +449,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -534,7 +466,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -551,7 +483,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -568,7 +500,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -585,7 +517,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -602,7 +534,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -619,7 +551,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -636,24 +568,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
-      "severity": "info"
-    },
-    {
-      "id": "cmrtplb3l0021k7uwwiknv44f",
-      "company": {
-        "id": "cmq9t45hn0010k7o0tt6vj3u7",
-        "name": "Kerry",
-        "status": "PAUSED"
-      },
-      "contact": {
-        "id": "cmrtplb3b001zk7uwkifbvwo7",
-        "name": "Rafael Scarpin"
-      },
-      "owner": null,
-      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
-      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -670,7 +585,24 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmrtplb4i0025k7uwmvkjj996",
+      "company": {
+        "id": "cmqjvk2sj0004k7s00fywqvtk",
+        "name": "Neo Química / Hypera",
+        "status": "PAUSED"
+      },
+      "contact": {
+        "id": "cmrtplb480023k7uw3ggz5fbz",
+        "name": "Flávio Pioltini"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -687,7 +619,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -704,7 +636,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -721,7 +653,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -738,7 +670,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -755,7 +687,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -772,7 +704,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -789,7 +721,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -806,7 +738,41 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmrtplb3l0021k7uwwiknv44f",
+      "company": {
+        "id": "cmq9t45hn0010k7o0tt6vj3u7",
+        "name": "Kerry",
+        "status": "PAUSED"
+      },
+      "contact": {
+        "id": "cmrtplb3b001zk7uwkifbvwo7",
+        "name": "Rafael Scarpin"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-07-22T19:18:27.173Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmrulev6n003lk7loaxx3m4vu",
+      "company": {
+        "id": "cmq9t45gg000jk7o0qkpnf88n",
+        "name": "Amazon Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": {
+        "id": "cmrulev6h003jk7loqcmwp54b",
+        "name": "Barbara Lyra"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -823,24 +789,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
-      "severity": "info"
-    },
-    {
-      "id": "cmrt9u72u0013k7183ztgaddl",
-      "company": {
-        "id": "cmrozkqti000hk75coogp46br",
-        "name": "Ultrapar",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": {
-        "id": "cmrt9u72n0011k718u2b9uqo5",
-        "name": "Bernardo Miranda"
-      },
-      "owner": null,
-      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
-      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -857,7 +806,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -874,7 +823,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -891,7 +840,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -908,7 +857,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -925,7 +874,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -942,7 +891,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -959,7 +908,24 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmrt9u72u0013k7183ztgaddl",
+      "company": {
+        "id": "cmrozkqti000hk75coogp46br",
+        "name": "Ultrapar",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": {
+        "id": "cmrt9u72n0011k718u2b9uqo5",
+        "name": "Bernardo Miranda"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -976,41 +942,41 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
-      "id": "cmrt9u77c001qk7180qn2mq6e",
+      "id": "cmrt9u79e001yk7186co2c6mn",
       "company": {
-        "id": "cmrt9u76r001mk718awvfzr00",
-        "name": "Super Nosso",
-        "status": "CONNECTION_SENT"
+        "id": "cmqqwt16f000ik7o8il8uzjxj",
+        "name": "Minerva Foods",
+        "status": "REPLIED"
       },
       "contact": {
-        "id": "cmrt9u777001ok718iq1v01x4",
-        "name": "Jefferson George Nunes"
+        "id": "cmrt9u795001wk718588ao7qo",
+        "name": "Frederico Pereira"
       },
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
-      "id": "cmrt9u78k001uk7181nlnob1l",
+      "id": "cmrt9u7aj0023k718le5p1dym",
       "company": {
-        "id": "cmrt9u76r001mk718awvfzr00",
-        "name": "Super Nosso",
+        "id": "cmrt9u79u001zk718q2relpay",
+        "name": "Atakarejo",
         "status": "CONNECTION_SENT"
       },
       "contact": {
-        "id": "cmrt9u787001sk718rg31fkwq",
-        "name": "Fernando Alves Teixeira"
+        "id": "cmrt9u7a90021k7183qy47bzg",
+        "name": "Júlio Cézar de Oliveira"
       },
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -1027,7 +993,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -1044,7 +1010,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -1061,7 +1027,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -1078,7 +1044,7 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -1095,24 +1061,58 @@
       "owner": null,
       "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-22T11:38:19.466Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
-      "id": "cmrulev74003pk7lospphldgh",
+      "id": "cmrt9u77c001qk7180qn2mq6e",
       "company": {
-        "id": "cmqtrcyhm000rk7gcbz2uhmg1",
-        "name": "Johnson & Johnson Brasil",
+        "id": "cmrt9u76r001mk718awvfzr00",
+        "name": "Super Nosso",
         "status": "CONNECTION_SENT"
       },
       "contact": {
-        "id": "cmrulev6z003nk7lou885euo5",
-        "name": "Rodrigo Tosi Chiacho"
+        "id": "cmrt9u777001ok718iq1v01x4",
+        "name": "Jefferson George Nunes"
       },
       "owner": null,
-      "reason": "Convite enviado em 2026-07-21 — aguardando aceite.",
+      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-21T11:51:23.023Z",
+      "dueAt": "2026-07-22T19:18:27.173Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmrt9u78k001uk7181nlnob1l",
+      "company": {
+        "id": "cmrt9u76r001mk718awvfzr00",
+        "name": "Super Nosso",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": {
+        "id": "cmrt9u787001sk718rg31fkwq",
+        "name": "Fernando Alves Teixeira"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-07-22T19:18:27.173Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmrtplb5e0029k7uwiy0w68kt",
+      "company": {
+        "id": "cmql5g0sf0000k7q80ihp0ek3",
+        "name": "L'Oréal",
+        "status": "PAUSED"
+      },
+      "contact": {
+        "id": "cmrtplb550027k7uwzjetr169",
+        "name": "Michelle Auad Peixoto da Costa"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-07-22 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-07-22T19:18:27.173Z",
       "severity": "info"
     },
     {
@@ -1235,15 +1235,15 @@
       "severity": "info"
     },
     {
-      "id": "cmroy4x9e000pk7bsmyntd7zf",
+      "id": "cmrozuply001dk7lsr82wwz2g",
       "company": {
-        "id": "cmq9t45gg000jk7o0qkpnf88n",
-        "name": "Amazon Brasil",
+        "id": "cmrozupku0015k7lsychph5ih",
+        "name": "Tenda Atacado",
         "status": "MESSAGE_SENT"
       },
       "contact": {
-        "id": "cmroy4x98000nk7bsjz43g7hj",
-        "name": "Lucio Centeno dos Santos"
+        "id": "cmrozupls001bk7lsajwdwjcx",
+        "name": "Jose Rafael Vasquez"
       },
       "owner": null,
       "reason": "Convite enviado em 2026-07-17 — aguardando aceite.",
@@ -1320,6 +1320,23 @@
       "severity": "info"
     },
     {
+      "id": "cmroy4x9e000pk7bsmyntd7zf",
+      "company": {
+        "id": "cmq9t45gg000jk7o0qkpnf88n",
+        "name": "Amazon Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": {
+        "id": "cmroy4x98000nk7bsjz43g7hj",
+        "name": "Lucio Centeno dos Santos"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-07-17 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-07-17T14:19:16.221Z",
+      "severity": "info"
+    },
+    {
       "id": "cmrozp500000vk7ogltqwncww",
       "company": {
         "id": "cmrozkqti000hk75coogp46br",
@@ -1380,23 +1397,6 @@
       "contact": {
         "id": "cmrozupl50017k7ls28a8adby",
         "name": "Fernando Alfano"
-      },
-      "owner": null,
-      "reason": "Convite enviado em 2026-07-17 — aguardando aceite.",
-      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-17T14:19:16.221Z",
-      "severity": "info"
-    },
-    {
-      "id": "cmrozuply001dk7lsr82wwz2g",
-      "company": {
-        "id": "cmrozupku0015k7lsychph5ih",
-        "name": "Tenda Atacado",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": {
-        "id": "cmrozupls001bk7lsajwdwjcx",
-        "name": "Jose Rafael Vasquez"
       },
       "owner": null,
       "reason": "Convite enviado em 2026-07-17 — aguardando aceite.",
@@ -1471,23 +1471,6 @@
       "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
       "dueAt": "2026-07-16T18:31:00.000Z",
       "severity": "info"
-    },
-    {
-      "id": "cmrml4xuj000sk7d0yb52wmdt",
-      "company": {
-        "id": "cmrml4xk4000mk7d0q2vlfbcn",
-        "name": "Mission of Brazil to the European Communities",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmrml4xq5000ok7d0aiukieb5",
-        "name": "Marco Túlio Cabral"
-      },
-      "owner": null,
-      "reason": "Convite enviado em 2026-07-15 — aguardando aceite.",
-      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
-      "dueAt": "2026-07-15T18:35:00.000Z",
-      "severity": "info"
     }
   ],
   "acceptedConnectionsWithoutMessage": [],
@@ -1549,11 +1532,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45gg000jk7o0qkpnf88n",
+      "id": "cmq9t45fy000ck7o0nyy7jehr",
       "company": {
-        "id": "cmq9t45gg000jk7o0qkpnf88n",
-        "name": "Amazon Brasil",
-        "status": "MESSAGE_SENT"
+        "id": "cmq9t45fy000ck7o0nyy7jehr",
+        "name": "Cacau Show",
+        "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
       "owner": null,
@@ -1563,11 +1546,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45fy000ck7o0nyy7jehr",
+      "id": "cmq9t45gg000jk7o0qkpnf88n",
       "company": {
-        "id": "cmq9t45fy000ck7o0nyy7jehr",
-        "name": "Cacau Show",
-        "status": "FOLLOW_UP_SENT"
+        "id": "cmq9t45gg000jk7o0qkpnf88n",
+        "name": "Amazon Brasil",
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": null,
@@ -1675,6 +1658,20 @@
       "severity": "critical"
     },
     {
+      "id": "cmq9t45r5004ck7o0ey99kd8c",
+      "company": {
+        "id": "cmq9t45r5004ck7o0ey99kd8c",
+        "name": "Samsung Brasil",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-06-25T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmqjsbyci000ek7zwqwobadjt",
       "company": {
         "id": "cmqjsbyci000ek7zwqwobadjt",
@@ -1699,20 +1696,6 @@
       "owner": null,
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-      "dueAt": "2026-06-25T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmq9t45r5004ck7o0ey99kd8c",
-      "company": {
-        "id": "cmq9t45r5004ck7o0ey99kd8c",
-        "name": "Samsung Brasil",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "critical"
     },
@@ -1773,11 +1756,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45nf002uk7o0r1q4az2e",
+      "id": "cmr0nk5vn0003k75gazq8ykau",
       "company": {
-        "id": "cmq9t45nf002uk7o0r1q4az2e",
-        "name": "Usiminas",
-        "status": "FOLLOW_UP_SENT"
+        "id": "cmr0nk5vn0003k75gazq8ykau",
+        "name": "Lojas Renner",
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": null,
@@ -1787,11 +1770,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmr0nk5vn0003k75gazq8ykau",
+      "id": "cmq9t45nf002uk7o0r1q4az2e",
       "company": {
-        "id": "cmr0nk5vn0003k75gazq8ykau",
-        "name": "Lojas Renner",
-        "status": "MESSAGE_SENT"
+        "id": "cmq9t45nf002uk7o0r1q4az2e",
+        "name": "Usiminas",
+        "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
       "owner": null,
@@ -1871,20 +1854,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmqtia16u000fk7gcezuocnzi",
-      "company": {
-        "id": "cmqtia16u000fk7gcezuocnzi",
-        "name": "Saint-Gobain Brasil",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-07-16T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmr97qk35000ck7ikdywcuq5k",
       "company": {
         "id": "cmr97qk35000ck7ikdywcuq5k",
@@ -1899,10 +1868,24 @@
       "severity": "critical"
     },
     {
-      "id": "cmr9oddp70000k78k8r6rq39u",
+      "id": "cmqtia16u000fk7gcezuocnzi",
       "company": {
-        "id": "cmr9oddp70000k78k8r6rq39u",
-        "name": "Grupo Tigre",
+        "id": "cmqtia16u000fk7gcezuocnzi",
+        "name": "Saint-Gobain Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-07-16T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmq9t45o20034k7o03j7iwxh7",
+      "company": {
+        "id": "cmq9t45o20034k7o03j7iwxh7",
+        "name": "Michelin",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
@@ -1913,10 +1896,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45o20034k7o03j7iwxh7",
+      "id": "cmr9oddp70000k78k8r6rq39u",
       "company": {
-        "id": "cmq9t45o20034k7o03j7iwxh7",
-        "name": "Michelin",
+        "id": "cmr9oddp70000k78k8r6rq39u",
+        "name": "Grupo Tigre",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
@@ -1969,10 +1952,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmrdgzv4u0007k77wsd8j8pzs",
+      "id": "cmrdzcwnh000gk71on8h1kmtk",
       "company": {
-        "id": "cmrdgzv4u0007k77wsd8j8pzs",
-        "name": "FORTLEV",
+        "id": "cmrdzcwnh000gk71on8h1kmtk",
+        "name": "Alpargatas S.A.",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
@@ -1983,10 +1966,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmrdzcwnh000gk71on8h1kmtk",
+      "id": "cmrdgzv4u0007k77wsd8j8pzs",
       "company": {
-        "id": "cmrdzcwnh000gk71on8h1kmtk",
-        "name": "Alpargatas S.A.",
+        "id": "cmrdgzv4u0007k77wsd8j8pzs",
+        "name": "FORTLEV",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
@@ -2008,6 +1991,34 @@
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-21T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqxfnzd0018k7o8cfbr68qi",
+      "company": {
+        "id": "cmqqxfnzd0018k7o8cfbr68qi",
+        "name": "Seara",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-07-22T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqjsbye70015k7zwh88ujxnp",
+      "company": {
+        "id": "cmqjsbye70015k7zwh88ujxnp",
+        "name": "PepsiCo",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-07-22T03:00:00.000Z",
       "severity": "critical"
     },
     {
@@ -2053,34 +2064,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmqjsbye70015k7zwh88ujxnp",
-      "company": {
-        "id": "cmqjsbye70015k7zwh88ujxnp",
-        "name": "PepsiCo",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-07-22T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmqqxfnzd0018k7o8cfbr68qi",
-      "company": {
-        "id": "cmqqxfnzd0018k7o8cfbr68qi",
-        "name": "Seara",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-07-22T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmqqle46c0000k79sd3t0zgym",
       "company": {
         "id": "cmqqle46c0000k79sd3t0zgym",
@@ -2092,6 +2075,90 @@
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-22T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeip50000k7tong0v7xer",
+      "company": {
+        "id": "cmruzeip50000k7tong0v7xer",
+        "name": "Ball Corporation",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.306Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeiv00006k7toqbhf78ks",
+      "company": {
+        "id": "cmruzeiv00006k7toqbhf78ks",
+        "name": "Realize Human",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeivr0009k7tojgdkszqo",
+      "company": {
+        "id": "cmruzeivr0009k7tojgdkszqo",
+        "name": "Instituto Cisne Norte e Nordeste",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeiu30003k7touh9wg5wt",
+      "company": {
+        "id": "cmruzeiu30003k7touh9wg5wt",
+        "name": "DHL Supply Chain",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeix0000ek7to3hmjb3hq",
+      "company": {
+        "id": "cmruzeix0000ek7to3hmjb3hq",
+        "name": "Matec Engenharia",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeiy8000jk7toter9l352",
+      "company": {
+        "id": "cmruzeiy8000jk7toter9l352",
+        "name": "Shopee",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
       "severity": "critical"
     }
   ],
@@ -2642,9 +2709,9 @@
   "newSignalsWithoutNextAction": [],
   "summary": {
     "highTierNotStarted": 23,
-    "recentConnectionsSent": 64,
+    "recentConnectionsSent": 63,
     "acceptedConnectionsWithoutMessage": 0,
-    "overdueNextActions": 43,
+    "overdueNextActions": 49,
     "staleCompanies30Days": 6,
     "unmatchedInboxThreads": 35,
     "pendingHandoffs": 0,

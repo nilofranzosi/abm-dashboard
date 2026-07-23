@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T12:00:00.408Z",
+  "generatedAt": "2026-07-22T21:19:09.272Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -12,7 +12,7 @@
           "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-20T21:00:36.298Z",
+          "lastInteractionAt": "2026-07-22T19:38:57.329Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -251,7 +251,7 @@
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-05-06T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-09T14:49:25.146Z",
+          "lastInteractionAt": "2026-07-22T19:38:58.528Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Nuno Saramago"

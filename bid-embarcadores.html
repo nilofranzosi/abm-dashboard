@@ -30,6 +30,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    if (new URLSearchParams(location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embedded-view");
+    }
+  </script>
   <style>
     :root {
       --blue:#0F52BA; --blue-50:#EFF6FF; --blue-100:#DBEAFE;
@@ -45,8 +50,10 @@
     *{box-sizing:border-box}
     body{margin:0;font-family:'Inter',Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.5}
     .shell{min-height:100vh;display:grid;grid-template-columns:256px 1fr}
-    html.embedded-view .shell{grid-template-columns:1fr}
-    html.embedded-view aside{display:none}
+    html.embedded-view body{background:transparent}
+    html.embedded-view .shell{display:block;min-height:0}
+    html.embedded-view aside{display:none!important}
+    html.embedded-view main{padding:0;gap:14px}
     aside{background:var(--sidebar-bg);color:#CBD5E1;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
     .brand-header{padding:22px 16px 18px;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:11px}
     .brand-logo{width:34px;height:34px;background:linear-gradient(135deg,#2979FF 0%,#0F52BA 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff}
@@ -126,11 +133,6 @@
   </style>
 </head>
 <body>
-<script>
-  if (new URLSearchParams(location.search).get("embed") === "1") {
-    document.documentElement.classList.add("embedded-view");
-  }
-</script>
 <div class="shell">
   <aside>
     <div class="brand-header">
