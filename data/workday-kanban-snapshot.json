@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T21:19:09.272Z",
+  "generatedAt": "2026-07-23T20:43:28.233Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -22,18 +22,6 @@
           "name": "Krona",
           "segment": "Construção Civil",
           "accountScore": 64,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-20T21:00:36.298Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmrtplb1i001tk7uwchofkpnw",
-          "name": "Grupo Savegnago",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 82,
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-20T21:00:36.298Z",
@@ -245,18 +233,6 @@
       "label": "Mensagem Enviada",
       "companies": [
         {
-          "id": "cmq9t45nr002zk7o0jh6xri5p",
-          "name": "CSN",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-22T19:38:58.528Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Nuno Saramago"
-        },
-        {
           "id": "cmq9t45fl0007k7o001t4o1aw",
           "name": "Opella",
           "segment": null,
@@ -269,42 +245,6 @@
           "activeDecisor": "Igor Costa"
         },
         {
-          "id": "cmq9t45gg000jk7o0qkpnf88n",
-          "name": "Amazon Brasil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-06-16T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-22T11:38:19.466Z",
-          "owner": null,
-          "contactCount": 5,
-          "activeDecisor": "Ramon Castro de Matos"
-        },
-        {
-          "id": "cmqsj2bg10000k7aotg14g4on",
-          "name": "DHL",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-01T03:00:00.000Z",
-          "lastInteractionAt": "2026-06-24T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Leonardo Alfaro"
-        },
-        {
-          "id": "cmr0nk5vn0003k75gazq8ykau",
-          "name": "Lojas Renner",
-          "segment": "Têxtil & Vestuário",
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-07T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-20T21:00:36.298Z",
-          "owner": null,
-          "contactCount": 3,
-          "activeDecisor": "Ricardo Schilder Lima"
-        },
-        {
           "id": "cmr9oddqj0007k78kfo4omrjz",
           "name": "Kenvue",
           "segment": null,
@@ -313,7 +253,7 @@
           "nextActionDueAt": "2026-07-13T03:00:00.000Z",
           "lastInteractionAt": "2026-07-17T13:07:48.105Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": "André Freire"
         },
         {
@@ -497,6 +437,18 @@
           "activeDecisor": "Mario Augusto Neto"
         },
         {
+          "id": "cmrtplb1i001tk7uwchofkpnw",
+          "name": "Grupo Savegnago",
+          "segment": "E-commerce & Varejo",
+          "accountScore": 82,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-23T18:43:39.089Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
           "id": "cmrozupku0015k7lsychph5ih",
           "name": "Tenda Atacado",
           "segment": "E-commerce & Varejo",
@@ -551,6 +503,18 @@
       "label": "Follow-Up Enviado",
       "companies": [
         {
+          "id": "cmq9t45nr002zk7o0jh6xri5p",
+          "name": "CSN",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-23T18:43:45.301Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Nuno Saramago"
+        },
+        {
           "id": "cmq9t45kb001rk7o0ceh395mp",
           "name": "Grupo Petz Cobasi",
           "segment": null,
@@ -585,6 +549,18 @@
           "owner": null,
           "contactCount": 5,
           "activeDecisor": "CAMILA OLIVEIRA"
+        },
+        {
+          "id": "cmq9t45gg000jk7o0qkpnf88n",
+          "name": "Amazon Brasil",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-06-16T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-23T16:50:33.163Z",
+          "owner": null,
+          "contactCount": 5,
+          "activeDecisor": "Ramon Castro de Matos"
         },
         {
           "id": "cmq9t45fy000ck7o0nyy7jehr",
@@ -857,18 +833,6 @@
           "activeDecisor": "Rodrigo Bonilha"
         },
         {
-          "id": "cmqqwt16f000ik7o8il8uzjxj",
-          "name": "Minerva Foods",
-          "segment": null,
-          "accountScore": 35,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
-          "lastInteractionAt": "2026-06-23T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "ADRIANO ROSA DELFINO"
-        },
-        {
           "id": "cmqqnb9an0007k7o8qg3i5j71",
           "name": "Boticário",
           "segment": null,
@@ -891,6 +855,18 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Leandro Luiz Katayama Ribeiro"
+        },
+        {
+          "id": "cmr0nk5vn0003k75gazq8ykau",
+          "name": "Lojas Renner",
+          "segment": "Têxtil & Vestuário",
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-07T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-23T18:43:56.042Z",
+          "owner": null,
+          "contactCount": 3,
+          "activeDecisor": "Ricardo Schilder Lima"
         },
         {
           "id": "cmqqnso2n0008k7o898wwnhtz",
@@ -963,7 +939,20 @@
     {
       "stage": "MEETING_BOOKED",
       "label": "Reunião Agendada",
-      "companies": []
+      "companies": [
+        {
+          "id": "cmqqwt16f000ik7o8il8uzjxj",
+          "name": "Minerva Foods",
+          "segment": null,
+          "accountScore": 35,
+          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-23T19:43:35.619Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "ADRIANO ROSA DELFINO"
+        }
+      ]
     },
     {
       "stage": "MEETING_DONE",
@@ -998,18 +987,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Daniel Drumond"
-        },
-        {
-          "id": "cmq9t45rj004hk7o0wbufp8au",
-          "name": "XBRI",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-04-15T03:00:00.000Z",
-          "lastInteractionAt": "2026-06-23T13:45:42.893Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Nabil Chamseddine"
         },
         {
           "id": "cmq9t45mm002gk7o0nbmsayr0",

@@ -1,34 +1,24 @@
 {
-  "generatedAt": "2026-07-22T19:18:34.478Z",
-  "enrichedFile": "2026-07-22T19:15:10.211Z",
-  "pendingSnapshotAt": "2026-07-22T19:09:58.524Z",
+  "generatedAt": "2026-07-23T16:50:42.555Z",
+  "enrichedFile": "2026-07-23T16:46:41.083Z",
+  "pendingSnapshotAt": "2026-07-23T16:41:15.417Z",
   "summary": {
-    "sentThisWeek": 7,
+    "sentThisWeek": 5,
     "pendingConnections": 70,
-    "acceptedThisWeek": 2,
+    "acceptedThisWeek": 1,
     "repliedThisWeek": 1,
     "overdueFollowUp": 0,
-    "acceptanceRateEst": 14
+    "acceptanceRateEst": 20
   },
   "funnelBreakdown": {
-    "FIRST_CONTACT_SENT": 5,
-    "FOLLOW_UP_SENT": 7,
-    "REPLIED_NEUTRAL": 2,
+    "FOLLOW_UP_SENT": 8,
     "REPLIED_POSITIVE": 1,
+    "FIRST_CONTACT_SENT": 4,
+    "REPLIED_NEUTRAL": 2,
     "CONNECTION_ACCEPTED": 8,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
-    {
-      "name": "José Roberto Braga",
-      "company": "A apurar",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/jos%C3%A9-roberto-braga/pt/",
-      "firstOutboundAt": "2026-07-22T12:21:00.000Z",
-      "lastInboundAt": null
-    },
     {
       "name": "Fabiana Taccola",
       "company": "Lojas Renner S.A.",
@@ -36,7 +26,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/fabiana-taccola-557a0935/",
-      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-23T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -46,7 +36,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/graziella-louren%C3%A7o-29b7bb31/",
-      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-23T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -56,7 +46,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/luciocentenologistica/",
-      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-23T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -66,28 +56,18 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
-      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-23T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
       "name": "Grasiella Nascimento",
       "company": "MadeiraMadeira",
       "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/grasiella-nascimento-0b54aa22/",
-      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-16T03:00:00.000Z",
       "lastInboundAt": "2026-07-18T21:27:00.000Z"
-    },
-    {
-      "name": "Arthur Klann Vieira",
-      "company": "MadeiraMadeira",
-      "status": "FOLLOW_UP_SENT",
-      "daysSinceSent": 7,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/arthur-klann-vieira/",
-      "firstOutboundAt": "2026-07-15T03:00:00.000Z",
-      "lastInboundAt": null
     }
   ],
   "pendingConnections": [
@@ -418,16 +398,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/claiton-santin-6575a434/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Celso Oliveira",
-      "company": "Savegnago Supermercados Ltda",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/celso-oliveira-784a9b9/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -790,26 +760,26 @@
       "profileUrl": "https://www.linkedin.com/in/rodrigo-chiacho/",
       "firstOutboundAt": null,
       "lastInboundAt": null
+    },
+    {
+      "name": "Rodrigo Baldissera",
+      "company": "Kenvue",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rodrigo-baldissera/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
     }
   ],
   "acceptedThisWeek": [
     {
-      "name": "Fábio Ozorio",
-      "company": "A apurar",
+      "name": "Celso Oliveira",
+      "company": "Savegnago Supermercados Ltda",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/f%c3%a1bioozorio/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Humberto Pereira",
-      "company": "Soluções eSales",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/humberto-pereira-0bbab320/",
+      "profileUrl": "https://www.linkedin.com/in/celso-oliveira-784a9b9/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     }
@@ -819,10 +789,10 @@
       "name": "Grasiella Nascimento",
       "company": "MadeiraMadeira",
       "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/grasiella-nascimento-0b54aa22/",
-      "firstOutboundAt": "2026-07-22T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-16T03:00:00.000Z",
       "lastInboundAt": "2026-07-18T21:27:00.000Z"
     }
   ],

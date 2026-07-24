@@ -1333,41 +1333,41 @@
   },
   {
     "weekKey": "2026-S30",
-    "generatedAt": "2026-07-22T19:48:57.713Z",
+    "generatedAt": "2026-07-23T19:43:17.524Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 93,
-    "activePipeline": 83,
+    "totalApproached": 91,
+    "activePipeline": 81,
     "pausedCount": 10,
     "repliedOrBetter": 16,
-    "meetingOrBetter": 7,
-    "dealCount": 6,
-    "replyRate": 0.1927710843373494,
-    "meetingRate": 0.08433734939759036,
-    "dealRate": 0.07228915662650602,
-    "avgDaysToFirstReply": 6.615384615384615,
-    "avgDaysSinceLastOutbound": 3.066666666666667,
-    "totalOutboundTouchpoints": 26,
-    "totalInboundTouchpoints": 4,
+    "meetingOrBetter": 6,
+    "dealCount": 5,
+    "replyRate": 0.19753086419753085,
+    "meetingRate": 0.07407407407407407,
+    "dealRate": 0.06172839506172839,
+    "avgDaysToFirstReply": 6.846153846153846,
+    "avgDaysSinceLastOutbound": 3.2666666666666666,
+    "totalOutboundTouchpoints": 27,
+    "totalInboundTouchpoints": 3,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
         "label": "Conexão Enviada",
-        "count": 19
+        "count": 18
       },
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 25
+        "count": 22
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 23
+        "count": 25
       },
       {
         "stage": "REPLIED",
         "label": "Respondeu",
-        "count": 9
+        "count": 10
       },
       {
         "stage": "MEETING_DONE",
@@ -1377,7 +1377,7 @@
       {
         "stage": "DEAL",
         "label": "Negócio",
-        "count": 6
+        "count": 5
       }
     ],
     "topCompanies": [
@@ -1390,16 +1390,6 @@
         "bestStatus": "DEAL",
         "score": 90,
         "nextActionDueAt": "2026-04-13T03:00:00.000Z"
-      },
-      {
-        "company": "XBRI",
-        "stage": "DEAL",
-        "contacts": 1,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "DEAL",
-        "score": 90,
-        "nextActionDueAt": "2026-04-15T03:00:00.000Z"
       },
       {
         "company": "Natura",
@@ -1485,8 +1475,8 @@
         "company": "Boticário",
         "stage": "REPLIED",
         "contacts": 2,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 1,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-26T15:24:00.000Z"
@@ -1500,6 +1490,16 @@
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-27T14:15:00.000Z"
+      },
+      {
+        "company": "Lojas Renner",
+        "stage": "REPLIED",
+        "contacts": 3,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-07T03:00:00.000Z"
       },
       {
         "company": "Nestlé",
@@ -1525,17 +1525,17 @@
         "company": "MadeiraMadeira",
         "stage": "REPLIED",
         "contacts": 2,
-        "outboundTouchpoints": 3,
+        "outboundTouchpoints": 1,
         "inboundTouchpoints": 1,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-07-24T18:54:00.000Z"
       }
     ],
-    "activeContacts": 83,
+    "activeContacts": 81,
     "excludedContacts": 10,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 93,
-    "qualifiedAdvanceRate": 0.08433734939759036
+    "uniqueCompanies": 91,
+    "qualifiedAdvanceRate": 0.07407407407407407
   }
 ]

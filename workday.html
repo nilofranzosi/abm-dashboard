@@ -539,7 +539,7 @@
         </div>
       </header>
 
-      <section class="kpis" id="kpis"></section>
+      <section class="kpis" id="kpis" style="display:none"></section>
 
       <!-- Tracker de Conexões Semanais -->
       <section class="queue" id="conn-tracker" style="display:none">
@@ -605,7 +605,7 @@
         <div class="kanban-board" id="kanban-board"></div>
       </section>
 
-      <section class="grid" id="queues"></section>
+      <section class="grid" id="queues" style="display:none"></section>
 
       <section class="panel" id="engagement-status-panel">
         <div class="queue-head">
@@ -623,26 +623,7 @@
 
   <script src="/js/icp-segment.js"></script>
   <script>
-    const queueMeta = [
-      {
-        key: "highTierNotStarted",
-        label: "Tier 1/2 sem abordagem",
-        short: "Tier sem contato",
-        empty: "Todas as contas de alto tier já têm abordagem iniciada."
-      },
-      {
-        key: "recentConnectionsSent",
-        label: "Conexões enviadas (últimos 7 dias)",
-        short: "Conexões enviadas",
-        empty: "Nenhuma conexão enviada nos últimos 7 dias."
-      },
-      {
-        key: "overdueNextActions",
-        label: "Próximas ações vencidas",
-        short: "Ações vencidas",
-        empty: "Nenhuma próxima ação vencida."
-      }
-    ];
+    const queueMeta = [];
 
     const kpisEl = document.getElementById("kpis");
     const queuesEl = document.getElementById("queues");
