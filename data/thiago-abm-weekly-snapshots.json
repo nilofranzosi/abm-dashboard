@@ -1333,21 +1333,21 @@
   },
   {
     "weekKey": "2026-S30",
-    "generatedAt": "2026-07-23T19:43:17.524Z",
+    "generatedAt": "2026-07-24T17:10:46.336Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 91,
     "activePipeline": 81,
     "pausedCount": 10,
     "repliedOrBetter": 16,
-    "meetingOrBetter": 6,
+    "meetingOrBetter": 7,
     "dealCount": 5,
     "replyRate": 0.19753086419753085,
-    "meetingRate": 0.07407407407407407,
+    "meetingRate": 0.08641975308641975,
     "dealRate": 0.06172839506172839,
     "avgDaysToFirstReply": 6.846153846153846,
-    "avgDaysSinceLastOutbound": 3.2666666666666666,
-    "totalOutboundTouchpoints": 27,
-    "totalInboundTouchpoints": 3,
+    "avgDaysSinceLastOutbound": 2,
+    "totalOutboundTouchpoints": 29,
+    "totalInboundTouchpoints": 2,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -1367,7 +1367,12 @@
       {
         "stage": "REPLIED",
         "label": "Respondeu",
-        "count": 10
+        "count": 9
+      },
+      {
+        "stage": "MEETING_BOOKED",
+        "label": "Reunião Agendada",
+        "count": 1
       },
       {
         "stage": "MEETING_DONE",
@@ -1442,6 +1447,16 @@
         "nextActionDueAt": "2026-06-20T11:30:00.000Z"
       },
       {
+        "company": "Minerva Foods",
+        "stage": "MEETING_BOOKED",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "MEETING_BOOKED",
+        "score": 70,
+        "nextActionDueAt": "2026-06-25T03:00:00.000Z"
+      },
+      {
         "company": "Casas Bahia",
         "stage": "REPLIED",
         "contacts": 1,
@@ -1460,16 +1475,6 @@
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-22T03:00:00.000Z"
-      },
-      {
-        "company": "Minerva Foods",
-        "stage": "REPLIED",
-        "contacts": 2,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-06-25T03:00:00.000Z"
       },
       {
         "company": "Boticário",
@@ -1525,8 +1530,8 @@
         "company": "MadeiraMadeira",
         "stage": "REPLIED",
         "contacts": 2,
-        "outboundTouchpoints": 1,
-        "inboundTouchpoints": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-07-24T18:54:00.000Z"
@@ -1536,6 +1541,6 @@
     "excludedContacts": 10,
     "unresolvedCompanies": 0,
     "uniqueCompanies": 91,
-    "qualifiedAdvanceRate": 0.07407407407407407
+    "qualifiedAdvanceRate": 0.08641975308641975
   }
 ]

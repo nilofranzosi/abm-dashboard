@@ -1,24 +1,34 @@
 {
-  "generatedAt": "2026-07-23T16:50:42.555Z",
-  "enrichedFile": "2026-07-23T16:46:41.083Z",
-  "pendingSnapshotAt": "2026-07-23T16:41:15.417Z",
+  "generatedAt": "2026-07-24T14:20:35.703Z",
+  "enrichedFile": "2026-07-24T14:17:21.775Z",
+  "pendingSnapshotAt": "2026-07-24T14:12:10.701Z",
   "summary": {
-    "sentThisWeek": 5,
+    "sentThisWeek": 3,
     "pendingConnections": 70,
-    "acceptedThisWeek": 1,
-    "repliedThisWeek": 1,
+    "acceptedThisWeek": 0,
+    "repliedThisWeek": 0,
     "overdueFollowUp": 0,
-    "acceptanceRateEst": 20
+    "acceptanceRateEst": 0
   },
   "funnelBreakdown": {
-    "FOLLOW_UP_SENT": 8,
+    "FOLLOW_UP_SENT": 10,
+    "FIRST_CONTACT_SENT": 3,
     "REPLIED_POSITIVE": 1,
-    "FIRST_CONTACT_SENT": 4,
-    "REPLIED_NEUTRAL": 2,
-    "CONNECTION_ACCEPTED": 8,
+    "REPLIED_NEUTRAL": 1,
+    "CONNECTION_ACCEPTED": 9,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
+    {
+      "name": "Celso Oliveira",
+      "company": "Savegnago Supermercados Ltda",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/celso-oliveira-784a9b9/",
+      "firstOutboundAt": "2026-07-24T03:00:00.000Z",
+      "lastInboundAt": null
+    },
     {
       "name": "Fabiana Taccola",
       "company": "Lojas Renner S.A.",
@@ -26,7 +36,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/fabiana-taccola-557a0935/",
-      "firstOutboundAt": "2026-07-23T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-24T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -36,38 +46,8 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/graziella-louren%C3%A7o-29b7bb31/",
-      "firstOutboundAt": "2026-07-23T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-24T03:00:00.000Z",
       "lastInboundAt": null
-    },
-    {
-      "name": "Lucio Centeno dos Santos",
-      "company": "Amazon",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/luciocentenologistica/",
-      "firstOutboundAt": "2026-07-23T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Fernando Alfano",
-      "company": "Tenda Atacado",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
-      "firstOutboundAt": "2026-07-23T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Grasiella Nascimento",
-      "company": "MadeiraMadeira",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 7,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/grasiella-nascimento-0b54aa22/",
-      "firstOutboundAt": "2026-07-16T03:00:00.000Z",
-      "lastInboundAt": "2026-07-18T21:27:00.000Z"
     }
   ],
   "pendingConnections": [
@@ -772,29 +752,7 @@
       "lastInboundAt": null
     }
   ],
-  "acceptedThisWeek": [
-    {
-      "name": "Celso Oliveira",
-      "company": "Savegnago Supermercados Ltda",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/celso-oliveira-784a9b9/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    }
-  ],
-  "repliedThisWeek": [
-    {
-      "name": "Grasiella Nascimento",
-      "company": "MadeiraMadeira",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 7,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/grasiella-nascimento-0b54aa22/",
-      "firstOutboundAt": "2026-07-16T03:00:00.000Z",
-      "lastInboundAt": "2026-07-18T21:27:00.000Z"
-    }
-  ],
+  "acceptedThisWeek": [],
+  "repliedThisWeek": [],
   "overdueFollowUp": []
 }
