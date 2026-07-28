@@ -1,56 +1,86 @@
 {
-  "generatedAt": "2026-07-24T14:20:35.703Z",
-  "enrichedFile": "2026-07-24T14:17:21.775Z",
-  "pendingSnapshotAt": "2026-07-24T14:12:10.701Z",
+  "generatedAt": "2026-07-28T11:59:13.997Z",
+  "enrichedFile": "2026-07-28T11:55:00.816Z",
+  "pendingSnapshotAt": "2026-07-28T11:49:35.022Z",
   "summary": {
-    "sentThisWeek": 3,
+    "sentThisWeek": 2,
     "pendingConnections": 70,
-    "acceptedThisWeek": 0,
-    "repliedThisWeek": 0,
-    "overdueFollowUp": 0,
-    "acceptanceRateEst": 0
+    "acceptedThisWeek": 3,
+    "repliedThisWeek": 2,
+    "overdueFollowUp": 1,
+    "acceptanceRateEst": 50
   },
   "funnelBreakdown": {
-    "FOLLOW_UP_SENT": 10,
-    "FIRST_CONTACT_SENT": 3,
+    "REPLIED_NEUTRAL": 4,
+    "FOLLOW_UP_SENT": 8,
+    "FIRST_CONTACT_SENT": 2,
     "REPLIED_POSITIVE": 1,
-    "REPLIED_NEUTRAL": 1,
-    "CONNECTION_ACCEPTED": 9,
+    "CONNECTION_ACCEPTED": 10,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
     {
+      "name": "Marcelo Lopes",
+      "company": "Grupo Cimed",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 0,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/marcelo-lopes04/",
+      "firstOutboundAt": "2026-07-28T03:00:00.000Z",
+      "lastInboundAt": "2026-07-28T03:00:00.000Z"
+    },
+    {
       "name": "Celso Oliveira",
-      "company": "Savegnago Supermercados Ltda",
+      "company": "A apurar",
       "status": "FIRST_CONTACT_SENT",
       "daysSinceSent": 0,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/celso-oliveira-784a9b9/",
-      "firstOutboundAt": "2026-07-24T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Fabiana Taccola",
-      "company": "Lojas Renner S.A.",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/fabiana-taccola-557a0935/",
-      "firstOutboundAt": "2026-07-24T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Graziella Lourenço",
-      "company": "Ultra",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/graziella-louren%C3%A7o-29b7bb31/",
-      "firstOutboundAt": "2026-07-24T03:00:00.000Z",
+      "profileUrl": null,
+      "firstOutboundAt": "2026-07-28T03:00:00.000Z",
       "lastInboundAt": null
     }
   ],
   "pendingConnections": [
+    {
+      "name": "Waldimir Rezende",
+      "company": "Grupo Cimed",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/waldimir-rezende-09817930/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marcio Campos",
+      "company": "Grupo Level",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marcio-campos-23789a90/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Luciano Tótola",
+      "company": "ZAMP",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/lucianototola/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Thiago Rezende Gonçalves",
+      "company": "Coca-Cola FEMSA",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/thiago-rezende-gon%c3%a7alves-b29bb831/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
     {
       "name": "Valéria Estelita",
       "company": "A apurar",
@@ -102,16 +132,6 @@
       "lastInboundAt": null
     },
     {
-      "name": "Mauricio Garcia",
-      "company": "Inteli - Instituto de Tecnologia e Liderança",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/mauriciogarciavieira/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
       "name": "FERNANDO JAEGER",
       "company": "LGMG",
       "status": "CONNECTION_PENDING",
@@ -128,16 +148,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/luizfabioravagnani/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Michelle Almeida",
-      "company": "8M Negócios - Estratégia e Operações",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/michelle-almeida/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -542,16 +552,6 @@
       "lastInboundAt": null
     },
     {
-      "name": "Marcelle Guerra",
-      "company": "Vibra",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/marcelle-guerra-447981b4/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
       "name": "Gustavo Brasil Niemxeski",
       "company": "Unilever and Executive Director of UnileverPrev pension. Broad experience in finance from business partnering marketing",
       "status": "CONNECTION_PENDING",
@@ -740,19 +740,72 @@
       "profileUrl": "https://www.linkedin.com/in/rodrigo-chiacho/",
       "firstOutboundAt": null,
       "lastInboundAt": null
+    }
+  ],
+  "acceptedThisWeek": [
+    {
+      "name": "Marcelle Guerra",
+      "company": "Vibra",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marcelle-guerra-447981b4/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
     },
     {
       "name": "Rodrigo Baldissera",
-      "company": "Kenvue",
-      "status": "CONNECTION_PENDING",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/rodrigo-baldissera/",
       "firstOutboundAt": null,
       "lastInboundAt": null
+    },
+    {
+      "name": "Enéias Schneider",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/en%c3%a9ias-schneider-4a6333151/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
     }
   ],
-  "acceptedThisWeek": [],
-  "repliedThisWeek": [],
-  "overdueFollowUp": []
+  "repliedThisWeek": [
+    {
+      "name": "Marcelo Lopes",
+      "company": "Grupo Cimed",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 0,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/marcelo-lopes04/",
+      "firstOutboundAt": "2026-07-28T03:00:00.000Z",
+      "lastInboundAt": "2026-07-28T03:00:00.000Z"
+    },
+    {
+      "name": "Fernando Alfano",
+      "company": "Tenda Atacado",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 8,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
+      "firstOutboundAt": "2026-07-20T03:00:00.000Z",
+      "lastInboundAt": "2026-07-25T03:00:00.000Z"
+    }
+  ],
+  "overdueFollowUp": [
+    {
+      "name": "Fabiana Taccola",
+      "company": "Lojas Renner S.A.",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 8,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fabiana-taccola-557a0935/",
+      "firstOutboundAt": "2026-07-20T03:00:00.000Z",
+      "lastInboundAt": null
+    }
+  ]
 }

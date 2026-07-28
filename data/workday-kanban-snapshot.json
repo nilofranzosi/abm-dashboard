@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T20:11:00.754Z",
+  "generatedAt": "2026-07-28T11:59:14.725Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -226,7 +226,32 @@
     {
       "stage": "CONNECTION_ACCEPTED",
       "label": "Conexão Aceita",
-      "companies": []
+      "companies": [
+        {
+          "id": "cmq9t45sh004xk7o03tws3qf7",
+          "name": "Vibra Energia",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-04-13T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-28T11:49:35.334Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Daniel Drumond"
+        },
+        {
+          "id": "cmr9oddqj0007k78kfo4omrjz",
+          "name": "Kenvue",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-13T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-28T11:49:35.334Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "André Freire"
+        }
+      ]
     },
     {
       "stage": "MESSAGE_SENT",
@@ -243,18 +268,6 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Igor Costa"
-        },
-        {
-          "id": "cmr9oddqj0007k78kfo4omrjz",
-          "name": "Kenvue",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-17T13:07:48.105Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "André Freire"
         },
         {
           "id": "cmr97qk35000ck7ikdywcuq5k",
@@ -449,18 +462,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cmrozupku0015k7lsychph5ih",
-          "name": "Tenda Atacado",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 79,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-20T21:00:36.298Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": null
-        },
-        {
           "id": "cmrozkqti000hk75coogp46br",
           "name": "Ultrapar",
           "segment": "Combustíveis, Energia & Química",
@@ -525,18 +526,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Marcelo Maia"
-        },
-        {
-          "id": "cmq9t45ks001wk7o0rej1w262",
-          "name": "Coca-Cola FEMSA",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-18T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-14T20:43:32.854Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Eduardo Mareuse"
         },
         {
           "id": "cmq9t45iv001dk7o0sskbusd8",
@@ -755,18 +744,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cmrozkqqk0000k75c20zkey14",
-          "name": "GPA — Grupo Pão de Açúcar",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 90,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-21T11:51:23.023Z",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
           "id": "cmqjvk2sc0003k7s032rc28s2",
           "name": "Heineken Brasil",
           "segment": "Alimentos & Bebidas",
@@ -853,7 +830,7 @@
           "nextActionDueAt": "2026-06-27T14:15:00.000Z",
           "lastInteractionAt": "2026-06-25T14:15:00.000Z",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 3,
           "activeDecisor": "Leandro Luiz Katayama Ribeiro"
         },
         {
@@ -905,6 +882,30 @@
           "activeDecisor": "Arthur Klann Vieira"
         },
         {
+          "id": "cmrozkqqk0000k75c20zkey14",
+          "name": "GPA — Grupo Pão de Açúcar",
+          "segment": "E-commerce & Varejo",
+          "accountScore": 90,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-27T12:55:06.125Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cmrozupku0015k7lsychph5ih",
+          "name": "Tenda Atacado",
+          "segment": "E-commerce & Varejo",
+          "accountScore": 79,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-27T12:54:22.304Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": null
+        },
+        {
           "id": "cmroz9tt80005k7ls23wgwnv0",
           "name": "Atacadão",
           "segment": null,
@@ -939,20 +940,7 @@
     {
       "stage": "MEETING_BOOKED",
       "label": "Reunião Agendada",
-      "companies": [
-        {
-          "id": "cmqqwt16f000ik7o8il8uzjxj",
-          "name": "Minerva Foods",
-          "segment": null,
-          "accountScore": 35,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-23T19:43:35.619Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "ADRIANO ROSA DELFINO"
-        }
-      ]
+      "companies": []
     },
     {
       "stage": "MEETING_DONE",
@@ -977,18 +965,6 @@
       "label": "Em negociação",
       "companies": [
         {
-          "id": "cmq9t45sh004xk7o03tws3qf7",
-          "name": "Vibra Energia",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-04-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-06T17:21:18.925Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Daniel Drumond"
-        },
-        {
           "id": "cmq9t45mm002gk7o0nbmsayr0",
           "name": "Natura",
           "segment": null,
@@ -1009,8 +985,20 @@
           "nextActionDueAt": "2026-05-07T17:29:00.000Z",
           "lastInteractionAt": "2026-06-18T17:49:20.600Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 3,
           "activeDecisor": "Fernando Nadalini"
+        },
+        {
+          "id": "cmq9t45ks001wk7o0rej1w262",
+          "name": "Coca-Cola FEMSA",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-05-18T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-27T12:54:34.171Z",
+          "owner": null,
+          "contactCount": 3,
+          "activeDecisor": "Eduardo Mareuse"
         },
         {
           "id": "cmqjsbyg7001vk7zwi6h3bf94",
@@ -1065,6 +1053,18 @@
           "owner": null,
           "contactCount": 4,
           "activeDecisor": "Felipe Feteira do Vale"
+        },
+        {
+          "id": "cmqqwt16f000ik7o8il8uzjxj",
+          "name": "Minerva Foods",
+          "segment": null,
+          "accountScore": 35,
+          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-23T19:43:35.619Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "ADRIANO ROSA DELFINO"
         },
         {
           "id": "cmqjvk2sz0006k7s0lv9seb1b",

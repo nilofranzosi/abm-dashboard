@@ -428,6 +428,7 @@
             <button class="tab-btn" type="button" id="tab-btn-demandas">Demandas</button>
             <button class="tab-btn" type="button" id="tab-btn-risco-churn">Risco/Churn</button>
             <button class="tab-btn" type="button" id="tab-btn-score">Score</button>
+            <button class="tab-btn" type="button" id="tab-btn-cronograma">Cronograma</button>
           </div>
           <button class="secondary" type="button" id="refresh">Atualizar</button>
         </div>
@@ -864,6 +865,30 @@
           <div class="error" id="score-action-error" style="display:none;"></div>
         </section>
       </section>
+
+      <section id="tab-cronograma" class="tab-view">
+        <section class="table-panel" style="padding:15px;">
+          <div class="queue-head" style="padding:0 0 10px; border-bottom:none;">
+            <h2>Cronograma do cliente</h2>
+          </div>
+          <div class="muted" id="cronograma-subtitle">Selecione um cliente para ver a linha de dias vendidos por mês e os touchpoints registrados.</div>
+          <div style="margin-top:10px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+            <label for="cronograma-cliente-select" style="font-size:12px; font-weight:700;">Cliente:</label>
+            <select id="cronograma-cliente-select">
+              <option value="">Carregando clientes...</option>
+            </select>
+          </div>
+          <div id="cronograma-chart" style="margin-top:14px;">
+            <div class="loading">Carregando cronograma...</div>
+          </div>
+          <div class="muted" style="margin-top:10px; font-size:11px;">
+            <strong>Legenda:</strong> a linha azul mostra os dias vendidos (contrato) por mês.
+            Os marcadores <span style="color:#A05A00; font-weight:800;">&#9679;</span> laranja indicam touchpoints
+            (webinars, eventos) na data em que ocorreram — passe o mouse sobre um marcador para ver os detalhes.
+            O ponto com contorno tracejado ao final da linha representa o mês atual, ainda parcial (não é um mês fechado).
+          </div>
+        </section>
+      </section>
     </main>
   </div>
 
@@ -912,6 +937,7 @@
     const tabDemandasEl = document.getElementById("tab-demandas");
     const tabRiscoChurnEl = document.getElementById("tab-risco-churn");
     const tabScoreEl = document.getElementById("tab-score");
+    const tabCronogramaEl = document.getElementById("tab-cronograma");
     const tabBtnOverviewEl = document.getElementById("tab-btn-overview");
     const tabBtnClientesEl = document.getElementById("tab-btn-clientes");
     const tabBtnProspectsEl = document.getElementById("tab-btn-prospects");
@@ -919,6 +945,7 @@
     const tabBtnDemandasEl = document.getElementById("tab-btn-demandas");
     const tabBtnRiscoChurnEl = document.getElementById("tab-btn-risco-churn");
     const tabBtnScoreEl = document.getElementById("tab-btn-score");
+    const tabBtnCronogramaEl = document.getElementById("tab-btn-cronograma");
 
     let clientesLoaded = false;
     let prospectsLoaded = false;
@@ -926,6 +953,8 @@
     let demandasLoaded = false;
     let riscoChurnLoaded = false;
     let scoreLoaded = false;
+    let cronogramaLoaded = false;
+    let currentCronogramaCompanyId = null;
 
     function showTab(name) {
       tabOverviewEl.classList.toggle("active", name === "overview");
@@ -935,6 +964,7 @@
       tabDemandasEl.classList.toggle("active", name === "demandas");
       tabRiscoChurnEl.classList.toggle("active", name === "risco-churn");
       tabScoreEl.classList.toggle("active", name === "score");
+      tabCronogramaEl.classList.toggle("active", name === "cronograma");
       tabBtnOverviewEl.classList.toggle("active", name === "overview");
       tabBtnClientesEl.classList.toggle("active", name === "clientes");
       tabBtnProspectsEl.classList.toggle("active", name === "prospects");
@@ -942,6 +972,7 @@
       tabBtnDemandasEl.classList.toggle("active", name === "demandas");
       tabBtnRiscoChurnEl.classList.toggle("active", name === "risco-churn");
       tabBtnScoreEl.classList.toggle("active", name === "score");
+      tabBtnCronogramaEl.classList.toggle("active", name === "cronograma");
       if (name === "clientes" && !clientesLoaded) {
         loadClientes();
       }
@@ -960,6 +991,9 @@
       if (name === "score" && !scoreLoaded) {
         loadScore();
       }
+      if (name === "cronograma" && !cronogramaLoaded) {
+        initCronogramaTab();
+      }
     }
 
     tabBtnOverviewEl.addEventListener("click", () => showTab("overview"));
@@ -969,6 +1003,7 @@
     tabBtnDemandasEl.addEventListener("click", () => showTab("demandas"));
     tabBtnRiscoChurnEl.addEventListener("click", () => showTab("risco-churn"));
     tabBtnScoreEl.addEventListener("click", () => showTab("score"));
+    tabBtnCronogramaEl.addEventListener("click", () => showTab("cronograma"));
 
     document.getElementById("refresh").addEventListener("click", () => {
       loadOverview();
@@ -978,6 +1013,7 @@
       if (demandasLoaded) loadDemandas();
       if (riscoChurnLoaded) loadRiscoChurn();
       if (scoreLoaded) loadScore();
+      if (cronogramaLoaded && currentCronogramaCompanyId) loadCronograma(currentCronogramaCompanyId);
     });
 
     // ─── Visão Geral ────────────────────────────────────────────────────────
@@ -1139,7 +1175,7 @@
           <td>${row.proximaAcao ? escapeAttr(row.proximaAcao) : "–"}</td>
           <td>${row.dono ? escapeAttr(row.dono) : "–"}</td>
           <td>
-            <button disabled title="Disponível na Fase 32/33/34">Ver conta</button>
+            <button type="button" data-ver-cronograma="${escapeAttr(row.id)}" data-empresa="${escapeAttr(row.empresa)}">Ver cronograma</button>
             <button type="button" data-gerar-demanda-cliente="${escapeAttr(row.id)}">Gerar demanda</button>
             <button disabled title="Disponível na Fase 32/33/34">Registrar touchpoint</button>
             <button disabled title="Disponível na Fase 32/33/34">Recalcular score</button>
@@ -1186,6 +1222,16 @@
     searchEl.addEventListener("input", applyFiltersAndSort);
 
     tbodyEl.addEventListener("click", (event) => {
+      const cronogramaBtn = event.target.closest("button[data-ver-cronograma]");
+      if (cronogramaBtn) {
+        const companyId = cronogramaBtn.dataset.verCronograma;
+        const empresa = cronogramaBtn.dataset.empresa;
+        currentCronogramaCompanyId = companyId;
+        showTab("cronograma");
+        if (cronogramaClienteSelectEl) cronogramaClienteSelectEl.value = companyId;
+        loadCronograma(companyId, empresa);
+        return;
+      }
       const btn = event.target.closest("button[data-gerar-demanda-cliente]");
       if (!btn) return;
       openDemandaForm({ origem: "cliente", companyId: btn.dataset.gerarDemandaCliente });
@@ -2250,6 +2296,169 @@
         showScoreActionError(`Não foi possível simular o ranking: ${error.message}`);
       }
     });
+
+    // ─── Cronograma ─────────────────────────────────────────────────────────
+    // Per-client continuous monthly dias-vendidos line (hand-rolled inline SVG,
+    // zero external chart library) with touchpoint markers overlaid — TRAN-08.
+    // Explicitly NOT a pre/post average comparison (locked decision, Nilo 2026-07-24).
+
+    const cronogramaClienteSelectEl = document.getElementById("cronograma-cliente-select");
+    const cronogramaChartEl = document.getElementById("cronograma-chart");
+    const cronogramaSubtitleEl = document.getElementById("cronograma-subtitle");
+
+    function populateCronogramaSelect() {
+      const options = clientesData.slice().sort((a, b) => a.empresa.localeCompare(b.empresa));
+      cronogramaClienteSelectEl.innerHTML = options.length === 0
+        ? `<option value="">Nenhum cliente Transportadora encontrado</option>`
+        : options.map((row) => `<option value="${escapeAttr(row.id)}">${escapeAttr(row.empresa)}</option>`).join("");
+    }
+
+    function renderCronogramaEmptyState(message) {
+      cronogramaChartEl.innerHTML = `<div class="empty">${escapeAttr(message)}</div>`;
+    }
+
+    // Builds the touchpoint <title> tooltip text. All fields are touchpoint-derived
+    // (manually entered via the Excel import), so every piece is escaped — not just
+    // eventName/contato — before being injected into SVG markup (T-36-12).
+    function buildTouchpointTooltip(touchpoint) {
+      const tipoLabel = touchpoint.tipo ? escapeAttr(touchpoint.tipo) : escapeAttr(touchpoint.eventType);
+      const contatoLabel = touchpoint.contato ? ` • ${escapeAttr(touchpoint.contato)}` : "";
+      return `${escapeAttr(touchpoint.eventName)} (${tipoLabel})${contatoLabel} • ${formatDate(touchpoint.occurredAt)}`;
+    }
+
+    function renderCronogramaChart(container, data) {
+      const series = data.series;
+      const touchpoints = data.touchpoints || [];
+      const currentMonth = data.currentMonth;
+
+      const width = 900;
+      const height = 260;
+      const paddingLeft = 46;
+      const paddingRight = 20;
+      const paddingTop = 24;
+      const paddingBottom = 46;
+      const plotWidth = width - paddingLeft - paddingRight;
+      const plotHeight = height - paddingTop - paddingBottom;
+
+      const values = series
+        .map((point) => point.contractDays)
+        .filter((value) => value !== null && value !== undefined);
+      const maxValue = values.length > 0 ? Math.max(...values, 1) : 1;
+
+      const xForIndex = (index) => series.length === 1
+        ? paddingLeft + plotWidth / 2
+        : paddingLeft + (index / (series.length - 1)) * plotWidth;
+      const yForValue = (value) => paddingTop + plotHeight - (value / maxValue) * plotHeight;
+
+      const definedPoints = series
+        .map((point, index) => ({ ...point, index }))
+        .filter((point) => point.contractDays !== null && point.contractDays !== undefined);
+
+      const currentIndex = series.findIndex((point) => point.month === currentMonth);
+      const completedPoints = definedPoints.filter((point) => point.index !== currentIndex);
+      const currentPoint = definedPoints.find((point) => point.index === currentIndex) || null;
+
+      const completedPolyline = completedPoints
+        .map((point) => `${xForIndex(point.index).toFixed(1)},${yForValue(point.contractDays).toFixed(1)}`)
+        .join(" ");
+
+      let dashedSegment = "";
+      if (currentPoint && completedPoints.length > 0) {
+        const last = completedPoints[completedPoints.length - 1];
+        dashedSegment = `<line x1="${xForIndex(last.index).toFixed(1)}" y1="${yForValue(last.contractDays).toFixed(1)}" x2="${xForIndex(currentPoint.index).toFixed(1)}" y2="${yForValue(currentPoint.contractDays).toFixed(1)}" stroke="#0F52BA" stroke-width="2" stroke-dasharray="5,4" />`;
+      }
+
+      const labelEvery = Math.max(1, Math.ceil(series.length / 12));
+      const monthLabels = series.map((point, index) => {
+        if (index % labelEvery !== 0 && index !== series.length - 1) return "";
+        const [year, month] = point.month.split("-");
+        return `<text x="${xForIndex(index).toFixed(1)}" y="${height - 14}" font-size="10" fill="#657083" text-anchor="middle">${escapeAttr(month)}/${escapeAttr(year.slice(2))}</text>`;
+      }).join("");
+
+      const markerHtml = touchpoints.map((touchpoint) => {
+        const occurred = new Date(touchpoint.occurredAt);
+        if (Number.isNaN(occurred.getTime())) return "";
+        const monthKey = `${occurred.getUTCFullYear()}-${String(occurred.getUTCMonth() + 1).padStart(2, "0")}-01`;
+        const seriesIndex = series.findIndex((point) => point.month === monthKey);
+        if (seriesIndex === -1) return "";
+        const point = series[seriesIndex];
+        const x = xForIndex(seriesIndex);
+        const y = point.contractDays !== null && point.contractDays !== undefined
+          ? yForValue(point.contractDays)
+          : paddingTop + plotHeight;
+        const title = buildTouchpointTooltip(touchpoint);
+        return `
+          <g>
+            <line x1="${x.toFixed(1)}" y1="${paddingTop}" x2="${x.toFixed(1)}" y2="${(paddingTop + plotHeight).toFixed(1)}" stroke="#A05A00" stroke-width="1" stroke-dasharray="2,2" opacity="0.5" />
+            <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5" fill="#A05A00" stroke="#FFFFFF" stroke-width="1.5"><title>${title}</title></circle>
+          </g>
+        `;
+      }).join("");
+
+      const currentMarker = currentPoint
+        ? `<circle cx="${xForIndex(currentPoint.index).toFixed(1)}" cy="${yForValue(currentPoint.contractDays).toFixed(1)}" r="5" fill="#FFFFFF" stroke="#0F52BA" stroke-width="2" stroke-dasharray="2,2"><title>Mês atual (parcial) — ${escapeAttr(currentPoint.month)}: ${currentPoint.contractDays} dias vendidos</title></circle>
+           <text x="${xForIndex(currentPoint.index).toFixed(1)}" y="${(yForValue(currentPoint.contractDays) - 12).toFixed(1)}" font-size="10" fill="#0F52BA" text-anchor="middle">Mês atual (parcial)</text>`
+        : "";
+
+      container.innerHTML = `
+        <svg viewBox="0 0 ${width} ${height}" width="100%" height="260" role="img" aria-label="Linha de dias vendidos por mês com marcadores de touchpoint">
+          <line x1="${paddingLeft}" y1="${(paddingTop + plotHeight).toFixed(1)}" x2="${(paddingLeft + plotWidth).toFixed(1)}" y2="${(paddingTop + plotHeight).toFixed(1)}" stroke="#DDE3EC" stroke-width="1" />
+          ${markerHtml}
+          <polyline points="${completedPolyline}" fill="none" stroke="#0F52BA" stroke-width="2.5" />
+          ${dashedSegment}
+          ${completedPoints.map((point) => `<circle cx="${xForIndex(point.index).toFixed(1)}" cy="${yForValue(point.contractDays).toFixed(1)}" r="3.5" fill="#0F52BA"><title>${escapeAttr(point.month)}: ${point.contractDays} dias vendidos</title></circle>`).join("")}
+          ${currentMarker}
+          ${monthLabels}
+        </svg>
+      `;
+    }
+
+    async function loadCronograma(companyId, empresa) {
+      if (!companyId) {
+        renderCronogramaEmptyState("Selecione um cliente para ver o cronograma.");
+        return;
+      }
+      currentCronogramaCompanyId = companyId;
+      cronogramaChartEl.innerHTML = `<div class="loading">Carregando cronograma...</div>`;
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/cronograma/${companyId}`);
+        const data = payload.data;
+        const empresaNome = empresa || (data.company && data.company.name) || "";
+        cronogramaSubtitleEl.textContent = empresaNome
+          ? `Linha de dias vendidos por mês e touchpoints de ${empresaNome}.`
+          : "Linha de dias vendidos por mês e touchpoints do cliente selecionado.";
+        if (!data.series || data.series.length === 0) {
+          renderCronogramaEmptyState("Sem dados de dias vendidos para este cliente.");
+          return;
+        }
+        renderCronogramaChart(cronogramaChartEl, data);
+      } catch (error) {
+        cronogramaChartEl.innerHTML = `<div class="error">Não foi possível carregar o cronograma. ${escapeAttr(error.message)}</div>`;
+      }
+    }
+
+    cronogramaClienteSelectEl.addEventListener("change", () => {
+      const companyId = cronogramaClienteSelectEl.value;
+      if (!companyId) return;
+      const empresaRow = clientesData.find((row) => row.id === companyId);
+      loadCronograma(companyId, empresaRow ? empresaRow.empresa : undefined);
+    });
+
+    async function initCronogramaTab() {
+      cronogramaLoaded = true;
+      if (!clientesLoaded) await loadClientes();
+      populateCronogramaSelect();
+      if (!currentCronogramaCompanyId && clientesData.length > 0) {
+        currentCronogramaCompanyId = clientesData[0].id;
+      }
+      if (currentCronogramaCompanyId) {
+        cronogramaClienteSelectEl.value = currentCronogramaCompanyId;
+        const empresaRow = clientesData.find((row) => row.id === currentCronogramaCompanyId);
+        await loadCronograma(currentCronogramaCompanyId, empresaRow ? empresaRow.empresa : undefined);
+      } else {
+        renderCronogramaEmptyState("Nenhum cliente Transportadora encontrado.");
+      }
+    }
 
     loadOverview();
   </script>
