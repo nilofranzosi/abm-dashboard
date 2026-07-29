@@ -1,59 +1,102 @@
 {
-  "generatedAt": "2026-07-28T11:59:11.962Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-28.json",
+  "generatedAt": "2026-07-29T11:54:54.815Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-29.json",
   "summary": {
-    "total": 3,
+    "total": 4,
     "replied": 0,
     "companyUnknown": 1,
     "overdue": 0
   },
   "companies": [
     {
-      "id": "unknown-celso-oliveira",
+      "id": "unknown-umberto-gobbato",
       "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "company-unknown"
+        "company-unknown",
+        "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Celso Oliveira",
+          "contactName": "Umberto Gobbato",
           "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": null,
+          "roleOrHeadline": "Conselheiro de Administração / Mentor",
           "confidence": "Baixa",
           "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-07-28T03:00:00.000Z",
+          "lastOutboundAt": "2026-07-29T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-07-28T03:00:00.000Z",
-              "body": "Celso, tenho visto sobre a dificuldade de supermercados na contratação de mão de obra para a operação logística."
+              "occurredAt": "2026-07-29T03:00:00.000Z",
+              "body": "Umberto, a PX é uma plataforma que conecta mão de obra sob demanda para a operação logística, sem necessidade de contratação fixa via RH.(Editada)"
             },
             {
-              "occurredAt": "2026-07-28T03:00:00.000Z",
-              "body": "Como está sendo essa situação ai para vocês?"
+              "occurredAt": "2026-07-29T19:56:00.000Z",
+              "body": "Nossa sede fica em Joinville, e estamos operando em grandes empresas como Votorantim e Ambev. Também estamos realizando um processo de homologação junto a Raizen."
+            },
+            {
+              "occurredAt": "2026-07-29T03:00:00.000Z",
+              "body": "Vejo muita possibilidade de iniciar um processo similar na WEG."
+            },
+            {
+              "occurredAt": "2026-07-29T03:00:00.000Z",
+              "body": "Para avançar nesse projeto, o melhor contato seria contigo?"
             }
           ],
-          "icpSegment": "EMBARCADOR"
+          "icpSegment": null
         }
       ],
       "reviewedAt": null,
-      "icpSegment": "EMBARCADOR"
+      "icpSegment": null
     },
     {
-      "id": "grupo-level",
-      "resolvedCompany": "Grupo Level",
+      "id": "the-mosaic-company-brasil",
+      "resolvedCompany": "The Mosaic Company - Brasil",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Marcio Campos",
+          "contactName": "João Roberto Galhardo",
+          "funnelStatus": "FIRST_CONTACT_SENT",
+          "roleOrHeadline": "Vice-presidente de Supply Chain",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 0,
+          "lastOutboundAt": "2026-07-29T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 1,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-07-29T13:58:00.000Z",
+              "body": "João, a PX está em um processo de homologação com a Raízen, acredito que podemos aplicar um projeto similar na Mosaic."
+            },
+            {
+              "occurredAt": "2026-07-29T03:00:00.000Z",
+              "body": "Para avançar nesse projeto, o melhor contato seria contigo?"
+            }
+          ],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "grupo-sbf",
+      "resolvedCompany": "GRUPO SBF",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Daniela Paiola",
           "funnelStatus": "CONNECTION_SENT",
-          "roleOrHeadline": "Diretor de Logistica na Agile Fulfillment @Grupo Level",
-          "confidence": "Alta",
+          "roleOrHeadline": "Supply Chain | Projetos | Dados | Sistemas | Indicadores | Melhoria | Gestão de Resultados",
+          "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,
@@ -67,18 +110,18 @@
       "icpSegment": null
     },
     {
-      "id": "zamp",
-      "resolvedCompany": "ZAMP",
+      "id": "pier-partners",
+      "resolvedCompany": "Pier Partners",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Luciano Tótola",
+          "contactName": "Angelo Tedesco Muratore",
           "funnelStatus": "CONNECTION_SENT",
-          "roleOrHeadline": "Supply Chain Director | ZAMP",
-          "confidence": "Baixa",
+          "roleOrHeadline": "Managing Partner at Pier Partners",
+          "confidence": "Alta",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,

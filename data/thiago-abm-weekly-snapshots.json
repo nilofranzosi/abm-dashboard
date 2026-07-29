@@ -1545,41 +1545,46 @@
   },
   {
     "weekKey": "2026-S31",
-    "generatedAt": "2026-07-27T12:53:00.665Z",
+    "generatedAt": "2026-07-29T11:54:51.291Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 91,
-    "activePipeline": 81,
-    "pausedCount": 10,
-    "repliedOrBetter": 17,
+    "totalApproached": 105,
+    "activePipeline": 96,
+    "pausedCount": 9,
+    "repliedOrBetter": 19,
     "meetingOrBetter": 7,
     "dealCount": 5,
-    "replyRate": 0.20987654320987653,
-    "meetingRate": 0.08641975308641975,
-    "dealRate": 0.06172839506172839,
-    "avgDaysToFirstReply": 6.714285714285714,
-    "avgDaysSinceLastOutbound": 3.1333333333333333,
-    "totalOutboundTouchpoints": 30,
+    "replyRate": 0.19791666666666666,
+    "meetingRate": 0.07291666666666667,
+    "dealRate": 0.052083333333333336,
+    "avgDaysToFirstReply": 6.333333333333333,
+    "avgDaysSinceLastOutbound": 2.533333333333333,
+    "totalOutboundTouchpoints": 23,
     "totalInboundTouchpoints": 3,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
         "label": "Conexão Enviada",
-        "count": 18
+        "count": 23
+      },
+      {
+        "stage": "CONNECTION_ACCEPTED",
+        "label": "Conexão Aceita",
+        "count": 5
       },
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 21
+        "count": 26
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 25
+        "count": 23
       },
       {
         "stage": "REPLIED",
         "label": "Respondeu",
-        "count": 10
+        "count": 12
       },
       {
         "stage": "MEETING_BOOKED",
@@ -1621,7 +1626,7 @@
       {
         "company": "CIMED",
         "stage": "DEAL",
-        "contacts": 1,
+        "contacts": 3,
         "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "DEAL",
@@ -1652,8 +1657,8 @@
         "company": "Gerdau",
         "stage": "MEETING_DONE",
         "contacts": 2,
-        "outboundTouchpoints": 4,
-        "inboundTouchpoints": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
         "bestStatus": "MEETING_DONE",
         "score": 80,
         "nextActionDueAt": "2026-06-20T11:30:00.000Z"
@@ -1672,17 +1677,27 @@
         "company": "Casas Bahia",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
+        "outboundTouchpoints": 5,
+        "inboundTouchpoints": 1,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-19T18:34:00.000Z"
       },
       {
+        "company": "L'Oréal",
+        "stage": "REPLIED",
+        "contacts": 4,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-21T17:36:00.000Z"
+      },
+      {
         "company": "Continental Pneus",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 2,
+        "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
@@ -1692,8 +1707,8 @@
         "company": "Boticário",
         "stage": "REPLIED",
         "contacts": 2,
-        "outboundTouchpoints": 2,
-        "inboundTouchpoints": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-26T15:24:00.000Z"
@@ -1702,7 +1717,7 @@
         "company": "Tramontina",
         "stage": "REPLIED",
         "contacts": 3,
-        "outboundTouchpoints": 2,
+        "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
@@ -1737,22 +1752,12 @@
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-07-19T11:26:00.000Z"
-      },
-      {
-        "company": "MadeiraMadeira",
-        "stage": "REPLIED",
-        "contacts": 2,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-07-24T18:54:00.000Z"
       }
     ],
-    "activeContacts": 81,
-    "excludedContacts": 10,
+    "activeContacts": 96,
+    "excludedContacts": 9,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 91,
-    "qualifiedAdvanceRate": 0.08641975308641975
+    "uniqueCompanies": 105,
+    "qualifiedAdvanceRate": 0.07291666666666667
   }
 ]

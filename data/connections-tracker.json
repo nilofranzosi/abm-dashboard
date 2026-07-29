@@ -1,24 +1,113 @@
 {
-  "generatedAt": "2026-07-28T11:59:13.997Z",
-  "enrichedFile": "2026-07-28T11:55:00.816Z",
-  "pendingSnapshotAt": "2026-07-28T11:49:35.022Z",
+  "generatedAt": "2026-07-29T11:54:22.478Z",
+  "enrichedFile": "2026-07-29T11:50:36.137Z",
+  "pendingSnapshotAt": "2026-07-29T11:45:30.006Z",
   "summary": {
-    "sentThisWeek": 2,
+    "sentThisWeek": 10,
     "pendingConnections": 70,
-    "acceptedThisWeek": 3,
+    "acceptedThisWeek": 4,
     "repliedThisWeek": 2,
-    "overdueFollowUp": 1,
-    "acceptanceRateEst": 50
+    "overdueFollowUp": 0,
+    "acceptanceRateEst": 10
   },
   "funnelBreakdown": {
-    "REPLIED_NEUTRAL": 4,
-    "FOLLOW_UP_SENT": 8,
-    "FIRST_CONTACT_SENT": 2,
-    "REPLIED_POSITIVE": 1,
-    "CONNECTION_ACCEPTED": 10,
+    "FIRST_CONTACT_SENT": 9,
+    "REPLIED_NEUTRAL": 3,
+    "FOLLOW_UP_SENT": 3,
+    "CONNECTION_ACCEPTED": 9,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
+    {
+      "name": "Luis Singling",
+      "company": "The Goodyear Tire & Rubber Company",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/luis-singling-9942a914/",
+      "firstOutboundAt": "2026-07-29T20:04:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Eduardo Ferrari, PMP",
+      "company": "COFCO International",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/eduardo-ferrari-pmp/",
+      "firstOutboundAt": "2026-07-29T19:52:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "João Roberto Galhardo",
+      "company": "The Mosaic Company - Brasil",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/jo%C3%A3o-roberto-galhardo-60519b14/",
+      "firstOutboundAt": "2026-07-29T13:58:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Fernando Sampaio",
+      "company": "Sanofi",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/sampaio-fernando-sanofi/",
+      "firstOutboundAt": "2026-07-29T13:46:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Antonio Carlos Cipolli",
+      "company": "BASF",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/antonio-carlos-cipolli-6b60202/",
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Umberto Gobbato",
+      "company": "A apurar",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/umberto-gobbato-1b32a913b/",
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Erico Souza",
+      "company": "Electrolux Group",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/ericocsouza/",
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marco Ribeiro",
+      "company": "Nutrien Soluções Agrícolas",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marco-ribeiro-66549632/",
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marcus Galvani",
+      "company": "Reckitt",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marcus-galvani-15592a9/",
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": null
+    },
     {
       "name": "Marcelo Lopes",
       "company": "Grupo Cimed",
@@ -26,28 +115,98 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/marcelo-lopes04/",
-      "firstOutboundAt": "2026-07-28T03:00:00.000Z",
-      "lastInboundAt": "2026-07-28T03:00:00.000Z"
-    },
-    {
-      "name": "Celso Oliveira",
-      "company": "A apurar",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": null,
-      "firstOutboundAt": "2026-07-28T03:00:00.000Z",
-      "lastInboundAt": null
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": "2026-07-29T03:00:00.000Z"
     }
   ],
   "pendingConnections": [
     {
-      "name": "Waldimir Rezende",
-      "company": "Grupo Cimed",
+      "name": "Roberto Bisogni",
+      "company": "Klabin",
       "status": "CONNECTION_PENDING",
       "daysSinceSent": null,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/waldimir-rezende-09817930/",
+      "profileUrl": "https://www.linkedin.com/in/robertobisogni/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Davi Fabricio Teixeira",
+      "company": "Suzano",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/davi-fabricio-teixeira/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Daniela Paiola",
+      "company": "GRUPO SBF",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/daniela-paiola/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marcelo Ferretti",
+      "company": "Whirlpool Latin America",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marcelo-ferretti-bba59152/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Allan Vicente",
+      "company": "WEG",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/allanvicente/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Altair Zimmermann Jr",
+      "company": "WEG",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/altairzjr/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "vladimir dos passos",
+      "company": "RodOil",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/vladimir-dos-passos-69831125/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Angelo Tedesco Muratore",
+      "company": "Pier Partners",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/angelo-tedesco-muratore-b54a7260/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Nathalia Farkuh",
+      "company": "Colgate-Palmolive",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/nathalia-farkuh-0475522a/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -68,16 +227,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/lucianototola/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Thiago Rezende Gonçalves",
-      "company": "Coca-Cola FEMSA",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/thiago-rezende-gon%c3%a7alves-b29bb831/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -268,16 +417,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/robervalanias/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Fábio Araújo",
-      "company": "NSI Group®",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/f%c3%a1bio-ara%c3%bajo-a7576278/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -680,96 +819,46 @@
       "profileUrl": "https://www.linkedin.com/in/felipefigueiredogoncalves/",
       "firstOutboundAt": null,
       "lastInboundAt": null
-    },
-    {
-      "name": "Anderson Menoli",
-      "company": "Samsung Electronics",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/anderson-menoli-ba8a5a18/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Mario Schafaschek",
-      "company": "Coca-Cola FEMSA Brasil",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/mario-schafaschek-3b387345/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Ricardo Ramos",
-      "company": "Carrefour",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/ricardo-ramos-41065290/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Marcello Von Schneider",
-      "company": "BYD",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/mvschneider/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Barbara Lyra",
-      "company": "Amazon Logistics Brazil",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/barbara-lyra/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Rodrigo Tosi Chiacho",
-      "company": "Johnson & Johnson",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/rodrigo-chiacho/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
     }
   ],
   "acceptedThisWeek": [
     {
-      "name": "Marcelle Guerra",
-      "company": "Vibra",
+      "name": "Luis Singling",
+      "company": "The Goodyear Tire & Rubber Company",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/luis-singling-9942a914/",
+      "firstOutboundAt": "2026-07-29T20:04:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Eduardo Ferrari, PMP",
+      "company": "COFCO International",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": -1,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/eduardo-ferrari-pmp/",
+      "firstOutboundAt": "2026-07-29T19:52:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Gustavo Emmã",
+      "company": "Embraer",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/marcelle-guerra-447981b4/",
+      "profileUrl": "https://www.linkedin.com/in/gustavoemma/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
     {
-      "name": "Rodrigo Baldissera",
+      "name": "Thiago Rezende Gonçalves",
       "company": "A apurar",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/rodrigo-baldissera/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Enéias Schneider",
-      "company": "A apurar",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/en%c3%a9ias-schneider-4a6333151/",
+      "profileUrl": "https://www.linkedin.com/in/thiago-rezende-gon%c3%a7alves-b29bb831/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     }
@@ -782,30 +871,19 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/marcelo-lopes04/",
-      "firstOutboundAt": "2026-07-28T03:00:00.000Z",
-      "lastInboundAt": "2026-07-28T03:00:00.000Z"
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": "2026-07-29T03:00:00.000Z"
     },
     {
       "name": "Fernando Alfano",
       "company": "Tenda Atacado",
       "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 8,
+      "daysSinceSent": 9,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
       "firstOutboundAt": "2026-07-20T03:00:00.000Z",
       "lastInboundAt": "2026-07-25T03:00:00.000Z"
     }
   ],
-  "overdueFollowUp": [
-    {
-      "name": "Fabiana Taccola",
-      "company": "Lojas Renner S.A.",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 8,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/fabiana-taccola-557a0935/",
-      "firstOutboundAt": "2026-07-20T03:00:00.000Z",
-      "lastInboundAt": null
-    }
-  ]
+  "overdueFollowUp": []
 }
