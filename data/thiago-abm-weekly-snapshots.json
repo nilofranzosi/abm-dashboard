@@ -1545,41 +1545,41 @@
   },
   {
     "weekKey": "2026-S31",
-    "generatedAt": "2026-07-29T11:54:51.291Z",
+    "generatedAt": "2026-07-30T11:50:08.731Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 105,
-    "activePipeline": 96,
+    "totalApproached": 110,
+    "activePipeline": 101,
     "pausedCount": 9,
     "repliedOrBetter": 19,
     "meetingOrBetter": 7,
     "dealCount": 5,
-    "replyRate": 0.19791666666666666,
-    "meetingRate": 0.07291666666666667,
-    "dealRate": 0.052083333333333336,
+    "replyRate": 0.18811881188118812,
+    "meetingRate": 0.06930693069306931,
+    "dealRate": 0.04950495049504951,
     "avgDaysToFirstReply": 6.333333333333333,
-    "avgDaysSinceLastOutbound": 2.533333333333333,
-    "totalOutboundTouchpoints": 23,
-    "totalInboundTouchpoints": 3,
+    "avgDaysSinceLastOutbound": 0,
+    "totalOutboundTouchpoints": 19,
+    "totalInboundTouchpoints": 0,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
         "label": "Conexão Enviada",
-        "count": 23
+        "count": 24
       },
       {
         "stage": "CONNECTION_ACCEPTED",
         "label": "Conexão Aceita",
-        "count": 5
+        "count": 8
       },
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 26
+        "count": 28
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 23
+        "count": 22
       },
       {
         "stage": "REPLIED",
@@ -1677,8 +1677,8 @@
         "company": "Casas Bahia",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 5,
-        "inboundTouchpoints": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-19T18:34:00.000Z"
@@ -1754,10 +1754,10 @@
         "nextActionDueAt": "2026-07-19T11:26:00.000Z"
       }
     ],
-    "activeContacts": 96,
+    "activeContacts": 101,
     "excludedContacts": 9,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 105,
-    "qualifiedAdvanceRate": 0.07291666666666667
+    "uniqueCompanies": 110,
+    "qualifiedAdvanceRate": 0.06930693069306931
   }
 ]

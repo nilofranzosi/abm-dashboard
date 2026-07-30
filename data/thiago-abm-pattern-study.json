@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-07-29T11:54:53.294Z",
+  "generatedAt": "2026-07-30T11:50:10.005Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
     "weekKey": "2026-S31",
-    "totalCompanies": 105,
-    "activeCompanies": 96,
+    "totalCompanies": 110,
+    "activeCompanies": 101,
     "pausedCompanies": 9,
     "repliedOrBetterCompanies": 19,
     "meetingOrBetterCompanies": 7,
     "dealCompanies": 5,
-    "companyReplyRate": 0.19791666666666666,
-    "companyMeetingRate": 0.07291666666666667,
-    "companyDealRate": 0.052083333333333336
+    "companyReplyRate": 0.18811881188118812,
+    "companyMeetingRate": 0.06930693069306931,
+    "companyDealRate": 0.04950495049504951
   },
   "sample": {
-    "activeContacts": 214,
+    "activeContacts": 221,
     "replies": 18,
     "advanced": 11,
     "negatives": 1,
-    "noResponse": 179,
-    "replyRate": 0.08411214953271028,
-    "advancedRate": 0.0514018691588785,
+    "noResponse": 186,
+    "replyRate": 0.08144796380090498,
+    "advancedRate": 0.049773755656108594,
     "avgDaysToFirstReply": 5.388888888888889
   },
   "bySegment": [
@@ -117,12 +117,12 @@
     },
     {
       "segment": "Segmento a classificar",
-      "total": 134,
+      "total": 141,
       "responded": 9,
       "advanced": 1,
       "negative": 1,
-      "replyRate": 0.06716417910447761,
-      "advancedRate": 0.007462686567164179,
+      "replyRate": 0.06382978723404255,
+      "advancedRate": 0.0070921985815602835,
       "avgDaysToFirstReply": 3.3333333333333335
     },
     {
@@ -139,22 +139,22 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 50,
+      "total": 51,
       "responded": 4,
       "advanced": 2,
       "negative": 0,
-      "replyRate": 0.08,
-      "advancedRate": 0.04,
+      "replyRate": 0.0784313725490196,
+      "advancedRate": 0.0392156862745098,
       "avgDaysToFirstReply": 11.5
     },
     {
       "seniority": "Diretoria / Head",
-      "total": 96,
+      "total": 101,
       "responded": 9,
       "advanced": 4,
       "negative": 0,
-      "replyRate": 0.09375,
-      "advancedRate": 0.041666666666666664,
+      "replyRate": 0.0891089108910891,
+      "advancedRate": 0.039603960396039604,
       "avgDaysToFirstReply": 2.888888888888889
     },
     {
@@ -169,34 +169,34 @@
     },
     {
       "seniority": "C-level / VP",
-      "total": 42,
+      "total": 43,
       "responded": 3,
       "advanced": 1,
       "negative": 1,
-      "replyRate": 0.07142857142857142,
-      "advancedRate": 0.023809523809523808,
+      "replyRate": 0.06976744186046512,
+      "advancedRate": 0.023255813953488372,
       "avgDaysToFirstReply": 2.3333333333333335
     }
   ],
   "byFunctionArea": [
     {
       "functionArea": "Função a classificar",
-      "total": 43,
+      "total": 46,
       "responded": 1,
       "advanced": 0,
       "negative": 0,
-      "replyRate": 0.023255813953488372,
+      "replyRate": 0.021739130434782608,
       "advancedRate": 0,
       "avgDaysToFirstReply": 0
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 141,
+      "total": 145,
       "responded": 17,
       "advanced": 9,
       "negative": 1,
-      "replyRate": 0.12056737588652482,
-      "advancedRate": 0.06382978723404255,
+      "replyRate": 0.11724137931034483,
+      "advancedRate": 0.06206896551724138,
       "avgDaysToFirstReply": 5.705882352941177
     },
     {
@@ -243,12 +243,12 @@
   "byTimeBand": [
     {
       "timeBand": "Antes das 08h",
-      "total": 60,
+      "total": 63,
       "responded": 10,
       "advanced": 5,
       "negative": 1,
-      "replyRate": 0.16666666666666666,
-      "advancedRate": 0.08333333333333333,
+      "replyRate": 0.15873015873015872,
+      "advancedRate": 0.07936507936507936,
       "avgDaysToFirstReply": 5.9
     },
     {
@@ -283,12 +283,12 @@
     },
     {
       "timeBand": "Sem horário",
-      "total": 98,
+      "total": 102,
       "responded": 0,
       "advanced": 1,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0.01020408163265306,
+      "advancedRate": 0.00980392156862745,
       "avgDaysToFirstReply": null
     }
   ],

@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-29T11:54:54.815Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-29.json",
+  "generatedAt": "2026-07-30T11:50:11.008Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-30.json",
   "summary": {
     "total": 4,
     "replied": 0,
-    "companyUnknown": 1,
+    "companyUnknown": 2,
     "overdue": 0
   },
   "companies": [
     {
-      "id": "unknown-umberto-gobbato",
+      "id": "unknown-diego-reed",
       "resolvedCompany": "A apurar",
       "reviewReasons": [
         "company-unknown",
@@ -17,33 +17,16 @@
       ],
       "contacts": [
         {
-          "contactName": "Umberto Gobbato",
-          "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": "Conselheiro de Administração / Mentor",
+          "contactName": "Diego Reed",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Head Logística | Logistics Operations | S&OP | Supply Chain",
           "confidence": "Baixa",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-07-29T03:00:00.000Z",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
           "lastInboundAt": null,
-          "outboundTouchpoints": 1,
+          "outboundTouchpoints": 0,
           "inboundMessages": [],
-          "outboundMessages": [
-            {
-              "occurredAt": "2026-07-29T03:00:00.000Z",
-              "body": "Umberto, a PX é uma plataforma que conecta mão de obra sob demanda para a operação logística, sem necessidade de contratação fixa via RH.(Editada)"
-            },
-            {
-              "occurredAt": "2026-07-29T19:56:00.000Z",
-              "body": "Nossa sede fica em Joinville, e estamos operando em grandes empresas como Votorantim e Ambev. Também estamos realizando um processo de homologação junto a Raizen."
-            },
-            {
-              "occurredAt": "2026-07-29T03:00:00.000Z",
-              "body": "Vejo muita possibilidade de iniciar um processo similar na WEG."
-            },
-            {
-              "occurredAt": "2026-07-29T03:00:00.000Z",
-              "body": "Para avançar nesse projeto, o melhor contato seria contigo?"
-            }
-          ],
+          "outboundMessages": [],
           "icpSegment": null
         }
       ],
@@ -51,33 +34,24 @@
       "icpSegment": null
     },
     {
-      "id": "the-mosaic-company-brasil",
-      "resolvedCompany": "The Mosaic Company - Brasil",
+      "id": "unknown-gustavo-sanches",
+      "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
+        "company-unknown",
+        "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "João Roberto Galhardo",
-          "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": "Vice-presidente de Supply Chain",
-          "confidence": "Media",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-07-29T03:00:00.000Z",
+          "contactName": "Gustavo Sanches",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Matemático | Desenvolvedor | Cientista de Dados | Inteligência Artificial | Modelagem Matemática | Otimização | Pesquisa Operacional | Desenvolvimento de Software em Python",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
           "lastInboundAt": null,
-          "outboundTouchpoints": 1,
+          "outboundTouchpoints": 0,
           "inboundMessages": [],
-          "outboundMessages": [
-            {
-              "occurredAt": "2026-07-29T13:58:00.000Z",
-              "body": "João, a PX está em um processo de homologação com a Raízen, acredito que podemos aplicar um projeto similar na Mosaic."
-            },
-            {
-              "occurredAt": "2026-07-29T03:00:00.000Z",
-              "body": "Para avançar nesse projeto, o melhor contato seria contigo?"
-            }
-          ],
+          "outboundMessages": [],
           "icpSegment": null
         }
       ],

@@ -1,18 +1,54 @@
 {
-  "generatedAt": "2026-07-29T12:00:00.216Z",
+  "generatedAt": "2026-07-30T12:00:00.202Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
       "label": "Conexão Enviada",
       "companies": [
         {
-          "id": "cms611chp001ck7ocsuk2wgs6",
-          "name": "Suzano",
-          "segment": "Indústria Pesada",
-          "accountScore": 78,
+          "id": "cms7go2kd000uk7gs3l71d3dd",
+          "name": "Grupo Petrópolis",
+          "segment": null,
+          "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-29T11:54:14.346Z",
+          "lastInteractionAt": "2026-07-30T11:59:35.675Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms7gn51v000sk7gsghpyznvs",
+          "name": "Copel",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T11:58:52.243Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms6kijif000kk7k0qaktmwfu",
+          "name": "Bayer Brasil",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 79,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-29T20:59:29.782Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms6kijhw000fk7k0d8pam74v",
+          "name": "Pfizer Brasil",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 81,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-29T20:59:29.782Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -39,18 +75,6 @@
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
           "owner": null,
           "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cms4r8zpt001gk7k4zfhlykso",
-          "name": "WEG",
-          "segment": "Indústria Pesada",
-          "accountScore": 66,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-28T14:32:28.957Z",
-          "owner": null,
-          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -288,18 +312,6 @@
       "label": "Conexão Aceita",
       "companies": [
         {
-          "id": "cmq9t45r5004ck7o0ey99kd8c",
-          "name": "Samsung Brasil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-28T14:23:05.751Z",
-          "owner": null,
-          "contactCount": 6,
-          "activeDecisor": "Carlos Marcelo Oba"
-        },
-        {
           "id": "cmr9oddqj0007k78kfo4omrjz",
           "name": "Kenvue",
           "segment": null,
@@ -312,13 +324,25 @@
           "activeDecisor": "André Freire"
         },
         {
-          "id": "cms4r8zp1001bk7k44lds2r9k",
-          "name": "Embraer",
-          "segment": "Indústria Pesada",
-          "accountScore": 66,
+          "id": "cmq9t45o20034k7o03j7iwxh7",
+          "name": "Michelin",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-17T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-29T20:49:13.131Z",
+          "owner": null,
+          "contactCount": 5,
+          "activeDecisor": "Antonio Correa G Neto"
+        },
+        {
+          "id": "cms6kijhb000ak7k0cry61j90",
+          "name": "Roche Brasil",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 83,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-29T11:45:30.209Z",
+          "lastInteractionAt": "2026-07-30T11:26:59.733Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -400,18 +424,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Luis Felipe Dovichi Mendes"
-        },
-        {
-          "id": "cmq9t45o20034k7o03j7iwxh7",
-          "name": "Michelin",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-17T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-10T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 5,
-          "activeDecisor": "Antonio Correa G Neto"
         },
         {
           "id": "cmrdgzv4u0007k77wsd8j8pzs",
@@ -546,20 +558,92 @@
           "activeDecisor": "Mario Augusto Neto"
         },
         {
-          "id": "cms611c4h000ek7oc9u3jfwd8",
-          "name": "Nutrien Brasil",
-          "segment": "Agro & Commodities",
-          "accountScore": 71,
+          "id": "cms7gif2u000rk7gsrnexfna3",
+          "name": "The Mosaic Company - Brasil",
+          "segment": null,
+          "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-29T11:54:14.346Z",
+          "lastInteractionAt": "2026-07-30T11:55:11.957Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms4r8zpt001gk7k4zfhlykso",
+          "name": "WEG",
+          "segment": "Indústria Pesada",
+          "accountScore": 66,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T11:54:54.568Z",
+          "owner": null,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
           "id": "cms4r8zoe0016k7k42r3ia1xy",
           "name": "Cofco Brasil",
+          "segment": "Agro & Commodities",
+          "accountScore": 71,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms611chp001ck7ocsuk2wgs6",
+          "name": "Suzano",
+          "segment": "Indústria Pesada",
+          "accountScore": 78,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms4r8zp1001bk7k44lds2r9k",
+          "name": "Embraer",
+          "segment": "Indústria Pesada",
+          "accountScore": 66,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms7fto7o0007k7ps4pewwluh",
+          "name": "White Martins",
+          "segment": "Combustíveis, Energia & Química",
+          "accountScore": 81,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms4r8zmr000wk7k4bmnmqld5",
+          "name": "Goodyear Brasil",
+          "segment": "Automotivo & Pneus",
+          "accountScore": 77,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-29T20:59:29.782Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms611c4h000ek7oc9u3jfwd8",
+          "name": "Nutrien Brasil",
           "segment": "Agro & Commodities",
           "accountScore": 71,
           "nextAction": null,
@@ -574,18 +658,6 @@
           "name": "Electrolux",
           "segment": "Eletro & Tecnologia",
           "accountScore": 73,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-29T11:54:14.346Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cms4r8zmr000wk7k4bmnmqld5",
-          "name": "Goodyear Brasil",
-          "segment": "Automotivo & Pneus",
-          "accountScore": 77,
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T11:54:14.346Z",
@@ -780,6 +852,18 @@
           "activeDecisor": "Alexandre Westphalen"
         },
         {
+          "id": "cmq9t45r5004ck7o0ey99kd8c",
+          "name": "Samsung Brasil",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-30T11:53:33.818Z",
+          "owner": null,
+          "contactCount": 6,
+          "activeDecisor": "Carlos Marcelo Oba"
+        },
+        {
           "id": "cmq9t45jb001ik7o09gybyask",
           "name": "Shopee Brasil",
           "segment": null,
@@ -810,7 +894,7 @@
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-07T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-22T11:38:19.466Z",
+          "lastInteractionAt": "2026-07-30T11:53:48.160Z",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Vinicius Benincasa"
@@ -822,7 +906,7 @@
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-22T11:38:19.466Z",
+          "lastInteractionAt": "2026-07-30T11:54:00.341Z",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Renato Marostica"
@@ -898,6 +982,18 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Carlos H. Medeiros"
+        },
+        {
+          "id": "cms7fto3r0000k7ps4lj0nowp",
+          "name": "Messer Gases",
+          "segment": "Combustíveis, Energia & Química",
+          "accountScore": 81,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
         },
         {
           "id": "cmqs2b9lx000ak7ag6omeybf4",

@@ -1,20 +1,19 @@
 {
-  "generatedAt": "2026-07-29T11:54:22.478Z",
-  "enrichedFile": "2026-07-29T11:50:36.137Z",
-  "pendingSnapshotAt": "2026-07-29T11:45:30.006Z",
+  "generatedAt": "2026-07-30T11:36:06.093Z",
+  "enrichedFile": "2026-07-30T11:32:10.616Z",
+  "pendingSnapshotAt": "2026-07-30T11:26:59.578Z",
   "summary": {
-    "sentThisWeek": 10,
+    "sentThisWeek": 12,
     "pendingConnections": 70,
-    "acceptedThisWeek": 4,
-    "repliedThisWeek": 2,
+    "acceptedThisWeek": 3,
+    "repliedThisWeek": 0,
     "overdueFollowUp": 0,
-    "acceptanceRateEst": 10
+    "acceptanceRateEst": 0
   },
   "funnelBreakdown": {
-    "FIRST_CONTACT_SENT": 9,
-    "REPLIED_NEUTRAL": 3,
     "FOLLOW_UP_SENT": 3,
-    "CONNECTION_ACCEPTED": 9,
+    "FIRST_CONTACT_SENT": 12,
+    "CONNECTION_ACCEPTED": 8,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
@@ -25,7 +24,7 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/luis-singling-9942a914/",
-      "firstOutboundAt": "2026-07-29T20:04:00.000Z",
+      "firstOutboundAt": "2026-07-30T20:04:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -35,7 +34,7 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/eduardo-ferrari-pmp/",
-      "firstOutboundAt": "2026-07-29T19:52:00.000Z",
+      "firstOutboundAt": "2026-07-30T19:52:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -45,7 +44,7 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/jo%C3%A3o-roberto-galhardo-60519b14/",
-      "firstOutboundAt": "2026-07-29T13:58:00.000Z",
+      "firstOutboundAt": "2026-07-30T13:58:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -55,7 +54,37 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/sampaio-fernando-sanofi/",
-      "firstOutboundAt": "2026-07-29T13:46:00.000Z",
+      "firstOutboundAt": "2026-07-30T13:46:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Paulo E. Petterle",
+      "company": "White Martins",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/paulo-e-petterle-470486121/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Gustavo Emmã",
+      "company": "Embraer",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/gustavoemma/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Eduardo Andrade de Oliveira (he/él/ele)",
+      "company": "Suzano",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/eduardo-andrade-de-oliveira-he-%C3%A9l-ele-bb300333/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -65,7 +94,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/antonio-carlos-cipolli-6b60202/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -75,7 +104,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/umberto-gobbato-1b32a913b/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -85,7 +114,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/ericocsouza/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -95,7 +124,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/marco-ribeiro-66549632/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -105,21 +134,81 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/marcus-galvani-15592a9/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
-    },
-    {
-      "name": "Marcelo Lopes",
-      "company": "Grupo Cimed",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 0,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/marcelo-lopes04/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
-      "lastInboundAt": "2026-07-29T03:00:00.000Z"
     }
   ],
   "pendingConnections": [
+    {
+      "name": "Bruno Battaglia",
+      "company": "Lean Institute Brasil.",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/bruno-bergonzoni-battaglia-a9a1196/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "George Ramos",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/george-ramos-diretor-compras-mentoria-industria-varejo-alimentos-bebidas-beleza-higiene-conselho/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Diego Reed",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/diegoreed/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Marcio Fontão dos Reis PharmD, MBA",
+      "company": "Pfizer - Executive Board Committee - Head of Market Access",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/marciofontao/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Gustavo Sanches",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/gustavo-sanches-375944398/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Eder Correa",
+      "company": "Bayer Farma.",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/eder-correa-1679129/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Schirley Wirtti",
+      "company": "Bayer",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/schirley-wirtti-41200a16/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
     {
       "name": "Roberto Bisogni",
       "company": "Klabin",
@@ -749,141 +838,40 @@
       "profileUrl": "https://www.linkedin.com/in/antonio-cota-7b7a2a26/",
       "firstOutboundAt": null,
       "lastInboundAt": null
-    },
-    {
-      "name": "Luiz Thiebaut",
-      "company": "Michelin",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/luiz-thiebaut-082baa35/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Tufi Daher Filho",
-      "company": "Cia Siregurgica Nacional",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/tufi-daher-filho-3a309337/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Arivaldo Bento",
-      "company": "Samsung Electronics",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/arivaldo-bento-34819858/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "João Bruno Pereira",
-      "company": "Abiomed - J&J MedTech",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/joao-bruno-pereira/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Denis Poleti",
-      "company": "Cargill",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/denis-poleti-269a844b/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Patrícia Backhaus",
-      "company": "Yara Brazil l Head of Procurement l Executive",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/patr%c3%adciabackhaus18091989/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Felipe Figueiredo Gonçalves",
-      "company": "A apurar",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/felipefigueiredogoncalves/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
     }
   ],
   "acceptedThisWeek": [
     {
-      "name": "Luis Singling",
-      "company": "The Goodyear Tire & Rubber Company",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": -1,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/luis-singling-9942a914/",
-      "firstOutboundAt": "2026-07-29T20:04:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Eduardo Ferrari, PMP",
-      "company": "COFCO International",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": -1,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/eduardo-ferrari-pmp/",
-      "firstOutboundAt": "2026-07-29T19:52:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Gustavo Emmã",
-      "company": "Embraer",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/gustavoemma/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Thiago Rezende Gonçalves",
+      "name": "Anderson Cotias",
       "company": "A apurar",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/thiago-rezende-gon%c3%a7alves-b29bb831/",
+      "profileUrl": "https://www.linkedin.com/in/andersoncotias/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Rondinelly O.",
+      "company": "Roche Pharmaceutical",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rondinelly-o-b4367741/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Felipe Araujo",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/felipe-araujo--/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     }
   ],
-  "repliedThisWeek": [
-    {
-      "name": "Marcelo Lopes",
-      "company": "Grupo Cimed",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 0,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/marcelo-lopes04/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
-      "lastInboundAt": "2026-07-29T03:00:00.000Z"
-    },
-    {
-      "name": "Fernando Alfano",
-      "company": "Tenda Atacado",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 9,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
-      "firstOutboundAt": "2026-07-20T03:00:00.000Z",
-      "lastInboundAt": "2026-07-25T03:00:00.000Z"
-    }
-  ],
+  "repliedThisWeek": [],
   "overdueFollowUp": []
 }
