@@ -1,19 +1,20 @@
 {
-  "generatedAt": "2026-07-30T11:36:06.093Z",
-  "enrichedFile": "2026-07-30T11:32:10.616Z",
-  "pendingSnapshotAt": "2026-07-30T11:26:59.578Z",
+  "generatedAt": "2026-07-31T11:59:42.067Z",
+  "enrichedFile": "2026-07-31T11:56:12.041Z",
+  "pendingSnapshotAt": "2026-07-31T11:50:59.665Z",
   "summary": {
     "sentThisWeek": 12,
     "pendingConnections": 70,
-    "acceptedThisWeek": 3,
-    "repliedThisWeek": 0,
+    "acceptedThisWeek": 0,
+    "repliedThisWeek": 2,
     "overdueFollowUp": 0,
-    "acceptanceRateEst": 0
+    "acceptanceRateEst": 17
   },
   "funnelBreakdown": {
+    "REPLIED_NEUTRAL": 2,
+    "FIRST_CONTACT_SENT": 10,
     "FOLLOW_UP_SENT": 3,
-    "FIRST_CONTACT_SENT": 12,
-    "CONNECTION_ACCEPTED": 8,
+    "CONNECTION_ACCEPTED": 12,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
@@ -24,38 +25,68 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/luis-singling-9942a914/",
-      "firstOutboundAt": "2026-07-30T20:04:00.000Z",
+      "firstOutboundAt": "2026-07-31T20:04:00.000Z",
       "lastInboundAt": null
     },
     {
-      "name": "Eduardo Ferrari, PMP",
-      "company": "COFCO International",
+      "name": "Felipe Thedim Costa Bueno",
+      "company": "Ortobom",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 0,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "lastInboundAt": "2026-07-31T20:58:00.000Z"
+    },
+    {
+      "name": "Daniela Paiola",
+      "company": "GRUPO SBF",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": -1,
+      "daysSinceSent": 0,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/eduardo-ferrari-pmp/",
-      "firstOutboundAt": "2026-07-30T19:52:00.000Z",
+      "profileUrl": "https://www.linkedin.com/in/daniela-paiola/",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
-      "name": "João Roberto Galhardo",
-      "company": "The Mosaic Company - Brasil",
+      "name": "Diego Bento",
+      "company": "Grupo Habib's",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": -1,
+      "daysSinceSent": 0,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/jo%C3%A3o-roberto-galhardo-60519b14/",
-      "firstOutboundAt": "2026-07-30T13:58:00.000Z",
+      "profileUrl": "https://www.linkedin.com/in/diegomelobento/",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
-      "name": "Fernando Sampaio",
-      "company": "Sanofi",
+      "name": "Anderson Cotias",
+      "company": "Copel",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": -1,
+      "daysSinceSent": 0,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/sampaio-fernando-sanofi/",
-      "firstOutboundAt": "2026-07-30T13:46:00.000Z",
+      "profileUrl": "https://www.linkedin.com/in/andersoncotias/",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
+    },
+    {
+      "name": "Rondinelly Oliveira",
+      "company": "Roche Pharmaceutical",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rondinelly-o-b4367741/",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Samir Tinani",
+      "company": "Ortobom",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 0,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "lastInboundAt": "2026-07-31T18:00:00.000Z"
     },
     {
       "name": "Paulo E. Petterle",
@@ -64,7 +95,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/paulo-e-petterle-470486121/",
-      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -74,7 +105,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/gustavoemma/",
-      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -84,7 +115,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/eduardo-andrade-de-oliveira-he-%C3%A9l-ele-bb300333/",
-      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -94,7 +125,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/antonio-carlos-cipolli-6b60202/",
-      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -104,41 +135,41 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/umberto-gobbato-1b32a913b/",
-      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Erico Souza",
-      "company": "Electrolux Group",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/ericocsouza/",
-      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Marco Ribeiro",
-      "company": "Nutrien Soluções Agrícolas",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/marco-ribeiro-66549632/",
-      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Marcus Galvani",
-      "company": "Reckitt",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/marcus-galvani-15592a9/",
-      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
     }
   ],
   "pendingConnections": [
+    {
+      "name": "Carolina Pires",
+      "company": "A apurar",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/carolina-pires-09350839/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Alessandro Thiry",
+      "company": "Arcos Dourados",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/alessandro-thiry-b4528842/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Antonio Moreira Leite",
+      "company": "ABF Associação Brasileira de Franchising",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/antonio-moreira-leite-a664bb33/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
     {
       "name": "Bruno Battaglia",
       "company": "Lean Institute Brasil.",
@@ -226,16 +257,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/davi-fabricio-teixeira/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Daniela Paiola",
-      "company": "GRUPO SBF",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/daniela-paiola/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -590,16 +611,6 @@
       "lastInboundAt": null
     },
     {
-      "name": "Sergio Biagioli",
-      "company": "Supermercados Pague Menos",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/sergiobiagioli/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
       "name": "Jussara Timbola",
       "company": "Supermercados Pague Menos",
       "status": "CONNECTION_PENDING",
@@ -828,50 +839,30 @@
       "profileUrl": "https://www.linkedin.com/in/diego-robles-r/",
       "firstOutboundAt": null,
       "lastInboundAt": null
-    },
-    {
-      "name": "Antonio Cota",
-      "company": "Michelin",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/antonio-cota-7b7a2a26/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
     }
   ],
-  "acceptedThisWeek": [
+  "acceptedThisWeek": [],
+  "repliedThisWeek": [
     {
-      "name": "Anderson Cotias",
-      "company": "A apurar",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/andersoncotias/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
+      "name": "Felipe Thedim Costa Bueno",
+      "company": "Ortobom",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 0,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "lastInboundAt": "2026-07-31T20:58:00.000Z"
     },
     {
-      "name": "Rondinelly O.",
-      "company": "Roche Pharmaceutical",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/rondinelly-o-b4367741/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Felipe Araujo",
-      "company": "A apurar",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/felipe-araujo--/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
+      "name": "Samir Tinani",
+      "company": "Ortobom",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 0,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
+      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "lastInboundAt": "2026-07-31T18:00:00.000Z"
     }
   ],
-  "repliedThisWeek": [],
   "overdueFollowUp": []
 }

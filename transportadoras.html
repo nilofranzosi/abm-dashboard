@@ -883,9 +883,44 @@
           </div>
           <div class="muted" style="margin-top:10px; font-size:11px;">
             <strong>Legenda:</strong> a linha azul mostra os dias vendidos (contrato) por mês.
-            Os marcadores <span style="color:#A05A00; font-weight:800;">&#9679;</span> laranja indicam touchpoints
+            Os marcadores <span style="color:#DC2626; font-weight:800;">&#9679;</span> vermelhos indicam touchpoints
             (webinars, eventos) na data em que ocorreram — passe o mouse sobre um marcador para ver os detalhes.
             O ponto com contorno tracejado ao final da linha representa o mês atual, ainda parcial (não é um mês fechado).
+          </div>
+        </section>
+
+        <section class="table-panel" style="padding:15px;">
+          <div class="queue-head" style="padding:0 0 10px; border-bottom:none;">
+            <h2>Análise de Eventos</h2>
+          </div>
+          <div class="muted" id="eventos-impacto-subtitle">
+            Mediana do crescimento percentual em dias vendidos, comparando uma janela pré-evento com uma janela pós-evento
+            de mesmo tamanho, usando apenas meses fechados (no máximo 3). Somente clientes com operação registrada antes
+            do evento entram na mediana.
+          </div>
+          <table class="clientes-table" id="eventos-impacto-table" style="margin-top:10px;">
+            <thead>
+              <tr>
+                <th class="no-sort">Evento</th>
+                <th class="no-sort">Data</th>
+                <th class="no-sort">Janela (meses)</th>
+                <th class="no-sort">Clientes tocados (N)</th>
+                <th class="no-sort">Computáveis</th>
+                <th class="no-sort">Reativações</th>
+                <th class="no-sort">Sem operação</th>
+                <th class="no-sort">Mediana de crescimento</th>
+                <th class="no-sort">Observação</th>
+              </tr>
+            </thead>
+            <tbody id="eventos-impacto-tbody">
+              <tr><td colspan="9" class="loading">Carregando análise de eventos...</td></tr>
+            </tbody>
+          </table>
+          <div class="muted" style="margin-top:10px; font-size:11px;">
+            <strong>Legenda:</strong> Computáveis = clientes com operação registrada antes do evento, os únicos que
+            entram na mediana. Reativações = clientes sem operação antes e com operação depois, cujo crescimento
+            percentual é indefinido e por isso é contado à parte. Sem operação = clientes sem operação nem antes
+            nem depois. Um N pequeno significa menor confiança na mediana.
           </div>
         </section>
       </section>
@@ -1014,6 +1049,7 @@
       if (riscoChurnLoaded) loadRiscoChurn();
       if (scoreLoaded) loadScore();
       if (cronogramaLoaded && currentCronogramaCompanyId) loadCronograma(currentCronogramaCompanyId);
+      if (cronogramaLoaded) loadEventosImpacto();
     });
 
     // ─── Visão Geral ────────────────────────────────────────────────────────
@@ -2305,6 +2341,64 @@
     const cronogramaClienteSelectEl = document.getElementById("cronograma-cliente-select");
     const cronogramaChartEl = document.getElementById("cronograma-chart");
     const cronogramaSubtitleEl = document.getElementById("cronograma-subtitle");
+    const eventosImpactoTbodyEl = document.getElementById("eventos-impacto-tbody");
+
+    let eventosImpactoData = [];
+    let eventosImpactoByName = new Map();
+
+    // Formats a nullable growth percentage for pt-BR display: en-dash when the
+    // median is undefined, a signed value with a comma decimal separator otherwise.
+    // Never coerces a null median to 0 — the caller must show the honest reason instead.
+    function formatGrowthPct(value) {
+      if (value === null || value === undefined) return "–";
+      const formatted = value.toFixed(1).replace(".", ",");
+      const sign = value > 0 ? "+" : "";
+      return `${sign}${formatted}%`;
+    }
+
+    // Fetches the event-impact aggregate once per Cronograma tab load. This ranking is
+    // independent of the currently selected client (TRAN-09) — it always covers every
+    // live-derived event. A failed fetch degrades to an error row and never blocks the
+    // per-client chart from rendering.
+    async function loadEventosImpacto() {
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/eventos-impacto`);
+        eventosImpactoData = payload.data || [];
+        eventosImpactoByName = new Map(eventosImpactoData.map((row) => [row.eventName, row]));
+      } catch (error) {
+        eventosImpactoData = [];
+        eventosImpactoByName = new Map();
+        eventosImpactoTbodyEl.innerHTML = `<tr><td colspan="9" class="error">Não foi possível carregar a análise de eventos. ${escapeAttr(error.message)}</td></tr>`;
+        return;
+      }
+      renderEventosImpactoTable();
+    }
+
+    function renderEventosImpactoTable() {
+      if (eventosImpactoData.length === 0) {
+        eventosImpactoTbodyEl.innerHTML = `<tr><td colspan="9" class="empty">Nenhum evento com touchpoints registrados.</td></tr>`;
+        return;
+      }
+      eventosImpactoTbodyEl.innerHTML = eventosImpactoData.map((row) => {
+        const janela = row.postMonths.length === 0
+          ? "–"
+          : `${row.postMonths.length} ${row.postMonths.length === 1 ? "mês" : "meses"}`;
+        const observacao = row.statusMensagem ? escapeAttr(row.statusMensagem) : "–";
+        return `
+          <tr>
+            <td>${escapeAttr(row.eventName)}</td>
+            <td>${formatDate(row.eventDate)}</td>
+            <td>${janela}</td>
+            <td>${row.clientesTocados}</td>
+            <td>${row.computaveis}</td>
+            <td>${row.reativacoes}</td>
+            <td>${row.semOperacao}</td>
+            <td>${formatGrowthPct(row.medianaCrescimentoPct)}</td>
+            <td>${observacao}</td>
+          </tr>
+        `;
+      }).join("");
+    }
 
     function populateCronogramaSelect() {
       const options = clientesData.slice().sort((a, b) => a.empresa.localeCompare(b.empresa));
@@ -2320,10 +2414,24 @@
     // Builds the touchpoint <title> tooltip text. All fields are touchpoint-derived
     // (manually entered via the Excel import), so every piece is escaped — not just
     // eventName/contato — before being injected into SVG markup (T-36-12).
+    //
+    // Appends a second line naming the event's aggregate expected trend (TRAN-09,
+    // T-38-11) when eventosImpactoByName has a matching entry, keyed by the raw,
+    // unmodified touchpoint.eventName. This is NOT a second drawn chart line — the
+    // annotation lives entirely inside this single SVG <title> string via a \n line
+    // break (38-CONTEXT.md locked decision, 38-RESEARCH.md Pitfall 5). When there is
+    // no matching aggregate (fetch failed, or the event has no aggregate row), the
+    // original single-line tooltip is returned completely unchanged.
     function buildTouchpointTooltip(touchpoint) {
       const tipoLabel = touchpoint.tipo ? escapeAttr(touchpoint.tipo) : escapeAttr(touchpoint.eventType);
       const contatoLabel = touchpoint.contato ? ` • ${escapeAttr(touchpoint.contato)}` : "";
-      return `${escapeAttr(touchpoint.eventName)} (${tipoLabel})${contatoLabel} • ${formatDate(touchpoint.occurredAt)}`;
+      const firstLine = `${escapeAttr(touchpoint.eventName)} (${tipoLabel})${contatoLabel} • ${formatDate(touchpoint.occurredAt)}`;
+      const impactRow = eventosImpactoByName.get(touchpoint.eventName);
+      if (!impactRow) return firstLine;
+      const secondLine = impactRow.status === "ranqueado"
+        ? `Tendência esperada pós-evento: ${formatGrowthPct(impactRow.medianaCrescimentoPct)} dias agenciados · N=${impactRow.clientesTocados} clientes`
+        : `Tendência esperada pós-evento: ${escapeAttr(impactRow.statusMensagem)} · N=${impactRow.clientesTocados} clientes`;
+      return `${firstLine}\n${secondLine}`;
     }
 
     function renderCronogramaChart(container, data) {
@@ -2389,8 +2497,8 @@
         const title = buildTouchpointTooltip(touchpoint);
         return `
           <g>
-            <line x1="${x.toFixed(1)}" y1="${paddingTop}" x2="${x.toFixed(1)}" y2="${(paddingTop + plotHeight).toFixed(1)}" stroke="#A05A00" stroke-width="1" stroke-dasharray="2,2" opacity="0.5" />
-            <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5" fill="#A05A00" stroke="#FFFFFF" stroke-width="1.5"><title>${title}</title></circle>
+            <line x1="${x.toFixed(1)}" y1="${paddingTop}" x2="${x.toFixed(1)}" y2="${(paddingTop + plotHeight).toFixed(1)}" stroke="#DC2626" stroke-width="2" stroke-dasharray="4,3" opacity="0.85" />
+            <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"><title>${title}</title></circle>
           </g>
         `;
       }).join("");
@@ -2448,6 +2556,7 @@
       cronogramaLoaded = true;
       if (!clientesLoaded) await loadClientes();
       populateCronogramaSelect();
+      await loadEventosImpacto();
       if (!currentCronogramaCompanyId && clientesData.length > 0) {
         currentCronogramaCompanyId = clientesData[0].id;
       }

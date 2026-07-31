@@ -1545,41 +1545,41 @@
   },
   {
     "weekKey": "2026-S31",
-    "generatedAt": "2026-07-30T11:50:08.731Z",
+    "generatedAt": "2026-07-30T20:23:45.611Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 110,
-    "activePipeline": 101,
+    "totalApproached": 114,
+    "activePipeline": 105,
     "pausedCount": 9,
     "repliedOrBetter": 19,
     "meetingOrBetter": 7,
     "dealCount": 5,
-    "replyRate": 0.18811881188118812,
-    "meetingRate": 0.06930693069306931,
-    "dealRate": 0.04950495049504951,
+    "replyRate": 0.18095238095238095,
+    "meetingRate": 0.06666666666666667,
+    "dealRate": 0.047619047619047616,
     "avgDaysToFirstReply": 6.333333333333333,
-    "avgDaysSinceLastOutbound": 0,
-    "totalOutboundTouchpoints": 19,
-    "totalInboundTouchpoints": 0,
+    "avgDaysSinceLastOutbound": 0.9333333333333333,
+    "totalOutboundTouchpoints": 20,
+    "totalInboundTouchpoints": 1,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
         "label": "Conexão Enviada",
-        "count": 24
+        "count": 25
       },
       {
         "stage": "CONNECTION_ACCEPTED",
         "label": "Conexão Aceita",
-        "count": 8
+        "count": 5
       },
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 28
+        "count": 31
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 22
+        "count": 25
       },
       {
         "stage": "REPLIED",
@@ -1754,10 +1754,10 @@
         "nextActionDueAt": "2026-07-19T11:26:00.000Z"
       }
     ],
-    "activeContacts": 101,
+    "activeContacts": 105,
     "excludedContacts": 9,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 110,
-    "qualifiedAdvanceRate": 0.06930693069306931
+    "uniqueCompanies": 114,
+    "qualifiedAdvanceRate": 0.06666666666666667
   }
 ]

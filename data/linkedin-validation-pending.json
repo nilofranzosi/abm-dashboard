@@ -1,112 +1,11 @@
 {
-  "generatedAt": "2026-07-30T11:50:11.008Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-30.json",
+  "generatedAt": "2026-07-31T11:59:40.475Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-31.json",
   "summary": {
-    "total": 4,
+    "total": 0,
     "replied": 0,
-    "companyUnknown": 2,
+    "companyUnknown": 0,
     "overdue": 0
   },
-  "companies": [
-    {
-      "id": "unknown-diego-reed",
-      "resolvedCompany": "A apurar",
-      "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Diego Reed",
-          "funnelStatus": "CONNECTION_SENT",
-          "roleOrHeadline": "Head Logística | Logistics Operations | S&OP | Supply Chain",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "unknown-gustavo-sanches",
-      "resolvedCompany": "A apurar",
-      "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Gustavo Sanches",
-          "funnelStatus": "CONNECTION_SENT",
-          "roleOrHeadline": "Matemático | Desenvolvedor | Cientista de Dados | Inteligência Artificial | Modelagem Matemática | Otimização | Pesquisa Operacional | Desenvolvimento de Software em Python",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "grupo-sbf",
-      "resolvedCompany": "GRUPO SBF",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Daniela Paiola",
-          "funnelStatus": "CONNECTION_SENT",
-          "roleOrHeadline": "Supply Chain | Projetos | Dados | Sistemas | Indicadores | Melhoria | Gestão de Resultados",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "pier-partners",
-      "resolvedCompany": "Pier Partners",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Angelo Tedesco Muratore",
-          "funnelStatus": "CONNECTION_SENT",
-          "roleOrHeadline": "Managing Partner at Pier Partners",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    }
-  ]
+  "companies": []
 }

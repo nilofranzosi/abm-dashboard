@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-07-30T12:00:00.202Z",
+  "generatedAt": "2026-07-31T11:59:42.654Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
       "label": "Conexão Enviada",
       "companies": [
         {
-          "id": "cms7go2kd000uk7gs3l71d3dd",
-          "name": "Grupo Petrópolis",
+          "id": "cms7zc5oc0003k7989f7l4k32",
+          "name": "Grupo Trigo",
           "segment": null,
           "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-30T11:59:35.675Z",
+          "lastInteractionAt": "2026-07-30T20:42:12.539Z",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
         },
         {
-          "id": "cms7gn51v000sk7gsghpyznvs",
-          "name": "Copel",
+          "id": "cms7zbj2a0002k7986syufxuz",
+          "name": "Mc Donald's",
           "segment": null,
           "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-30T11:58:52.243Z",
+          "lastInteractionAt": "2026-07-30T20:41:43.233Z",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -90,18 +90,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cms4m2n2z0006k7fgk379jrkd",
-          "name": "ZAMP",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-28T12:07:35.002Z",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
           "id": "cmqqqiayk000ck7o8lq2v2pzj",
           "name": "Tupy",
           "segment": null,
@@ -159,18 +147,6 @@
           "lastInteractionAt": "2026-07-20T14:39:28.663Z",
           "owner": null,
           "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmrt9u7c00029k7181vu5pj2j",
-          "name": "Pague Menos Supermercados",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 79,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-20T13:39:37.185Z",
-          "owner": null,
-          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -336,15 +312,63 @@
           "activeDecisor": "Antonio Correa G Neto"
         },
         {
-          "id": "cms6kijhb000ak7k0cry61j90",
-          "name": "Roche Brasil",
-          "segment": "Farmacêutico & Saúde",
-          "accountScore": 83,
+          "id": "cms4m2n2z0006k7fgk379jrkd",
+          "name": "ZAMP",
+          "segment": null,
+          "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-30T11:26:59.733Z",
+          "lastInteractionAt": "2026-07-30T20:40:14.317Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms7gn51v000sk7gsghpyznvs",
+          "name": "Copel",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T20:40:09.599Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms7go2kd000uk7gs3l71d3dd",
+          "name": "Grupo Petrópolis",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T20:40:08.776Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms7gpafg000vk7gsxp6xou0y",
+          "name": "GRUPO SBF",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T20:40:06.318Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cmrt9u7c00029k7181vu5pj2j",
+          "name": "Pague Menos Supermercados",
+          "segment": "E-commerce & Varejo",
+          "accountScore": 79,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T20:15:08.022Z",
+          "owner": null,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -556,6 +580,30 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Mario Augusto Neto"
+        },
+        {
+          "id": "cms7zadzy0000k798fhz84bgo",
+          "name": "Grupo Habib's",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T20:40:50.012Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms6kijhb000ak7k0cry61j90",
+          "name": "Roche Brasil",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 83,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T20:23:11.836Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
         },
         {
           "id": "cms7gif2u000rk7gsrnexfna3",
@@ -1156,6 +1204,18 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Arthur Klann Vieira"
+        },
+        {
+          "id": "cms7zagyj0001k798fpjyyg9r",
+          "name": "Ortobom",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T20:40:53.849Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
         },
         {
           "id": "cmrozkqqk0000k75c20zkey14",
