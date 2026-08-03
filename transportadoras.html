@@ -393,6 +393,68 @@
       header { display: block; }
       .header-actions { margin-top: 12px; }
     }
+
+    /* Top Promotores / Top Detratores (TRAN-10) — proportional track+fill bars,
+       modeled on embarcadores-market.html's .score-bar/.score-fill technique. */
+    .movers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 980px) {
+      .movers-grid { grid-template-columns: 1fr; }
+    }
+
+    .movers-col-title {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .mover-row {
+      display: grid;
+      grid-template-columns: minmax(0, 160px) minmax(40px, 1fr) 58px;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+
+    .mover-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .mover-bar-track {
+      height: 10px;
+      background: var(--line);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .mover-bar-fill {
+      display: block;
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .mover-bar-fill.promotor { background: var(--green); }
+    .mover-bar-fill.detrator { background: #DC2626; } /* same vivid red as the Cronograma touchpoint markers, deliberately repeated (39-CONTEXT.md addendum) rather than extracted into --red (already used by .kpi.critical) */
+
+    .mover-value {
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .mover-label {
+      grid-column: 1 / -1;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: -4px;
+    }
   </style>
 </head>
 <body>
@@ -923,6 +985,33 @@
             nem depois. Um N pequeno significa menor confiança na mediana.
           </div>
         </section>
+
+        <section class="table-panel" style="padding:15px;">
+          <div class="queue-head" style="padding:0 0 10px; border-bottom:none;">
+            <h2>Top Promotores / Top Detratores</h2>
+          </div>
+          <div class="muted" id="movers-subtitle">
+            Os 5 clientes com o maior crescimento e os 5 com a maior queda em dias vendidos após serem tocados por um
+            evento, usando a mesma janela pré/pós e as mesmas regras de bucket da tabela acima — uma linha por
+            cliente, mostrando o melhor (Promotores) ou o pior (Detratores) resultado registrado. Reativações e
+            clientes sem operação registrada são excluídos porque o crescimento percentual é indefinido.
+          </div>
+          <div class="movers-grid">
+            <div class="movers-col">
+              <div class="movers-col-title">Top 5 Promotores</div>
+              <div id="movers-promotores"><div class="loading">Carregando promotores...</div></div>
+            </div>
+            <div class="movers-col">
+              <div class="movers-col-title">Top 5 Detratores</div>
+              <div id="movers-detratores"><div class="loading">Carregando detratores...</div></div>
+            </div>
+          </div>
+          <div class="muted" style="margin-top:10px; font-size:11px;">
+            <strong>Legenda:</strong> o comprimento da barra é proporcional ao maior valor DENTRO de cada lista — não
+            é uma escala absoluta de 0 a 100% — por isso as duas listas não devem ser comparadas barra a barra. O
+            evento indicado abaixo de cada barra é o que produziu o número exibido para aquele cliente.
+          </div>
+        </section>
       </section>
     </main>
   </div>
@@ -1050,6 +1139,7 @@
       if (scoreLoaded) loadScore();
       if (cronogramaLoaded && currentCronogramaCompanyId) loadCronograma(currentCronogramaCompanyId);
       if (cronogramaLoaded) loadEventosImpacto();
+      if (cronogramaLoaded) loadEventosMovers();
     });
 
     // ─── Visão Geral ────────────────────────────────────────────────────────
@@ -2342,9 +2432,12 @@
     const cronogramaChartEl = document.getElementById("cronograma-chart");
     const cronogramaSubtitleEl = document.getElementById("cronograma-subtitle");
     const eventosImpactoTbodyEl = document.getElementById("eventos-impacto-tbody");
+    const moversPromotoresEl = document.getElementById("movers-promotores");
+    const moversDetratoresEl = document.getElementById("movers-detratores");
 
     let eventosImpactoData = [];
     let eventosImpactoByName = new Map();
+    let moversData = { promotores: [], detratores: [] };
 
     // Formats a nullable growth percentage for pt-BR display: en-dash when the
     // median is undefined, a signed value with a comma decimal separator otherwise.
@@ -2398,6 +2491,58 @@
           </tr>
         `;
       }).join("");
+    }
+
+    // Fetches Plan 02's per-client movers endpoint once per Cronograma tab load. Independent
+    // from the per-event aggregate above and from the per-client chart below — a failed fetch
+    // here must never block either of those from rendering (T-39-22).
+    async function loadEventosMovers() {
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/eventos-movers`);
+        moversData = {
+          promotores: (payload.data && payload.data.promotores) || [],
+          detratores: (payload.data && payload.data.detratores) || []
+        };
+      } catch (error) {
+        moversData = { promotores: [], detratores: [] };
+        const message = `<div class="error">Não foi possível carregar promotores/detratores. ${escapeAttr(error.message)}</div>`;
+        moversPromotoresEl.innerHTML = message;
+        moversDetratoresEl.innerHTML = message;
+        return;
+      }
+      renderMoversLists();
+    }
+
+    function renderMoversLists() {
+      moversPromotoresEl.innerHTML = renderMoversList(moversData.promotores, "promotores");
+      moversDetratoresEl.innerHTML = renderMoversList(moversData.detratores, "detratores");
+    }
+
+    // Bar width is ALWAYS normalized against the CURRENT list's own max magnitude — never the
+    // raw growthPct — because real values span +383.3% to -100.0% (39-RESEARCH.md Pitfall 1).
+    // The `|| 1` fallback guards a non-finite or zero maxAbs (e.g. a single-row list would
+    // otherwise divide by its own magnitude and always render 100%, which is still correct,
+    // but an all-zero/degenerate input must not divide by zero).
+    function renderMoversList(rows, direction) {
+      if (rows.length === 0) {
+        return `<div class="empty">Nenhum cliente qualificado ainda.</div>`;
+      }
+      const maxAbs = Math.max(...rows.map((row) => Math.abs(row.growthPct))) || 1;
+      return rows.map((row, index) => renderMoverRow(row, direction, maxAbs, index)).join("");
+    }
+
+    function renderMoverRow(row, direction, maxAbs, index) {
+      const width = Math.max(2, Math.round((Math.abs(row.growthPct) / maxAbs) * 100));
+      const fillClass = direction === "promotores" ? "promotor" : "detrator";
+      const name = escapeAttr(row.companyName);
+      return `
+        <div class="mover-row">
+          <div class="mover-name" title="${name}">${index + 1}. ${name} <span class="status-pill ${statusPillClass(row.accountStatus)}">${statusLabel(row.accountStatus)}</span></div>
+          <div class="mover-bar-track"><div class="mover-bar-fill ${fillClass}" style="width:${width}%"></div></div>
+          <div class="mover-value">${formatGrowthPct(row.growthPct)}</div>
+          <div class="mover-label">${escapeAttr(row.eventName)} — ${formatDate(row.eventDate)}</div>
+        </div>
+      `;
     }
 
     function populateCronogramaSelect() {
@@ -2557,6 +2702,7 @@
       if (!clientesLoaded) await loadClientes();
       populateCronogramaSelect();
       await loadEventosImpacto();
+      await loadEventosMovers();
       if (!currentCronogramaCompanyId && clientesData.length > 0) {
         currentCronogramaCompanyId = clientesData[0].id;
       }

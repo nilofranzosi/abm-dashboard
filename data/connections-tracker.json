@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-31T11:59:42.067Z",
-  "enrichedFile": "2026-07-31T11:56:12.041Z",
-  "pendingSnapshotAt": "2026-07-31T11:50:59.665Z",
+  "generatedAt": "2026-07-31T16:51:45.622Z",
+  "enrichedFile": "2026-07-31T16:48:26.227Z",
+  "pendingSnapshotAt": "2026-07-31T16:43:26.009Z",
   "summary": {
-    "sentThisWeek": 12,
+    "sentThisWeek": 11,
     "pendingConnections": 70,
     "acceptedThisWeek": 0,
-    "repliedThisWeek": 2,
+    "repliedThisWeek": 3,
     "overdueFollowUp": 0,
-    "acceptanceRateEst": 17
+    "acceptanceRateEst": 18
   },
   "funnelBreakdown": {
-    "REPLIED_NEUTRAL": 2,
-    "FIRST_CONTACT_SENT": 10,
+    "REPLIED_NEUTRAL": 3,
+    "FIRST_CONTACT_SENT": 9,
     "FOLLOW_UP_SENT": 3,
     "CONNECTION_ACCEPTED": 12,
     "CONNECTION_SENT": 70
@@ -125,16 +125,6 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/antonio-carlos-cipolli-6b60202/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Umberto Gobbato",
-      "company": "A apurar",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/umberto-gobbato-1b32a913b/",
       "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": null
     }
@@ -862,6 +852,16 @@
       "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
       "firstOutboundAt": "2026-07-31T03:00:00.000Z",
       "lastInboundAt": "2026-07-31T18:00:00.000Z"
+    },
+    {
+      "name": "Fernando Alfano",
+      "company": "Tenda Atacado",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 11,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
+      "firstOutboundAt": "2026-07-20T03:00:00.000Z",
+      "lastInboundAt": "2026-07-25T03:00:00.000Z"
     }
   ],
   "overdueFollowUp": []

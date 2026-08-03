@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-31T11:59:38.714Z",
+  "generatedAt": "2026-07-31T20:32:00.072Z",
   "source": {
     "type": "static-linkedin-scan-fallback",
     "inputPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-31.json",
-    "scannedAt": "2026-07-31T11:56:12.041Z",
+    "scannedAt": "2026-07-31T16:48:26.227Z",
     "matchedThreads": 58,
-    "kanbanSnapshotAt": "2026-07-31T11:59:37.179Z",
+    "kanbanSnapshotAt": "2026-07-31T20:00:00.710Z",
     "embarcadoresCount": 194,
     "note": "Fallback usado quando /api/workday/actions nao consegue consultar o Postgres local."
   },
@@ -652,26 +652,6 @@
       "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
       "dueAt": "2026-07-31T20:04:00.000Z",
       "severity": "info"
-    },
-    {
-      "id": "umberto-gobbato-recent",
-      "company": {
-        "id": "weg",
-        "name": "WEG",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "umberto-gobbato",
-        "name": "Umberto Gobbato"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-07-31T03:00:00.000Z",
-      "severity": "info"
     }
   ],
   "acceptedConnectionsWithoutMessage": [
@@ -978,7 +958,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 41 dias (REPLIED). [Tier 2 · Score 83] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 42 dias (REPLIED). [Tier 2 · Score 83] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-19T18:34:00.000Z",
       "severity": "critical"
@@ -1012,7 +992,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 39 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 40 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-21T17:36:00.000Z",
       "severity": "critical"
@@ -1148,7 +1128,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 34 dias (REPLIED). [Tier 1 · Score 91] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 35 dias (REPLIED). [Tier 1 · Score 91] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-26T15:24:00.000Z",
       "severity": "critical"
@@ -1165,7 +1145,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 33 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 34 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Mapear decisores de Supply Chain/Logística da Tramontina via LinkedIn.",
       "dueAt": "2026-06-27T14:15:00.000Z",
       "severity": "critical"
@@ -1216,7 +1196,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 22 dias (REPLIED NEGATIVE). [Tier 3 · Score 71] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "reason": "Ação vencida há 23 dias (REPLIED NEGATIVE). [Tier 3 · Score 71] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
       "recommendedAction": "Acompanhar conclusão do investimento de capacidade em Suape-PE; mapear decisores de Supply Chain da Amanco Wavin Brasil quando houver sinal adicional.",
       "dueAt": "2026-07-08T17:06:00.000Z",
       "severity": "critical"
@@ -1284,7 +1264,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Ação vencida há 17 dias (REPLIED). [Tier 1 · Score 89] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
+      "reason": "Ação vencida há 18 dias (REPLIED). [Tier 1 · Score 89] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-07-13T20:30:00.000Z",
       "severity": "critical"
@@ -1388,7 +1368,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (DEAL). [Tier 1 · Score 87]",
+      "reason": "Sem interação há 43 dias (DEAL). [Tier 1 · Score 87]",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-18T17:49:20.600Z",
       "severity": "warning"
@@ -1405,7 +1385,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (DEAL). [Tier 1 · Score 90]",
+      "reason": "Sem interação há 43 dias (DEAL). [Tier 1 · Score 90]",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-18T17:49:23.036Z",
       "severity": "warning"
@@ -1422,7 +1402,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (FOLLOW UP SENT). [Tier 3 · Score 70]",
+      "reason": "Sem interação há 43 dias (FOLLOW UP SENT). [Tier 3 · Score 70]",
       "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
       "dueAt": "2026-06-18T17:51:51.016Z",
       "severity": "warning"
@@ -1439,7 +1419,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (PAUSED). [Tier 1 · Score 87]",
+      "reason": "Sem interação há 43 dias (PAUSED). [Tier 1 · Score 87]",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-18T19:15:20.575Z",
       "severity": "warning"
@@ -1456,7 +1436,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (REPLIED). [Tier 2 · Score 82]",
+      "reason": "Sem interação há 43 dias (REPLIED). [Tier 2 · Score 82]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-18T19:15:28.654Z",
       "severity": "warning"
@@ -1473,7 +1453,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (PAUSED). [Tier 1 · Score 91]",
+      "reason": "Sem interação há 43 dias (PAUSED). [Tier 1 · Score 91]",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-18T19:15:35.100Z",
       "severity": "warning"
@@ -1490,7 +1470,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (PAUSED). [Tier 2 · Score 83]",
+      "reason": "Sem interação há 43 dias (PAUSED). [Tier 2 · Score 83]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-18T19:15:46.525Z",
       "severity": "warning"
@@ -1507,7 +1487,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (PAUSED). [Tier 2 · Score 81]",
+      "reason": "Sem interação há 43 dias (PAUSED). [Tier 2 · Score 81]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-18T19:16:05.374Z",
       "severity": "warning"
@@ -1524,7 +1504,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (FOLLOW UP SENT). [Tier 2 · Score 83]",
+      "reason": "Sem interação há 43 dias (FOLLOW UP SENT). [Tier 2 · Score 83]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-18T19:16:11.292Z",
       "severity": "warning"
@@ -1541,7 +1521,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (PAUSED). [Tier 2 · Score 82]",
+      "reason": "Sem interação há 43 dias (PAUSED). [Tier 2 · Score 82]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-18T19:16:26.778Z",
       "severity": "warning"
@@ -1558,7 +1538,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 42 dias (FOLLOW UP SENT). [Tier 2 · Score 82]",
+      "reason": "Sem interação há 43 dias (FOLLOW UP SENT). [Tier 2 · Score 82]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-18T19:16:35.916Z",
       "severity": "warning"
@@ -1575,7 +1555,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 41 dias (DEAL). [Tier 2 · Score 84]",
+      "reason": "Sem interação há 42 dias (DEAL). [Tier 2 · Score 84]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-19T18:56:44.243Z",
       "severity": "warning"
@@ -1592,7 +1572,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 37 dias (CONNECTION SENT). [Tier 1 · Score 85]",
+      "reason": "Sem interação há 38 dias (CONNECTION SENT). [Tier 1 · Score 85]",
       "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
       "dueAt": "2026-06-23T17:23:35.701Z",
       "severity": "warning"
@@ -1609,7 +1589,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 37 dias (CONNECTION SENT). [Tier 2 · Score 84]",
+      "reason": "Sem interação há 38 dias (CONNECTION SENT). [Tier 2 · Score 84]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-23T17:44:13.437Z",
       "severity": "warning"
@@ -1643,7 +1623,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 36 dias (CONNECTION SENT). [Tier 1 · Score 85]",
+      "reason": "Sem interação há 37 dias (CONNECTION SENT). [Tier 1 · Score 85]",
       "recommendedAction": "Mapear decisores de logística e transporte da Bracell (SP e MS) e validar cronograma de implantação das novas plantas em Água Clara e Bataguassu.",
       "dueAt": "2026-06-24T12:28:52.006Z",
       "severity": "warning"
@@ -1660,7 +1640,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 36 dias (CONNECTION SENT). [Tier 2 · Score 84]",
+      "reason": "Sem interação há 37 dias (CONNECTION SENT). [Tier 2 · Score 84]",
       "recommendedAction": "Mapear decisores de Supply Chain/Logística da Sherwin-Williams Brasil pós-integração com a divisão de tintas decorativas da BASF (Suvinil/Coral).",
       "dueAt": "2026-06-24T12:29:06.398Z",
       "severity": "warning"
@@ -1677,7 +1657,7 @@
         "id": "thiago",
         "name": "Thiago"
       },
-      "reason": "Sem interação há 36 dias (CONNECTION SENT). [Tier 2 · Score 83]",
+      "reason": "Sem interação há 37 dias (CONNECTION SENT). [Tier 2 · Score 83]",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": "2026-06-24T12:36:39.352Z",
       "severity": "warning"
@@ -1869,7 +1849,7 @@
   "newSignalsWithoutNextAction": [],
   "summary": {
     "highTierNotStarted": 25,
-    "recentConnectionsSent": 12,
+    "recentConnectionsSent": 11,
     "acceptedConnectionsWithoutMessage": 9,
     "overdueNextActions": 30,
     "staleCompanies30Days": 20,
