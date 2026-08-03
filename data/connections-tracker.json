@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-31T16:51:45.622Z",
-  "enrichedFile": "2026-07-31T16:48:26.227Z",
-  "pendingSnapshotAt": "2026-07-31T16:43:26.009Z",
+  "generatedAt": "2026-08-03T11:52:42.890Z",
+  "enrichedFile": "2026-08-03T11:48:03.574Z",
+  "pendingSnapshotAt": "2026-08-03T11:42:49.254Z",
   "summary": {
     "sentThisWeek": 11,
     "pendingConnections": 70,
-    "acceptedThisWeek": 0,
-    "repliedThisWeek": 3,
+    "acceptedThisWeek": 9,
+    "repliedThisWeek": 2,
     "overdueFollowUp": 0,
     "acceptanceRateEst": 18
   },
@@ -14,7 +14,7 @@
     "REPLIED_NEUTRAL": 3,
     "FIRST_CONTACT_SENT": 9,
     "FOLLOW_UP_SENT": 3,
-    "CONNECTION_ACCEPTED": 12,
+    "CONNECTION_ACCEPTED": 1,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
@@ -25,7 +25,7 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/luis-singling-9942a914/",
-      "firstOutboundAt": "2026-07-31T20:04:00.000Z",
+      "firstOutboundAt": "2026-08-03T20:04:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -35,8 +35,8 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
-      "lastInboundAt": "2026-07-31T20:58:00.000Z"
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
+      "lastInboundAt": "2026-08-03T20:58:00.000Z"
     },
     {
       "name": "Daniela Paiola",
@@ -45,7 +45,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/daniela-paiola/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -55,7 +55,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/diegomelobento/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -65,7 +65,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/andersoncotias/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -75,7 +75,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/rondinelly-o-b4367741/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -85,8 +85,8 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
-      "lastInboundAt": "2026-07-31T18:00:00.000Z"
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
+      "lastInboundAt": "2026-08-03T18:00:00.000Z"
     },
     {
       "name": "Paulo E. Petterle",
@@ -95,7 +95,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/paulo-e-petterle-470486121/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -105,7 +105,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/gustavoemma/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -115,7 +115,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/eduardo-andrade-de-oliveira-he-%C3%A9l-ele-bb300333/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -125,11 +125,101 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/antonio-carlos-cipolli-6b60202/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
       "lastInboundAt": null
     }
   ],
   "pendingConnections": [
+    {
+      "name": "Frédéric Gauthier",
+      "company": "Cliente",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/gauthier-frederic/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Joselito Henriques",
+      "company": "Aviação",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/joselitohenriques/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Rafael Peixer Andriani",
+      "company": "STR Transportes & Logística",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rafael-peixer-andriani-78852411a/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "João Pedro Barbosa Pereira",
+      "company": "Transpadre Logística em Transportes e Serviços Ltda.",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/jo%c3%a3o-pedro-barbosa-pereira-260b76271/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Guilherme Gomes",
+      "company": "Universidade do Estado de Santa Catarina",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/guilherme-gomes-aa8822188/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Victor Samuel Silva Santos",
+      "company": "Universidade Metodista de Piracicaba",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/victor-samuel-silva-santos/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Diego Pacheco dos Reis",
+      "company": "empresa PLANO COMPANY",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/diego-pacheco-dos-reis-0ba476420/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Carlos Filho",
+      "company": "Massachusetts Institute of Business - MIB",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/carlos-filho-767096424/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Homero Grec",
+      "company": "Grupo 3corações",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/homerogrec/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
     {
       "name": "Carolina Pires",
       "company": "A apurar",
@@ -231,16 +321,6 @@
       "lastInboundAt": null
     },
     {
-      "name": "Roberto Bisogni",
-      "company": "Klabin",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/robertobisogni/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
       "name": "Davi Fabricio Teixeira",
       "company": "Suzano",
       "status": "CONNECTION_PENDING",
@@ -317,16 +397,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/marcio-campos-23789a90/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Luciano Tótola",
-      "company": "ZAMP",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/lucianototola/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -487,16 +557,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/jefferson-george-nunes-b0973a165/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Fernando Alves Teixeira",
-      "company": "Grupo Supernosso",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/fernando-alves-teixeira-a66297138/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -769,11 +829,43 @@
       "profileUrl": "https://www.linkedin.com/in/felipe-duvivier-de-albuquerque-mello-9b8a4ba1/",
       "firstOutboundAt": null,
       "lastInboundAt": null
+    }
+  ],
+  "acceptedThisWeek": [
+    {
+      "name": "Roberto Bisogni",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/robertobisogni/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Luciano Tótola",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/lucianototola/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Fernando Alves Teixeira",
+      "company": "Grupo Supernosso",
+      "status": "CONNECTION_ACCEPTED",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fernando-alves-teixeira-a66297138/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
     },
     {
       "name": "Gustavo P.",
-      "company": "Movecta",
-      "status": "CONNECTION_PENDING",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/gustavo-polo/",
@@ -782,8 +874,8 @@
     },
     {
       "name": "Gustavo Brasil Niemxeski",
-      "company": "Unilever and Executive Director of UnileverPrev pension. Broad experience in finance from business partnering marketing",
-      "status": "CONNECTION_PENDING",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/gustavo-brasil-niemxeski-5a62a9/",
@@ -792,8 +884,8 @@
     },
     {
       "name": "Arnaldo Oliveira",
-      "company": "Logística Consultor",
-      "status": "CONNECTION_PENDING",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/arnaldo-oliveira-226b8b120/",
@@ -803,7 +895,7 @@
     {
       "name": "Rafael H.",
       "company": "A apurar",
-      "status": "CONNECTION_PENDING",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/rafaelhashiba/",
@@ -812,8 +904,8 @@
     },
     {
       "name": "Felipe Ferreira Dutra",
-      "company": "USIMINAS",
-      "status": "CONNECTION_PENDING",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/felipe-ferreira-dutra-73818040/",
@@ -822,8 +914,8 @@
     },
     {
       "name": "Diego R.",
-      "company": "MoveMais",
-      "status": "CONNECTION_PENDING",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/diego-robles-r/",
@@ -831,7 +923,6 @@
       "lastInboundAt": null
     }
   ],
-  "acceptedThisWeek": [],
   "repliedThisWeek": [
     {
       "name": "Felipe Thedim Costa Bueno",
@@ -840,8 +931,8 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
-      "lastInboundAt": "2026-07-31T20:58:00.000Z"
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
+      "lastInboundAt": "2026-08-03T20:58:00.000Z"
     },
     {
       "name": "Samir Tinani",
@@ -850,18 +941,8 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
-      "firstOutboundAt": "2026-07-31T03:00:00.000Z",
-      "lastInboundAt": "2026-07-31T18:00:00.000Z"
-    },
-    {
-      "name": "Fernando Alfano",
-      "company": "Tenda Atacado",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 11,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/fernandoalfano/",
-      "firstOutboundAt": "2026-07-20T03:00:00.000Z",
-      "lastInboundAt": "2026-07-25T03:00:00.000Z"
+      "firstOutboundAt": "2026-08-03T03:00:00.000Z",
+      "lastInboundAt": "2026-08-03T18:00:00.000Z"
     }
   ],
   "overdueFollowUp": []

@@ -1,11 +1,278 @@
 {
-  "generatedAt": "2026-07-31T17:48:05.865Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-07-31.json",
+  "generatedAt": "2026-08-03T11:52:40.547Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-03.json",
   "summary": {
-    "total": 0,
+    "total": 10,
     "replied": 0,
-    "companyUnknown": 0,
+    "companyUnknown": 1,
     "overdue": 0
   },
-  "companies": []
+  "companies": [
+    {
+      "id": "unknown-marcio-oliveira",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Márcio Oliveira",
+          "funnelStatus": "FOLLOW_UP_SENT",
+          "roleOrHeadline": null,
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": 0,
+          "lastOutboundAt": "2026-08-03T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 2,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-04-29T03:00:00.000Z",
+              "body": "Márcio, atuamos em transportadoras que distribuem para a Air Liquide. Acredito que temos oportunidades concretas para a cadeia logística da Messer."
+            },
+            {
+              "occurredAt": "2026-04-29T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            },
+            {
+              "occurredAt": "2026-08-03T03:00:00.000Z",
+              "body": "Estamos atualmente em um processo de homologação com a Raizen, vejo muita possibilidade de aplicar um projeto similar na Messer."
+            },
+            {
+              "occurredAt": "2026-08-03T03:00:00.000Z",
+              "body": "Para avançar nesse projeto, o melhor contato seria contigo?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "cliente",
+      "resolvedCompany": "Cliente",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Frédéric Gauthier",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Vice-Presidente de Operações | COO | Vendas & Marketing | Estratégia de Vendas | Go to Market | Transformação Digital | Jornada do Cliente",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "aviacao",
+      "resolvedCompany": "Aviação",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Joselito Henriques",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Vice-presidente de P&D e Inovação | Tecnologia e Inovação | Indústria da Aviação | Transformação Digital | Liderança",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "str-transportes-logistica",
+      "resolvedCompany": "STR Transportes & Logística",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Rafael Peixer Andriani",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Diretor Geral | STR Transportes | Head of Operations | Gestão Estratégica de Logística | Gestão de Processos | Gestão de Pessoas",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "transpadre-logistica-em-transportes-e-servicos-ltda",
+      "resolvedCompany": "Transpadre Logística em Transportes e Serviços Ltda.",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "João Pedro Barbosa Pereira",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Gerente de Logística | Especialista em Supply Chain & GLP | Gestão de Operações e Otimização de Custos",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "universidade-do-estado-de-santa-catarina",
+      "resolvedCompany": "Universidade do Estado de Santa Catarina",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Guilherme Gomes",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Engenheiro | Customer Success | CS / CX | Vendas SaaS",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "universidade-metodista-de-piracicaba",
+      "resolvedCompany": "Universidade Metodista de Piracicaba",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Victor Samuel Silva Santos",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Coordenador de Custos | Custos | Controladoria | SAP CO",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "empresa-plano-company",
+      "resolvedCompany": "empresa PLANO COMPANY",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Diego Pacheco dos Reis",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Logística da empresa PLANO COMPANY",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "massachusetts-institute-of-business-mib",
+      "resolvedCompany": "Massachusetts Institute of Business - MIB",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Carlos Filho",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Assessor de Investimentos | Soluções Financeiras para Empresas e Executivos | Crédito • Câmbio • Investimentos • Previdência",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "grupo-3coracoes",
+      "resolvedCompany": "Grupo 3corações",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Homero Grec",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Head of Supply Chain and Operations | Planejamento Estratégico | Inovação | Customer Centricity | Negociação |WMS | Gestão | Bar Raiser | Mestrado em Engenharia de Produção | Sustentabilidade",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    }
+  ]
 }
