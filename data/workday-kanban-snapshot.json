@@ -1,10 +1,22 @@
 {
-  "generatedAt": "2026-08-03T11:52:43.621Z",
+  "generatedAt": "2026-08-04T11:51:05.602Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
       "label": "Conexão Enviada",
       "companies": [
+        {
+          "id": "cmsdamoy4000hk728gav6lhpw",
+          "name": "Grupo 3corações",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-03T13:57:10.728Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
         {
           "id": "cms7zc5oc0003k7989f7l4k32",
           "name": "Grupo Trigo",
@@ -270,7 +282,7 @@
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-07T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-03T11:42:49.456Z",
+          "lastInteractionAt": "2026-08-03T14:42:04.326Z",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Vinicius Benincasa"
@@ -282,7 +294,7 @@
           "accountScore": 45,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-03T11:42:49.456Z",
+          "lastInteractionAt": "2026-08-03T14:16:57.399Z",
           "owner": null,
           "contactCount": 5,
           "activeDecisor": "Cynthia Lopes"
@@ -318,7 +330,7 @@
           "accountScore": 79,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-03T11:42:49.456Z",
+          "lastInteractionAt": "2026-08-03T14:42:04.326Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -330,7 +342,7 @@
           "accountScore": 80,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-03T11:42:49.456Z",
+          "lastInteractionAt": "2026-08-03T14:42:04.326Z",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": null
@@ -498,6 +510,18 @@
           "activeDecisor": "Fernando Diniz"
         },
         {
+          "id": "cmq9t45mw002lk7o00wohyh88",
+          "name": "JBS",
+          "segment": null,
+          "accountScore": 45,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-22T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-15T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Aécio Patuzzi"
+        },
+        {
           "id": "cmqqnb6e00006k7o8zjztmp3u",
           "name": "Assaí Atacadista",
           "segment": null,
@@ -520,18 +544,6 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Fabio Artifon"
-        },
-        {
-          "id": "cmq9t45mw002lk7o00wohyh88",
-          "name": "JBS",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-22T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-15T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Aécio Patuzzi"
         },
         {
           "id": "cmrl2caf50018k774hmcvgo27",
@@ -604,6 +616,18 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Mario Augusto Neto"
+        },
+        {
+          "id": "cmselk6370000k7p8n1cjtfyr",
+          "name": "Grupo Koch",
+          "segment": "E-commerce & Varejo",
+          "accountScore": 87,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-04T11:50:54.833Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
         },
         {
           "id": "cms7zadzy0000k798fhz84bgo",
@@ -1035,7 +1059,7 @@
           "id": "cmqti1t0i000bk7gc5guq6ez7",
           "name": "Vale",
           "segment": null,
-          "accountScore": 0,
+          "accountScore": 20,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-24T19:24:00.000Z",
           "lastInteractionAt": "2026-07-17T19:24:00.000Z",
@@ -1288,20 +1312,7 @@
     {
       "stage": "MEETING_BOOKED",
       "label": "Reunião Agendada",
-      "companies": [
-        {
-          "id": "cmqqwt16f000ik7o8il8uzjxj",
-          "name": "Minerva Foods",
-          "segment": null,
-          "accountScore": 35,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-28T12:04:47.297Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "ADRIANO ROSA DELFINO"
-        }
-      ]
+      "companies": []
     },
     {
       "stage": "MEETING_DONE",
@@ -1311,7 +1322,7 @@
           "id": "cmqjsbyau0000k7zwrt3gzr83",
           "name": "Gerdau",
           "segment": null,
-          "accountScore": 0,
+          "accountScore": 20,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-06-20T11:30:00.000Z",
           "lastInteractionAt": "2026-06-18T11:32:00.000Z",
@@ -1384,6 +1395,18 @@
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
+        },
+        {
+          "id": "cmqqwt16f000ik7o8il8uzjxj",
+          "name": "Minerva Foods",
+          "segment": null,
+          "accountScore": 35,
+          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-03T12:11:43.217Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "ADRIANO ROSA DELFINO"
         }
       ]
     },
