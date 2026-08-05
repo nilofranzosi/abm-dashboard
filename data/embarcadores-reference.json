@@ -1,8 +1,8 @@
 {
   "_placeholder": false,
   "generatedFrom": "public/data/embarcadores.json",
-  "generatedAt": "2026-08-04T11:50:47.150Z",
-  "count": 194,
+  "generatedAt": "2026-08-05T11:42:30.110Z",
+  "count": 202,
   "entries": [
     {
       "id": 1,
@@ -1554,6 +1554,70 @@
       "normalizedName": "madeiramadeira",
       "segment": "E-commerce & Varejo",
       "uf": "PR",
+      "tier": 2
+    },
+    {
+      "id": 207,
+      "name": "Copel",
+      "normalizedName": "copel",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "PR",
+      "tier": 2
+    },
+    {
+      "id": 208,
+      "name": "Arcos Dourados (McDonald's Brasil)",
+      "normalizedName": "arcos-dourados-mcdonald-s-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 209,
+      "name": "Ortobom",
+      "normalizedName": "ortobom",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 210,
+      "name": "ZAMP (Burger King Brasil)",
+      "normalizedName": "zamp-burger-king-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 211,
+      "name": "Grupo Habib's",
+      "normalizedName": "grupo-habib-s",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 212,
+      "name": "Grupo 3corações",
+      "normalizedName": "grupo-3coracoes",
+      "segment": "Alimentos & Bebidas",
+      "uf": "CE",
+      "tier": 2
+    },
+    {
+      "id": 213,
+      "name": "Grupo Trigo",
+      "normalizedName": "grupo-trigo",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 214,
+      "name": "Grupo Pereira",
+      "normalizedName": "grupo-pereira",
+      "segment": "E-commerce & Varejo",
+      "uf": "SC",
       "tier": 2
     }
   ]

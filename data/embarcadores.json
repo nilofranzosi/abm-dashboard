@@ -1496,7 +1496,7 @@
         "role": "CEO"
       }
     ],
-    "notes": "",
+    "notes": " GRUPO SBF é a holding controladora (B3: SBFG3).",
     "tierScore": 77,
     "tierBreakdown": {
       "potencialLogistico": 27,
@@ -1507,7 +1507,12 @@
     },
     "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
     "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10",
+    "aliases": [
+      "GRUPO SBF",
+      "Grupo SBF",
+      "SBF Group"
+    ]
   },
   {
     "id": 47,
@@ -5145,5 +5150,267 @@
       "Madeira Madeira"
     ],
     "source": "linkedin-validation-2026-07-17"
+  },
+  {
+    "id": 207,
+    "name": "Copel",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "PR",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Anderson Cotias",
+        "role": "Diretor Executivo de Operações e Supply Chain",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Companhia Paranaense de Energia (B3: CPLE3). Relevante para distribuição de equipamentos elétricos e logística de materiais estratégicos. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: grande empresa pública (B3), logística de materiais estratégicos; decisor de Supply Chain já mapeado. Logística é secundária ao core de energia.",
+    "nextResearchStep": "Abordar Anderson Cotias — foco em distribuição de equipamentos e materiais.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 208,
+    "name": "Arcos Dourados (McDonald's Brasil)",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [
+      "McDonald's",
+      "Mc Donald's",
+      "McDonalds"
+    ],
+    "decisors": [
+      {
+        "name": "Alessandro Thiry",
+        "role": "Diretor de Desenvolvimento",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Arcos Dourados é a operadora franqueada do McDonald's na América Latina (B3: ARCO3). Mais de 1.000 restaurantes no Brasil. Logística de insumos alimentícios de alta frequência e capilaridade. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 19,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: escala de distribuição para mais de 1.000 restaurantes, alta frequência de abastecimento; decisor de Desenvolvimento mapeado.",
+    "nextResearchStep": "Abordar Alessandro Thiry — foco em complexidade logística do abastecimento de restaurantes.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 209,
+    "name": "Ortobom",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Felipe Thedim Costa Bueno",
+        "role": "Executivo de Supply Chain e Logística",
+        "confidence": "alta",
+        "source": "linkedin"
+      },
+      {
+        "name": "Samir Tinani",
+        "role": "Diretor Administrativo / COO",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Um dos maiores fabricantes de colchões do Brasil. Distribuição nacional de produtos volumosos (colchões, bases). Validado via LinkedIn com 2 decisores de Supply Chain.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 76,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: distribuição nacional de produtos volumosos com complexidade logística relevante; dois decisores de Supply Chain mapeados.",
+    "nextResearchStep": "Abordar Felipe Thedim Costa Bueno — foco em complexidade de last mile para produtos volumosos.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 210,
+    "name": "ZAMP (Burger King Brasil)",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [
+      "ZAMP",
+      "Burger King Brasil",
+      "Popeyes Brasil"
+    ],
+    "decisors": [
+      {
+        "name": "Luciano Tótola",
+        "role": "Supply Chain Director",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "ZAMP S.A. (B3: ZAMP3) opera Burger King e Popeyes no Brasil (~900 restaurantes). Logística de insumos alimentícios para rede de franquias. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: rede de ~900 restaurantes, abastecimento de alta frequência; diretor de Supply Chain já mapeado no LinkedIn.",
+    "nextResearchStep": "Abordar Luciano Tótola diretamente — já validado via LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 211,
+    "name": "Grupo Habib's",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [
+      {
+        "name": "Diego Bento",
+        "role": "COO — Head de Operações e Delivery",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Maior rede de fast food árabe do mundo e uma das maiores redes de franquias do Brasil (+450 unidades). Operações de delivery e logística de insumos. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 21,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: rede relevante de franquias com operações de delivery; COO mapeado diretamente.",
+    "nextResearchStep": "Abordar Diego Bento — foco em logística de insumos e capilaridade de entrega.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 212,
+    "name": "Grupo 3corações",
+    "segment": "Alimentos & Bebidas",
+    "uf": "CE",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [
+      "3corações",
+      "3 Corações",
+      "Grupo 3 Corações"
+    ],
+    "decisors": [
+      {
+        "name": "Homero Grec",
+        "role": "Head of Supply Chain and Operations",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Um dos maiores grupos de café e bebidas do Brasil (marca 3corações, Caboclo, São Braz). Distribuição nacional de produtos de alta rotatividade. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: distribuição nacional de bens de consumo de alta rotatividade; Head de Supply Chain mapeado.",
+    "nextResearchStep": "Abordar Homero Grec — foco em complexidade logística da distribuição de cafés e bebidas.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 213,
+    "name": "Grupo Trigo",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "aliases": [
+      "Spoleto",
+      "China in Box",
+      "Koni Store"
+    ],
+    "decisors": [
+      {
+        "name": "Antonio Moreira Leite",
+        "role": "Presidente",
+        "confidence": "media",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Grupo de alimentação com marcas Spoleto, China in Box, Koni, Gendai e Gurumê. Logística de insumos para rede de franquias. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 72,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 17,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 3: múltiplas marcas de alimentação, boa capilaridade logística mas escala menor que Tier 2.",
+    "nextResearchStep": "Mapear decisor de Supply Chain/Logística — Antonio é Presidente (acesso mais difícil).",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 214,
+    "name": "Grupo Pereira",
+    "segment": "E-commerce & Varejo",
+    "uf": "SC",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [
+      "Superlojas Pereira",
+      "Rede Pereira"
+    ],
+    "decisors": [
+      {
+        "name": "Roberto Soares",
+        "role": "Diretor de Logística e Supply Chain",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Rede de supermercados líder em Santa Catarina e sul do Brasil (bandeiras Angeloni concorrente regional). Logística de distribuição regional com CD próprio. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: rede regional relevante, decisor de Logística com perfil ideal mapeado diretamente.",
+    "nextResearchStep": "Abordar Roberto Soares — já mapeado com cargo exato de Diretor de Logística.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   }
 ]

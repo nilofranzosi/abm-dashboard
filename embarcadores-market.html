@@ -213,6 +213,30 @@
       .seg-row{grid-template-columns:repeat(3,1fr);}
       .charts-row{grid-template-columns:1fr;}
     }
+
+    /* add-embarcador modal */
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:999;}
+    .modal-overlay.open{display:flex;}
+    .modal-box{background:var(--panel);border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.22);width:520px;max-width:calc(100vw - 32px);max-height:90vh;overflow-y:auto;padding:28px 28px 24px;}
+    .modal-title{font-size:16px;font-weight:700;margin:0 0 4px;letter-spacing:-.3px;}
+    .modal-sub{font-size:12px;color:var(--muted);margin-bottom:20px;}
+    .modal-divider{border:none;border-top:1px solid var(--line);margin:16px 0;}
+    .form-row{display:grid;gap:14px;margin-bottom:14px;}
+    .form-row.two{grid-template-columns:1fr 1fr;}
+    .form-group{display:flex;flex-direction:column;gap:5px;}
+    .form-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);}
+    .form-label .req{color:var(--blue);margin-left:1px;}
+    .form-input{border:1px solid var(--line);border-radius:var(--radius-sm);padding:7px 10px;font-size:13px;font-family:inherit;color:var(--ink);background:var(--bg);outline:none;transition:border-color .15s;}
+    .form-input:focus{border-color:var(--blue);}
+    textarea.form-input{resize:vertical;min-height:64px;}
+    .modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:20px;}
+    .btn-cancel{background:none;border:1px solid var(--line);border-radius:var(--radius-sm);padding:8px 18px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;font-family:inherit;transition:border-color .15s,color .15s;}
+    .btn-cancel:hover{border-color:var(--blue);color:var(--blue);}
+    .btn-save{background:var(--blue);border:none;border-radius:var(--radius-sm);padding:8px 22px;font-size:13px;font-weight:600;color:#fff;cursor:pointer;font-family:inherit;transition:opacity .15s;}
+    .btn-save:disabled{opacity:.5;cursor:not-allowed;}
+    .modal-error{color:var(--red);font-size:12px;margin-top:10px;min-height:16px;}
+    .decisor-section{background:#F8FAFC;border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px;margin-bottom:14px;}
+    .decisor-section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin-bottom:12px;}
   </style>
 </head>
 <body>
@@ -273,6 +297,10 @@
         </div>
       </div>
       <div style="display:flex;gap:8px;">
+        <button id="btn-add-embarcador" onclick="openAddModal()" style="border:1px solid #10B981;background:#ECFDF3;color:#057A55;border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v10M2 7h10"/></svg>
+          Adicionar Embarcador
+        </button>
         <button onclick="exportCsv()" style="border:1px solid var(--blue);background:#fff;color:var(--blue);border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v8M7 9 4 6M7 9l3-3M2 11h10v2H2z"/></svg>
           Exportar CSV
@@ -385,6 +413,95 @@
   </main>
 </div>
 
+<!-- add embarcador modal -->
+<div class="modal-overlay" id="add-modal" onclick="if(event.target===this)closeAddModal()">
+  <div class="modal-box">
+    <div class="modal-title">Adicionar Embarcador</div>
+    <div class="modal-sub">Validado manualmente no LinkedIn · será gravado no painel imediatamente</div>
+    <form id="add-form" onsubmit="submitAddEmbarcador(event)">
+      <div class="form-row two">
+        <div class="form-group" style="grid-column:1/-1">
+          <label class="form-label" for="add-name">Nome da empresa <span class="req">*</span></label>
+          <input class="form-input" id="add-name" type="text" placeholder="Ex: Grupo Pão de Açúcar" required autocomplete="off">
+        </div>
+      </div>
+      <div class="form-row two">
+        <div class="form-group">
+          <label class="form-label" for="add-segment">Segmento <span class="req">*</span></label>
+          <select class="form-input" id="add-segment" required>
+            <option value="">Selecione...</option>
+            <option>E-commerce &amp; Varejo</option>
+            <option>Alimentos &amp; Bebidas</option>
+            <option>Farmacêutico &amp; Saúde</option>
+            <option>Cosméticos &amp; Higiene</option>
+            <option>Combustíveis, Energia &amp; Química</option>
+            <option>Indústria Pesada</option>
+            <option>Automotivo &amp; Pneus</option>
+            <option>Agro &amp; Commodities</option>
+            <option>Eletro &amp; Tecnologia</option>
+            <option>Logística &amp; Transporte</option>
+            <option>Construção Civil</option>
+            <option>Têxtil &amp; Vestuário</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="add-uf">Estado (UF)</label>
+          <input class="form-input" id="add-uf" type="text" placeholder="Ex: SP" maxlength="2" style="text-transform:uppercase">
+        </div>
+      </div>
+      <div class="form-row two">
+        <div class="form-group">
+          <label class="form-label" for="add-tier">Tier</label>
+          <select class="form-input" id="add-tier">
+            <option value="">Sem tier (a classificar)</option>
+            <option value="1">Tier 1 — Estratégico (≥ 85 pts)</option>
+            <option value="2">Tier 2 — Desenvolvimento (77–84 pts)</option>
+            <option value="3">Tier 3 — Observação (&lt; 77 pts)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="add-tier-score">Tier Score (0–100)</label>
+          <input class="form-input" id="add-tier-score" type="number" min="0" max="100" placeholder="—">
+        </div>
+      </div>
+      <hr class="modal-divider">
+      <div class="decisor-section">
+        <div class="decisor-section-title">Decisor encontrado no LinkedIn (opcional)</div>
+        <div class="form-row two">
+          <div class="form-group">
+            <label class="form-label" for="add-decisor-name">Nome do decisor</label>
+            <input class="form-input" id="add-decisor-name" type="text" placeholder="Ex: João Silva" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="add-decisor-role">Cargo</label>
+            <input class="form-input" id="add-decisor-role" type="text" placeholder="Ex: Diretor de Logística">
+          </div>
+        </div>
+        <div class="form-row two">
+          <div class="form-group">
+            <label class="form-label" for="add-decisor-confidence">Confiança</label>
+            <select class="form-input" id="add-decisor-confidence">
+              <option value="">Não informada</option>
+              <option value="alta">Alta — perfil verificado, cargo claro</option>
+              <option value="media">Média — cargo inferido ou não atual</option>
+              <option value="baixa">Baixa — incerto</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group" style="margin-bottom:14px">
+        <label class="form-label" for="add-notes">Notas / contexto</label>
+        <textarea class="form-input" id="add-notes" placeholder="Ex: Empresa vista no perfil do contato X · opera CD em Campinas..."></textarea>
+      </div>
+      <div class="modal-error" id="add-error"></div>
+      <div class="modal-actions">
+        <button type="button" class="btn-cancel" onclick="closeAddModal()">Cancelar</button>
+        <button type="submit" class="btn-save" id="add-submit-btn">Adicionar ao Painel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 <script src="/js/icp-segment.js"></script>
 <script>
   const SEGMENT_COLORS = {
@@ -466,6 +583,7 @@
     document.getElementById("k-total-sub").textContent = isTransportadora ? "transportadoras" : "embarcadores";
 
     if (isTransportadora) {
+      document.getElementById("btn-add-embarcador").style.display = "none";
       // TAM-by-sector charts, segment overview cards, and the Embarcador-only
       // methodology note all depend on fields (`segment`, PIB share) that do
       // not exist for Transportadora — hide rather than show broken/fabricated data.
@@ -913,6 +1031,72 @@
       el.textContent = "Link copiado!";
       setTimeout(() => { el.textContent = "Copiar link"; }, 2000);
     });
+  }
+
+  function openAddModal() {
+    document.getElementById("add-modal").classList.add("open");
+    setTimeout(() => document.getElementById("add-name").focus(), 60);
+  }
+
+  function closeAddModal() {
+    document.getElementById("add-modal").classList.remove("open");
+    document.getElementById("add-form").reset();
+    document.getElementById("add-error").textContent = "";
+    const btn = document.getElementById("add-submit-btn");
+    btn.disabled = false;
+    btn.textContent = "Adicionar ao Painel";
+  }
+
+  async function submitAddEmbarcador(evt) {
+    evt.preventDefault();
+    const errEl = document.getElementById("add-error");
+    errEl.textContent = "";
+
+    const name     = document.getElementById("add-name").value.trim();
+    const segment  = document.getElementById("add-segment").value;
+    const ufRaw    = document.getElementById("add-uf").value.trim().toUpperCase();
+    const tierRaw  = document.getElementById("add-tier").value;
+    const tsRaw    = document.getElementById("add-tier-score").value;
+    const notes    = document.getElementById("add-notes").value.trim() || null;
+    const dName    = document.getElementById("add-decisor-name").value.trim();
+    const dRole    = document.getElementById("add-decisor-role").value.trim();
+    const dConf    = document.getElementById("add-decisor-confidence").value || null;
+
+    const decisors = dName
+      ? [{ name: dName, role: dRole || "Cargo não especificado", confidence: dConf || undefined, source: "linkedin" }]
+      : [];
+
+    const btn = document.getElementById("add-submit-btn");
+    btn.disabled = true;
+    btn.textContent = "Salvando...";
+
+    try {
+      const res = await fetch(`${apiBase}/api/market/embarcadores`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          segment,
+          uf: ufRaw || null,
+          tier: tierRaw ? parseInt(tierRaw, 10) : null,
+          tierScore: tsRaw ? parseInt(tsRaw, 10) : null,
+          notes,
+          decisors
+        })
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || `Erro ${res.status}`);
+      }
+
+      closeAddModal();
+      await loadAll();
+    } catch (err) {
+      errEl.textContent = err.message || "Erro ao salvar embarcador";
+      btn.disabled = false;
+      btn.textContent = "Adicionar ao Painel";
+    }
   }
 
   PxIcpSegment.renderIcpSwitcher(document.getElementById("icp-switcher"));

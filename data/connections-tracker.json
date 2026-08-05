@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-08-04T11:51:04.471Z",
-  "enrichedFile": "2026-08-04T11:47:05.205Z",
-  "pendingSnapshotAt": "2026-08-04T11:41:40.744Z",
+  "generatedAt": "2026-08-05T11:42:50.834Z",
+  "enrichedFile": "2026-08-05T11:38:43.666Z",
+  "pendingSnapshotAt": "2026-08-05T11:27:24.454Z",
   "summary": {
     "sentThisWeek": 11,
     "pendingConnections": 70,
-    "acceptedThisWeek": 5,
-    "repliedThisWeek": 2,
-    "overdueFollowUp": 0,
-    "acceptanceRateEst": 18
+    "acceptedThisWeek": 2,
+    "repliedThisWeek": 3,
+    "overdueFollowUp": 1,
+    "acceptanceRateEst": 27
   },
   "funnelBreakdown": {
-    "FIRST_CONTACT_SENT": 9,
-    "REPLIED_NEUTRAL": 3,
+    "FIRST_CONTACT_SENT": 8,
+    "REPLIED_NEUTRAL": 4,
     "FOLLOW_UP_SENT": 3,
-    "CONNECTION_ACCEPTED": 6,
+    "CONNECTION_ACCEPTED": 8,
     "CONNECTION_SENT": 70
   },
   "sentThisWeek": [
@@ -25,8 +25,28 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/lucianototola/",
-      "firstOutboundAt": "2026-08-04T19:10:00.000Z",
+      "firstOutboundAt": "2026-08-05T19:10:00.000Z",
       "lastInboundAt": null
+    },
+    {
+      "name": "Roberto Bisogni",
+      "company": "Klabin",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 0,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/robertobisogni/",
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Joao Martins Costa 马廷",
+      "company": "XMXYG",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 0,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/joao-pedro-martins-da-costa/",
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "lastInboundAt": "2026-08-05T16:53:00.000Z"
     },
     {
       "name": "Paulo Sérgio de Carvalho Araújo",
@@ -35,7 +55,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/paulo-araujo1964/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -45,8 +65,8 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
-      "lastInboundAt": "2026-08-04T20:58:00.000Z"
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "lastInboundAt": "2026-08-05T20:58:00.000Z"
     },
     {
       "name": "Daniela Paiola",
@@ -55,7 +75,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/daniela-paiola/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -65,7 +85,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/diegomelobento/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -75,7 +95,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/andersoncotias/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -85,7 +105,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/rondinelly-o-b4367741/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -95,41 +115,31 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
-      "lastInboundAt": "2026-08-04T18:00:00.000Z"
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "lastInboundAt": "2026-08-05T18:00:00.000Z"
     },
     {
       "name": "Paulo E. Petterle",
       "company": "White Martins",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/paulo-e-petterle-470486121/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Gustavo Emmã",
-      "company": "Embraer",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/gustavoemma/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
-      "lastInboundAt": null
-    },
-    {
-      "name": "Eduardo Andrade de Oliveira (he/él/ele)",
-      "company": "Suzano",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/eduardo-andrade-de-oliveira-he-%C3%A9l-ele-bb300333/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
       "lastInboundAt": null
     }
   ],
   "pendingConnections": [
+    {
+      "name": "Renato Costa Neto",
+      "company": "Whirlpool Corporation",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/renatocostaneto/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
     {
       "name": "Joselito Henriques",
       "company": "Aviação",
@@ -147,16 +157,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/diego-pacheco-dos-reis-0ba476420/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Carlos Filho",
-      "company": "Massachusetts Institute of Business - MIB",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/carlos-filho-767096424/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -207,16 +207,6 @@
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/bruno-bergonzoni-battaglia-a9a1196/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "George Ramos",
-      "company": "A apurar",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/george-ramos-diretor-compras-mentoria-industria-varejo-alimentos-bebidas-beleza-higiene-conselho/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
@@ -701,16 +691,6 @@
       "lastInboundAt": null
     },
     {
-      "name": "ROGERIO KOHNTOPP",
-      "company": "Krona Tubos e Conexões",
-      "status": "CONNECTION_PENDING",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/rogerio-kohntopp-1b8530102/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
       "name": "André Duran",
       "company": "Tupy",
       "status": "CONNECTION_PENDING",
@@ -829,57 +809,47 @@
       "profileUrl": "https://www.linkedin.com/in/antonio-cota-7b7a2a26/",
       "firstOutboundAt": null,
       "lastInboundAt": null
+    },
+    {
+      "name": "Luiz Thiebaut",
+      "company": "Michelin",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/luiz-thiebaut-082baa35/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Tufi Daher Filho",
+      "company": "Cia Siregurgica Nacional",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/tufi-daher-filho-3a309337/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
     }
   ],
   "acceptedThisWeek": [
     {
-      "name": "Frédéric Gauthier",
-      "company": "Cliente",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/gauthier-frederic/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Rafael Peixer Andriani",
-      "company": "STR Transportes & Logística",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/rafael-peixer-andriani-78852411a/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Guilherme Gomes",
+      "name": "Carlos Filho",
       "company": "A apurar",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/guilherme-gomes-aa8822188/",
+      "profileUrl": "https://www.linkedin.com/in/carlos-filho-767096424/",
       "firstOutboundAt": null,
       "lastInboundAt": null
     },
     {
-      "name": "Victor Samuel Silva Santos",
-      "company": "Universidade Metodista de Piracicaba",
+      "name": "ROGERIO KOHNTOPP",
+      "company": "Krona Tubos e Conexões",
       "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/victor-samuel-silva-santos/",
+      "profileUrl": "https://www.linkedin.com/in/rogerio-kohntopp-1b8530102/",
       "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "Paulo Sérgio de Carvalho Araújo",
-      "company": "Grupo Koch S A",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": 0,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/paulo-araujo1964/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
       "lastInboundAt": null
     }
   ],
@@ -891,8 +861,8 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
-      "lastInboundAt": "2026-08-04T20:58:00.000Z"
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "lastInboundAt": "2026-08-05T20:58:00.000Z"
     },
     {
       "name": "Samir Tinani",
@@ -901,9 +871,30 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
-      "firstOutboundAt": "2026-08-04T03:00:00.000Z",
-      "lastInboundAt": "2026-08-04T18:00:00.000Z"
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "lastInboundAt": "2026-08-05T18:00:00.000Z"
+    },
+    {
+      "name": "Joao Martins Costa 马廷",
+      "company": "XMXYG",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 0,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/joao-pedro-martins-da-costa/",
+      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "lastInboundAt": "2026-08-05T16:53:00.000Z"
     }
   ],
-  "overdueFollowUp": []
+  "overdueFollowUp": [
+    {
+      "name": "Paulo E. Petterle",
+      "company": "White Martins",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 7,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/paulo-e-petterle-470486121/",
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": null
+    }
+  ]
 }

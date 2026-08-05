@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T11:51:05.602Z",
+  "generatedAt": "2026-08-05T12:00:00.147Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -14,7 +14,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-03T13:57:10.728Z",
           "owner": null,
-          "contactCount": 0,
+          "contactCount": 1,
           "activeDecisor": null
         },
         {
@@ -38,7 +38,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:41:43.233Z",
           "owner": null,
-          "contactCount": 0,
+          "contactCount": 1,
           "activeDecisor": null
         },
         {
@@ -86,7 +86,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -97,18 +97,6 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-22T19:38:57.329Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmrtplb77002mk7uwcmnfosk5",
-          "name": "Krona",
-          "segment": "Construção Civil",
-          "accountScore": 64,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-20T21:00:36.298Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -146,7 +134,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-20T14:39:28.663Z",
           "owner": null,
-          "contactCount": 0,
+          "contactCount": 1,
           "activeDecisor": null
         },
         {
@@ -324,13 +312,13 @@
           "activeDecisor": "Antonio Correa G Neto"
         },
         {
-          "id": "cms611cgy0017k7oco4rkjmbc",
-          "name": "Klabin",
-          "segment": "Indústria Pesada",
-          "accountScore": 79,
+          "id": "cmrtplb77002mk7uwcmnfosk5",
+          "name": "Krona",
+          "segment": "Construção Civil",
+          "accountScore": 64,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-03T14:42:04.326Z",
+          "lastInteractionAt": "2026-08-05T11:27:25.533Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -348,30 +336,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cms4m2n2z0006k7fgk379jrkd",
-          "name": "ZAMP",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-30T20:40:14.317Z",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
-          "id": "cms7gn51v000sk7gsghpyznvs",
-          "name": "Copel",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-30T20:40:09.599Z",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
           "id": "cms7go2kd000uk7gs3l71d3dd",
           "name": "Grupo Petrópolis",
           "segment": null,
@@ -379,18 +343,6 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:40:08.776Z",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
-          "id": "cms7gpafg000vk7gsxp6xou0y",
-          "name": "GRUPO SBF",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-30T20:40:06.318Z",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -624,7 +576,55 @@
           "accountScore": 87,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-04T11:50:54.833Z",
+          "lastInteractionAt": "2026-08-05T11:42:37.364Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms7gn51v000sk7gsghpyznvs",
+          "name": "Copel",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-04T17:53:49.677Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms7gpafg000vk7gsxp6xou0y",
+          "name": "GRUPO SBF",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-04T17:53:49.677Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms4m2n2z0006k7fgk379jrkd",
+          "name": "ZAMP",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-04T17:53:49.677Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
+        },
+        {
+          "id": "cms611cgy0017k7oco4rkjmbc",
+          "name": "Klabin",
+          "segment": "Indústria Pesada",
+          "accountScore": 79,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-04T17:53:49.677Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -638,7 +638,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:40:50.012Z",
           "owner": null,
-          "contactCount": 0,
+          "contactCount": 1,
           "activeDecisor": null
         },
         {
@@ -1250,7 +1250,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:40:53.849Z",
           "owner": null,
-          "contactCount": 0,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
