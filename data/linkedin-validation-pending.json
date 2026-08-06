@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-05T11:42:46.344Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-05.json",
+  "generatedAt": "2026-08-06T11:59:28.740Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-06.json",
   "summary": {
-    "total": 1,
+    "total": 3,
     "replied": 1,
     "companyUnknown": 0,
     "overdue": 0
@@ -23,33 +23,83 @@
           "roleOrHeadline": "Business Representative South America @XMXYG | Global Commodity Trading & Supply Chain | Ex Nike",
           "confidence": "Alta",
           "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-08-05T17:29:00.000Z",
-          "lastInboundAt": "2026-08-05T16:53:00.000Z",
+          "lastOutboundAt": "2026-08-06T17:29:00.000Z",
+          "lastInboundAt": "2026-08-06T16:53:00.000Z",
           "outboundTouchpoints": 2,
           "inboundMessages": [
             {
-              "occurredAt": "2026-08-05T16:53:00.000Z",
+              "occurredAt": "2026-08-06T16:53:00.000Z",
               "body": "Ola Thiago,Boa tarde!Obrigado pelo contato.Pelo que entendi a plataforma da PX esta focada em motoristas logisticos, correto?No momento, a Xiangyu esta iniciando no mercado brasileiro e atuamos atraves de empresas logisticas parceiras. Dessa forma, nao temos essa demanda no momento.De qualquer forma agradeco o contato e irei entrar em contato caso a demanda venha a surgir.Att,Joao"
             }
           ],
           "outboundMessages": [
             {
-              "occurredAt": "2026-08-05T03:00:00.000Z",
+              "occurredAt": "2026-08-06T03:00:00.000Z",
               "body": "João, a PX é uma plataforma que disponibiliza mão de obra sob demanda para a operação logística, sem necessidade de contratação fixa via RH."
             },
             {
-              "occurredAt": "2026-08-05T03:00:00.000Z",
+              "occurredAt": "2026-08-06T03:00:00.000Z",
               "body": "Hoje atuamos em empresas como Ambev, Raizen e Votorantim. Gostaria de entender melhor como funciona a operação da Xiamen Xiangyu no Brasil e ver se temos oportunidades."
             },
             {
-              "occurredAt": "2026-08-05T03:00:00.000Z",
+              "occurredAt": "2026-08-06T03:00:00.000Z",
               "body": "O melhor contato para isso seria contigo?"
             },
             {
-              "occurredAt": "2026-08-05T17:29:00.000Z",
+              "occurredAt": "2026-08-06T17:29:00.000Z",
               "body": "João, pelo que entendi a Xiangyu não possui frota própria. Nesse caso, muitos embarcadores realizam a homologação das transportadoras via PGR, e, ao homologar o modelo de contratação da PX (Conhecido como Profissional Digital) você tem um ganho considerável de redução de custos. Trabalhamos com esse formato na Ambev e estamos em homologação na Raízen. Fico à disposição caso queira entender mais sobre essas possibilidades. Abraços!"
             }
           ],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "transporte-de-carga",
+      "resolvedCompany": "Transporte de Carga",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Fernando Carneiro",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Sócio RPAC | Direito no Transporte de Carga | Relações Trabalhistas | Negociações Coletivas | Consultoria Preventiva Estratégica | Atuação em + de 11.000 processos trabalhistas, com gestão de risco superior à R$ 1 BI",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "mahle-advocacia-empresarial-especialista-no-setor-de-transporte-de-cargas",
+      "resolvedCompany": "Mahle Advocacia Empresarial - Especialista no Setor de Transporte de Cargas",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Thamis Tonetti Mahle",
+          "funnelStatus": "CONNECTION_SENT",
+          "roleOrHeadline": "Advogada Trabalhista de Empresas de Transporte | Mahle Advocacia Empresarial",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
           "icpSegment": null
         }
       ],

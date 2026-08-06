@@ -1762,7 +1762,7 @@
   },
   {
     "weekKey": "2026-S32",
-    "generatedAt": "2026-08-04T18:49:10.564Z",
+    "generatedAt": "2026-08-06T11:59:25.759Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 121,
     "activePipeline": 112,
@@ -1774,14 +1774,14 @@
     "meetingRate": 0.0625,
     "dealRate": 0.05357142857142857,
     "avgDaysToFirstReply": 5.705882352941177,
-    "avgDaysSinceLastOutbound": 0.8666666666666667,
+    "avgDaysSinceLastOutbound": 4.933333333333334,
     "totalOutboundTouchpoints": 22,
     "totalInboundTouchpoints": 4,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
         "label": "Conexão Enviada",
-        "count": 22
+        "count": 21
       },
       {
         "stage": "CONNECTION_ACCEPTED",
@@ -1791,7 +1791,7 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 36
+        "count": 37
       },
       {
         "stage": "FOLLOW_UP_SENT",

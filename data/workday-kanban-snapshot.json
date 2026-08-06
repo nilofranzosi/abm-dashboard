@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T12:00:00.147Z",
+  "generatedAt": "2026-08-06T12:00:00.102Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -306,7 +306,7 @@
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-17T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-29T20:49:13.131Z",
+          "lastInteractionAt": "2026-08-06T11:43:55.121Z",
           "owner": null,
           "contactCount": 5,
           "activeDecisor": "Antonio Correa G Neto"

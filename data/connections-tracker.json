@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-05T11:42:50.834Z",
-  "enrichedFile": "2026-08-05T11:38:43.666Z",
-  "pendingSnapshotAt": "2026-08-05T11:27:24.454Z",
+  "generatedAt": "2026-08-06T11:53:53.504Z",
+  "enrichedFile": "2026-08-06T11:49:36.985Z",
+  "pendingSnapshotAt": "2026-08-06T11:43:54.870Z",
   "summary": {
-    "sentThisWeek": 11,
+    "sentThisWeek": 10,
     "pendingConnections": 70,
     "acceptedThisWeek": 2,
     "repliedThisWeek": 3,
-    "overdueFollowUp": 1,
-    "acceptanceRateEst": 27
+    "overdueFollowUp": 5,
+    "acceptanceRateEst": 30
   },
   "funnelBreakdown": {
     "FIRST_CONTACT_SENT": 8,
@@ -25,7 +25,7 @@
       "daysSinceSent": -1,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/lucianototola/",
-      "firstOutboundAt": "2026-08-05T19:10:00.000Z",
+      "firstOutboundAt": "2026-08-06T19:10:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -35,7 +35,7 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/robertobisogni/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-06T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
@@ -45,8 +45,8 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/joao-pedro-martins-da-costa/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
-      "lastInboundAt": "2026-08-05T16:53:00.000Z"
+      "firstOutboundAt": "2026-08-06T03:00:00.000Z",
+      "lastInboundAt": "2026-08-06T16:53:00.000Z"
     },
     {
       "name": "Paulo Sérgio de Carvalho Araújo",
@@ -55,81 +55,91 @@
       "daysSinceSent": 0,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/paulo-araujo1964/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "firstOutboundAt": "2026-08-06T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
       "name": "Felipe Thedim Costa Bueno",
       "company": "Ortobom",
       "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
-      "lastInboundAt": "2026-08-05T20:58:00.000Z"
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": "2026-07-30T20:58:00.000Z"
     },
     {
       "name": "Daniela Paiola",
       "company": "GRUPO SBF",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/daniela-paiola/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
       "name": "Diego Bento",
       "company": "Grupo Habib's",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/diegomelobento/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
       "name": "Anderson Cotias",
       "company": "Copel",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/andersoncotias/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
       "name": "Rondinelly Oliveira",
       "company": "Roche Pharmaceutical",
       "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/rondinelly-o-b4367741/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     },
     {
       "name": "Samir Tinani",
       "company": "Ortobom",
       "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 0,
+      "daysSinceSent": 7,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
-      "lastInboundAt": "2026-08-05T18:00:00.000Z"
-    },
-    {
-      "name": "Paulo E. Petterle",
-      "company": "White Martins",
-      "status": "FIRST_CONTACT_SENT",
-      "daysSinceSent": 7,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/paulo-e-petterle-470486121/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
-      "lastInboundAt": null
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": "2026-07-30T18:00:00.000Z"
     }
   ],
   "pendingConnections": [
+    {
+      "name": "Fernando Carneiro",
+      "company": "Transporte de Carga",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/fernandomcarneiro/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
+    {
+      "name": "Thamis Tonetti Mahle",
+      "company": "Mahle Advocacia Empresarial - Especialista no Setor de Transporte de Cargas",
+      "status": "CONNECTION_PENDING",
+      "daysSinceSent": null,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/thamis-tonetti-mahle-abb226278/",
+      "firstOutboundAt": null,
+      "lastInboundAt": null
+    },
     {
       "name": "Renato Costa Neto",
       "company": "Whirlpool Corporation",
@@ -809,11 +819,13 @@
       "profileUrl": "https://www.linkedin.com/in/antonio-cota-7b7a2a26/",
       "firstOutboundAt": null,
       "lastInboundAt": null
-    },
+    }
+  ],
+  "acceptedThisWeek": [
     {
       "name": "Luiz Thiebaut",
-      "company": "Michelin",
-      "status": "CONNECTION_PENDING",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/luiz-thiebaut-082baa35/",
@@ -822,8 +834,8 @@
     },
     {
       "name": "Tufi Daher Filho",
-      "company": "Cia Siregurgica Nacional",
-      "status": "CONNECTION_PENDING",
+      "company": "A apurar",
+      "status": "CONNECTION_ACCEPTED",
       "daysSinceSent": null,
       "hasReply": false,
       "profileUrl": "https://www.linkedin.com/in/tufi-daher-filho-3a309337/",
@@ -831,49 +843,7 @@
       "lastInboundAt": null
     }
   ],
-  "acceptedThisWeek": [
-    {
-      "name": "Carlos Filho",
-      "company": "A apurar",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/carlos-filho-767096424/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    },
-    {
-      "name": "ROGERIO KOHNTOPP",
-      "company": "Krona Tubos e Conexões",
-      "status": "CONNECTION_ACCEPTED",
-      "daysSinceSent": null,
-      "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/rogerio-kohntopp-1b8530102/",
-      "firstOutboundAt": null,
-      "lastInboundAt": null
-    }
-  ],
   "repliedThisWeek": [
-    {
-      "name": "Felipe Thedim Costa Bueno",
-      "company": "Ortobom",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 0,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
-      "lastInboundAt": "2026-08-05T20:58:00.000Z"
-    },
-    {
-      "name": "Samir Tinani",
-      "company": "Ortobom",
-      "status": "REPLIED_NEUTRAL",
-      "daysSinceSent": 0,
-      "hasReply": true,
-      "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
-      "lastInboundAt": "2026-08-05T18:00:00.000Z"
-    },
     {
       "name": "Joao Martins Costa 马廷",
       "company": "XMXYG",
@@ -881,19 +851,79 @@
       "daysSinceSent": 0,
       "hasReply": true,
       "profileUrl": "https://www.linkedin.com/in/joao-pedro-martins-da-costa/",
-      "firstOutboundAt": "2026-08-05T03:00:00.000Z",
-      "lastInboundAt": "2026-08-05T16:53:00.000Z"
+      "firstOutboundAt": "2026-08-06T03:00:00.000Z",
+      "lastInboundAt": "2026-08-06T16:53:00.000Z"
+    },
+    {
+      "name": "Felipe Thedim Costa Bueno",
+      "company": "Ortobom",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 7,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/felipe-thedim-costa-bueno-b6450a75/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": "2026-07-30T20:58:00.000Z"
+    },
+    {
+      "name": "Samir Tinani",
+      "company": "Ortobom",
+      "status": "REPLIED_NEUTRAL",
+      "daysSinceSent": 7,
+      "hasReply": true,
+      "profileUrl": "https://www.linkedin.com/in/samir-tinani/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": "2026-07-30T18:00:00.000Z"
     }
   ],
   "overdueFollowUp": [
     {
       "name": "Paulo E. Petterle",
-      "company": "White Martins",
+      "company": "A apurar",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 8,
+      "hasReply": false,
+      "profileUrl": null,
+      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Daniela Paiola",
+      "company": "GRUPO SBF",
       "status": "FIRST_CONTACT_SENT",
       "daysSinceSent": 7,
       "hasReply": false,
-      "profileUrl": "https://www.linkedin.com/in/paulo-e-petterle-470486121/",
-      "firstOutboundAt": "2026-07-29T03:00:00.000Z",
+      "profileUrl": "https://www.linkedin.com/in/daniela-paiola/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Diego Bento",
+      "company": "Grupo Habib's",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 7,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/diegomelobento/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Anderson Cotias",
+      "company": "Copel",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 7,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/andersoncotias/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
+      "lastInboundAt": null
+    },
+    {
+      "name": "Rondinelly Oliveira",
+      "company": "Roche Pharmaceutical",
+      "status": "FIRST_CONTACT_SENT",
+      "daysSinceSent": 7,
+      "hasReply": false,
+      "profileUrl": "https://www.linkedin.com/in/rondinelly-o-b4367741/",
+      "firstOutboundAt": "2026-07-30T03:00:00.000Z",
       "lastInboundAt": null
     }
   ]
