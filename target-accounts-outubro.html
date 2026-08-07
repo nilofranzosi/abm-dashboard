@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Target Accounts Outubro</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --line: #D9E2F2;
+      --bg: #EEF2F7;
+      --panel: #FFFFFF;
+      --blue: #0F52BA;
+      --green: #087443;
+      --red: #B42318;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); padding: 14px; }
+    .container { display: grid; grid-template-columns: 1fr 400px; gap: 14px; min-height: 100vh; }
+    h2 { margin: 0 0 14px; font-size: 16px; color: var(--blue); }
+    p { margin: 0; }
+    .muted { color: var(--muted); font-size: 13px; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px; margin-bottom: 14px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 14px; }
+    .kpi { background: white; border: 1px solid var(--line); border-top: 3px solid #2563EB; border-radius: 8px; padding: 16px; text-align: center; }
+    .kpi-label { font-size: 0.65rem; font-weight: 600; color: #6B7280; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+    .kpi-value { font-size: 1.75rem; font-weight: 800; color: var(--ink); margin-bottom: 2px; }
+    .kpi-subtitle { font-size: 11px; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; color: #344054; background: #F2F5FA; border-bottom: 1px solid var(--line); padding: 10px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; cursor: pointer; }
+    th:hover { background: #E8ECFD; }
+    td { border-bottom: 1px solid #EEF2F7; padding: 10px; vertical-align: top; }
+    tr:hover { background: #FBFCFF; cursor: pointer; }
+    tr.selected { background: #DBEAFE; }
+    .status-badge { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 0.72rem; font-weight: 600; background: #F3F4F6; color: #374151; }
+    .status-badge.positive { background: #D1FAE5; color: #065F46; }
+    .status-badge.negative { background: #FEE2E2; color: #991B1B; }
+    .status-badge.info { background: #DBEAFE; color: #1E40AF; }
+    .trend-up { color: var(--green); font-weight: 600; }
+    .trend-down { color: var(--red); font-weight: 600; }
+    .trend-flat { color: var(--muted); font-weight: 600; }
+    .detail-panel { display: none; flex-direction: column; gap: 14px; }
+    .detail-panel.open { display: flex; }
+    .chart-container { position: relative; height: 300px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px; }
+    .timeline { max-height: 250px; overflow-y: auto; }
+    .timeline-item { padding: 8px 12px; border-left: 3px solid var(--blue); margin-bottom: 8px; background: #FBFCFF; }
+    .timeline-item-date { font-size: 0.75rem; color: var(--muted); font-weight: 600; text-transform: uppercase; }
+    .timeline-item-event { font-size: 13px; color: var(--ink); font-weight: 500; margin-top: 2px; }
+    .empty { color: var(--muted); padding: 18px; text-align: center; }
+    .error { background: #FEE2E2; border: 1px solid #FECDCA; color: var(--red); padding: 12px; border-radius: 6px; }
+    @media (max-width: 1200px) {
+      .container { grid-template-columns: 1fr; }
+      .detail-panel { display: grid !important; }
+      .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <div class="panel">
+        <h2>Visão Estratégica — Target Accounts Outubro</h2>
+        <div style="margin-bottom: 14px; display: flex; align-items: center;" id="month-selector"></div>
+        <div class="kpi-grid" id="kpi-grid"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Desempenho Diário — 139 Empresas</h2>
+        <p class="muted" style="margin-bottom: 14px;">Clique em uma empresa para ver evolução dos últimos 6 meses, eventos e análise. Os percentuais e valores abaixo correspondem ao mês selecionado.</p>
+        <table id="main-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable('company')">Empresa</th>
+              <th onclick="sortTable('status')">Status Operacional (%)</th>
+              <th onclick="sortTable('events')">Eventos</th>
+              <th onclick="sortTable('tier')">Tier</th>
+              <th onclick="sortTable('qualification')">Status</th>
+              <th onclick="sortTable('trend')">Tendência</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="detail-panel" id="detail-panel">
+      <div class="panel">
+        <h2 id="detail-title">Selecione uma empresa</h2>
+        <div id="detail-info" class="muted"></div>
+      </div>
+      <div class="chart-container">
+        <canvas id="trend-chart"></canvas>
+      </div>
+      <div class="panel">
+        <p class="muted" style="margin-bottom: 12px; font-size: 11px; font-weight: 600; text-transform: uppercase;">Eventos</p>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let data = null;
+    let currentChart = null;
+    let sortBy = 'company';
+    let sortAsc = true;
+    let selectedMonth = null; // Default: use most recent month from trendMonths
+
+    function escapeHtml(text) {
+      if (!text) return "";
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function getMonthLabel(monthStr) {
+      const [year, month] = monthStr.split('-');
+      const d = new Date(year, month - 1);
+      return d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+    }
+
+
+    async function load() {
+      try {
+        const res = await fetch('/api/transportadoras/target-accounts-outubro', {
+          credentials: 'include'
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+        const json = await res.json();
+        data = json.data;
+        render();
+      } catch (err) {
+        document.body.innerHTML = `<div class="error">Erro ao carregar dados de agosto/2026: ${escapeHtml(err.message)}</div>`;
+      }
+    }
+
+    function render() {
+      if (!selectedMonth && data.trendMonths && data.trendMonths.length > 0) {
+        selectedMonth = data.trendMonths[data.trendMonths.length - 1]; // Default to last month
+      }
+      renderMonthSelector();
+      renderStrategic();
+      renderTable();
+    }
+
+    function renderMonthSelector() {
+      const container = document.getElementById('month-selector');
+      if (!container || !data.trendMonths) return;
+
+      container.innerHTML = `
+        <label style="font-size: 0.85rem; font-weight: 600; color: #344054; margin-right: 8px;">Mês Analisado:</label>
+        <select id="month-dropdown" style="padding: 6px 10px; border: 1px solid #D9E2F2; border-radius: 4px; cursor: pointer;">
+          ${data.trendMonths.map(m => `
+            <option value="${m}" ${selectedMonth === m ? 'selected' : ''}>${getMonthLabel(m)}</option>
+          `).join('')}
+        </select>
+      `;
+
+      document.getElementById('month-dropdown').addEventListener('change', (e) => {
+        selectedMonth = e.target.value;
+        renderStrategic();
+        renderTable();
+      });
+    }
+
+    function renderStrategic() {
+      const monthData = data.rows.map(r => {
+        const trend = r.trend?.find(t => t.month === selectedMonth);
+        return trend?.contractDays || 0;
+      });
+
+      const totalDaysAll = monthData.reduce((sum, d) => sum + d, 0);
+      const totalAlvoAll = data.rows.reduce((sum, r) => sum + (r.alvo || 0), 0);
+      const pctAll = totalAlvoAll > 0 ? Math.round((totalDaysAll / totalAlvoAll) * 100) : 0;
+      const withEvents = data.rows.filter(r => r.eventos?.length > 0).length;
+      const evaluated = data.rows.filter(r => r.companyId !== null).length;
+      const eventCoverage = evaluated > 0 ? Math.round((withEvents / evaluated) * 100) : 0;
+
+      // Calcular tendência entre primeiro e último mês
+      const firstMonthIdx = 0;
+      const lastMonthIdx = data.trendMonths.length - 1;
+      const firstMonthData = data.rows.map(r => r.trend?.[firstMonthIdx]?.contractDays || 0);
+      const lastMonthData = monthData;
+      const firstTotal = firstMonthData.reduce((sum, d) => sum + d, 0);
+      const lastTotal = lastMonthData.reduce((sum, d) => sum + d, 0);
+      const trend = lastTotal - firstTotal;
+      const trendPct = firstTotal > 0 ? Math.round((trend / firstTotal) * 100) : 0;
+
+      document.getElementById('kpi-grid').innerHTML = `
+        <div class="kpi">
+          <div class="kpi-label">Dias Agenciados</div>
+          <div class="kpi-value">${totalDaysAll}</div>
+          <div class="kpi-subtitle">Total (meta: ${totalAlvoAll})</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Atingimento</div>
+          <div class="kpi-value">${pctAll}%</div>
+          <div class="kpi-subtitle">Da meta consolidada</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Cobertura Eventos</div>
+          <div class="kpi-value">${eventCoverage}%</div>
+          <div class="kpi-subtitle">${withEvents}/${evaluated} com evento</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Empresas</div>
+          <div class="kpi-value">${data.rows.length}</div>
+          <div class="kpi-subtitle">${evaluated} avaliadas</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Tendência</div>
+          <div class="kpi-value" style="${trend >= 0 ? 'color:var(--green)' : 'color:var(--red)'}">${trendPct > 0 ? '+' : ''}${trendPct}%</div>
+          <div class="kpi-subtitle">Últimos 6 meses</div>
+        </div>
+      `;
+    }
+
+    function renderTable() {
+      const rows = [...data.rows].sort((a, b) => {
+        let aVal, bVal;
+        if (sortBy === 'company') {
+          aVal = (a.companyName || a.clienteRaw).toLowerCase();
+          bVal = (b.companyName || b.clienteRaw).toLowerCase();
+        } else if (sortBy === 'status') {
+          const aTrend = a.trend?.find(t => t.month === selectedMonth);
+          const bTrend = b.trend?.find(t => t.month === selectedMonth);
+          aVal = a.alvo > 0 ? ((aTrend?.contractDays || 0) / a.alvo) * 100 : 0;
+          bVal = b.alvo > 0 ? ((bTrend?.contractDays || 0) / b.alvo) * 100 : 0;
+        } else if (sortBy === 'events') {
+          aVal = a.eventos?.length || 0;
+          bVal = b.eventos?.length || 0;
+        } else if (sortBy === 'tier') {
+          aVal = a.tier || 999;
+          bVal = b.tier || 999;
+        } else if (sortBy === 'qualification') {
+          aVal = a.status || '';
+          bVal = b.status || '';
+        } else if (sortBy === 'trend') {
+          const aLast = a.trend?.[a.trend.length - 1]?.contractDays || 0;
+          const aFirst = a.trend?.[0]?.contractDays || 0;
+          const bLast = b.trend?.[b.trend.length - 1]?.contractDays || 0;
+          const bFirst = b.trend?.[0]?.contractDays || 0;
+          aVal = aLast - aFirst;
+          bVal = bLast - bFirst;
+        }
+        return sortAsc ? (aVal < bVal ? -1 : 1) : (aVal > bVal ? -1 : 1);
+      });
+
+      const tbody = document.getElementById('tbody');
+      tbody.innerHTML = rows.map((row) => {
+        const realIdx = data.rows.indexOf(row);
+        const monthTrend = row.trend?.find(t => t.month === selectedMonth);
+        const contractDaysThisMonth = monthTrend?.contractDays || 0;
+        const pct = row.alvo > 0 ? Math.round((contractDaysThisMonth / row.alvo) * 100) : 0;
+        const eventCount = row.eventos?.length || 0;
+        const trend = row.trend && row.trend.length >= 2 ? (row.trend[row.trend.length - 1].contractDays || 0) - (row.trend[0].contractDays || 0) : 0;
+        const trendClass = trend > 0 ? 'trend-up' : trend < 0 ? 'trend-down' : 'trend-flat';
+        const trendSymbol = trend > 0 ? '↑' : trend < 0 ? '↓' : '→';
+
+        return `<tr onclick="showDetail(${realIdx})">
+          <td><strong>${escapeHtml(row.companyName || row.clienteRaw)}</strong></td>
+          <td>${pct}%</td>
+          <td><span class="status-badge ${eventCount > 0 ? 'positive' : 'negative'}">${eventCount} evento${eventCount !== 1 ? 's' : ''}</span></td>
+          <td>${row.tier || '—'}</td>
+          <td><span class="status-badge ${row.status ? 'info' : ''}">${row.status || '—'}</span></td>
+          <td><span class="${trendClass}">${trendSymbol} ${Math.abs(trend)}</span></td>
+        </tr>`;
+      }).join('');
+    }
+
+    function sortTable(column) {
+      if (sortBy === column) {
+        sortAsc = !sortAsc;
+      } else {
+        sortBy = column;
+        sortAsc = true;
+      }
+      renderTable();
+    }
+
+    function showDetail(idx) {
+      const row = data.rows[idx];
+      const panel = document.getElementById('detail-panel');
+      document.querySelectorAll('#tbody tr').forEach((tr, i) => tr.classList.toggle('selected', i === idx));
+
+      document.getElementById('detail-title').textContent = escapeHtml(row.companyName || row.clienteRaw);
+      document.getElementById('detail-info').innerHTML = `
+        <p><strong>Cavaleiro:</strong> ${escapeHtml(row.cavaleiro || '—')}</p>
+        <p><strong>Coordenação:</strong> ${escapeHtml(row.coordenacao)}</p>
+        <p><strong>Alvo:</strong> ${row.alvo} dias | <strong>Falta:</strong> ${row.faltaParaAlvo}</p>
+        <p><strong>Multiplicador:</strong> ${escapeHtml(row.multiplicador)} | <strong>Viabilidade:</strong> ${escapeHtml(row.viabilidade)}</p>
+      `;
+
+      renderChart(row);
+      renderTimeline(row);
+      panel.classList.add('open');
+    }
+
+    function renderChart(row) {
+      if (!row.trend || row.trend.length === 0) {
+        document.getElementById('trend-chart').style.display = 'none';
+        return;
+      }
+      document.getElementById('trend-chart').style.display = 'block';
+
+      const labels = row.trend.map(t => {
+        const [y, m] = t.month.split('-');
+        return new Date(y, m - 1).toLocaleDateString('pt-BR', { month: 'short', year: '2-digit' });
+      });
+      const values = row.trend.map(t => t.contractDays || 0);
+
+      if (currentChart) currentChart.destroy();
+      currentChart = new Chart(document.getElementById('trend-chart'), {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Dias Agenciados',
+            data: values,
+            borderColor: '#0F52BA',
+            backgroundColor: 'rgba(15, 82, 186, 0.05)',
+            borderWidth: 3,
+            fill: true,
+            pointRadius: 6,
+            pointBackgroundColor: '#0F52BA',
+            tension: 0.4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: true } },
+          scales: { y: { beginAtZero: true } }
+        }
+      });
+    }
+
+    function renderTimeline(row) {
+      const container = document.getElementById('timeline');
+      if (!row.eventos || row.eventos.length === 0) {
+        container.innerHTML = '<div class="empty">Nenhum evento registrado</div>';
+        return;
+      }
+
+      container.innerHTML = row.eventos.map(e => `
+        <div class="timeline-item">
+          <div class="timeline-item-date">${new Date(e.occurredAt).toLocaleDateString('pt-BR')}</div>
+          <div class="timeline-item-event">${escapeHtml(e.eventName)}</div>
+        </div>
+      `).join('');
+    }
+
+    load();
+  </script>
+</body>
+</html>

@@ -1,26 +1,10 @@
 {
-  "generatedAt": "2026-07-10T20:27:33.834Z",
+  "generatedAt": "2026-07-09T12:35:27.840Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
       "label": "Conexão Enviada",
-      "companies": [
-        {
-          "id": "cmrfe0aad0012k70oluu52foc",
-          "name": "Snapshot Co explicit-tra",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": "2026-05-01T12:00:00.000Z",
-          "lastInteractionAt": "2026-04-01T12:00:00.000Z",
-          "owner": {
-            "id": "cmrfe0aaa0010k70ojwkdyu4m",
-            "name": "Nilo Snapshot explicit-tra"
-          },
-          "contactCount": 1,
-          "activeDecisor": "Contato Snapshot explicit-tra"
-        }
-      ]
+      "companies": []
     },
     {
       "stage": "CONNECTION_ACCEPTED",

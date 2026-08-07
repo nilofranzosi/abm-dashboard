@@ -1,110 +1,135 @@
 {
-  "generatedAt": "2026-08-06T11:59:28.740Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-06.json",
+  "generatedAt": "2026-08-07T11:39:12.486Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-07.json",
   "summary": {
     "total": 3,
-    "replied": 1,
-    "companyUnknown": 0,
+    "replied": 0,
+    "companyUnknown": 3,
     "overdue": 0
   },
   "companies": [
     {
-      "id": "xmxyg",
-      "resolvedCompany": "XMXYG",
+      "id": "unknown-rogerio-andrade",
+      "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "replied",
-        "icp-unknown",
-        "company-off-list"
+        "company-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Joao Martins Costa 马廷",
-          "funnelStatus": "REPLIED_NEUTRAL",
-          "roleOrHeadline": "Business Representative South America @XMXYG | Global Commodity Trading & Supply Chain | Ex Nike",
-          "confidence": "Alta",
+          "contactName": "Rogério Andrade",
+          "funnelStatus": "FOLLOW_UP_SENT",
+          "roleOrHeadline": null,
+          "confidence": "Baixa",
           "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-08-06T17:29:00.000Z",
-          "lastInboundAt": "2026-08-06T16:53:00.000Z",
+          "lastOutboundAt": "2026-08-07T03:00:00.000Z",
+          "lastInboundAt": null,
           "outboundTouchpoints": 2,
-          "inboundMessages": [
-            {
-              "occurredAt": "2026-08-06T16:53:00.000Z",
-              "body": "Ola Thiago,Boa tarde!Obrigado pelo contato.Pelo que entendi a plataforma da PX esta focada em motoristas logisticos, correto?No momento, a Xiangyu esta iniciando no mercado brasileiro e atuamos atraves de empresas logisticas parceiras. Dessa forma, nao temos essa demanda no momento.De qualquer forma agradeco o contato e irei entrar em contato caso a demanda venha a surgir.Att,Joao"
-            }
-          ],
+          "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-08-06T03:00:00.000Z",
-              "body": "João, a PX é uma plataforma que disponibiliza mão de obra sob demanda para a operação logística, sem necessidade de contratação fixa via RH."
+              "occurredAt": "2026-07-15T21:07:00.000Z",
+              "body": "Rogério, estava lendo sobre a dificuldade das redes de supermercado em contratar mão de obra para a operação logística."
             },
             {
-              "occurredAt": "2026-08-06T03:00:00.000Z",
-              "body": "Hoje atuamos em empresas como Ambev, Raizen e Votorantim. Gostaria de entender melhor como funciona a operação da Xiamen Xiangyu no Brasil e ver se temos oportunidades."
+              "occurredAt": "2026-07-15T03:00:00.000Z",
+              "body": "Como está sendo essa questão no Grupo Mateus?"
             },
             {
-              "occurredAt": "2026-08-06T03:00:00.000Z",
-              "body": "O melhor contato para isso seria contigo?"
+              "occurredAt": "2026-08-07T03:00:00.000Z",
+              "body": "A PX atua disponibilizando mão de obra para a operação logística, sem necessidade de contratação fixa via RH."
             },
             {
-              "occurredAt": "2026-08-06T17:29:00.000Z",
-              "body": "João, pelo que entendi a Xiangyu não possui frota própria. Nesse caso, muitos embarcadores realizam a homologação das transportadoras via PGR, e, ao homologar o modelo de contratação da PX (Conhecido como Profissional Digital) você tem um ganho considerável de redução de custos. Trabalhamos com esse formato na Ambev e estamos em homologação na Raízen. Fico à disposição caso queira entender mais sobre essas possibilidades. Abraços!"
+              "occurredAt": "2026-08-07T03:00:00.000Z",
+              "body": "Para avançar numa conversa com o Grupo Mateus, o melhor contato seria contigo?"
             }
           ],
-          "icpSegment": null
+          "icpSegment": "EMBARCADOR"
         }
       ],
       "reviewedAt": null,
-      "icpSegment": null
+      "icpSegment": "EMBARCADOR"
     },
     {
-      "id": "transporte-de-carga",
-      "resolvedCompany": "Transporte de Carga",
+      "id": "unknown-renata-cristina-lourenco-fioravante",
+      "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
+        "company-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Fernando Carneiro",
-          "funnelStatus": "CONNECTION_SENT",
-          "roleOrHeadline": "Sócio RPAC | Direito no Transporte de Carga | Relações Trabalhistas | Negociações Coletivas | Consultoria Preventiva Estratégica | Atuação em + de 11.000 processos trabalhistas, com gestão de risco superior à R$ 1 BI",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "mahle-advocacia-empresarial-especialista-no-setor-de-transporte-de-cargas",
-      "resolvedCompany": "Mahle Advocacia Empresarial - Especialista no Setor de Transporte de Cargas",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Thamis Tonetti Mahle",
-          "funnelStatus": "CONNECTION_SENT",
-          "roleOrHeadline": "Advogada Trabalhista de Empresas de Transporte | Mahle Advocacia Empresarial",
+          "contactName": "RENATA CRISTINA LOURENÇO FIORAVANTE",
+          "funnelStatus": "FOLLOW_UP_SENT",
+          "roleOrHeadline": "Operation Director | Executive Director | Commercial | Procurement | Supply Chain |",
           "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
+          "daysSinceLastOutbound": 0,
+          "lastOutboundAt": "2026-08-07T03:00:00.000Z",
           "lastInboundAt": null,
-          "outboundTouchpoints": 0,
+          "outboundTouchpoints": 2,
           "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-07-03T03:00:00.000Z",
+              "body": "Renata, a PX atua fornecendo motoristas e ajudantes sob demanda, sem necessidade de contratação fixa via RH."
+            },
+            {
+              "occurredAt": "2026-07-03T03:00:00.000Z",
+              "body": "Hoje, atuamos em todo o território nacional em empresas como Ambev e Unilever, acredito que temos oportunidades concretas para a operação do Grupo Campari."
+            },
+            {
+              "occurredAt": "2026-07-03T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            },
+            {
+              "occurredAt": "2026-08-07T03:00:00.000Z",
+              "body": "Gostaria de entender melhor sobre o funcionamento da operação logística do Grupo Campari. Para isso, o melhor contato seria contigo?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
         }
       ],
       "reviewedAt": null,
-      "icpSegment": null
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "unknown-rogerio-kohntopp",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "ROGERIO KOHNTOPP",
+          "funnelStatus": "FIRST_CONTACT_SENT",
+          "roleOrHeadline": "DIRETOR DE OPERAÇÕES - COO GRUPO KRONA",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": 0,
+          "lastOutboundAt": "2026-08-07T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 1,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-08-07T03:00:00.000Z",
+              "body": "A PX é uma plataforma que disponibiliza mão de obra para a operação logística, sem necessidade de contratação fixa via RH."
+            },
+            {
+              "occurredAt": "2026-08-07T03:00:00.000Z",
+              "body": "Assim como a Krona, nós somos de Joinville, mas temos atuação nacional em empresas como Votorantim e Ambev."
+            },
+            {
+              "occurredAt": "2026-08-07T03:00:00.000Z",
+              "body": "Acredito que temos muitas oportunidades no Grupo Krona."
+            },
+            {
+              "occurredAt": "2026-08-07T03:00:00.000Z",
+              "body": "Para isso, o melhor contato seria contigo?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
     }
   ]
 }

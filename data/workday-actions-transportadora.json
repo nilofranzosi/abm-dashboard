@@ -1,114 +1,464 @@
 {
-  "generatedAt": "2026-07-10T20:27:33.804Z",
+  "generatedAt": "2026-07-09T12:35:27.504Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
-  "acceptedConnectionsWithoutMessage": [
+  "acceptedConnectionsWithoutMessage": [],
+  "overdueNextActions": [],
+  "staleCompanies30Days": [],
+  "unmatchedInboxThreads": [
     {
-      "id": "cmrfe0aat0019k70ovgf4fxlm",
-      "company": {
-        "id": "cmrfe0aad0012k70oluu52foc",
-        "name": "Snapshot Co explicit-tra",
-        "status": "CONNECTION_SENT"
-      },
+      "id": "cmr9hjy0l000vk7x0iq9sqs9f",
+      "company": null,
       "contact": {
-        "id": "cmrfe0aaj0014k70ox7bwib7p",
-        "name": "Contato Snapshot explicit-tra"
+        "id": "cmr9hjy0l000vk7x0iq9sqs9f",
+        "name": "Diego Coelho"
       },
       "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-05-19T12:00:00.000Z",
-      "severity": "critical"
-    }
-  ],
-  "overdueNextActions": [
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-07-06T03:00:00.000Z",
+      "severity": "warning"
+    },
     {
-      "id": "cmrfe0aad0012k70oluu52foc",
-      "company": {
-        "id": "cmrfe0aad0012k70oluu52foc",
-        "name": "Snapshot Co explicit-tra",
-        "status": "CONNECTION_SENT"
+      "id": "cmr9hdx2y0015k7ggu3xfsgfp",
+      "company": null,
+      "contact": {
+        "id": "cmr9hdx2y0015k7ggu3xfsgfp",
+        "name": "RENATA CRISTINA LOURENÇO FIORAVANTE"
       },
-      "contact": null,
-      "owner": {
-        "id": "cmrfe0aaa0010k70ojwkdyu4m",
-        "name": "Nilo Snapshot explicit-tra"
-      },
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Definir e executar o próximo passo da conta.",
-      "dueAt": "2026-05-01T12:00:00.000Z",
-      "severity": "critical"
-    }
-  ],
-  "staleCompanies30Days": [
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-07-06T03:00:00.000Z",
+      "severity": "warning"
+    },
     {
-      "id": "cmrfe0aad0012k70oluu52foc",
-      "company": {
-        "id": "cmrfe0aad0012k70oluu52foc",
-        "name": "Snapshot Co explicit-tra",
-        "status": "CONNECTION_SENT"
+      "id": "cmr0welgx000bk7hk3btf2n8a",
+      "company": null,
+      "contact": {
+        "id": "cmr0welgx000bk7hk3btf2n8a",
+        "name": "Maximiliano Limberger"
       },
-      "contact": null,
-      "owner": {
-        "id": "cmrfe0aaa0010k70ojwkdyu4m",
-        "name": "Nilo Snapshot explicit-tra"
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welgl0009k7hkibzuhfw6",
+      "company": null,
+      "contact": {
+        "id": "cmr0welgl0009k7hkibzuhfw6",
+        "name": "Gabriel Dal Sasso"
       },
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welgf0007k7hks3pigr35",
+      "company": null,
+      "contact": {
+        "id": "cmr0welgf0007k7hks3pigr35",
+        "name": "Cristiano Quadros"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welga0005k7hkmrfhkk3l",
+      "company": null,
+      "contact": {
+        "id": "cmr0welga0005k7hkmrfhkk3l",
+        "name": "Ricardo Schilder Lima"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welfp0003k7hk5tos2ied",
+      "company": null,
+      "contact": {
+        "id": "cmr0welfp0003k7hk5tos2ied",
+        "name": "Vinicius Benincasa"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtxtzv80007k7pk53dx5rvy",
+      "company": null,
+      "contact": {
+        "id": "cmqtxtzv80007k7pk53dx5rvy",
+        "name": "Carlos H. Medeiros"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-29T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtxtzv40005k7pk39we3cnd",
+      "company": null,
+      "contact": {
+        "id": "cmqtxtzv40005k7pk39we3cnd",
+        "name": "Rafael Romani"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-29T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtxtzuu0003k7pk2aknfpvx",
+      "company": null,
+      "contact": {
+        "id": "cmqtxtzuu0003k7pk2aknfpvx",
+        "name": "Marcos Parodes"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-29T14:15:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtxtztz0001k7pkm2plmmfd",
+      "company": null,
+      "contact": {
+        "id": "cmqtxtztz0001k7pkm2plmmfd",
+        "name": "Leandro Luiz Katayama Ribeiro"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-29T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rl4d0003k704mqstzvgh",
+      "company": null,
+      "contact": {
+        "id": "cmql5rl4d0003k704mqstzvgh",
+        "name": "Felipe Rosa"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-18T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rl420001k7040ozugou8",
+      "company": null,
+      "contact": {
+        "id": "cmql5rl420001k7040ozugou8",
+        "name": "Alex Soares"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-18T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqscw6a60007k780eq6zdkp4",
+      "company": null,
+      "contact": {
+        "id": "cmqscw6a60007k780eq6zdkp4",
+        "name": "Marcelo Fornereto"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-24T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqscw69z0005k780su8wezdp",
+      "company": null,
+      "contact": {
+        "id": "cmqscw69z0005k780su8wezdp",
+        "name": "Fábio José Silva"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-24T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqscw69u0003k780gwoau5sk",
+      "company": null,
+      "contact": {
+        "id": "cmqscw69u0003k780gwoau5sk",
+        "name": "Luciano Xavier de Miranda"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-24T17:19:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqscw68t0001k7804ro5tnrg",
+      "company": null,
+      "contact": {
+        "id": "cmqscw68t0001k7804ro5tnrg",
+        "name": "Leonardo Alfaro"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-24T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqr4f74u0003k720qyiqsvjn",
+      "company": null,
+      "contact": {
+        "id": "cmqr4f74u0003k720qyiqsvjn",
+        "name": "Fabio Artifon"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-23T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqr4f7480001k720mwtp3bzj",
+      "company": null,
+      "contact": {
+        "id": "cmqr4f7480001k720mwtp3bzj",
+        "name": "ADRIANO ROSA DELFINO"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-23T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqqwison0001k73stu2xokmo",
+      "company": null,
+      "contact": {
+        "id": "cmqqwison0001k73stu2xokmo",
+        "name": "Marcelo Simões Pato"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-23T16:45:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqpny4f70005k7zctdmzku3w",
+      "company": null,
+      "contact": {
+        "id": "cmqpny4f70005k7zctdmzku3w",
+        "name": "Eduardo Loyola"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-22T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqpny4df0001k7zcbixhtf2b",
+      "company": null,
+      "contact": {
+        "id": "cmqpny4df0001k7zcbixhtf2b",
+        "name": "Ricardo Dinelli"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-22T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rlax001ck704c6u8qi5b",
+      "company": null,
+      "contact": {
+        "id": "cmql5rlax001ck704c6u8qi5b",
+        "name": "José Amaral"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-09T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqp6gjfi0001k7agc00qn18p",
+      "company": null,
+      "contact": {
+        "id": "cmqp6gjfi0001k7agc00qn18p",
+        "name": "Felipe Feteira do Vale"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-22T17:36:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rlb2001ek704zgc87b08",
+      "company": null,
+      "contact": {
+        "id": "cmql5rlb2001ek704zgc87b08",
+        "name": "Thomas Gris"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-09T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rl4h0005k704di77xyab",
+      "company": null,
+      "contact": {
+        "id": "cmql5rl4h0005k704di77xyab",
+        "name": "Artur Izaias"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-19T11:32:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45sa004uk7o02akwdnmh",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45sa004uk7o02akwdnmh",
+        "name": "Ricardo Capello"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-04-13T16:48:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45k6001qk7o0c6hbpccp",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45k6001qk7o0c6hbpccp",
+        "name": "Olinto Lopes Neto"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-11T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45jy001ok7o0csaaafqo",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45jy001ok7o0csaaafqo",
+        "name": "Alexandre Westphalen"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-11T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45io001ck7o0mgw1o8s5",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45io001ck7o0mgw1o8s5",
+        "name": "Rafael Caldas"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-14T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45ii001ak7o05ykroxna",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45ii001ak7o05ykroxna",
+        "name": "Luciana de Andrade"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-15T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45i60016k7o0ez5hotlz",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45i60016k7o0ez5hotlz",
+        "name": "Daniel Castello Branco Augusto"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-18T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45hi000zk7o0gw3xnm7y",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45hi000zk7o0gw3xnm7y",
+        "name": "Rodrigo Lima"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-18T19:46:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45hf000xk7o0leptlt73",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45hf000xk7o0leptlt73",
+        "name": "Rafael Ferreira Costa"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-20T03:00:00.000Z",
       "severity": "warning"
     }
   ],
-  "unmatchedInboxThreads": [],
-  "pendingHandoffs": [
-    {
-      "id": "cmrfe0aad0012k70oluu52foc",
-      "company": {
-        "id": "cmrfe0aad0012k70oluu52foc",
-        "name": "Snapshot Co explicit-tra",
-        "status": "CONNECTION_SENT"
-      },
-      "contact": null,
-      "owner": {
-        "id": "cmrfe0aaa0010k70ojwkdyu4m",
-        "name": "Nilo Snapshot explicit-tra"
-      },
-      "reason": "Handoff pendente: CONTACT_ROUTED.",
-      "recommendedAction": "Completar checklist de handoff e confirmar owner responsável.",
-      "dueAt": "2026-05-01T12:00:00.000Z",
-      "severity": "critical"
-    }
-  ],
-  "newSignalsWithoutNextAction": [
-    {
-      "id": "cmrfe0aax001bk70oot2th3f2",
-      "company": {
-        "id": "cmrfe0aad0012k70oluu52foc",
-        "name": "Snapshot Co explicit-tra",
-        "status": "CONNECTION_SENT"
-      },
-      "contact": {
-        "id": "cmrfe0aaj0014k70ox7bwib7p",
-        "name": "Contato Snapshot explicit-tra"
-      },
-      "owner": {
-        "id": "cmrfe0aaa0010k70ojwkdyu4m",
-        "name": "Nilo Snapshot explicit-tra"
-      },
-      "reason": "Novo sinal JOB_OPENING sem próxima ação definida.",
-      "recommendedAction": "Converter sinal em próxima ação ou ignorar após revisão.",
-      "dueAt": "2026-05-19T14:00:00.000Z",
-      "severity": "info"
-    }
-  ],
+  "pendingHandoffs": [],
+  "newSignalsWithoutNextAction": [],
   "summary": {
     "highTierNotStarted": 0,
     "recentConnectionsSent": 0,
-    "acceptedConnectionsWithoutMessage": 1,
-    "overdueNextActions": 1,
-    "staleCompanies30Days": 1,
-    "unmatchedInboxThreads": 0,
-    "pendingHandoffs": 1,
-    "newSignalsWithoutNextAction": 1
+    "acceptedConnectionsWithoutMessage": 0,
+    "overdueNextActions": 0,
+    "staleCompanies30Days": 0,
+    "unmatchedInboxThreads": 34,
+    "pendingHandoffs": 0,
+    "newSignalsWithoutNextAction": 0
   }
 }

@@ -112,9 +112,6 @@
     .btn-refresh:disabled { background:#94A3B8; cursor:not-allowed; }
     .btn-refresh .spin { display:inline-block; }
     .btn-refresh.loading .spin { animation:spin .8s linear infinite; }
-    .btn-export { display:inline-flex; align-items:center; gap:7px; background:transparent; color:var(--blue); border:1.5px solid var(--blue); border-radius:6px; padding:8px 16px; font-size:13px; font-weight:700; cursor:pointer; white-space:nowrap; transition:all .15s; }
-    .btn-export:hover { background:var(--blue); color:white; }
-    .btn-export:disabled { border-color:#94A3B8; color:#94A3B8; cursor:not-allowed; }
     @keyframes spin { to { transform:rotate(360deg); } }
     .weekly-toolbar { display:flex; justify-content:space-between; align-items:center; background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:12px 18px; }
     .weekly-toolbar .meta { font-size:13px; color:var(--muted); }
@@ -170,22 +167,21 @@
 
       <div id="weekly" class="section-view active">
         <div class="weekly-toolbar">
-          <div class="meta">Pipeline de Contas Abordadas · <strong>04/08/2026, 15:49:10</strong></div>
-          <div style="display:flex;align-items:center;gap:10px">
+          <div class="meta">Pipeline de Contas Abordadas · <strong>06/08/2026, 17:40:44</strong></div>
+          <div style="display:flex;align-items:center;gap:12px">
             <span id="refresh-status"></span>
-            <button class="btn-export" id="btn-export" onclick="exportDashboard()">⬇ Exportar</button>
             <button class="btn-refresh" id="btn-refresh" onclick="refreshDashboard()"><span class="spin">↻</span> Atualizar</button>
           </div>
         </div>
         <div class="grid">
-          <div class="kpi volume"><span class="kpi-label">Empresas no pipeline</span><strong class="kpi-value">112</strong></div>
-          <div class="kpi volume"><span class="kpi-label">Total abordadas</span><strong class="kpi-value">121</strong></div>
-          <div class="kpi volume"><span class="kpi-label">Pausadas</span><strong class="kpi-value">9</strong></div>
-          <div class="kpi volume"><span class="kpi-label">Com resposta ou mais</span><strong class="kpi-value">20</strong></div>
-          <div class="kpi conversion"><span class="kpi-label">Taxa de resposta</span><strong class="kpi-value">17,9%</strong></div>
-          <div class="kpi conversion"><span class="kpi-label">Taxa de reunião</span><strong class="kpi-value">6,3%</strong></div>
-          <div class="kpi conversion"><span class="kpi-label">Taxa de negociação</span><strong class="kpi-value">5,4%</strong></div>
-          <div class="kpi time"><span class="kpi-label">Tempo até 1ª resposta</span><strong class="kpi-value">5,7 dias</strong></div>
+          <div class="kpi volume"><span class="kpi-label">Empresas no pipeline</span><strong class="kpi-value">159</strong></div>
+          <div class="kpi volume"><span class="kpi-label">Total abordadas</span><strong class="kpi-value">169</strong></div>
+          <div class="kpi volume"><span class="kpi-label">Pausadas</span><strong class="kpi-value">10</strong></div>
+          <div class="kpi volume"><span class="kpi-label">Com resposta ou mais</span><strong class="kpi-value">23</strong></div>
+          <div class="kpi conversion"><span class="kpi-label">Taxa de resposta</span><strong class="kpi-value">14,5%</strong></div>
+          <div class="kpi conversion"><span class="kpi-label">Taxa de reunião</span><strong class="kpi-value">4,4%</strong></div>
+          <div class="kpi conversion"><span class="kpi-label">Taxa de negócio</span><strong class="kpi-value">3,8%</strong></div>
+          <div class="kpi time"><span class="kpi-label">Tempo até 1ª resposta</span><strong class="kpi-value">7,6 dias</strong></div>
         </div>
 
         <div class="icp-coverage">
@@ -195,77 +191,77 @@
                 <svg width="120" height="120" viewBox="0 0 120 120">
                   <circle cx="60" cy="60" r="48" fill="none" stroke="#e5e7eb" stroke-width="12"/>
                   <circle cx="60" cy="60" r="48" fill="none" stroke="#0F52BA" stroke-width="12"
-                    stroke-dasharray="171.70 301.59"
+                    stroke-dasharray="198.56 301.59"
                     stroke-linecap="round" transform="rotate(-90 60 60)"/>
-                  <text x="60" y="56" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">57%</text>
+                  <text x="60" y="56" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">66%</text>
                   <text x="60" y="72" text-anchor="middle" font-size="10" fill="#6b7280">abordadas</text>
                 </svg>
                 <div class="icp-donut-legend">
-                  <div class="icp-legend-item"><span class="icp-dot approached"></span>115 abordadas</div>
-                  <div class="icp-legend-item"><span class="icp-dot remaining"></span>87 a abordar</div>
-                  <div class="icp-legend-total">202 mapeadas</div>
+                  <div class="icp-legend-item"><span class="icp-dot approached"></span>106 abordadas</div>
+                  <div class="icp-legend-item"><span class="icp-dot remaining"></span>55 a abordar</div>
+                  <div class="icp-legend-total">161 mapeadas</div>
                 </div>
               </div>
               <div>
                 <div class="icp-seg-header"><span>Segmento</span><span></span><span style="text-align:right">Abord./Total</span><span style="text-align:right">Cob.</span></div>
                 <div class="icp-seg-row">
-              <div class="icp-seg-label">E-commerce &amp; Varejo</div>
-              <div><div class="icp-seg-bar-bg" style="width:100%"><div class="icp-seg-bar-fill" style="width:60%"></div></div></div>
-              <div class="icp-seg-counts">28<span class="icp-seg-total">/47</span></div>
-              <div class="icp-seg-pct">60%</div>
-            </div><div class="icp-seg-row">
               <div class="icp-seg-label">Alimentos &amp; Bebidas</div>
-              <div><div class="icp-seg-bar-bg" style="width:57%"><div class="icp-seg-bar-fill" style="width:67%"></div></div></div>
-              <div class="icp-seg-counts">18<span class="icp-seg-total">/27</span></div>
+              <div><div class="icp-seg-bar-bg" style="width:100%"><div class="icp-seg-bar-fill" style="width:67%"></div></div></div>
+              <div class="icp-seg-counts">14<span class="icp-seg-total">/21</span></div>
               <div class="icp-seg-pct">67%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Construção Civil</div>
-              <div><div class="icp-seg-bar-bg" style="width:43%"><div class="icp-seg-bar-fill" style="width:40%"></div></div></div>
-              <div class="icp-seg-counts">8<span class="icp-seg-total">/20</span></div>
-              <div class="icp-seg-pct">40%</div>
+              <div><div class="icp-seg-bar-bg" style="width:95%"><div class="icp-seg-bar-fill" style="width:55%"></div></div></div>
+              <div class="icp-seg-counts">11<span class="icp-seg-total">/20</span></div>
+              <div class="icp-seg-pct">55%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">E-commerce &amp; Varejo</div>
+              <div><div class="icp-seg-bar-bg" style="width:81%"><div class="icp-seg-bar-fill" style="width:82%"></div></div></div>
+              <div class="icp-seg-counts">14<span class="icp-seg-total">/17</span></div>
+              <div class="icp-seg-pct">82%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Farmacêutico &amp; Saúde</div>
-              <div><div class="icp-seg-bar-bg" style="width:36%"><div class="icp-seg-bar-fill" style="width:71%"></div></div></div>
-              <div class="icp-seg-counts">12<span class="icp-seg-total">/17</span></div>
-              <div class="icp-seg-pct">71%</div>
-            </div><div class="icp-seg-row">
-              <div class="icp-seg-label">Combustíveis, Energia &amp; Química</div>
-              <div><div class="icp-seg-bar-bg" style="width:36%"><div class="icp-seg-bar-fill" style="width:65%"></div></div></div>
-              <div class="icp-seg-counts">11<span class="icp-seg-total">/17</span></div>
-              <div class="icp-seg-pct">65%</div>
+              <div><div class="icp-seg-bar-bg" style="width:76%"><div class="icp-seg-bar-fill" style="width:106%"></div></div></div>
+              <div class="icp-seg-counts">17<span class="icp-seg-total">/16</span></div>
+              <div class="icp-seg-pct">106%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Indústria Pesada</div>
-              <div><div class="icp-seg-bar-bg" style="width:36%"><div class="icp-seg-bar-fill" style="width:76%"></div></div></div>
-              <div class="icp-seg-counts">13<span class="icp-seg-total">/17</span></div>
-              <div class="icp-seg-pct">76%</div>
+              <div><div class="icp-seg-bar-bg" style="width:76%"><div class="icp-seg-bar-fill" style="width:81%"></div></div></div>
+              <div class="icp-seg-counts">13<span class="icp-seg-total">/16</span></div>
+              <div class="icp-seg-pct">81%</div>
+            </div><div class="icp-seg-row">
+              <div class="icp-seg-label">Combustíveis, Energia &amp; Química</div>
+              <div><div class="icp-seg-bar-bg" style="width:67%"><div class="icp-seg-bar-fill" style="width:57%"></div></div></div>
+              <div class="icp-seg-counts">8<span class="icp-seg-total">/14</span></div>
+              <div class="icp-seg-pct">57%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Agro &amp; Commodities</div>
-              <div><div class="icp-seg-bar-bg" style="width:28%"><div class="icp-seg-bar-fill" style="width:46%"></div></div></div>
+              <div><div class="icp-seg-bar-bg" style="width:62%"><div class="icp-seg-bar-fill" style="width:46%"></div></div></div>
               <div class="icp-seg-counts">6<span class="icp-seg-total">/13</span></div>
               <div class="icp-seg-pct">46%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Cosméticos &amp; Higiene</div>
-              <div><div class="icp-seg-bar-bg" style="width:23%"><div class="icp-seg-bar-fill" style="width:64%"></div></div></div>
-              <div class="icp-seg-counts">7<span class="icp-seg-total">/11</span></div>
-              <div class="icp-seg-pct">64%</div>
+              <div><div class="icp-seg-bar-bg" style="width:52%"><div class="icp-seg-bar-fill" style="width:91%"></div></div></div>
+              <div class="icp-seg-counts">10<span class="icp-seg-total">/11</span></div>
+              <div class="icp-seg-pct">91%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Automotivo &amp; Pneus</div>
-              <div><div class="icp-seg-bar-bg" style="width:23%"><div class="icp-seg-bar-fill" style="width:36%"></div></div></div>
+              <div><div class="icp-seg-bar-bg" style="width:52%"><div class="icp-seg-bar-fill" style="width:36%"></div></div></div>
               <div class="icp-seg-counts">4<span class="icp-seg-total">/11</span></div>
               <div class="icp-seg-pct">36%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Têxtil &amp; Vestuário</div>
-              <div><div class="icp-seg-bar-bg" style="width:21%"><div class="icp-seg-bar-fill" style="width:30%"></div></div></div>
-              <div class="icp-seg-counts">3<span class="icp-seg-total">/10</span></div>
-              <div class="icp-seg-pct">30%</div>
+              <div><div class="icp-seg-bar-bg" style="width:48%"><div class="icp-seg-bar-fill" style="width:40%"></div></div></div>
+              <div class="icp-seg-counts">4<span class="icp-seg-total">/10</span></div>
+              <div class="icp-seg-pct">40%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Eletro &amp; Tecnologia</div>
-              <div><div class="icp-seg-bar-bg" style="width:17%"><div class="icp-seg-bar-fill" style="width:63%"></div></div></div>
+              <div><div class="icp-seg-bar-bg" style="width:38%"><div class="icp-seg-bar-fill" style="width:63%"></div></div></div>
               <div class="icp-seg-counts">5<span class="icp-seg-total">/8</span></div>
               <div class="icp-seg-pct">63%</div>
             </div><div class="icp-seg-row">
               <div class="icp-seg-label">Logística &amp; Transporte</div>
-              <div><div class="icp-seg-bar-bg" style="width:9%"><div class="icp-seg-bar-fill" style="width:0%"></div></div></div>
+              <div><div class="icp-seg-bar-bg" style="width:19%"><div class="icp-seg-bar-fill" style="width:0%"></div></div></div>
               <div class="icp-seg-counts">0<span class="icp-seg-total">/4</span></div>
               <div class="icp-seg-pct">0%</div>
             </div>
@@ -276,21 +272,21 @@
         <div class="two-col">
           <section class="panel-card">
             <h2>Funil Da Semana</h2>
-            <div class="barrow"><div>Conexão Enviada</div><div class="bar"><span style="width:61%"></span></div><div class="funnel-value">22</div></div>
-<div class="barrow"><div>Conexão Aceita</div><div class="bar"><span style="width:28%"></span></div><div class="funnel-value">10</div></div>
-<div class="barrow"><div>Mensagem Enviada</div><div class="bar"><span style="width:100%"></span></div><div class="funnel-value">36</div></div>
-<div class="barrow"><div>Follow-Up Enviado</div><div class="bar"><span style="width:67%"></span></div><div class="funnel-value">24</div></div>
-<div class="barrow"><div>Respondeu</div><div class="bar"><span style="width:36%"></span></div><div class="funnel-value">13</div></div>
+            <div class="barrow"><div>Conexão Enviada</div><div class="bar"><span style="width:14%"></span></div><div class="funnel-value">13</div></div>
+<div class="barrow"><div>Conexão Aceita</div><div class="bar"><span style="width:4%"></span></div><div class="funnel-value">4</div></div>
+<div class="barrow"><div>Mensagem Enviada</div><div class="bar"><span style="width:100%"></span></div><div class="funnel-value">90</div></div>
+<div class="barrow"><div>Follow-Up Enviado</div><div class="bar"><span style="width:32%"></span></div><div class="funnel-value">29</div></div>
+<div class="barrow"><div>Respondeu</div><div class="bar"><span style="width:18%"></span></div><div class="funnel-value">16</div></div>
 <div class="barrow"><div>Reunião Realizada</div><div class="bar"><span style="width:4%"></span></div><div class="funnel-value">1</div></div>
-<div class="barrow"><div>Negócio</div><div class="bar"><span style="width:17%"></span></div><div class="funnel-value">6</div></div>
+<div class="barrow"><div>Negócio</div><div class="bar"><span style="width:7%"></span></div><div class="funnel-value">6</div></div>
           </section>
           <section class="panel-card">
             <h2>Touchpoints E Tempo</h2>
             <table class="touchpoints-table"><tbody>
-              <tr><td>Touchpoints enviados</td><td class="num">22</td></tr>
-              <tr><td>Touchpoints recebidos</td><td class="num">4</td></tr>
-              <tr class="time"><td>Média desde último outbound</td><td class="num">0,9 dias</td></tr>
-              <tr class="time"><td>Tempo médio até 1ª resposta</td><td class="num">5,7 dias</td></tr>
+              <tr><td>Touchpoints enviados</td><td class="num">30</td></tr>
+              <tr><td>Touchpoints recebidos</td><td class="num">7</td></tr>
+              <tr class="time"><td>Média desde último outbound</td><td class="num">1,3 dias</td></tr>
+              <tr class="time"><td>Tempo médio até 1ª resposta</td><td class="num">7,6 dias</td></tr>
             </tbody></table>
           </section>
         </div>
@@ -298,14 +294,16 @@
             <h2>Evolução Semanal do Pipeline</h2>
             <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:16px;overflow-x:auto">
               <div><div style="font-size:11px;font-weight:700;color:#9CA3AF;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Pipeline</div><svg viewBox="0 0 320 190" style="width:100%;height:auto;display:block;overflow:visible"><line x1="32" y1="160.0" x2="310" y2="160.0" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="27" y="164.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">0</text><line x1="32" y1="140.6" x2="310" y2="140.6" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="27" y="144.6" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">20</text><line x1="32" y1="121.1" x2="310" y2="121.1" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="27" y="125.1" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">40</text><line x1="32" y1="101.7" x2="310" y2="101.7" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="27" y="105.7" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">60</text><line x1="32" y1="82.3" x2="310" y2="82.3" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="27" y="86.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">80</text><line x1="32" y1="62.9" x2="310" y2="62.9" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="27" y="66.9" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">100</text><line x1="32" y1="43.4" x2="310" y2="43.4" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="27" y="47.4" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">120</text><line x1="32" y1="24.0" x2="310" y2="24.0" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="27" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">140</text><path d="M32.0,114.3 L71.7,98.8 L111.4,94.9 L151.1,90.1 L190.9,79.4 L230.6,71.6 L270.3,45.4 L310.0,42.5 L310.0,160 L32.0,160 Z" fill="#0F52BA" opacity=".09"/><path d="M32.0,121.1 L71.7,113.4 L111.4,97.8 L151.1,99.8 L190.9,89.1 L230.6,81.3 L270.3,54.1 L310.0,51.2 L310.0,160 L32.0,160 Z" fill="#059669" opacity=".09"/><path d="M32.0,114.3 L71.7,98.8 L111.4,94.9 L151.1,90.1 L190.9,79.4 L230.6,71.6 L270.3,45.4 L310.0,42.5" fill="none" stroke="#0F52BA" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M32.0,121.1 L71.7,113.4 L111.4,97.8 L151.1,99.8 L190.9,89.1 L230.6,81.3 L270.3,54.1 L310.0,51.2" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="32.0" cy="114.3" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="71.7" cy="98.8" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="111.4" cy="94.9" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="151.1" cy="90.1" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="190.9" cy="79.4" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="230.6" cy="71.6" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="270.3" cy="45.4" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="310.0" cy="42.5" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="32.0" cy="121.1" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="71.7" cy="113.4" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="111.4" cy="97.8" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="151.1" cy="99.8" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="190.9" cy="89.1" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="230.6" cy="81.3" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="270.3" cy="54.1" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="310.0" cy="51.2" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><text x="32.0" y="105.3" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">47</text><text x="71.7" y="89.8" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">63</text><text x="111.4" y="85.9" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">67</text><text x="151.1" y="81.1" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">72</text><text x="190.9" y="70.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">83</text><text x="230.6" y="62.6" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">91</text><text x="270.3" y="36.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">118</text><text x="310.0" y="33.5" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">121</text><text x="32.0" y="136.1" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">40</text><text x="71.7" y="128.4" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">48</text><text x="111.4" y="112.8" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">64</text><text x="151.1" y="114.8" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">62</text><text x="190.9" y="104.1" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">73</text><text x="230.6" y="96.3" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">81</text><text x="270.3" y="69.1" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">109</text><text x="310.0" y="66.2" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">112</text><text x="32.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="71.7" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="111.4" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="151.1" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="190.9" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S29</text><text x="230.6" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S30</text><text x="270.3" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S31</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text></svg><div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#0F52BA;border-radius:2px"></span>Total abordadas</div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#059669;border-radius:2px"></span>Pipeline ativo</div></div></div>
+                       <text x="27" y="164.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">0</text><line x1="32" y1="144.9" x2="310" y2="144.9" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="148.9" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">20</text><line x1="32" y1="129.8" x2="310" y2="129.8" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="133.8" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">40</text><line x1="32" y1="114.7" x2="310" y2="114.7" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="118.7" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">60</text><line x1="32" y1="99.6" x2="310" y2="99.6" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="103.6" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">80</text><line x1="32" y1="84.4" x2="310" y2="84.4" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="88.4" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">100</text><line x1="32" y1="69.3" x2="310" y2="69.3" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="73.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">120</text><line x1="32" y1="54.2" x2="310" y2="54.2" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="58.2" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">140</text><line x1="32" y1="39.1" x2="310" y2="39.1" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="43.1" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">160</text><line x1="32" y1="24.0" x2="310" y2="24.0" stroke="#E4EAF4" stroke-width="1"/>
+                       <text x="27" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">180</text><path d="M32.0,124.5 L101.5,112.4 L171.0,109.4 L240.5,107.9 L310.0,32.3 L310.0,160 L32.0,160 Z" fill="#0F52BA" opacity=".09"/><path d="M32.0,129.8 L101.5,123.7 L171.0,111.6 L240.5,111.6 L310.0,39.9 L310.0,160 L32.0,160 Z" fill="#059669" opacity=".09"/><path d="M32.0,124.5 L101.5,112.4 L171.0,109.4 L240.5,107.9 L310.0,32.3" fill="none" stroke="#0F52BA" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M32.0,129.8 L101.5,123.7 L171.0,111.6 L240.5,111.6 L310.0,39.9" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="32.0" cy="124.5" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="101.5" cy="112.4" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="171.0" cy="109.4" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="240.5" cy="107.9" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="310.0" cy="32.3" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="32.0" cy="129.8" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="101.5" cy="123.7" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="171.0" cy="111.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="240.5" cy="111.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="310.0" cy="39.9" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><text x="32.0" y="115.5" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">47</text><text x="101.5" y="103.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">63</text><text x="171.0" y="100.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">67</text><text x="240.5" y="98.9" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">69</text><text x="310.0" y="23.3" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">169</text><text x="32.0" y="144.8" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">40</text><text x="101.5" y="138.7" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">48</text><text x="171.0" y="126.6" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">64</text><text x="240.5" y="126.6" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">64</text><text x="310.0" y="54.9" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">159</text><text x="32.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="101.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="171.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="240.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text></svg><div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#0F52BA;border-radius:2px"></span>Total abordadas</div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#059669;border-radius:2px"></span>Pipeline ativo</div></div></div>
               <div><div style="font-size:11px;font-weight:700;color:#9CA3AF;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Conversão</div><svg viewBox="0 0 320 190" style="width:100%;height:auto;display:block;overflow:visible"><line x1="30" y1="160.0" x2="284" y2="160.0" stroke="#E4EAF4" stroke-width="1"/>
                        <text x="25" y="164.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">0%</text><line x1="30" y1="140.6" x2="284" y2="140.6" stroke="#E4EAF4" stroke-width="1"/>
                        <text x="25" y="144.6" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">5%</text><line x1="30" y1="121.1" x2="284" y2="121.1" stroke="#E4EAF4" stroke-width="1"/>
@@ -314,7 +312,7 @@
                        <text x="25" y="86.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">20%</text><line x1="30" y1="62.9" x2="284" y2="62.9" stroke="#E4EAF4" stroke-width="1"/>
                        <text x="25" y="66.9" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">25%</text><line x1="30" y1="43.4" x2="284" y2="43.4" stroke="#E4EAF4" stroke-width="1"/>
                        <text x="25" y="47.4" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">30%</text><line x1="30" y1="24.0" x2="284" y2="24.0" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="25" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">35%</text><path d="M30.0,72.6 L66.3,54.8 L102.6,81.1 L138.9,78.5 L175.1,80.2 L211.4,83.2 L247.7,88.7 L284.0,90.6 L284.0,160 L30.0,160 Z" fill="#0F52BA" opacity=".09"/><path d="M30.0,140.6 L66.3,111.4 L102.6,123.6 L138.9,116.1 L175.1,122.7 L211.4,126.4 L247.7,135.0 L284.0,135.7 L284.0,160 L30.0,160 Z" fill="#059669" opacity=".09"/><path d="M30.0,159.8 L66.3,159.6 L102.6,159.7 L138.9,159.6 L175.1,159.7 L211.4,159.8 L247.7,159.8 L284.0,159.8 L284.0,160 L30.0,160 Z" fill="#D97706" opacity=".09"/><path d="M30.0,72.6 L66.3,54.8 L102.6,81.1 L138.9,78.5 L175.1,80.2 L211.4,83.2 L247.7,88.7 L284.0,90.6" fill="none" stroke="#0F52BA" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,140.6 L66.3,111.4 L102.6,123.6 L138.9,116.1 L175.1,122.7 L211.4,126.4 L247.7,135.0 L284.0,135.7" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,159.8 L66.3,159.6 L102.6,159.7 L138.9,159.6 L175.1,159.7 L211.4,159.8 L247.7,159.8 L284.0,159.8" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="30.0" cy="72.6" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="66.3" cy="54.8" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="102.6" cy="81.1" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="138.9" cy="78.5" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="175.1" cy="80.2" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="211.4" cy="83.2" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="247.7" cy="88.7" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="284.0" cy="90.6" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="30.0" cy="140.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="66.3" cy="111.4" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="102.6" cy="123.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="138.9" cy="116.1" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="175.1" cy="122.7" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="211.4" cy="126.4" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="247.7" cy="135.0" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="284.0" cy="135.7" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="30.0" cy="159.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="66.3" cy="159.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="102.6" cy="159.7" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="138.9" cy="159.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="175.1" cy="159.7" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="211.4" cy="159.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="247.7" cy="159.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="284.0" cy="159.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><text x="291.0" y="94.6" font-size="10" font-weight="700" fill="#0F52BA">17.9%</text><text x="291.0" y="139.7" font-size="10" font-weight="700" fill="#059669">6.3%</text><text x="291.0" y="163.8" font-size="10" font-weight="700" fill="#D97706">5.4%</text><text x="30.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="66.3" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="102.6" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="138.9" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="175.1" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S29</text><text x="211.4" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S30</text><text x="247.7" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S31</text><text x="284.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text></svg><div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#0F52BA;border-radius:2px"></span>Taxa resposta</div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#059669;border-radius:2px"></span>Taxa reunião</div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#D97706;border-radius:2px"></span>Taxa negociação</div></div></div>
+                       <text x="25" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">35%</text><path d="M30.0,72.6 L93.5,54.8 L157.0,81.1 L220.5,75.0 L284.0,103.8 L284.0,160 L30.0,160 Z" fill="#0F52BA" opacity=".09"/><path d="M30.0,140.6 L93.5,111.4 L157.0,123.6 L220.5,117.5 L284.0,142.9 L284.0,160 L30.0,160 Z" fill="#059669" opacity=".09"/><path d="M30.0,159.8 L93.5,159.6 L157.0,159.7 L220.5,159.6 L284.0,159.9 L284.0,160 L30.0,160 Z" fill="#D97706" opacity=".09"/><path d="M30.0,72.6 L93.5,54.8 L157.0,81.1 L220.5,75.0 L284.0,103.8" fill="none" stroke="#0F52BA" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,140.6 L93.5,111.4 L157.0,123.6 L220.5,117.5 L284.0,142.9" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,159.8 L93.5,159.6 L157.0,159.7 L220.5,159.6 L284.0,159.9" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="30.0" cy="72.6" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="93.5" cy="54.8" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="157.0" cy="81.1" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="220.5" cy="75.0" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="284.0" cy="103.8" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="30.0" cy="140.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="93.5" cy="111.4" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="157.0" cy="123.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="220.5" cy="117.5" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="284.0" cy="142.9" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="30.0" cy="159.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="93.5" cy="159.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="157.0" cy="159.7" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="220.5" cy="159.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="284.0" cy="159.9" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><text x="291.0" y="107.8" font-size="10" font-weight="700" fill="#0F52BA">14.5%</text><text x="291.0" y="146.9" font-size="10" font-weight="700" fill="#059669">4.4%</text><text x="291.0" y="163.9" font-size="10" font-weight="700" fill="#D97706">3.8%</text><text x="30.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="93.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="157.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="220.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="284.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text></svg><div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#0F52BA;border-radius:2px"></span>Taxa resposta</div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#059669;border-radius:2px"></span>Taxa reunião</div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#D97706;border-radius:2px"></span>Taxa negócio</div></div></div>
               <div><div style="font-size:11px;font-weight:700;color:#9CA3AF;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Velocidade</div><svg viewBox="0 0 320 190" style="width:100%;height:auto;display:block;overflow:visible"><line x1="28" y1="160.0" x2="310" y2="160.0" stroke="#E4EAF4" stroke-width="1"/>
                        <text x="23" y="164.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">0d</text><line x1="28" y1="137.3" x2="310" y2="137.3" stroke="#E4EAF4" stroke-width="1"/>
                        <text x="23" y="141.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">2d</text><line x1="28" y1="114.7" x2="310" y2="114.7" stroke="#E4EAF4" stroke-width="1"/>
@@ -322,7 +320,7 @@
                        <text x="23" y="96.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">6d</text><line x1="28" y1="69.3" x2="310" y2="69.3" stroke="#E4EAF4" stroke-width="1"/>
                        <text x="23" y="73.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">8d</text><line x1="28" y1="46.7" x2="310" y2="46.7" stroke="#E4EAF4" stroke-width="1"/>
                        <text x="23" y="50.7" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">10d</text><line x1="28" y1="24.0" x2="310" y2="24.0" stroke="#E4EAF4" stroke-width="1"/>
-                       <text x="23" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">12d</text><path d="M28.0,65.6 L68.3,76.1 L108.6,83.8 L148.9,77.3 L189.1,70.3 L229.4,82.4 L269.7,95.3 L310.0,95.3 L310.0,160 L28.0,160 Z" fill="#D97706" opacity=".09"/><path d="M28.0,65.6 L68.3,76.1 L108.6,83.8 L148.9,77.3 L189.1,70.3 L229.4,82.4 L269.7,95.3 L310.0,95.3" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="28.0" cy="65.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="68.3" cy="76.1" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="108.6" cy="83.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="148.9" cy="77.3" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="189.1" cy="70.3" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="229.4" cy="82.4" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="269.7" cy="95.3" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="310.0" cy="95.3" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><text x="28.0" y="56.6" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">8.3d</text><text x="68.3" y="67.1" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.4d</text><text x="108.6" y="74.8" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">6.7d</text><text x="148.9" y="68.3" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.3d</text><text x="189.1" y="61.3" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.9d</text><text x="229.4" y="73.4" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">6.8d</text><text x="269.7" y="86.3" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">5.7d</text><text x="310.0" y="86.3" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">5.7d</text><text x="28.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="68.3" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="108.6" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="148.9" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="189.1" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S29</text><text x="229.4" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S30</text><text x="269.7" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S31</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text><text x="310" y="16" text-anchor="end" font-size="9" font-weight="600" fill="#9CA3AF">↓ queda consistente</text></svg><div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#D97706;border-radius:2px"></span>Dias até 1ª resposta</div></div></div>
+                       <text x="23" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">12d</text><path d="M28.0,65.6 L98.5,76.1 L169.0,83.8 L239.5,83.8 L310.0,74.1 L310.0,160 L28.0,160 Z" fill="#D97706" opacity=".09"/><path d="M28.0,65.6 L98.5,76.1 L169.0,83.8 L239.5,83.8 L310.0,74.1" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="28.0" cy="65.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="98.5" cy="76.1" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="169.0" cy="83.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="239.5" cy="83.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="310.0" cy="74.1" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><text x="28.0" y="56.6" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">8.3d</text><text x="98.5" y="67.1" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.4d</text><text x="169.0" y="74.8" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">6.7d</text><text x="239.5" y="74.8" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">6.7d</text><text x="310.0" y="65.1" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.6d</text><text x="28.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="98.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="169.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="239.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text><text x="310" y="16" text-anchor="end" font-size="9" font-weight="600" fill="#9CA3AF">↓ queda consistente</text></svg><div style="display:flex;gap:12px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280"><span style="display:inline-block;width:16px;height:3px;background:#D97706;border-radius:2px"></span>Dias até 1ª resposta</div></div></div>
             </div>
           </section>
 
@@ -337,24 +335,291 @@
 <tr><td><strong>Petrobras</strong></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Negócio</span></td><td class="num">90</td></tr>
 <tr><td><strong>Minerva Foods</strong></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Negócio</span></td><td class="num">90</td></tr>
 <tr><td><strong>Gerdau</strong></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-meeting-done">Reunião Realizada</span></td><td class="num">80</td></tr>
-<tr><td><strong>Casas Bahia</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
-<tr><td><strong>L'Oréal</strong></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
 <tr><td><strong>Continental Pneus</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
 <tr><td><strong>Boticário</strong></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
 <tr><td><strong>Tramontina</strong></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
 <tr><td><strong>Lojas Renner</strong></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
 <tr><td><strong>Nestlé</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
-<tr><td><strong>P&amp;G</strong></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr></tbody>
+<tr><td><strong>P&amp;G</strong></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>Leroy Merlin Brasil</strong></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr>
+<tr><td><strong>MadeiraMadeira</strong></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td><span class="status-badge is-positive">Respondeu</span></td><td class="num">60</td></tr></tbody>
+          </table>
+        </section>
+        <section class="panel-card">
+          <h2>Contatos Ativos (revisão/limpeza)</h2>
+          <p class="muted" style="margin-bottom:14px;">Lista completa dos 260 contatos ativos da semana atual, para apoiar a revisão de quais contatos não fazem parte do escopo ABM.</p>
+          <table class="ranking-table">
+            <thead><tr><th>Contato</th><th>Empresa</th><th>Cargo/Headline</th><th>Status</th><th class="num">TP enviados</th><th class="num">TP recebidos</th><th class="num">Dias desde último contato</th></tr></thead>
+            <tbody><tr><td><strong>Michelle Almeida</strong></td><td>8M Negócios - Estratégia e Operações</td><td>Gerente Sênior de Estratégia e Operações | Performance Comercial e Operacional I Varejo e Bens de Consumo</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Alex Soares</strong></td><td>A apurar</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Andreia Vitoriano</strong></td><td>A apurar</td><td>CHRO | Executiva de RH | Certificada em Coaching</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Beatriz Gomes Lima</strong></td><td>A apurar</td><td>Executiva de Operações | Franquias | Comercial</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fabio Mattos</strong></td><td>A apurar</td><td></td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Felipe Figueiredo Gonçalves</strong></td><td>A apurar</td><td>Vice Presidente de SC Latam - Home Care e Presidente Unilever Brasil Industrial</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Felipe Romera</strong></td><td>A apurar</td><td>Environmental &amp; Sustainability Executive | Industrial &amp; Environmental Operations | ESG Strategy &amp; Performance | Supply Chain</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">2</td><td class="num">4</td><td class="num">24</td></tr>
+<tr><td><strong>Felipe Rosa</strong></td><td>A apurar</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Fernando Sampaio</strong></td><td>A apurar</td><td>Presidente Sanofi Brazil &amp; Gerente Geral Pharma | Presidente Interfarma | Diretor FIESP – DECOMSAUDE</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Gustavo Sanches</strong></td><td>A apurar</td><td>Matemático | Desenvolvedor | Cientista de Dados | Inteligência Artificial | Modelagem Matemática | Otimização | Pesquisa Operacional | Desenvolvimento de Software em Python</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>João Roberto Galhardo</strong></td><td>A apurar</td><td>Vice-presidente de Supply Chain</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Marco Ribeiro</strong></td><td>A apurar</td><td>Head de Supply Chain | Especialista em Planejamento de Operações Logísticas, Transportes e Operações Agrícolas | Foco em Eficiência e Transformação de Processos</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Rafael H.</strong></td><td>A apurar</td><td>A Nerd who became a Data Driven Marketing Gangster, AI Enthusiast, Branding Growth Specialist.</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Thomas Gris</strong></td><td>A apurar</td><td>Início</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">1</td><td class="num">0</td><td class="num">10</td></tr>
+<tr><td><strong>Valéria Estelita</strong></td><td>A apurar</td><td>--</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Vânia Ferreira Xavier</strong></td><td>A apurar</td><td>Diretora de Suprimentos | Grupo Cimed</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>João Bruno Pereira</strong></td><td>Abiomed - J&amp;J MedTech</td><td>Director, Global Supply Chain Planning at Abiomed - J&amp;J MedTech</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Bárbara Forlin</strong></td><td>Aché</td><td>Diretora de suprimentos | Head de suprimentos | Aché Laboratórios Farmacêuticos</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Márcia Andrade</strong></td><td>Aché Laboratórios</td><td>Gerente Sr de Operações Logísticas | Supply Chain | Planejamento | Demanda | Customer Service</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Wilson Junior</strong></td><td>Aché Laboratórios Farmacêuticos</td><td>Diretor Presidente | Aché</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Aurélio Souza</strong></td><td>ALE Combustíveis</td><td>Executivo de Logística | Operações | Supply Chain | Trading | Planejamento Integrado | MBA em Gestão de Negócios</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fernando Diniz</strong></td><td>Alpargatas S.A.</td><td>Global Procurement Director @ Alpargatas S.A. | CPIM, IMD Digital Transformation</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Otavio Mendonça</strong></td><td>Amanco Wavin</td><td>Executivo de Operações | Logística, Transportes &amp; Customer Service | Gestão de Estruturas Multiplantas | Eficiência Operacional e Desenvolvimento de Lideranças | LinkedIn Top Voice em Gestão de Logística e de Transportes</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">2</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td><strong>Felipe Araujo</strong></td><td>Amazon</td><td>Sort Center | Operações | Transportes e Distribuição | First Mile e Line Haul | Gestão de Frota, Equipes e Indicadores</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Lucio Centeno dos Santos</strong></td><td>Amazon</td><td>Gerente Sênior de Operações Logísticas | Sourcing | Procurement | Inbound | Outbound | E-commerce | Varejo | Gestão de Armazém | Transporte | Distribuição | Planejamento | First Mile | Last Mile</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rafael Caldas</strong></td><td>Amazon</td><td>Country Leader - Amazon Logistics Brazil</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">29</td></tr>
+<tr><td><strong>Ramon Castro de Matos</strong></td><td>Amazon</td><td>Amazon | Senior Program Manager | Last Mile | Logistics Executive | Projects &amp; Process | PMO</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Barbara Lyra</strong></td><td>Amazon Logistics Brazil</td><td>Operations Leader EDSP @ Amazon Logistics Brazil | Last Mile Operations | S&amp;OP | Customer Experience | MRP | Project Management</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Alexandre Westphalen</strong></td><td>Americanas</td><td>Início</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Júlia Martins</strong></td><td>AMTRANS LOGISTICS</td><td>Commercial / Sales</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Leonardo Gallo</strong></td><td>Angeloni</td><td>Executivo C-Level em Supply Chain, Planejamento e Operações | Diretor de Supply Chain | Diretor de Suprimentos e Logística | Especialista em Turnarounds Estratégicos e Transformação de Negócios | CPIM | MBA</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Ronaldo dos Santos</strong></td><td>APAS - Associação Paulista de Supermercados</td><td>Ex-Presidente da APAS - Associação Paulista de Supermercados</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Sérgio Botelho</strong></td><td>Arcelor Mittal</td><td>Diretor Executivo Mineração Serra Azul - Arcelor Mittal</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Cristiano Quadros</strong></td><td>ArcelorMittal</td><td>Head of Procurement | Strategic Sourcing Services | CAPEX | Logistics | Digital Transformation in Procurement | Inventory &amp; Warehouse Management</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Eduardo Rodrigues</strong></td><td>Archer Daniels Midland Company</td><td>Commercial Strategy Director - Latam at Archer Daniels Midland Company</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">72</td></tr>
+<tr><td><strong>Vítor Vinuesa</strong></td><td>Archer Daniels Midland Company</td><td>South America Logistics Director na Archer Daniels Midland Company</td><td><span class="status-badge ">Follow-up</span></td><td class="num">3</td><td class="num">0</td><td class="num">51</td></tr>
+<tr><td><strong>Marcelo Simões Pato</strong></td><td>Assai Atacadista</td><td>Diretor Executivo de Risco, Auditoria Interna e Investigações Corporativas no Assaí Atacadista</td><td><span class="status-badge ">Follow-up</span></td><td class="num">3</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Leonidas Nora Junior</strong></td><td>ASTRA - Associação das Tradings de Santa Catarina</td><td>Comercial</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Mauro Loureiro Jr</strong></td><td>Atacadão</td><td>Senior Executive – Operations, Supply, CX &amp; E-commerce | PhD student | Governance, Strategy, Digital Transformation &amp; OpEx | Pai do Theo e Bia</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">4</td><td class="num">2</td><td class="num">0</td></tr>
+<tr><td><strong>Joselito Henriques</strong></td><td>Aviação</td><td>Vice-presidente de P&amp;D e Inovação | Tecnologia e Inovação | Indústria da Aviação | Transformação Digital | Liderança</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Antonio Carlos Cipolli</strong></td><td>BASF</td><td>Diretor de Site e Operações</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Antonio Malheiro</strong></td><td>Bauducco</td><td></td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">70</td></tr>
+<tr><td><strong>Schirley Wirtti</strong></td><td>Bayer</td><td>VP and Head of Supply Chain Latam at Bayer</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Eder Correa</strong></td><td>Bayer Farma.</td><td>Diretor de Acesso ao Mercado na Bayer Farma.</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Eduardo JAVAROTTO</strong></td><td>Boticário</td><td></td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">70</td></tr>
+<tr><td><strong>Laís Marangoni Matschulat</strong></td><td>Boticário</td><td></td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">77</td></tr>
+<tr><td><strong>Luciano Xavier de Miranda</strong></td><td>Boticário</td><td>Diretor de Transportes at Grupo Boticário</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">2</td><td class="num">1</td><td class="num">34</td></tr>
+<tr><td><strong>Marcelo Fornereto</strong></td><td>Braskem</td><td>Senior Executive | Petrochemicals &amp; Global Operations | Supply Chain · Logistics · IT | Board Director (IBGC) | Kellogg · Dom Cabral</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Henrique Fonseca</strong></td><td>Bridgestone</td><td>Início</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Marcello Von Schneider</strong></td><td>BYD</td><td>Electric Mobility - New Energy Solutions - Institutional &amp; Corporate Affairs - Sales &amp; Marketing</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Claudia Simon</strong></td><td>C&amp;A</td><td>Diretora de Operações da C&amp;A | 190+ lojas em SP, RJ e Sul | Estratégia com impacto, liderança feminina e varejo que pulsa vida.</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>RENATA CRISTINA LOURENÇO FIORAVANTE</strong></td><td>Campari Group</td><td>Operation Director | Executive Director | Commercial | Procurement | Supply Chain |</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Denis Poleti</strong></td><td>Cargill</td><td>Director, Cargill Transportes</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Renato Marostica</strong></td><td>Cargill</td><td>Diretor de Operações</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Ricardo Bonetto HARTL</strong></td><td>Cargill</td><td>Director | Supply Chain | Logistics | Mentor | Speaker | Board Member | Advisor</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Ricardo Ramos</strong></td><td>Carrefour</td><td>Direção de Logística | Carrefour Brasil</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Thiago Moreira</strong></td><td>Carrefour Brasil</td><td>Diretor de Operações | Grupo Carrefour</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Andre Botelho de Carvalho</strong></td><td>Casas Bahia</td><td>Diretor Logística Grupo Casas Bahia</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">28</td></tr>
+<tr><td><strong>Diego Garcia</strong></td><td>Casas Bahia</td><td>Gestor de Transportes | Supply Chain | Operações | Liderança e Desenvolvimento de pessoas</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">5</td><td class="num">1</td><td class="num">28</td></tr>
+<tr><td><strong>Frédéric Gauthier</strong></td><td>Casas Bahia</td><td>Vice-Presidente de Operações | COO | Vendas &amp; Marketing | Estratégia de Vendas | Go to Market | Transformação Digital | Jornada do Cliente</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Willemberg Cruz</strong></td><td>Casas Bahia</td><td>Diretor | COO | Logística | Supply Chain | Operações | Planejamento | E-commerce</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">60</td></tr>
+<tr><td><strong>Leandro Pinho</strong></td><td>Catupiry</td><td>Diretor de Logística</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Everton Nogueira</strong></td><td>Cencosud S.A.</td><td>Diretor de Procurement | Supply Chain Director | Head of Procurement LATAM | Strategic Sourcing |USD 2 Billion Spend | Cost Reduction | Transformation | ESG | SAP | Analytics</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Tufi Daher Filho</strong></td><td>Cia Siregurgica Nacional</td><td>Diretor Executivo logística e Infraestrutura CSN</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fernando Nadalini</strong></td><td>CIMED</td><td>Logística | Supply Chain | Operações</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">5</td><td class="num">2</td><td class="num">37</td></tr>
+<tr><td><strong>Eduardo Mareuse</strong></td><td>Coca-Cola FEMSA</td><td>Diretor de Planejamento Logístico na Coca-Cola FEMSA</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Thiago Rezende Gonçalves</strong></td><td>Coca-Cola FEMSA</td><td>Supply Chain | Logistics | Transportation | Planning | Warehousing | Distribution</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Mario Schafaschek</strong></td><td>Coca-Cola FEMSA Brasil</td><td>Diretor de Supply Chain na Coca-Cola FEMSA Brasil</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Eduardo Ferrari, PMP</strong></td><td>COFCO International</td><td>Gestão Logística e Supply Chain | Gerenciamento de Projetos | PMO | SCRUM Métodos Ágeis | Green Belt Lean Six Sigma |</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Nathalia Farkuh</strong></td><td>Colgate-Palmolive</td><td>Procurement Director at Colgate-Palmolive</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Leandro Dias</strong></td><td>Conlog SA</td><td>Gerente Regional de Operações - Sudeste - Cliente Ambev</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rodrigo Bonilha</strong></td><td>Continental Pneus</td><td>Senior Vice-Presidente para América do Sul Continental Pneus | Desenvolvimento de Negócios | Operações | Gestão de Cadeia de Suprimentos | Desenvolvimento de Pessoas | Gestão de Marca</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Anderson Cotias</strong></td><td>Copel</td><td>Executive Director | Enterprise Transformation | Operations | Supply Chain | Procurement | Business Services |</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Ana Júlia Fantucci</strong></td><td>Crown Embalagens Metalicas da Amazonia S/A</td><td>Estudante de Administração | Suprimentos | Logística</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Nuno Saramago</strong></td><td>CSN</td><td>Industrial Turnaround &amp; Cultural Transformation | Author of “Liderança em Cena” (Portfolio Penguin) | Managing Director, CSN | Board Member</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>João Mário Lourenço Filho</strong></td><td>CSN - Companhia Siderúrgica Nacional</td><td>Diretor de Logística</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rafael Andrade</strong></td><td>Delly's</td><td>CEO Delly’s</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Diego Coelho</strong></td><td>Descomplica Faculdade Digital</td><td>Especialista em Logística e Transporte | Customer Success &amp; Inside Sales | Freight &amp; Supply Chain | Cabotagem &amp; Multimodal | Relacionamento Estratégico B2B</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Roberto Moura de Castro</strong></td><td>Desenvolvimento Humano</td><td>Otimista | Propósito como Foco do Desenvolvimento Humano | Liderança e Estratégia | Varejo | Aeroportos | Negócios</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Leonardo Alfaro</strong></td><td>DHL</td><td>Vice Presidente de Transportes</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">9</td></tr>
+<tr><td><strong>Marco Túlio Cabral</strong></td><td>DMA Distribuidora S/A - EPA</td><td>Diretor na DMA Distribuidora S/A - EPA</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Erico Souza</strong></td><td>Electrolux Group</td><td>Diretor de e-Commerce, Marketing Digital &amp; Omnichannel | Professor FGV</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Gustavo Emmã</strong></td><td>Embraer</td><td>Diretor Global de Supply Chain e Logística | MBA, Liderança Executiva, Simplificação de Processos, Foco em Eficiência e Resultados</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>José Amaral</strong></td><td>empresa Cacau Show</td><td>Gerente de Transportes Sr da empresa Cacau Show</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Diego Pacheco dos Reis</strong></td><td>empresa PLANO COMPANY</td><td>Logística da empresa PLANO COMPANY</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Thiago Brito</strong></td><td>FLYPACK Transporte e Logística ltda</td><td>Gestão de Operações Logísticas | Centro de Distribuição | Transporte | Line Haul | E-commerce | Supply Chain Management | Crossdocking | Last Mile | Line Haul | Last Mile</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Frederico Pereira</strong></td><td>Foods</td><td>Executivo Sênior de Varejo | Diretor Geral de Operações | Diretor Executivo | VP de Operações | C.O.O | Especialista em Supermercados | Foods and no Foods | Cash and Carry | Farmácias e Eletro</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rodrigo Torres Rosi</strong></td><td>FORTLEV</td><td>Diretor de logística na FORTLEV</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Cleyton Oliveira</strong></td><td>Foxconn</td><td>Analista de Recrutamento e Seleção na Foxconn</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Michel Fidelis</strong></td><td>Freshworks</td><td>Strategic Partnerships and GSIs</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Marcos Notari</strong></td><td>Frimesa</td><td>Chief Supply Chain Officer</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Artur Izaias</strong></td><td>Gerdau</td><td>Supply Chain / Transportation Manager na Gerdau</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">4</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td><strong>Flavia Dias Souza</strong></td><td>Gerdau</td><td>CPO - Diretora Global de Energia e Suprimentos GERDAU</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">38</td></tr>
+<tr><td><strong>Marco Antônio Silva, M.Sc.</strong></td><td>Gerdau</td><td>CapEx Technical Procurement and Contracts Manager - Gerdau Corporate</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">51</td></tr>
+<tr><td><strong>Andrei Passig</strong></td><td>Giassi Supermercados</td><td>Diretor RH na Giassi Supermercados</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Ana Letícia Imparato</strong></td><td>Giovanna / Legalização de Imóveis / Varejo /Industrias / EVTLS/ Alvarás / Licenças / Projetos</td><td>Assessora Comercial / Mãe da Giovanna / Legalização de Imóveis / Varejo /Industrias / EVTLS/ Alvarás / Licenças / Projetos</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Mario Augusto Neto</strong></td><td>GPA</td><td>Diretor de Transportes Grupo GPA</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Homero Grec</strong></td><td>Grupo 3corações</td><td>Head of Supply Chain and Operations | Planejamento Estratégico | Inovação | Customer Centricity | Negociação |WMS | Gestão | Bar Raiser | Mestrado em Engenharia de Produção | Sustentabilidade</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Leo Cotosck</strong></td><td>Grupo AG Capital</td><td>Partner no Grupo AG Capital | Compliance e Sustentabilidade Financeira</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fabio Miguel</strong></td><td>Grupo Boticário</td><td>Diretor Executivo de Suprimentos/ logística /Supply Chain Fornecedores/ Palestrante/ Promotor de Sustentabilidade em Supply Chain, ESG e Diversidade/Inclusão</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Alexandro A. A. Cruz</strong></td><td>Grupo Carrefour Brasil</td><td>Diretor de operações sênior | Expansão - Sam's Club</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Marcelo Lopes</strong></td><td>Grupo Cimed</td><td>Diretor Executivo Supply Chain / CSCO / COO / Board Member</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">1</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td><strong>Diego Bento</strong></td><td>Grupo Habib's</td><td>COO | Head de Operações, Delivery e Treinamento | Especialista em Franquias e Transformação de Negócios | Foco em Estratégia, Eficiência e Desenvolvimento de Pessoas</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Paulo Sérgio de Carvalho Araújo</strong></td><td>Grupo Koch S A</td><td>Diretor de Logística e Supply Chain do Grupo Koch S A</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Marcio Campos</strong></td><td>Grupo Level</td><td>Diretor de Logistica na Agile Fulfillment @Grupo Level</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rogério Andrade</strong></td><td>Grupo Mateus - Novo Mateus</td><td>C - Level COO - Diretor Executivo de Operações</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Roberto Soares</strong></td><td>Grupo Pereira</td><td>Diretor de Logística| Excelência Operacional | Supply Chain |Operações | Planejamento | First Mile | Line Haul | Last Mile |Fulfillment | E-commerce | Control Tower Logistics</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Diego Reed</strong></td><td>Grupo Petrópolis</td><td>Head Logística | Logistics Operations | S&amp;OP | Supply Chain</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>George Ramos</strong></td><td>Grupo Petrópolis</td><td>Diretor de Compras Grupo Petrópolis | Suprimentos | Indústria | Varejo | Mentoria | Palestrante | CPO | Conselheiro | Engenharia | Negociação | Investimento | Geração de Valor | Parcerias | Startup</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Luciana Bueno</strong></td><td>Grupo São Vicente</td><td>C Level - COO CHR Diretora de Operações no Grupo São Vicente | MBA em Gestão Empresarial #operações #gestãodepessoas #esg #inovação #comunicação #ecommerce #expansão</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Daniela Paiola</strong></td><td>GRUPO SBF</td><td>Supply Chain | Projetos | Dados | Sistemas | Indicadores | Melhoria | Gestão de Resultados | Torre de Controle</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Fernando Alves Teixeira</strong></td><td>Grupo Supernosso</td><td>Operações Varejo</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Jefferson George Nunes</strong></td><td>Grupo Supernosso</td><td>CEO | DIRETOR COMERCIAL | MARKETING | SUPPLY CHAIN | EXPANSÃO | DESENVOLVIMENTO DE NEGÓCIOS</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Antonio Moreira Leite</strong></td><td>Grupo Trigo</td><td>Presidente ( Spoleto, China in Box, Koni, Gendai, Lebonton, Trigo Labs, Gurumê)</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Olinto Lopes Neto</strong></td><td>Heineken</td><td>Diretor Sênior de Logística | The HEINEKEN Company</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Flávio Pioltini</strong></td><td>Hypera</td><td>Diretor de Planejamento Estratégico e Projetos</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rafael Batista</strong></td><td>Hypera</td><td>COO</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">39</td></tr>
+<tr><td><strong>Fábio Ozorio</strong></td><td>Instituto Strabos</td><td>Controller | FP&amp;A | Accounting | Financial Process and Policies | Strategy | Social Responsibility</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Mauricio Garcia</strong></td><td>Inteli - Instituto de Tecnologia e Liderança</td><td>For a better world through education and technology</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Bernardo Miranda</strong></td><td>Ipiranga</td><td>Director Supply &amp; trading Operations @ Ipiranga | Trading Derivatives | Supply</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Danilo Zanela, MBA</strong></td><td>Ipiranga</td><td>Gerente Regional de Operações Ipiranga | Terminais de Distribuição Combustíveis | Gestão de Segurança | Gestão e Desenvolvimento de Equipes | Executivo de Operações e Logística</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Pedro Guedes</strong></td><td>Ipiranga</td><td>CFO at Ipiranga | Board Member</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Aécio Patuzzi</strong></td><td>JBS</td><td>Diretor Comercial e Supply Chain na JBS</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Maximiliano Limberger</strong></td><td>JBS</td><td>Diretor de Procurement (América do Sul) | JBS S.A. | VP / CPO | Liderança, Transformação e Desenvolvimento de Talentos com Foco em Resultados</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Rodrigo Tosi Chiacho</strong></td><td>Johnson &amp; Johnson</td><td>Logistics Procurement Manager LATAM | Strategic Sourcing | Supply Chain</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>André Freire</strong></td><td>Kenvue</td><td>E2E Supply Chain | Customer Service | Black Belt | Logistics Excellence</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Rodrigo Baldissera</strong></td><td>Kenvue</td><td>Diretor de Supply Chain | Executive MBA</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Cláudio Rosa, CPIM</strong></td><td>Kerry</td><td>Supply Chain Director Brazil &amp; South Cone at Kerry</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">25</td></tr>
+<tr><td><strong>Rafael Scarpin</strong></td><td>Kerry</td><td>Consultor - Supply Chain - Tecnologia - E-commerce - Especialista em Varejo</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Roberto Bisogni</strong></td><td>Klabin</td><td>Diretor de Supply Chain / Logística / S&amp;OP na Klabin</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>ROGERIO KOHNTOPP</strong></td><td>Krona Tubos e Conexões</td><td>DIRETOR DE OPERAÇÕES - COO GRUPO KRONA</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Deyvid Gonçalves</strong></td><td>L'Oreal</td><td>Diretor de Supply Chain L’Oréal Luxe | MBA em Supply Chain Management</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">39</td></tr>
+<tr><td><strong>Felipe Feteira do Vale</strong></td><td>L'Oréal</td><td>Director | Supply Chain | Logistics | Project Management | S&amp;OP | KASCM | CPFR | OTCM</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">2</td><td class="num">2</td><td class="num">34</td></tr>
+<tr><td><strong>Michelle Auad Peixoto da Costa</strong></td><td>L'Oréal</td><td>Diretora de RH | Executiva de RH | L'Oréal Grande Público</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Marcela Lemos Andriewiski</strong></td><td>L'Oréal Brazil</td><td>Indirect Sourcing Director at L'Oréal Brazil</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Bruno Battaglia</strong></td><td>Lean Institute Brasil.</td><td>Head de Lean Agro e Gerente de Projetos do Lean Institute Brasil.</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Ricardo Dinelli</strong></td><td>Leroy Merlin</td><td>CEO na Leroy Merlin Brasil</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">4</td><td class="num">2</td><td class="num">0</td></tr>
+<tr><td><strong>Luciana de Andrade</strong></td><td>LG</td><td>| Head de Logística | Supply Chain | Operações | Armazenagem| Transporte | Distribuição | Middle Mile | Last Mile | Business Development | Farmer | Projetos | Logística Reversa | Gerenciamento de Risco |</td><td><span class="status-badge ">Follow-up</span></td><td class="num">3</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>FERNANDO JAEGER</strong></td><td>LGMG</td><td>Diretor Comercial | Head de Gestão de Ativos | Compra e Venda de Equipamentos | Rental Business Strategy | Estratégia Comercial | Key Account | Relacionamento com Mercado | FP&amp;A.</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Zener Costa</strong></td><td>LLZ Garantidora</td><td>Fundador e CEO da LLZ Garantidora</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Arnaldo Oliveira</strong></td><td>Logística Consultor</td><td>Gerente de Logística I Coordenador de Logística I Gerente de Operações I Gestão de Estoque I Green Belt Seis Sigma</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Ricardo Schilder Lima</strong></td><td>Lojas Renner</td><td>Diretor de Logística na Lojas Renner S.A.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Fabiana Taccola</strong></td><td>Lojas Renner S.A.</td><td>Vice-Presidente de Produto e Operações Renner na Lojas Renner S.A.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Arthur Klann Vieira</strong></td><td>MadeiraMadeira</td><td>Executivo de Supply Chain | Especialista em Transformação de Operações, Otimização de Transporte e Estratégias Logísticas | Liderança de Equipes | Inovação | Head | Diretor | Gerente Sênior</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Grasiella Nascimento</strong></td><td>MadeiraMadeira</td><td>Director of Transportation and Operations</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">1</td><td class="num">1</td><td class="num">8</td></tr>
+<tr><td><strong>Eduardo De Camargo Filho</strong></td><td>Magazine Luiza</td><td>Head Nacional de Transportes Magalog| Magazine Luiza| Black belt</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">6</td><td class="num">5</td><td class="num">20</td></tr>
+<tr><td><strong>Thamis Tonetti Mahle</strong></td><td>Mahle Advocacia Empresarial - Especialista no Setor de Transporte de Cargas</td><td>Advogada Trabalhista de Empresas de Transporte | Mahle Advocacia Empresarial</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Daniel Castello Branco Augusto</strong></td><td>Mars</td><td>Executivo com sólida carreira nas áreas de Supply Chain, Logística, S&amp;OP e Comercial.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">25</td></tr>
+<tr><td><strong>Carlos Filho</strong></td><td>Massachusetts Institute of Business - MIB</td><td>Assessor de Investimentos | Soluções Financeiras para Empresas e Executivos | Crédito • Câmbio • Investimentos • Previdência</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Alessandro Thiry</strong></td><td>Mc Donald's</td><td>Diretor de Desenvolvimento na Arcos Dourados</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Felipe Bueno</strong></td><td>Mercado Livre</td><td>Procurement Specialist at Mercado Livre</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">67</td></tr>
+<tr><td><strong>Juliano Campaner</strong></td><td>Messer Gases</td><td>Diretor de logística | Diretor de supply chain | Diretor de processos e melhoria contínua | Logística | Supply Chain | G</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">39</td></tr>
+<tr><td><strong>Márcio Oliveira</strong></td><td>Messer Gases</td><td>COO - Director of Operations - Brazil</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><strong>Antonio Correa G Neto</strong></td><td>Michelin</td><td>Gestão de Engenharia, Operações, Processos, Qualidade, Projetos e Manufatura Industrial | Melhoria Contínua | TPM | Excelência Operacional | Lean Manufacturing | Transformação Operacional | Planejamento Estratégico</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Antonio Cota</strong></td><td>Michelin</td><td>Quality Director South America Operations at Michelin | MBA em Administração de Empresas</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Felipe Duvivier de Albuquerque Mello</strong></td><td>Michelin</td><td>Diretor Jurídico, Compliance e Data Privacy na Michelin</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Luiz Thiebaut</strong></td><td>Michelin</td><td>Diretor de Projetos Estratégicos</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rafaela Senise</strong></td><td>Michelin</td><td>Diretora Administrativa e de Recursos Humanos na Michelin | Remuneração e benefícios</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>ADRIANO ROSA DELFINO</strong></td><td>Minerva Foods</td><td>Conselheiro | Diretor de Logística LATAM | Operações Complexas, Exportação &amp; Supply Chain | Eficiência, escala e geração de valor</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">1</td><td class="num">1</td><td class="num">10</td></tr>
+<tr><td><strong>Gustavo P.</strong></td><td>Movecta</td><td>Driving sustainable logistics through integration, people, and innovation | CCO at Movecta</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Diego R.</strong></td><td>MoveMais</td><td>CFO | Diretor Financeiro | Planejamento Estratégico | Controladoria | Finanças | Meios de Pagamento | Infraestrutura | Transformação Financeira e Crescimento de Negócios</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Alexandre Valin</strong></td><td>Movida Aluguel de Carros</td><td>Gerente Regional</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Eduardo Sá Freire</strong></td><td>Natura</td><td>Head of Supply Chain at Natura Latam | Angel Investor | Mentor | Advisor</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">2</td><td class="num">1</td><td class="num">43</td></tr>
+<tr><td><strong>Matheus Cardoso de Freitas</strong></td><td>Natura</td><td>Business Transformation | S&amp;OP | Logistics | S&amp;OE | Supply Planning | Project Management | Last Mile | Supply Chain Operations Management</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">1</td><td class="num">1</td><td class="num">22</td></tr>
+<tr><td><strong>Marcelo Tadeu dos Santos</strong></td><td>Nestlé</td><td>Head of Procurement - Indirect</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><strong>Marcos Oscar Cardaci</strong></td><td>Nordex Group</td><td>Managing Director Latin America &amp; Brazil at Nordex Group | Energy Transition Leader | ~4 GW Deployed Across 8 Countries | P&amp;L | Board Member | Post-Merger Integration</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fábio Araújo</strong></td><td>NSI Group®</td><td>Transportation Executive | Supply Chain | Business Growth &amp; Transformation | ESG | Hydrogen On-Demand Technology</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Daniela Cunha</strong></td><td>NTT DATA</td><td>Supply Chain | Logística | Customer Service | Comércio Exterior | Economia Circular</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Luiz Fabio R.</strong></td><td>Ocean Network Express</td><td>Regional Human Resources Head | LATAM HR Strategy &amp; Leadership at Ocean Network Express</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Júlio Cézar de Oliveira</strong></td><td>Oficial Atakarejo</td><td>Gerente Executivo | Diretor de Negócios e Operações | Gerente Regional | Especialista em Supermercados</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Igor Costa</strong></td><td>Opella</td><td>Início</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">1</td><td class="num">0</td><td class="num">17</td></tr>
+<tr><td><strong>Carolina Pires</strong></td><td>Ortobom</td><td>CEO | General Manager | Diretora Geral | Conselheira | Canais de Venda | Marca | Produto | Operações | Transformação Digital</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Felipe Thedim Costa Bueno</strong></td><td>Ortobom</td><td>Executivo de Supply Chain | Suprimentos | Logística | Armazém | Transportes | PCP | Abastecimento | Planejamento | Operações | S&amp;OP | Compras</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">1</td><td class="num">1</td><td class="num">8</td></tr>
+<tr><td><strong>Samir Tinani</strong></td><td>Ortobom</td><td>Diretor Administrativo | COO &amp; CHRO | Governança, Operações, CSC e Gente &amp; Gestão | Indústria, Varejo e Franquias | Orçamento R$ 600M+</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">2</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td><strong>Rafael Romani</strong></td><td>P&amp;G</td><td>Supply Chain Director - Brazil Baby &amp; Fem Care Innovation Leader</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">3</td><td class="num">2</td><td class="num">0</td></tr>
+<tr><td><strong>Anderson Pinheiro</strong></td><td>PepSico</td><td>Início</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Eduardo Loyola</strong></td><td>PepSico</td><td>Gerente da Torre de Controle de Transportes na PepsiCo | MBA em Cadeia de Suprimentos Digital | Black Belt em Inteligência Emocional - Instituto Anibal</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Mariana Pimentel</strong></td><td>Pernod Ricard</td><td>LATAM Legal Director</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Ricardo Capello</strong></td><td>Petrobras</td><td>Gerente de Logística | Petrobras | Especialista em Gestão de Frotas e Mobilidade | Lean Six Sigma | Auditor ISO 39001 | Melhor Gestor de Frotas 2025 – AIAFA | Conselheiro CGFM | Global Fleet Managers Member</td><td><span class="status-badge is-positive">Resposta positiva</span></td><td class="num">4</td><td class="num">2</td><td class="num">59</td></tr>
+<tr><td><strong>Marcelo Maia</strong></td><td>Petz</td><td>VP Digital, Marketing, IT and Supply Chain at Petz</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Marcio Fontão dos Reis PharmD, MBA</strong></td><td>Pfizer - Executive Board Committee - Head of Market Access</td><td>Senior Director @Pfizer - Executive Board Committee - Head of Market Access</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Angelo Tedesco Muratore</strong></td><td>Pier Partners</td><td>Managing Partner at Pier Partners</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Ana Lúcia Gomes Resende Souza</strong></td><td>Procter &amp; Gamble</td><td>Brazil Transportation Director | Procter &amp; Gamble</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Marcus Galvani</strong></td><td>Reckitt</td><td>Diretor de Supply Chain na Reckitt</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Rondinelly O.</strong></td><td>Roche Pharmaceutical</td><td>Supply Chain &amp; Logistics Executive | Pharmaceutical Operations | Distribution | Cold Chain | Operational Transformation at Roche Pharmaceutical</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rondinelly Oliveira</strong></td><td>Roche Pharmaceutical</td><td>Supply Chain &amp; Logistics Executive | Pharmaceutical Operations | Distribution | Cold Chain | Operational Transformation at Roche Pharmaceutical</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Luciano Demicheli</strong></td><td>RodOil</td><td>Vice Presidente de Operações Rodoil Dist. de Comb. S/A</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>vladimir dos passos</strong></td><td>RodOil</td><td>Operações de Varejo</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Roberto Tonietto</strong></td><td>Rodoil Distribuidora de Combustíveis S.A.</td><td>CEO na Rodoil Distribuidora de Combustíveis S.A.</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Gustavo Manfrin</strong></td><td>Roldão Atacadista</td><td>Diretor de Supply Chain &amp; Logística (C-level ready) | Head de Operações | S&amp;OP, PCP e Gestão de P&amp;L | IA e dados aplicados à eficiência, redução de custos e nível de serviço</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Maiara Carlesso</strong></td><td>Saint-Gobain Brasil</td><td>Senior Purchasing Manager na Saint-Gobain Brasil</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Carlos Marcelo Oba</strong></td><td>Samsung</td><td>Executivo Senior de Supply Chain | Diretor de Logística | MBA Executivo | 6 Sigma Black Belt</td><td><span class="status-badge ">Follow-up</span></td><td class="num">3</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><strong>Fellipe Fortes</strong></td><td>Samsung</td><td>Diretor Jurídico, Compliance e Proteção de Dados da Samsung | Estruturando operações do ponto de vista Jurídico e de Compliance, com estratégias sólidas, visando resultados sustentáveis e éticos.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">51</td></tr>
+<tr><td><strong>Anderson Menoli</strong></td><td>Samsung Electronics</td><td>Logistics Senior Manager at Samsung Electronics</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Arivaldo Bento</strong></td><td>Samsung Electronics</td><td>Profissional de Logistica e Transporte</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Celso Oliveira</strong></td><td>Savegnago Supermercados</td><td>Diretor de Logística no Savegnago Supermercados Ltda</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fabio Artifon</strong></td><td>Seara</td><td>Diretor Supply Chain</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Felipe Feistler, CFA</strong></td><td>Shein</td><td></td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">71</td></tr>
+<tr><td><strong>Johnny Cadina</strong></td><td>Shein</td><td>Director of operations at Shein</td><td><span class="status-badge ">Follow-up</span></td><td class="num">3</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>CAMILA OLIVEIRA</strong></td><td>SHEIN</td><td>Gerente Senior em Logistica e Distribuição LATAM I Supply Chainl E-commerce l Warehouse l Last Mile I Cross Docking</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><strong>Estivison Lacerda</strong></td><td>SHEIN</td><td>Supply Chain | Liderança Situacional | Planejamento &amp; S&amp;OP | Armazéns &amp; Inventário | Middle Mile | KPIs &amp; OKRs | Lean manufacturing | Cross Docking | Redução de Custos | Kaizen &amp; Melhoria contínua | SLA &amp; Forecast</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Luciano Sousa</strong></td><td>SHEIN</td><td>Gerente de Operações Logísticas, Regional de Control Tower, LATAM | Last Mile, First Mile | 4PL, 3PL | OTIF, P90, CPO, OTD E2E | Supply Chain E2E | E-commerce | Greenfield | Crescimento Acelerado | Accountability</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Felipe Cirne Lima</strong></td><td>Shopee</td><td>Director, Shopee - Head of Business Development and Fulfillment Operations | INSEAD</td><td><span class="status-badge ">Follow-up</span></td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Fernando Ferreira</strong></td><td>Shopee</td><td>Gerente de Operações</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Rafael Flores</strong></td><td>Shopee</td><td>Head of Expansion at Shopee</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">29</td></tr>
+<tr><td><strong>Gabriel Dal Sasso</strong></td><td>Shopee Brasil</td><td>Head de Operacões | Head de Supply Chain | Gerente Sênior de Operações | Diretor de Operações</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Humberto Pereira</strong></td><td>Soluções eSales</td><td>Senior National Manager : Indirect, Regional and National Key Accounts and Cash’s, ON Trade &amp; Off Trade Channel | Consultant | Projects | Technology</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Claiton Santin</strong></td><td>Sonda Supermercados</td><td>Vice Presidente - Sonda Supermercados</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rafael Peixer Andriani</strong></td><td>STR Transportes &amp; Logística</td><td>Diretor Geral | STR Transportes | Head of Operations | Gestão Estratégica de Logística | Gestão de Processos | Gestão de Pessoas</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Nabil Chamseddine</strong></td><td>Sunset Tires com foco em Importação e Exportação de Pneus.</td><td>Presidente na XBRI a marca de Pneus do Brasil | XBRI Presente em mais de 30 Países | CEO do grupo @Sunset Tires com foco em Importação e Exportação de Pneus.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">65</td></tr>
+<tr><td><strong>Jussara Timbola</strong></td><td>Supermercados Pague Menos</td><td>Diretora de Operações</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Sergio Biagioli</strong></td><td>Supermercados Pague Menos</td><td>CEO| Certificate Board Member| Retail| Advisor| Mentoring</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Davi Fabricio Teixeira</strong></td><td>Suzano</td><td>Head de Logistica - na Suzano</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Eduardo Andrade de Oliveira (he/él/ele)</strong></td><td>Suzano</td><td>Diretor de Operações Industriais | Suzano S/A</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Bruno Fantaguzzi</strong></td><td>Tahto</td><td>Head - Finance, Administrative, Planning &amp; BI/BIG DATA at Tahto</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fernando Alfano</strong></td><td>Tenda Atacado</td><td>COO / Conselheiro Certificado / Diretor Executivo de Operações de Lojas / Postos de Combustíveis / Lanchonetes / Diretor de Prevenção de Perdas / Diretor de Expansão e Engenharia</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">2</td><td class="num">1</td><td class="num">1</td></tr>
+<tr><td><strong>Jose Rafael Vasquez</strong></td><td>Tenda Atacado</td><td>CEO - Tenda Atacado</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Luis Singling</strong></td><td>The Goodyear Tire &amp; Rubber Company</td><td>Supply Chain Director at The Goodyear Tire &amp; Rubber Company</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Luis Felipe Dovichi Mendes</strong></td><td>Tigre S.A.</td><td>Head of Logistics | Supply Chain | Operações | Logística | Transportes | Planejamento</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">8</td></tr>
+<tr><td><strong>Rafael Ferreira Costa</strong></td><td>Tirolez</td><td>Gerente | Logística | Torre de Controle | Transportes | Distribuição Urbana | Warehouse | Operações Logísticas | Projetos Logísticos</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">23</td></tr>
+<tr><td><strong>Rodrigo Lima</strong></td><td>Tirolez</td><td>Diretor de Operações | COO</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">2</td><td class="num">1</td><td class="num">24</td></tr>
+<tr><td><strong>Ricardo Costa Rodrigues</strong></td><td>Toré Gestão e Representação Comercial</td><td>Diretor Executivo | Toré Gestão Comercial</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Alessandra M. Montenegro Lippi da Cruz</strong></td><td>Torre e Cia Supermercados S.A (Supermarket)</td><td>CFO|VAREJO | Head of Finance| Diretor Financeiro| Head of Accounting | Contabilidade| Fiscal| Controladoria| Contas a pagar |Contas a receber |consolidação| Departamento Pessoal| DRE| Projetos |Restruturação|Conselho</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Enéias Schneider</strong></td><td>Tramontina</td><td>Gestão de transportes e logística nacional e internacional na Tramontina</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Leandro Luiz Katayama Ribeiro</strong></td><td>Tramontina</td><td>Diretor Executivo Industrial | COO | CXO | C-Level | AI Transformation | Full P&amp;L Leadership | Operations, Manufacturing , SCM, Customer Experience &amp; Industrial strategy</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Marcos Parodes</strong></td><td>Tramontina</td><td>Diretor industrial na Tramontina Garibaldi S.A. Indústria Metalúrgica</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">5</td><td class="num">5</td><td class="num">8</td></tr>
+<tr><td><strong>João Pedro Barbosa Pereira</strong></td><td>Transpadre Logística em Transportes e Serviços Ltda.</td><td>Gerente de Logística | Especialista em Supply Chain &amp; GLP | Gestão de Operações e Otimização de Custos</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fernando Carneiro</strong></td><td>Transporte de Carga</td><td>Sócio RPAC | Direito no Transporte de Carga | Relações Trabalhistas | Negociações Coletivas | Consultoria Preventiva Estratégica | Atuação em + de 11.000 processos trabalhistas, com gestão de risco superior à R$ 1 BI</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>André Duran</strong></td><td>Tupy</td><td>Logistics and Planning Director</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Graziella Lourenço</strong></td><td>Ultrapar</td><td>Diretora de Suprimentos | Logística | Abastecimento | Distribuição | Planejamento | S&amp;OP | Head de Supply Chain | Operações e Industrial</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>José Roberto Braga</strong></td><td>Ultrapar</td><td>Executivo Sênior de Operações, Excelência Operacional, Estratégia &amp; Integração</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Cynthia Lopes</strong></td><td>Unilever</td><td>Diretora Geral | General Manager | Board member</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Fabricio Kendi Kojima</strong></td><td>Unilever</td><td>Project Manager - Supply Chain at Unilever</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>João Nascimento</strong></td><td>Unilever</td><td>Logistics Director na Unilever</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Gustavo Brasil Niemxeski</strong></td><td>Unilever and Executive Director of UnileverPrev pension. Broad experience in finance from business partnering marketing</td><td>Finance Director for Latam at Unilever and Executive Director of UnileverPrev pension. Broad experience in finance from business partnering marketing, sales, supply chain and expertise in treasury and accounting.</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Guilherme Gomes</strong></td><td>Universidade do Estado de Santa Catarina</td><td>Engenheiro | Customer Success | CS / CX | Vendas SaaS</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Marcelo Luís Campos</strong></td><td>Universidade Federal de Santa Catarina</td><td>Indústria, Logística e Infraestrutura | Governança Corporativa, Relações Estratégicas e Liderança Institucional.</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Victor Samuel Silva Santos</strong></td><td>Universidade Metodista de Piracicaba</td><td>Coordenador de Custos | Custos | Controladoria | SAP CO</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rafael Besteiro</strong></td><td>Universo Cacau Show</td><td>Gerência Sênior de Melhoria Contínua &amp; Engenharia de Processo Indústrias, Logística, Escritório, Cacau Park no Universo Cacau Show</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Vinicius Benincasa</strong></td><td>Usiminas</td><td>Gerente Sênior de Logística Portuária na USIMINAS com foco em operações eficientes</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Vitor Soares</strong></td><td>Usiminas</td><td>Logistics Sênior Director | Diretor de Logística | Head Logistica | Diretor Executivo | Board Member</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Felipe Ferreira Dutra</strong></td><td>USIMINAS</td><td>Diretor sênior de Operações | USIMINAS</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Carlos H. Medeiros</strong></td><td>Vale</td><td>Chief Operating Officer at Vale S.A.</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Roberval Anias</strong></td><td>Varejo de Supermercados</td><td>Gerente Regional de Operações | Executivo de Operações no Varejo de Supermercados | Diretor de Operações | Especialista Excelência Operacional e Comercial</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Daniel Drumond</strong></td><td>Vibra</td><td>VP de Operações @Vibra</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">67</td></tr>
+<tr><td><strong>Marcelle Guerra</strong></td><td>Vibra</td><td>Gerente de Gestão de Transporte</td><td><span class="status-badge ">Conexão Aceita</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Rodrigo Barbosa</strong></td><td>Vigor</td><td>Diretor de Compras</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Marcus Vinícius Amaral dos Anjos</strong></td><td>Vini Anjos Gestão e Negócios</td><td>Gestor de Contas Comerciais | Desenvolvimento de Negócios | Executivo de Vendas</td><td><span class="status-badge ">EXCLUDED</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Fábio José Silva</strong></td><td>Vulcabras</td><td>Gerente de Logística e Transportes | Gestão de Supply Chain | Estratégia Operacional | Gestão de Estoque | Negociação de Frete | E-commerce Logístico | Melhoria Contínua | KPIs</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Allan Vicente</strong></td><td>WEG</td><td>Diretor Industrial Global</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Altair Zimmermann Jr</strong></td><td>WEG</td><td>Head de Compras na WEG | Orçamento, Negociação de compras</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Umberto Gobbato</strong></td><td>WEG</td><td>Conselheiro de Administração / Mentor</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr>
+<tr><td><strong>Renato Costa Neto</strong></td><td>Whirlpool Corporation</td><td>Gerente de Supply Chain | Gerente de Planejamento (S&amp;OP, S&amp;OE) | Gerente de Logística e Operações</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Marcelo Ferretti</strong></td><td>Whirlpool Latin America</td><td>Gerente / Diretor | Logística, Supply Chain &amp; Procurement | +25 anos em multinacional</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Paulo E. Petterle</strong></td><td>White Martins</td><td>South America Logistic Director</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">7</td></tr>
+<tr><td><strong>Joao Martins Costa 马廷</strong></td><td>XMXYG</td><td>Business Representative South America @XMXYG | Global Commodity Trading &amp; Supply Chain | Ex Nike</td><td><span class="status-badge ">Resposta neutra</span></td><td class="num">2</td><td class="num">1</td><td class="num">0</td></tr>
+<tr><td><strong>Alberto Rodrigues</strong></td><td>Yara Brasil</td><td>Logística | Supply Chain | Transporte | Armazenagem</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">44</td></tr>
+<tr><td><strong>Pedro Machado</strong></td><td>Yara Brasil</td><td>Head of Finance / Diretor Financeiro</td><td><span class="status-badge ">Follow-up</span></td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr>
+<tr><td><strong>Patrícia Backhaus</strong></td><td>Yara Brazil l Head of Procurement l Executive</td><td>Diretora de Compras na Yara Brazil l Head of Procurement l Executive | Strategic Leadership | Procurement Transformation | Agribusiness &amp; Energy Sectors</td><td><span class="status-badge ">Conexão Enviada</span></td><td class="num">0</td><td class="num">0</td><td class="num">n/d</td></tr>
+<tr><td><strong>Luciano Tótola</strong></td><td>ZAMP</td><td>Supply Chain Director | ZAMP</td><td><span class="status-badge ">1º contato</span></td><td class="num">1</td><td class="num">0</td><td class="num">1</td></tr></tbody>
           </table>
         </section>
       </div>
 
       <div id="patterns" class="section-view">
         <div class="grid">
-          <div class="kpi"><span class="kpi-label">Contatos analisados</span><strong class="kpi-value">241</strong></div>
-          <div class="kpi"><span class="kpi-label">Com resposta</span><strong class="kpi-value">21</strong></div>
+          <div class="kpi"><span class="kpi-label">Contatos analisados</span><strong class="kpi-value">244</strong></div>
+          <div class="kpi"><span class="kpi-label">Com resposta</span><strong class="kpi-value">22</strong></div>
           <div class="kpi"><span class="kpi-label">Avanço qualificado</span><strong class="kpi-value">11</strong></div>
-          <div class="kpi"><span class="kpi-label">Sem resposta</span><strong class="kpi-value">201</strong></div>
+          <div class="kpi"><span class="kpi-label">Sem resposta</span><strong class="kpi-value">203</strong></div>
         </div>
         <section class="panel-card">
           <h2>Leitura Do Estudo</h2>
@@ -364,8 +629,6 @@
             <div class="insight"><strong>Logística abre, Compras bloqueia</strong>CIMED: Fernando Nadalini (champion de Logística) puxou reunião ampliada; Diego de Compras foi o principal bloqueador. Antes de avançar para reunião ampliada, mapear quem decide contratação de terceiros — Compras, Financeiro ou RH.</div>
             <div class="insight"><strong>Produto certo por perfil operacional</strong>Natura: sem frota própria → Ajudante PX, não Motorista PX. Gerdau: embarcadora pura → Academia PX, não marketplace. Identificar o produto correto antes da reunião evita pitch errado e perda de credibilidade.</div>
             <div class="insight"><strong>Função do decisor confirma hipótese</strong>Gerente de Transporte (Petrobras e Gerdau), Diretor de Logística (CIMED), Head de Transportes (Magalog) — Supply, Logística e Operações é o alvo correto para a abertura. Confirmado em todas as reuniões realizadas.</div>
-            <div class="insight"><strong>Citação específica do setor gera 4× mais resposta que citação genérica</strong>L'Oréal (3 citações → 100% resposta), Unilever (9 → 33%), vs. Ambev (25 → 8%). Citar o cliente mais famoso é o maior desperdício da abordagem atual — prospect vê Ambev em todo fornecedor. <em style="display:block;margin-top:6px;color:#0F52BA">Usar Ambev como prova de escala interna; usar L'Oréal/Unilever para cosméticos, Magalu/Casas Bahia para varejo, Claro/P&amp;G para outras verticais.</em></div>
-            <div class="insight"><strong>Palavras de agenda convertem; palavras de escala matam</strong>"agenda", "consigo", "passar", "falar" → 100% de resposta. "nacional", "brasil", "sendo" → 0%. A mensagem que converte pede uma próxima ação, não descreve cobertura geográfica. <em style="display:block;margin-top:6px;color:#0F52BA">Substituir "atuamos em todo o território nacional" por "posso te passar como funciona em [setor do prospect]?"</em></div>
           </div>
         </section>
         <section class="panel-card">
@@ -414,11 +677,11 @@
       </tr>
 <tr>
         <td><strong>Segmento a classificar</strong></td>
-        <td class="num">159</td>
-        <td class="num">7,5%</td>
+        <td class="num">162</td>
+        <td class="num">8,0%</td>
         <td class="num">0,6%</td>
         <td class="num">1</td>
-        <td class="num">2,8 dias</td>
+        <td class="num">6,1 dias</td>
       </tr>
 <tr>
         <td><strong>Alimentos &amp; Bebidas</strong></td>
@@ -476,7 +739,7 @@
       </tr>
 <tr>
         <td><strong>Diretoria / Head</strong></td>
-        <td class="num">107</td>
+        <td class="num">108</td>
         <td class="num">9,3%</td>
         <td class="num">3,7%</td>
         <td class="num">0</td>
@@ -484,19 +747,19 @@
       </tr>
 <tr>
         <td><strong>Não identificado</strong></td>
-        <td class="num">58</td>
-        <td class="num">8,6%</td>
-        <td class="num">3,4%</td>
+        <td class="num">60</td>
+        <td class="num">8,3%</td>
+        <td class="num">3,3%</td>
         <td class="num">0</td>
         <td class="num">9,4 dias</td>
       </tr>
 <tr>
         <td><strong>C-level / VP</strong></td>
         <td class="num">47</td>
-        <td class="num">8,5%</td>
+        <td class="num">10,6%</td>
         <td class="num">2,1%</td>
         <td class="num">1</td>
-        <td class="num">2,0 dias</td>
+        <td class="num">10,8 dias</td>
       </tr></tbody>
     </table>
   </section>
@@ -514,11 +777,19 @@
       </tr>
 <tr>
         <td><strong>Supply / Logística / Operações</strong></td>
-        <td class="num">158</td>
-        <td class="num">12,7%</td>
-        <td class="num">5,7%</td>
+        <td class="num">161</td>
+        <td class="num">12,4%</td>
+        <td class="num">5,6%</td>
         <td class="num">1</td>
         <td class="num">5,0 dias</td>
+      </tr>
+<tr>
+        <td><strong>Alta gestão</strong></td>
+        <td class="num">12</td>
+        <td class="num">8,3%</td>
+        <td class="num">0,0%</td>
+        <td class="num">0</td>
+        <td class="num">46,0 dias</td>
       </tr>
 <tr>
         <td><strong>Função a classificar</strong></td>
@@ -527,14 +798,6 @@
         <td class="num">0,0%</td>
         <td class="num">0</td>
         <td class="num">0,0 dias</td>
-      </tr>
-<tr>
-        <td><strong>Alta gestão</strong></td>
-        <td class="num">12</td>
-        <td class="num">0,0%</td>
-        <td class="num">0,0%</td>
-        <td class="num">0</td>
-        <td class="num">n/d</td>
       </tr>
 <tr>
         <td><strong>Comercial / Desenvolvimento</strong></td>
@@ -568,11 +831,11 @@
       </tr>
 <tr>
         <td><strong>Antes das 08h</strong></td>
-        <td class="num">71</td>
-        <td class="num">18,3%</td>
-        <td class="num">7,0%</td>
+        <td class="num">73</td>
+        <td class="num">19,2%</td>
+        <td class="num">6,8%</td>
         <td class="num">1</td>
-        <td class="num">4,8 dias</td>
+        <td class="num">7,7 dias</td>
       </tr>
 <tr>
         <td><strong>08h-11h59</strong></td>
@@ -584,7 +847,7 @@
       </tr>
 <tr>
         <td><strong>Sem horário</strong></td>
-        <td class="num">116</td>
+        <td class="num">117</td>
         <td class="num">0,0%</td>
         <td class="num">0,9%</td>
         <td class="num">0</td>
@@ -684,210 +947,6 @@
 <div class="insight"><strong>Champion ex-cliente ou com exposição prévia ao modelo PX acelera a conversa</strong>Natura: Matheus veio da Ambev (que conhece PX) — não precisou explicar o modelo do zero, conversa foi direto para viabilização. Petrobras/Magalog: chegaram aquecidos via evento de thought leadership. <em style="display:block;margin-top:6px;color:#0F52BA">Ao mapear decisores no LinkedIn, priorizar perfis com histórico em empresas que já são clientes PX ou que participaram de eventos onde Thiago esteve presente.</em></div>
 <div class="insight"><strong>Logística/Transporte abre, Compras bloqueia</strong>CIMED: Fernando Nadalini (champion) abriu e puxou reunião ampliada; Diego de Compras foi o principal bloqueador. <em style="display:block;margin-top:6px;color:#0F52BA">Antes de avançar para reunião ampliada, perguntar ao champion quem decide a contratação de terceiros (Compras, Financeiro, RH?) e preparar argumento específico para esse stakeholder.</em></div></div>
   </section>
-        <section class="panel-card">
-  <h2>Estratégia de Copy — O Que os Dados Dizem</h2>
-  <p class="muted" style="margin-bottom:18px">Análise de 131 citações de clientes e 60 padrões de palavras nas mensagens enviadas.</p>
-
-  <div class="two-col" style="margin-bottom:20px">
-    <div>
-      <h3 style="font-size:13px;font-weight:700;color:#344054;margin:0 0 10px;text-transform:uppercase;letter-spacing:.04em">Clientes citados × taxa de resposta</h3>
-      <p class="muted" style="font-size:12px;margin-bottom:10px">Contra-intuitivo: o cliente mais citado tem a pior taxa.</p>
-      <table style="font-size:13px">
-        <thead><tr><th>Cliente</th><th class="num">Citações</th><th class="num">Resposta</th><th style="padding-left:8px"></th></tr></thead>
-        <tbody><tr>
-        <td><strong>L'Oréal</strong></td>
-        <td class="num">3</td>
-        <td class="num" style="color:#087443;font-weight:700">100%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:100%;height:100%;background:#087443;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Magalu</strong></td>
-        <td class="num">1</td>
-        <td class="num" style="color:#087443;font-weight:700">100%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:100%;height:100%;background:#087443;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Casas Bahia</strong></td>
-        <td class="num">1</td>
-        <td class="num" style="color:#087443;font-weight:700">100%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:100%;height:100%;background:#087443;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Claro</strong></td>
-        <td class="num">1</td>
-        <td class="num" style="color:#087443;font-weight:700">100%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:100%;height:100%;background:#087443;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>P&amp;G</strong></td>
-        <td class="num">1</td>
-        <td class="num" style="color:#087443;font-weight:700">100%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:100%;height:100%;background:#087443;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>CIMED</strong></td>
-        <td class="num">1</td>
-        <td class="num" style="color:#087443;font-weight:700">100%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:100%;height:100%;background:#087443;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Unilever</strong></td>
-        <td class="num">10</td>
-        <td class="num" style="color:#087443;font-weight:700">30%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:30%;height:100%;background:#087443;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Gerdau</strong></td>
-        <td class="num">10</td>
-        <td class="num" style="color:#0F52BA;font-weight:700">20%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:20%;height:100%;background:#0F52BA;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Shopee</strong></td>
-        <td class="num">18</td>
-        <td class="num" style="color:#0F52BA;font-weight:700">17%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:17%;height:100%;background:#0F52BA;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>JBS</strong></td>
-        <td class="num">7</td>
-        <td class="num" style="color:#B42318;font-weight:700">14%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:14%;height:100%;background:#B42318;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Mercado Livre</strong></td>
-        <td class="num">23</td>
-        <td class="num" style="color:#B42318;font-weight:700">13%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:13%;height:100%;background:#B42318;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Ambev</strong></td>
-        <td class="num">26</td>
-        <td class="num" style="color:#B42318;font-weight:700">8%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:8%;height:100%;background:#B42318;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Raízen</strong></td>
-        <td class="num">7</td>
-        <td class="num" style="color:#B42318;font-weight:700">0%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:0%;height:100%;background:#B42318;border-radius:99px"></div></div></td>
-      </tr><tr>
-        <td><strong>Aurora</strong></td>
-        <td class="num">4</td>
-        <td class="num" style="color:#B42318;font-weight:700">0%</td>
-        <td style="padding-left:8px"><div style="height:8px;background:#EEF2F7;border-radius:99px;overflow:hidden;min-width:80px"><div style="width:0%;height:100%;background:#B42318;border-radius:99px"></div></div></td>
-      </tr></tbody>
-      </table>
-    </div>
-    <div>
-      <h3 style="font-size:13px;font-weight:700;color:#344054;margin:0 0 10px;text-transform:uppercase;letter-spacing:.04em">Ângulo de abordagem × taxa de resposta</h3>
-      <p class="muted" style="font-size:12px;margin-bottom:10px">Eficiência supera dor; capacidade e crescimento não convertem.</p>
-      <table style="font-size:13px;margin-bottom:20px">
-        <thead><tr><th>Ângulo</th><th class="num">n</th><th class="num">Resposta</th></tr></thead>
-        <tbody><tr>
-        <td>Eficiência</td>
-        <td class="num">2</td>
-        <td class="num" style="color:#087443;font-weight:700">100%</td>
-      </tr><tr>
-        <td>Dor logística</td>
-        <td class="num">52</td>
-        <td class="num" style="color:#0F52BA;font-weight:700">17%</td>
-      </tr><tr>
-        <td>Capacidade/demanda</td>
-        <td class="num">8</td>
-        <td class="num" style="color:#B42318;font-weight:700">0%</td>
-      </tr><tr>
-        <td>Crescimento</td>
-        <td class="num">6</td>
-        <td class="num" style="color:#B42318;font-weight:700">0%</td>
-      </tr></tbody>
-      </table>
-      <h3 style="font-size:13px;font-weight:700;color:#344054;margin:16px 0 10px;text-transform:uppercase;letter-spacing:.04em">Regra de citação por segmento</h3>
-      <table style="font-size:12px">
-        <thead><tr><th>Segmento do prospect</th><th>Citar primeiro</th><th>Citar segundo</th></tr></thead>
-        <tbody>
-          <tr><td>Cosméticos / Higiene</td><td><strong>L'Oréal</strong></td><td>Unilever</td></tr>
-          <tr><td>Varejo</td><td><strong>Magalu / Casas Bahia</strong></td><td>Shopee</td></tr>
-          <tr><td>Alimentos / Bebidas</td><td><strong>P&amp;G</strong></td><td>Unilever</td></tr>
-          <tr><td>Indústria pesada</td><td><strong>ArcelorMittal</strong></td><td>Gerdau</td></tr>
-          <tr><td>Telecom / Serviços</td><td><strong>Claro</strong></td><td>—</td></tr>
-          <tr><td>E-commerce</td><td><strong>Mercado Livre</strong></td><td>Shopee</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div class="two-col" style="margin-bottom:20px">
-    <div>
-      <h3 style="font-size:13px;font-weight:700;color:#065F46;margin:0 0 8px;text-transform:uppercase;letter-spacing:.04em">✓ Palavras que geram resposta</h3>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#ECFDF3;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#065F46">"agenda"</span>
-      <span style="font-size:12px;font-weight:700;color:#087443">100% (n=3)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#ECFDF3;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#065F46">"passar"</span>
-      <span style="font-size:12px;font-weight:700;color:#087443">100% (n=3)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#ECFDF3;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#065F46">"consigo"</span>
-      <span style="font-size:12px;font-weight:700;color:#087443">100% (n=3)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#ECFDF3;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#065F46">"oréal"</span>
-      <span style="font-size:12px;font-weight:700;color:#087443">100% (n=3)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#ECFDF3;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#065F46">"atendem"</span>
-      <span style="font-size:12px;font-weight:700;color:#087443">100% (n=2)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#ECFDF3;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#065F46">"conseguimos"</span>
-      <span style="font-size:12px;font-weight:700;color:#087443">100% (n=2)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#ECFDF3;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#065F46">"falar"</span>
-      <span style="font-size:12px;font-weight:700;color:#087443">100% (n=2)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#ECFDF3;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#065F46">"quiser"</span>
-      <span style="font-size:12px;font-weight:700;color:#087443">100% (n=2)</span>
-    </div>
-    </div>
-    <div>
-      <h3 style="font-size:13px;font-weight:700;color:#991B1B;margin:0 0 8px;text-transform:uppercase;letter-spacing:.04em">✗ Palavras com 0% de resposta</h3>
-      <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#FEF3F2;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#991B1B">"nacional"</span>
-      <span style="font-size:12px;color:#B42318">0% (n=13)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#FEF3F2;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#991B1B">"processo"</span>
-      <span style="font-size:12px;color:#B42318">0% (n=10)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#FEF3F2;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#991B1B">"brasil"</span>
-      <span style="font-size:12px;color:#B42318">0% (n=8)</span>
-    </div><div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#FEF3F2;border-radius:5px;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:600;color:#991B1B">"sendo"</span>
-      <span style="font-size:12px;color:#B42318">0% (n=8)</span>
-    </div>
-    </div>
-  </div>
-
-  <h3 style="font-size:13px;font-weight:700;color:#344054;margin:0 0 12px;text-transform:uppercase;letter-spacing:.04em">4 Variantes de Mensagem para Testar</h3>
-  <div class="insights" style="margin-bottom:20px">
-    <div class="insight" style="border-left-color:#087443">
-      <strong style="color:#065F46">A — Ângulo Eficiência + Dado Quantificado</strong>
-      <em style="display:block;font-style:normal;font-size:12px;color:#344054;background:#F2F5FA;padding:8px;border-radius:4px;margin:8px 0;line-height:1.5">"[Nome], a PX entrega redução média de 14% no custo com mão de obra logística sem precisar aumentar quadro fixo — já fazemos isso em transportadoras que embarcam para [L'Oréal/Unilever].<br>Posso te passar como funciona?"</em>
-      <span class="muted" style="font-size:11px">Hipótese: dado-mercado (25%) + eficiência (100%) supera template atual (16%). CTA suave pede info, não reunião.</span>
-    </div>
-    <div class="insight" style="border-left-color:#0F52BA">
-      <strong>B — Referência ao Elo Correto (Embarcadoras)</strong>
-      <em style="display:block;font-style:normal;font-size:12px;color:#344054;background:#F2F5FA;padding:8px;border-radius:4px;margin:8px 0;line-height:1.5">"[Nome], a PX já atua nas transportadoras que movem os volumes da [Empresa similar]. Motoristas e ajudantes sob demanda sem contratação fixa.<br>Se fizer sentido, posso te conectar com alguém da equipe que trabalha com o seu setor."</em>
-      <span class="muted" style="font-size:11px">Hipótese: "transportadoras" gera 30% de resposta. Para embarcadoras puras, reconhecer o elo intermediário antes de pedir reunião.</span>
-    </div>
-    <div class="insight" style="border-left-color:#D97706">
-      <strong style="color:#92400E">C — Preempção de Vínculo Trabalhista</strong>
-      <em style="display:block;font-style:normal;font-size:12px;color:#344054;background:#F2F5FA;padding:8px;border-radius:4px;margin:8px 0;line-height:1.5">"[Nome], a PX disponibiliza motoristas e ajudantes com modelo que não gera vínculo empregatício — já validado juridicamente por empresas como [Unilever / Magalu].<br>Seria um formato que encaixaria na realidade da [Empresa]?"</em>
-      <span class="muted" style="font-size:11px">Hipótese: endereçar a objeção universal (4/4 reuniões) antes da reunião remove o principal bloqueador da conversa.</span>
-    </div>
-    <div class="insight" style="border-left-color:#6366F1">
-      <strong>D — Cadência de Follow-up com Escalada</strong>
-      <em style="display:block;font-style:normal;font-size:12px;color:#344054;background:#F2F5FA;padding:8px;border-radius:4px;margin:8px 0;line-height:1.5"><strong>T2 (5-7d):</strong> "Vi que [empresa] está [sinal de crescimento/expansão]. Em empresas com esse perfil, o modelo sob demanda reduz risco de contratação fixa em pico. Tenho um estudo rápido do setor — posso compartilhar?"<br><strong>T3 (14d):</strong> "Última tentativa. Temos transportadoras que embarcam para o seu segmento — se não for o momento, sem problema. Fica o contato."</em>
-      <span class="muted" style="font-size:11px">Hipótese: escalada com novo ângulo a cada toque supera repetição do mesmo template. T2 usa dado, T3 usa fechamento suave.</span>
-    </div>
-  </div>
-
-  <h3 style="font-size:13px;font-weight:700;color:#344054;margin:0 0 12px;text-transform:uppercase;letter-spacing:.04em">Próximos Testes Prioritários</h3>
-  <table style="font-size:13px">
-    <thead><tr><th>Teste</th><th>Hipótese</th><th>Como medir</th></tr></thead>
-    <tbody>
-      <tr><td><strong>L'Oréal/Unilever vs. Ambev</strong> em cosméticos</td><td>Cliente específico do setor → resposta maior</td><td>A/B: 10 prospects cada variante</td></tr>
-      <tr><td><strong>Variante com dado (14%)</strong> vs. sem dado</td><td>Dado-mercado (25%) &gt; case-cliente (16%)</td><td>Split na próxima semana</td></tr>
-      <tr><td><strong>Mencionar vínculo trabalhista</strong> na 1ª mensagem</td><td>Remove objeção preemptivamente, acelera reunião</td><td>% que responde sem levantar objeção na call</td></tr>
-      <tr><td><strong>Follow-up com escalada</strong> vs. repetição de template</td><td>Novo ângulo a cada toque &gt; repetição</td><td>Resposta toque 2 vs. atual</td></tr>
-      <tr><td><strong>Envio 10h–11h e 16h–17h</strong> vs. horário atual</td><td>Timing com maior taxa histórica</td><td>Comparar taxa por faixa horária após 4 semanas</td></tr>
-    </tbody>
-  </table>
-</section>
         <section class="panel-card" id="copy-analysis-section">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px">
       <div>
@@ -1071,7 +1130,7 @@
       <div id="registry" class="section-view" style="display:none!important">
         <section class="panel-card">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap;">
-            <h2>Empresas A Apurar (16)</h2>
+            <h2>Empresas A Apurar (15)</h2>
             <div style="display:flex; flex-direction:column; align-items:flex-end; gap:6px;">
               <button class="action-button" type="button" id="regenerateDashboardsBtn">Regenerar dashboards</button>
               <span class="muted" id="regenerateDashboardsStatus"></span>
@@ -1110,12 +1169,6 @@
                 <td></td>
                 <td><input class="company-override-input" data-contact="Fabio Mattos" placeholder="Ex.: Natura"></td>
                 <td><button class="action-button secondary company-override-save" data-contact="Fabio Mattos" type="button">Salvar</button></td>
-              </tr>
-<tr>
-                <td><strong>Paulo Sérgio de Carvalho Araújo</strong></td>
-                <td></td>
-                <td><input class="company-override-input" data-contact="Paulo Sérgio de Carvalho Araújo" placeholder="Ex.: Natura"></td>
-                <td><button class="action-button secondary company-override-save" data-contact="Paulo Sérgio de Carvalho Araújo" type="button">Salvar</button></td>
               </tr>
 <tr>
                 <td><strong>Beatriz Gomes Lima</strong></td>
@@ -1354,7 +1407,7 @@
   <script>
     function copyShareLink(e) {
       e.preventDefault();
-      const url = 'https://dashboardabm.pxapps.px.center/';
+      const url = 'https://nilofranzosi.github.io/abm-dashboard/';
       navigator.clipboard.writeText(url).then(() => {
         const label = document.getElementById('share-label');
         label.textContent = 'Link copiado!';
@@ -1567,22 +1620,6 @@
         status.textContent = 'Erro. Tente novamente.';
         btn.disabled = false;
         btn.classList.remove('loading');
-      }
-    }
-    async function exportDashboard() {
-      const btn = document.getElementById('btn-export');
-      const status = document.getElementById('refresh-status');
-      const prev = status.textContent;
-      btn.disabled = true;
-      status.textContent = 'Exportando…';
-      try {
-        const res = await fetch('/api/abm-dashboards/export-weekly', { method: 'POST' });
-        if (!res.ok) throw new Error('Erro ' + res.status);
-        status.textContent = 'Salvo no Desktop!';
-        setTimeout(() => { status.textContent = prev; btn.disabled = false; }, 3000);
-      } catch (e) {
-        status.textContent = 'Erro ao exportar.';
-        btn.disabled = false;
       }
     }
   </script>
