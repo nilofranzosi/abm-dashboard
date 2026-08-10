@@ -1,25 +1,6 @@
 {
-  "generatedAt": "2026-08-07T21:00:00.160Z",
+  "generatedAt": "2026-08-10T11:43:16.753Z",
   "highTierNotStarted": [
-    {
-      "id": "boticario-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Boticário"
-      },
-      "contact": {
-        "id": "uibira-bernardi",
-        "name": "Uibira Bernardi — Diretor Executivo de Logística"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 1 | Score 91/100 | Cosméticos & Higiene. Sinal de timing forte. Decisor mapeado: Uibira Bernardi (Diretor Executivo de Logística).",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": null,
-      "severity": "critical"
-    },
     {
       "id": "raizen-tier-not-started",
       "company": {
@@ -104,22 +85,6 @@
       "severity": "critical"
     },
     {
-      "id": "grupo-koch-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Grupo Koch"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 1 | Score 87/100 | E-commerce & Varejo. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
-      "recommendedAction": "Identificar Diretor/Gerente de Logística do Grupo Koch em SC; avaliar CD de distribuição principal.",
-      "dueAt": null,
-      "severity": "critical"
-    },
-    {
       "id": "adm-brasil-tier-not-started",
       "company": {
         "id": null,
@@ -171,25 +136,6 @@
       "severity": "critical"
     },
     {
-      "id": "abbott-brasil-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Abbott Brasil"
-      },
-      "contact": {
-        "id": "eliezer-m",
-        "name": "Eliézer M. — Procurement, Supply Chain e Logística"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 83/100 | Farmacêutico & Saúde. Decisor mapeado: Eliézer M. (Procurement, Supply Chain e Logística).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
       "id": "sao-martinho-tier-not-started",
       "company": {
         "id": null,
@@ -202,44 +148,6 @@
       },
       "reason": "Tier 2 | Score 83/100 | Agro & Commodities. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
       "recommendedAction": "Mapear decisores de logística/supply chain da São Martinho, com foco na expansão da usina de etanol de milho de Quirinópolis/GO.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "ache-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Ache"
-      },
-      "contact": {
-        "id": "barbara-forlin",
-        "name": "Barbara Forlin — Diretora de Suprimentos"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 82/100 | Farmacêutico & Saúde. Decisor mapeado: Barbara Forlin (Diretora de Suprimentos).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "csn-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "CSN"
-      },
-      "contact": {
-        "id": "helton-weiss",
-        "name": "Helton Weiss — Diretor de Produção"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 82/100 | Indústria Pesada. Decisor mapeado: Helton Weiss (Diretor de Produção).",
-      "recommendedAction": "Identificar atual Diretor de Logística/Supply Chain CSN. Validar Helton Weiss e Eneas Diniz ainda ativos.",
       "dueAt": null,
       "severity": "warning"
     },
@@ -275,25 +183,6 @@
       },
       "reason": "Tier 2 | Score 82/100 | Têxtil & Vestuário. Decisor ainda não mapeado — pesquisar antes de abordar.",
       "recommendedAction": "Mapear decisores de logística e distribuição da Grendene, com foco na operação de exportação a partir de Sobral/CE.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "p-g-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "P&G"
-      },
-      "contact": {
-        "id": "luis-fernandes",
-        "name": "Luis Fernandes — Latam Planning Service Center Leader"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 81/100 | Cosméticos & Higiene. Decisor mapeado: Luis Fernandes (Latam Planning Service Center Leader).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": null,
       "severity": "warning"
     },
@@ -398,6 +287,105 @@
         "name": "Thiago"
       },
       "reason": "Tier 2 | Score 79/100 | Cosméticos & Higiene. Decisor mapeado: Sergio Montanha (Diretor de Supply Chain).",
+      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "paranapanema-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Paranapanema"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 79/100 | Indústria Pesada. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear decisores de logística/supply chain da Paranapanema, com foco na unidade de Caraíba/BA pós-expansão.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "comercial-zaragoza-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Comercial Zaragoza"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 79/100 | E-commerce & Varejo. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Identificar Gerente de Logística / Recebimento do Comercial Zaragoza em SP.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "rede-mix-atacarejo-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Rede Mix Atacarejo"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 79/100 | E-commerce & Varejo. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Identificar Gerente de Logística / CD da Rede Mix Atacarejo em Salvador.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "mondelez-brasil-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Mondelez Brasil"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 78/100 | Alimentos & Bebidas. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "mars-brasil-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Mars Brasil"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 78/100 | Alimentos & Bebidas. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "beiersdorf-brasil-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Beiersdorf Brasil"
+      },
+      "contact": {
+        "id": "fatima-ribeiro",
+        "name": "Fátima Ribeiro — Diretora de Supply Chain"
+      },
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 78/100 | Cosméticos & Higiene. Decisor mapeado: Fátima Ribeiro (Diretora de Supply Chain).",
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": null,
       "severity": "warning"
@@ -1150,11 +1138,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45gg000jk7o0qkpnf88n",
+      "id": "cmq9t45fy000ck7o0nyy7jehr",
       "company": {
-        "id": "cmq9t45gg000jk7o0qkpnf88n",
-        "name": "Amazon Brasil",
-        "status": "FOLLOW_UP_SENT"
+        "id": "cmq9t45fy000ck7o0nyy7jehr",
+        "name": "Cacau Show",
+        "status": "REPLIED_NEGATIVE"
       },
       "contact": null,
       "owner": null,
@@ -1164,11 +1152,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45fy000ck7o0nyy7jehr",
+      "id": "cmq9t45gg000jk7o0qkpnf88n",
       "company": {
-        "id": "cmq9t45fy000ck7o0nyy7jehr",
-        "name": "Cacau Show",
-        "status": "REPLIED_NEGATIVE"
+        "id": "cmq9t45gg000jk7o0qkpnf88n",
+        "name": "Amazon Brasil",
+        "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
       "owner": null,
@@ -1276,20 +1264,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmqqwt16f000ik7o8il8uzjxj",
-      "company": {
-        "id": "cmqqwt16f000ik7o8il8uzjxj",
-        "name": "Minerva Foods",
-        "status": "DEAL"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-      "dueAt": "2026-06-25T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmqjsbyci000ek7zwqwobadjt",
       "company": {
         "id": "cmqjsbyci000ek7zwqwobadjt",
@@ -1300,6 +1274,20 @@
       "owner": null,
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-06-25T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqwt16f000ik7o8il8uzjxj",
+      "company": {
+        "id": "cmqqwt16f000ik7o8il8uzjxj",
+        "name": "Minerva Foods",
+        "status": "DEAL"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "critical"
     },
@@ -1458,11 +1446,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmqqxfnzd0018k7o8cfbr68qi",
+      "id": "cmrml4xk4000mk7d0q2vlfbcn",
       "company": {
-        "id": "cmqqxfnzd0018k7o8cfbr68qi",
-        "name": "Seara",
-        "status": "MESSAGE_SENT"
+        "id": "cmrml4xk4000mk7d0q2vlfbcn",
+        "name": "Mission of Brazil to the European Communities",
+        "status": "MAPPED"
       },
       "contact": null,
       "owner": null,
@@ -1472,11 +1460,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmrml4xk4000mk7d0q2vlfbcn",
+      "id": "cmqqxfnzd0018k7o8cfbr68qi",
       "company": {
-        "id": "cmrml4xk4000mk7d0q2vlfbcn",
-        "name": "Mission of Brazil to the European Communities",
-        "status": "MAPPED"
+        "id": "cmqqxfnzd0018k7o8cfbr68qi",
+        "name": "Seara",
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": null,
@@ -1500,24 +1488,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmruzeiu30003k7touh9wg5wt",
+      "id": "cmruzeix0000ek7to3hmjb3hq",
       "company": {
-        "id": "cmruzeiu30003k7touh9wg5wt",
-        "name": "DHL Supply Chain",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
-      "dueAt": "2026-07-22T18:23:02.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmruzeiv00006k7toqbhf78ks",
-      "company": {
-        "id": "cmruzeiv00006k7toqbhf78ks",
-        "name": "Realize Human",
+        "id": "cmruzeix0000ek7to3hmjb3hq",
+        "name": "Matec Engenharia",
         "status": "MAPPED"
       },
       "contact": null,
@@ -1542,10 +1516,24 @@
       "severity": "critical"
     },
     {
-      "id": "cmruzeix0000ek7to3hmjb3hq",
+      "id": "cmruzeiu30003k7touh9wg5wt",
       "company": {
-        "id": "cmruzeix0000ek7to3hmjb3hq",
-        "name": "Matec Engenharia",
+        "id": "cmruzeiu30003k7touh9wg5wt",
+        "name": "DHL Supply Chain",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeiv00006k7toqbhf78ks",
+      "company": {
+        "id": "cmruzeiv00006k7toqbhf78ks",
+        "name": "Realize Human",
         "status": "MAPPED"
       },
       "contact": null,
@@ -1654,10 +1642,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmsdb7ecr000gk7toq83pnfht",
+      "id": "cmsdb7eaf0006k7to2brsei53",
       "company": {
-        "id": "cmsdb7ecr000gk7toq83pnfht",
-        "name": "Ultragaz",
+        "id": "cmsdb7eaf0006k7to2brsei53",
+        "name": "Integralmédica Suplementos Nutricionais",
         "status": "MAPPED"
       },
       "contact": null,
@@ -1668,10 +1656,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmsdb7eaf0006k7to2brsei53",
+      "id": "cmsdb7ecr000gk7toq83pnfht",
       "company": {
-        "id": "cmsdb7eaf0006k7to2brsei53",
-        "name": "Integralmédica Suplementos Nutricionais",
+        "id": "cmsdb7ecr000gk7toq83pnfht",
+        "name": "Ultragaz",
         "status": "MAPPED"
       },
       "contact": null,
@@ -1707,6 +1695,48 @@
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
       "dueAt": "2026-08-04T14:23:19.074Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmshgsxts02tik7hkgcfr8ekg",
+      "company": {
+        "id": "cmshgsxts02tik7hkgcfr8ekg",
+        "name": "XMXYG",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-08-08T16:53:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmroz9tt80005k7ls23wgwnv0",
+      "company": {
+        "id": "cmroz9tt80005k7ls23wgwnv0",
+        "name": "Atacadão",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-08-09T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqle46c0000k79sd3t0zgym",
+      "company": {
+        "id": "cmqqle46c0000k79sd3t0zgym",
+        "name": "Leroy Merlin Brasil",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-08-09T16:52:00.000Z",
       "severity": "critical"
     }
   ],
@@ -1941,6 +1971,20 @@
         "id": "cmqjsbydi000tk7zw8z5fv7no",
         "name": "Bridgestone",
         "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtia16u000fk7gcezuocnzi",
+      "company": {
+        "id": "cmqtia16u000fk7gcezuocnzi",
+        "name": "Saint-Gobain Brasil",
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": null,
@@ -2570,8 +2614,8 @@
     "highTierNotStarted": 23,
     "recentConnectionsSent": 42,
     "acceptedConnectionsWithoutMessage": 0,
-    "overdueNextActions": 42,
-    "staleCompanies30Days": 18,
+    "overdueNextActions": 45,
+    "staleCompanies30Days": 19,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0

@@ -1443,5 +1443,217 @@
     "unresolvedCompanies": 0,
     "uniqueCompanies": 122,
     "qualifiedAdvanceRate": 0.06140350877192982
+  },
+  {
+    "weekKey": "2026-S33",
+    "generatedAt": "2026-08-10T11:42:13.954Z",
+    "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
+    "totalApproached": 122,
+    "activePipeline": 114,
+    "pausedCount": 8,
+    "repliedOrBetter": 22,
+    "meetingOrBetter": 7,
+    "dealCount": 6,
+    "replyRate": 0.19298245614035087,
+    "meetingRate": 0.06140350877192982,
+    "dealRate": 0.05263157894736842,
+    "avgDaysToFirstReply": 4.9375,
+    "avgDaysSinceLastOutbound": null,
+    "totalOutboundTouchpoints": 0,
+    "totalInboundTouchpoints": 0,
+    "funnel": [
+      {
+        "stage": "CONNECTION_SENT",
+        "label": "Conexão Enviada",
+        "count": 10
+      },
+      {
+        "stage": "CONNECTION_ACCEPTED",
+        "label": "Conexão Aceita",
+        "count": 3
+      },
+      {
+        "stage": "MESSAGE_SENT",
+        "label": "Mensagem Enviada",
+        "count": 51
+      },
+      {
+        "stage": "FOLLOW_UP_SENT",
+        "label": "Follow-Up Enviado",
+        "count": 28
+      },
+      {
+        "stage": "REPLIED",
+        "label": "Respondeu",
+        "count": 15
+      },
+      {
+        "stage": "MEETING_DONE",
+        "label": "Reunião Realizada",
+        "count": 1
+      },
+      {
+        "stage": "DEAL",
+        "label": "Negócio",
+        "count": 6
+      }
+    ],
+    "topCompanies": [
+      {
+        "company": "Vibra Energia",
+        "stage": "DEAL",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-04-13T03:00:00.000Z"
+      },
+      {
+        "company": "Natura",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-01T22:52:00.000Z"
+      },
+      {
+        "company": "CIMED",
+        "stage": "DEAL",
+        "contacts": 3,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-07T17:29:00.000Z"
+      },
+      {
+        "company": "Magazine Luiza",
+        "stage": "DEAL",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-31T21:09:00.000Z"
+      },
+      {
+        "company": "Petrobras",
+        "stage": "DEAL",
+        "contacts": 0,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-06-23T03:00:00.000Z"
+      },
+      {
+        "company": "Minerva Foods",
+        "stage": "DEAL",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-06-25T03:00:00.000Z"
+      },
+      {
+        "company": "Gerdau",
+        "stage": "MEETING_DONE",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "MEETING_DONE",
+        "score": 80,
+        "nextActionDueAt": "2026-06-20T11:30:00.000Z"
+      },
+      {
+        "company": "Continental Pneus",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-22T03:00:00.000Z"
+      },
+      {
+        "company": "Tramontina",
+        "stage": "REPLIED",
+        "contacts": 3,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-27T14:15:00.000Z"
+      },
+      {
+        "company": "Lojas Renner",
+        "stage": "REPLIED",
+        "contacts": 3,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-07T03:00:00.000Z"
+      },
+      {
+        "company": "Nestlé",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-13T20:30:00.000Z"
+      },
+      {
+        "company": "MadeiraMadeira",
+        "stage": "REPLIED",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-24T18:54:00.000Z"
+      },
+      {
+        "company": "XMXYG",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-08-08T16:53:00.000Z"
+      },
+      {
+        "company": "Atacadão",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-08-09T03:00:00.000Z"
+      },
+      {
+        "company": "Leroy Merlin Brasil",
+        "stage": "REPLIED",
+        "contacts": 4,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-08-09T16:52:00.000Z"
+      }
+    ],
+    "activeContacts": 114,
+    "excludedContacts": 8,
+    "unresolvedCompanies": 0,
+    "uniqueCompanies": 122,
+    "qualifiedAdvanceRate": 0.06140350877192982
   }
 ]
