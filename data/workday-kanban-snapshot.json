@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T12:00:00.246Z",
+  "generatedAt": "2026-08-07T21:00:00.683Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -14,7 +14,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:41:43.233Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -26,7 +26,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T20:59:29.782Z",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 4,
           "activeDecisor": null
         },
         {
@@ -38,7 +38,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T20:59:29.782Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -50,7 +50,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 4,
           "activeDecisor": null
         },
         {
@@ -62,43 +62,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-20T14:39:57.659Z",
           "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmrt9u79u001zk718q2relpay",
-          "name": "Atakarejo",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 88,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-20T13:39:37.185Z",
-          "owner": null,
           "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmroy4x9r000qk7bszpp5xpiq",
-          "name": "Cencosud Brasil",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 87,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-17T13:00:57.803Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmqs252d50006k7agtq6rlgc7",
-          "name": "Abbott Brasil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-06-24T12:36:39.352Z",
-          "owner": null,
-          "contactCount": 0,
           "activeDecisor": null
         },
         {
@@ -178,18 +142,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "André Freire"
-        },
-        {
-          "id": "cmrt9u76r001mk718awvfzr00",
-          "name": "Super Nosso",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 80,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-03T14:42:04.326Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": null
         },
         {
           "id": "cmrt9u7c00029k7181vu5pj2j",
@@ -290,7 +242,7 @@
           "nextActionDueAt": "2026-07-24T03:00:00.000Z",
           "lastInteractionAt": "2026-07-17T13:07:48.079Z",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 5,
           "activeDecisor": "Luciano Demicheli"
         },
         {
@@ -314,44 +266,8 @@
           "nextActionDueAt": "2026-08-13T03:00:00.000Z",
           "lastInteractionAt": "2026-08-06T03:00:00.000Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": "Paulo Sérgio de Carvalho Araújo"
-        },
-        {
-          "id": "cmshu8hbf000wk7ccilyd3lcg",
-          "name": "ZAMP",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-06T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Luciano Tótola"
-        },
-        {
-          "id": "cmshu8ha5000pk7cc7nz5rf6b",
-          "name": "Krona Tubos e Conexões",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-06T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "ROGERIO KOHNTOPP"
-        },
-        {
-          "id": "cmshu8h2x0007k7cc6mudxrnq",
-          "name": "Grupo Mateus - Novo Mateus",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-06T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Rogério Andrade"
         },
         {
           "id": "cms611cgy0017k7oco4rkjmbc",
@@ -366,16 +282,16 @@
           "activeDecisor": "Roberto Bisogni"
         },
         {
-          "id": "cmshu8h54000ck7ccy3xugsui",
-          "name": "DMA Distribuidora S/A - EPA",
+          "id": "cmshu8ha5000pk7cc7nz5rf6b",
+          "name": "Krona Tubos e Conexões",
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
           "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Marco Túlio Cabral"
+          "contactCount": 2,
+          "activeDecisor": "ROGERIO KOHNTOPP"
         },
         {
           "id": "cmr9oddp70000k78k8r6rq39u",
@@ -390,27 +306,27 @@
           "activeDecisor": "Luis Felipe Dovichi Mendes"
         },
         {
-          "id": "cmruzeiy8000jk7toter9l352",
-          "name": "Shopee Brasil",
-          "segment": null,
-          "accountScore": 65,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "id": "cmrt9u76r001mk718awvfzr00",
+          "name": "Super Nosso",
+          "segment": "E-commerce & Varejo",
+          "accountScore": 80,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-03T14:42:04.326Z",
           "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Gabriel Dal Sasso"
+          "contactCount": 4,
+          "activeDecisor": null
         },
         {
-          "id": "cmshu8j94009yk7ccv976ijv0",
-          "name": "Cia Siregurgica Nacional",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "id": "cmrt9u79u001zk718q2relpay",
+          "name": "Atakarejo",
+          "segment": "E-commerce & Varejo",
+          "accountScore": 88,
+          "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "lastInteractionAt": "2026-07-20T13:39:37.185Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -426,18 +342,6 @@
           "activeDecisor": "Antonio Correa G Neto"
         },
         {
-          "id": "cmshu8j6j009pk7cc5p0doy5y",
-          "name": "MoveMais",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
           "id": "cmq9t45nf002uk7o0r1q4az2e",
           "name": "Usiminas",
           "segment": null,
@@ -450,30 +354,6 @@
           "activeDecisor": "Vinicius Benincasa"
         },
         {
-          "id": "cmshu8j4o009gk7cchjcgcrk3",
-          "name": "Logística Consultor",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8j3s009bk7cck90bbcqb",
-          "name": "Unilever and Executive Director of UnileverPrev pension. Broad experience in finance from business partnering marketing",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
           "id": "cmshu8j110090k7ccagp0r1dy",
           "name": "CSN - Companhia Siderúrgica Nacional",
           "segment": null,
@@ -482,20 +362,8 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8j08008vk7cct65134pc",
-          "name": "Conlog SA",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
+          "contactCount": 3,
+          "activeDecisor": "Nuno Saramago"
         },
         {
           "id": "cmq9t45oj003bk7o02fgh1kc9",
@@ -506,7 +374,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "owner": null,
-          "contactCount": 5,
+          "contactCount": 6,
           "activeDecisor": "Cynthia Lopes"
         },
         {
@@ -530,48 +398,12 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8iwx008hk7cccan3tba3",
-          "name": "Aché Laboratórios",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8iw0008ck7ccnv4gnra4",
-          "name": "L'Oréal Brazil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
+          "contactCount": 5,
+          "activeDecisor": "Bárbara Forlin"
         },
         {
           "id": "cmshu8iuc0085k7cc2oh8lug3",
           "name": "Pernod Ricard",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8it2007yk7cch1qfhbhj",
-          "name": "Hypera",
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
@@ -594,70 +426,10 @@
           "activeDecisor": null
         },
         {
-          "id": "cmshu8iql007pk7cc3ihtbbmo",
-          "name": "Supermercados Pague Menos",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
           "id": "cmrt9u7b00024k7181rjl9rvn",
           "name": "Roldão Atacadista",
           "segment": "E-commerce & Varejo",
           "accountScore": 80,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8ip0007ik7cc5v1w91l3",
-          "name": "APAS - Associação Paulista de Supermercados",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8io9007dk7ccrvkjzn5z",
-          "name": "Foxconn",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8inf0078k7ccsngorm9u",
-          "name": "Angeloni",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8imm0073k7cckkoofdro",
-          "name": "Oficial Atakarejo",
-          "segment": null,
-          "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
@@ -675,42 +447,6 @@
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "owner": null,
           "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8ikp006wk7cce6qypgn6",
-          "name": "Foods",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8ijx006rk7cc4n8dcocf",
-          "name": "Varejo de Supermercados",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8ho0002jk7cchia4b3m1",
-          "name": "Grupo Supernosso",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -734,19 +470,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8if50067k7cck5jc78cf",
-          "name": "Rodoil Distribuidora de Combustíveis S.A.",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -754,42 +478,6 @@
           "name": "ALE Combustíveis",
           "segment": "Combustíveis, Energia & Química",
           "accountScore": 68,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8ib9005sk7cc4xf313ms",
-          "name": "Procter & Gamble",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8ia9005nk7cc345ubbrp",
-          "name": "Ocean Network Express",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8i8j005ek7ccqrg5l4zb",
-          "name": "Grupo Boticário",
-          "segment": null,
-          "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
@@ -834,30 +522,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cmshu8i4f004tk7ccycbgskep",
-          "name": "Pier Partners",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8i3h004ok7cc8zandsj8",
-          "name": "RodOil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
           "id": "cms4r8zpt001gk7k4zfhlykso",
           "name": "WEG",
           "segment": "Indústria Pesada",
@@ -867,18 +531,6 @@
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "owner": null,
           "contactCount": 2,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hyk004fk7cc857eijq2",
-          "name": "Whirlpool Latin America",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
           "activeDecisor": null
         },
         {
@@ -894,56 +546,8 @@
           "activeDecisor": null
         },
         {
-          "id": "cmshu8hwh0048k7cc9xa84kjy",
-          "name": "Bayer",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hvx0043k7ccsc2ebxil",
-          "name": "Bayer Farma.",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hv6003wk7cch09i1pup",
-          "name": "Pfizer - Executive Board Committee - Head of Market Access",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
           "id": "cms7zc5oc0003k7989f7l4k32",
           "name": "Grupo Trigo",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8htk003jk7ccwq6mtzhi",
-          "name": "Mc Donald's",
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
@@ -966,66 +570,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cmshu8hrx0038k7cc2hqr3afv",
-          "name": "empresa PLANO COMPANY",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hrh0033k7cckdqj5umh",
-          "name": "Aviação",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hqz002yk7ccs306lz0q",
-          "name": "Whirlpool Corporation",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hpy002tk7ccw2d75clz",
-          "name": "Mahle Advocacia Empresarial - Especialista no Setor de Transporte de Cargas",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hop002ok7ccpq9unxkh",
-          "name": "Transporte de Carga",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
           "id": "cms7go2kd000uk7gs3l71d3dd",
           "name": "Grupo Petrópolis",
           "segment": null,
@@ -1035,66 +579,6 @@
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "owner": null,
           "contactCount": 2,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hlb002ak7ccu09qql5e",
-          "name": "Universidade do Estado de Santa Catarina",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hio0021k7ccwmrh8sr5",
-          "name": "Universidade Metodista de Piracicaba",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8hi2001wk7cchzi6c5ql",
-          "name": "STR Transportes & Logística",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmrnyyahz001zk7t06acwmyvw",
-          "name": "LGMG",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmrtplb77002mk7uwcmnfosk5",
-          "name": "Krona",
-          "segment": "Construção Civil",
-          "accountScore": 64,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T17:10:01.530Z",
-          "owner": null,
-          "contactCount": 1,
           "activeDecisor": null
         },
         {
@@ -1117,18 +601,6 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-04T17:53:49.677Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmselk6370000k7p8n1cjtfyr",
-          "name": "Grupo Koch",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 87,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-05T11:42:37.364Z",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -1320,30 +792,6 @@
       "label": "Follow-Up Enviado",
       "companies": [
         {
-          "id": "cmq9t45nr002zk7o0jh6xri5p",
-          "name": "CSN",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-06T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-23T18:43:45.301Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Nuno Saramago"
-        },
-        {
-          "id": "cmq9t45ks001wk7o0rej1w262",
-          "name": "Coca-Cola FEMSA",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-18T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-28T14:32:28.957Z",
-          "owner": null,
-          "contactCount": 3,
-          "activeDecisor": "Eduardo Mareuse"
-        },
-        {
           "id": "cmq9t45kb001rk7o0ceh395mp",
           "name": "Grupo Petz Cobasi",
           "segment": null,
@@ -1356,16 +804,16 @@
           "activeDecisor": "Marcelo Maia"
         },
         {
-          "id": "cmq9t45iv001dk7o0sskbusd8",
-          "name": "Shein Brasil",
+          "id": "cmq9t45ks001wk7o0rej1w262",
+          "name": "Coca-Cola FEMSA",
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-05-21T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-14T20:43:37.032Z",
+          "nextActionDueAt": "2026-05-18T03:00:00.000Z",
+          "lastInteractionAt": "2026-07-28T14:32:28.957Z",
           "owner": null,
-          "contactCount": 5,
-          "activeDecisor": "CAMILA OLIVEIRA"
+          "contactCount": 3,
+          "activeDecisor": "Eduardo Mareuse"
         },
         {
           "id": "cmq9t45gg000jk7o0qkpnf88n",
@@ -1428,18 +876,6 @@
           "activeDecisor": "Carlos Marcelo Oba"
         },
         {
-          "id": "cmq9t45jb001ik7o09gybyask",
-          "name": "Shopee Brasil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-06-25T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-22T11:38:19.466Z",
-          "owner": null,
-          "contactCount": 4,
-          "activeDecisor": "Gabriel Dal Sasso"
-        },
-        {
           "id": "cmqjsbyci000ek7zwqwobadjt",
           "name": "LG Electronics Brasil",
           "segment": null,
@@ -1488,18 +924,6 @@
           "activeDecisor": "Fábio José Silva"
         },
         {
-          "id": "cmrl2cad1000uk774bixw7047",
-          "name": "Grupo DMA / Epa",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-24T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-06T17:10:01.530Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Marco Túlio Cabral"
-        },
-        {
           "id": "cmqqwnulx000hk7o87yzt0lca",
           "name": "Braskem",
           "segment": null,
@@ -1524,18 +948,6 @@
           "activeDecisor": "Carlos H. Medeiros"
         },
         {
-          "id": "cmr97qk35000ck7ikdywcuq5k",
-          "name": "Campari Group",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-06T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "RENATA CRISTINA LOURENÇO FIORAVANTE"
-        },
-        {
           "id": "cmqqnb6e00006k7o8zjztmp3u",
           "name": "Assaí Atacadista",
           "segment": null,
@@ -1546,6 +958,18 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Marcelo Simões Pato"
+        },
+        {
+          "id": "cmr97qk35000ck7ikdywcuq5k",
+          "name": "Campari Group",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "RENATA CRISTINA LOURENÇO FIORAVANTE"
         },
         {
           "id": "cmrdgzv4u0007k77wsd8j8pzs",
@@ -1572,6 +996,30 @@
           "activeDecisor": "Andrei Passig"
         },
         {
+          "id": "cmrl2cad1000uk774bixw7047",
+          "name": "Grupo DMA / Epa",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 6,
+          "activeDecisor": "Marco Túlio Cabral"
+        },
+        {
+          "id": "cmrnzoj7d0008k7gw066zexht",
+          "name": "Grupo Mateus",
+          "segment": "E-commerce & Varejo",
+          "accountScore": 79,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 6,
+          "activeDecisor": "Rogério Andrade"
+        },
+        {
           "id": "cmqjsbye70015k7zwh88ujxnp",
           "name": "PepsiCo",
           "segment": null,
@@ -1584,16 +1032,52 @@
           "activeDecisor": "Eduardo Loyola"
         },
         {
-          "id": "cmrnzoj7d0008k7gw066zexht",
-          "name": "Grupo Mateus",
-          "segment": "E-commerce & Varejo",
-          "accountScore": 79,
+          "id": "cmsj1qefu0004k7rczetdbsol",
+          "name": "SHEIN",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 6,
+          "activeDecisor": "Luciano Sousa"
+        },
+        {
+          "id": "cmq9t45jb001ik7o09gybyask",
+          "name": "Shopee Brasil",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 9,
+          "activeDecisor": "Gabriel Dal Sasso"
+        },
+        {
+          "id": "cmqjvk2sc0003k7s032rc28s2",
+          "name": "Heineken Brasil",
+          "segment": "Alimentos & Bebidas",
+          "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T17:10:01.530Z",
+          "lastInteractionAt": "2026-06-18T19:16:11.292Z",
           "owner": null,
           "contactCount": 2,
-          "activeDecisor": "Rogério Andrade"
+          "activeDecisor": "Olinto Lopes Neto"
+        },
+        {
+          "id": "cmqjvk2s10001k7s0qbtzkfyo",
+          "name": "MBRF (Marfrig + BRF)",
+          "segment": "Alimentos & Bebidas",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-14T20:44:04.928Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Aécio Patuzzi"
         },
         {
           "id": "cmrozkqqk0000k75c20zkey14",
@@ -1632,30 +1116,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cmqjvk2sc0003k7s032rc28s2",
-          "name": "Heineken Brasil",
-          "segment": "Alimentos & Bebidas",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-06-18T19:16:11.292Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Olinto Lopes Neto"
-        },
-        {
-          "id": "cmqjvk2s10001k7s0qbtzkfyo",
-          "name": "MBRF (Marfrig + BRF)",
-          "segment": "Alimentos & Bebidas",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-14T20:44:04.928Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Aécio Patuzzi"
-        },
-        {
           "id": "cmqjvk2tb0008k7s0ojv863er",
           "name": "Eurofarma",
           "segment": "Farmacêutico & Saúde",
@@ -1684,18 +1144,6 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Rodrigo Bonilha"
-        },
-        {
-          "id": "cmqqnb9an0007k7o8qg3i5j71",
-          "name": "Boticário",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-06-26T15:24:00.000Z",
-          "lastInteractionAt": "2026-06-24T17:19:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Luciano Xavier de Miranda"
         },
         {
           "id": "cmqtgcly20003k7gc2s9oizji",
@@ -1734,30 +1182,6 @@
           "activeDecisor": "Marcelo Tadeu dos Santos"
         },
         {
-          "id": "cmqtkw4zw000ik7gc12mr5p4a",
-          "name": "P&G",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-07-19T11:26:00.000Z",
-          "lastInteractionAt": "2026-07-17T11:30:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Rafael Romani"
-        },
-        {
-          "id": "cmqqle46c0000k79sd3t0zgym",
-          "name": "Leroy Merlin Brasil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-22T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-06T17:10:01.530Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Ricardo Dinelli"
-        },
-        {
           "id": "cmrnsivxe0004k7dsqcu1qhv6",
           "name": "MadeiraMadeira",
           "segment": null,
@@ -1794,16 +1218,52 @@
           "activeDecisor": "Mauro Loureiro Jr"
         },
         {
-          "id": "cmshu8gsv0000k7cc9p0zc7le",
-          "name": "Leroy Merlin",
+          "id": "cmqqle46c0000k79sd3t0zgym",
+          "name": "Leroy Merlin Brasil",
           "segment": null,
           "accountScore": 0,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-08-09T16:52:00.000Z",
           "lastInteractionAt": "2026-08-07T16:52:00.000Z",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 4,
           "activeDecisor": "Ricardo Dinelli"
+        },
+        {
+          "id": "cms4m2n2z0006k7fgk379jrkd",
+          "name": "ZAMP (Burger King Brasil)",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": "Luciano Tótola"
+        },
+        {
+          "id": "cmshu8ib9005sk7cc4xf313ms",
+          "name": "Procter & Gamble",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "owner": null,
+          "contactCount": 3,
+          "activeDecisor": "Rafael Romani"
+        },
+        {
+          "id": "cmshu8i8j005ek7ccqrg5l4zb",
+          "name": "Grupo Boticário",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "owner": null,
+          "contactCount": 3,
+          "activeDecisor": "Luciano Xavier de Miranda"
         },
         {
           "id": "cmql5g0sf0000k7q80ihp0ek3",
@@ -1814,7 +1274,7 @@
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "owner": null,
-          "contactCount": 4,
+          "contactCount": 5,
           "activeDecisor": "Felipe Feteira do Vale"
         },
         {
@@ -1852,18 +1312,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Diego Garcia"
-        },
-        {
-          "id": "cms4m2n2z0006k7fgk379jrkd",
-          "name": "ZAMP (Burger King Brasil)",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T13:22:54.388Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
         }
       ]
     },
@@ -2015,6 +1463,18 @@
           "activeDecisor": "Cristiano Quadros"
         },
         {
+          "id": "cmqjvk2sj0004k7s00fywqvtk",
+          "name": "Neo Química / Hypera",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-06-18T19:15:46.525Z",
+          "owner": null,
+          "contactCount": 3,
+          "activeDecisor": "Rafael Batista"
+        },
+        {
           "id": "cmq9t45hn0010k7o0tt6vj3u7",
           "name": "Kerry",
           "segment": null,
@@ -2025,30 +1485,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Cláudio Rosa, CPIM"
-        },
-        {
-          "id": "cmqjvk2sj0004k7s00fywqvtk",
-          "name": "Neo Química / Hypera",
-          "segment": "Farmacêutico & Saúde",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-06-18T19:15:46.525Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Rafael Batista"
-        },
-        {
-          "id": "cmqjvk2sp0005k7s0j588f8k1",
-          "name": "Ache",
-          "segment": "Farmacêutico & Saúde",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-06-18T19:16:26.778Z",
-          "owner": null,
-          "contactCount": 3,
-          "activeDecisor": "Bárbara Forlin"
         },
         {
           "id": "cmqqnssur0009k7o889yyn6m2",
@@ -2070,18 +1506,6 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-18T19:16:05.374Z",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmqjvk2ro0000k7s0ocfhfsd5",
-          "name": "Raízen",
-          "segment": "Combustíveis, Energia & Química",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-06-18T19:15:35.100Z",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null

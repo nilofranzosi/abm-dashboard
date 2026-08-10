@@ -74,6 +74,23 @@
     /* topbar */
     .topbar{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;box-shadow:var(--shadow-sm);}
     .topbar-left{display:flex;align-items:center;gap:12px;}
+    .add-btn{background:var(--green);color:white;border:none;padding:8px 14px;border-radius:var(--radius-sm);font-size:13px;font-weight:600;cursor:pointer;transition:background .12s;}
+    .add-btn:hover{background:#05865e;}
+
+    /* modal */
+    .modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.4);z-index:999;align-items:center;justify-content:center;}
+    .modal-overlay.active{display:flex;}
+    .modal{background:var(--panel);border-radius:var(--radius);padding:24px;max-width:500px;width:90%;box-shadow:var(--shadow);max-height:90vh;overflow-y:auto;}
+    .modal-header{font-size:16px;font-weight:700;margin-bottom:20px;}
+    .form-group{margin-bottom:16px;}
+    .form-label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink);}
+    .form-input,.form-select{width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--panel);}
+    .form-input:focus,.form-select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(15,82,186,.1);}
+    .form-actions{display:flex;gap:10px;margin-top:24px;}
+    .btn-save{background:var(--blue);color:white;border:none;padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;font-weight:600;cursor:pointer;flex:1;}
+    .btn-save:hover{background:#0a3d7f;}
+    .btn-cancel{background:var(--line);color:var(--ink);border:none;padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;font-weight:600;cursor:pointer;flex:1;}
+    .btn-cancel:hover{background:#cde0f0;}
     .topbar-icon{width:40px;height:40px;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
     h1{margin:0 0 2px;font-size:18px;font-weight:700;letter-spacing:-.4px;}
     .muted{color:var(--muted);font-size:13px;}
@@ -270,6 +287,7 @@
         </div>
       </div>
       <div style="display:flex;gap:8px;">
+        <button class="add-btn" onclick="openAddModal()" id="add-embarcador-btn" style="display:none;">+ Adicionar Embarcador</button>
         <button onclick="exportCsv()" style="border:1px solid var(--blue);background:#fff;color:var(--blue);border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v8M7 9 4 6M7 9l3-3M2 11h10v2H2z"/></svg>
           Exportar CSV
@@ -875,9 +893,129 @@
     });
   }
 
+  // Modal functions
+  function openAddModal() {
+    document.getElementById("add-embarcador-modal").classList.add("active");
+  }
+  function closeAddModal() {
+    document.getElementById("add-embarcador-modal").classList.remove("active");
+    document.getElementById("add-form").reset();
+  }
+  async function saveNewEmbarcador() {
+    const form = document.getElementById("add-form");
+    const name = form.querySelector("[name='name']").value.trim();
+    const segment = form.querySelector("[name='segment']").value;
+    const uf = form.querySelector("[name='uf']").value.trim();
+    const tier = form.querySelector("[name='tier']").value;
+    const tierScore = parseInt(form.querySelector("[name='tierScore']").value, 10) || 75;
+    const decisorName = form.querySelector("[name='decisorName']").value.trim();
+    const decisorRole = form.querySelector("[name='decisorRole']").value.trim();
+    const notes = form.querySelector("[name='notes']").value.trim();
+
+    if (!name || !segment) {
+      alert("Nome e segmento são obrigatórios");
+      return;
+    }
+
+    const payload = {
+      name,
+      segment,
+      uf,
+      tier: parseInt(tier, 10) || 2,
+      tierScore,
+      decisors: decisorName ? [{ name: decisorName, role: decisorRole, confidence: "alta", source: "manual" }] : [],
+      notes,
+      tierRationale: notes,
+      nextResearchStep: decisorName ? `Abordar ${decisorName}` : "Validar próximo passo"
+    };
+
+    try {
+      const res = await fetch("/api/market/embarcadores", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const result = await res.json();
+      closeAddModal();
+      loadAll(); // recarrega tabela
+      alert("Embarcador adicionado com sucesso!");
+    } catch (err) {
+      alert("Erro ao adicionar: " + err.message);
+    }
+  }
+
   PxIcpSegment.renderIcpSwitcher(document.getElementById("icp-switcher"));
+  // Mostrar botão só em modo embarcador
+  if (window.location.search.includes("icp=EMBARCADOR") || !window.location.search.includes("icp=")) {
+    document.getElementById("add-embarcador-btn").style.display = "flex";
+  }
   loadAbordOverrides();
   loadAll();
 </script>
+
+<!-- Modal Adicionar Embarcador -->
+<div id="add-embarcador-modal" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-header">Adicionar Embarcador</div>
+    <form id="add-form">
+      <div class="form-group">
+        <label class="form-label">Nome da Empresa *</label>
+        <input type="text" name="name" class="form-input" placeholder="ex: Grupo Habib's" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Segmento *</label>
+        <select name="segment" class="form-select" required>
+          <option value="">— Selecione —</option>
+          <option value="Alimentos & Bebidas">Alimentos & Bebidas</option>
+          <option value="E-commerce & Varejo">E-commerce & Varejo</option>
+          <option value="Combustíveis, Energia & Química">Combustíveis, Energia & Química</option>
+          <option value="Indústria Pesada">Indústria Pesada</option>
+          <option value="Farmacêutico & Saúde">Farmacêutico & Saúde</option>
+          <option value="Eletrônicos & Tecnologia">Eletrônicos & Tecnologia</option>
+          <option value="Têxtil & Moda">Têxtil & Moda</option>
+          <option value="Papel & Celulose">Papel & Celulose</option>
+          <option value="Financeiro & Seguros">Financeiro & Seguros</option>
+          <option value="Outros">Outros</option>
+        </select>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div class="form-group">
+          <label class="form-label">UF</label>
+          <input type="text" name="uf" class="form-input" placeholder="SP" maxlength="2" style="text-transform:uppercase;">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tier</label>
+          <select name="tier" class="form-select">
+            <option value="1">Tier 1</option>
+            <option value="2" selected>Tier 2</option>
+            <option value="3">Tier 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tier Score</label>
+        <input type="number" name="tierScore" class="form-input" placeholder="75" value="75" min="0" max="100">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Decisor (Nome)</label>
+        <input type="text" name="decisorName" class="form-input" placeholder="ex: Diego Bento">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Decisor (Cargo/Função)</label>
+        <input type="text" name="decisorRole" class="form-input" placeholder="ex: COO — Head de Operações">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Notas / Rationale</label>
+        <textarea name="notes" class="form-input" placeholder="Contexto da empresa, desafios logísticos, etc." style="min-height:80px;resize:vertical;"></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn-cancel" onclick="closeAddModal()">Cancelar</button>
+        <button type="button" class="btn-save" onclick="saveNewEmbarcador()">Adicionar ao Painel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 </body>
 </html>

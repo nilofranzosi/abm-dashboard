@@ -8,7 +8,7 @@
     :root { --blue:#0F52BA; --blue2:#0A3C8A; --ink:#172033; --muted:#667085; --line:#D9E2F2; --bg:#EEF2F7; --panel:#FFFFFF; --green:#087443; --amber:#A15C07; --red:#B42318; --slate:#111827; }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); }
-    .shell { min-height: 100vh; display: grid; grid-template-columns: 236px 1fr; gap: 14px; padding: 14px; }
+    .shell { min-height: 100vh; display: grid; grid-template-columns: 1fr; gap: 14px; padding: 14px; }
     aside { background: var(--slate); color: white; border-radius: 6px; padding: 18px 16px; }
     .brand { font-size: 15px; font-weight: 800; margin-bottom: 24px; }
     .nav-label { color: #AAB4C3; font-size: 11px; text-transform: uppercase; font-weight: 800; margin: 20px 0 8px; }
@@ -82,38 +82,29 @@
 </head>
 <body>
   <div class="shell">
-    <aside>
-      <div class="brand">PX Outreach Engine</div>
-      <div class="nav-label">Operação</div>
-      <a class="nav-item" href="/workday.html">Ações de Hoje</a>
-      <a class="nav-item" href="/campaigns.html">Campanhas</a>
-      <a class="nav-item active" href="/thiago-abm-weekly-dashboard.html">Dashboard ABM Thiago</a>
-      <div class="nav-label">Referência</div>
-      <div class="muted">Semana 2026-S32<br>169 empresas abordadas</div>
-    </aside>
     <main>
       <div class="topbar">
         <div>
           <h1>Dashboard Semanal ABM — Thiago</h1>
-          <p class="muted">Pipeline de Contas Abordadas · atualizado em 07/08/2026, 08:39:07</p>
+          <p class="muted">Pipeline de Contas Abordadas · atualizado em 07/08/2026, 17:46:41</p>
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
           <button class="btn-refresh" id="btn-refresh" onclick="refreshDashboard()">
             <span class="icon">↻</span> Atualizar
           </button>
-          <span class="refresh-status" id="refresh-status">Histórico: 7 semana(s)</span>
+          <span class="refresh-status" id="refresh-status">Histórico: 10 semana(s)</span>
         </div>
       </div>
 
       <div class="grid">
-        <div class="kpi"><span>Empresas abordadas (total)</span><strong>169</strong><span class="trend up">+100</span></div>
-        <div class="kpi"><span>Pipeline ativo</span><strong>159</strong><span class="trend up">+95</span></div>
-        <div class="kpi kpi-amber"><span>Pausadas</span><strong>10</strong><span class="trend up">+5</span></div>
-        <div class="kpi"><span>Com resposta ou mais avançado</span><strong>23</strong><span class="trend up">+9</span></div>
-        <div class="kpi"><span>Taxa de resposta</span><strong>14,5%</strong><span class="trend down">-7,4 p.p.</span></div>
-        <div class="kpi"><span>Taxa de reunião</span><strong>4,4%</strong><span class="trend down">-6,5 p.p.</span></div>
-        <div class="kpi kpi-green"><span>Taxa de negócio (DEAL)</span><strong>3,8%</strong><span class="trend down">-5,6 p.p.</span></div>
-        <div class="kpi"><span>Tempo médio até 1ª resposta</span><strong>7,6 dias</strong><span class="trend up">+0,9 d</span></div>
+        <div class="kpi"><span>Empresas abordadas (total)</span><strong>122</strong><span class="trend up">+34</span></div>
+        <div class="kpi"><span>Pipeline ativo</span><strong>114</strong><span class="trend up">+38</span></div>
+        <div class="kpi kpi-amber"><span>Pausadas</span><strong>8</strong><span class="trend down">-4</span></div>
+        <div class="kpi"><span>Com resposta ou mais avançado</span><strong>22</strong><span class="trend up">+4</span></div>
+        <div class="kpi"><span>Taxa de resposta</span><strong>19,3%</strong><span class="trend down">-4,4 p.p.</span></div>
+        <div class="kpi"><span>Taxa de reunião</span><strong>6,1%</strong><span class="trend down">-5,7 p.p.</span></div>
+        <div class="kpi kpi-green"><span>Taxa de negócio (DEAL)</span><strong>5,3%</strong><span class="trend down">-3,9 p.p.</span></div>
+        <div class="kpi"><span>Tempo médio até 1ª resposta</span><strong>4,9 dias</strong><span class="trend down">-2,6 d</span></div>
       </div>
 
       
@@ -124,16 +115,16 @@
         <svg width="132" height="132" viewBox="0 0 132 132">
           <circle cx="66" cy="66" r="54" fill="none" stroke="#e5e7eb" stroke-width="14"/>
           <circle cx="66" cy="66" r="54" fill="none" stroke="#0F52BA" stroke-width="14"
-            stroke-dasharray="223.38 339.29"
+            stroke-dasharray="190.00 339.29"
             stroke-linecap="round"
             transform="rotate(-90 66 66)"/>
-          <text x="66" y="61" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">66%</text>
+          <text x="66" y="61" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">56%</text>
           <text x="66" y="78" text-anchor="middle" font-size="10" fill="#6b7280">abordadas</text>
         </svg>
         <div class="icp-donut-legend">
-          <div class="icp-legend-item"><span class="icp-dot approached"></span>106 abordadas</div>
-          <div class="icp-legend-item"><span class="icp-dot remaining"></span>55 a abordar</div>
-          <div class="icp-legend-total">161 mapeadas</div>
+          <div class="icp-legend-item"><span class="icp-dot approached"></span>112 abordadas</div>
+          <div class="icp-legend-item"><span class="icp-dot remaining"></span>88 a abordar</div>
+          <div class="icp-legend-total">200 mapeadas</div>
         </div>
       </div>
       <div class="icp-segments">
@@ -142,69 +133,69 @@
         </div>
         
       <div class="icp-seg-row">
-        <div class="icp-seg-label">Alimentos &amp; Bebidas</div>
+        <div class="icp-seg-label">E-commerce &amp; Varejo</div>
         <div class="icp-seg-bar-wrap">
           <div class="icp-seg-bar-bg" style="width:100%">
-            <div class="icp-seg-bar-fill" style="width:67%"></div>
+            <div class="icp-seg-bar-fill" style="width:59%"></div>
           </div>
         </div>
-        <div class="icp-seg-counts">14<span class="icp-seg-total">/21</span></div>
-        <div class="icp-seg-pct">67%</div>
+        <div class="icp-seg-counts">27<span class="icp-seg-total">/46</span></div>
+        <div class="icp-seg-pct">59%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Alimentos &amp; Bebidas</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:54%">
+            <div class="icp-seg-bar-fill" style="width:68%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">17<span class="icp-seg-total">/25</span></div>
+        <div class="icp-seg-pct">68%</div>
       </div>
       <div class="icp-seg-row">
         <div class="icp-seg-label">Construção Civil</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:95%">
-            <div class="icp-seg-bar-fill" style="width:55%"></div>
+          <div class="icp-seg-bar-bg" style="width:43%">
+            <div class="icp-seg-bar-fill" style="width:45%"></div>
           </div>
         </div>
-        <div class="icp-seg-counts">11<span class="icp-seg-total">/20</span></div>
-        <div class="icp-seg-pct">55%</div>
-      </div>
-      <div class="icp-seg-row">
-        <div class="icp-seg-label">E-commerce &amp; Varejo</div>
-        <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:81%">
-            <div class="icp-seg-bar-fill" style="width:82%"></div>
-          </div>
-        </div>
-        <div class="icp-seg-counts">14<span class="icp-seg-total">/17</span></div>
-        <div class="icp-seg-pct">82%</div>
-      </div>
-      <div class="icp-seg-row">
-        <div class="icp-seg-label">Farmacêutico &amp; Saúde</div>
-        <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:76%">
-            <div class="icp-seg-bar-fill" style="width:106%"></div>
-          </div>
-        </div>
-        <div class="icp-seg-counts">17<span class="icp-seg-total">/16</span></div>
-        <div class="icp-seg-pct">106%</div>
-      </div>
-      <div class="icp-seg-row">
-        <div class="icp-seg-label">Indústria Pesada</div>
-        <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:76%">
-            <div class="icp-seg-bar-fill" style="width:81%"></div>
-          </div>
-        </div>
-        <div class="icp-seg-counts">13<span class="icp-seg-total">/16</span></div>
-        <div class="icp-seg-pct">81%</div>
+        <div class="icp-seg-counts">9<span class="icp-seg-total">/20</span></div>
+        <div class="icp-seg-pct">45%</div>
       </div>
       <div class="icp-seg-row">
         <div class="icp-seg-label">Combustíveis, Energia &amp; Química</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:67%">
-            <div class="icp-seg-bar-fill" style="width:57%"></div>
+          <div class="icp-seg-bar-bg" style="width:39%">
+            <div class="icp-seg-bar-fill" style="width:56%"></div>
           </div>
         </div>
-        <div class="icp-seg-counts">8<span class="icp-seg-total">/14</span></div>
-        <div class="icp-seg-pct">57%</div>
+        <div class="icp-seg-counts">10<span class="icp-seg-total">/18</span></div>
+        <div class="icp-seg-pct">56%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Farmacêutico &amp; Saúde</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:37%">
+            <div class="icp-seg-bar-fill" style="width:65%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">11<span class="icp-seg-total">/17</span></div>
+        <div class="icp-seg-pct">65%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Indústria Pesada</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:37%">
+            <div class="icp-seg-bar-fill" style="width:76%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">13<span class="icp-seg-total">/17</span></div>
+        <div class="icp-seg-pct">76%</div>
       </div>
       <div class="icp-seg-row">
         <div class="icp-seg-label">Agro &amp; Commodities</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:62%">
+          <div class="icp-seg-bar-bg" style="width:28%">
             <div class="icp-seg-bar-fill" style="width:46%"></div>
           </div>
         </div>
@@ -214,17 +205,17 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Cosméticos &amp; Higiene</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:52%">
-            <div class="icp-seg-bar-fill" style="width:91%"></div>
+          <div class="icp-seg-bar-bg" style="width:24%">
+            <div class="icp-seg-bar-fill" style="width:55%"></div>
           </div>
         </div>
-        <div class="icp-seg-counts">10<span class="icp-seg-total">/11</span></div>
-        <div class="icp-seg-pct">91%</div>
+        <div class="icp-seg-counts">6<span class="icp-seg-total">/11</span></div>
+        <div class="icp-seg-pct">55%</div>
       </div>
       <div class="icp-seg-row">
         <div class="icp-seg-label">Automotivo &amp; Pneus</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:52%">
+          <div class="icp-seg-bar-bg" style="width:24%">
             <div class="icp-seg-bar-fill" style="width:36%"></div>
           </div>
         </div>
@@ -234,7 +225,7 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Têxtil &amp; Vestuário</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:48%">
+          <div class="icp-seg-bar-bg" style="width:22%">
             <div class="icp-seg-bar-fill" style="width:40%"></div>
           </div>
         </div>
@@ -244,7 +235,7 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Eletro &amp; Tecnologia</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:38%">
+          <div class="icp-seg-bar-bg" style="width:17%">
             <div class="icp-seg-bar-fill" style="width:63%"></div>
           </div>
         </div>
@@ -254,7 +245,7 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Logística &amp; Transporte</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:19%">
+          <div class="icp-seg-bar-bg" style="width:9%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -268,14 +259,14 @@
       <div class="two-col">
         <section>
           <h2>Funil de Contas</h2>
-          <div class="barrow"><div>Conexão Enviada</div><div class="bar"><span style="width:14%"></span></div><div class="num">13</div></div>
-<div class="barrow"><div>Conexão Aceita</div><div class="bar"><span style="width:4%"></span></div><div class="num">4</div></div>
-<div class="barrow"><div>Mensagem Enviada</div><div class="bar"><span style="width:100%"></span></div><div class="num">90</div></div>
-<div class="barrow"><div>Follow-Up Enviado</div><div class="bar"><span style="width:32%"></span></div><div class="num">29</div></div>
-<div class="barrow"><div>Respondeu</div><div class="bar"><span style="width:18%"></span></div><div class="num">16</div></div>
+          <div class="barrow"><div>Conexão Enviada</div><div class="bar"><span style="width:20%"></span></div><div class="num">10</div></div>
+<div class="barrow"><div>Conexão Aceita</div><div class="bar"><span style="width:6%"></span></div><div class="num">3</div></div>
+<div class="barrow"><div>Mensagem Enviada</div><div class="bar"><span style="width:100%"></span></div><div class="num">51</div></div>
+<div class="barrow"><div>Follow-Up Enviado</div><div class="bar"><span style="width:55%"></span></div><div class="num">28</div></div>
+<div class="barrow"><div>Respondeu</div><div class="bar"><span style="width:29%"></span></div><div class="num">15</div></div>
 <div class="barrow"><div>Reunião Realizada</div><div class="bar"><span style="width:4%"></span></div><div class="num">1</div></div>
-<div class="barrow"><div>Negócio</div><div class="bar"><span style="width:7%"></span></div><div class="num">6</div></div>
-          <div style="margin-top:14px;padding-top:10px;border-top:1px solid var(--line)"><div class="barrow" style="color:var(--muted)"><div>Pausadas</div><div></div><div class="num">10</div></div></div>
+<div class="barrow"><div>Negócio</div><div class="bar"><span style="width:12%"></span></div><div class="num">6</div></div>
+          <div style="margin-top:14px;padding-top:10px;border-top:1px solid var(--line)"><div class="barrow" style="color:var(--muted)"><div>Pausadas</div><div></div><div class="num">8</div></div></div>
         </section>
 
         <section>
@@ -284,7 +275,7 @@
             <tbody>
               <tr><td>Touchpoints enviados</td><td class="num">34</td></tr>
               <tr><td>Touchpoints recebidos</td><td class="num">4</td></tr>
-              <tr><td>Tempo médio até 1ª resposta</td><td class="num">7,6 dias</td></tr>
+              <tr><td>Tempo médio até 1ª resposta</td><td class="num">4,9 dias</td></tr>
               <tr><td>Dias médio sem novo outbound</td><td class="num">0,0 dias</td></tr>
             </tbody>
           </table>
@@ -299,16 +290,14 @@
       <div>
         <div style="font-size:11px;font-weight:700;color:#9CA3AF;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Pipeline</div>
         <svg viewBox="0 0 320 190" style="width:100%;height:auto;display:block;overflow:visible"><line x1="32" y1="160.0" x2="310" y2="160.0" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="164.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">0</text><line x1="32" y1="144.9" x2="310" y2="144.9" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="148.9" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">20</text><line x1="32" y1="129.8" x2="310" y2="129.8" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="133.8" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">40</text><line x1="32" y1="114.7" x2="310" y2="114.7" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="118.7" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">60</text><line x1="32" y1="99.6" x2="310" y2="99.6" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="103.6" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">80</text><line x1="32" y1="84.4" x2="310" y2="84.4" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="88.4" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">100</text><line x1="32" y1="69.3" x2="310" y2="69.3" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="73.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">120</text><line x1="32" y1="54.2" x2="310" y2="54.2" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="58.2" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">140</text><line x1="32" y1="39.1" x2="310" y2="39.1" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="43.1" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">160</text><line x1="32" y1="24.0" x2="310" y2="24.0" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="27" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">180</text><path d="M32.0,124.5 L101.5,112.4 L171.0,109.4 L240.5,107.9 L310.0,32.3 L310.0,160 L32.0,160 Z" fill="#0F52BA" opacity=".09"/><path d="M32.0,129.8 L101.5,123.7 L171.0,111.6 L240.5,111.6 L310.0,39.9 L310.0,160 L32.0,160 Z" fill="#059669" opacity=".09"/><path d="M32.0,124.5 L101.5,112.4 L171.0,109.4 L240.5,107.9 L310.0,32.3" fill="none" stroke="#0F52BA" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M32.0,129.8 L101.5,123.7 L171.0,111.6 L240.5,111.6 L310.0,39.9" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="32.0" cy="124.5" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="101.5" cy="112.4" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="171.0" cy="109.4" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="240.5" cy="107.9" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="310.0" cy="32.3" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="32.0" cy="129.8" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="101.5" cy="123.7" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="171.0" cy="111.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="240.5" cy="111.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="310.0" cy="39.9" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><text x="32.0" y="115.5" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">47</text><text x="101.5" y="103.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">63</text><text x="171.0" y="100.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">67</text><text x="240.5" y="98.9" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">69</text><text x="310.0" y="23.3" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">169</text><text x="32.0" y="144.8" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">40</text><text x="101.5" y="138.7" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">48</text><text x="171.0" y="126.6" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">64</text><text x="240.5" y="126.6" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">64</text><text x="310.0" y="54.9" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">159</text><text x="32.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="101.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="171.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="240.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text></svg>
+                <text x="27" y="164.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">0</text><line x1="32" y1="140.6" x2="310" y2="140.6" stroke="#E4EAF4" stroke-width="1"/>
+                <text x="27" y="144.6" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">20</text><line x1="32" y1="121.1" x2="310" y2="121.1" stroke="#E4EAF4" stroke-width="1"/>
+                <text x="27" y="125.1" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">40</text><line x1="32" y1="101.7" x2="310" y2="101.7" stroke="#E4EAF4" stroke-width="1"/>
+                <text x="27" y="105.7" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">60</text><line x1="32" y1="82.3" x2="310" y2="82.3" stroke="#E4EAF4" stroke-width="1"/>
+                <text x="27" y="86.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">80</text><line x1="32" y1="62.9" x2="310" y2="62.9" stroke="#E4EAF4" stroke-width="1"/>
+                <text x="27" y="66.9" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">100</text><line x1="32" y1="43.4" x2="310" y2="43.4" stroke="#E4EAF4" stroke-width="1"/>
+                <text x="27" y="47.4" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">120</text><line x1="32" y1="24.0" x2="310" y2="24.0" stroke="#E4EAF4" stroke-width="1"/>
+                <text x="27" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">140</text><path d="M32.0,114.3 L71.7,98.8 L111.4,94.9 L151.1,93.0 L190.9,79.4 L230.6,77.4 L270.3,74.5 L310.0,41.5 L310.0,160 L32.0,160 Z" fill="#0F52BA" opacity=".09"/><path d="M32.0,121.1 L71.7,113.4 L111.4,97.8 L151.1,97.8 L190.9,89.1 L230.6,88.1 L270.3,86.2 L310.0,49.3 L310.0,160 L32.0,160 Z" fill="#059669" opacity=".09"/><path d="M32.0,114.3 L71.7,98.8 L111.4,94.9 L151.1,93.0 L190.9,79.4 L230.6,77.4 L270.3,74.5 L310.0,41.5" fill="none" stroke="#0F52BA" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M32.0,121.1 L71.7,113.4 L111.4,97.8 L151.1,97.8 L190.9,89.1 L230.6,88.1 L270.3,86.2 L310.0,49.3" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="32.0" cy="114.3" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="71.7" cy="98.8" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="111.4" cy="94.9" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="151.1" cy="93.0" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="190.9" cy="79.4" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="230.6" cy="77.4" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="270.3" cy="74.5" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="310.0" cy="41.5" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="32.0" cy="121.1" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="71.7" cy="113.4" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="111.4" cy="97.8" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="151.1" cy="97.8" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="190.9" cy="89.1" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="230.6" cy="88.1" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="270.3" cy="86.2" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="310.0" cy="49.3" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><text x="32.0" y="105.3" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">47</text><text x="71.7" y="89.8" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">63</text><text x="111.4" y="85.9" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">67</text><text x="151.1" y="84.0" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">69</text><text x="190.9" y="70.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">83</text><text x="230.6" y="68.4" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">85</text><text x="270.3" y="65.5" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">88</text><text x="310.0" y="32.5" text-anchor="middle" font-size="10" font-weight="700" fill="#0F52BA" font-variant-numeric="tabular-nums">122</text><text x="32.0" y="136.1" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">40</text><text x="71.7" y="128.4" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">48</text><text x="111.4" y="112.8" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">64</text><text x="151.1" y="112.8" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">64</text><text x="190.9" y="104.1" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">73</text><text x="230.6" y="103.1" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">74</text><text x="270.3" y="101.2" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">76</text><text x="310.0" y="64.3" text-anchor="middle" font-size="10" font-weight="700" fill="#059669" font-variant-numeric="tabular-nums">114</text><text x="32.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="71.7" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="111.4" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="151.1" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="190.9" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S29</text><text x="230.6" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S30</text><text x="270.3" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S31</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text></svg>
         <div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280">
           <span style="display:inline-block;width:18px;height:3px;background:#0F52BA;border-radius:2px"></span>Total abordadas
         </div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280">
@@ -325,7 +314,7 @@
                 <text x="25" y="86.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">20%</text><line x1="30" y1="62.9" x2="284" y2="62.9" stroke="#E4EAF4" stroke-width="1"/>
                 <text x="25" y="66.9" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">25%</text><line x1="30" y1="43.4" x2="284" y2="43.4" stroke="#E4EAF4" stroke-width="1"/>
                 <text x="25" y="47.4" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">30%</text><line x1="30" y1="24.0" x2="284" y2="24.0" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="25" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">35%</text><path d="M30.0,72.6 L93.5,54.8 L157.0,81.1 L220.5,75.0 L284.0,103.8 L284.0,160 L30.0,160 Z" fill="#0F52BA" opacity=".09"/><path d="M30.0,140.6 L93.5,111.4 L157.0,123.6 L220.5,117.5 L284.0,142.9 L284.0,160 L30.0,160 Z" fill="#059669" opacity=".09"/><path d="M30.0,140.6 L93.5,119.5 L157.0,129.6 L220.5,123.6 L284.0,145.3 L284.0,160 L30.0,160 Z" fill="#D97706" opacity=".09"/><path d="M30.0,72.6 L93.5,54.8 L157.0,81.1 L220.5,75.0 L284.0,103.8" fill="none" stroke="#0F52BA" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,140.6 L93.5,111.4 L157.0,123.6 L220.5,117.5 L284.0,142.9" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,140.6 L93.5,119.5 L157.0,129.6 L220.5,123.6 L284.0,145.3" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="30.0" cy="72.6" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="93.5" cy="54.8" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="157.0" cy="81.1" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="220.5" cy="75.0" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="284.0" cy="103.8" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="30.0" cy="140.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="93.5" cy="111.4" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="157.0" cy="123.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="220.5" cy="117.5" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="284.0" cy="142.9" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="30.0" cy="140.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="93.5" cy="119.5" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="157.0" cy="129.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="220.5" cy="123.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="284.0" cy="145.3" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><text x="291.0" y="107.8" font-size="10" font-weight="700" fill="#0F52BA">14.5%</text><text x="291.0" y="146.9" font-size="10" font-weight="700" fill="#059669">4.4%</text><text x="291.0" y="149.3" font-size="10" font-weight="700" fill="#D97706">3.8%</text><text x="30.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="93.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="157.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="220.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="284.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text></svg>
+                <text x="25" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">35%</text><path d="M30.0,72.6 L66.3,54.8 L102.6,81.1 L138.9,75.0 L175.1,80.1 L211.4,76.0 L247.7,68.0 L284.0,85.0 L284.0,160 L30.0,160 Z" fill="#0F52BA" opacity=".09"/><path d="M30.0,140.6 L66.3,111.4 L102.6,123.6 L138.9,117.5 L175.1,122.7 L211.4,118.0 L247.7,114.0 L284.0,136.1 L284.0,160 L30.0,160 Z" fill="#059669" opacity=".09"/><path d="M30.0,140.6 L66.3,119.5 L102.6,129.6 L138.9,123.6 L175.1,128.1 L211.4,123.2 L247.7,124.2 L284.0,139.5 L284.0,160 L30.0,160 Z" fill="#D97706" opacity=".09"/><path d="M30.0,72.6 L66.3,54.8 L102.6,81.1 L138.9,75.0 L175.1,80.1 L211.4,76.0 L247.7,68.0 L284.0,85.0" fill="none" stroke="#0F52BA" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,140.6 L66.3,111.4 L102.6,123.6 L138.9,117.5 L175.1,122.7 L211.4,118.0 L247.7,114.0 L284.0,136.1" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,140.6 L66.3,119.5 L102.6,129.6 L138.9,123.6 L175.1,128.1 L211.4,123.2 L247.7,124.2 L284.0,139.5" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="30.0" cy="72.6" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="66.3" cy="54.8" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="102.6" cy="81.1" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="138.9" cy="75.0" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="175.1" cy="80.1" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="211.4" cy="76.0" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="247.7" cy="68.0" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="284.0" cy="85.0" r="4.5" fill="white" stroke="#0F52BA" stroke-width="2.5"/><circle cx="30.0" cy="140.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="66.3" cy="111.4" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="102.6" cy="123.6" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="138.9" cy="117.5" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="175.1" cy="122.7" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="211.4" cy="118.0" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="247.7" cy="114.0" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="284.0" cy="136.1" r="4.5" fill="white" stroke="#059669" stroke-width="2.5"/><circle cx="30.0" cy="140.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="66.3" cy="119.5" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="102.6" cy="129.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="138.9" cy="123.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="175.1" cy="128.1" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="211.4" cy="123.2" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="247.7" cy="124.2" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="284.0" cy="139.5" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><text x="291.0" y="89.0" font-size="10" font-weight="700" fill="#0F52BA">19.3%</text><text x="291.0" y="140.1" font-size="10" font-weight="700" fill="#059669">6.1%</text><text x="291.0" y="143.5" font-size="10" font-weight="700" fill="#D97706">5.3%</text><text x="30.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="66.3" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="102.6" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="138.9" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="175.1" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S29</text><text x="211.4" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S30</text><text x="247.7" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S31</text><text x="284.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text></svg>
         <div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280">
           <span style="display:inline-block;width:18px;height:3px;background:#0F52BA;border-radius:2px"></span>Taxa resposta
         </div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280">
@@ -343,7 +332,7 @@
                 <text x="23" y="96.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">6d</text><line x1="28" y1="69.3" x2="310" y2="69.3" stroke="#E4EAF4" stroke-width="1"/>
                 <text x="23" y="73.3" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">8d</text><line x1="28" y1="46.7" x2="310" y2="46.7" stroke="#E4EAF4" stroke-width="1"/>
                 <text x="23" y="50.7" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">10d</text><line x1="28" y1="24.0" x2="310" y2="24.0" stroke="#E4EAF4" stroke-width="1"/>
-                <text x="23" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">12d</text><path d="M28.0,65.6 L98.5,76.1 L169.0,83.8 L239.5,83.8 L310.0,73.5 L310.0,160 L28.0,160 Z" fill="#D97706" opacity=".09"/><path d="M28.0,65.6 L98.5,76.1 L169.0,83.8 L239.5,83.8 L310.0,73.5" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="28.0" cy="65.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="98.5" cy="76.1" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="169.0" cy="83.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="239.5" cy="83.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="310.0" cy="73.5" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><text x="28.0" y="56.6" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">8.3d</text><text x="98.5" y="67.1" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.4d</text><text x="169.0" y="74.8" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">6.7d</text><text x="239.5" y="74.8" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">6.7d</text><text x="310.0" y="64.5" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.6d</text><text x="28.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="98.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="169.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="239.5" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text><text x="310" y="16" text-anchor="end" font-size="9" font-weight="600" fill="#9CA3AF">↓ queda consistente</text></svg>
+                <text x="23" y="28.0" text-anchor="end" font-size="9" fill="#9CA3AF" font-variant-numeric="tabular-nums">12d</text><path d="M28.0,65.6 L68.3,76.1 L108.6,83.8 L148.9,83.8 L189.1,75.0 L229.4,75.0 L269.7,75.0 L310.0,104.0 L310.0,160 L28.0,160 Z" fill="#D97706" opacity=".09"/><path d="M28.0,65.6 L68.3,76.1 L108.6,83.8 L148.9,83.8 L189.1,75.0 L229.4,75.0 L269.7,75.0 L310.0,104.0" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="28.0" cy="65.6" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="68.3" cy="76.1" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="108.6" cy="83.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="148.9" cy="83.8" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="189.1" cy="75.0" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="229.4" cy="75.0" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="269.7" cy="75.0" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><circle cx="310.0" cy="104.0" r="4.5" fill="white" stroke="#D97706" stroke-width="2.5"/><text x="28.0" y="56.6" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">8.3d</text><text x="68.3" y="67.1" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.4d</text><text x="108.6" y="74.8" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">6.7d</text><text x="148.9" y="74.8" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">6.7d</text><text x="189.1" y="66.0" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.5d</text><text x="229.4" y="66.0" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.5d</text><text x="269.7" y="66.0" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">7.5d</text><text x="310.0" y="95.0" text-anchor="middle" font-size="10" font-weight="700" fill="#D97706" font-variant-numeric="tabular-nums">4.9d</text><text x="28.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S25</text><text x="68.3" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S26</text><text x="108.6" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S27</text><text x="148.9" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S28</text><text x="189.1" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S29</text><text x="229.4" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S30</text><text x="269.7" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#9CA3AF">S31</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#172033">S32</text><text x="310" y="16" text-anchor="end" font-size="9" font-weight="600" fill="#9CA3AF">↓ queda consistente</text></svg>
         <div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B7280">
           <span style="display:inline-block;width:18px;height:3px;background:#D97706;border-radius:2px"></span>Dias até 1ª resposta
         </div></div>
@@ -420,14 +409,6 @@
         <td class="num overdue">22/06/2026</td>
       </tr>
 <tr>
-        <td><strong>Boticário</strong></td>
-        <td><span class="stage-badge badge-replied">Respondeu</span></td>
-        <td class="num">2</td>
-        <td class="num">—</td>
-        <td class="num">—</td>
-        <td class="num overdue">26/06/2026</td>
-      </tr>
-<tr>
         <td><strong>Tramontina</strong></td>
         <td><span class="stage-badge badge-replied">Respondeu</span></td>
         <td class="num">3</td>
@@ -452,28 +433,36 @@
         <td class="num overdue">13/07/2026</td>
       </tr>
 <tr>
-        <td><strong>P&amp;G</strong></td>
-        <td><span class="stage-badge badge-replied">Respondeu</span></td>
-        <td class="num">2</td>
-        <td class="num">—</td>
-        <td class="num">—</td>
-        <td class="num overdue">19/07/2026</td>
-      </tr>
-<tr>
-        <td><strong>Leroy Merlin Brasil</strong></td>
-        <td><span class="stage-badge badge-replied">Respondeu</span></td>
-        <td class="num">1</td>
-        <td class="num">—</td>
-        <td class="num">—</td>
-        <td class="num overdue">22/07/2026</td>
-      </tr>
-<tr>
         <td><strong>MadeiraMadeira</strong></td>
         <td><span class="stage-badge badge-replied">Respondeu</span></td>
         <td class="num">2</td>
         <td class="num">—</td>
         <td class="num">—</td>
         <td class="num overdue">24/07/2026</td>
+      </tr>
+<tr>
+        <td><strong>XMXYG</strong></td>
+        <td><span class="stage-badge badge-replied">Respondeu</span></td>
+        <td class="num">1</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
+        <td class="num">08/08/2026</td>
+      </tr>
+<tr>
+        <td><strong>Atacadão</strong></td>
+        <td><span class="stage-badge badge-replied">Respondeu</span></td>
+        <td class="num">1</td>
+        <td class="num">4</td>
+        <td class="num">2</td>
+        <td class="num">09/08/2026</td>
+      </tr>
+<tr>
+        <td><strong>Leroy Merlin Brasil</strong></td>
+        <td><span class="stage-badge badge-replied">Respondeu</span></td>
+        <td class="num">4</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
+        <td class="num">09/08/2026</td>
       </tr></tbody>
         </table>
       </section>
@@ -484,12 +473,39 @@
           <thead><tr><th>Semana</th><th class="num">Total abordadas</th><th class="num">Pipeline ativo</th><th class="num">Taxa resposta</th><th class="num">Taxa reunião</th><th class="num">Taxa negócio</th><th class="num">Tempo 1ª resp.</th></tr></thead>
           <tbody><tr>
           <td><strong>2026-S32</strong></td>
-          <td class="num">169</td>
-          <td class="num">159</td>
-          <td class="num">14,5%</td>
-          <td class="num">4,4%</td>
-          <td class="num">3,8%</td>
-          <td class="num">7,6 dias</td>
+          <td class="num">122</td>
+          <td class="num">114</td>
+          <td class="num">19,3%</td>
+          <td class="num">6,1%</td>
+          <td class="num">5,3%</td>
+          <td class="num">4,9 dias</td>
+        </tr>
+<tr>
+          <td><strong>2026-S31</strong></td>
+          <td class="num">88</td>
+          <td class="num">76</td>
+          <td class="num">23,7%</td>
+          <td class="num">11,8%</td>
+          <td class="num">9,2%</td>
+          <td class="num">7,5 dias</td>
+        </tr>
+<tr>
+          <td><strong>2026-S30</strong></td>
+          <td class="num">85</td>
+          <td class="num">74</td>
+          <td class="num">21,6%</td>
+          <td class="num">10,8%</td>
+          <td class="num">9,5%</td>
+          <td class="num">7,5 dias</td>
+        </tr>
+<tr>
+          <td><strong>2026-S29</strong></td>
+          <td class="num">83</td>
+          <td class="num">73</td>
+          <td class="num">20,5%</td>
+          <td class="num">9,6%</td>
+          <td class="num">8,2%</td>
+          <td class="num">7,5 dias</td>
         </tr>
 <tr>
           <td><strong>2026-S28</strong></td>

@@ -1544,7 +1544,7 @@
     "name": "Carrefour Brasil",
     "segment": "E-commerce & Varejo",
     "uf": "SP",
-    "tier": 2,
+    "tier": 1,
     "scoreS13": null,
     "decisors": [
       {
@@ -1552,17 +1552,17 @@
         "role": "Diretor de Logística"
       }
     ],
-    "notes": "",
-    "tierScore": 81,
+    "notes": "Maior operação de varejo/atacarejo do país. Inclui Atacadão e Sam's Club. Faturamento R$ 123,5 bi. Centenas de lojas com CDs regionais; altíssima dependência de entregas em doca — principal dor de caminhoneiros no setor supermercadista. Abordagem via André (camada institucional). Fonte: Ranking ABRAS 2026.",
+    "tierScore": 91,
     "tierBreakdown": {
-      "potencialLogistico": 27,
+      "potencialLogistico": 30,
       "aderenciaModeloPX": 23,
       "porteRelevancia": 20,
-      "gatilhosTiming": 5,
+      "gatilhosTiming": 12,
       "mapeabilidadeAcesso": 6
     },
-    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; mapeamento parcial de decisores.",
-    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierRationale": "Tier 1: maior operação de varejo+atacarejo do Brasil por faturamento (R$ 123,5 bi); Atacadão lidera o atacarejo nacional com volume de descarga excepcional em doca; 30 pontos de potencial logístico por ser o maior operador do país. Decisão institucional reduz acesso.",
+    "nextResearchStep": "Mapear Head de Logística / Supply Chain do Atacadão e do Carrefour Brasil separadamente; avaliar se há unificação logística entre as bandeiras.",
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
@@ -2879,7 +2879,7 @@
         "source": "The Org / comunicado RI: VP responsavel por comercial e logistica"
       }
     ],
-    "notes": "2ª maior rede varejista do Brasil. 300+ lojas, 12 CDs, 257 mil m² de armazenagem. 3.000+ profissionais em logística. Crescimento acelerado.",
+    "notes": "2ª maior rede varejista do Brasil. Líder nacional de atacarejo, spinoff do GPA (2020). 300+ lojas em expansão agressiva, 12 CDs, 257 mil m² de armazenagem. Mais de 3.000 profissionais em logística. Alta frequência de descarga em doca — principal dor de caminhoneiros no setor. Modelo atacarejo de alto giro exige logística ágil. Decisão corporativa (P2). Fonte: Ranking ABRAS 2026.",
     "decisorMappingStatus": "mapped_2026-06-05_batch_1",
     "tierScore": 92,
     "tierBreakdown": {
@@ -2895,10 +2895,10 @@
   },
   {
     "id": 103,
-    "name": "GPA / Grupo Pão de Açúcar",
+    "name": "GPA — Grupo Pão de Açúcar",
     "segment": "E-commerce & Varejo",
     "uf": "SP",
-    "tier": 2,
+    "tier": 1,
     "scoreS13": null,
     "decisors": [
       {
@@ -2914,18 +2914,18 @@
         "source": "LinkedIn/Nosso Meio: novo diretor executivo do GPA"
       }
     ],
-    "notes": "Um dos maiores grupos varejistas. Pão de Açúcar, Extra, Compre Bem. CDs estratégicos em SP e RJ. Volume de distribuição relevante para supermercados.",
+    "notes": "Maior rede supermercadista tradicional do Brasil. Inclui bandeiras Pão de Açúcar, Extra, Compre Bem e Tenda Atacado (atacarejo próprio). CDs estratégicos em SP e RJ. Faturamento R$ 20,6 bi (GPA) + R$ 8,0 bi (Tenda) = ~R$ 28,6 bi combinado. Volume de distribuição altíssimo. Alta dependência de entregas em doca. Abordagem em camada institucional. Fonte: Ranking ABRAS 2026.",
     "decisorMappingStatus": "mapped_2026-06-05_batch_1",
-    "tierScore": 81,
+    "tierScore": 90,
     "tierBreakdown": {
-      "potencialLogistico": 29,
-      "aderenciaModeloPX": 23,
-      "porteRelevancia": 16,
-      "gatilhosTiming": 5,
-      "mapeabilidadeAcesso": 8
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 13,
+      "mapeabilidadeAcesso": 7
     },
-    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
-    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierRationale": "Tier 1: maior rede supermercadista do Brasil por tradição, múltiplos CDs nacionais, altíssima dependência de entregas em doca (atacarejo Tenda + supermercados GPA). Decisão corporativa reduz acessibilidade mas volume justifica investimento de abordagem institucional.",
+    "nextResearchStep": "Jonas Laurindvicius (Dir. Executivo Supply Chain) é o decisor principal. Validar abordagem e remetente correto.",
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
@@ -2933,7 +2933,7 @@
     "name": "Grupo Mateus",
     "segment": "E-commerce & Varejo",
     "uf": "MA",
-    "tier": 2,
+    "tier": 1,
     "scoreS13": null,
     "decisors": [
       {
@@ -2949,18 +2949,18 @@
         "source": "Perfil LinkedIn Grupo Mateus com area de supply chain e operacoes logisticas; senioridade a confirmar"
       }
     ],
-    "notes": "Maior rede varejista do Norte-Nordeste. Supermercados, atacarejo e farmácias. Foco em regiões subarradas. Crescimento acelerado nos últimos 5 anos.",
+    "notes": "Maior grupo supermercadista do Norte/Nordeste. Faturamento R$ 36,3 bi. Operação em MA, PA, PI, BA e CE com supermercados, atacarejo e farmácias. Crescimento acelerado em regiões com infraestrutura logística desafiadora — amplifica a dor de descarga em doca. Sede no Maranhão — decisão corporativa. Fonte: Ranking ABRAS 2026.",
     "decisorMappingStatus": "mapped_2026-06-05_batch_1",
-    "tierScore": 79,
+    "tierScore": 90,
     "tierBreakdown": {
-      "potencialLogistico": 27,
+      "potencialLogistico": 28,
       "aderenciaModeloPX": 23,
-      "porteRelevancia": 12,
-      "gatilhosTiming": 9,
-      "mapeabilidadeAcesso": 8
+      "porteRelevancia": 20,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
     },
-    "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
-    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierRationale": "Tier 1: maior rede do Norte/Nordeste por faturamento (R$ 36,3 bi), atuando em estados com logística de entrega desafiadora — dor de doca amplificada pela infraestrutura regional. Potencial de contrato multi-estado se abordagem for bem sucedida.",
+    "nextResearchStep": "Ilson Mateus (Fundador/Presidente) é o decisor de topo. Roberto Freitas (Supply Chain/Logística) é o contato operacional — confirmar senioridade antes de abordar.",
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
@@ -2968,7 +2968,7 @@
     "name": "Cencosud Brasil",
     "segment": "E-commerce & Varejo",
     "uf": "SC",
-    "tier": 3,
+    "tier": 1,
     "scoreS13": null,
     "decisors": [
       {
@@ -2984,18 +2984,18 @@
         "source": "Perfil LinkedIn Cencosud com gerencia de desenvolvimento supply chain; escopo Chile/Easy, nao Brasil"
       }
     ],
-    "notes": "GBarbosa, Mercantil Rodrigues e Bretas. Presença forte em Nordeste e Centro-Oeste. Rede de supermercados com logística própria.",
+    "notes": "Holding chilena com 4 bandeiras no Brasil: G.Barbosa (BA/SE/AL), Prezunic (RJ), Zona Sul (RJ — premium) e Bretas (MG/GO interior). Faturamento estimado R$ 10+ bi combinado. Presença forte em Nordeste e Centro-Oeste. Decisor de logística possivelmente centralizado — uma entrada serve todas as bandeiras. Abordagem corporativa via André. Fonte: Ranking ABRAS 2026.",
     "decisorMappingStatus": "mapped_2026-06-05_batch_1",
-    "tierScore": 75,
+    "tierScore": 87,
     "tierBreakdown": {
       "potencialLogistico": 27,
-      "aderenciaModeloPX": 23,
-      "porteRelevancia": 12,
-      "gatilhosTiming": 5,
-      "mapeabilidadeAcesso": 8
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 19,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
     },
-    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores já mapeados.",
-    "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+    "tierRationale": "Tier 1: holding com 4 bandeiras cobrindo BA, RJ e MG — potencial de uma entrada abrir múltiplos fluxos logísticos. Decisor centralizado é um facilitador estratégico: fechar Cencosud é fechar 4 bandeiras de uma vez.",
+    "nextResearchStep": "Gustavo Sorren (Supply Chain Brasil) é o contato mapeado. Validar se é decisor ou se há VP de Logística acima. Paula Castañeda está no Chile — não abordar.",
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
@@ -3006,7 +3006,7 @@
     "tier": 2,
     "scoreS13": null,
     "decisors": [],
-    "notes": "B3 maiores receitas: UGPA3, receita 145,79 B. Grupo com Ipiranga, Ultragaz e Ultracargo; cadeia física relevante de combustíveis, GLP e armazenagem.",
+    "notes": "B3 maiores receitas: UGPA3, receita R$ 145,79 bi. Grupo com Ipiranga (distribuidora de combustíveis), Ultragaz e Ultracargo; cadeia física relevante de combustíveis, GLP e armazenagem. Também conhecida como Ipiranga e Ultra — decisores podem constar no LinkedIn com qualquer uma das 3 razões sociais.",
     "decisorMappingStatus": "pending_b3_gap_2026-06-10",
     "tierScore": 82,
     "tierBreakdown": {
@@ -3018,7 +3018,11 @@
     },
     "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; decisores pendentes.",
     "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
-    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10",
+    "aliases": [
+      "Ipiranga",
+      "Ultra"
+    ]
   },
   {
     "id": 107,
@@ -4340,6 +4344,878 @@
     },
     "tierRationale": "Tier 2: conta de desenvolvimento com operação nacional de cadeia fria (laticínios + bebidas) que demanda transportadoras especializadas; múltiplos CDs distribuídos pelo Brasil; porte econômico relevante e boa aderência ao modelo PX.",
     "nextResearchStep": "Mapear decisores de logística/supply chain da Danone Brasil e identificar qual CD (SP, RJ, MG ou Sul) é o maior fluxo para priorizar abordagem.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 174,
+    "name": "Grupo Koch",
+    "segment": "E-commerce & Varejo",
+    "uf": "SC",
+    "tier": 1,
+    "scoreS13": null,
+    "notes": "8ª maior rede supermercadista do Brasil. Inclui SuperKoch e Komprão (atacarejo). Faturamento R$ 12,9 bi. Sede catarinense com forte presença regional — decisão mais acessível que grupos nacionais. SC tem alta concentração de indústrias e transportadoras na região de Joinville/Itajaí. Fonte: Ranking ABRAS 2026 / NSC Total.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 87,
+    "tierBreakdown": {
+      "potencialLogistico": 26,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 9
+    },
+    "tierRationale": "Tier 1: 8ª maior do Brasil em faturamento, presença regional forte em SC com bandeira de atacarejo (Komprão) — alta exposição à dor de doca. Decisão regional mais acessível que grupos nacionais.",
+    "nextResearchStep": "Identificar Diretor/Gerente de Logística do Grupo Koch em SC; avaliar CD de distribuição principal.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 175,
+    "name": "Giassi Supermercados",
+    "segment": "E-commerce & Varejo",
+    "uf": "SC",
+    "tier": 1,
+    "scoreS13": null,
+    "notes": "Rede forte no sul de SC, em expansão ativa. Faturamento R$ 4,5 bi. Lojas em Criciúma, Tubarão, Florianópolis e região. Decisão regional acessível. Expansão = abertura de novas docas e oportunidade de abordagem em momento de decisão. Fonte: Ranking ABRAS 2026 / NSC Total.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 13,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 1: rede regional em expansão no sul de SC — abertura de novas lojas gera janela de timing favorável para abordagem antes da formação de novos contratos logísticos. Decisão regional muito acessível.",
+    "nextResearchStep": "Identificar Diretor de Logística / Supply Chain da Giassi; checar cronograma de expansão de lojas para timing de abordagem.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 176,
+    "name": "Atakarejo",
+    "segment": "E-commerce & Varejo",
+    "uf": "BA",
+    "tier": 1,
+    "scoreS13": null,
+    "notes": "Líder isolado do ranking baiano de supermercados/atacarejo. Faturamento R$ 5,2–6,3 bi. Sede em Salvador, decisão local. Modelo atacarejo = alta dependência de descarga em doca; caminhoneiros evitam frete de supermercados por fila/espera. Fonte: Bahia Econômica / NegóciosBA 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 88,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 23,
+      "porteRelevancia": 18,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 1: líder absoluto do mercado baiano, modelo atacarejo com alta exposição à dor de doca, decisão local que agiliza abordagem. Faturamento relevante e operação concentrada em Salvador.",
+    "nextResearchStep": "Identificar Diretor de Logística / Gerente de CD do Atakarejo em Salvador.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 177,
+    "name": "Grupo Guanabara",
+    "segment": "E-commerce & Varejo",
+    "uf": "RJ",
+    "tier": 1,
+    "scoreS13": null,
+    "notes": "Maior rede supermercadista do RJ (11ª nacional). 100% familiar, decisão local rápida. Faturamento R$ 10,3 bi (Supermercados Guanabara) + R$ 5,5 bi (Supermercados Mundial) = ~R$ 15,8 bi combinado — ambas do mesmo grupo. Logística intensa no mercado fluminense. Fonte: Ranking ABRAS 2026 / Exame.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 89,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 20,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 1: maior rede do RJ com duas bandeiras (Guanabara + Mundial) sob o mesmo grupo familiar — decisor único com R$ 15,8 bi de faturamento combinado. Empresa familiar facilita acesso vs. holdings nacionais.",
+    "nextResearchStep": "Identificar Diretor de Logística do Grupo Guanabara no RJ; avaliar se há CD centralizado para as duas bandeiras.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 178,
+    "name": "Supermercados BH (Grupo BH)",
+    "segment": "E-commerce & Varejo",
+    "uf": "MG",
+    "tier": 1,
+    "scoreS13": null,
+    "notes": "Maior rede supermercadista de Minas Gerais (4ª maior do Brasil). Forte capilaridade em BH e região metropolitana. Identidade regional forte, decisão local. Faturamento não publicado, mas posicionamento como 4ª maior do Brasil indica operação de grande porte. Fonte: Ranking ABRAS 2026 / Exame.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 88,
+    "tierBreakdown": {
+      "potencialLogistico": 27,
+      "aderenciaModeloPX": 22,
+      "porteRelevancia": 19,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 1: 4ª maior rede do Brasil, liderança absoluta em MG — potencial logístico alto por ser referência regional em BH. Empresa regional facilita acesso vs. grupos nacionais.",
+    "nextResearchStep": "Identificar Diretor/Gerente de Logística do Supermercados BH; confirmar faturamento e estrutura de CD.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 179,
+    "name": "Grupo Savegnago",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Regional forte no interior paulista. Inclui Savegnago Supermercados (faturamento R$ 7,9 bi) e São Vicente Atacadista (braço de atacarejo do mesmo grupo). Decisão mais acessível que grupos nacionais. Forte presença em Ribeirão Preto, São José do Rio Preto e interior SP. Fonte: Ranking ABRAS 2026 SP.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: grupo regional relevante no interior de SP com supermercado + atacarejo sob mesmo decisor — duas frentes de doca. Faturamento de R$ 7,9 bi e decisão regional acessível tornam esta conta atraente.",
+    "nextResearchStep": "Identificar Gerente/Diretor de Logística do Grupo Savegnago; avaliar se há CD centralizado para Savegnago + São Vicente.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 180,
+    "name": "Sonda Supermercados",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Top 10 SP por faturamento (R$ 6,1 bi). Regional independente com foco na capital paulista. Presença forte na Grande SP com lojas de formato hipermercado. Alta dependência de entregas em doca. Fonte: Ranking ABRAS 2026 SP.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 80,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: top 10 SP em faturamento, independente regional — decisão mais acessível. Operação na Grande SP com lojas de grande formato amplia a dor de doca.",
+    "nextResearchStep": "Identificar Gerente de Logística / CD da Sonda Supermercados em SP.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 181,
+    "name": "Comercial Zaragoza",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Top 10 SP por faturamento (R$ 4,3 bi). Atacarejo independente paulista. Modelo atacarejo = alta dependência de descarga em doca e alto giro de estoque. Fonte: Ranking ABRAS 2026 SP.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: atacarejo independente no top 10 de SP — modelo de negócio de alto giro com alta exposição à dor de doca que o Ajudante PX resolve. Decisão regional.",
+    "nextResearchStep": "Identificar Gerente de Logística / Recebimento do Comercial Zaragoza em SP.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 182,
+    "name": "Pague Menos Supermercados",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Top 10 SP por faturamento (R$ 4,3 bi). Rede supermercadista independente em SP — não confundir com a rede de farmácias Pague Menos. Operação focada no estado de SP. Fonte: Ranking ABRAS 2026 SP.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: top 10 SP em faturamento, regional independente com foco em SP — decisão acessível. Importante validar que não há confusão com a rede de farmácias homônima antes de abordar.",
+    "nextResearchStep": "Confirmar identidade da empresa (não é a rede de farmácias) e mapear contato de logística.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 183,
+    "name": "Roldão Atacadista",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Atacarejo paulista tradicional. Faturamento R$ 4,0 bi. Alto giro de estoque = alta dependência de doca ágil. Modelo de negócio especialmente exposto à dor de descarga que caminhoneiros relatam. Fonte: Ranking ABRAS 2026 SP.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 80,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: atacarejo tradicional de SP com alto giro — modelo de negócio onde a dor de doca é mais aguda. Faturamento R$ 4 bi e operação regional independente.",
+    "nextResearchStep": "Identificar Gerente de Logística / Coordenador de Recebimento do Roldão Atacadista.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 184,
+    "name": "Plurix",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Top 10 SP por faturamento (R$ 9,6 bi). Bandeiras e estrutura exata de decisor ainda a confirmar antes de campanha. Validado em Ranking ABRAS 2026. Fonte: Ranking ABRAS 2026 SP.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 81,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: faturamento R$ 9,6 bi coloca no top 10 de SP, mas bandeiras e identidade do decisor precisam ser confirmadas antes de campanha ativa.",
+    "nextResearchStep": "Confirmar bandeiras do Plurix e identificar estrutura de decisor de logística.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 185,
+    "name": "Covabra Supermercados",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Regional em expansão no interior de SP (região de Campinas). Faturamento não confirmado em ranking setorial. Decisão local. Expansão ativa na região metropolitana de Campinas. Fonte: Conhecimento de mercado.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: regional em expansão no interior de SP com decisão local — janela de timing na abertura de novas lojas. Faturamento a confirmar.",
+    "nextResearchStep": "Confirmar faturamento e mapear Gerente de Logística da Covabra na região de Campinas.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 186,
+    "name": "Coop — Cooperativa de Consumo",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Cooperativa relevante na Grande SP e região do ABC paulista. Estrutura logística própria com CDs regionais. Natureza cooperativa pode facilitar decisão descentralizada. Faturamento não confirmado em ranking setorial. Fonte: Conhecimento de mercado.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 9
+    },
+    "tierRationale": "Tier 2: cooperativa relevante na Grande SP/ABC com estrutura logística própria. Natureza cooperativa pode facilitar ou fragmentar decisão — mapear estrutura antes de abordar.",
+    "nextResearchStep": "Mapear estrutura de decisão logística da Coop e identificar responsável pelo CD ou recebimento.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 187,
+    "name": "Grupo Angeloni",
+    "segment": "E-commerce & Varejo",
+    "uf": "SC",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Maior rede catarinense por tradição. Faturamento R$ 3,9 bi. CD próprio em SC, decisão regional consolidada. Forte presença em Florianópolis, Itajaí e norte de SC. Rede com foco em segmento premium/qualidade. Fonte: Ranking ABRAS 2026 / NSC Total.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: maior rede catarinense por tradição com CD próprio e decisão regional — boa aderência ao modelo PX. Segmento premium pode significar exigência maior de SLA, o que amplifica o valor do Ajudante.",
+    "nextResearchStep": "Identificar Gerente/Diretor de Logística do Grupo Angeloni em SC.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 188,
+    "name": "Bistek Supermercados",
+    "segment": "E-commerce & Varejo",
+    "uf": "SC",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "25 lojas em 13 cidades de SC e RS. Decisão regional consolidada. Faturamento não confirmado em ranking setorial. Presença em Florianópolis, Blumenau e outros centros catarinenses. Fonte: Conhecimento de mercado.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: rede regional com 25 lojas em SC e RS, decisão local — perfil adequado para abordagem regional. Faturamento a confirmar.",
+    "nextResearchStep": "Confirmar faturamento e mapear responsável de logística/recebimento do Bistek.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 189,
+    "name": "Fort Atacadista",
+    "segment": "E-commerce & Varejo",
+    "uf": "SC",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Atacarejo regional em expansão em SC. Faturamento não confirmado. Modelo atacarejo = alta dependência de descarga em doca e alto giro de estoque. Presença crescente no estado. Fonte: Conhecimento de mercado.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 14,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2 (mínimo): atacarejo regional em SC em expansão — modelo de negócio com alta exposição à dor de doca. Faturamento e estrutura a validar.",
+    "nextResearchStep": "Confirmar faturamento e mapear responsável de logística do Fort Atacadista.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 190,
+    "name": "Bahamas Supermercados",
+    "segment": "E-commerce & Varejo",
+    "uf": "BA",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Rede baiana tradicional, forte em Salvador e região metropolitana. Faturamento não confirmado em ranking setorial. Decisão local. Nome relevante no mercado baiano. Fonte: Conhecimento de mercado.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 9
+    },
+    "tierRationale": "Tier 2: rede regional baiana com presença conhecida em Salvador. Faturamento não validado — confirmar antes de campanha.",
+    "nextResearchStep": "Confirmar faturamento e mapear responsável de logística do Bahamas Supermercados em Salvador.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 191,
+    "name": "Rede Mix Atacarejo",
+    "segment": "E-commerce & Varejo",
+    "uf": "BA",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "2ª maior rede baiana por faturamento. Faturamento R$ 1,1–1,25 bi. Sede em Salvador, decisão local. Modelo atacarejo = alta exposição à dor de doca e alto giro. Fonte: NegóciosBA 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 14,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: 2ª maior rede da BA, modelo atacarejo com alta dor de doca, decisão local em Salvador — bom perfil para abordagem regional.",
+    "nextResearchStep": "Identificar Gerente de Logística / CD da Rede Mix Atacarejo em Salvador.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 192,
+    "name": "Hiperideal",
+    "segment": "E-commerce & Varejo",
+    "uf": "BA",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "3ª maior rede baiana por faturamento. Faturamento R$ 1,0–1,1 bi. Sede em Salvador, decisão local acessível. Operação supermercadista regional. Fonte: NegóciosBA 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 14,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Tier 2: 3ª maior rede baiana, decisão local muito acessível em Salvador — bom ponto de entrada para prospecção no mercado baiano.",
+    "nextResearchStep": "Identificar Gerente de Logística / Coordenador de Recebimento do Hiperideal em Salvador.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 193,
+    "name": "Torre e Cia Supermercados",
+    "segment": "E-commerce & Varejo",
+    "uf": "RJ",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Entre as maiores redes independentes do RJ. Faturamento R$ 2,1 bi. Decisão regional. Operação no estado do Rio de Janeiro. Fonte: Exame 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 15,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: independente regional no RJ com faturamento relevante R$ 2,1 bi. Decisão local facilita abordagem vs. holdings nacionais presentes no estado.",
+    "nextResearchStep": "Identificar Gerente de Logística / CD da Torre e Cia Supermercados no RJ.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 194,
+    "name": "Super Nosso",
+    "segment": "E-commerce & Varejo",
+    "uf": "MG",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "24ª maior rede supermercadista do Brasil. 85 anos de história mineira. Faturamento R$ 4,72 bi. Decisão regional em BH. Rede consolidada com forte reputação no mercado mineiro. Fonte: Ranking ABRAS 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 80,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: 24ª maior do Brasil, faturamento R$ 4,72 bi, 85 anos de operação em MG — empresa consolidada com estrutura logística madura. Decisão regional em BH.",
+    "nextResearchStep": "Identificar Diretor/Gerente de Logística do Super Nosso em BH.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 195,
+    "name": "Grupo DMA / Epa",
+    "segment": "E-commerce & Varejo",
+    "uf": "MG",
+    "tier": 2,
+    "scoreS13": null,
+    "notes": "Grupo DMA é 13º maior supermercadista do Brasil. Bandeira Epa é referência em BH e interior de MG. Forte presença na Grande BH. Fonte: Ranking ABRAS 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 80,
+    "tierBreakdown": {
+      "potencialLogistico": 24,
+      "aderenciaModeloPX": 21,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: 13º maior do Brasil com presença forte em BH via bandeira Epa — boa escala regional. Decisão local em MG.",
+    "nextResearchStep": "Identificar Gerente/Diretor de Logística do Grupo DMA em BH.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 196,
+    "name": "Grupo Barcelos",
+    "segment": "E-commerce & Varejo",
+    "uf": "RJ",
+    "tier": 3,
+    "scoreS13": null,
+    "notes": "Rede supermercadista do RJ. Faturamento R$ 1,7 bi (validado em ranking). Validar decisor e estrutura antes de priorizar na campanha. Fonte: Exame 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 70,
+    "tierBreakdown": {
+      "potencialLogistico": 21,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 14,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 3: porte menor (R$ 1,7 bi) no mercado do RJ — priorizar contas maiores primeiro; abordar quando pipeline estiver maduro.",
+    "nextResearchStep": "Validar decisor de logística e confirmar estrutura de CD antes de incluir em campanha.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 197,
+    "name": "Comercial de Alimentos Gilmar",
+    "segment": "E-commerce & Varejo",
+    "uf": "BA",
+    "tier": 3,
+    "scoreS13": null,
+    "notes": "Rede supermercadista baiana. Faturamento R$ 879 mi (validado em ranking). Porte menor que os líderes baianos. Validar decisor antes de priorizar. Fonte: NegóciosBA 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 68,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 13,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 3: faturamento R$ 879 mi coloca abaixo das prioridades baianas — abordar após Atakarejo, Rede Mix e Hiperideal.",
+    "nextResearchStep": "Validar decisor de logística antes de incluir em campanha.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 198,
+    "name": "Novo Mix Atacado",
+    "segment": "E-commerce & Varejo",
+    "uf": "BA",
+    "tier": 3,
+    "scoreS13": null,
+    "notes": "Atacarejo na região metropolitana de Salvador (Lauro de Freitas). Faturamento R$ 717 mi (validado em ranking). Porte menor. Validar antes de campanha. Fonte: NegóciosBA 2026.",
+    "decisors": [],
+    "decisorMappingStatus": "pending_2026-07-17",
+    "tierScore": 68,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 3: menor faturamento da lista baiana (R$ 717 mi); atacarejo em Lauro de Freitas — validar potencial e decisor antes de alocar esforço de campanha.",
+    "nextResearchStep": "Confirmar estrutura de CD e mapear contato de logística do Novo Mix Atacado.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 199.0,
+    "name": "Atacadão",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado via merge CSV 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 85,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado do painel CSV de 08/07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 200.0,
+    "name": "MadeiraMadeira",
+    "segment": "E-commerce & Varejo",
+    "uf": "PR",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado via merge CSV 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado do painel CSV de 08/07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 201.0,
+    "name": "Kenvue",
+    "segment": "Farmacêutico & Saúde",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado via merge CSV 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 76,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado do painel CSV de 08/07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 202.0,
+    "name": "Tenda Atacado",
+    "segment": "E-commerce & Varejo",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado via merge CSV 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 75,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado do painel CSV de 08/07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 203.0,
+    "name": "Grupo São Vicente",
+    "segment": "E-commerce & Varejo",
+    "uf": "RJ",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado via merge CSV 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado do painel CSV de 08/07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 204.0,
+    "name": "Campari Group",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado via merge CSV 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 72,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado do painel CSV de 08/07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 205.0,
+    "name": "ALE Combustíveis",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "MG",
+    "tier": 3,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado via merge CSV 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 70,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado do painel CSV de 08/07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 206.0,
+    "name": "Rodoil Distribuidora de Combustíveis",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "RS",
+    "tier": 3,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado via merge CSV 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 71,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado do painel CSV de 08/07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 207.0,
+    "name": "Ortobom",
+    "segment": "Indústria Pesada",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado em 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 76,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado via merge 2026-08-07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 208.0,
+    "name": "Grupo Habib's",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado em 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 74,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado via merge 2026-08-07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 209.0,
+    "name": "ZAMP (Burger King Brasil)",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado em 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 79,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado via merge 2026-08-07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 210.0,
+    "name": "Arcos Dourados (McDonald's Brasil)",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado em 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 82,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado via merge 2026-08-07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 211.0,
+    "name": "Enel",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 1,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado em 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 88,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado via merge 2026-08-07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 212.0,
+    "name": "Copel",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "PR",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [],
+    "decisors": [],
+    "notes": "Adicionado em 2026-08-07",
+    "decisorMappingStatus": "pending_2026-08-07",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 10
+    },
+    "tierRationale": "Adicionado via merge 2026-08-07",
+    "nextResearchStep": "Mapear decisores e validar potencial",
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   }
 ]

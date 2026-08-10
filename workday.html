@@ -427,7 +427,7 @@
       overflow-y: hidden;
       padding: 10px;
       background: var(--soft);
-      height: 420px;
+      height: 580px;
     }
 
     .kanban-column {
@@ -569,6 +569,10 @@
             <button id="kanban-add-btn" style="padding:4px 10px;font-size:11px;">+ Adicionar empresa</button>
           </div>
         </div>
+        <div style="display:flex;gap:8px;margin:10px 0;align-items:center;">
+          <input type="text" id="kanban-search" placeholder="🔍 Pesquisar por empresa ou decisor..." style="flex:1;padding:8px 12px;border:1px solid var(--line);border-radius:6px;font-size:13px;">
+          <span class="muted" id="kanban-search-count" style="font-size:12px;min-width:120px;text-align:right;"></span>
+        </div>
         <form class="kanban-add-form" id="kanban-add-form">
           <input name="name" placeholder="Nome da empresa *" required>
           <input name="segment" placeholder="Segmento">
@@ -609,26 +613,7 @@
 
   <script src="/js/icp-segment.js"></script>
   <script>
-    const queueMeta = [
-      {
-        key: "highTierNotStarted",
-        label: "Tier 1/2 sem abordagem",
-        short: "Tier sem contato",
-        empty: "Todas as contas de alto tier já têm abordagem iniciada."
-      },
-      {
-        key: "recentConnectionsSent",
-        label: "Conexões enviadas (últimos 7 dias)",
-        short: "Conexões enviadas",
-        empty: "Nenhuma conexão enviada nos últimos 7 dias."
-      },
-      {
-        key: "overdueNextActions",
-        label: "Próximas ações vencidas",
-        short: "Ações vencidas",
-        empty: "Nenhuma próxima ação vencida."
-      }
-    ];
+    const queueMeta = [];
 
     const kpisEl = document.getElementById("kpis");
     const queuesEl = document.getElementById("queues");
@@ -1114,7 +1099,7 @@
         ? new Date(company.nextActionDueAt).toISOString().slice(0, 10)
         : "";
       return `
-        <div class="kanban-card" draggable="true" data-company-id="${company.id}">
+        <div class="kanban-card" draggable="true" data-company-id="${company.id}" data-company="${company.name.toLowerCase()}" data-decisor="${(company.activeDecisor || "").toLowerCase()}">
           <strong>${company.name}</strong>
           ${company.activeDecisor ? `<p style="font-size:11px;color:var(--text-muted,#888);margin-top:-2px;font-style:italic;">👤 ${company.activeDecisor}</p>` : ""}
           ${company.segment ? `<p>${company.segment}</p>` : ""}
@@ -1167,6 +1152,27 @@
           </div>
         </div>
       `).join("");
+      applyKanbanFilter();
+    }
+
+    function applyKanbanFilter() {
+      const searchEl = document.getElementById("kanban-search");
+      const term = (searchEl?.value || "").toLowerCase().trim();
+      const countEl = document.getElementById("kanban-search-count");
+      let visibleCount = 0;
+
+      document.querySelectorAll(".kanban-card").forEach((card) => {
+        const companyName = (card.dataset.company || "").toLowerCase();
+        const decisorName = (card.dataset.decisor || "").toLowerCase();
+        const match = term === "" || companyName.includes(term) || decisorName.includes(term);
+        card.style.display = match ? "" : "none";
+        if (match) visibleCount++;
+      });
+
+      const total = document.querySelectorAll(".kanban-card").length;
+      if (countEl) {
+        countEl.textContent = term ? `${visibleCount} de ${total} cards` : `${total} cards`;
+      }
     }
 
     async function loadKanban() {
@@ -1272,6 +1278,14 @@
         showActionError(error, "adicionar empresa");
       }
     });
+
+    // --- Pesquisa de empresas no Kanban ---
+    const kanbanSearch = document.getElementById("kanban-search");
+    if (kanbanSearch) {
+      kanbanSearch.addEventListener("input", () => {
+        applyKanbanFilter();
+      });
+    }
 
     // --- Editar / excluir cards do Kanban ---
     kanbanBoardEl.addEventListener("click", async (event) => {
