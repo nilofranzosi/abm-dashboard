@@ -157,6 +157,22 @@
       return d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
     }
 
+    // Dias agenciados vem do banco como decimal (meia diaria existe: FSJ fecha
+    // julho em 12.170,5). Formatar em pt-BR com no maximo uma casa evita tanto
+    // "12170.5" quanto o residuo de ponto flutuante da soma das 139 contas.
+    function fmt(n) {
+      return (Number(n) || 0).toLocaleString('pt-BR', { maximumFractionDigits: 1 });
+    }
+
+    // O mes corrente e sempre parcial — o sync diario acumula ate ontem. Marcar
+    // isso e obrigatorio: sem o aviso, agosto parece uma queda de 64% sobre
+    // julho quando na verdade e um mes com 11 dias corridos.
+    function isMesEmCurso(monthStr) {
+      const hoje = new Date();
+      const mm = String(hoje.getMonth() + 1).padStart(2, '0');
+      return monthStr === `${hoje.getFullYear()}-${mm}-01`;
+    }
+
 
     async function load() {
       try {
@@ -238,7 +254,7 @@
         <label style="font-size: 0.85rem; font-weight: 600; color: #344054; margin-right: 8px;">Mês Analisado:</label>
         <select id="month-dropdown" style="padding: 6px 10px; border: 1px solid #D9E2F2; border-radius: 4px; cursor: pointer;">
           ${data.trendMonths.map(m => `
-            <option value="${m}" ${selectedMonth === m ? 'selected' : ''}>${getMonthLabel(m)}</option>
+            <option value="${m}" ${selectedMonth === m ? 'selected' : ''}>${getMonthLabel(m)}${isMesEmCurso(m) ? ' (em curso)' : ''}</option>
           `).join('')}
         </select>
       `;
@@ -274,16 +290,21 @@
       const trend = lastTotal - firstTotal;
       const trendPct = firstTotal > 0 ? Math.round((trend / firstTotal) * 100) : 0;
 
+      const parcial = isMesEmCurso(selectedMonth);
+      const notaParcial = parcial
+        ? ` · parcial até ${new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' })}`
+        : '';
+
       document.getElementById('kpi-grid').innerHTML = `
         <div class="kpi">
           <div class="kpi-label">Dias Agenciados</div>
-          <div class="kpi-value">${totalDaysAll}</div>
-          <div class="kpi-subtitle">Total (meta: ${totalAlvoAll})</div>
+          <div class="kpi-value">${fmt(totalDaysAll)}</div>
+          <div class="kpi-subtitle">Meta: ${fmt(totalAlvoAll)}${notaParcial}</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">Atingimento</div>
           <div class="kpi-value">${pctAll}%</div>
-          <div class="kpi-subtitle">Da meta consolidada</div>
+          <div class="kpi-subtitle">Da meta consolidada${parcial ? ' (mês em curso)' : ''}</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">Cobertura Eventos</div>
@@ -298,7 +319,7 @@
         <div class="kpi">
           <div class="kpi-label">Tendência</div>
           <div class="kpi-value" style="${trend >= 0 ? 'color:var(--green)' : 'color:var(--red)'}">${trendPct > 0 ? '+' : ''}${trendPct}%</div>
-          <div class="kpi-subtitle">Últimos 6 meses</div>
+          <div class="kpi-subtitle">${getMonthLabel(data.trendMonths[firstMonthIdx])} → ${getMonthLabel(selectedMonth)}</div>
         </div>
       `;
     }
@@ -382,11 +403,11 @@
         return `<tr data-idx="${realIdx}" onclick="showDetail(${realIdx})">
           <td style="text-align: center; font-weight: 600; color: #667085;">${idx + 1}</td>
           <td><strong>${escapeHtml(row.companyName || row.clienteRaw)}</strong></td>
-          <td>${pct}%</td>
+          <td>${pct}% <span class="muted" style="font-size:11px">(${fmt(contractDaysThisMonth)} dias)</span></td>
           <td><span class="status-badge ${eventCount > 0 ? 'positive' : 'negative'}">${eventCount} evento${eventCount !== 1 ? 's' : ''}</span></td>
           <td>${row.tier || '—'}</td>
           <td><span class="status-badge ${row.status ? 'info' : ''}">${row.status || '—'}</span></td>
-          <td><span class="${trendClass}">${trendSymbol} ${Math.abs(trend)}</span></td>
+          <td><span class="${trendClass}">${trendSymbol} ${fmt(Math.abs(trend))}</span></td>
         </tr>`;
       }).join('');
     }
@@ -411,7 +432,7 @@
           const row = data.rows[idx];
           const monthTrend = row.trend?.find(t => t.month === selectedMonth);
           const contractDaysThisMonth = monthTrend?.contractDays || 0;
-          document.getElementById('detail-contract-days').textContent = contractDaysThisMonth;
+          document.getElementById('detail-contract-days').textContent = fmt(contractDaysThisMonth);
         }
       }
     }
@@ -425,11 +446,11 @@
       const contractDaysThisMonth = monthTrend?.contractDays || 0;
 
       document.getElementById('detail-title').textContent = escapeHtml(row.companyName || row.clienteRaw);
-      document.getElementById('detail-contract-days').textContent = contractDaysThisMonth;
+      document.getElementById('detail-contract-days').textContent = fmt(contractDaysThisMonth);
       document.getElementById('detail-info').innerHTML = `
         <p><strong>Cavaleiro:</strong> ${escapeHtml(row.cavaleiro || '—')}</p>
         <p><strong>Coordenação:</strong> ${escapeHtml(row.coordenacao)}</p>
-        <p><strong>Alvo:</strong> ${row.alvo} dias | <strong>Falta:</strong> ${row.faltaParaAlvo}</p>
+        <p><strong>Alvo:</strong> ${fmt(row.alvo)} dias | <strong>Falta:</strong> ${fmt(row.faltaParaAlvo)}</p>
         <p><strong>Multiplicador:</strong> ${escapeHtml(row.multiplicador)} | <strong>Viabilidade:</strong> ${escapeHtml(row.viabilidade)}</p>
       `;
 

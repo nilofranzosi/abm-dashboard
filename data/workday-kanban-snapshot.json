@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T11:43:17.143Z",
+  "generatedAt": "2026-08-11T12:00:02.178Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -292,18 +292,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "ROGERIO KOHNTOPP"
-        },
-        {
-          "id": "cmr9oddp70000k78k8r6rq39u",
-          "name": "Tigre S.A.",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-07T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Luis Felipe Dovichi Mendes"
         },
         {
           "id": "cmrt9u76r001mk718awvfzr00",
@@ -948,6 +936,18 @@
           "activeDecisor": "Carlos H. Medeiros"
         },
         {
+          "id": "cmr9oddp70000k78k8r6rq39u",
+          "name": "Tigre S.A.",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-10T12:17:56.789Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Luis Felipe Dovichi Mendes"
+        },
+        {
           "id": "cmqqnb6e00006k7o8zjztmp3u",
           "name": "Assaí Atacadista",
           "segment": null,
@@ -1421,18 +1421,6 @@
           "activeDecisor": "Eduardo De Camargo Filho"
         },
         {
-          "id": "cmqqlp8t70008k7g0662vqv6d",
-          "name": "Petrobras",
-          "segment": "Combustíveis, Energia & Química",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": "2026-06-23T03:00:00.000Z",
-          "lastInteractionAt": null,
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
           "id": "cmqqwt16f000ik7o8il8uzjxj",
           "name": "Minerva Foods",
           "segment": null,
@@ -1443,6 +1431,18 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "ADRIANO ROSA DELFINO"
+        },
+        {
+          "id": "cmsngud670000k7q0j7ttgbyp",
+          "name": "Grupo Profarma",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 0,
+          "nextAction": "Contato Thiago",
+          "nextActionDueAt": null,
+          "lastInteractionAt": null,
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
         }
       ]
     },
@@ -1450,6 +1450,18 @@
       "stage": "PAUSED",
       "label": "Pausado",
       "companies": [
+        {
+          "id": "cmqqlp8t70008k7g0662vqv6d",
+          "name": "Petrobras",
+          "segment": "Combustíveis, Energia & Química",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": "2026-06-23T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-10T16:49:01.897Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
         {
           "id": "cmqjvk2sz0006k7s0lv9seb1b",
           "name": "ArcelorMittal",

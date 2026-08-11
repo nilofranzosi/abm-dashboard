@@ -30,6 +30,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    if (new URLSearchParams(location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embedded-view");
+    }
+  </script>
   <style>
     :root {
       --blue:#0F52BA; --blue-50:#EFF6FF; --blue-100:#DBEAFE;
@@ -48,8 +53,10 @@
     body{margin:0;font-family:'Inter',Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
 
     .shell{min-height:100vh;display:grid;grid-template-columns:256px 1fr;}
-    html.embedded-view .shell{grid-template-columns:1fr;}
-    html.embedded-view .shell aside{display:none;}
+    html.embedded-view body{background:transparent;}
+    html.embedded-view .shell{display:block;min-height:0;}
+    html.embedded-view .shell aside{display:none!important;}
+    html.embedded-view main{padding:0;gap:14px;}
 
     /* sidebar */
     aside{background:var(--sidebar-bg);color:#CBD5E1;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;}
@@ -165,6 +172,7 @@
 
     .company-name{font-weight:600;font-size:13px;margin-bottom:2px;}
     .company-uf{font-size:11px;color:var(--muted);}
+    .company-aliases{font-size:10px;color:var(--muted);margin-top:1px;font-style:italic;}
 
     /* badges */
     .badge{display:inline-flex;align-items:center;height:20px;padding:0 8px;border-radius:999px;font-size:11px;font-weight:600;white-space:nowrap;}
@@ -225,11 +233,6 @@
   </style>
 </head>
 <body>
-<script>
-  if (new URLSearchParams(location.search).get("embed") === "1") {
-    document.documentElement.classList.add("embedded-view");
-  }
-</script>
 <div class="shell">
   <aside>
     <div class="brand-header">
@@ -384,7 +387,7 @@
       <table>
         <thead>
           <tr>
-            <th>Tier</th>
+            <th id="th-tier">Tier</th>
             <th id="th-name">Embarcador</th>
             <th id="th-segmento">Segmento</th>
             <th>Já abordado?</th>
@@ -490,9 +493,20 @@
       document.getElementById("kpi-market-coverage").style.display = "none";
 
       document.getElementById("f-segment-label").textContent = "Tipo";
+      document.getElementById("th-tier").textContent = "Tier (Superset)";
       document.getElementById("th-segmento").textContent = "Tipo";
-      document.getElementById("th-decisores").textContent = "Filiais";
-      document.getElementById("th-detalhe").textContent = "Detalhes";
+      document.getElementById("th-tier-score").textContent = "Score";
+      document.getElementById("th-decisores").textContent = "QTD Contratos";
+      document.getElementById("th-detalhe").textContent = "CNPJ";
+
+      // Estado (Company.accountStatus) has no Embarcador equivalent — inserted
+      // at runtime rather than kept as a permanently-hidden header, so the
+      // thead/tbody column count always matches positionally (isTransportadora
+      // is fixed for the lifetime of a page load, never toggled at runtime).
+      const estadoTh = document.createElement("th");
+      estadoTh.id = "th-estado";
+      estadoTh.textContent = "Estado";
+      document.getElementById("th-segmento").after(estadoTh);
     }
   }
 
@@ -608,7 +622,7 @@
 
   function exportCsv() {
     const headers = isTransportadora
-      ? ["Tier", "Nome", "Tipo", "CNPJ", "Já abordado?", "Tier Score", "Filiais", "Status ABM"]
+      ? ["Tier (Superset)", "Nome", "Tipo", "Estado", "CNPJ", "Já abordado?", "Score", "QTD Contratos", "Status ABM"]
       : ["Tier", "Embarcador", "Segmento", "UF", "Já abordado?", "Tier Score", "Decisores", "Status ABM", "Critério e próximo passo"];
     const rows = filteredEmb.map(e => {
       const tierLabel = e.tier ? `Tier ${e.tier}` : "Sem tier";
@@ -620,10 +634,11 @@
           tierLabel,
           e.name,
           LIST_TYPE_LABELS[e.listType] || e.listType || "",
+          e.accountStatus ?? "",
           e.cnpj ?? "",
           jaAbordado,
           e.tierScore ?? "",
-          e.branchCount ?? "",
+          e.qtdContratos ?? "",
           abm
         ];
       }
@@ -768,6 +783,11 @@
     return `<button class="badge ${cls}" data-key="${esc(key)}" onclick="toggleAbordado(this.dataset.key)" title="${esc(tip)}" style="cursor:pointer;border:none;font-family:inherit;padding:0 8px;height:20px;">${label}${editIcon}</button>`;
   }
 
+  function aliasesLine(e) {
+    if (!e.aliases || e.aliases.length === 0) return '';
+    return `<div class="company-aliases">tb. conhecida como: ${e.aliases.map(a => esc(a)).join(', ')}</div>`;
+  }
+
   function joinvilleTag(e) {
     const txt = ((e.notes || '') + ' ' + (e.uf || '')).toLowerCase();
     if (txt.includes('joinville') || txt.includes('araquari')) {
@@ -799,8 +819,25 @@
     return m[s] || s;
   }
 
+  function estadoBadge(status) {
+    if (!status) return '<span class="muted">—</span>';
+    const labels = { RECORRENTE: "Recorrente", ATIVO: "Ativo", INATIVO: "Inativo", CHURN: "Churn", FALENCIA: "Falência" };
+    return `<span>${esc(labels[status] || status)}</span>`;
+  }
+
   function tierScoreCell(e) {
     const score = e.tierScore;
+    if (isTransportadora) {
+      if (!score) return '<span class="muted">—</span>';
+      return `
+        <div class="tier-score" title="${esc(e.motivoPrioridade || "")}">
+          <div class="tier-score-head">
+            <span class="tier-score-label">Total</span>
+            <span class="score-val">${score}</span>
+          </div>
+          <div class="score-bar" style="width:100%"><div class="score-fill" style="width:${Math.min(100, score)}%"></div></div>
+        </div>`;
+    }
     if (!score) return '<span class="muted">—</span>';
     const pct = Math.min(100, score);
     const b = e.tierBreakdown || {};
@@ -838,7 +875,7 @@
   function renderTable() {
     const tbody = document.getElementById("tbody");
     if (filteredEmb.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="8" class="empty">Nenhuma empresa encontrada com os filtros aplicados.</td></tr>';
+      tbody.innerHTML = `<tr><td colspan="${isTransportadora ? 9 : 8}" class="empty">Nenhuma empresa encontrada com os filtros aplicados.</td></tr>`;
       return;
     }
 
@@ -849,8 +886,10 @@
         ? `<span style="font-size:12px">${esc(LIST_TYPE_LABELS[e.listType] || e.listType || "—")}</span>`
         : `<span style="font-size:12px">${segDot(e.segment)}${esc(e.segment)}</span>`;
 
+      const estadoCell = isTransportadora ? `<td>${estadoBadge(e.accountStatus)}</td>` : "";
+
       const decisorsHtml = isTransportadora
-        ? `<span class="muted">${esc(e.branchCount != null ? `${e.branchCount} filial(is)` : "—")}</span>`
+        ? `<span class="muted">${esc(e.qtdContratos != null ? `${e.qtdContratos} contrato(s)` : "—")}</span>`
         : (e.decisors || []).length
           ? e.decisors.map(d => {
               const confidence = d.confidence ? String(d.confidence).toLowerCase() : "";
@@ -872,8 +911,9 @@
         <td>
           <div class="company-name">${esc(e.name)}${joinvilleTag(e)}</div>
           <div class="company-uf">${esc(e.uf || "")}</div>
+          ${aliasesLine(e)}
         </td>
-        <td>${segmentoCell}</td>
+        <td>${segmentoCell}</td>${estadoCell}
         <td>${abordadoCell(e)}</td>
         <td>${tierScoreCell(e)}</td>
         <td>${decisorsHtml}</td>

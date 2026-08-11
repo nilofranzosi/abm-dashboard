@@ -171,7 +171,7 @@
   },
   {
     "id": 6,
-    "name": "Shein Brasil",
+    "name": "SHEIN",
     "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 2,
@@ -337,7 +337,7 @@
   },
   {
     "id": 11,
-    "name": "Ache",
+    "name": "Aché Laboratórios Farmacêuticos",
     "segment": "Farmacêutico & Saúde",
     "uf": "SP",
     "tier": 2,
@@ -605,7 +605,7 @@
   },
   {
     "id": 19,
-    "name": "P&G",
+    "name": "Procter & Gamble",
     "segment": "Cosméticos & Higiene",
     "uf": "SP",
     "tier": 2,
@@ -707,7 +707,7 @@
   },
   {
     "id": 22,
-    "name": "Boticário",
+    "name": "Grupo Boticário",
     "segment": "Cosméticos & Higiene",
     "uf": "SP",
     "tier": 1,
@@ -911,7 +911,7 @@
   },
   {
     "id": 28,
-    "name": "CSN",
+    "name": "CSN - Companhia Siderúrgica Nacional",
     "segment": "Indústria Pesada",
     "uf": "SP",
     "tier": 2,
@@ -2965,7 +2965,7 @@
   },
   {
     "id": 105,
-    "name": "Cencosud Brasil",
+    "name": "Cencosud S.A.",
     "segment": "E-commerce & Varejo",
     "uf": "SC",
     "tier": 1,
@@ -3862,7 +3862,7 @@
   },
   {
     "id": 146,
-    "name": "Krona",
+    "name": "Krona Tubos e Conexões",
     "segment": "Construção Civil",
     "uf": "SC",
     "tier": 3,
@@ -4348,7 +4348,7 @@
   },
   {
     "id": 174,
-    "name": "Grupo Koch",
+    "name": "Grupo Koch S A",
     "segment": "E-commerce & Varejo",
     "uf": "SC",
     "tier": 1,
@@ -4897,7 +4897,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 199.0,
+    "id": 199,
     "name": "Atacadão",
     "segment": "E-commerce & Varejo",
     "uf": "SP",
@@ -4920,7 +4920,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 200.0,
+    "id": 200,
     "name": "MadeiraMadeira",
     "segment": "E-commerce & Varejo",
     "uf": "PR",
@@ -4943,7 +4943,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 201.0,
+    "id": 201,
     "name": "Kenvue",
     "segment": "Farmacêutico & Saúde",
     "uf": "SP",
@@ -4966,7 +4966,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 202.0,
+    "id": 202,
     "name": "Tenda Atacado",
     "segment": "E-commerce & Varejo",
     "uf": "SP",
@@ -4989,7 +4989,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 203.0,
+    "id": 203,
     "name": "Grupo São Vicente",
     "segment": "E-commerce & Varejo",
     "uf": "RJ",
@@ -5012,7 +5012,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 204.0,
+    "id": 204,
     "name": "Campari Group",
     "segment": "Alimentos & Bebidas",
     "uf": "SP",
@@ -5035,7 +5035,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 205.0,
+    "id": 205,
     "name": "ALE Combustíveis",
     "segment": "Combustíveis, Energia & Química",
     "uf": "MG",
@@ -5058,7 +5058,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 206.0,
+    "id": 206,
     "name": "Rodoil Distribuidora de Combustíveis",
     "segment": "Combustíveis, Energia & Química",
     "uf": "RS",
@@ -5081,7 +5081,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 207.0,
+    "id": 207,
     "name": "Ortobom",
     "segment": "Indústria Pesada",
     "uf": "SP",
@@ -5104,7 +5104,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 208.0,
+    "id": 208,
     "name": "Grupo Habib's",
     "segment": "Alimentos & Bebidas",
     "uf": "SP",
@@ -5127,7 +5127,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 209.0,
+    "id": 209,
     "name": "ZAMP (Burger King Brasil)",
     "segment": "Alimentos & Bebidas",
     "uf": "SP",
@@ -5150,7 +5150,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 210.0,
+    "id": 210,
     "name": "Arcos Dourados (McDonald's Brasil)",
     "segment": "Alimentos & Bebidas",
     "uf": "SP",
@@ -5173,7 +5173,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 211.0,
+    "id": 211,
     "name": "Enel",
     "segment": "Combustíveis, Energia & Química",
     "uf": "SP",
@@ -5196,7 +5196,7 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 212.0,
+    "id": 212,
     "name": "Copel",
     "segment": "Combustíveis, Energia & Química",
     "uf": "PR",

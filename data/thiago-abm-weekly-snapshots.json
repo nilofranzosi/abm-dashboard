@@ -1446,21 +1446,21 @@
   },
   {
     "weekKey": "2026-S33",
-    "generatedAt": "2026-08-10T11:42:13.954Z",
+    "generatedAt": "2026-08-11T11:43:24.606Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 122,
+    "totalApproached": 123,
     "activePipeline": 114,
-    "pausedCount": 8,
+    "pausedCount": 9,
     "repliedOrBetter": 22,
     "meetingOrBetter": 7,
     "dealCount": 6,
     "replyRate": 0.19298245614035087,
     "meetingRate": 0.06140350877192982,
     "dealRate": 0.05263157894736842,
-    "avgDaysToFirstReply": 4.9375,
-    "avgDaysSinceLastOutbound": null,
-    "totalOutboundTouchpoints": 0,
-    "totalInboundTouchpoints": 0,
+    "avgDaysToFirstReply": 4.133333333333334,
+    "avgDaysSinceLastOutbound": 0,
+    "totalOutboundTouchpoints": 38,
+    "totalInboundTouchpoints": 6,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -1475,12 +1475,12 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 51
+        "count": 50
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 28
+        "count": 29
       },
       {
         "stage": "REPLIED",
@@ -1540,16 +1540,6 @@
         "nextActionDueAt": "2026-05-31T21:09:00.000Z"
       },
       {
-        "company": "Petrobras",
-        "stage": "DEAL",
-        "contacts": 0,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "DEAL",
-        "score": 90,
-        "nextActionDueAt": "2026-06-23T03:00:00.000Z"
-      },
-      {
         "company": "Minerva Foods",
         "stage": "DEAL",
         "contacts": 2,
@@ -1558,6 +1548,16 @@
         "bestStatus": "DEAL",
         "score": 90,
         "nextActionDueAt": "2026-06-25T03:00:00.000Z"
+      },
+      {
+        "company": "Grupo Profarma",
+        "stage": "DEAL",
+        "contacts": 0,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": null
       },
       {
         "company": "Gerdau",
@@ -1633,8 +1633,8 @@
         "company": "Atacadão",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
+        "outboundTouchpoints": 4,
+        "inboundTouchpoints": 2,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-08-09T03:00:00.000Z"
@@ -1651,9 +1651,9 @@
       }
     ],
     "activeContacts": 114,
-    "excludedContacts": 8,
+    "excludedContacts": 9,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 122,
+    "uniqueCompanies": 123,
     "qualifiedAdvanceRate": 0.06140350877192982
   }
 ]

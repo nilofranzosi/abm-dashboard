@@ -32,6 +32,8 @@
 
     html.embedded-view .shell { grid-template-columns: 1fr; }
     html.embedded-view .shell aside { display: none; }
+    /* Cada iframe do hub embute uma aba unica via ?tab=. */
+    html.embedded-view .tabs { display: none; }
     .shell {
       min-height: 100vh;
       display: grid;
@@ -483,20 +485,14 @@
         </div>
         <div class="header-actions">
           <div class="tabs">
-            <button class="tab-btn active" type="button" id="tab-btn-overview">Visão Geral</button>
-            <button class="tab-btn" type="button" id="tab-btn-clientes">Clientes</button>
             <button class="tab-btn" type="button" id="tab-btn-prospects">Prospects</button>
-            <button class="tab-btn" type="button" id="tab-btn-sinais">Sinais</button>
-            <button class="tab-btn" type="button" id="tab-btn-demandas">Demandas</button>
-            <button class="tab-btn" type="button" id="tab-btn-risco-churn">Risco/Churn</button>
-            <button class="tab-btn" type="button" id="tab-btn-score">Score</button>
-            <button class="tab-btn" type="button" id="tab-btn-cronograma">Cronograma</button>
+            <button class="tab-btn" type="button" id="tab-btn-cronograma">Touchpoints</button>
           </div>
           <button class="secondary" type="button" id="refresh">Atualizar</button>
         </div>
       </header>
 
-      <section id="tab-overview" class="tab-view active">
+      <section id="tab-overview" class="tab-view">
         <section class="kpis" id="overview-kpis"></section>
 
         <section class="grid">
@@ -1062,13 +1058,7 @@
     const tabRiscoChurnEl = document.getElementById("tab-risco-churn");
     const tabScoreEl = document.getElementById("tab-score");
     const tabCronogramaEl = document.getElementById("tab-cronograma");
-    const tabBtnOverviewEl = document.getElementById("tab-btn-overview");
-    const tabBtnClientesEl = document.getElementById("tab-btn-clientes");
     const tabBtnProspectsEl = document.getElementById("tab-btn-prospects");
-    const tabBtnSinaisEl = document.getElementById("tab-btn-sinais");
-    const tabBtnDemandasEl = document.getElementById("tab-btn-demandas");
-    const tabBtnRiscoChurnEl = document.getElementById("tab-btn-risco-churn");
-    const tabBtnScoreEl = document.getElementById("tab-btn-score");
     const tabBtnCronogramaEl = document.getElementById("tab-btn-cronograma");
 
     let clientesLoaded = false;
@@ -1089,13 +1079,7 @@
       tabRiscoChurnEl.classList.toggle("active", name === "risco-churn");
       tabScoreEl.classList.toggle("active", name === "score");
       tabCronogramaEl.classList.toggle("active", name === "cronograma");
-      tabBtnOverviewEl.classList.toggle("active", name === "overview");
-      tabBtnClientesEl.classList.toggle("active", name === "clientes");
       tabBtnProspectsEl.classList.toggle("active", name === "prospects");
-      tabBtnSinaisEl.classList.toggle("active", name === "sinais");
-      tabBtnDemandasEl.classList.toggle("active", name === "demandas");
-      tabBtnRiscoChurnEl.classList.toggle("active", name === "risco-churn");
-      tabBtnScoreEl.classList.toggle("active", name === "score");
       tabBtnCronogramaEl.classList.toggle("active", name === "cronograma");
       if (name === "clientes" && !clientesLoaded) {
         loadClientes();
@@ -1119,14 +1103,7 @@
         initCronogramaTab();
       }
     }
-
-    tabBtnOverviewEl.addEventListener("click", () => showTab("overview"));
-    tabBtnClientesEl.addEventListener("click", () => showTab("clientes"));
     tabBtnProspectsEl.addEventListener("click", () => showTab("prospects"));
-    tabBtnSinaisEl.addEventListener("click", () => showTab("sinais"));
-    tabBtnDemandasEl.addEventListener("click", () => showTab("demandas"));
-    tabBtnRiscoChurnEl.addEventListener("click", () => showTab("risco-churn"));
-    tabBtnScoreEl.addEventListener("click", () => showTab("score"));
     tabBtnCronogramaEl.addEventListener("click", () => showTab("cronograma"));
 
     document.getElementById("refresh").addEventListener("click", () => {
@@ -2726,7 +2703,15 @@
       }
     }
 
-    loadOverview();
+    // O hub embute esta pagina duas vezes, uma por aba (?tab=). As abas
+    // Visao Geral, Clientes, Sinais, Demandas, Risco/Churn e Score sairam da
+    // interface, mas o painel e o JS delas continuam no DOM: Touchpoints
+    // depende de loadClientes()/clientesData para montar o seletor de
+    // empresa, e cada render escreve nos elementos do proprio painel.
+    const abaInicial = new URLSearchParams(location.search).get("tab") === "prospects"
+      ? "prospects"
+      : "cronograma";
+    showTab(abaInicial);
   </script>
 </body>
 </html>
