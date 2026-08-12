@@ -1,11 +1,82 @@
 {
-  "generatedAt": "2026-08-11T11:43:30.608Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-11.json",
+  "generatedAt": "2026-08-12T11:55:55.779Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-12.json",
   "summary": {
-    "total": 0,
+    "total": 2,
     "replied": 0,
     "companyUnknown": 0,
     "overdue": 0
   },
-  "companies": []
+  "companies": [
+    {
+      "id": "yara-international",
+      "resolvedCompany": "Yara International",
+      "reviewReasons": [
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Edvan Cruz",
+          "funnelStatus": "FIRST_CONTACT_SENT",
+          "roleOrHeadline": "Diretor de Operações",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 0,
+          "lastOutboundAt": "2026-08-12T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 1,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-08-12T03:00:00.000Z",
+              "body": "Estamos com um processo de homologação com a Raízen, acredito que temos oportunidades concretas para a cadeia logística da Yara."
+            },
+            {
+              "occurredAt": "2026-08-12T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "alpargatas-s-a",
+      "resolvedCompany": "Alpargatas S.A.",
+      "reviewReasons": [
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Amanda Caroline dos Santos",
+          "funnelStatus": "FIRST_CONTACT_SENT",
+          "roleOrHeadline": "Diretora | Logística | Operações | Transportes | Supply Chain | Transformação Logística | Estratégia Operacional | Excelência em Last Mile | Execução e Resultados",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 0,
+          "lastOutboundAt": "2026-08-12T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 1,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-08-12T03:00:00.000Z",
+              "body": "Amanda, a PX atua disponibilizando mão de obra para a operação logística, sem necessidade de contratação fixa via RH."
+            },
+            {
+              "occurredAt": "2026-08-12T03:00:00.000Z",
+              "body": "Temos atuação em todo o Brasil em empresas como Ambev e Mercado Livre. Acredito que temos oportunidades concretas para a cadeia logística da Alpargatas."
+            },
+            {
+              "occurredAt": "2026-08-12T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    }
+  ]
 }

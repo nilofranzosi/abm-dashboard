@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T12:00:02.178Z",
+  "generatedAt": "2026-08-12T12:00:00.422Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -936,18 +936,6 @@
           "activeDecisor": "Carlos H. Medeiros"
         },
         {
-          "id": "cmr9oddp70000k78k8r6rq39u",
-          "name": "Tigre S.A.",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-10T12:17:56.789Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Luis Felipe Dovichi Mendes"
-        },
-        {
           "id": "cmqqnb6e00006k7o8zjztmp3u",
           "name": "Assaí Atacadista",
           "segment": null,
@@ -1228,6 +1216,18 @@
           "owner": null,
           "contactCount": 4,
           "activeDecisor": "Ricardo Dinelli"
+        },
+        {
+          "id": "cmr9oddp70000k78k8r6rq39u",
+          "name": "Tigre S.A.",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-12T11:56:39.031Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Luis Felipe Dovichi Mendes"
         },
         {
           "id": "cms4m2n2z0006k7fgk379jrkd",

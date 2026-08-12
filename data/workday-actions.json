@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T12:00:00.279Z",
+  "generatedAt": "2026-08-12T12:00:00.195Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -1980,6 +1980,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmqqo3pm5000bk7o8kcl2slig",
+      "company": {
+        "id": "cmqqo3pm5000bk7o8kcl2slig",
+        "name": "Alpargatas (Havaianas)",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmq9jlczr0000k7r4ca25gjv7",
       "company": {
         "id": "cmq9jlczr0000k7r4ca25gjv7",
@@ -2601,7 +2615,7 @@
     "recentConnectionsSent": 42,
     "acceptedConnectionsWithoutMessage": 0,
     "overdueNextActions": 44,
-    "staleCompanies30Days": 19,
+    "staleCompanies30Days": 20,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0
