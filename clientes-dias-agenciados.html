@@ -5,46 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clientes — Dias Agenciados</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+  <script src="/js/multi-filtro.js"></script>
   <style>
     :root {
-      --ink: #172033;
-      --muted: #667085;
-      --line: #D9E2F2;
-      --bg: #EEF2F7;
+      --ink: #2B3038;
+      --muted: #6B778C;
+      --line: #D4E4F5;
+      --bg: #F4F8FC;
       --panel: #FFFFFF;
-      --blue: #0F52BA;
-      --green: #087443;
-      --red: #B42318;
+      --blue: #297ACC;
+      --green: #148F4E;
+      --red: #C93137;
       /* Marcador de evento. Ambar contra o azul do dado: par validado pelo
          validador de paleta (ΔE 26,0 protanopia / 32,4 visao normal), bem acima
          do piso 8. Nao e token de status desta pagina (verde/vermelho) — evento
          nao e bom nem ruim, e um momento. */
-      --evento: #B54708;
+      --evento: #8B6212;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); padding: 14px; }
+    body { margin: 0; font-family:var(--font-sans); color: var(--ink); background: var(--bg); padding: 14px; }
     .container { display: grid; grid-template-columns: 1fr 400px; gap: 14px; min-height: 100vh; }
     h2 { margin: 0 0 14px; font-size: 16px; color: var(--blue); }
     p { margin: 0; }
     .muted { color: var(--muted); font-size: 13px; }
     .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px; margin-bottom: 14px; }
     .kpi-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 14px; }
-    .kpi { background: white; border: 1px solid var(--line); border-top: 3px solid #2563EB; border-radius: 8px; padding: 16px; text-align: center; }
-    .kpi-label { font-size: 0.65rem; font-weight: 600; color: #6B7280; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
-    .kpi-value { font-size: 1.75rem; font-weight: 800; color: var(--ink); margin-bottom: 2px; }
+    .kpi { background: white; border: 1px solid var(--line); border-top: 3px solid #297ACC; border-radius: 8px; padding: 16px; text-align: center; }
+    .kpi-label { font-size: 0.65rem; font-weight: 600; color: #6B778C; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+    .kpi-value { font-size: 1.75rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
     .kpi-subtitle { font-size: 11px; color: var(--muted); }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    th { text-align: left; color: #344054; background: #F2F5FA; border-bottom: 1px solid var(--line); padding: 10px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; cursor: pointer; }
-    th:hover { background: #E8ECFD; }
-    td { border-bottom: 1px solid #EEF2F7; padding: 10px; vertical-align: top; }
-    tr:hover { background: #FBFCFF; cursor: pointer; }
-    tr.selected { background: #DBEAFE; }
-    .status-badge { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 0.72rem; font-weight: 600; background: #F3F4F6; color: #374151; }
-    .status-badge.positive { background: #D1FAE5; color: #065F46; }
-    .status-badge.negative { background: #FEE2E2; color: #991B1B; }
-    .status-badge.info { background: #DBEAFE; color: #1E40AF; }
-    .status-badge.warn { background: #FEF3C7; color: #92400E; }
-    .tp-count { font-weight: 700; font-variant-numeric: tabular-nums; }
+    th { text-align: left; color: #404754; background: #F4F8FC; border-bottom: 1px solid var(--line); padding: 10px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; cursor: pointer; }
+    th:hover { background: #D4E4F5; }
+    td { border-bottom: 1px solid #F4F8FC; padding: 10px; vertical-align: top; }
+    tr:hover { background: #F8FAFD; cursor: pointer; }
+    tr.selected { background: #D4E4F5; }
+    .status-badge { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 0.72rem; font-weight: 600; background: #F0F1F3; color: #404754; }
+    .status-badge.positive { background: #D0E9DC; color: #0C562F; }
+    .status-badge.negative { background: #F4D6D7; color: #791D21; }
+    .status-badge.info { background: #D4E4F5; color: #297ACC; }
+    .status-badge.warn { background: #FAEDD2; color: #8B6212; }
+    .tp-count { font-weight: 600; font-variant-numeric: tabular-nums; }
     .tp-count.zero { color: var(--muted); font-weight: 400; }
     .trend-up { color: var(--green); font-weight: 600; }
     .trend-down { color: var(--red); font-weight: 600; }
@@ -63,29 +64,30 @@
        do dataset; o marcador e desenhado por fora, entao carrega o proprio. */
     .chart-tip { position: absolute; z-index: 5; pointer-events: none; background: var(--ink); color: white; padding: 6px 9px; border-radius: 4px; font-size: 12px; line-height: 1.35; max-width: 220px; box-shadow: 0 2px 8px rgba(23,32,51,.24); }
     .chart-tip[hidden] { display: none; }
-    .chart-tip .tip-data { color: #C9D3E4; font-size: 11px; }
+    .chart-tip .tip-data { color: #C4C9D1; font-size: 11px; }
     .timeline { max-height: 250px; overflow-y: auto; }
-    .timeline-item { padding: 8px 12px; border-left: 3px solid var(--blue); margin-bottom: 8px; background: #FBFCFF; display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: start; }
+    .timeline-item { padding: 8px 12px; border-left: 3px solid var(--blue); margin-bottom: 8px; background: #F8FAFD; display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: start; }
     .timeline-item.no-grafico { border-left-color: var(--evento); }
-    .timeline-num { grid-row: span 2; width: 20px; height: 20px; border-radius: 50%; background: var(--evento); color: white; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
-    .timeline-num.fora { background: #E4E7EC; color: var(--muted); }
+    .timeline-num { grid-row: span 2; width: 20px; height: 20px; border-radius: 50%; background: var(--evento); color: white; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .timeline-num.fora { background: #E1E4E8; color: var(--muted); }
     .timeline-item-date { font-size: 0.75rem; color: var(--muted); font-weight: 600; text-transform: uppercase; }
-    .timeline-item-event { font-size: 13px; color: var(--ink); font-weight: 500; margin-top: 2px; }
+    .timeline-item-event { font-size: 13px; color: var(--ink); font-weight: 400; margin-top: 2px; }
     .timeline-fora { font-size: 11px; color: var(--muted); font-style: italic; }
     .tp-breakdown { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; font-size: 13px; margin-top: 8px; }
-    .tp-breakdown div:nth-child(even) { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .tp-breakdown div:nth-child(even) { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
     .empty { color: var(--muted); padding: 18px; text-align: center; }
-    .error { background: #FEE2E2; border: 1px solid #FECDCA; color: var(--red); padding: 12px; border-radius: 6px; }
+    .error { background: #F4D6D7; border: 1px solid #F4D6D7; color: var(--red); padding: 12px; border-radius: 6px; }
     .loading { color: var(--muted); padding: 40px; text-align: center; font-size: 14px; }
     .pager { display: flex; gap: 10px; align-items: center; justify-content: center; padding: 14px 0 2px; }
     .pager button { padding: 6px 14px; border: 1px solid var(--line); background: white; border-radius: 4px; cursor: pointer; font-size: 13px; }
-    .pager button:disabled { color: #B0B7C3; cursor: not-allowed; }
+    .pager button:disabled { color: #A6ADBA; cursor: not-allowed; }
     @media (max-width: 1200px) {
       .container { grid-template-columns: 1fr; }
       .detail-panel { display: grid !important; }
       .kpi-grid { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
   <div class="container">
@@ -101,28 +103,14 @@
         <p class="muted" style="margin-bottom: 14px;">Clique em um cliente para ver a evolução dos últimos 6 meses, os touchpoints e os eventos. Os valores da tabela correspondem ao mês selecionado.</p>
 
         <div style="margin-bottom: 14px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
-          <input type="text" id="search-input" placeholder="Pesquisar cliente..." style="flex: 1; min-width: 200px; padding: 8px 12px; border: 1px solid #D9E2F2; border-radius: 4px; font-size: 13px;">
+          <input type="text" id="search-input" placeholder="Pesquisar cliente..." style="flex: 1; min-width: 200px; padding: 8px 12px; border: 1px solid #D4E4F5; border-radius: 4px; font-size: 13px;">
 
-          <select id="filter-tier" style="padding: 8px 10px; border: 1px solid #D9E2F2; border-radius: 4px; cursor: pointer; font-size: 13px;">
-            <option value="">Todos os Tiers</option>
-          </select>
-
-          <select id="filter-status" style="padding: 8px 10px; border: 1px solid #D9E2F2; border-radius: 4px; cursor: pointer; font-size: 13px;">
-            <option value="">Todos os Status</option>
-          </select>
-
-          <select id="filter-trend" style="padding: 8px 10px; border: 1px solid #D9E2F2; border-radius: 4px; cursor: pointer; font-size: 13px;">
-            <option value="">Todas as Tendências</option>
-            <option value="growth">Crescimento ↑</option>
-            <option value="decline">Decrescimento ↓</option>
-            <option value="flat">Sem Mudança →</option>
-          </select>
-
-          <select id="filter-touchpoints" style="padding: 8px 10px; border: 1px solid #D9E2F2; border-radius: 4px; cursor: pointer; font-size: 13px;">
-            <option value="">Todos os touchpoints</option>
-            <option value="com">Com pelo menos 1 touchpoint</option>
-            <option value="sem">Sem nenhum touchpoint</option>
-          </select>
+          <!-- Cada placeholder vira um MultiFiltro no boot. Nenhuma caixa
+               marcada = todos, o mesmo estado neutro do antigo "Todos os ...". -->
+          <div id="filter-tier"></div>
+          <div id="filter-status"></div>
+          <div id="filter-trend"></div>
+          <div id="filter-touchpoints"></div>
 
           <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px;">
             <input type="checkbox" id="filter-com-dias" style="cursor: pointer;">
@@ -152,9 +140,9 @@
       <div class="panel">
         <h2 id="detail-title">Selecione um cliente</h2>
         <div id="detail-info" class="muted"></div>
-        <div style="margin-top: 14px; padding: 12px; background: #F0F4F8; border-radius: 6px; border-left: 3px solid #0F52BA;">
-          <div style="font-size: 11px; color: #667085; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Dias Agenciados (mês selecionado)</div>
-          <div id="detail-contract-days" style="font-size: 28px; font-weight: 800; color: #0F52BA;">—</div>
+        <div style="margin-top: 14px; padding: 12px; background: #F4F8FC; border-radius: 6px; border-left: 3px solid #297ACC;">
+          <div style="font-size: 11px; color: #6B778C; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Dias Agenciados (mês selecionado)</div>
+          <div id="detail-contract-days" style="font-size: 28px; font-weight: 600; color: #297ACC;">—</div>
         </div>
       </div>
       <div class="chart-container">
@@ -190,10 +178,14 @@
     let page = 0;
 
     let searchQuery = '';
-    let filterTier = '';
-    let filterStatus = '';
-    let filterTrend = '';
-    let filterTouchpoints = ''; // '' | 'com' | 'sem'
+    // Filtros de multipla escolha: cada um guarda um ARRAY de valores marcados.
+    // Array vazio = nenhum recorte, mostra tudo. Os valores dentro de um mesmo
+    // filtro somam (Tier 1 OU 2); filtros diferentes se cruzam (Tier 1/2 E
+    // status ATIVO).
+    let filterTier = [];
+    let filterStatus = [];
+    let filterTrend = [];
+    let filterTouchpoints = [];
     let filterComDias = false;
 
     const TIPO_LABEL = {
@@ -268,22 +260,49 @@
     }
 
     function initializeFilters() {
+      // Tier e Status saem dos dados, nunca de uma lista fixa: um tier novo no
+      // Cortex aparece sozinho no filtro.
       const tiers = [...new Set(data.rows.map(r => r.tier).filter(t => t !== null))].sort((a, b) => a - b);
-      const tierSelect = document.getElementById('filter-tier');
-      tiers.forEach(tier => {
-        const opt = document.createElement('option');
-        opt.value = tier;
-        opt.textContent = `Tier ${tier}`;
-        tierSelect.appendChild(opt);
+      const statuses = [...new Set(data.rows.map(r => r.status).filter(s => s !== null))].sort();
+
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-tier'),
+        rotulo: 'Tier',
+        resumoTodos: 'todos',
+        // Só o número: o botão já diz "Tier", então "Tier 1" viraria "Tier: Tier 1".
+        opcoes: tiers.map(t => ({ valor: String(t), texto: String(t) })),
+        aoMudar: (v) => { filterTier = v; page = 0; renderTable(); }
       });
 
-      const statuses = [...new Set(data.rows.map(r => r.status).filter(s => s !== null))].sort();
-      const statusSelect = document.getElementById('filter-status');
-      statuses.forEach(status => {
-        const opt = document.createElement('option');
-        opt.value = status;
-        opt.textContent = status;
-        statusSelect.appendChild(opt);
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-status'),
+        rotulo: 'Status',
+        resumoTodos: 'todos',
+        opcoes: statuses.map(s => ({ valor: s, texto: s })),
+        aoMudar: (v) => { filterStatus = v; page = 0; renderTable(); }
+      });
+
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-trend'),
+        rotulo: 'Tendência',
+        resumoTodos: 'todas',
+        opcoes: [
+          { valor: 'growth', texto: 'Crescimento ↑' },
+          { valor: 'decline', texto: 'Decrescimento ↓' },
+          { valor: 'flat', texto: 'Sem mudança →' }
+        ],
+        aoMudar: (v) => { filterTrend = v; page = 0; renderTable(); }
+      });
+
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-touchpoints'),
+        rotulo: 'Touchpoints',
+        resumoTodos: 'todos',
+        opcoes: [
+          { valor: 'com', texto: 'Com pelo menos 1' },
+          { valor: 'sem', texto: 'Sem nenhum' }
+        ],
+        aoMudar: (v) => { filterTouchpoints = v; page = 0; renderTable(); }
       });
 
       let debounce = null;
@@ -293,18 +312,6 @@
         debounce = setTimeout(() => { page = 0; renderTable(); }, 150);
       });
 
-      document.getElementById('filter-tier').addEventListener('change', (e) => {
-        filterTier = e.target.value; page = 0; renderTable();
-      });
-      document.getElementById('filter-status').addEventListener('change', (e) => {
-        filterStatus = e.target.value; page = 0; renderTable();
-      });
-      document.getElementById('filter-trend').addEventListener('change', (e) => {
-        filterTrend = e.target.value; page = 0; renderTable();
-      });
-      document.getElementById('filter-touchpoints').addEventListener('change', (e) => {
-        filterTouchpoints = e.target.value; page = 0; renderTable();
-      });
       document.getElementById('filter-com-dias').addEventListener('change', (e) => {
         filterComDias = e.target.checked; page = 0; renderTable();
       });
@@ -315,8 +322,8 @@
       if (!container || !data.trendMonths) return;
 
       container.innerHTML = `
-        <label style="font-size: 0.85rem; font-weight: 600; color: #344054; margin-right: 8px;">Mês Analisado:</label>
-        <select id="month-dropdown" style="padding: 6px 10px; border: 1px solid #D9E2F2; border-radius: 4px; cursor: pointer;">
+        <label style="font-size: 0.85rem; font-weight: 600; color: #404754; margin-right: 8px;">Mês Analisado:</label>
+        <select id="month-dropdown" style="padding: 6px 10px; border: 1px solid #D4E4F5; border-radius: 4px; cursor: pointer;">
           ${data.trendMonths.map(m => `
             <option value="${m}" ${selectedMonth === m ? 'selected' : ''}>${getMonthLabel(m)}${isMesEmCurso(m) ? ' (em curso)' : ''}</option>
           `).join('')}
@@ -379,23 +386,28 @@
       `;
     }
 
+    // Seleção vazia não recorta nada. Com valores marcados, a linha precisa
+    // casar com UM deles — é isso que faz "Tier 1 e 2 ao mesmo tempo" funcionar.
+    function casaFiltro(selecionados, valorDaLinha) {
+      if (selecionados.length === 0) return true;
+      return selecionados.includes(String(valorDaLinha));
+    }
+
+    function classificarTendencia(row) {
+      const t = trendDoMes(row);
+      return t > 0 ? 'growth' : t < 0 ? 'decline' : 'flat';
+    }
+
     function filteredRows() {
       return data.rows.filter(row => {
         if (searchQuery && !row.name.toLowerCase().includes(searchQuery)) return false;
-        if (filterTier && row.tier !== Number(filterTier)) return false;
-        if (filterStatus && row.status !== filterStatus) return false;
+        if (!casaFiltro(filterTier, row.tier)) return false;
+        if (!casaFiltro(filterStatus, row.status)) return false;
+        if (!casaFiltro(filterTrend, classificarTendencia(row))) return false;
         // Conta TODOS os tipos de touchpoint, nao so evento — "sem nenhum
         // touchpoint" aqui quer dizer conta que nunca foi tocada por nada.
-        if (filterTouchpoints === 'com' && row.touchpointsTotal === 0) return false;
-        if (filterTouchpoints === 'sem' && row.touchpointsTotal > 0) return false;
+        if (!casaFiltro(filterTouchpoints, row.touchpointsTotal > 0 ? 'com' : 'sem')) return false;
         if (filterComDias && diasDoMes(row) === null) return false;
-
-        if (filterTrend) {
-          const trend = trendDoMes(row);
-          if (filterTrend === 'growth' && trend <= 0) return false;
-          if (filterTrend === 'decline' && trend >= 0) return false;
-          if (filterTrend === 'flat' && trend !== 0) return false;
-        }
         return true;
       });
     }
@@ -445,7 +457,7 @@
           : row.status ? 'info' : '';
 
         return `<tr data-company="${row.companyId}" onclick="showDetail('${row.companyId}')">
-          <td style="text-align: center; font-weight: 600; color: #667085;">${page * PAGE_SIZE + idx + 1}</td>
+          <td style="text-align: center; font-weight: 600; color: #6B778C;">${page * PAGE_SIZE + idx + 1}</td>
           <td><strong>${escapeHtml(row.name)}</strong></td>
           <td>${dias === null ? '<span class="muted">—</span>' : fmt(dias)}</td>
           <td><span class="tp-count ${row.touchpointsTotal === 0 ? 'zero' : ''}">${row.touchpointsTotal}</span></td>
@@ -531,7 +543,7 @@
         .map(([tipo, n]) => `<div>${escapeHtml(TIPO_LABEL[tipo] || tipo)}</div><div>${n}</div>`)
         .join('');
       container.innerHTML = `
-        <div style="font-size:28px;font-weight:800;color:#0F52BA;margin-top:4px">${row.touchpointsTotal}</div>
+        <div style="font-size:28px;font-weight:600;color:#297ACC;margin-top:4px">${row.touchpointsTotal}</div>
         <div class="tp-breakdown">${linhas}</div>
       `;
     }
@@ -623,7 +635,7 @@
           ctx.lineTo(x - 5, chartArea.bottom);
           ctx.lineTo(x + 5, chartArea.bottom);
           ctx.closePath();
-          ctx.fillStyle = '#B54708';
+          ctx.fillStyle = '#8B6212';
           ctx.fill();
 
           // Balao numerado. Quando dois eventos caem quase no mesmo x, empilha
@@ -637,7 +649,7 @@
 
           ctx.beginPath();
           ctx.arc(x, y, 9, 0, Math.PI * 2);
-          ctx.fillStyle = '#B54708';
+          ctx.fillStyle = '#8B6212';
           ctx.fill();
           // Anel na cor da superficie: mantem o balao legivel onde cruza a linha
           ctx.lineWidth = 2;
@@ -736,12 +748,12 @@
           datasets: [{
             label: 'Dias Agenciados',
             data: values,
-            borderColor: '#0F52BA',
+            borderColor: '#297ACC',
             backgroundColor: 'rgba(15, 82, 186, 0.05)',
             borderWidth: 2,
             fill: true,
             pointRadius: 4,
-            pointBackgroundColor: '#0F52BA',
+            pointBackgroundColor: '#297ACC',
             // Anel na cor da superficie: o ponto continua legivel onde cruza a
             // linha de um marcador de evento.
             pointBorderColor: '#FFFFFF',

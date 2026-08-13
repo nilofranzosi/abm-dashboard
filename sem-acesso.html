@@ -6,30 +6,31 @@
   <title>Sem acesso · PX Outreach Engine</title>
   <style>
     :root {
-      --ink:#172033; --muted:#667085; --line:#D9E2F2; --panel:#FFFFFF;
-      --color-primary:#2563EB; --color-primary-dark:#1D4ED8; --color-sidebar-bg:#1A1A2E;
-      --color-text-primary:#111827;
+      --ink:#2B3038; --muted:#6B778C; --line:#D4E4F5; --panel:#FFFFFF;
+      --color-primary:#297ACC; --color-primary-dark:#297ACC; --color-sidebar-bg:#2B3038;
+      --color-text-primary:#2B3038;
     }
     * { box-sizing:border-box; }
     body {
-      margin:0; min-height:100vh; font-family:Arial, Helvetica, sans-serif; color:var(--ink);
+      margin:0; min-height:100vh; font-family:var(--font-sans); color:var(--ink);
       background:var(--color-sidebar-bg); display:flex; align-items:center; justify-content:center;
     }
     .card {
       background:var(--panel); border-radius:10px; padding:44px 48px; box-shadow:0 8px 30px rgba(0,0,0,0.25);
       max-width:480px; width:calc(100% - 40px);
     }
-    h1 { margin:0 0 10px; font-size:1.4rem; font-weight:800; color:var(--color-text-primary); }
+    h1 { margin:0 0 10px; font-size:1.4rem; font-weight:600; color:var(--color-text-primary); }
     p { color:var(--muted); font-size:14px; line-height:1.6; margin:0 0 14px; }
-    .painel { font-weight:700; color:var(--color-text-primary); }
+    .painel { font-weight:600; color:var(--color-text-primary); }
     .actions { margin-top:26px; display:flex; gap:12px; flex-wrap:wrap; }
     a.btn {
-      font-size:14px; font-weight:700; text-decoration:none; border-radius:6px; padding:11px 18px;
+      font-size:14px; font-weight:600; text-decoration:none; border-radius:6px; padding:11px 18px;
       background:var(--color-primary); color:#FFFFFF; display:inline-block;
     }
     a.btn:hover { background:var(--color-primary-dark); }
     a.btn.ghost { background:transparent; color:var(--color-primary); border:1px solid var(--line); }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
   <main class="card">
@@ -39,11 +40,13 @@
       n&atilde;o faz parte do seu n&iacute;vel de acesso.
     </p>
     <p>
-      A libera&ccedil;&atilde;o &eacute; feita painel a painel pelo Marketing. Se voc&ecirc; precisa deste
-      painel para o seu trabalho, peça a libera&ccedil;&atilde;o informando qual &eacute; e para qu&ecirc;.
+      A libera&ccedil;&atilde;o &eacute; feita painel a painel. Se voc&ecirc; precisa deste painel para
+      o seu trabalho, escreva para <strong>nilo.franzosi@px.center</strong> dizendo qual &eacute;
+      e para qu&ecirc; — cada pedido &eacute; analisado caso a caso. O acesso liberado vale por 1 ano.
     </p>
     <div class="actions">
-      <a class="btn" href="/">Voltar para o in&iacute;cio</a>
+      <a class="btn" id="pedir" href="#">Pedir acesso por e-mail</a>
+      <a class="btn ghost" href="/">Voltar para o in&iacute;cio</a>
       <a class="btn ghost" id="sair" href="#">Sair desta conta</a>
     </div>
   </main>
@@ -51,6 +54,18 @@
   <script>
     var painel = new URLSearchParams(window.location.search).get("painel");
     if (painel) document.getElementById("painel").textContent = painel;
+
+    // O pedido já sai com o painel preenchido — quem analisa precisa saber qual é.
+    document.getElementById("pedir").addEventListener("click", function (event) {
+      event.preventDefault();
+      var assunto = "Solicitação de acesso — " + (painel || "PX Outreach Engine");
+      var corpo =
+        "Olá Nilo,\n\nGostaria de acesso ao painel: " + (painel || "(qual?)") +
+        "\n\nNome:\nÁrea:\nPara quê preciso deste painel:\n";
+      window.location.href =
+        "mailto:nilo.franzosi@px.center?subject=" + encodeURIComponent(assunto) +
+        "&body=" + encodeURIComponent(corpo);
+    });
 
     document.getElementById("sair").addEventListener("click", function (event) {
       event.preventDefault();

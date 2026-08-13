@@ -1,6 +1,6 @@
 {
   "_doc": "Registro canonico de curadoria do Pipeline ABM. 'removed' = contas que NAO fazem parte do ABM e nunca devem ser recriadas por sync. 'aliases' = variacao de nome -> nome canonico, para que scans futuros facam upsert no registro certo em vez de criar uma duplicata. Curado por Nilo em 2026-08-07.",
-  "_updatedAt": "2026-08-07",
+  "_updatedAt": "2026-08-12",
   "removed": [
     "Abbott Brasil",
     "APAS - Associação Paulista de Supermercados",
@@ -29,6 +29,7 @@
     "empresa PLANO COMPANY"
   ],
   "aliases": {
+    "Alpargatas S.A.": "Alpargatas (Havaianas)",
     "Ache": "Aché Laboratórios Farmacêuticos",
     "Aché Laboratórios": "Aché Laboratórios Farmacêuticos",
     "Angeloni": "Grupo Angeloni",
@@ -56,6 +57,7 @@
     "Unilever and Executive Director of UnileverPrev pension. Broad experience in finance from business partnering marketing": "Unilever",
     "Whirlpool Corporation": "Whirlpool Brasil",
     "Whirlpool Latin America": "Whirlpool Brasil",
+    "Yara International": "Yara Brasil",
     "ZAMP": "ZAMP (Burger King Brasil)"
   }
 }

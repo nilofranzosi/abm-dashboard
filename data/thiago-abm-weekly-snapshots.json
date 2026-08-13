@@ -1446,21 +1446,21 @@
   },
   {
     "weekKey": "2026-S33",
-    "generatedAt": "2026-08-12T11:55:49.175Z",
+    "generatedAt": "2026-08-13T11:54:25.164Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 123,
     "activePipeline": 114,
     "pausedCount": 9,
-    "repliedOrBetter": 22,
+    "repliedOrBetter": 23,
     "meetingOrBetter": 7,
     "dealCount": 6,
-    "replyRate": 0.19298245614035087,
+    "replyRate": 0.20175438596491227,
     "meetingRate": 0.06140350877192982,
     "dealRate": 0.05263157894736842,
-    "avgDaysToFirstReply": 4.133333333333334,
-    "avgDaysSinceLastOutbound": 0,
-    "totalOutboundTouchpoints": 36,
-    "totalInboundTouchpoints": 9,
+    "avgDaysToFirstReply": 4.071428571428571,
+    "avgDaysSinceLastOutbound": 0.9333333333333333,
+    "totalOutboundTouchpoints": 32,
+    "totalInboundTouchpoints": 5,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -1480,12 +1480,12 @@
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 29
+        "count": 28
       },
       {
         "stage": "REPLIED",
         "label": "Respondeu",
-        "count": 15
+        "count": 16
       },
       {
         "stage": "MEETING_DONE",
@@ -1633,21 +1633,21 @@
         "company": "Atacadão",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 4,
-        "inboundTouchpoints": 2,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-08-09T03:00:00.000Z"
-      },
-      {
-        "company": "Leroy Merlin Brasil",
-        "stage": "REPLIED",
-        "contacts": 4,
         "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-08-09T16:52:00.000Z"
+        "nextActionDueAt": "2026-08-14T03:00:00.000Z"
+      },
+      {
+        "company": "Tenda Atacado",
+        "stage": "REPLIED",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-08-14T03:00:00.000Z"
       }
     ],
     "activeContacts": 114,

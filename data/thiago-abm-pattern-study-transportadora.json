@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-09T12:35:52.280Z",
+  "generatedAt": "2026-08-12T18:04:39.321Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots-transportadora.json",
   "companySummary": {
-    "weekKey": "2026-S28",
+    "weekKey": "2026-S33",
     "totalCompanies": 0,
     "activeCompanies": 0,
     "pausedCompanies": 0,
@@ -15,18 +15,62 @@
     "companyDealRate": 0
   },
   "sample": {
-    "activeContacts": 0,
+    "activeContacts": 1,
     "replies": 0,
     "advanced": 0,
     "negatives": 0,
-    "noResponse": 0,
+    "noResponse": 1,
     "replyRate": 0,
     "advancedRate": 0,
     "avgDaysToFirstReply": null
   },
-  "bySegment": [],
-  "bySeniority": [],
-  "byFunctionArea": [],
-  "byTimeBand": [],
+  "bySegment": [
+    {
+      "segment": "Segmento a classificar",
+      "total": 1,
+      "responded": 0,
+      "advanced": 0,
+      "negative": 0,
+      "replyRate": 0,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": null
+    }
+  ],
+  "bySeniority": [
+    {
+      "seniority": "Não identificado",
+      "total": 1,
+      "responded": 0,
+      "advanced": 0,
+      "negative": 0,
+      "replyRate": 0,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": null
+    }
+  ],
+  "byFunctionArea": [
+    {
+      "functionArea": "Supply / Logística / Operações",
+      "total": 1,
+      "responded": 0,
+      "advanced": 0,
+      "negative": 0,
+      "replyRate": 0,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": null
+    }
+  ],
+  "byTimeBand": [
+    {
+      "timeBand": "Sem horário",
+      "total": 1,
+      "responded": 0,
+      "advanced": 0,
+      "negative": 0,
+      "replyRate": 0,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": null
+    }
+  ],
   "copyStats": null
 }

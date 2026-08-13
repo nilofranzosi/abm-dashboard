@@ -6,25 +6,25 @@
   <title>PX Outreach Engine - Transportadoras</title>
   <style>
     :root {
-      --blue: #0F52BA;
-      --blue-dark: #0A3C8A;
-      --ink: #172033;
-      --muted: #657083;
-      --line: #DDE3EC;
-      --soft: #F6F8FB;
+      --blue: #297ACC;
+      --blue-dark: #19497A;
+      --ink: #2B3038;
+      --muted: #6B778C;
+      --line: #E1E4E8;
+      --soft: #F4F8FC;
       --panel: #FFFFFF;
-      --bg: #EEF2F7;
-      --green: #158255;
-      --amber: #A05A00;
-      --red: #B42318;
-      --slate: #253047;
+      --bg: #F4F8FC;
+      --green: #148F4E;
+      --amber: #8B6212;
+      --red: #C93137;
+      --slate: #2B3038;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:var(--font-sans);
       color: var(--ink);
       background: var(--bg);
       line-height: 1.35;
@@ -43,7 +43,7 @@
     }
 
     aside {
-      background: #111827;
+      background: #2B3038;
       color: #FFFFFF;
       border-radius: 6px;
       padding: 18px 16px;
@@ -51,22 +51,22 @@
 
     .brand {
       font-size: 15px;
-      font-weight: 800;
+      font-weight: 600;
       margin-bottom: 24px;
     }
 
     .nav-label {
-      color: #AAB4C3;
+      color: #A6ADBA;
       font-size: 11px;
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 600;
       margin: 20px 0 8px;
     }
 
     .nav-item {
       display: block;
-      border: 1px solid #334155;
-      background: #1F2937;
+      border: 1px solid #404754;
+      background: #2B3038;
       color: #FFFFFF;
       text-decoration: none;
       padding: 10px;
@@ -100,7 +100,7 @@
     .eyebrow {
       color: var(--blue);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 5px;
     }
@@ -123,7 +123,7 @@
       color: #FFFFFF;
       border-radius: 5px;
       padding: 10px 13px;
-      font-weight: 800;
+      font-weight: 600;
       cursor: pointer;
     }
 
@@ -153,7 +153,7 @@
       border: 1px solid var(--line);
       border-radius: 5px;
       padding: 9px 16px;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 13px;
       cursor: pointer;
     }
@@ -191,7 +191,7 @@
       display: block;
       color: var(--muted);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       text-transform: uppercase;
       min-height: 26px;
     }
@@ -207,7 +207,7 @@
       margin-top: 4px;
       color: var(--muted);
       font-size: 10px;
-      font-weight: 500;
+      font-weight: 400;
       text-transform: none;
     }
 
@@ -250,7 +250,7 @@
       color: #FFFFFF;
       background: var(--slate);
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 600;
     }
 
     .queue-body {
@@ -283,10 +283,10 @@
       height: 22px;
       padding: 0 7px;
       border-radius: 999px;
-      background: #E8EDF5;
+      background: #F4F8FC;
       color: var(--slate);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       white-space: nowrap;
     }
 
@@ -303,8 +303,8 @@
 
     .error {
       color: var(--red);
-      border-color: #F2B8B5;
-      background: #FFF7F7;
+      border-color: #F4D6D7;
+      background: #FCF5F5;
     }
 
     .filters {
@@ -349,7 +349,7 @@
       text-align: left;
       padding: 10px 10px;
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       text-transform: uppercase;
       cursor: pointer;
       white-space: nowrap;
@@ -372,16 +372,16 @@
       padding: 2px 10px;
       border-radius: 999px;
       font-size: 11px;
-      font-weight: 700;
-      background: #F3F4F6;
-      color: #374151;
+      font-weight: 600;
+      background: #F0F1F3;
+      color: #404754;
     }
 
-    .status-pill.is-churn { background: #FEE2E2; color: #991B1B; }
-    .status-pill.is-inativo { background: #FEF3C7; color: #92400E; }
+    .status-pill.is-churn { background: #F4D6D7; color: #791D21; }
+    .status-pill.is-inativo { background: #FAEDD2; color: #8B6212; }
     .status-pill.is-ativo,
-    .status-pill.is-recorrente { background: #D1FAE5; color: #065F46; }
-    .status-pill.is-sem-dado { background: #F3F4F6; color: #6B7280; font-style: italic; }
+    .status-pill.is-recorrente { background: #D0E9DC; color: #0C562F; }
+    .status-pill.is-sem-dado { background: #F0F1F3; color: #6B778C; font-style: italic; }
 
     .pending {
       color: var(--muted);
@@ -411,7 +411,7 @@
 
     .movers-col-title {
       font-size: 12px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 8px;
     }
 
@@ -444,10 +444,10 @@
     }
 
     .mover-bar-fill.promotor { background: var(--green); }
-    .mover-bar-fill.detrator { background: #DC2626; } /* same vivid red as the Cronograma touchpoint markers, deliberately repeated (39-CONTEXT.md addendum) rather than extracted into --red (already used by .kpi.critical) */
+    .mover-bar-fill.detrator { background: #C93137; } /* same vivid red as the Cronograma touchpoint markers, deliberately repeated (39-CONTEXT.md addendum) rather than extracted into --red (already used by .kpi.critical) */
 
     .mover-value {
-      font-weight: 700;
+      font-weight: 600;
       text-align: right;
     }
 
@@ -458,6 +458,7 @@
       margin-top: -4px;
     }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
   <script>
@@ -628,20 +629,20 @@
 
         <section class="table-panel" id="sinais-form-panel" style="display:none; padding:15px;">
           <form id="sinais-form" style="display:grid; gap:10px; grid-template-columns: repeat(2, minmax(0,1fr));">
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Empresa
               <select id="sinal-form-company" required>
                 <option value="">Selecione...</option>
               </select>
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Tipo
               <select id="sinal-form-tipo" required>
                 <option value="MARKETING">Marketing</option>
                 <option value="GS">GS</option>
               </select>
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700; grid-column: span 2;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600; grid-column: span 2;">
               Fonte comum (opcional — prefila fonte e impacto no score, editável antes de salvar)
               <select id="sinal-form-fonte-preset">
                 <option value="">Selecionar fonte comum...</option>
@@ -657,19 +658,19 @@
                 <option value="Sem touchpoint em 60 dias|-20">Sem touchpoint em 60 dias (-20 pts)</option>
               </select>
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Fonte
               <input type="text" id="sinal-form-fonte" required placeholder="Ex.: Webinar Logtech 2026">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Impacto no score
               <input type="number" id="sinal-form-impacto" required step="1" value="10">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700; grid-column: span 2;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600; grid-column: span 2;">
               Descrição
               <textarea id="sinal-form-descricao" required rows="2" placeholder="Descreva o sinal observado..." style="font-family:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:5px;"></textarea>
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Validade (opcional)
               <input type="date" id="sinal-form-validade">
             </label>
@@ -729,11 +730,11 @@
         <section class="table-panel" id="demanda-form-panel" style="display:none; padding:15px;">
           <form id="demanda-form" style="display:grid; gap:10px; grid-template-columns: repeat(2, minmax(0,1fr));">
             <div class="muted" id="demanda-form-origem-label" style="grid-column: span 2;"></div>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700; grid-column: span 2;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600; grid-column: span 2;">
               Título
               <input type="text" id="demanda-form-titulo" required placeholder="Ex.: Case de sucesso para campanha ABM">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Tipo
               <select id="demanda-form-tipo" required>
                 <option value="CONTEUDO_THIAGO">Conteúdo Thiago</option>
@@ -743,15 +744,15 @@
                 <option value="PESQUISA">Pesquisa</option>
               </select>
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Dono
               <input type="text" id="demanda-form-dono" required placeholder="Ex.: Thiago">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Formato sugerido (opcional)
               <input type="text" id="demanda-form-formato" placeholder="Ex.: Vídeo curto">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Prazo (opcional)
               <input type="date" id="demanda-form-prazo">
             </label>
@@ -831,31 +832,31 @@
             <h2>Editar pesos</h2>
           </div>
           <form id="score-weights-form" style="display:grid; gap:10px; grid-template-columns: repeat(2, minmax(0,1fr));">
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Tier GS
               <input type="number" id="score-weight-tier" required step="1">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Status da conta
               <input type="number" id="score-weight-status" required step="1">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Dias vendidos
               <input type="number" id="score-weight-dias-vendidos" required step="1">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Contratos prestados
               <input type="number" id="score-weight-contratos-prestados" required step="1">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Valor em andamento
               <input type="number" id="score-weight-valor-em-andamento" required step="1">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600;">
               Sinais aplicados
               <input type="number" id="score-weight-sinais-aplicados" required step="1">
             </label>
-            <label style="display:grid; gap:4px; font-size:12px; font-weight:700; grid-column: span 2;">
+            <label style="display:grid; gap:4px; font-size:12px; font-weight:600; grid-column: span 2;">
               Nome da versão (para salvar)
               <input type="text" id="score-weight-label" placeholder="Ex.: Score v2 - Agosto/2026">
             </label>
@@ -894,7 +895,7 @@
           <div class="empty" id="score-simulate-empty">Ajuste os pesos acima e clique em &quot;Simular ranking&quot; para comparar o ranking atual com o hipotético.</div>
           <div class="grid" id="score-simulate-result" style="display:none;">
             <div>
-              <div class="muted" style="margin-bottom:6px; font-weight:700;">Ranking atual</div>
+              <div class="muted" style="margin-bottom:6px; font-weight:600;">Ranking atual</div>
               <table class="clientes-table" id="score-simulate-current-table">
                 <thead>
                   <tr>
@@ -907,7 +908,7 @@
               </table>
             </div>
             <div>
-              <div class="muted" style="margin-bottom:6px; font-weight:700;">Ranking simulado</div>
+              <div class="muted" style="margin-bottom:6px; font-weight:600;">Ranking simulado</div>
               <table class="clientes-table" id="score-simulate-simulated-table">
                 <thead>
                   <tr>
@@ -931,7 +932,7 @@
           </div>
           <div class="muted" id="cronograma-subtitle">Selecione um cliente para ver a linha de dias vendidos por mês e os touchpoints registrados.</div>
           <div style="margin-top:10px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
-            <label for="cronograma-cliente-select" style="font-size:12px; font-weight:700;">Cliente:</label>
+            <label for="cronograma-cliente-select" style="font-size:12px; font-weight:600;">Cliente:</label>
             <select id="cronograma-cliente-select">
               <option value="">Carregando clientes...</option>
             </select>
@@ -941,7 +942,7 @@
           </div>
           <div class="muted" style="margin-top:10px; font-size:11px;">
             <strong>Legenda:</strong> a linha azul mostra os dias vendidos (contrato) por mês.
-            Os marcadores <span style="color:#DC2626; font-weight:800;">&#9679;</span> vermelhos indicam touchpoints
+            Os marcadores <span style="color:#C93137; font-weight:600;">&#9679;</span> vermelhos indicam touchpoints
             (webinars, eventos) na data em que ocorreram — passe o mouse sobre um marcador para ver os detalhes.
             O ponto com contorno tracejado ao final da linha representa o mês atual, ainda parcial (não é um mês fechado).
           </div>
@@ -2595,7 +2596,7 @@
       let dashedSegment = "";
       if (currentPoint && completedPoints.length > 0) {
         const last = completedPoints[completedPoints.length - 1];
-        dashedSegment = `<line x1="${xForIndex(last.index).toFixed(1)}" y1="${yForValue(last.contractDays).toFixed(1)}" x2="${xForIndex(currentPoint.index).toFixed(1)}" y2="${yForValue(currentPoint.contractDays).toFixed(1)}" stroke="#0F52BA" stroke-width="2" stroke-dasharray="5,4" />`;
+        dashedSegment = `<line x1="${xForIndex(last.index).toFixed(1)}" y1="${yForValue(last.contractDays).toFixed(1)}" x2="${xForIndex(currentPoint.index).toFixed(1)}" y2="${yForValue(currentPoint.contractDays).toFixed(1)}" stroke="#297ACC" stroke-width="2" stroke-dasharray="5,4" />`;
       }
 
       const yTickCount = 4;
@@ -2603,8 +2604,8 @@
         const value = Math.round((maxValue / yTickCount) * tickIndex);
         const y = yForValue(value);
         return `
-          <line x1="${paddingLeft}" y1="${y.toFixed(1)}" x2="${(paddingLeft + plotWidth).toFixed(1)}" y2="${y.toFixed(1)}" stroke="#EEF1F5" stroke-width="1" />
-          <text x="${(paddingLeft - 8).toFixed(1)}" y="${(y + 3).toFixed(1)}" font-size="10" fill="#657083" text-anchor="end">${value}</text>
+          <line x1="${paddingLeft}" y1="${y.toFixed(1)}" x2="${(paddingLeft + plotWidth).toFixed(1)}" y2="${y.toFixed(1)}" stroke="#F0F1F3" stroke-width="1" />
+          <text x="${(paddingLeft - 8).toFixed(1)}" y="${(y + 3).toFixed(1)}" font-size="10" fill="#6B778C" text-anchor="end">${value}</text>
         `;
       }).join("");
 
@@ -2612,7 +2613,7 @@
       const monthLabels = series.map((point, index) => {
         if (index % labelEvery !== 0 && index !== series.length - 1) return "";
         const [year, month] = point.month.split("-");
-        return `<text x="${xForIndex(index).toFixed(1)}" y="${height - 14}" font-size="10" fill="#657083" text-anchor="middle">${escapeAttr(month)}/${escapeAttr(year.slice(2))}</text>`;
+        return `<text x="${xForIndex(index).toFixed(1)}" y="${height - 14}" font-size="10" fill="#6B778C" text-anchor="middle">${escapeAttr(month)}/${escapeAttr(year.slice(2))}</text>`;
       }).join("");
 
       const markerHtml = touchpoints.map((touchpoint) => {
@@ -2629,25 +2630,25 @@
         const title = buildTouchpointTooltip(touchpoint);
         return `
           <g>
-            <line x1="${x.toFixed(1)}" y1="${paddingTop}" x2="${x.toFixed(1)}" y2="${(paddingTop + plotHeight).toFixed(1)}" stroke="#DC2626" stroke-width="2" stroke-dasharray="4,3" opacity="0.85" />
-            <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"><title>${title}</title></circle>
+            <line x1="${x.toFixed(1)}" y1="${paddingTop}" x2="${x.toFixed(1)}" y2="${(paddingTop + plotHeight).toFixed(1)}" stroke="#C93137" stroke-width="2" stroke-dasharray="4,3" opacity="0.85" />
+            <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="8" fill="#C93137" stroke="#FFFFFF" stroke-width="2"><title>${title}</title></circle>
           </g>
         `;
       }).join("");
 
       const currentMarker = currentPoint
-        ? `<circle cx="${xForIndex(currentPoint.index).toFixed(1)}" cy="${yForValue(currentPoint.contractDays).toFixed(1)}" r="5" fill="#FFFFFF" stroke="#0F52BA" stroke-width="2" stroke-dasharray="2,2"><title>Mês atual (parcial) — ${escapeAttr(currentPoint.month)}: ${currentPoint.contractDays} dias vendidos</title></circle>
-           <text x="${xForIndex(currentPoint.index).toFixed(1)}" y="${(yForValue(currentPoint.contractDays) - 12).toFixed(1)}" font-size="10" fill="#0F52BA" text-anchor="middle">Mês atual (parcial)</text>`
+        ? `<circle cx="${xForIndex(currentPoint.index).toFixed(1)}" cy="${yForValue(currentPoint.contractDays).toFixed(1)}" r="5" fill="#FFFFFF" stroke="#297ACC" stroke-width="2" stroke-dasharray="2,2"><title>Mês atual (parcial) — ${escapeAttr(currentPoint.month)}: ${currentPoint.contractDays} dias vendidos</title></circle>
+           <text x="${xForIndex(currentPoint.index).toFixed(1)}" y="${(yForValue(currentPoint.contractDays) - 12).toFixed(1)}" font-size="10" fill="#297ACC" text-anchor="middle">Mês atual (parcial)</text>`
         : "";
 
       container.innerHTML = `
         <svg viewBox="0 0 ${width} ${height}" width="100%" height="260" role="img" aria-label="Linha de dias vendidos por mês com marcadores de touchpoint">
           ${yTicks}
-          <line x1="${paddingLeft}" y1="${(paddingTop + plotHeight).toFixed(1)}" x2="${(paddingLeft + plotWidth).toFixed(1)}" y2="${(paddingTop + plotHeight).toFixed(1)}" stroke="#DDE3EC" stroke-width="1" />
+          <line x1="${paddingLeft}" y1="${(paddingTop + plotHeight).toFixed(1)}" x2="${(paddingLeft + plotWidth).toFixed(1)}" y2="${(paddingTop + plotHeight).toFixed(1)}" stroke="#E1E4E8" stroke-width="1" />
           ${markerHtml}
-          <polyline points="${completedPolyline}" fill="none" stroke="#0F52BA" stroke-width="2.5" />
+          <polyline points="${completedPolyline}" fill="none" stroke="#297ACC" stroke-width="2.5" />
           ${dashedSegment}
-          ${completedPoints.map((point) => `<circle cx="${xForIndex(point.index).toFixed(1)}" cy="${yForValue(point.contractDays).toFixed(1)}" r="3.5" fill="#0F52BA"><title>${escapeAttr(point.month)}: ${point.contractDays} dias vendidos</title></circle>`).join("")}
+          ${completedPoints.map((point) => `<circle cx="${xForIndex(point.index).toFixed(1)}" cy="${yForValue(point.contractDays).toFixed(1)}" r="3.5" fill="#297ACC"><title>${escapeAttr(point.month)}: ${point.contractDays} dias vendidos</title></circle>`).join("")}
           ${currentMarker}
           ${monthLabels}
         </svg>

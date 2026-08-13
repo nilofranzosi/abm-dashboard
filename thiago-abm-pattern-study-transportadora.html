@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Estudo de Padrões - ABM Embarcadores Thiago</title>
   <style>
-    :root { --blue:#0F52BA; --ink:#172033; --muted:#667085; --line:#D9E2F2; --bg:#EEF2F7; --panel:#FFFFFF; --green:#087443; --amber:#A15C07; --red:#B42318; --slate:#111827; }
+    :root { --blue:#297ACC; --ink:#2B3038; --muted:#6B778C; --line:#D4E4F5; --bg:#F4F8FC; --panel:#FFFFFF; --green:#148F4E; --amber:#8B6212; --red:#C93137; --slate:#2B3038; }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--ink); background:var(--bg); }
+    body { margin:0; font-family:var(--font-sans); color:var(--ink); background:var(--bg); }
     .shell { min-height:100vh; display:grid; grid-template-columns:236px 1fr; gap:14px; padding:14px; }
     aside { background:var(--slate); color:white; border-radius:6px; padding:18px 16px; }
-    .brand { font-size:15px; font-weight:800; margin-bottom:24px; }
-    .nav-label { color:#AAB4C3; font-size:11px; text-transform:uppercase; font-weight:800; margin:20px 0 8px; }
-    .nav-item { display:block; border:1px solid #334155; background:#1F2937; color:white; text-decoration:none; padding:10px; border-radius:6px; font-size:13px; margin-bottom:8px; }
+    .brand { font-size:15px; font-weight:600; margin-bottom:24px; }
+    .nav-label { color:#A6ADBA; font-size:11px; text-transform:uppercase; font-weight:600; margin:20px 0 8px; }
+    .nav-item { display:block; border:1px solid #404754; background:#2B3038; color:white; text-decoration:none; padding:10px; border-radius:6px; font-size:13px; margin-bottom:8px; }
     .nav-item.active { background:var(--blue); border-color:var(--blue); }
     main { display:grid; gap:14px; }
     .topbar, section { background:var(--panel); border:1px solid var(--line); border-radius:6px; }
@@ -27,15 +27,25 @@
     .kpi span { display:block; color:var(--muted); font-size:12px; margin-bottom:8px; }
     .kpi strong { display:block; font-size:25px; }
     .insights { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-    .insight { border-left:4px solid var(--blue); background:#FBFCFF; padding:12px 14px; line-height:1.45; }
+    .insight { border-left:4px solid var(--blue); background:#F8FAFD; padding:12px 14px; line-height:1.45; }
     .insight strong { display:block; margin-bottom:5px; }
     table { width:100%; border-collapse:collapse; font-size:13px; }
-    th { text-align:left; color:#344054; background:#F2F5FA; border-bottom:1px solid var(--line); padding:10px; }
-    td { border-bottom:1px solid #EEF2F7; padding:10px; vertical-align:top; }
+    th { text-align:left; color:#404754; background:#F4F8FC; border-bottom:1px solid var(--line); padding:10px; }
+    td { border-bottom:1px solid #F4F8FC; padding:10px; vertical-align:top; }
     .num { text-align:right; font-variant-numeric:tabular-nums; }
     .note { color:var(--muted); font-size:12px; line-height:1.45; }
     @media (max-width:1100px) { .shell { grid-template-columns:1fr; } aside { display:none; } .grid, .insights { grid-template-columns:1fr; } }
+    /* Dentro do hub (?embed=1) a navegacao ja e do hub — a sidebar propria desta
+       pagina viraria um menu dentro do outro. Mesmo padrao do signal-feed. */
+    html.embedded-view .shell { grid-template-columns:1fr; padding:0; }
+    html.embedded-view aside { display:none; }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
+  <script>
+    if (new URLSearchParams(location.search).get("embed") === "1") {
+      document.documentElement.classList.add("embedded-view");
+    }
+  </script>
 </head>
 <body>
   <div class="shell">
@@ -45,7 +55,7 @@
       <a class="nav-item" href="/thiago-abm-weekly-dashboard.html">Dashboard Semanal</a>
       <a class="nav-item active" href="/thiago-abm-pattern-study.html">Estudo de Padrões</a>
       <div class="nav-label">Base</div>
-      <div class="muted">0 empresas / 0 ativas<br>09/07/2026</div>
+      <div class="muted">0 empresas / 0 ativas<br>12/08/2026</div>
     </aside>
     <main>
       <div class="topbar">
@@ -67,7 +77,7 @@
       <section>
         <h2>Leitura Executiva</h2>
         <div class="insights">
-          <div class="insight"><strong>Amostra ainda é direcional, mas já separa hipóteses acionáveis.</strong>0 contatos ativos, 0 com resposta e 0 com avanço qualificado. Use como leitura de tendência, não como estatística definitiva.</div>
+          <div class="insight"><strong>Amostra ainda é direcional, mas já separa hipóteses acionáveis.</strong>1 contatos ativos, 0 com resposta e 0 com avanço qualificado. Use como leitura de tendência, não como estatística definitiva.</div>
 <div class="insight"><strong>Avanço qualificado concentra-se em contas com dor operacional clara ou handoff interno.</strong>Os melhores sinais não são apenas respostas positivas: contato encaminhado e reunião marcada indicam que o decisor reconheceu alguma aderência e transferiu a conversa para a área correta.</div>
 <div class="insight"><strong>Cargo importa mais pela função do que pelo seniority puro.</strong>Perfis de Supply, Logística, Transportes e Operações tendem a ser mais interpretáveis para o funil; perfis jurídicos, comerciais ou alta gestão precisam de gancho mais específico.</div>
 <div class="insight"><strong>Horário já pode virar hipótese de teste A/B.</strong>O dado de horário está instrumentado pelo primeiro outbound. Na próxima onda, vale padronizar envios em 2 ou 3 janelas para comparar resposta com amostra controlada.</div>
@@ -80,7 +90,7 @@
           <thead><tr><th>Semana</th><th class="num">Empresas abordadas</th><th class="num">Pipeline ativo</th><th class="num">Com resposta ou mais avançado</th><th class="num">Taxa de resposta</th><th class="num">Taxa de reunião</th><th class="num">Taxa de negócio</th></tr></thead>
           <tbody>
             <tr>
-              <td><strong>2026-S28</strong></td>
+              <td><strong>2026-S33</strong></td>
               <td class="num">0</td>
               <td class="num">0</td>
               <td class="num">0</td>
@@ -97,7 +107,14 @@
     <table>
       <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativa</th><th class="num">Tempo 1ª resposta</th></tr></thead>
       <tbody>
-        
+        <tr>
+              <td><strong>Segmento a classificar</strong></td>
+              <td class="num">1</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
       </tbody>
     </table>
   </section>
@@ -106,7 +123,14 @@
     <table>
       <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativa</th><th class="num">Tempo 1ª resposta</th></tr></thead>
       <tbody>
-        
+        <tr>
+              <td><strong>Não identificado</strong></td>
+              <td class="num">1</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
       </tbody>
     </table>
   </section>
@@ -115,7 +139,14 @@
     <table>
       <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativa</th><th class="num">Tempo 1ª resposta</th></tr></thead>
       <tbody>
-        
+        <tr>
+              <td><strong>Supply / Logística / Operações</strong></td>
+              <td class="num">1</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
       </tbody>
     </table>
   </section>
@@ -124,7 +155,14 @@
     <table>
       <thead><tr><th>Dimensão</th><th class="num">N</th><th class="num">Resposta</th><th class="num">Avanço</th><th class="num">Negativa</th><th class="num">Tempo 1ª resposta</th></tr></thead>
       <tbody>
-        
+        <tr>
+              <td><strong>Sem horário</strong></td>
+              <td class="num">1</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">0,0%</td>
+              <td class="num">n/d dias</td>
+            </tr>
       </tbody>
     </table>
   </section>
@@ -173,7 +211,7 @@
           const options = [['','— selecionar —'], ...opts].map(([v,l]) =>
             '<option value="'+v+'"'+(current===v?' selected':'')+'>'+l+'</option>'
           ).join('');
-          return '<select name="'+name+'" style="padding:6px;border:1px solid #D0D5DD;border-radius:4px;font-size:13px;width:100%;">'+options+'</select>';
+          return '<select name="'+name+'" style="padding:6px;border:1px solid #C4C9D1;border-radius:4px;font-size:13px;width:100%;">'+options+'</select>';
         }
 
         function renderCard(msg) {
@@ -182,15 +220,15 @@
           const company = msg.company ? msg.company.name : '—';
           const date = msg.sentAt ? new Date(msg.sentAt).toLocaleDateString('pt-BR') : new Date(msg.createdAt).toLocaleDateString('pt-BR');
 
-          return '<div id="card-'+msg.id+'" style="border:1px solid #D9E2F2;border-radius:6px;padding:16px;margin-bottom:12px;background:#FBFCFF;">' +
-            '<div style="margin-bottom:10px;"><strong>'+escapeHtml(contact)+'</strong> · <span style="color:#667085;">'+escapeHtml(company)+'</span> · <span style="color:#667085;font-size:12px;">'+date+'</span></div>' +
-            '<p style="font-size:13px;color:#344054;margin:0 0 12px;line-height:1.5;background:#F2F5FA;padding:10px;border-radius:4px;">'+escapeHtml(preview)+'</p>' +
+          return '<div id="card-'+msg.id+'" style="border:1px solid #D4E4F5;border-radius:6px;padding:16px;margin-bottom:12px;background:#F8FAFD;">' +
+            '<div style="margin-bottom:10px;"><strong>'+escapeHtml(contact)+'</strong> · <span style="color:#6B778C;">'+escapeHtml(company)+'</span> · <span style="color:#6B778C;font-size:12px;">'+date+'</span></div>' +
+            '<p style="font-size:13px;color:#404754;margin:0 0 12px;line-height:1.5;background:#F4F8FC;padding:10px;border-radius:4px;">'+escapeHtml(preview)+'</p>' +
             '<form id="form-'+msg.id+'" onsubmit="saveClassification(event,''+msg.id+'')" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">' +
-              '<label style="font-size:12px;color:#344054;">Variante de copy<br>'+buildSelect('copyVariant',COPY_OPTIONS.copyVariant,msg.copyVariant)+'</label>' +
-              '<label style="font-size:12px;color:#344054;">Gatilho<br>'+buildSelect('triggerType',COPY_OPTIONS.triggerType,msg.triggerType)+'</label>' +
-              '<label style="font-size:12px;color:#344054;">Ângulo de abordagem<br>'+buildSelect('messageAngle',COPY_OPTIONS.messageAngle,msg.messageAngle)+'</label>' +
-              '<label style="font-size:12px;color:#344054;">Tipo de prova<br>'+buildSelect('proofType',COPY_OPTIONS.proofType,msg.proofType)+'</label>' +
-              '<label style="font-size:12px;color:#344054;grid-column:1/-1;">Resultado<br>'+buildSelect('replyOutcome',COPY_OPTIONS.replyOutcome,msg.replyOutcome)+'</label>' +
+              '<label style="font-size:12px;color:#404754;">Variante de copy<br>'+buildSelect('copyVariant',COPY_OPTIONS.copyVariant,msg.copyVariant)+'</label>' +
+              '<label style="font-size:12px;color:#404754;">Gatilho<br>'+buildSelect('triggerType',COPY_OPTIONS.triggerType,msg.triggerType)+'</label>' +
+              '<label style="font-size:12px;color:#404754;">Ângulo de abordagem<br>'+buildSelect('messageAngle',COPY_OPTIONS.messageAngle,msg.messageAngle)+'</label>' +
+              '<label style="font-size:12px;color:#404754;">Tipo de prova<br>'+buildSelect('proofType',COPY_OPTIONS.proofType,msg.proofType)+'</label>' +
+              '<label style="font-size:12px;color:#404754;grid-column:1/-1;">Resultado<br>'+buildSelect('replyOutcome',COPY_OPTIONS.replyOutcome,msg.replyOutcome)+'</label>' +
               '<div style="grid-column:1/-1;display:flex;gap:8px;align-items:center;">' +
                 '<button type="submit" style="padding:8px 18px;background:var(--blue);color:white;border:none;border-radius:5px;font-size:13px;cursor:pointer;">Salvar</button>' +
                 '<span id="status-'+msg.id+'" style="font-size:12px;color:var(--muted);"></span>' +

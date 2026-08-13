@@ -6,25 +6,25 @@
   <title>PX Outreach Engine - Ações de Hoje</title>
   <style>
     :root {
-      --blue: #0F52BA;
-      --blue-dark: #0A3C8A;
-      --ink: #172033;
-      --muted: #657083;
-      --line: #DDE3EC;
-      --soft: #F6F8FB;
+      --blue: #297ACC;
+      --blue-dark: #19497A;
+      --ink: #2B3038;
+      --muted: #6B778C;
+      --line: #E1E4E8;
+      --soft: #F4F8FC;
       --panel: #FFFFFF;
-      --bg: #EEF2F7;
-      --green: #158255;
-      --amber: #A05A00;
-      --red: #B42318;
-      --slate: #253047;
+      --bg: #F4F8FC;
+      --green: #148F4E;
+      --amber: #8B6212;
+      --red: #C93137;
+      --slate: #2B3038;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:var(--font-sans);
       color: var(--ink);
       background: var(--bg);
       line-height: 1.35;
@@ -41,7 +41,7 @@
     }
 
     aside {
-      background: #111827;
+      background: #2B3038;
       color: #FFFFFF;
       border-radius: 6px;
       padding: 18px 16px;
@@ -49,22 +49,22 @@
 
     .brand {
       font-size: 15px;
-      font-weight: 800;
+      font-weight: 600;
       margin-bottom: 24px;
     }
 
     .nav-label {
-      color: #AAB4C3;
+      color: #A6ADBA;
       font-size: 11px;
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 600;
       margin: 20px 0 8px;
     }
 
     .nav-item {
       display: block;
-      border: 1px solid #334155;
-      background: #1F2937;
+      border: 1px solid #404754;
+      background: #2B3038;
       color: #FFFFFF;
       text-decoration: none;
       padding: 10px;
@@ -98,7 +98,7 @@
     .eyebrow {
       color: var(--blue);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 5px;
     }
@@ -121,7 +121,7 @@
       color: #FFFFFF;
       border-radius: 5px;
       padding: 10px 13px;
-      font-weight: 800;
+      font-weight: 600;
       cursor: pointer;
     }
 
@@ -159,7 +159,7 @@
       display: block;
       color: var(--muted);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       text-transform: uppercase;
       min-height: 26px;
     }
@@ -209,7 +209,7 @@
       color: #FFFFFF;
       background: var(--slate);
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 600;
     }
 
     .queue-body {
@@ -251,10 +251,10 @@
       height: 22px;
       padding: 0 7px;
       border-radius: 999px;
-      background: #E8EDF5;
+      background: #F4F8FC;
       color: var(--slate);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       white-space: nowrap;
     }
 
@@ -286,8 +286,8 @@
 
     .error {
       color: var(--red);
-      border-color: #F2B8B5;
-      background: #FFF7F7;
+      border-color: #F4D6D7;
+      background: #FCF5F5;
     }
 
     .action-toast {
@@ -295,8 +295,8 @@
       top: 16px;
       right: 16px;
       z-index: 9999;
-      background: #FFF7F7;
-      border: 1px solid #F2B8B5;
+      background: #FCF5F5;
+      border: 1px solid #F4D6D7;
       border-left: 4px solid var(--red);
       border-radius: 6px;
       padding: 12px 16px;
@@ -445,7 +445,7 @@
     .kanban-column-head {
       padding: 10px;
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 600;
       border-bottom: 1px solid var(--line);
       display: flex;
       justify-content: space-between;
@@ -464,7 +464,7 @@
     }
 
     .kanban-column-body.drag-over {
-      background: #E8EDF5;
+      background: #F4F8FC;
     }
 
     .kanban-card {
@@ -501,6 +501,7 @@
       .header-actions { margin-top: 12px; }
     }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
   <script>
@@ -1101,7 +1102,7 @@
       return `
         <div class="kanban-card" draggable="true" data-company-id="${company.id}" data-company="${company.name.toLowerCase()}" data-decisor="${(company.activeDecisor || "").toLowerCase()}">
           <strong>${company.name}</strong>
-          ${company.activeDecisor ? `<p style="font-size:11px;color:var(--text-muted,#888);margin-top:-2px;font-style:italic;">👤 ${company.activeDecisor}</p>` : ""}
+          ${company.activeDecisor ? `<p style="font-size:11px;color:var(--text-muted,#8992A3);margin-top:-2px;font-style:italic;">👤 ${company.activeDecisor}</p>` : ""}
           ${company.segment ? `<p>${company.segment}</p>` : ""}
           <p>${company.nextAction ?? "Sem próxima ação"}</p>
           <p>${company.owner?.name ?? "Sem owner"} · ${formatDate(company.nextActionDueAt)}</p>
@@ -1354,14 +1355,14 @@
     // ─── Status Empresas ───────────────────────────────────────────────────────
 
     const ENG_COLUMNS = [
-      { key: "ativo",             label: "Ativo",           color: "#158255", subtitle: "Resposta nos últimos 15 dias" },
-      { key: "segundaAbordagem",  label: "2° Abordagem",    color: "#A05A00", subtitle: "15 a 30 dias sem resposta" },
-      { key: "terceiraAbordagem", label: "3° Abordagem",    color: "#C2410C", subtitle: "30 a 45 dias sem resposta" },
-      { key: "novoDecisor",       label: "Novo Decisor",    color: "#B42318", subtitle: "Mais de 45 dias sem resposta" }
+      { key: "ativo",             label: "Ativo",           color: "#148F4E", subtitle: "Resposta nos últimos 15 dias" },
+      { key: "segundaAbordagem",  label: "2° Abordagem",    color: "#8B6212", subtitle: "15 a 30 dias sem resposta" },
+      { key: "terceiraAbordagem", label: "3° Abordagem",    color: "#8B6212", subtitle: "30 a 45 dias sem resposta" },
+      { key: "novoDecisor",       label: "Novo Decisor",    color: "#C93137", subtitle: "Mais de 45 dias sem resposta" }
     ];
 
     function renderEngCard(item, bucket) {
-      const tier = item.icpTier ? `<span style="font-size:10px;background:var(--blue);color:#fff;border-radius:3px;padding:1px 5px;flex-shrink:0;">${escapeAttr(item.icpTier)}</span>` : "";
+      const tier = item.icpTier ? `<span style="font-size:10px;background:var(--blue);color:#ffffff;border-radius:3px;padding:1px 5px;flex-shrink:0;">${escapeAttr(item.icpTier)}</span>` : "";
       const days = item.daysSinceLastReply;
       const daysLabel = days === 0 ? "Hoje" : `${days}d sem resposta`;
 
@@ -1391,7 +1392,7 @@
           <div style="margin-top:6px;font-size:11px;color:var(--muted);display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line);padding-top:6px;">
             ${item.nomeDecisor ? `<span><strong>Último decisor:</strong> ${escapeAttr(item.nomeDecisor)} (${escapeAttr(item.cargoDecisor || "")})</span>` : ""}
             <span><strong>Arquivado em:</strong> ${dateStr}</span>
-            <span style="color:#B42318;font-weight:600;">3 tentativas esgotadas</span>
+            <span style="color:#C93137;font-weight:600;">3 tentativas esgotadas</span>
           </div>`;
       } else if (bucket !== "descartados") {
         extra = `
@@ -1425,8 +1426,8 @@
         return `
           <div style="background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px;">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
-              <span style="font-weight:700;font-size:13px;color:${col.color};">${col.label}</span>
-              <span style="background:${col.color};color:#fff;border-radius:999px;padding:1px 9px;font-size:11px;font-weight:700;">${items.length}</span>
+              <span style="font-weight:600;font-size:13px;color:${col.color};">${col.label}</span>
+              <span style="background:${col.color};color:#ffffff;border-radius:999px;padding:1px 9px;font-size:11px;font-weight:600;">${items.length}</span>
             </div>
             <p style="font-size:11px;color:var(--muted);margin:0 0 10px;">${col.subtitle}</p>
             <div style="display:flex;flex-direction:column;gap:6px;">${cards}</div>
@@ -1435,7 +1436,7 @@
 
       function renderSecondarySection(title, color, items, bucket, emptyText) {
         const badge = items.length > 0
-          ? `<span style="background:${color};color:#fff;border-radius:999px;padding:1px 9px;font-size:11px;font-weight:700;">${items.length}</span>`
+          ? `<span style="background:${color};color:#ffffff;border-radius:999px;padding:1px 9px;font-size:11px;font-weight:600;">${items.length}</span>`
           : "";
         const body = items.length === 0
           ? `<p style="color:var(--muted);font-size:12px;margin:0;">${emptyText}</p>`
@@ -1443,7 +1444,7 @@
         return `
           <div style="background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:14px;margin-top:12px;">
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-              <span style="font-weight:700;font-size:13px;color:${color};">${title}</span>${badge}
+              <span style="font-weight:600;font-size:13px;color:${color};">${title}</span>${badge}
             </div>
             ${body}
           </div>`;
@@ -1451,10 +1452,10 @@
 
       const descEl = document.getElementById("eng-descartados");
       descEl.innerHTML =
-        renderSecondarySection("⚠ Prazo Esgotado — Dispensar Decisor", "#B42318", data.prazoEsgotado || [], "prazoEsgotado", "Nenhuma empresa com prazo esgotado.") +
-        renderSecondarySection("Em Maturação", "#6B5B07", data.maturacao || [], "maturacao", "Nenhuma empresa em período de maturação.") +
-        renderSecondarySection("Reentrada Disponível", "#0A7B3E", data.reentrada || [], "reentrada", "Nenhuma empresa aguardando reentrada.") +
-        renderSecondarySection("Arquivado", "#6B7280", data.arquivados || [], "arquivados", "Nenhuma empresa arquivada.");
+        renderSecondarySection("⚠ Prazo Esgotado — Dispensar Decisor", "#C93137", data.prazoEsgotado || [], "prazoEsgotado", "Nenhuma empresa com prazo esgotado.") +
+        renderSecondarySection("Em Maturação", "#8B6212", data.maturacao || [], "maturacao", "Nenhuma empresa em período de maturação.") +
+        renderSecondarySection("Reentrada Disponível", "#148F4E", data.reentrada || [], "reentrada", "Nenhuma empresa aguardando reentrada.") +
+        renderSecondarySection("Arquivado", "#6B778C", data.arquivados || [], "arquivados", "Nenhuma empresa arquivada.");
     }
 
     async function loadEngagementStatus() {

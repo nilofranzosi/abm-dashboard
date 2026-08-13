@@ -6,28 +6,28 @@
   <title>PX Outreach Engine - Validação LinkedIn</title>
   <style>
     :root {
-      --blue: #0F52BA; --blue-dark: #0A3C8A; --ink: #172033; --muted: #657083;
-      --line: #DDE3EC; --soft: #F6F8FB; --panel: #FFFFFF; --bg: #EEF2F7;
-      --green: #158255; --amber: #A05A00; --red: #B42318;
+      --blue: #297ACC; --blue-dark: #19497A; --ink: #2B3038; --muted: #6B778C;
+      --line: #E1E4E8; --soft: #F4F8FC; --panel: #FFFFFF; --bg: #F4F8FC;
+      --green: #148F4E; --amber: #8B6212; --red: #C93137;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.35; }
+    body { margin: 0; font-family:var(--font-sans); color: var(--ink); background: var(--bg); line-height: 1.35; }
     html.embedded-view .shell { grid-template-columns: 1fr; }
     html.embedded-view .shell aside { display: none; }
     .shell { min-height: 100vh; display: grid; grid-template-columns: 236px 1fr; gap: 14px; padding: 14px; }
-    aside { background: #111827; color: #fff; border-radius: 6px; padding: 18px 16px; }
-    .brand { font-size: 15px; font-weight: 800; margin-bottom: 24px; }
+    aside { background: #2B3038; color: #ffffff; border-radius: 6px; padding: 18px 16px; }
+    .brand { font-size: 15px; font-weight: 600; margin-bottom: 24px; }
     main { display: grid; gap: 14px; align-content: start; }
     header { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px 22px; }
-    .eyebrow { color: var(--blue); font-size: 11px; font-weight: 800; text-transform: uppercase; margin-bottom: 5px; }
+    .eyebrow { color: var(--blue); font-size: 11px; font-weight: 600; text-transform: uppercase; margin-bottom: 5px; }
     h1 { margin: 0; font-size: 24px; }
     .muted { color: var(--muted); font-size: 12px; }
     .kpis { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; }
     .kpi { background: var(--panel); border: 1px solid var(--line); border-left: 5px solid var(--blue); border-radius: 6px; padding: 12px 13px; }
     .kpi.replied { border-left-color: var(--amber); }
     .kpi.unknown { border-left-color: var(--red); }
-    .kpi.overdue { border-left-color: #9333ea; }
-    .kpi span { display: block; color: var(--muted); font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .kpi.overdue { border-left-color: #7d3dc5; }
+    .kpi span { display: block; color: var(--muted); font-size: 11px; font-weight: 600; text-transform: uppercase; }
     .kpi strong { display: block; font-size: 28px; margin-top: 4px; }
     .cards { display: grid; gap: 12px; }
 
@@ -35,54 +35,54 @@
     .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; transition: opacity 0.3s; }
     .card.removing { opacity: 0; }
     .card-company-header { padding: 14px 16px 10px; border-bottom: 1px solid var(--soft); display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
-    .company-name { font-size: 17px; font-weight: 800; margin: 0 0 6px; }
-    .company-badge { display: inline-block; border-radius: 4px; padding: 3px 10px; font-size: 12px; font-weight: 700; background: var(--soft); border: 1px solid var(--line); color: var(--ink); }
-    .company-badge.unknown { background: #FFF3CD; border-color: #FFC107; color: var(--amber); }
+    .company-name { font-size: 17px; font-weight: 600; margin: 0 0 6px; }
+    .company-badge { display: inline-block; border-radius: 4px; padding: 3px 10px; font-size: 12px; font-weight: 600; background: var(--soft); border: 1px solid var(--line); color: var(--ink); }
+    .company-badge.unknown { background: #FAEDD2; border-color: #E7A31E; color: var(--amber); }
     .touchpoint-count { font-size: 12px; color: var(--muted); margin-top: 4px; }
     .reason-tags { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
-    .reason-tag { font-size: 11px; font-weight: 700; border-radius: 4px; padding: 2px 8px; }
-    .reason-tag.replied { background: #FFF3CD; color: var(--amber); }
-    .reason-tag.company-unknown { background: #FEE2E2; color: var(--red); }
-    .reason-tag.overdue { background: #EDE9FE; color: #6D28D9; }
+    .reason-tag { font-size: 11px; font-weight: 600; border-radius: 4px; padding: 2px 8px; }
+    .reason-tag.replied { background: #FAEDD2; color: var(--amber); }
+    .reason-tag.company-unknown { background: #F4D6D7; color: var(--red); }
+    .reason-tag.overdue { background: #E8DAF9; color: #7D3DC5; }
 
     /* Contacts list inside the company card */
     .contacts-list { padding: 0 16px 10px; display: grid; gap: 8px; margin-top: 10px; }
     .contact-row { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
     .contact-row-header { padding: 8px 12px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; cursor: pointer; user-select: none; background: var(--soft); }
-    .contact-row-header:hover { background: #e8edf5; }
-    .contact-fullname { font-weight: 700; font-size: 13px; flex: 1; }
-    .status-badge { border-radius: 4px; padding: 2px 8px; font-size: 11px; font-weight: 700; }
-    .status-REPLIED_NEUTRAL,  .status-REPLIED   { background: #FFF3CD; color: var(--amber); }
-    .status-REPLIED_POSITIVE                     { background: #D1FAE5; color: var(--green); }
-    .status-REPLIED_NEGATIVE                     { background: #FEE2E2; color: var(--red); }
-    .status-FIRST_CONTACT_SENT, .status-MESSAGE_SENT { background: #DBEAFE; color: var(--blue); }
-    .status-FOLLOW_UP_SENT                       { background: #EDE9FE; color: #6D28D9; }
-    .status-MEETING_BOOKED                       { background: #D1FAE5; color: #065F46; }
-    .status-MEETING_DONE                         { background: #BBF7D0; color: #064E3B; font-weight: 800; }
-    .status-EXCLUDED, .status-DISQUALIFIED       { background: #F3F4F6; color: var(--muted); }
-    .contact-status-form { display: none; padding: 6px 12px 8px; border-top: 1px dashed var(--line); background: #f9fafb; gap: 6px; align-items: center; }
+    .contact-row-header:hover { background: #f4f8fc; }
+    .contact-fullname { font-weight: 600; font-size: 13px; flex: 1; }
+    .status-badge { border-radius: 4px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+    .status-REPLIED_NEUTRAL,  .status-REPLIED   { background: #FAEDD2; color: var(--amber); }
+    .status-REPLIED_POSITIVE                     { background: #D0E9DC; color: var(--green); }
+    .status-REPLIED_NEGATIVE                     { background: #F4D6D7; color: var(--red); }
+    .status-FIRST_CONTACT_SENT, .status-MESSAGE_SENT { background: #D4E4F5; color: var(--blue); }
+    .status-FOLLOW_UP_SENT                       { background: #E8DAF9; color: #7D3DC5; }
+    .status-MEETING_BOOKED                       { background: #D0E9DC; color: #0C562F; }
+    .status-MEETING_DONE                         { background: #D0E9DC; color: #0C562F; font-weight: 600; }
+    .status-EXCLUDED, .status-DISQUALIFIED       { background: #F0F1F3; color: var(--muted); }
+    .contact-status-form { display: none; padding: 6px 12px 8px; border-top: 1px dashed var(--line); background: #f7f8f9; gap: 6px; align-items: center; }
     .contact-status-form.open { display: flex; }
     .contact-status-form select { flex: 1; border: 1px solid var(--line); border-radius: 5px; padding: 5px 8px; font-size: 12px; }
     .contact-role { font-size: 11px; color: var(--muted); }
     .toggle-icon { font-size: 11px; color: var(--muted); margin-left: 4px; }
-    .messages-body { display: none; padding: 10px 12px; border-top: 1px solid var(--line); background: #fff; }
+    .messages-body { display: none; padding: 10px 12px; border-top: 1px solid var(--line); background: #ffffff; }
     .messages-body.open { display: block; }
     .msg { padding: 7px 10px; border-radius: 5px; margin-bottom: 6px; font-size: 12px; line-height: 1.45; }
-    .msg.outbound { background: #DBEAFE; color: var(--blue-dark); }
-    .msg.inbound { background: #D1FAE5; color: #065F46; }
+    .msg.outbound { background: #D4E4F5; color: var(--blue-dark); }
+    .msg.inbound { background: #D0E9DC; color: #0C562F; }
     .msg-meta { font-size: 10px; opacity: 0.7; margin-bottom: 3px; }
     .no-messages { color: var(--muted); font-size: 12px; font-style: italic; }
 
     /* Actions */
     .actions { padding: 10px 16px 14px; display: flex; gap: 8px; flex-wrap: wrap; align-items: flex-start; border-top: 1px solid var(--soft); }
-    .btn { border: none; border-radius: 5px; padding: 7px 14px; font-size: 13px; font-weight: 700; cursor: pointer; }
-    .btn-approve { background: #D1FAE5; color: var(--green); }
-    .btn-approve:hover { background: #A7F3D0; }
-    .btn-correct { background: #DBEAFE; color: var(--blue); }
-    .btn-correct:hover { background: #BFDBFE; }
-    .btn-discard { background: #FEE2E2; color: var(--red); }
-    .btn-discard:hover { background: #FECACA; }
-    .btn-confirm { background: var(--blue); color: #fff; }
+    .btn { border: none; border-radius: 5px; padding: 7px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
+    .btn-approve { background: #D0E9DC; color: var(--green); }
+    .btn-approve:hover { background: #D0E9DC; }
+    .btn-correct { background: #D4E4F5; color: var(--blue); }
+    .btn-correct:hover { background: #D4E4F5; }
+    .btn-discard { background: #F4D6D7; color: var(--red); }
+    .btn-discard:hover { background: #F4D6D7; }
+    .btn-confirm { background: var(--blue); color: #ffffff; }
     .btn-cancel { background: var(--soft); color: var(--ink); }
     .inline-input { display: none; gap: 6px; align-items: center; margin-top: 6px; width: 100%; }
     .inline-input.open { display: flex; }
@@ -90,12 +90,13 @@
 
     /* Toast */
     .toast-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 999; }
-    .toast { background: var(--slate, #253047); color: #fff; border-radius: 6px; padding: 10px 16px; font-size: 13px; animation: fadein 0.2s; }
+    .toast { background: var(--slate, #2B3038); color: #ffffff; border-radius: 6px; padding: 10px 16px; font-size: 13px; animation: fadein 0.2s; }
     @keyframes fadein { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
     .empty-state { text-align: center; padding: 48px 24px; color: var(--muted); }
     .empty-state strong { display: block; font-size: 18px; color: var(--ink); margin-bottom: 8px; }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
 <div class="shell">

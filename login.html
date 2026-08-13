@@ -6,40 +6,41 @@
   <title>Entrar · PX Outreach Engine</title>
   <style>
     :root {
-      --blue:#0F52BA; --ink:#172033; --muted:#667085; --line:#D9E2F2; --panel:#FFFFFF;
-      --color-primary:#2563EB; --color-primary-dark:#1D4ED8; --color-sidebar-bg:#1A1A2E;
-      --color-text-primary:#111827; --color-success:#10B981; --color-danger:#DC2626;
+      --blue:#297ACC; --ink:#2B3038; --muted:#6B778C; --line:#D4E4F5; --panel:#FFFFFF;
+      --color-primary:#297ACC; --color-primary-dark:#297ACC; --color-sidebar-bg:#2B3038;
+      --color-text-primary:#2B3038; --color-success:#8992A3; --color-danger:#C93137;
     }
     * { box-sizing:border-box; }
     body {
-      margin:0; min-height:100vh; font-family:Arial, Helvetica, sans-serif; color:var(--ink);
+      margin:0; min-height:100vh; font-family:var(--font-sans); color:var(--ink);
       background:var(--color-sidebar-bg); display:flex; align-items:center; justify-content:center;
     }
     .card {
       background:var(--panel); border-radius:10px; padding:44px 48px; box-shadow:0 8px 30px rgba(0,0,0,0.25);
       max-width:460px; width:calc(100% - 40px);
     }
-    h1 { margin:0 0 6px; font-size:1.5rem; font-weight:800; color:var(--color-text-primary); }
+    h1 { margin:0 0 6px; font-size:1.5rem; font-weight:600; color:var(--color-text-primary); }
     .subtitle { margin:0 0 28px; color:var(--muted); font-size:14px; line-height:1.5; }
-    label { display:block; font-size:13px; font-weight:700; margin-bottom:6px; color:var(--color-text-primary); }
+    label { display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:var(--color-text-primary); }
     input[type=email] {
       width:100%; padding:12px 14px; font-size:15px; font-family:inherit;
       border:1px solid var(--line); border-radius:6px; margin-bottom:18px;
     }
     input[type=email]:focus { outline:2px solid var(--color-primary); outline-offset:0; border-color:transparent; }
     button {
-      width:100%; font-family:inherit; font-size:1rem; font-weight:700; color:#FFFFFF; cursor:pointer;
+      width:100%; font-family:inherit; font-size:1rem; font-weight:600; color:#FFFFFF; cursor:pointer;
       border:none; border-radius:6px; padding:13px 12px; background:var(--color-primary);
       transition:background 0.15s ease;
     }
     button:hover:not(:disabled) { background:var(--color-primary-dark); }
     button:disabled { opacity:0.6; cursor:not-allowed; }
     .msg { margin-top:18px; padding:12px 14px; border-radius:6px; font-size:14px; line-height:1.5; display:none; }
-    .msg.ok { display:block; background:#ECFDF5; color:#065F46; border:1px solid #A7F3D0; }
-    .msg.err { display:block; background:#FEF2F2; color:#991B1B; border:1px solid #FECACA; }
+    .msg.ok { display:block; background:#F5FAFC; color:#0C562F; border:1px solid #D0E9DC; }
+    .msg.err { display:block; background:#FCF5F5; color:#791D21; border:1px solid #F4D6D7; }
     .hint { margin-top:22px; font-size:12px; color:var(--muted); line-height:1.5; }
     .dev-link { margin-top:12px; font-size:12px; word-break:break-all; }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
   <main class="card">
@@ -59,8 +60,11 @@
 
     <p class="hint">
       O link vale por 15 minutos e s&oacute; funciona uma vez. Depois de entrar, voc&ecirc;
-      permanece conectado por 30 dias neste navegador.<br>
-      Sem acesso ainda? Fale com o Marketing para ser liberado.
+      permanece conectado por 30 dias neste navegador.<br><br>
+      <strong>Ainda n&atilde;o tem acesso?</strong> Escreva para
+      <a href="mailto:nilo.franzosi@px.center?subject=Solicita%C3%A7%C3%A3o%20de%20acesso%20%E2%80%94%20PX%20Outreach%20Engine&amp;body=Ol%C3%A1%20Nilo%2C%0A%0AGostaria%20de%20acesso%20%C3%A0%20plataforma.%0A%0ANome%3A%0A%C3%81rea%3A%0APain%C3%A9is%20que%20preciso%20e%20para%20qu%C3%AA%3A%0A">nilo.franzosi@px.center</a>
+      dizendo quais pain&eacute;is voc&ecirc; precisa e para qu&ecirc;. Cada pedido &eacute; analisado
+      caso a caso. O acesso liberado vale por 1 ano.
     </p>
   </main>
 

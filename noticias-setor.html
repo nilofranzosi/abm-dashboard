@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Notícias do Setor — PX ABM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Sora', sans-serif; background: #F1F5F9; color: #1E293B; min-height: 100vh; }
+
+.header {
+  background: linear-gradient(135deg, #0A1628 70%, #0F52BA);
+  padding: 24px 32px 20px;
+  color: #fff;
+}
+.header-label { font-size: 11px; letter-spacing: 2px; color: #64B5F6; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; }
+.header-sub { font-size: 13px; color: #94A3B8; margin-top: 4px; }
+
+.controls {
+  background: #fff;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.controls label { font-size: 13px; color: #6B7280; font-weight: 500; }
+.controls select {
+  font-family: 'Sora', sans-serif;
+  font-size: 13px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: #F9FAFB;
+  color: #1E293B;
+  cursor: pointer;
+}
+.stat-pill {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #BFDBFE;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.content { max-width: 960px; margin: 24px auto; padding: 0 24px 40px; }
+
+.week-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.week-badge {
+  background: #0A1628;
+  color: #60A5FA;
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+.week-date { font-size: 12px; color: #9CA3AF; }
+.week-count { font-size: 12px; color: #6B7280; margin-left: auto; }
+
+.category-group { margin-bottom: 20px; }
+.category-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.category-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.category-name {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #374151;
+}
+.category-count { font-size: 11px; color: #9CA3AF; }
+
+.news-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-left: 3px solid #6366F1;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  transition: box-shadow 0.15s;
+}
+.news-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,.10); }
+.news-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #0A1628;
+  text-decoration: none;
+  display: block;
+  line-height: 1.4;
+}
+.news-title:hover { color: #0F52BA; text-decoration: underline; }
+.news-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+.news-source {
+  font-size: 11px;
+  color: #6B7280;
+  background: #F3F4F6;
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+.news-category-tag {
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #9CA3AF;
+  font-size: 14px;
+}
+.loading { text-align: center; padding: 60px 20px; color: #9CA3AF; }
+
+/* Embed mode: remove header padding for iframe */
+body.embed .header { padding: 16px 20px 14px; }
+body.embed .controls { padding: 10px 20px; }
+body.embed .content { padding: 0 16px 24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-label">PX Outreach Engine · Inteligência de Mercado</div>
+  <h1>Notícias do Setor</h1>
+  <div class="header-sub">RSS + sinais web coletados semanalmente · uso interno para Planejamento e Conteúdo</div>
+</div>
+
+<div class="controls">
+  <label for="week-select">Semana:</label>
+  <select id="week-select" onchange="renderWeek(this.value)">
+    <option value="">Carregando...</option>
+  </select>
+  <span class="stat-pill" id="stat-total">—</span>
+</div>
+
+<div class="content" id="content">
+  <div class="loading">Carregando notícias...</div>
+</div>
+
+<script>
+const CATEGORY_COLORS = {
+  MOTORISTAS:        '#DC2626',
+  ABM_MELI:          '#FBBF24',
+  ABM_AMAZON:        '#F97316',
+  ABM_SHOPEE:        '#EF4444',
+  ABM_OUTROS:        '#8B5CF6',
+  ABM_VAREJO:        '#06B6D4',
+  CUSTO_DIESEL:      '#6B7280',
+  REGULATORIO:       '#1D4ED8',
+  INFRAESTRUTURA:    '#059669',
+  EXEC_MOVES:        '#DB2777',
+  TECH_CONCORRENTES: '#7C3AED',
+  AGRO:              '#65A30D',
+  RSS:               '#6366F1',
+};
+
+const CATEGORY_LABELS = {
+  MOTORISTAS:        'Déficit de Motoristas',
+  ABM_MELI:          'MELI',
+  ABM_AMAZON:        'Amazon',
+  ABM_SHOPEE:        'Shopee',
+  ABM_OUTROS:        'Outros ABM',
+  ABM_VAREJO:        'Varejo ABM',
+  CUSTO_DIESEL:      'Diesel & Custos',
+  REGULATORIO:       'Regulatório',
+  INFRAESTRUTURA:    'Infraestrutura',
+  EXEC_MOVES:        'Exec Moves',
+  TECH_CONCORRENTES: 'Tech & Concorrentes',
+  AGRO:              'Agronegócio',
+  RSS:               'RSS / Alertas',
+};
+
+const CAT_ORDER = ['MOTORISTAS','ABM_MELI','ABM_AMAZON','ABM_SHOPEE','EXEC_MOVES',
+                   'REGULATORIO','CUSTO_DIESEL','ABM_OUTROS','ABM_VAREJO',
+                   'INFRAESTRUTURA','TECH_CONCORRENTES','AGRO','RSS'];
+
+let allHistory = [];
+
+function escHtml(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function formatDate(iso) {
+  if (!iso) return '';
+  try {
+    const d = new Date(iso + 'T12:00:00');
+    return d.toLocaleDateString('pt-BR', { day:'2-digit', month:'long', year:'numeric' });
+  } catch { return iso; }
+}
+
+function renderWeek(weekKey) {
+  const entry = allHistory.find(h => h.week === weekKey);
+  const content = document.getElementById('content');
+  const stat = document.getElementById('stat-total');
+
+  if (!entry) {
+    content.innerHTML = '<div class="empty-state">Nenhum dado para esta semana.</div>';
+    stat.textContent = '0 itens';
+    return;
+  }
+
+  const items = entry.items || [];
+  stat.textContent = items.length + ' itens';
+
+  // Group by category
+  const byCat = {};
+  for (const item of items) {
+    const cat = item.category || 'RSS';
+    if (!byCat[cat]) byCat[cat] = [];
+    byCat[cat].push(item);
+  }
+
+  // Build ordered category list
+  const catsPresent = [...CAT_ORDER.filter(c => byCat[c]),
+                       ...Object.keys(byCat).filter(c => !CAT_ORDER.includes(c))];
+
+  let html = `
+    <div class="week-header">
+      <span class="week-badge">${escHtml(entry.week)}</span>
+      <span class="week-date">${formatDate(entry.date)}</span>
+      <span class="week-count">${items.length} notícia${items.length !== 1 ? 's' : ''}</span>
+    </div>`;
+
+  for (const cat of catsPresent) {
+    const catItems = byCat[cat];
+    const color = CATEGORY_COLORS[cat] || '#6B7280';
+    const label = CATEGORY_LABELS[cat] || cat;
+
+    html += `<div class="category-group">
+      <div class="category-label">
+        <span class="category-dot" style="background:${color}"></span>
+        <span class="category-name">${escHtml(label)}</span>
+        <span class="category-count">(${catItems.length})</span>
+      </div>`;
+
+    for (const item of catItems) {
+      html += `<div class="news-card" style="border-left-color:${color}">
+        <a class="news-title" href="${escHtml(item.link)}" target="_blank" rel="noopener">${escHtml(item.title)}</a>
+        <div class="news-meta">
+          <span class="news-source">${escHtml(item.source)}</span>
+          <span class="news-category-tag" style="background:${color}22;color:${color};border:1px solid ${color}44;">${escHtml(label)}</span>
+        </div>
+      </div>`;
+    }
+
+    html += '</div>';
+  }
+
+  content.innerHTML = html;
+}
+
+async function init() {
+  // Embed mode
+  if (new URLSearchParams(location.search).get('embed') === '1') {
+    document.body.classList.add('embed');
+  }
+
+  try {
+    const res = await fetch('/data/noticias-setor-history.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    allHistory = await res.json();
+  } catch (e) {
+    document.getElementById('content').innerHTML =
+      '<div class="empty-state">Dados ainda não disponíveis.<br>Execute o Intelligence Monday para gerar o histórico.</div>';
+    return;
+  }
+
+  if (!allHistory.length) {
+    document.getElementById('content').innerHTML =
+      '<div class="empty-state">Nenhuma semana processada ainda.</div>';
+    return;
+  }
+
+  const sel = document.getElementById('week-select');
+  sel.innerHTML = allHistory.map(h =>
+    `<option value="${escHtml(h.week)}">${escHtml(h.week)} — ${formatDate(h.date)}</option>`
+  ).join('');
+
+  renderWeek(allHistory[0].week);
+}
+
+init();
+</script>
+</body>
+</html>

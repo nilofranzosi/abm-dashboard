@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T11:55:52.635Z",
+  "generatedAt": "2026-08-13T11:54:29.821Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
@@ -7,22 +7,22 @@
     "totalCompanies": 123,
     "activeCompanies": 114,
     "pausedCompanies": 9,
-    "repliedOrBetterCompanies": 22,
+    "repliedOrBetterCompanies": 23,
     "meetingOrBetterCompanies": 7,
     "dealCompanies": 6,
-    "companyReplyRate": 0.19298245614035087,
+    "companyReplyRate": 0.20175438596491227,
     "companyMeetingRate": 0.06140350877192982,
     "companyDealRate": 0.05263157894736842
   },
   "sample": {
-    "activeContacts": 225,
-    "replies": 22,
+    "activeContacts": 226,
+    "replies": 21,
     "advanced": 10,
     "negatives": 1,
     "noResponse": 180,
-    "replyRate": 0.09777777777777778,
-    "advancedRate": 0.044444444444444446,
-    "avgDaysToFirstReply": 6.909090909090909
+    "replyRate": 0.09292035398230089,
+    "advancedRate": 0.04424778761061947,
+    "avgDaysToFirstReply": 7
   },
   "bySegment": [
     {
@@ -37,12 +37,12 @@
     },
     {
       "segment": "E-commerce & Varejo",
-      "total": 20,
+      "total": 21,
       "responded": 2,
       "advanced": 1,
       "negative": 0,
-      "replyRate": 0.1,
-      "advancedRate": 0.05,
+      "replyRate": 0.09523809523809523,
+      "advancedRate": 0.047619047619047616,
       "avgDaysToFirstReply": 23
     },
     {
@@ -97,13 +97,13 @@
     },
     {
       "segment": "Segmento a classificar",
-      "total": 143,
-      "responded": 13,
+      "total": 142,
+      "responded": 12,
       "advanced": 1,
       "negative": 1,
-      "replyRate": 0.09090909090909091,
-      "advancedRate": 0.006993006993006993,
-      "avgDaysToFirstReply": 6.538461538461538
+      "replyRate": 0.08450704225352113,
+      "advancedRate": 0.007042253521126761,
+      "avgDaysToFirstReply": 6.666666666666667
     },
     {
       "segment": "Automotivo & Pneus",
@@ -117,7 +117,7 @@
     },
     {
       "segment": "Agro & Commodities",
-      "total": 7,
+      "total": 8,
       "responded": 0,
       "advanced": 0,
       "negative": 0,
@@ -159,23 +159,23 @@
     },
     {
       "seniority": "Gerência / Especialista",
-      "total": 25,
+      "total": 27,
       "responded": 2,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.08,
-      "advancedRate": 0.12,
+      "replyRate": 0.07407407407407407,
+      "advancedRate": 0.1111111111111111,
       "avgDaysToFirstReply": 9
     },
     {
       "seniority": "C-level / VP",
-      "total": 43,
-      "responded": 5,
+      "total": 42,
+      "responded": 4,
       "advanced": 1,
       "negative": 1,
-      "replyRate": 0.11627906976744186,
-      "advancedRate": 0.023255813953488372,
-      "avgDaysToFirstReply": 12
+      "replyRate": 0.09523809523809523,
+      "advancedRate": 0.023809523809523808,
+      "avgDaysToFirstReply": 13.75
     }
   ],
   "byFunctionArea": [
@@ -191,12 +191,12 @@
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 155,
-      "responded": 20,
+      "total": 156,
+      "responded": 19,
       "advanced": 8,
       "negative": 1,
-      "replyRate": 0.12903225806451613,
-      "advancedRate": 0.05161290322580645,
+      "replyRate": 0.12179487179487179,
+      "advancedRate": 0.05128205128205128,
       "avgDaysToFirstReply": 5
     },
     {
@@ -243,13 +243,13 @@
   "byTimeBand": [
     {
       "timeBand": "Antes das 08h",
-      "total": 76,
-      "responded": 14,
+      "total": 77,
+      "responded": 13,
       "advanced": 5,
       "negative": 1,
-      "replyRate": 0.18421052631578946,
-      "advancedRate": 0.06578947368421052,
-      "avgDaysToFirstReply": 8.142857142857142
+      "replyRate": 0.16883116883116883,
+      "advancedRate": 0.06493506493506493,
+      "avgDaysToFirstReply": 8.384615384615385
     },
     {
       "timeBand": "12h-17h59",

@@ -6,25 +6,25 @@
   <title>PX Outreach Engine - Feed de Sinais</title>
   <style>
     :root {
-      --blue: #0F52BA;
-      --blue-dark: #0A3C8A;
-      --ink: #172033;
-      --muted: #657083;
-      --line: #DDE3EC;
-      --soft: #F6F8FB;
+      --blue: #297ACC;
+      --blue-dark: #19497A;
+      --ink: #2B3038;
+      --muted: #6B778C;
+      --line: #E1E4E8;
+      --soft: #F4F8FC;
       --panel: #FFFFFF;
-      --bg: #EEF2F7;
-      --green: #158255;
-      --amber: #A05A00;
-      --red: #B42318;
-      --slate: #253047;
+      --bg: #F4F8FC;
+      --green: #148F4E;
+      --amber: #8B6212;
+      --red: #C93137;
+      --slate: #2B3038;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:var(--font-sans);
       color: var(--ink);
       background: var(--bg);
       line-height: 1.35;
@@ -41,7 +41,7 @@
     }
 
     aside {
-      background: #111827;
+      background: #2B3038;
       color: #FFFFFF;
       border-radius: 6px;
       padding: 18px 16px;
@@ -49,22 +49,22 @@
 
     .brand {
       font-size: 15px;
-      font-weight: 800;
+      font-weight: 600;
       margin-bottom: 24px;
     }
 
     .nav-label {
-      color: #AAB4C3;
+      color: #A6ADBA;
       font-size: 11px;
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 600;
       margin: 20px 0 8px;
     }
 
     .nav-item {
       display: block;
-      border: 1px solid #334155;
-      background: #1F2937;
+      border: 1px solid #404754;
+      background: #2B3038;
       color: #FFFFFF;
       text-decoration: none;
       padding: 10px;
@@ -98,7 +98,7 @@
     .eyebrow {
       color: var(--blue);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 5px;
     }
@@ -121,7 +121,7 @@
       color: #FFFFFF;
       border-radius: 5px;
       padding: 10px 13px;
-      font-weight: 800;
+      font-weight: 600;
       cursor: pointer;
     }
 
@@ -158,7 +158,7 @@
       display: block;
       color: var(--muted);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       text-transform: uppercase;
       min-height: 26px;
     }
@@ -208,7 +208,7 @@
       color: #FFFFFF;
       background: var(--slate);
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 600;
     }
 
     .queue-body {
@@ -250,10 +250,10 @@
       height: 22px;
       padding: 0 7px;
       border-radius: 999px;
-      background: #E8EDF5;
+      background: #F4F8FC;
       color: var(--slate);
       font-size: 11px;
-      font-weight: 800;
+      font-weight: 600;
       white-space: nowrap;
     }
 
@@ -297,8 +297,8 @@
 
     .error {
       color: var(--red);
-      border-color: #F2B8B5;
-      background: #FFF7F7;
+      border-color: #F4D6D7;
+      background: #FCF5F5;
     }
 
     .feed-list {
@@ -314,6 +314,7 @@
       .header-actions { margin-top: 12px; }
     }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
   <script>

@@ -37,20 +37,20 @@
   </script>
   <style>
     :root {
-      --blue:#0F52BA; --blue-50:#EFF6FF; --blue-100:#DBEAFE;
-      --ink:#1A202C; --muted:#64748B; --line:#E2E8F0;
-      --bg:#F0F4F8; --panel:#FFFFFF;
-      --green:#057A55; --green-bg:#ECFDF3;
-      --amber:#92400E; --amber-bg:#FFFBEB;
-      --red:#9B1C1C; --red-bg:#FEF2F2;
-      --purple:#5521B5; --purple-bg:#F5F3FF;
-      --sidebar-bg:#0B1628;
+      --blue:#297ACC; --blue-50:#F4F8FC; --blue-100:#D4E4F5;
+      --ink:#2B3038; --muted:#6B778C; --line:#E1E4E8;
+      --bg:#F4F8FC; --panel:#FFFFFF;
+      --green:#148F4E; --green-bg:#F5FAFC;
+      --amber:#8B6212; --amber-bg:#FEFAF4;
+      --red:#C93137; --red-bg:#FCF5F5;
+      --purple:#7D3DC5; --purple-bg:#F9F5FC;
+      --sidebar-bg:#2B3038;
       --shadow-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
       --shadow:0 4px 16px rgba(0,0,0,.07),0 1px 4px rgba(0,0,0,.04);
       --radius:10px; --radius-sm:6px;
     }
     *{box-sizing:border-box;}
-    body{margin:0;font-family:'Inter',Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+    body{margin:0;font-family:var(--font-sans);color:var(--ink);background:var(--bg);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
 
     .shell{min-height:100vh;display:grid;grid-template-columns:256px 1fr;}
     html.embedded-view body{background:transparent;}
@@ -59,21 +59,21 @@
     html.embedded-view main{padding:0;gap:14px;}
 
     /* sidebar */
-    aside{background:var(--sidebar-bg);color:#CBD5E1;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;}
+    aside{background:var(--sidebar-bg);color:#C4C9D1;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;}
     .brand-header{padding:22px 16px 18px;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:11px;}
-    .brand-logo{width:34px;height:34px;background:linear-gradient(135deg,#2979FF 0%,#0F52BA 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:white;letter-spacing:-.5px;flex-shrink:0;}
-    .brand-name{font-size:13px;font-weight:700;color:#F1F5F9;letter-spacing:-.2px;line-height:1.2;}
-    .brand-sub{font-size:10px;font-weight:500;color:#475569;text-transform:uppercase;letter-spacing:.7px;margin-top:2px;}
+    .brand-logo{width:34px;height:34px;background:linear-gradient(135deg,#297ACC 0%,#297ACC 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:white;letter-spacing:-.5px;flex-shrink:0;}
+    .brand-name{font-size:13px;font-weight:600;color:#F4F8FC;letter-spacing:-.2px;line-height:1.2;}
+    .brand-sub{font-size:10px;font-weight:400;color:#565F70;text-transform:uppercase;letter-spacing:.7px;margin-top:2px;}
     .nav-section{padding:8px 10px 4px;}
-    .nav-label{color:#475569;font-size:10px;text-transform:uppercase;font-weight:600;letter-spacing:.7px;padding:10px 8px 5px;}
-    .side-link{display:flex;align-items:center;gap:9px;color:#94A3B8;padding:8px 10px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:13px;font-weight:500;text-decoration:none;border-left:2px solid transparent;margin-bottom:1px;transition:background .12s,color .12s;}
-    .side-link:hover{background:rgba(255,255,255,.05);color:#E2E8F0;}
-    .side-link.active{background:rgba(15,82,186,.18);border-left-color:#3B82F6;color:#BFDBFE;font-weight:600;}
+    .nav-label{color:#565F70;font-size:10px;text-transform:uppercase;font-weight:600;letter-spacing:.7px;padding:10px 8px 5px;}
+    .side-link{display:flex;align-items:center;gap:9px;color:#A6ADBA;padding:8px 10px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:13px;font-weight:400;text-decoration:none;border-left:2px solid transparent;margin-bottom:1px;transition:background .12s,color .12s;}
+    .side-link:hover{background:rgba(255,255,255,.05);color:#E1E4E8;}
+    .side-link.active{background:rgba(15,82,186,.18);border-left-color:#297ACC;color:#D4E4F5;font-weight:600;}
     .nav-icon{width:15px;height:15px;opacity:.6;flex-shrink:0;}
     .side-link.active .nav-icon{opacity:1;}
     .sidebar-footer{margin-top:auto;padding:12px 10px 16px;border-top:1px solid rgba(255,255,255,.06);}
-    .foot-link{display:flex;align-items:center;gap:8px;color:#64748B;font-size:12px;padding:6px 10px;border-radius:var(--radius-sm);text-decoration:none;transition:color .12s,background .12s;}
-    .foot-link:hover{color:#CBD5E1;background:rgba(255,255,255,.05);}
+    .foot-link{display:flex;align-items:center;gap:8px;color:#6B778C;font-size:12px;padding:6px 10px;border-radius:var(--radius-sm);text-decoration:none;transition:color .12s,background .12s;}
+    .foot-link:hover{color:#C4C9D1;background:rgba(255,255,255,.05);}
 
     /* main */
     main{padding:20px 24px 36px;display:flex;flex-direction:column;gap:18px;min-width:0;}
@@ -82,48 +82,48 @@
     .topbar{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;box-shadow:var(--shadow-sm);}
     .topbar-left{display:flex;align-items:center;gap:12px;}
     .add-btn{background:var(--green);color:white;border:none;padding:8px 14px;border-radius:var(--radius-sm);font-size:13px;font-weight:600;cursor:pointer;transition:background .12s;}
-    .add-btn:hover{background:#05865e;}
+    .add-btn:hover{background:#148f4e;}
 
     /* modal */
     .modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.4);z-index:999;align-items:center;justify-content:center;}
     .modal-overlay.active{display:flex;}
     .modal{background:var(--panel);border-radius:var(--radius);padding:24px;max-width:500px;width:90%;box-shadow:var(--shadow);max-height:90vh;overflow-y:auto;}
-    .modal-header{font-size:16px;font-weight:700;margin-bottom:20px;}
+    .modal-header{font-size:16px;font-weight:600;margin-bottom:20px;}
     .form-group{margin-bottom:16px;}
     .form-label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink);}
     .form-input,.form-select{width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:var(--radius-sm);font-size:13px;font-family:inherit;background:var(--panel);}
     .form-input:focus,.form-select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(15,82,186,.1);}
     .form-actions{display:flex;gap:10px;margin-top:24px;}
     .btn-save{background:var(--blue);color:white;border:none;padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;font-weight:600;cursor:pointer;flex:1;}
-    .btn-save:hover{background:#0a3d7f;}
+    .btn-save:hover{background:#19497a;}
     .btn-cancel{background:var(--line);color:var(--ink);border:none;padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;font-weight:600;cursor:pointer;flex:1;}
-    .btn-cancel:hover{background:#cde0f0;}
+    .btn-cancel:hover{background:#d4e4f5;}
     .topbar-icon{width:40px;height:40px;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    h1{margin:0 0 2px;font-size:18px;font-weight:700;letter-spacing:-.4px;}
+    h1{margin:0 0 2px;font-size:18px;font-weight:600;letter-spacing:-.4px;}
     .muted{color:var(--muted);font-size:13px;}
 
     /* kpis */
     .kpi-row{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;}
     .kpi{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow-sm);}
-    .kpi.green{border-left-color:#10B981;}
-    .kpi.amber{border-left-color:#F59E0B;}
-    .kpi.red{border-left-color:#EF4444;}
-    .kpi.purple{border-left-color:#7C3AED;}
-    .kpi.gray{border-left-color:#94A3B8;}
+    .kpi.green{border-left-color:#8992A3;}
+    .kpi.amber{border-left-color:#E7A31E;}
+    .kpi.red{border-left-color:#C93137;}
+    .kpi.purple{border-left-color:#7D3DC5;}
+    .kpi.gray{border-left-color:#A6ADBA;}
     .kpi-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);margin-bottom:8px;}
-    .kpi-value{font-size:24px;font-weight:700;letter-spacing:-.5px;line-height:1;}
+    .kpi-value{font-size:24px;font-weight:600;letter-spacing:-.5px;line-height:1;}
     .kpi-sub{font-size:11px;color:var(--muted);margin-top:4px;}
 
     /* segment charts */
     .charts-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
     .chart-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow-sm);}
-    .chart-title{font-size:13px;font-weight:700;margin-bottom:12px;}
+    .chart-title{font-size:13px;font-weight:600;margin-bottom:12px;}
     .chart-body{display:flex;gap:18px;align-items:center;}
     .chart-legend{flex:1;display:flex;flex-direction:column;gap:5px;min-width:0;}
     .chart-legend-item{display:flex;align-items:center;gap:7px;font-size:12px;}
     .chart-legend-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
     .chart-legend-label{flex:1;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-    .chart-legend-pct{font-weight:700;color:var(--muted);}
+    .chart-legend-pct{font-weight:600;color:var(--muted);}
 
     /* segment overview */
     .seg-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
@@ -136,8 +136,8 @@
 
     /* market size + coverage badges */
     .seg-market{display:flex;align-items:center;gap:6px;margin-top:8px;flex-wrap:wrap;}
-    .seg-market-badge{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:999px;font-size:10px;font-weight:700;background:#F1F5F9;color:#475569;cursor:help;}
-    .seg-coverage-badge{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:999px;font-size:10px;font-weight:700;}
+    .seg-market-badge{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:999px;font-size:10px;font-weight:600;background:#F4F8FC;color:#565F70;cursor:help;}
+    .seg-coverage-badge{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:999px;font-size:10px;font-weight:600;}
     .seg-coverage-badge.cov-red{background:var(--red-bg);color:var(--red);}
     .seg-coverage-badge.cov-amber{background:var(--amber-bg);color:var(--amber);}
     .seg-coverage-badge.cov-green{background:var(--green-bg);color:var(--green);}
@@ -164,11 +164,11 @@
     /* table */
     .table-wrap{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);}
     table{width:100%;border-collapse:collapse;}
-    thead{background:#F8FAFC;}
+    thead{background:#F8FAFD;}
     th{padding:10px 14px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;}
     td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px;}
     tr:last-child td{border-bottom:none;}
-    tr:hover td{background:#FAFBFC;}
+    tr:hover td{background:#F8FAFD;}
 
     .company-name{font-weight:600;font-size:13px;margin-bottom:2px;}
     .company-uf{font-size:11px;color:var(--muted);}
@@ -176,16 +176,16 @@
 
     /* badges */
     .badge{display:inline-flex;align-items:center;height:20px;padding:0 8px;border-radius:999px;font-size:11px;font-weight:600;white-space:nowrap;}
-    .badge-t1{background:#DBEAFE;color:#1D4ED8;}
-    .badge-t2{background:#FEF3C7;color:#92400E;}
-    .badge-t3{background:#F1F5F9;color:#475569;}
-    .badge-t-null{background:#F1F5F9;color:#64748B;}
+    .badge-t1{background:#D4E4F5;color:#297ACC;}
+    .badge-t2{background:#FAEDD2;color:#8B6212;}
+    .badge-t3{background:#F4F8FC;color:#565F70;}
+    .badge-t-null{background:#F4F8FC;color:#6B778C;}
     .badge-abm{background:var(--green-bg);color:var(--green);}
-    .badge-gap{background:#F1F5F9;color:#64748B;}
-    .badge-active{background:#EDE9FE;color:#5521B5;}
-    .badge-sim{background:#ECFDF3;color:#057A55;}
-    .badge-nao{background:#FEF2F2;color:#9B1C1C;}
-    .badge-joinville{background:#FFF7ED;color:#C2410C;font-size:10px;}
+    .badge-gap{background:#F4F8FC;color:#6B778C;}
+    .badge-active{background:#E8DAF9;color:#7D3DC5;}
+    .badge-sim{background:#F5FAFC;color:#148F4E;}
+    .badge-nao{background:#FCF5F5;color:#C93137;}
+    .badge-joinville{background:#FEFAF4;color:#8B6212;font-size:10px;}
 
     /* score bar */
     .score-bar{width:60px;height:5px;background:var(--line);border-radius:3px;overflow:hidden;}
@@ -193,35 +193,35 @@
     .score-val{font-size:12px;font-weight:600;color:var(--ink);min-width:28px;}
     .tier-score{display:flex;flex-direction:column;gap:5px;min-width:118px;}
     .tier-score-head{display:flex;align-items:center;justify-content:space-between;gap:8px;}
-    .tier-score-label{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;}
+    .tier-score-label{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;}
     .tier-breakdown{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;}
-    .tier-breakdown span{height:17px;border-radius:4px;background:#F8FAFC;border:1px solid var(--line);font-size:9px;font-weight:700;color:#475569;display:flex;align-items:center;justify-content:center;}
-    .tier-rationale{font-size:11px;color:#475569;line-height:1.45;margin-bottom:8px;}
-    .next-step{font-size:11px;color:#1D4ED8;line-height:1.4;background:#EFF6FF;border:1px solid #DBEAFE;border-radius:6px;padding:6px 8px;}
+    .tier-breakdown span{height:17px;border-radius:4px;background:#F8FAFD;border:1px solid var(--line);font-size:9px;font-weight:600;color:#565F70;display:flex;align-items:center;justify-content:center;}
+    .tier-rationale{font-size:11px;color:#565F70;line-height:1.45;margin-bottom:8px;}
+    .next-step{font-size:11px;color:#297ACC;line-height:1.4;background:#F4F8FC;border:1px solid #D4E4F5;border-radius:6px;padding:6px 8px;}
 
     /* decisors */
     .decisor{margin-bottom:6px;}
     .decisor:last-child{margin-bottom:0;}
     .decisor-name{font-size:12px;font-weight:600;}
     .decisor-role{font-size:11px;color:var(--muted);line-height:1.3;}
-    .decisor-meta{font-size:10px;color:#64748B;margin-top:1px;}
-    .decisor-confidence{font-weight:700;text-transform:uppercase;letter-spacing:.3px;}
-    .decisor-confidence.alta{color:#057A55;}
-    .decisor-confidence.media{color:#92400E;}
-    .decisor-confidence.baixa{color:#9B1C1C;}
+    .decisor-meta{font-size:10px;color:#6B778C;margin-top:1px;}
+    .decisor-confidence{font-weight:600;text-transform:uppercase;letter-spacing:.3px;}
+    .decisor-confidence.alta{color:#148F4E;}
+    .decisor-confidence.media{color:#8B6212;}
+    .decisor-confidence.baixa{color:#C93137;}
 
     /* segment dot colors */
     .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;display:inline-block;margin-right:5px;}
-    .dot-ecommerce{background:#3B82F6;}
-    .dot-farma{background:#10B981;}
-    .dot-alimentos{background:#F59E0B;}
-    .dot-cosmeticos{background:#EC4899;}
-    .dot-combustiveis{background:#EF4444;}
-    .dot-industria{background:#8B5CF6;}
-    .dot-pneus{background:#06B6D4;}
-    .dot-agro{background:#84CC16;}
-    .dot-eletro{background:#F97316;}
-    .dot-logistica{background:#6B7280;}
+    .dot-ecommerce{background:#297ACC;}
+    .dot-farma{background:#8992A3;}
+    .dot-alimentos{background:#E7A31E;}
+    .dot-cosmeticos{background:#D83598;}
+    .dot-combustiveis{background:#C93137;}
+    .dot-industria{background:#7D3DC5;}
+    .dot-pneus{background:#1AADA9;}
+    .dot-agro{background:#78BE14;}
+    .dot-eletro{background:#E7A31E;}
+    .dot-logistica{background:#6B778C;}
 
     .empty{padding:32px;text-align:center;color:var(--muted);font-size:14px;}
 
@@ -231,6 +231,7 @@
       .charts-row{grid-template-columns:1fr;}
     }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
 <div class="shell">
@@ -282,7 +283,7 @@
     <div class="topbar">
       <div class="topbar-left">
         <div class="topbar-icon">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#0F52BA" stroke-width="1.8"><rect x="2" y="10" width="4" height="8" rx="1"/><rect x="8" y="6" width="4" height="12" rx="1"/><rect x="14" y="2" width="4" height="16" rx="1"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#297ACC" stroke-width="1.8"><rect x="2" y="10" width="4" height="8" rx="1"/><rect x="8" y="6" width="4" height="12" rx="1"/><rect x="14" y="2" width="4" height="16" rx="1"/></svg>
         </div>
         <div>
           <h1 id="page-title">Embarcadores Brasil</h1>
@@ -291,11 +292,11 @@
       </div>
       <div style="display:flex;gap:8px;">
         <button class="add-btn" onclick="openAddModal()" id="add-embarcador-btn" style="display:none;">+ Adicionar Embarcador</button>
-        <button onclick="exportCsv()" style="border:1px solid var(--blue);background:#fff;color:var(--blue);border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
+        <button onclick="exportCsv()" style="border:1px solid var(--blue);background:#ffffff;color:var(--blue);border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 1v8M7 9 4 6M7 9l3-3M2 11h10v2H2z"/></svg>
           Exportar CSV
         </button>
-        <button onclick="loadAll()" style="border:1px solid var(--blue);background:var(--blue);color:#fff;border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
+        <button onclick="loadAll()" style="border:1px solid var(--blue);background:var(--blue);color:#ffffff;border-radius:6px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12.5 7A5.5 5.5 0 1 1 7 1.5"/><path d="M12.5 1.5v4h-4"/></svg>
           Atualizar
         </button>
@@ -304,7 +305,7 @@
 
     <!-- methodology note (Embarcador only) -->
     <div id="methodology-note" style="background:var(--blue-50);border:1px solid var(--blue-100);border-radius:var(--radius);padding:10px 16px;font-size:12px;color:var(--ink);display:flex;align-items:center;gap:8px;">
-      <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#0F52BA" stroke-width="1.8" style="flex-shrink:0;"><circle cx="10" cy="10" r="8"/><path d="M10 9v4.5M10 6.5v.01"/></svg>
+      <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#297ACC" stroke-width="1.8" style="flex-shrink:0;"><circle cx="10" cy="10" r="8"/><path d="M10 9v4.5M10 6.5v.01"/></svg>
       <span><strong>Metodologia:</strong> este painel combina (1) a participação percentual de cada setor no PIB brasileiro, (2) a lista das maiores empresas não-financeiras e não-prestadoras de serviço do Índice Brasil 100 (IBrX 100) da B3, ranqueadas por receita, e (3) empresas com maior movimentação de carga segundo o <strong>Times Brasil</strong>.</span>
     </div>
 
@@ -406,18 +407,18 @@
 <script src="/js/icp-segment.js"></script>
 <script>
   const SEGMENT_COLORS = {
-    "E-commerce & Varejo":               { dot: "#3B82F6", top: "#3B82F6" },
-    "Farmacêutico & Saúde":              { dot: "#10B981", top: "#10B981" },
-    "Alimentos & Bebidas":               { dot: "#F59E0B", top: "#F59E0B" },
-    "Cosméticos & Higiene":              { dot: "#EC4899", top: "#EC4899" },
-    "Combustíveis, Energia & Química":   { dot: "#EF4444", top: "#EF4444" },
-    "Indústria Pesada":                  { dot: "#8B5CF6", top: "#8B5CF6" },
-    "Automotivo & Pneus":                { dot: "#06B6D4", top: "#06B6D4" },
-    "Agro & Commodities":                { dot: "#84CC16", top: "#84CC16" },
-    "Eletro & Tecnologia":                { dot: "#F97316", top: "#F97316" },
-    "Logística & Transporte":            { dot: "#6B7280", top: "#6B7280" },
-    "Construção Civil":                  { dot: "#78716C", top: "#78716C" },
-    "Têxtil & Vestuário":                { dot: "#D946EF", top: "#D946EF" }
+    "E-commerce & Varejo":               { dot: "#297ACC", top: "#297ACC" },
+    "Farmacêutico & Saúde":              { dot: "#8992A3", top: "#8992A3" },
+    "Alimentos & Bebidas":               { dot: "#E7A31E", top: "#E7A31E" },
+    "Cosméticos & Higiene":              { dot: "#D83598", top: "#D83598" },
+    "Combustíveis, Energia & Química":   { dot: "#C93137", top: "#C93137" },
+    "Indústria Pesada":                  { dot: "#7D3DC5", top: "#7D3DC5" },
+    "Automotivo & Pneus":                { dot: "#1AADA9", top: "#1AADA9" },
+    "Agro & Commodities":                { dot: "#78BE14", top: "#78BE14" },
+    "Eletro & Tecnologia":                { dot: "#E7A31E", top: "#E7A31E" },
+    "Logística & Transporte":            { dot: "#6B778C", top: "#6B778C" },
+    "Construção Civil":                  { dot: "#6B778C", top: "#6B778C" },
+    "Têxtil & Vestuário":                { dot: "#7D3DC5", top: "#7D3DC5" }
   };
 
   // Tamanho relativo do mercado em relação ao PIB (Top Down: faturamento setorial / PIB Brasil 2024 = R$ 11,7tri, IBGE)
@@ -699,15 +700,15 @@
 
     const container = document.getElementById("seg-row");
     container.innerHTML = Object.entries(segs).sort((a, b) => b[1].total - a[1].total).map(([seg, d]) => {
-      const color = SEGMENT_COLORS[seg]?.top || "#64748B";
+      const color = SEGMENT_COLORS[seg]?.top || "#6B778C";
       return `
         <div class="seg-card" onclick="filterBySeg('${seg.replace(/'/g,"\\'")}', this)" style="border-top-color:${color}">
           <div class="seg-name"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>${seg}</div>
           <div class="seg-meta">
             <span>${d.total} total</span>
-            <span style="color:#10B981">${d.abm} ABM</span>
-            <span style="color:#64748B">${d.t1} T1</span>
-            <span style="color:#1D4ED8">${Math.round(d.scoreSum / d.total)} pts</span>
+            <span style="color:#8992A3">${d.abm} ABM</span>
+            <span style="color:#6B778C">${d.t1} T1</span>
+            <span style="color:#297ACC">${Math.round(d.scoreSum / d.total)} pts</span>
           </div>
         </div>`;
     }).join("");
@@ -741,7 +742,7 @@
     allEmb.forEach(e => { counts[e.segment] = (counts[e.segment] || 0) + 1; });
     const total = allEmb.length || 1;
     const embItems = Object.entries(counts)
-      .map(([seg, count]) => ({ label: seg, pct: (count / total) * 100, color: SEGMENT_COLORS[seg]?.dot || "#94A3B8" }))
+      .map(([seg, count]) => ({ label: seg, pct: (count / total) * 100, color: SEGMENT_COLORS[seg]?.dot || "#A6ADBA" }))
       .sort((a, b) => b.pct - a.pct);
 
     document.getElementById("chart-embarcadores").innerHTML = donutSvg(embItems, 130);
@@ -749,10 +750,10 @@
 
     // Chart 2: participação dos setores no PIB brasileiro
     const pibItems = Object.entries(TAMANHO_MERCADO_SEGMENTOS)
-      .map(([seg, d]) => ({ label: seg, pct: d.pct, color: SEGMENT_COLORS[seg]?.dot || "#94A3B8" }))
+      .map(([seg, d]) => ({ label: seg, pct: d.pct, color: SEGMENT_COLORS[seg]?.dot || "#A6ADBA" }))
       .sort((a, b) => b.pct - a.pct);
     const pibSum = pibItems.reduce((sum, item) => sum + item.pct, 0);
-    pibItems.push({ label: "Outros setores da economia", pct: Math.max(0, 100 - pibSum), color: "#CBD5E1" });
+    pibItems.push({ label: "Outros setores da economia", pct: Math.max(0, 100 - pibSum), color: "#C4C9D1" });
 
     document.getElementById("chart-pib").innerHTML = donutSvg(pibItems, 130);
     document.getElementById("legend-pib").innerHTML = chartLegendHtml(pibItems);
@@ -866,7 +867,7 @@
   }
 
   function segDot(seg) {
-    const color = SEGMENT_COLORS[seg]?.dot || "#64748B";
+    const color = SEGMENT_COLORS[seg]?.dot || "#6B778C";
     return `<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:${color};margin-right:5px;vertical-align:middle;flex-shrink:0"></span>`;
   }
 

@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-08-12T11:55:55.779Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-12.json",
+  "generatedAt": "2026-08-13T11:54:33.755Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-13.json",
   "summary": {
     "total": 2,
     "replied": 0,
-    "companyUnknown": 0,
+    "companyUnknown": 1,
     "overdue": 0
   },
   "companies": [
     {
-      "id": "yara-international",
-      "resolvedCompany": "Yara International",
+      "id": "grupo-boticario",
+      "resolvedCompany": "Grupo Boticário",
       "reviewReasons": [
         "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Edvan Cruz",
+          "contactName": "Diego Fortuna",
           "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": "Diretor de Operações",
-          "confidence": "Media",
+          "roleOrHeadline": "Gerente Sênior, Logística Outbound | Liderando Transformação Digital e Cadeias de Suprimentos de Alta Complexidade | Desenvolvimento de Equipes de Alta Performance no Grupo Boticário",
+          "confidence": "Alta",
           "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-08-12T03:00:00.000Z",
+          "lastOutboundAt": "2026-08-13T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-08-12T03:00:00.000Z",
-              "body": "Estamos com um processo de homologação com a Raízen, acredito que temos oportunidades concretas para a cadeia logística da Yara."
+              "occurredAt": "2026-08-13T03:00:00.000Z",
+              "body": "Estava conversando com o Luciano Xavier sobre as possibilidades de parceria entre a PX e a Boticário. Ele me informou que saiu da empresa e me disse para entrar em contato contigo sobre esse projeto."
             },
             {
-              "occurredAt": "2026-08-12T03:00:00.000Z",
-              "body": "Vamos marcar uma conversa?"
+              "occurredAt": "2026-08-13T03:00:00.000Z",
+              "body": "Conseguimos marcar uma conversa para avançar nesse projeto?"
             }
           ],
           "icpSegment": null
@@ -42,34 +42,31 @@
       "icpSegment": null
     },
     {
-      "id": "alpargatas-s-a",
-      "resolvedCompany": "Alpargatas S.A.",
+      "id": "unknown-daniel-turci-pedroso",
+      "resolvedCompany": "A apurar",
       "reviewReasons": [
+        "company-unknown",
         "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Amanda Caroline dos Santos",
+          "contactName": "Daniel Turci Pedroso",
           "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": "Diretora | Logística | Operações | Transportes | Supply Chain | Transformação Logística | Estratégia Operacional | Excelência em Last Mile | Execução e Resultados",
-          "confidence": "Media",
+          "roleOrHeadline": null,
+          "confidence": "Baixa",
           "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-08-12T03:00:00.000Z",
+          "lastOutboundAt": "2026-08-13T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-08-12T03:00:00.000Z",
-              "body": "Amanda, a PX atua disponibilizando mão de obra para a operação logística, sem necessidade de contratação fixa via RH."
+              "occurredAt": "2026-08-13T20:41:00.000Z",
+              "body": "Estamos em um processo de homologação junto a Raízen, acredito que temos oportunidades concretas para a cadeia logística da Braskem."
             },
             {
-              "occurredAt": "2026-08-12T03:00:00.000Z",
-              "body": "Temos atuação em todo o Brasil em empresas como Ambev e Mercado Livre. Acredito que temos oportunidades concretas para a cadeia logística da Alpargatas."
-            },
-            {
-              "occurredAt": "2026-08-12T03:00:00.000Z",
-              "body": "Vamos marcar uma conversa?"
+              "occurredAt": "2026-08-13T03:00:00.000Z",
+              "body": "Para avançar nesse processo, o melhor contato seria contigo?"
             }
           ],
           "icpSegment": null

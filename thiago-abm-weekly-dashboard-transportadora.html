@@ -5,24 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard Semanal ABM Thiago</title>
   <style>
-    :root { --blue:#0F52BA; --blue2:#0A3C8A; --ink:#172033; --muted:#667085; --line:#D9E2F2; --bg:#EEF2F7; --panel:#FFFFFF; --green:#087443; --amber:#A15C07; --red:#B42318; --slate:#111827; }
+    :root { --blue:#297ACC; --blue2:#19497A; --ink:#2B3038; --muted:#6B778C; --line:#D4E4F5; --bg:#F4F8FC; --panel:#FFFFFF; --green:#148F4E; --amber:#8B6212; --red:#C93137; --slate:#2B3038; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); }
-    .shell { min-height: 100vh; display: grid; grid-template-columns: 236px 1fr; gap: 14px; padding: 14px; }
+    body { margin: 0; font-family:var(--font-sans); color: var(--ink); background: var(--bg); }
+    .shell { min-height: 100vh; display: grid; grid-template-columns: 1fr; gap: 14px; padding: 14px; }
     aside { background: var(--slate); color: white; border-radius: 6px; padding: 18px 16px; }
-    .brand { font-size: 15px; font-weight: 800; margin-bottom: 24px; }
-    .nav-label { color: #AAB4C3; font-size: 11px; text-transform: uppercase; font-weight: 800; margin: 20px 0 8px; }
-    .nav-item { display: block; border: 1px solid #334155; background: #1F2937; color: white; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; margin-bottom: 8px; }
+    .brand { font-size: 15px; font-weight: 600; margin-bottom: 24px; }
+    .nav-label { color: #A6ADBA; font-size: 11px; text-transform: uppercase; font-weight: 600; margin: 20px 0 8px; }
+    .nav-item { display: block; border: 1px solid #404754; background: #2B3038; color: white; text-decoration: none; padding: 10px; border-radius: 6px; font-size: 13px; margin-bottom: 8px; }
     .nav-item.active { background: var(--blue); border-color: var(--blue); }
     main { display: grid; gap: 14px; }
     .topbar, section { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
     .topbar { padding: 18px 20px; display: flex; justify-content: space-between; gap: 18px; align-items: center; }
-    .btn-refresh { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; padding: 10px 18px; font-size: 13px; font-weight: 700; cursor: pointer; white-space: nowrap; transition: background 0.15s; }
+    .btn-refresh { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: white; border: none; border-radius: 6px; padding: 10px 18px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap; transition: background 0.15s; }
     .btn-refresh:hover { background: var(--blue2); }
-    .btn-refresh:disabled { background: #94A3B8; cursor: not-allowed; }
+    .btn-refresh:disabled { background: #A6ADBA; cursor: not-allowed; }
     .btn-refresh .icon { font-size: 15px; display: inline-block; transition: transform 0.6s linear; }
     .btn-refresh.loading .icon { animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
+    .btn-export { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: var(--blue); border: 1.5px solid var(--blue); border-radius: 6px; padding: 9px 18px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap; transition: all 0.15s; }
+    .btn-export:hover { background: var(--blue); color: white; }
+    .btn-export:disabled { border-color: #A6ADBA; color: #A6ADBA; cursor: not-allowed; }
     .refresh-status { font-size: 12px; color: var(--muted); margin-top: 4px; }
     h1 { margin: 0 0 5px; font-size: 22px; }
     h2 { margin: 0 0 14px; font-size: 16px; color: var(--blue); }
@@ -34,85 +37,80 @@
     .kpi.kpi-amber { border-left-color: var(--amber); }
     .kpi span { display: block; color: var(--muted); font-size: 12px; margin-bottom: 8px; }
     .kpi strong { display: block; font-size: 26px; margin-bottom: 8px; }
-    .trend { display: inline-block; font-size: 12px; font-weight: 700; padding: 3px 7px; border-radius: 999px; }
-    .trend.up { color: var(--green); background: #ECFDF3; }
-    .trend.down { color: var(--red); background: #FEF3F2; }
-    .trend.neutral { color: var(--muted); background: #F2F4F7; }
+    .trend { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 7px; border-radius: 999px; }
+    .trend.up { color: var(--green); background: #F5FAFC; }
+    .trend.down { color: var(--red); background: #FCF5F5; }
+    .trend.neutral { color: var(--muted); background: #F0F1F3; }
     section { padding: 18px; }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    th { text-align: left; color: #344054; background: #F2F5FA; border-bottom: 1px solid var(--line); padding: 10px; }
-    td { border-bottom: 1px solid #EEF2F7; padding: 10px; vertical-align: middle; }
+    th { text-align: left; color: #404754; background: #F4F8FC; border-bottom: 1px solid var(--line); padding: 10px; }
+    td { border-bottom: 1px solid #F4F8FC; padding: 10px; vertical-align: middle; }
     .num { text-align: right; font-variant-numeric: tabular-nums; }
-    .num.overdue { color: var(--red); font-weight: 700; }
+    .num.overdue { color: var(--red); font-weight: 600; }
     .barrow { display: grid; grid-template-columns: 160px 1fr 42px; gap: 10px; align-items: center; margin-bottom: 10px; font-size: 13px; }
-    .bar { height: 10px; background: #E4E7EC; border-radius: 999px; overflow: hidden; }
+    .bar { height: 10px; background: #E1E4E8; border-radius: 999px; overflow: hidden; }
     .bar span { display: block; height: 100%; background: var(--blue); }
     .stage-badge { display: inline-block; padding: 4px 8px; border-radius: 999px; font-size: 12px; white-space: nowrap; font-weight: 600; }
-    .badge-deal { background: #ECFDF3; color: #087443; }
-    .badge-meeting { background: #EFF6FF; color: #1D4ED8; }
-    .badge-replied { background: #FFF7ED; color: #C2410C; }
-    .badge-paused { background: #F2F4F7; color: #667085; }
-    .badge-default { background: #EEF2F7; color: #344054; }
+    .badge-deal { background: #F5FAFC; color: #148F4E; }
+    .badge-meeting { background: #F4F8FC; color: #297ACC; }
+    .badge-replied { background: #FEFAF4; color: #8B6212; }
+    .badge-paused { background: #F0F1F3; color: #6B778C; }
+    .badge-default { background: #F4F8FC; color: #404754; }
     .footer-note { color: var(--muted); font-size: 12px; line-height: 1.45; }
     /* ICP Coverage */
     .icp-coverage-section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px 28px; }
-    .icp-coverage-section .section-title { font-size: 15px; font-weight: 700; color: #111827; margin: 0 0 20px; }
+    .icp-coverage-section .section-title { font-size: 15px; font-weight: 600; color: #2B3038; margin: 0 0 20px; }
     .icp-coverage-inner { display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: start; }
     .icp-donut-wrap { display: flex; flex-direction: column; align-items: center; gap: 14px; }
     .icp-donut-legend { font-size: 12px; color: var(--text); display: flex; flex-direction: column; gap: 6px; align-self: stretch; }
     .icp-legend-item { display: flex; align-items: center; gap: 7px; }
     .icp-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-    .icp-dot.approached { background: #0F52BA; }
-    .icp-dot.remaining { background: #e5e7eb; border: 1px solid #d1d5db; }
+    .icp-dot.approached { background: #297ACC; }
+    .icp-dot.remaining { background: #e1e4e8; border: 1px solid #c4c9d1; }
     .icp-legend-total { font-size: 11px; color: var(--muted); margin-top: 2px; }
     .icp-segments { display: flex; flex-direction: column; gap: 0; }
     .icp-seg-header { display: grid; grid-template-columns: 180px 1fr 90px 46px; gap: 8px; align-items: center; font-size: 11px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 6px; }
-    .icp-seg-row { display: grid; grid-template-columns: 180px 1fr 90px 46px; gap: 8px; align-items: center; padding: 5px 0; border-bottom: 1px solid #f3f4f6; font-size: 13px; }
+    .icp-seg-row { display: grid; grid-template-columns: 180px 1fr 90px 46px; gap: 8px; align-items: center; padding: 5px 0; border-bottom: 1px solid #f0f1f3; font-size: 13px; }
     .icp-seg-row:last-child { border-bottom: none; }
     .icp-seg-label { color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .icp-seg-bar-wrap { padding: 0 4px; }
-    .icp-seg-bar-bg { height: 8px; background: #f3f4f6; border-radius: 999px; overflow: hidden; }
-    .icp-seg-bar-fill { height: 100%; background: #0F52BA; border-radius: 999px; }
+    .icp-seg-bar-bg { height: 8px; background: #f0f1f3; border-radius: 999px; overflow: hidden; }
+    .icp-seg-bar-fill { height: 100%; background: #297ACC; border-radius: 999px; }
     .icp-seg-counts { font-size: 12px; color: var(--text); text-align: right; white-space: nowrap; }
     .icp-seg-total { color: var(--muted); }
-    .icp-seg-pct { font-size: 12px; font-weight: 600; color: #0F52BA; text-align: right; }
+    .icp-seg-pct { font-size: 12px; font-weight: 600; color: #297ACC; text-align: right; }
     @media (max-width: 1100px) { .shell { grid-template-columns: 1fr; } aside { display: none; } .grid, .two-col { grid-template-columns: 1fr; } .icp-coverage-inner { grid-template-columns: 1fr; } }
   </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
   <div class="shell">
-    <aside>
-      <div class="brand">PX Outreach Engine</div>
-      <div class="nav-label">Operação</div>
-      <a class="nav-item" href="/workday.html">Ações de Hoje</a>
-      <a class="nav-item" href="/campaigns.html">Campanhas</a>
-      <a class="nav-item active" href="/thiago-abm-weekly-dashboard.html">Dashboard ABM Thiago</a>
-      <div class="nav-label">Referência</div>
-      <div class="muted">Semana 2026-S28<br>0 empresas abordadas</div>
-    </aside>
     <main>
       <div class="topbar">
         <div>
           <h1>Dashboard Semanal ABM — Thiago</h1>
-          <p class="muted">Pipeline de Contas Abordadas · atualizado em 09/07/2026, 09:35:42</p>
+          <p class="muted">Pipeline de Contas Abordadas · atualizado em 12/08/2026, 10:44:39</p>
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
-          <button class="btn-refresh" id="btn-refresh" onclick="refreshDashboard()">
-            <span class="icon">↻</span> Atualizar
-          </button>
-          <span class="refresh-status" id="refresh-status">Histórico: 1 semana(s)</span>
+          <div style="display:flex;gap:10px;align-items:center">
+            <button class="btn-export" id="btn-export" onclick="exportDashboard()">⬇ Exportar</button>
+            <button class="btn-refresh" id="btn-refresh" onclick="refreshDashboard()">
+              <span class="icon">↻</span> Atualizar
+            </button>
+          </div>
+          <span class="refresh-status" id="refresh-status">Histórico: 2 semana(s)</span>
         </div>
       </div>
 
       <div class="grid">
-        <div class="kpi"><span>Empresas abordadas (total)</span><strong>0</strong><span class="trend neutral">sem histórico</span></div>
-        <div class="kpi"><span>Pipeline ativo</span><strong>0</strong><span class="trend neutral">sem histórico</span></div>
-        <div class="kpi kpi-amber"><span>Pausadas</span><strong>0</strong><span class="trend neutral">sem histórico</span></div>
-        <div class="kpi"><span>Com resposta ou mais avançado</span><strong>0</strong><span class="trend neutral">sem histórico</span></div>
-        <div class="kpi"><span>Taxa de resposta</span><strong>0,0%</strong><span class="trend neutral">sem histórico</span></div>
-        <div class="kpi"><span>Taxa de reunião</span><strong>0,0%</strong><span class="trend neutral">sem histórico</span></div>
-        <div class="kpi kpi-green"><span>Taxa de negócio (DEAL)</span><strong>0,0%</strong><span class="trend neutral">sem histórico</span></div>
+        <div class="kpi"><span>Empresas abordadas (total)</span><strong>0</strong><span class="trend neutral">0</span></div>
+        <div class="kpi"><span>Pipeline ativo</span><strong>0</strong><span class="trend neutral">0</span></div>
+        <div class="kpi kpi-amber"><span>Pausadas</span><strong>0</strong><span class="trend neutral">0</span></div>
+        <div class="kpi"><span>Com resposta ou mais avançado</span><strong>0</strong><span class="trend neutral">0</span></div>
+        <div class="kpi"><span>Taxa de resposta</span><strong>0,0%</strong><span class="trend neutral">0,0 p.p.</span></div>
+        <div class="kpi"><span>Taxa de reunião</span><strong>0,0%</strong><span class="trend neutral">0,0 p.p.</span></div>
+        <div class="kpi kpi-green"><span>Taxa de negócio (DEAL)</span><strong>0,0%</strong><span class="trend neutral">0,0 p.p.</span></div>
         <div class="kpi"><span>Tempo médio até 1ª resposta</span><strong>n/d</strong><span class="trend neutral">sem histórico</span></div>
       </div>
 
@@ -122,18 +120,18 @@
     <div class="icp-coverage-inner">
       <div class="icp-donut-wrap">
         <svg width="132" height="132" viewBox="0 0 132 132">
-          <circle cx="66" cy="66" r="54" fill="none" stroke="#e5e7eb" stroke-width="14"/>
-          <circle cx="66" cy="66" r="54" fill="none" stroke="#0F52BA" stroke-width="14"
+          <circle cx="66" cy="66" r="54" fill="none" stroke="#e1e4e8" stroke-width="14"/>
+          <circle cx="66" cy="66" r="54" fill="none" stroke="#297ACC" stroke-width="14"
             stroke-dasharray="0.00 339.29"
             stroke-linecap="round"
             transform="rotate(-90 66 66)"/>
-          <text x="66" y="61" text-anchor="middle" font-size="22" font-weight="700" fill="#111827">0%</text>
-          <text x="66" y="78" text-anchor="middle" font-size="10" fill="#6b7280">abordadas</text>
+          <text x="66" y="61" text-anchor="middle" font-size="22" font-weight="700" fill="#2B3038">0%</text>
+          <text x="66" y="78" text-anchor="middle" font-size="10" fill="#6b778c">abordadas</text>
         </svg>
         <div class="icp-donut-legend">
           <div class="icp-legend-item"><span class="icp-dot approached"></span>0 abordadas</div>
-          <div class="icp-legend-item"><span class="icp-dot remaining"></span>161 a abordar</div>
-          <div class="icp-legend-total">161 mapeadas</div>
+          <div class="icp-legend-item"><span class="icp-dot remaining"></span>200 a abordar</div>
+          <div class="icp-legend-total">200 mapeadas</div>
         </div>
       </div>
       <div class="icp-segments">
@@ -142,19 +140,29 @@
         </div>
         
       <div class="icp-seg-row">
-        <div class="icp-seg-label">Alimentos &amp; Bebidas</div>
+        <div class="icp-seg-label">E-commerce &amp; Varejo</div>
         <div class="icp-seg-bar-wrap">
           <div class="icp-seg-bar-bg" style="width:100%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
-        <div class="icp-seg-counts">0<span class="icp-seg-total">/21</span></div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/46</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Alimentos &amp; Bebidas</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:54%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/25</span></div>
         <div class="icp-seg-pct">0%</div>
       </div>
       <div class="icp-seg-row">
         <div class="icp-seg-label">Construção Civil</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:95%">
+          <div class="icp-seg-bar-bg" style="width:43%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -162,9 +170,19 @@
         <div class="icp-seg-pct">0%</div>
       </div>
       <div class="icp-seg-row">
-        <div class="icp-seg-label">E-commerce &amp; Varejo</div>
+        <div class="icp-seg-label">Combustíveis, Energia &amp; Química</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:81%">
+          <div class="icp-seg-bar-bg" style="width:39%">
+            <div class="icp-seg-bar-fill" style="width:0%"></div>
+          </div>
+        </div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/18</span></div>
+        <div class="icp-seg-pct">0%</div>
+      </div>
+      <div class="icp-seg-row">
+        <div class="icp-seg-label">Farmacêutico &amp; Saúde</div>
+        <div class="icp-seg-bar-wrap">
+          <div class="icp-seg-bar-bg" style="width:37%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -172,39 +190,19 @@
         <div class="icp-seg-pct">0%</div>
       </div>
       <div class="icp-seg-row">
-        <div class="icp-seg-label">Farmacêutico &amp; Saúde</div>
-        <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:76%">
-            <div class="icp-seg-bar-fill" style="width:0%"></div>
-          </div>
-        </div>
-        <div class="icp-seg-counts">0<span class="icp-seg-total">/16</span></div>
-        <div class="icp-seg-pct">0%</div>
-      </div>
-      <div class="icp-seg-row">
         <div class="icp-seg-label">Indústria Pesada</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:76%">
+          <div class="icp-seg-bar-bg" style="width:37%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
-        <div class="icp-seg-counts">0<span class="icp-seg-total">/16</span></div>
-        <div class="icp-seg-pct">0%</div>
-      </div>
-      <div class="icp-seg-row">
-        <div class="icp-seg-label">Combustíveis, Energia &amp; Química</div>
-        <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:67%">
-            <div class="icp-seg-bar-fill" style="width:0%"></div>
-          </div>
-        </div>
-        <div class="icp-seg-counts">0<span class="icp-seg-total">/14</span></div>
+        <div class="icp-seg-counts">0<span class="icp-seg-total">/17</span></div>
         <div class="icp-seg-pct">0%</div>
       </div>
       <div class="icp-seg-row">
         <div class="icp-seg-label">Agro &amp; Commodities</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:62%">
+          <div class="icp-seg-bar-bg" style="width:28%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -214,7 +212,7 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Cosméticos &amp; Higiene</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:52%">
+          <div class="icp-seg-bar-bg" style="width:24%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -224,7 +222,7 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Automotivo &amp; Pneus</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:52%">
+          <div class="icp-seg-bar-bg" style="width:24%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -234,7 +232,7 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Têxtil &amp; Vestuário</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:48%">
+          <div class="icp-seg-bar-bg" style="width:22%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -244,7 +242,7 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Eletro &amp; Tecnologia</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:38%">
+          <div class="icp-seg-bar-bg" style="width:17%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -254,7 +252,7 @@
       <div class="icp-seg-row">
         <div class="icp-seg-label">Logística &amp; Transporte</div>
         <div class="icp-seg-bar-wrap">
-          <div class="icp-seg-bar-bg" style="width:19%">
+          <div class="icp-seg-bar-bg" style="width:9%">
             <div class="icp-seg-bar-fill" style="width:0%"></div>
           </div>
         </div>
@@ -287,6 +285,54 @@
       </div>
 
       
+  <section>
+    <h2>Evolução Semanal do Pipeline</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;overflow-x:auto;margin-top:16px">
+      <div>
+        <div style="font-size:11px;font-weight:600;color:#A6ADBA;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Pipeline</div>
+        <svg viewBox="0 0 320 190" style="width:100%;height:auto;display:block;overflow:visible"><line x1="32" y1="160.0" x2="310" y2="160.0" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="27" y="164.0" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">0</text><path d="M32.0,160.0 L310.0,160.0 L310.0,160 L32.0,160 Z" fill="#297ACC" opacity=".09"/><path d="M32.0,160.0 L310.0,160.0 L310.0,160 L32.0,160 Z" fill="#8992A3" opacity=".09"/><path d="M32.0,160.0 L310.0,160.0" fill="none" stroke="#297ACC" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M32.0,160.0 L310.0,160.0" fill="none" stroke="#8992A3" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="32.0" cy="160.0" r="4.5" fill="white" stroke="#297ACC" stroke-width="2.5"/><circle cx="310.0" cy="160.0" r="4.5" fill="white" stroke="#297ACC" stroke-width="2.5"/><circle cx="32.0" cy="160.0" r="4.5" fill="white" stroke="#8992A3" stroke-width="2.5"/><circle cx="310.0" cy="160.0" r="4.5" fill="white" stroke="#8992A3" stroke-width="2.5"/><text x="32.0" y="151.0" text-anchor="middle" font-size="10" font-weight="700" fill="#297ACC" font-variant-numeric="tabular-nums">0</text><text x="310.0" y="151.0" text-anchor="middle" font-size="10" font-weight="700" fill="#297ACC" font-variant-numeric="tabular-nums">0</text><text x="32.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#8992A3" font-variant-numeric="tabular-nums">0</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#8992A3" font-variant-numeric="tabular-nums">0</text><text x="32.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#A6ADBA">S28</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#2B3038">S33</text></svg>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B778C">
+          <span style="display:inline-block;width:18px;height:3px;background:#297ACC;border-radius:2px"></span>Total abordadas
+        </div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B778C">
+          <span style="display:inline-block;width:18px;height:3px;background:#8992A3;border-radius:2px"></span>Pipeline ativo
+        </div></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:600;color:#A6ADBA;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Conversão</div>
+        <svg viewBox="0 0 320 190" style="width:100%;height:auto;display:block;overflow:visible"><line x1="30" y1="160.0" x2="284" y2="160.0" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="25" y="164.0" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">0%</text><line x1="30" y1="140.6" x2="284" y2="140.6" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="25" y="144.6" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">5%</text><line x1="30" y1="121.1" x2="284" y2="121.1" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="25" y="125.1" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">10%</text><line x1="30" y1="101.7" x2="284" y2="101.7" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="25" y="105.7" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">15%</text><line x1="30" y1="82.3" x2="284" y2="82.3" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="25" y="86.3" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">20%</text><line x1="30" y1="62.9" x2="284" y2="62.9" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="25" y="66.9" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">25%</text><line x1="30" y1="43.4" x2="284" y2="43.4" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="25" y="47.4" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">30%</text><line x1="30" y1="24.0" x2="284" y2="24.0" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="25" y="28.0" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">35%</text><path d="M30.0,160.0 L284.0,160.0 L284.0,160 L30.0,160 Z" fill="#297ACC" opacity=".09"/><path d="M30.0,160.0 L284.0,160.0 L284.0,160 L30.0,160 Z" fill="#8992A3" opacity=".09"/><path d="M30.0,160.0 L284.0,160.0 L284.0,160 L30.0,160 Z" fill="#E7A31E" opacity=".09"/><path d="M30.0,160.0 L284.0,160.0" fill="none" stroke="#297ACC" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,160.0 L284.0,160.0" fill="none" stroke="#8992A3" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M30.0,160.0 L284.0,160.0" fill="none" stroke="#E7A31E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="30.0" cy="160.0" r="4.5" fill="white" stroke="#297ACC" stroke-width="2.5"/><circle cx="284.0" cy="160.0" r="4.5" fill="white" stroke="#297ACC" stroke-width="2.5"/><circle cx="30.0" cy="160.0" r="4.5" fill="white" stroke="#8992A3" stroke-width="2.5"/><circle cx="284.0" cy="160.0" r="4.5" fill="white" stroke="#8992A3" stroke-width="2.5"/><circle cx="30.0" cy="160.0" r="4.5" fill="white" stroke="#E7A31E" stroke-width="2.5"/><circle cx="284.0" cy="160.0" r="4.5" fill="white" stroke="#E7A31E" stroke-width="2.5"/><text x="291.0" y="164.0" font-size="10" font-weight="700" fill="#297ACC">0.0%</text><text x="291.0" y="164.0" font-size="10" font-weight="700" fill="#8992A3">0.0%</text><text x="291.0" y="164.0" font-size="10" font-weight="700" fill="#E7A31E">0.0%</text><text x="30.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#A6ADBA">S28</text><text x="284.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#2B3038">S33</text></svg>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B778C">
+          <span style="display:inline-block;width:18px;height:3px;background:#297ACC;border-radius:2px"></span>Taxa resposta
+        </div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B778C">
+          <span style="display:inline-block;width:18px;height:3px;background:#8992A3;border-radius:2px"></span>Taxa reunião
+        </div><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B778C">
+          <span style="display:inline-block;width:18px;height:3px;background:#E7A31E;border-radius:2px"></span>Taxa negócio
+        </div></div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:600;color:#A6ADBA;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Velocidade</div>
+        <svg viewBox="0 0 320 190" style="width:100%;height:auto;display:block;overflow:visible"><line x1="28" y1="160.0" x2="310" y2="160.0" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="23" y="164.0" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">0d</text><line x1="28" y1="137.3" x2="310" y2="137.3" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="23" y="141.3" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">2d</text><line x1="28" y1="114.7" x2="310" y2="114.7" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="23" y="118.7" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">4d</text><line x1="28" y1="92.0" x2="310" y2="92.0" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="23" y="96.0" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">6d</text><line x1="28" y1="69.3" x2="310" y2="69.3" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="23" y="73.3" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">8d</text><line x1="28" y1="46.7" x2="310" y2="46.7" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="23" y="50.7" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">10d</text><line x1="28" y1="24.0" x2="310" y2="24.0" stroke="#D4E4F5" stroke-width="1"/>
+                <text x="23" y="28.0" text-anchor="end" font-size="9" fill="#A6ADBA" font-variant-numeric="tabular-nums">12d</text><path d="M28.0,160.0 L310.0,160.0 L310.0,160 L28.0,160 Z" fill="#E7A31E" opacity=".09"/><path d="M28.0,160.0 L310.0,160.0" fill="none" stroke="#E7A31E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="28.0" cy="160.0" r="4.5" fill="white" stroke="#E7A31E" stroke-width="2.5"/><circle cx="310.0" cy="160.0" r="4.5" fill="white" stroke="#E7A31E" stroke-width="2.5"/><text x="28.0" y="151.0" text-anchor="middle" font-size="10" font-weight="700" fill="#E7A31E" font-variant-numeric="tabular-nums">0.0d</text><text x="310.0" y="151.0" text-anchor="middle" font-size="10" font-weight="700" fill="#E7A31E" font-variant-numeric="tabular-nums">0.0d</text><text x="28.0" y="175.0" text-anchor="middle" font-size="10" font-weight="400" fill="#A6ADBA">S28</text><text x="310.0" y="175.0" text-anchor="middle" font-size="10" font-weight="700" fill="#2B3038">S33</text><text x="310" y="16" text-anchor="end" font-size="9" font-weight="600" fill="#A6ADBA">↓ queda consistente</text></svg>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;padding-top:10px"><div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6B778C">
+          <span style="display:inline-block;width:18px;height:3px;background:#E7A31E;border-radius:2px"></span>Dias até 1ª resposta
+        </div></div>
+      </div>
+    </div>
+  </section>
 
       <section>
         <h2>Pipeline de Contas — Ranking por Estágio</h2>
@@ -301,6 +347,15 @@
         <table>
           <thead><tr><th>Semana</th><th class="num">Total abordadas</th><th class="num">Pipeline ativo</th><th class="num">Taxa resposta</th><th class="num">Taxa reunião</th><th class="num">Taxa negócio</th><th class="num">Tempo 1ª resp.</th></tr></thead>
           <tbody><tr>
+          <td><strong>2026-S33</strong></td>
+          <td class="num">0</td>
+          <td class="num">0</td>
+          <td class="num">0,0%</td>
+          <td class="num">0,0%</td>
+          <td class="num">0,0%</td>
+          <td class="num">n/d</td>
+        </tr>
+<tr>
           <td><strong>2026-S28</strong></td>
           <td class="num">0</td>
           <td class="num">0</td>
@@ -336,6 +391,35 @@
         status.textContent = 'Erro ao atualizar. Tente novamente.';
         btn.disabled = false;
         btn.classList.remove('loading');
+      }
+    }
+    async function exportDashboard() {
+      const btn = document.getElementById('btn-export');
+      const status = document.getElementById('refresh-status');
+      const prev = status.textContent;
+      btn.disabled = true;
+      status.textContent = 'Exportando…';
+      try {
+        const res = await fetch('/thiago-abm-weekly-dashboard.html');
+        if (!res.ok) throw new Error('Erro ' + res.status);
+        const html = await res.text();
+        const now = new Date();
+        const day = String(now.getDate()).padStart(2, '0');
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Export Dash ' + day + '-' + month + '.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        status.textContent = 'Download iniciado!';
+        setTimeout(() => { status.textContent = prev; btn.disabled = false; }, 2000);
+      } catch (e) {
+        status.textContent = 'Erro ao exportar. Tente novamente.';
+        btn.disabled = false;
       }
     }
   </script>
