@@ -24,6 +24,11 @@
       cursor:pointer; background:transparent; font-family:inherit; text-align:left; text-decoration:none; transition:background 0.15s ease;
     }
     .nav-item:hover { background:rgba(255,255,255,0.07); color:#FFFFFF; }
+    /* nav-item declara display:block, e regra de autor vence o [hidden] do
+       navegador — sem isto, esconder a aba por permissao nao surtia efeito
+       nenhum e a pessoa clicava numa aba cuja secao ja tinha sido removida,
+       caindo numa area em branco. */
+    .nav-item[hidden] { display:none; }
     .nav-item.active { border-left:3px solid #297ACC; background:rgba(59,130,246,0.12); color:#FFFFFF; font-weight:600; }
     main { display:grid; gap:14px; min-width:0; }
     .topbar, .panel-card { background:var(--panel); border:1px solid var(--line); border-radius:6px; }
@@ -171,7 +176,7 @@
 
       <div id="weekly" class="section-view active">
         <div class="weekly-toolbar">
-          <div class="meta">Pipeline de Contas Abordadas · <strong>13/08/2026, 08:51:32</strong></div>
+          <div class="meta">Pipeline de Contas Abordadas · <strong>13/08/2026, 10:30:32</strong></div>
           <div style="display:flex;align-items:center;gap:10px">
             <span id="refresh-status"></span>
             <button class="btn-export" id="btn-export" onclick="exportDashboard()">⬇ Exportar</button>

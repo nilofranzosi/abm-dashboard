@@ -72,6 +72,18 @@
     .msg.ok  { display:block; background:var(--color-success-50); color:var(--color-success-800); border:1px solid var(--color-success-100); }
     .msg.err { display:block; background:var(--color-danger-50);  color:var(--color-danger-800);  border:1px solid var(--color-danger-100); }
     .msg a { color:inherit; word-break:break-all; }
+    /* O link de convite NUNCA e clicavel aqui: abrir troca a sua sessao pela da
+       pessoa convidada e consome o convite (uso unico), deixando ela sem acesso. */
+    .link-box { display:flex; gap:8px; margin-top:12px; }
+    .link-box input {
+      font-family:var(--font-mono); font-size:var(--text-xs);
+      background:var(--color-brand-white); color:var(--color-text-paragraph);
+    }
+    .link-box button { white-space:nowrap; }
+    .link-alerta {
+      display:block; margin-top:8px; font-size:var(--text-xs);
+      color:var(--color-danger-700); font-weight:600;
+    }
 
     .paineis { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr)); gap:8px; }
     .painel-linha {
@@ -103,6 +115,13 @@
 
     <div class="card">
       <h2>Liberar uma pessoa</h2>
+      <p class="hint" style="margin-top:-4px">
+        Só Gestor e Admin precisam ser liberados aqui. <strong>Visualizador é
+        automático</strong> para qualquer e-mail @px.center: alcançar o PX Apps já
+        exige passar pelo SSO da PX, então o cadastro acontece sozinho na primeira
+        visita. Para tirar alguém, use <em>Revogar</em> na lista abaixo, ou bloqueie
+        painel a painel.
+      </p>
       <form id="form-convite" class="form-row">
         <div>
           <label for="email">E-mail corporativo</label>
@@ -192,7 +211,7 @@
       sel.innerHTML = catalogo.roles
         .map(function (r) { return '<option value="' + r.value + '">' + r.label + "</option>"; })
         .join("");
-      sel.value = "VIEWER";
+      sel.value = "GESTOR";
     }
 
     async function carregarUsuarios() {
@@ -324,17 +343,48 @@
         if (!res.ok) throw new Error(payload.error || "Falha ao liberar.");
 
         var texto = "Acesso liberado até " + dataBR(payload.data.acessoExpiraEm) + ".";
-        if (payload.data.link) {
-          // MAIL_DRIVER=console: nada foi enviado de verdade, o link é entregue aqui.
-          texto += " <strong>Nenhum e-mail foi enviado</strong> (envio ainda não configurado) — " +
-            'mande este link para a pessoa: <a href="' + payload.data.link + '">' + payload.data.link + "</a>";
-        } else {
-          texto += " O link de entrada foi enviado por e-mail.";
-        }
 
-        aviso(texto, false);
+        if (!payload.data.link) {
+          aviso(texto + " O link de entrada foi enviado por e-mail.", false);
+        } else {
+          // MAIL_DRIVER=console: nada foi enviado de verdade. O link vem para
+          // você repassar — e é entregue como texto copiável, nunca como link
+          // clicável: abrir aqui trocaria a sua sessão pela da pessoa e
+          // consumiria o convite, que é de uso único.
+          aviso(texto + " <strong>Nenhum e-mail foi enviado</strong> — envio ainda não configurado.", false);
+
+          var box = document.createElement("div");
+          box.className = "link-box";
+          var campo = document.createElement("input");
+          campo.type = "text";
+          campo.readOnly = true;
+          campo.value = payload.data.link;
+          campo.setAttribute("aria-label", "Link de acesso para enviar à pessoa");
+          var copiar = document.createElement("button");
+          copiar.type = "button";
+          copiar.textContent = "Copiar link";
+          copiar.addEventListener("click", function () {
+            campo.select();
+            navigator.clipboard.writeText(campo.value).then(function () {
+              copiar.textContent = "Copiado";
+              setTimeout(function () { copiar.textContent = "Copiar link"; }, 2000);
+            });
+          });
+          box.appendChild(campo);
+          box.appendChild(copiar);
+
+          var alerta = document.createElement("span");
+          alerta.className = "link-alerta";
+          // Vem da resposta, não do formulário: o form é limpo logo abaixo.
+          alerta.textContent =
+            "Não abra este link. Ele entra como " + payload.data.user.email +
+            " — trocaria a sua sessão pela dela e gastaria o convite, que só funciona uma vez.";
+
+          msg.appendChild(box);
+          msg.appendChild(alerta);
+        }
         document.getElementById("form-convite").reset();
-        document.getElementById("nivel").value = "VIEWER";
+        document.getElementById("nivel").value = "GESTOR";
         carregarUsuarios();
       } catch (err) {
         aviso(err.message || "Não foi possível liberar o acesso.", true);

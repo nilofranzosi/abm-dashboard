@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-13T11:54:33.755Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-13.json",
+  "generatedAt": "2026-08-14T11:50:58.512Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-14.json",
   "summary": {
-    "total": 2,
+    "total": 1,
     "replied": 0,
-    "companyUnknown": 1,
+    "companyUnknown": 0,
     "overdue": 0
   },
   "companies": [
@@ -21,52 +21,18 @@
           "roleOrHeadline": "Gerente Sênior, Logística Outbound | Liderando Transformação Digital e Cadeias de Suprimentos de Alta Complexidade | Desenvolvimento de Equipes de Alta Performance no Grupo Boticário",
           "confidence": "Alta",
           "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-08-13T03:00:00.000Z",
+          "lastOutboundAt": "2026-08-14T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-08-13T03:00:00.000Z",
+              "occurredAt": "2026-08-14T03:00:00.000Z",
               "body": "Estava conversando com o Luciano Xavier sobre as possibilidades de parceria entre a PX e a Boticário. Ele me informou que saiu da empresa e me disse para entrar em contato contigo sobre esse projeto."
             },
             {
-              "occurredAt": "2026-08-13T03:00:00.000Z",
+              "occurredAt": "2026-08-14T03:00:00.000Z",
               "body": "Conseguimos marcar uma conversa para avançar nesse projeto?"
-            }
-          ],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "unknown-daniel-turci-pedroso",
-      "resolvedCompany": "A apurar",
-      "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Daniel Turci Pedroso",
-          "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": null,
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-08-13T03:00:00.000Z",
-          "lastInboundAt": null,
-          "outboundTouchpoints": 1,
-          "inboundMessages": [],
-          "outboundMessages": [
-            {
-              "occurredAt": "2026-08-13T20:41:00.000Z",
-              "body": "Estamos em um processo de homologação junto a Raízen, acredito que temos oportunidades concretas para a cadeia logística da Braskem."
-            },
-            {
-              "occurredAt": "2026-08-13T03:00:00.000Z",
-              "body": "Para avançar nesse processo, o melhor contato seria contigo?"
             }
           ],
           "icpSegment": null

@@ -1446,7 +1446,7 @@
   },
   {
     "weekKey": "2026-S33",
-    "generatedAt": "2026-08-13T11:54:25.164Z",
+    "generatedAt": "2026-08-14T11:50:50.520Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 123,
     "activePipeline": 114,
@@ -1457,8 +1457,8 @@
     "replyRate": 0.20175438596491227,
     "meetingRate": 0.06140350877192982,
     "dealRate": 0.05263157894736842,
-    "avgDaysToFirstReply": 4.071428571428571,
-    "avgDaysSinceLastOutbound": 0.9333333333333333,
+    "avgDaysToFirstReply": 4.133333333333334,
+    "avgDaysSinceLastOutbound": 1.0666666666666667,
     "totalOutboundTouchpoints": 32,
     "totalInboundTouchpoints": 5,
     "funnel": [
@@ -1630,19 +1630,19 @@
         "nextActionDueAt": "2026-08-08T16:53:00.000Z"
       },
       {
-        "company": "Atacadão",
+        "company": "Casas Bahia",
         "stage": "REPLIED",
-        "contacts": 1,
+        "contacts": 2,
         "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-08-14T03:00:00.000Z"
+        "nextActionDueAt": "2026-08-13T19:21:33.000Z"
       },
       {
-        "company": "Tenda Atacado",
+        "company": "Atacadão",
         "stage": "REPLIED",
-        "contacts": 2,
+        "contacts": 1,
         "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",

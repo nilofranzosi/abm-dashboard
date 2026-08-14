@@ -8,41 +8,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Sora', sans-serif; background: #F1F5F9; color: #1E293B; min-height: 100vh; }
+body { font-family: 'Sora', sans-serif; background: #F4F8FC; color: #2B3038; min-height: 100vh; }
 
 .header {
-  background: linear-gradient(135deg, #0A1628 70%, #0F52BA);
+  background: linear-gradient(135deg, #2B3038 70%, #297ACC);
   padding: 24px 32px 20px;
-  color: #fff;
+  color: #ffffff;
 }
-.header-label { font-size: 11px; letter-spacing: 2px; color: #64B5F6; text-transform: uppercase; margin-bottom: 6px; }
-.header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; }
-.header-sub { font-size: 13px; color: #94A3B8; margin-top: 4px; }
+.header-label { font-size: 11px; letter-spacing: 2px; color: #5495D6; text-transform: uppercase; margin-bottom: 6px; }
+.header h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; }
+.header-sub { font-size: 13px; color: #A6ADBA; margin-top: 4px; }
 
 .controls {
-  background: #fff;
-  border-bottom: 1px solid #E2E8F0;
+  background: #ffffff;
+  border-bottom: 1px solid #E1E4E8;
   padding: 12px 32px;
   display: flex;
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
 }
-.controls label { font-size: 13px; color: #6B7280; font-weight: 500; }
+.controls label { font-size: 13px; color: #6B778C; font-weight: 400; }
 .controls select {
   font-family: 'Sora', sans-serif;
   font-size: 13px;
-  border: 1px solid #D1D5DB;
+  border: 1px solid #C4C9D1;
   border-radius: 6px;
   padding: 6px 10px;
-  background: #F9FAFB;
-  color: #1E293B;
+  background: #F7F8F9;
+  color: #2B3038;
   cursor: pointer;
 }
 .stat-pill {
-  background: #EFF6FF;
-  color: #1D4ED8;
-  border: 1px solid #BFDBFE;
+  background: #F4F8FC;
+  color: #297ACC;
+  border: 1px solid #D4E4F5;
   border-radius: 20px;
   padding: 4px 12px;
   font-size: 12px;
@@ -59,16 +59,16 @@ body { font-family: 'Sora', sans-serif; background: #F1F5F9; color: #1E293B; min
   margin-bottom: 16px;
 }
 .week-badge {
-  background: #0A1628;
-  color: #60A5FA;
+  background: #2B3038;
+  color: #5495D6;
   border-radius: 6px;
   padding: 3px 10px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'JetBrains Mono', monospace;
 }
-.week-date { font-size: 12px; color: #9CA3AF; }
-.week-count { font-size: 12px; color: #6B7280; margin-left: auto; }
+.week-date { font-size: 12px; color: #A6ADBA; }
+.week-count { font-size: 12px; color: #6B778C; margin-left: auto; }
 
 .category-group { margin-bottom: 20px; }
 .category-label {
@@ -84,19 +84,19 @@ body { font-family: 'Sora', sans-serif; background: #F1F5F9; color: #1E293B; min
 }
 .category-name {
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  color: #374151;
+  color: #404754;
 }
-.category-count { font-size: 11px; color: #9CA3AF; }
+.category-count { font-size: 11px; color: #A6ADBA; }
 
 .news-card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 8px;
   padding: 12px 16px;
   margin-bottom: 8px;
-  border-left: 3px solid #6366F1;
+  border-left: 3px solid #297ACC;
   box-shadow: 0 1px 3px rgba(0,0,0,.06);
   transition: box-shadow 0.15s;
 }
@@ -104,12 +104,12 @@ body { font-family: 'Sora', sans-serif; background: #F1F5F9; color: #1E293B; min
 .news-title {
   font-weight: 600;
   font-size: 13px;
-  color: #0A1628;
+  color: #2B3038;
   text-decoration: none;
   display: block;
   line-height: 1.4;
 }
-.news-title:hover { color: #0F52BA; text-decoration: underline; }
+.news-title:hover { color: #297ACC; text-decoration: underline; }
 .news-meta {
   display: flex;
   align-items: center;
@@ -119,8 +119,8 @@ body { font-family: 'Sora', sans-serif; background: #F1F5F9; color: #1E293B; min
 }
 .news-source {
   font-size: 11px;
-  color: #6B7280;
-  background: #F3F4F6;
+  color: #6B778C;
+  background: #F0F1F3;
   border-radius: 4px;
   padding: 2px 7px;
 }
@@ -135,16 +135,17 @@ body { font-family: 'Sora', sans-serif; background: #F1F5F9; color: #1E293B; min
 .empty-state {
   text-align: center;
   padding: 60px 20px;
-  color: #9CA3AF;
+  color: #A6ADBA;
   font-size: 14px;
 }
-.loading { text-align: center; padding: 60px 20px; color: #9CA3AF; }
+.loading { text-align: center; padding: 60px 20px; color: #A6ADBA; }
 
 /* Embed mode: remove header padding for iframe */
 body.embed .header { padding: 16px 20px 14px; }
 body.embed .controls { padding: 10px 20px; }
 body.embed .content { padding: 0 16px 24px; }
 </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
 </head>
 <body>
 
@@ -168,19 +169,19 @@ body.embed .content { padding: 0 16px 24px; }
 
 <script>
 const CATEGORY_COLORS = {
-  MOTORISTAS:        '#DC2626',
-  ABM_MELI:          '#FBBF24',
-  ABM_AMAZON:        '#F97316',
-  ABM_SHOPEE:        '#EF4444',
-  ABM_OUTROS:        '#8B5CF6',
-  ABM_VAREJO:        '#06B6D4',
-  CUSTO_DIESEL:      '#6B7280',
-  REGULATORIO:       '#1D4ED8',
-  INFRAESTRUTURA:    '#059669',
-  EXEC_MOVES:        '#DB2777',
-  TECH_CONCORRENTES: '#7C3AED',
-  AGRO:              '#65A30D',
-  RSS:               '#6366F1',
+  MOTORISTAS:        '#C93137',
+  ABM_MELI:          '#E7A31E',
+  ABM_AMAZON:        '#E7A31E',
+  ABM_SHOPEE:        '#C93137',
+  ABM_OUTROS:        '#7D3DC5',
+  ABM_VAREJO:        '#1AADA9',
+  CUSTO_DIESEL:      '#6B778C',
+  REGULATORIO:       '#297ACC',
+  INFRAESTRUTURA:    '#4E9E75',
+  EXEC_MOVES:        '#D83598',
+  TECH_CONCORRENTES: '#7D3DC5',
+  AGRO:              '#78BE14',
+  RSS:               '#297ACC',
 };
 
 const CATEGORY_LABELS = {
@@ -252,7 +253,7 @@ function renderWeek(weekKey) {
 
   for (const cat of catsPresent) {
     const catItems = byCat[cat];
-    const color = CATEGORY_COLORS[cat] || '#6B7280';
+    const color = CATEGORY_COLORS[cat] || '#6B778C';
     const label = CATEGORY_LABELS[cat] || cat;
 
     html += `<div class="category-group">

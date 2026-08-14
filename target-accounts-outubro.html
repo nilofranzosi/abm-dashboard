@@ -103,6 +103,8 @@
           <div id="filter-status"></div>
           <div id="filter-trend"></div>
           <div id="filter-eventos"></div>
+
+          <button id="export-csv-btn" onclick="exportToCSV()" style="padding: 8px 14px; background: #297ACC; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">📥 Exportar CSV</button>
         </div>
 
         <table id="main-table">
@@ -503,6 +505,99 @@
         sortAsc = true;
       }
       renderTable();
+    }
+
+    function exportToCSV() {
+      if (!data) return;
+
+      // Aplicar os mesmos filtros que a tabela usa
+      let filtered = data.rows.filter(row => {
+        const name = (row.companyName || row.clienteRaw).toLowerCase();
+        if (searchQuery && !name.includes(searchQuery)) return false;
+        if (filterTier && row.tier !== Number(filterTier)) return false;
+        if (filterStatus && row.status !== filterStatus) return false;
+        if (filterTrend) {
+          const trend = trendDoMes(row);
+          if (filterTrend === 'growth' && trend <= 0) return false;
+          if (filterTrend === 'decline' && trend >= 0) return false;
+          if (filterTrend === 'flat' && trend !== 0) return false;
+        }
+        if (filterNoEvents && row.eventos?.length > 0) return false;
+        return true;
+      });
+
+      // Aplicar a mesma ordenação
+      const rows = [...filtered].sort((a, b) => {
+        let aVal, bVal;
+        if (sortBy === 'company') {
+          aVal = (a.companyName || a.clienteRaw).toLowerCase();
+          bVal = (b.companyName || b.clienteRaw).toLowerCase();
+        } else if (sortBy === 'contractDays') {
+          const aTrend = a.trend?.find(t => t.month === selectedMonth);
+          const bTrend = b.trend?.find(t => t.month === selectedMonth);
+          aVal = aTrend?.contractDays || 0;
+          bVal = bTrend?.contractDays || 0;
+        } else if (sortBy === 'status') {
+          const aTrend = a.trend?.find(t => t.month === selectedMonth);
+          const bTrend = b.trend?.find(t => t.month === selectedMonth);
+          aVal = a.alvo > 0 ? ((aTrend?.contractDays || 0) / a.alvo) * 100 : 0;
+          bVal = b.alvo > 0 ? ((bTrend?.contractDays || 0) / b.alvo) * 100 : 0;
+        } else if (sortBy === 'events') {
+          aVal = a.eventos?.length || 0;
+          bVal = b.eventos?.length || 0;
+        } else if (sortBy === 'tier') {
+          aVal = a.tier || 999;
+          bVal = b.tier || 999;
+        } else if (sortBy === 'qualification') {
+          aVal = a.status || '';
+          bVal = b.status || '';
+        } else if (sortBy === 'trend') {
+          aVal = trendDoMes(a);
+          bVal = trendDoMes(b);
+        } else if (sortBy === 'gap') {
+          aVal = a.faltaParaAlvo || 0;
+          bVal = b.faltaParaAlvo || 0;
+        }
+        return sortAsc ? (aVal < bVal ? -1 : 1) : (aVal > bVal ? -1 : 1);
+      });
+
+      // Gerar CSV
+      const headers = ['#', 'Empresa', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade'];
+      const csvLines = [headers.join(',')];
+
+      rows.forEach((row, idx) => {
+        const monthTrend = row.trend?.find(t => t.month === selectedMonth);
+        const contractDaysThisMonth = monthTrend?.contractDays || 0;
+        const pct = row.alvo > 0 ? Math.round((contractDaysThisMonth / row.alvo) * 100) : 0;
+        const eventCount = row.eventos?.length || 0;
+        const trend = trendDoMes(row);
+        const trendSymbol = trend > 0 ? '↑' : trend < 0 ? '↓' : '→';
+
+        const csvRow = [
+          idx + 1,
+          `"${(row.companyName || row.clienteRaw).replace(/"/g, '""')}"`,
+          pct,
+          contractDaysThisMonth,
+          eventCount,
+          row.tier || '—',
+          row.status || '—',
+          `"${trendSymbol} ${Math.abs(trend)}"`,
+          row.faltaParaAlvo,
+          row.alvo,
+          `"${row.multiplicador || '—'}"`,
+          `"${row.viabilidade || '—'}"`
+        ];
+        csvLines.push(csvRow.join(','));
+      });
+
+      // Fazer download
+      const csv = csvLines.join('\n');
+      const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `target-accounts-outubro-${new Date().toISOString().split('T')[0]}.csv`;
+      link.click();
+      URL.revokeObjectURL(link.href);
     }
 
     function updateDetailMonth() {

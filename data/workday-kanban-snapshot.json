@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T12:00:00.978Z",
+  "generatedAt": "2026-08-14T12:00:00.813Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -249,7 +249,7 @@
           "id": "cms611cgy0017k7oco4rkjmbc",
           "name": "Klabin",
           "segment": "Indústria Pesada",
-          "accountScore": 79,
+          "accountScore": 124,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
@@ -268,6 +268,30 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "ROGERIO KOHNTOPP"
+        },
+        {
+          "id": "cms611chp001ck7ocsuk2wgs6",
+          "name": "Suzano",
+          "segment": "Indústria Pesada",
+          "accountScore": 123,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T12:03:31.599Z",
+          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": null
+        },
+        {
+          "id": "cmrozuphs000sk7lshtz7m8u5",
+          "name": "ALE Combustíveis",
+          "segment": "Combustíveis, Energia & Química",
+          "accountScore": 103,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T12:03:31.600Z",
+          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
         },
         {
           "id": "cmrnsiw1z000ik7dsff38327m",
@@ -474,18 +498,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cmrozuphs000sk7lshtz7m8u5",
-          "name": "ALE Combustíveis",
-          "segment": "Combustíveis, Energia & Química",
-          "accountScore": 68,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
           "id": "cmshu8i7m0059k7ccbjkzwhg7",
           "name": "Delly's",
           "segment": null,
@@ -526,18 +538,6 @@
           "name": "WEG",
           "segment": "Indústria Pesada",
           "accountScore": 66,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": null
-        },
-        {
-          "id": "cms611chp001ck7ocsuk2wgs6",
-          "name": "Suzano",
-          "segment": "Indústria Pesada",
-          "accountScore": 78,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
@@ -807,7 +807,7 @@
           "id": "cmq9t45gg000jk7o0qkpnf88n",
           "name": "Amazon Brasil",
           "segment": null,
-          "accountScore": 0,
+          "accountScore": 20,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-16T03:00:00.000Z",
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
@@ -915,7 +915,7 @@
           "id": "cmqqnb6e00006k7o8zjztmp3u",
           "name": "Assaí Atacadista",
           "segment": null,
-          "accountScore": 0,
+          "accountScore": 60,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
@@ -996,6 +996,18 @@
           "activeDecisor": "Luciano Sousa"
         },
         {
+          "id": "cmqjsbye70015k7zwh88ujxnp",
+          "name": "PepsiCo",
+          "segment": null,
+          "accountScore": 20,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Eduardo Loyola"
+        },
+        {
           "id": "cmq9t45jb001ik7o09gybyask",
           "name": "Shopee Brasil",
           "segment": null,
@@ -1006,18 +1018,6 @@
           "owner": null,
           "contactCount": 9,
           "activeDecisor": "Gabriel Dal Sasso"
-        },
-        {
-          "id": "cmqjsbye70015k7zwh88ujxnp",
-          "name": "PepsiCo",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Eduardo Loyola"
         },
         {
           "id": "cmqjsbycu000jk7zwdxamw5bu",
@@ -1194,6 +1194,18 @@
           "activeDecisor": "Joao Martins Costa 马廷"
         },
         {
+          "id": "cmqjsbyd6000ok7zw8yagmcc0",
+          "name": "Casas Bahia",
+          "segment": null,
+          "accountScore": 140,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-13T19:21:33.000Z",
+          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Diego Garcia"
+        },
+        {
           "id": "cmroz9tt80005k7ls23wgwnv0",
           "name": "Atacadão",
           "segment": null,
@@ -1300,18 +1312,6 @@
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Felipe Thedim Costa Bueno"
-        },
-        {
-          "id": "cmqjsbyd6000ok7zw8yagmcc0",
-          "name": "Casas Bahia",
-          "segment": null,
-          "accountScore": 80,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Diego Garcia"
         }
       ]
     },
@@ -1358,7 +1358,7 @@
           "id": "cmqjsbyau0000k7zwrt3gzr83",
           "name": "Gerdau",
           "segment": null,
-          "accountScore": 20,
+          "accountScore": 40,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-06-20T11:30:00.000Z",
           "lastInteractionAt": "2026-06-18T11:32:00.000Z",
@@ -1388,7 +1388,7 @@
           "id": "cmq9t45mm002gk7o0nbmsayr0",
           "name": "Natura",
           "segment": null,
-          "accountScore": 0,
+          "accountScore": 40,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-05-01T22:52:00.000Z",
           "lastInteractionAt": "2026-06-19T18:56:44.243Z",
@@ -1412,7 +1412,7 @@
           "id": "cmqjsbyg7001vk7zwi6h3bf94",
           "name": "Magazine Luiza",
           "segment": null,
-          "accountScore": 0,
+          "accountScore": 20,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-05-31T21:09:00.000Z",
           "lastInteractionAt": "2026-06-18T17:49:23.036Z",
@@ -1475,6 +1475,18 @@
           "activeDecisor": "Cristiano Quadros"
         },
         {
+          "id": "cmqqnssur0009k7o889yyn6m2",
+          "name": "Votorantim Cimentos",
+          "segment": null,
+          "accountScore": 35,
+          "nextAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
+          "nextActionDueAt": "2026-08-14T12:03:31.600Z",
+          "lastInteractionAt": "2026-07-06T17:50:15.655Z",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
+        {
           "id": "cmqjvk2th0009k7s0e6efvdsp",
           "name": "Bauducco",
           "segment": "Alimentos & Bebidas",
@@ -1509,18 +1521,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Cláudio Rosa, CPIM"
-        },
-        {
-          "id": "cmqqnssur0009k7o889yyn6m2",
-          "name": "Votorantim Cimentos",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-06T17:50:15.655Z",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
         },
         {
           "id": "cmqjvk2s60002k7s01wdyhs1h",
