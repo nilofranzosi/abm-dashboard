@@ -1,10 +1,23 @@
 {
-  "generatedAt": "2026-08-14T12:00:00.813Z",
+  "generatedAt": "2026-08-14T19:13:15.050Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
       "label": "Conexão Enviada",
       "companies": [
+        {
+          "id": "cmqqnssur0009k7o889yyn6m2",
+          "name": "Votorantim Cimentos",
+          "segment": null,
+          "accountScore": 35,
+          "nextAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
+          "nextActionDueAt": "2026-08-14T12:03:31.600Z",
+          "lastInteractionAt": "2026-08-14T17:01:53.285Z",
+          "source": "manual-tier-outreach",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
+        },
         {
           "id": "cms7zbj2a0002k7986syufxuz",
           "name": "Arcos Dourados (McDonald's Brasil)",
@@ -13,6 +26,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:41:43.233Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": null
@@ -25,6 +39,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T20:59:29.782Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 4,
           "activeDecisor": null
@@ -37,6 +52,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T20:59:29.782Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": null
@@ -49,6 +65,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 4,
           "activeDecisor": null
@@ -61,6 +78,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-20T14:39:57.659Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -73,6 +91,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-24T12:29:06.398Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -85,6 +104,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-24T12:28:52.006Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -97,6 +117,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-24T11:52:55.624Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -109,6 +130,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-23T17:44:13.437Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -121,6 +143,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-23T17:23:35.701Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -132,6 +155,19 @@
       "label": "Conexão Aceita",
       "companies": [
         {
+          "id": "cmqjsbyau0000k7zwrt3gzr83",
+          "name": "Gerdau",
+          "segment": null,
+          "accountScore": 40,
+          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+          "nextActionDueAt": "2026-06-20T11:30:00.000Z",
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 3,
+          "activeDecisor": "Marco Antônio Pimenta dos Santos"
+        },
+        {
           "id": "cmr9oddqj0007k78kfo4omrjz",
           "name": "Kenvue",
           "segment": null,
@@ -139,9 +175,452 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-13T03:00:00.000Z",
           "lastInteractionAt": "2026-07-28T14:23:05.751Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "André Freire"
+        },
+        {
+          "id": "cmqjsbyd6000ok7zw8yagmcc0",
+          "name": "Casas Bahia",
+          "segment": null,
+          "accountScore": 140,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-13T19:21:33.000Z",
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": "Karina Baldin"
+        },
+        {
+          "id": "cms611chp001ck7ocsuk2wgs6",
+          "name": "Suzano",
+          "segment": "Indústria Pesada",
+          "accountScore": 123,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T12:03:31.599Z",
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "linkedin-sync:master",
+          "owner": null,
+          "contactCount": 3,
+          "activeDecisor": "Marcela Cocchiarale"
+        },
+        {
+          "id": "cmsswvk3g007uk7yw7wnyippy",
+          "name": "M. DIAS BRANCO",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Marcos Paulo Battistini"
+        },
+        {
+          "id": "cmqjvk2sc0003k7s032rc28s2",
+          "name": "Heineken Brasil",
+          "segment": "Alimentos & Bebidas",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "painel-abm",
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": "Ligia Camargo"
+        },
+        {
+          "id": "cmsswvj1b0010k7ywt8ieozy4",
+          "name": "ILOS",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 5,
+          "activeDecisor": "Rodrigo Tourinho Nakamura"
+        },
+        {
+          "id": "cmsswvkic00adk7ywr6z8l7es",
+          "name": "SANOFI MEDLEY FARMACÊUTICA",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Tatiana Perim Ignez"
+        },
+        {
+          "id": "cmsswvkj400aik7ywj6749ryf",
+          "name": "RD SAÚDE",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Thiago Centurion"
+        },
+        {
+          "id": "cmsswvka2008uk7yw94wkssj1",
+          "name": "LOTS GROUP",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Pedro Silvestrini"
+        },
+        {
+          "id": "cmsswvjk5003qk7ywxtant3u4",
+          "name": "RED BULL",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Fernanda Redondo"
+        },
+        {
+          "id": "cmsswvjg1002xk7ywdclu42xj",
+          "name": "KOEPE DO BRASIL",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Elton Barcelos"
+        },
+        {
+          "id": "cmsswvjdl002ik7ywa611pgjr",
+          "name": "MILLS",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Daniel Brugioni"
+        },
+        {
+          "id": "cmsswvj6w001ok7ywxsr2r6az",
+          "name": "SAP",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Camilla Sarto"
+        },
+        {
+          "id": "cmsswvjkt003vk7ywdq5v46u2",
+          "name": "SOCIEDADE BÍBLICA DO BRASIL (SBB)",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Fernando Araujo"
+        },
+        {
+          "id": "cmsswvkda009gk7ywcwqvnc46",
+          "name": "TOYOTA",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Roberto Ueda"
+        },
+        {
+          "id": "cmsswvkgq00a3k7yw5ov2kr08",
+          "name": "NOVELIS DO BRASIL",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Stéfano Rosetti"
+        },
+        {
+          "id": "cmsswvkbv0097k7yw2h03d31v",
+          "name": "O9 SOLUTIONS",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Renato Tavares"
+        },
+        {
+          "id": "cmsswvkes009pk7ywmodw02o6",
+          "name": "DUIMPWEB",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Rodrigo Santos"
+        },
+        {
+          "id": "cmsswvk5f0083k7ywi4stpksk",
+          "name": "WRI BRASIL",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Mariana Müller Barcelos"
+        },
+        {
+          "id": "cmsswvk1r007gk7ywzal58exp",
+          "name": "KNAPP",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Marcio Schilling"
+        },
+        {
+          "id": "cmsswvjwp006fk7ywpbsl5yb9",
+          "name": "FLEETPAY",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Leonardo Mello"
+        },
+        {
+          "id": "cmsswvjsy005nk7ywjqy1a770",
+          "name": "CONEXLOG CARGAS EXPRESSAS",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Junior Silvestro"
+        },
+        {
+          "id": "cmsswvjmk004ak7ywdatlmnsy",
+          "name": "ENJOEI",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Gerson Dias"
+        },
+        {
+          "id": "cmsswvji3003bk7ywqupxivrq",
+          "name": "DR. OETKER",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Fábio Neiva"
+        },
+        {
+          "id": "cmsswvj0o000vk7ywro68x2tw",
+          "name": "FLOWLS",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Anna Valle"
+        },
+        {
+          "id": "cmsswviz3000mk7ywgh0k8nif",
+          "name": "BAT",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Alice Bernardi"
+        },
+        {
+          "id": "cmsswvjcs002dk7ywkbplemsh",
+          "name": "MONDELEZ INTERNACIONAL",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Claudio Pena"
+        },
+        {
+          "id": "cmsswvjec002nk7ywvrigsp7z",
+          "name": "MBRF GLOBAL FOODS",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Diego Penteado"
+        },
+        {
+          "id": "cmsswvj8z001yk7ywcetyhbhu",
+          "name": "INPO",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Cauê Guazzelli"
+        },
+        {
+          "id": "cmsswvjfa002sk7ywsi75mbns",
+          "name": "BAYER CROP SCIENCE",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Elaine Selma"
+        },
+        {
+          "id": "cmsswvk0p0077k7ywgerwrabl",
+          "name": "MERCADO LIVRE",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Rodrigo de Mello Brito"
+        },
+        {
+          "id": "cmsswvk7p008gk7ywddbjwrue",
+          "name": "LOGCOMEX",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Mônica Gabriella"
+        },
+        {
+          "id": "cmsswvj34001ek7ywjnwn7gii",
+          "name": "LOOG.AI",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Bruno Gregório"
+        },
+        {
+          "id": "cmsswvj1y0015k7ywi14sfch9",
+          "name": "LTPLABS",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Bruno Batista"
+        },
+        {
+          "id": "cmsswvj9y0023k7yw9z609pdk",
+          "name": "FRASLE MOBILITY – RANDONCORP",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Clairton Guielcer de For"
         },
         {
           "id": "cmrt9u7c00029k7181vu5pj2j",
@@ -151,6 +630,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:15:08.022Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": null
@@ -163,6 +643,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-28T14:23:05.751Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -181,6 +662,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-09T03:00:00.000Z",
           "lastInteractionAt": "2026-07-06T14:34:37.779Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Igor Costa"
@@ -193,6 +675,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-22T03:00:00.000Z",
           "lastInteractionAt": "2026-07-15T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Aécio Patuzzi"
@@ -205,6 +688,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-22T03:00:00.000Z",
           "lastInteractionAt": "2026-07-15T03:00:00.000Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Fabio Artifon"
@@ -217,21 +701,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-23T03:00:00.000Z",
           "lastInteractionAt": "2026-07-16T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Alessandra M. Montenegro Lippi da Cruz"
-        },
-        {
-          "id": "cmrl2cabz000nk7745zclhm0a",
-          "name": "Rodoil Distribuidora de Combustíveis",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-24T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-17T13:07:48.079Z",
-          "owner": null,
-          "contactCount": 5,
-          "activeDecisor": "Luciano Demicheli"
         },
         {
           "id": "cmshu8he8001dk7cciwp3zjhf",
@@ -241,6 +714,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-13T03:00:00.000Z",
           "lastInteractionAt": "2026-08-06T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Paulo Sérgio de Carvalho Araújo"
@@ -253,6 +727,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Roberto Bisogni"
@@ -265,21 +740,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "ROGERIO KOHNTOPP"
-        },
-        {
-          "id": "cms611chp001ck7ocsuk2wgs6",
-          "name": "Suzano",
-          "segment": "Indústria Pesada",
-          "accountScore": 123,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-14T12:03:31.599Z",
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": null
         },
         {
           "id": "cmrozuphs000sk7lshtz7m8u5",
@@ -289,6 +753,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T12:03:31.600Z",
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -301,6 +766,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-19T03:00:00.000Z",
           "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Luciana Bueno"
@@ -311,8 +777,9 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Maiara Carlesso"
@@ -323,11 +790,64 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Amanda Caroline dos Santos"
+        },
+        {
+          "id": "cmqjvk2th0009k7s0e6efvdsp",
+          "name": "Bauducco",
+          "segment": "Alimentos & Bebidas",
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "painel-abm",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Edson Rocha"
+        },
+        {
+          "id": "cmst74n870006k7wcpcssko5d",
+          "name": "GPA",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Mario Augusto Neto"
+        },
+        {
+          "id": "cmrozkqti000hk75coogp46br",
+          "name": "Ultrapar",
+          "segment": "Combustíveis, Energia & Química",
+          "accountScore": 82,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "linkedin-sync:master",
+          "owner": null,
+          "contactCount": 5,
+          "activeDecisor": "José Roberto Braga"
+        },
+        {
+          "id": "cmrl2cabz000nk7745zclhm0a",
+          "name": "Rodoil Distribuidora de Combustíveis",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 5,
+          "activeDecisor": "Luciano Demicheli"
         },
         {
           "id": "cmrt9u76r001mk718awvfzr00",
@@ -337,6 +857,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-03T14:42:04.326Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 4,
           "activeDecisor": null
@@ -349,6 +870,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-20T13:39:37.185Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": null
@@ -361,6 +883,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 5,
           "activeDecisor": "Antonio Correa G Neto"
@@ -373,6 +896,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Vinicius Benincasa"
@@ -385,6 +909,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Nuno Saramago"
@@ -397,9 +922,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 6,
-          "activeDecisor": "Cynthia Lopes"
+          "contactCount": 7,
+          "activeDecisor": "João Nascimento"
         },
         {
           "id": "cmqqqiayk000ck7o8lq2v2pzj",
@@ -409,6 +935,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -421,6 +948,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 5,
           "activeDecisor": "Bárbara Forlin"
@@ -433,6 +961,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -445,6 +974,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -457,6 +987,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -469,6 +1000,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -481,6 +1013,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 4,
           "activeDecisor": "Alexandro A. A. Cruz"
@@ -493,6 +1026,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": null
@@ -505,6 +1039,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -517,6 +1052,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -529,6 +1065,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -541,6 +1078,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": null
@@ -553,6 +1091,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -565,6 +1104,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -577,6 +1117,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": null
@@ -589,6 +1130,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-04T17:53:49.677Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -601,6 +1143,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-04T17:53:49.677Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -613,6 +1156,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:40:50.012Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -625,6 +1169,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T20:23:11.836Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -637,6 +1182,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T11:55:11.957Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -649,6 +1195,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -661,6 +1208,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -673,6 +1221,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -685,6 +1234,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T20:59:29.782Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -697,6 +1247,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T11:54:14.346Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -709,6 +1260,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T11:54:14.346Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -721,6 +1273,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-29T11:54:14.346Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -733,6 +1286,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -745,6 +1299,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -757,20 +1312,9 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-23T18:43:39.089Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmrozkqti000hk75coogp46br",
-          "name": "Ultrapar",
-          "segment": "Combustíveis, Energia & Química",
-          "accountScore": 82,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-17T13:44:40.617Z",
-          "owner": null,
-          "contactCount": 5,
           "activeDecisor": null
         }
       ]
@@ -787,6 +1331,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-05-18T03:00:00.000Z",
           "lastInteractionAt": "2026-07-14T20:43:35.525Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Marcelo Maia"
@@ -799,6 +1344,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-05-18T03:00:00.000Z",
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Eduardo Mareuse"
@@ -811,9 +1357,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-16T03:00:00.000Z",
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 5,
-          "activeDecisor": "Ramon Castro de Matos"
+          "contactCount": 6,
+          "activeDecisor": "Rafael Caldas"
         },
         {
           "id": "cmq9t45e70000k7o0jq29szvt",
@@ -823,6 +1370,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-17T03:00:00.000Z",
           "lastInteractionAt": "2026-07-14T20:43:47.730Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Claudia Simon"
@@ -835,6 +1383,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-24T03:00:00.000Z",
           "lastInteractionAt": "2026-07-06T20:36:39.271Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Henrique Fonseca"
@@ -847,6 +1396,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-25T03:00:00.000Z",
           "lastInteractionAt": "2026-07-30T11:53:33.818Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 6,
           "activeDecisor": "Carlos Marcelo Oba"
@@ -859,6 +1409,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-25T03:00:00.000Z",
           "lastInteractionAt": "2026-06-18T17:51:51.016Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Luciana de Andrade"
@@ -871,6 +1422,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-13T03:00:00.000Z",
           "lastInteractionAt": "2026-07-30T11:54:00.341Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Renato Marostica"
@@ -883,21 +1435,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-21T03:00:00.000Z",
           "lastInteractionAt": "2026-07-14T20:45:49.175Z",
+          "source": null,
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Fábio José Silva"
-        },
-        {
-          "id": "cmqqwnulx000hk7o87yzt0lca",
-          "name": "Braskem",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-24T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-17T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Marcelo Fornereto"
         },
         {
           "id": "cmqti1t0i000bk7gc5guq6ez7",
@@ -907,6 +1448,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-24T19:24:00.000Z",
           "lastInteractionAt": "2026-07-17T19:24:00.000Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Carlos H. Medeiros"
@@ -919,6 +1461,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Marcelo Simões Pato"
@@ -931,9 +1474,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "RENATA CRISTINA LOURENÇO FIORAVANTE"
+          "contactCount": 2,
+          "activeDecisor": "Renata Fioravante"
         },
         {
           "id": "cmrdgzv4u0007k77wsd8j8pzs",
@@ -943,6 +1487,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Rodrigo Torres Rosi"
@@ -955,6 +1500,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Andrei Passig"
@@ -967,6 +1513,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 6,
           "activeDecisor": "Marco Túlio Cabral"
@@ -979,6 +1526,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 6,
           "activeDecisor": "Rogério Andrade"
@@ -991,21 +1539,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 6,
           "activeDecisor": "Luciano Sousa"
-        },
-        {
-          "id": "cmqjsbye70015k7zwh88ujxnp",
-          "name": "PepsiCo",
-          "segment": null,
-          "accountScore": 20,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Eduardo Loyola"
         },
         {
           "id": "cmq9t45jb001ik7o09gybyask",
@@ -1015,9 +1552,23 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-19T03:00:00.000Z",
           "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 9,
           "activeDecisor": "Gabriel Dal Sasso"
+        },
+        {
+          "id": "cmqjsbye70015k7zwh88ujxnp",
+          "name": "PepsiCo",
+          "segment": null,
+          "accountScore": 20,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 3,
+          "activeDecisor": "Anderson Pinheiro"
         },
         {
           "id": "cmqjsbycu000jk7zwdxamw5bu",
@@ -1025,8 +1576,9 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Alexandre Westphalen"
@@ -1037,23 +1589,25 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 4,
           "activeDecisor": "Edvan Cruz"
         },
         {
-          "id": "cmqjvk2sc0003k7s032rc28s2",
-          "name": "Heineken Brasil",
-          "segment": "Alimentos & Bebidas",
+          "id": "cmqqwnulx000hk7o87yzt0lca",
+          "name": "Braskem",
+          "segment": null,
           "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-06-18T19:16:11.292Z",
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 2,
-          "activeDecisor": "Olinto Lopes Neto"
+          "activeDecisor": "Daniel Turci Pedroso"
         },
         {
           "id": "cmqjvk2s10001k7s0qbtzkfyo",
@@ -1063,6 +1617,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-14T20:44:04.928Z",
+          "source": "painel-abm",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Aécio Patuzzi"
@@ -1075,6 +1630,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-27T12:55:06.125Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Mario Augusto Neto"
@@ -1087,6 +1643,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-30T11:35:57.154Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -1099,6 +1656,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-07-22T11:38:19.466Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": null
@@ -1111,6 +1669,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-18T19:16:35.916Z",
+          "source": "painel-abm",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -1122,6 +1681,19 @@
       "label": "Respondeu",
       "companies": [
         {
+          "id": "cmql5g0sf0000k7q80ihp0ek3",
+          "name": "L'Oréal",
+          "segment": "Cosméticos & Higiene",
+          "accountScore": 0,
+          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+          "nextActionDueAt": "2026-06-21T17:36:00.000Z",
+          "lastInteractionAt": "2026-08-14T14:28:00.000Z",
+          "source": null,
+          "owner": null,
+          "contactCount": 6,
+          "activeDecisor": "Felipe Feteira do Vale"
+        },
+        {
           "id": "cmqp6w551000qk7r4xs866fpz",
           "name": "Continental Pneus",
           "segment": "Automotivo & Pneus",
@@ -1129,6 +1701,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-22T03:00:00.000Z",
           "lastInteractionAt": "2026-06-18T19:15:28.654Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Rodrigo Bonilha"
@@ -1141,6 +1714,7 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-06-27T14:15:00.000Z",
           "lastInteractionAt": "2026-06-25T14:15:00.000Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Leandro Luiz Katayama Ribeiro"
@@ -1153,9 +1727,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-07T03:00:00.000Z",
           "lastInteractionAt": "2026-07-23T18:43:56.042Z",
+          "source": null,
           "owner": null,
-          "contactCount": 3,
-          "activeDecisor": "Ricardo Schilder Lima"
+          "contactCount": 4,
+          "activeDecisor": "Alexandre Aires"
         },
         {
           "id": "cmqqnso2n0008k7o898wwnhtz",
@@ -1165,6 +1740,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-13T20:30:00.000Z",
           "lastInteractionAt": "2026-07-06T20:30:00.000Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Marcelo Tadeu dos Santos"
@@ -1177,6 +1753,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-24T18:54:00.000Z",
           "lastInteractionAt": "2026-07-20T13:39:37.185Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Arthur Klann Vieira"
@@ -1189,21 +1766,10 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-08-08T16:53:00.000Z",
           "lastInteractionAt": "2026-08-06T17:29:00.000Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Joao Martins Costa 马廷"
-        },
-        {
-          "id": "cmqjsbyd6000ok7zw8yagmcc0",
-          "name": "Casas Bahia",
-          "segment": null,
-          "accountScore": 140,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-13T19:21:33.000Z",
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Diego Garcia"
         },
         {
           "id": "cmroz9tt80005k7ls23wgwnv0",
@@ -1213,6 +1779,7 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-12T16:42:00.000Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Mauro Loureiro Jr"
@@ -1225,6 +1792,7 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "source": "linkedin-sync:master",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Fernando Alfano"
@@ -1237,6 +1805,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-14T03:00:00.000Z",
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 4,
           "activeDecisor": "Luciano Tótola"
@@ -1249,21 +1818,10 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-08-14T16:52:00.000Z",
           "lastInteractionAt": "2026-08-12T16:52:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 4,
           "activeDecisor": "Ricardo Dinelli"
-        },
-        {
-          "id": "cmshu8i8j005ek7ccqrg5l4zb",
-          "name": "Grupo Boticário",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-08-14T21:05:00.000Z",
-          "lastInteractionAt": "2026-08-12T21:05:00.000Z",
-          "owner": null,
-          "contactCount": 3,
-          "activeDecisor": "Luciano Xavier de Miranda"
         },
         {
           "id": "cmshu8ib9005sk7cc4xf313ms",
@@ -1271,8 +1829,9 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Ana Lúcia Gomes Resende Souza"
@@ -1283,23 +1842,12 @@
           "segment": null,
           "accountScore": 0,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
+          "nextActionDueAt": "2026-08-21T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-14T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Luis Felipe Dovichi Mendes"
-        },
-        {
-          "id": "cmql5g0sf0000k7q80ihp0ek3",
-          "name": "L'Oréal",
-          "segment": "Cosméticos & Higiene",
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "owner": null,
-          "contactCount": 5,
-          "activeDecisor": "Felipe Feteira do Vale"
         },
         {
           "id": "cms7zagyj0001k798fpjyyg9r",
@@ -1309,6 +1857,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Felipe Thedim Costa Bueno"
@@ -1327,6 +1876,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-06-16T03:00:00.000Z",
           "lastInteractionAt": "2026-08-06T13:54:32.237Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "José Amaral"
@@ -1339,6 +1889,7 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-07-08T17:06:00.000Z",
           "lastInteractionAt": "2026-07-06T17:11:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Otavio Mendonça"
@@ -1353,20 +1904,7 @@
     {
       "stage": "MEETING_DONE",
       "label": "Reunião Realizada",
-      "companies": [
-        {
-          "id": "cmqjsbyau0000k7zwrt3gzr83",
-          "name": "Gerdau",
-          "segment": null,
-          "accountScore": 40,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-06-20T11:30:00.000Z",
-          "lastInteractionAt": "2026-06-18T11:32:00.000Z",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Artur Izaias"
-        }
-      ]
+      "companies": []
     },
     {
       "stage": "DEAL",
@@ -1380,8 +1918,9 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-04-13T03:00:00.000Z",
           "lastInteractionAt": "2026-07-28T14:33:52.335Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 3,
           "activeDecisor": "Daniel Drumond"
         },
         {
@@ -1392,6 +1931,7 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-05-01T22:52:00.000Z",
           "lastInteractionAt": "2026-06-19T18:56:44.243Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Eduardo Sá Freire"
@@ -1404,6 +1944,7 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-05-07T17:29:00.000Z",
           "lastInteractionAt": "2026-06-18T17:49:20.600Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Fernando Nadalini"
@@ -1416,6 +1957,7 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-05-31T21:09:00.000Z",
           "lastInteractionAt": "2026-06-18T17:49:23.036Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Eduardo De Camargo Filho"
@@ -1428,9 +1970,23 @@
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-06-25T03:00:00.000Z",
           "lastInteractionAt": "2026-08-03T12:11:43.217Z",
+          "source": "manual-tier-outreach",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "ADRIANO ROSA DELFINO"
+        },
+        {
+          "id": "cmshu8i8j005ek7ccqrg5l4zb",
+          "name": "Grupo Boticário",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+          "nextActionDueAt": "2026-08-16T21:05:00.000Z",
+          "lastInteractionAt": "2026-08-14T21:05:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": "Luciano Xavier de Miranda"
         },
         {
           "id": "cmsngud670000k7q0j7ttgbyp",
@@ -1440,6 +1996,7 @@
           "nextAction": "Contato Thiago",
           "nextActionDueAt": null,
           "lastInteractionAt": null,
+          "source": null,
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -1458,6 +2015,7 @@
           "nextAction": null,
           "nextActionDueAt": "2026-06-23T03:00:00.000Z",
           "lastInteractionAt": "2026-08-10T16:49:01.897Z",
+          "source": null,
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null
@@ -1470,33 +2028,10 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-07-13T03:00:00.000Z",
           "lastInteractionAt": "2026-07-06T03:00:00.000Z",
+          "source": "painel-abm",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Cristiano Quadros"
-        },
-        {
-          "id": "cmqqnssur0009k7o889yyn6m2",
-          "name": "Votorantim Cimentos",
-          "segment": null,
-          "accountScore": 35,
-          "nextAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
-          "nextActionDueAt": "2026-08-14T12:03:31.600Z",
-          "lastInteractionAt": "2026-07-06T17:50:15.655Z",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmqjvk2th0009k7s0e6efvdsp",
-          "name": "Bauducco",
-          "segment": "Alimentos & Bebidas",
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-19T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-12T03:00:00.000Z",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Edson Rocha"
         },
         {
           "id": "cmqjvk2sj0004k7s00fywqvtk",
@@ -1506,6 +2041,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-18T19:15:46.525Z",
+          "source": "painel-abm",
           "owner": null,
           "contactCount": 3,
           "activeDecisor": "Rafael Batista"
@@ -1518,6 +2054,7 @@
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
+          "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Cláudio Rosa, CPIM"
@@ -1530,6 +2067,7 @@
           "nextAction": null,
           "nextActionDueAt": null,
           "lastInteractionAt": "2026-06-18T19:15:20.575Z",
+          "source": "painel-abm",
           "owner": null,
           "contactCount": 0,
           "activeDecisor": null

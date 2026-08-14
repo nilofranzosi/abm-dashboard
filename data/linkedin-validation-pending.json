@@ -1,45 +1,11 @@
 {
-  "generatedAt": "2026-08-14T11:50:58.512Z",
+  "generatedAt": "2026-08-14T18:12:55.816Z",
   "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-14.json",
   "summary": {
-    "total": 1,
+    "total": 0,
     "replied": 0,
     "companyUnknown": 0,
     "overdue": 0
   },
-  "companies": [
-    {
-      "id": "grupo-boticario",
-      "resolvedCompany": "Grupo Boticário",
-      "reviewReasons": [
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Diego Fortuna",
-          "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": "Gerente Sênior, Logística Outbound | Liderando Transformação Digital e Cadeias de Suprimentos de Alta Complexidade | Desenvolvimento de Equipes de Alta Performance no Grupo Boticário",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-08-14T03:00:00.000Z",
-          "lastInboundAt": null,
-          "outboundTouchpoints": 1,
-          "inboundMessages": [],
-          "outboundMessages": [
-            {
-              "occurredAt": "2026-08-14T03:00:00.000Z",
-              "body": "Estava conversando com o Luciano Xavier sobre as possibilidades de parceria entre a PX e a Boticário. Ele me informou que saiu da empresa e me disse para entrar em contato contigo sobre esse projeto."
-            },
-            {
-              "occurredAt": "2026-08-14T03:00:00.000Z",
-              "body": "Conseguimos marcar uma conversa para avançar nesse projeto?"
-            }
-          ],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    }
-  ]
+  "companies": []
 }
