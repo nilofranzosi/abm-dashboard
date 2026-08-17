@@ -1,19 +1,10 @@
 {
-  "generatedAt": "2026-08-14T19:46:19.903Z",
-  "source": {
-    "type": "static-linkedin-scan-fallback",
-    "inputPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-14.json",
-    "scannedAt": "2026-08-14T16:55:50.203Z",
-    "matchedThreads": 57,
-    "kanbanSnapshotAt": "2026-08-14T19:13:15.050Z",
-    "embarcadoresCount": 200,
-    "note": "Fallback usado quando /api/workday/actions nao consegue consultar o Postgres local."
-  },
+  "generatedAt": "2026-08-17T12:00:53.421Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
       "company": {
-        "id": "raizen",
+        "id": "cmruzenod000ak7tgc0c9huxf",
         "name": "Raízen"
       },
       "contact": {
@@ -32,7 +23,7 @@
     {
       "id": "cba-companhia-brasileira-de-aluminio-tier-not-started",
       "company": {
-        "id": "cba-companhia-brasileira-de-aluminio",
+        "id": "cmqqnsuku000ak7o86ik5ajp7",
         "name": "CBA - Companhia Brasileira de Alumínio"
       },
       "contact": null,
@@ -48,7 +39,7 @@
     {
       "id": "grupo-guanabara-tier-not-started",
       "company": {
-        "id": "grupo-guanabara",
+        "id": null,
         "name": "Grupo Guanabara"
       },
       "contact": null,
@@ -64,7 +55,7 @@
     {
       "id": "supermercados-bh-grupo-bh-tier-not-started",
       "company": {
-        "id": "supermercados-bh-grupo-bh",
+        "id": null,
         "name": "Supermercados BH (Grupo BH)"
       },
       "contact": null,
@@ -80,7 +71,7 @@
     {
       "id": "enel-tier-not-started",
       "company": {
-        "id": "enel",
+        "id": null,
         "name": "Enel"
       },
       "contact": null,
@@ -96,7 +87,7 @@
     {
       "id": "adm-brasil-tier-not-started",
       "company": {
-        "id": "adm-brasil",
+        "id": null,
         "name": "ADM Brasil"
       },
       "contact": {
@@ -115,7 +106,7 @@
     {
       "id": "mahle-metal-leve-tier-not-started",
       "company": {
-        "id": "mahle-metal-leve",
+        "id": null,
         "name": "Mahle Metal Leve"
       },
       "contact": null,
@@ -131,7 +122,7 @@
     {
       "id": "fras-le-frasle-mobility-tier-not-started",
       "company": {
-        "id": "fras-le-frasle-mobility",
+        "id": null,
         "name": "Fras-le (Frasle Mobility)"
       },
       "contact": null,
@@ -145,25 +136,9 @@
       "severity": "critical"
     },
     {
-      "id": "intelbras-tier-not-started",
-      "company": {
-        "id": "intelbras",
-        "name": "Intelbras"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 84/100 | Eletro & Tecnologia. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
-      "recommendedAction": "Mapear decisores de logística/supply chain da Intelbras responsáveis pelo novo CD de São José/SC.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
       "id": "sao-martinho-tier-not-started",
       "company": {
-        "id": "sao-martinho",
+        "id": null,
         "name": "São Martinho"
       },
       "contact": null,
@@ -179,7 +154,7 @@
     {
       "id": "xbri-tier-not-started",
       "company": {
-        "id": "xbri",
+        "id": null,
         "name": "XBRI"
       },
       "contact": {
@@ -198,7 +173,7 @@
     {
       "id": "grendene-tier-not-started",
       "company": {
-        "id": "grendene",
+        "id": "cmqth3i760004k7gc32ts0ac8",
         "name": "Grendene"
       },
       "contact": null,
@@ -214,7 +189,7 @@
     {
       "id": "louis-dreyfus-brasil-tier-not-started",
       "company": {
-        "id": "louis-dreyfus-brasil",
+        "id": null,
         "name": "Louis Dreyfus Brasil"
       },
       "contact": null,
@@ -230,7 +205,7 @@
     {
       "id": "corteva-agriscience-tier-not-started",
       "company": {
-        "id": "corteva-agriscience",
+        "id": null,
         "name": "Corteva Agriscience"
       },
       "contact": {
@@ -249,7 +224,7 @@
     {
       "id": "raia-drogasil-tier-not-started",
       "company": {
-        "id": "raia-drogasil",
+        "id": null,
         "name": "Raia Drogasil"
       },
       "contact": null,
@@ -265,7 +240,7 @@
     {
       "id": "plurix-tier-not-started",
       "company": {
-        "id": "plurix",
+        "id": null,
         "name": "Plurix"
       },
       "contact": null,
@@ -281,7 +256,7 @@
     {
       "id": "aliexpress-tier-not-started",
       "company": {
-        "id": "aliexpress",
+        "id": null,
         "name": "AliExpress"
       },
       "contact": {
@@ -300,7 +275,7 @@
     {
       "id": "kimberly-clark-brasil-tier-not-started",
       "company": {
-        "id": "kimberly-clark-brasil",
+        "id": null,
         "name": "Kimberly-Clark Brasil"
       },
       "contact": {
@@ -319,7 +294,7 @@
     {
       "id": "paranapanema-tier-not-started",
       "company": {
-        "id": "paranapanema",
+        "id": null,
         "name": "Paranapanema"
       },
       "contact": null,
@@ -335,7 +310,7 @@
     {
       "id": "comercial-zaragoza-tier-not-started",
       "company": {
-        "id": "comercial-zaragoza",
+        "id": null,
         "name": "Comercial Zaragoza"
       },
       "contact": null,
@@ -351,7 +326,7 @@
     {
       "id": "rede-mix-atacarejo-tier-not-started",
       "company": {
-        "id": "rede-mix-atacarejo",
+        "id": null,
         "name": "Rede Mix Atacarejo"
       },
       "contact": null,
@@ -367,7 +342,7 @@
     {
       "id": "mondelez-brasil-tier-not-started",
       "company": {
-        "id": "mondelez-brasil",
+        "id": null,
         "name": "Mondelez Brasil"
       },
       "contact": null,
@@ -383,7 +358,7 @@
     {
       "id": "mars-brasil-tier-not-started",
       "company": {
-        "id": "mars-brasil",
+        "id": null,
         "name": "Mars Brasil"
       },
       "contact": null,
@@ -399,7 +374,7 @@
     {
       "id": "beiersdorf-brasil-tier-not-started",
       "company": {
-        "id": "beiersdorf-brasil",
+        "id": null,
         "name": "Beiersdorf Brasil"
       },
       "contact": {
@@ -414,1642 +389,4148 @@
       "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
       "dueAt": null,
       "severity": "warning"
+    },
+    {
+      "id": "camil-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Camil"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 78/100 | Alimentos & Bebidas. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+      "dueAt": null,
+      "severity": "warning"
     }
   ],
   "recentConnectionsSent": [
     {
-      "id": "diego-fortuna-recent",
+      "id": "cmst74ne4000mk7wce3ysoj1j",
       "company": {
-        "id": "grupo-boticario",
-        "name": "Grupo Boticário",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "diego-fortuna",
-        "name": "Diego Fortuna"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "info"
-    },
-    {
-      "id": "daniel-turci-pedroso-recent",
-      "company": {
-        "id": "braskem",
+        "id": "cmqqwnulx000hk7o87yzt0lca",
         "name": "Braskem",
-        "status": "FIRST_CONTACT_SENT"
+        "status": "FOLLOW_UP_SENT"
       },
       "contact": {
-        "id": "daniel-turci-pedroso",
+        "id": "cmst74ndp000ik7wcijllpiga",
         "name": "Daniel Turci Pedroso"
       },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
       "dueAt": "2026-08-14T20:41:00.000Z",
       "severity": "info"
     },
     {
-      "id": "ana-lucia-gomes-resende-souza-recent",
+      "id": "cmstanyil0003k75oagome994",
       "company": {
-        "id": "procter-gamble",
-        "name": "Procter & Gamble",
-        "status": "FIRST_CONTACT_SENT"
+        "id": "cmsswvk2a007lk7ywqkmujt91",
+        "name": "EUCATEX",
+        "status": "CONNECTION_ACCEPTED"
       },
       "contact": {
-        "id": "ana-lucia-gomes-resende-souza",
-        "name": "Ana Lúcia Gomes Resende Souza"
+        "id": "cmsswvk2h007nk7ywjxn3frl7",
+        "name": "Marcio Sidney Lino Junior"
       },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:42:28.523Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmstal6hm0003k7lwku43xv15",
+      "company": {
+        "id": "cmsswvjzs0072k7ywczc3s2k0",
+        "name": "ILOGG",
+        "status": "CONNECTION_ACCEPTED"
       },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "contact": {
+        "id": "cmsswvk020074k7ywp153097s",
+        "name": "Luís Cláudio Martão"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:40:18.916Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmstak0y2001fk7ksan645k3j",
+      "company": {
+        "id": "cmsswvjz2006xk7yw64x5go9o",
+        "name": "EVMOB",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjzb006zk7ywlqbe9swn",
+        "name": "Lucas Zanon Arantes"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:39:25.057Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmstaiw7e001bk7ksvhexzvp9",
+      "company": {
+        "id": "cmsswvju4005wk7ywir66oift",
+        "name": "COOPERCARGA LOGÍSTICA",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjyn006uk7ywmo67ozow",
+        "name": "Lívia Barros"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:38:32.278Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmstag1qg0017k7ksj8f2y8xj",
+      "company": {
+        "id": "cmsswvjus0061k7yw70h1ayf6",
+        "name": "ACTIONSYS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjv00063k7ywdhgjuhl3",
+        "name": "Leila Santos"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:36:19.497Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmstaf0g50013k7ksc83tm0za",
+      "company": {
+        "id": "cmsswvjoa004nk7ywussctemi",
+        "name": "MOKI",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjoh004pk7yw2mh3sxr7",
+        "name": "Guilherme Werneck"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:35:31.101Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmstadx4s000zk7ksfd4izqxx",
+      "company": {
+        "id": "cmsswvjaw0028k7ywn5xlkb3u",
+        "name": "SODEXO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk6g0089k7ywd6b92rqf",
+        "name": "Marina Zanin"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:34:40.201Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmstabm3a000vk7ksgdvqox54",
+      "company": {
+        "id": "cmsswvjrn005ek7ywchtx66p1",
+        "name": "FGV EAESP",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjrx005gk7yw9kdqldrn",
+        "name": "Joice Ribeiro Giacon"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:32:52.472Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsta9kyp000rk7ksdjjh9v7f",
+      "company": {
+        "id": "cmsswvjqz0059k7ywjk6fvmp0",
+        "name": "H&CO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjr9005bk7yw86i7rxk8",
+        "name": "João Pedro Mikinev"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:31:17.817Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsta7f39000nk7ksbcrsdyc8",
+      "company": {
+        "id": "cmsswvjou004sk7ywqr9iujrm",
+        "name": "DROGARIA ARAÚJO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjp2004uk7ywzhmss7y7",
+        "name": "Helbert Lopes"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:29:36.899Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsta2zp5000fk7ksa0g637lv",
+      "company": {
+        "id": "cmsswvjlh0040k7ywd70hbdba",
+        "name": "CUBO ITAÚ",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjlo0042k7yw7fcfrtr0",
+        "name": "Filipe Guimarães"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:26:10.334Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsta0hi3000bk7kscdyy8g20",
+      "company": {
+        "id": "cmsswvkjv00ank7ywarlh10a8",
+        "name": "EDENRED MOBILIDADE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkk600apk7yweftu1gr9",
+        "name": "Vinicios Fernandes"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:24:13.292Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst9xola0007k7ks8d8c6h7c",
+      "company": {
+        "id": "cmsswvkhg00a8k7ywq9wdddb8",
+        "name": "EPSON",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkhq00aak7ywnv98w391",
+        "name": "Tania Fernandes"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:22:02.661Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst9v5b00003k7kszeu3spqd",
+      "company": {
+        "id": "cmsswvkg2009yk7ywf1e9uw1t",
+        "name": "MIT ZARAGOZA LOGISTICS CENTER",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkgc00a0k7ywbsh8lgoq",
+        "name": "Spyros Lekkakos"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T18:20:04.122Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszazn1001rk7js83g6yf07",
+      "company": {
+        "id": "cmsswvj1b0010k7ywt8ieozy4",
+        "name": "ILOS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkfk009vk7ywgdp1osrw",
+        "name": "Rodrigo Tourinho Nakamura"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T14:00:21.886Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst0ioo40049k7jsjd2zj7nt",
+      "company": {
+        "id": "cmsswvka2008uk7yw94wkssj1",
+        "name": "LOTS GROUP",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkaa008wk7ywu0vvl1z1",
+        "name": "Pedro Silvestrini"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:58:26.318Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst0h17k0045k7jsg2uxy25l",
+      "company": {
+        "id": "cmsswvjk5003qk7ywxtant3u4",
+        "name": "RED BULL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjke003sk7yw7hxkftrx",
+        "name": "Fernanda Redondo"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:57:09.292Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst0fgph0041k7jsmhe1gylv",
+      "company": {
+        "id": "cmsswvjg1002xk7ywdclu42xj",
+        "name": "KOEPE DO BRASIL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjgb002zk7ywyuyz4dyc",
+        "name": "Elton Barcelos"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:55:56.083Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst0d5ma003xk7jsnwx01yuh",
+      "company": {
+        "id": "cmsswvjdl002ik7ywa611pgjr",
+        "name": "MILLS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjdv002kk7ywwxymnq00",
+        "name": "Daniel Brugioni"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:54:08.393Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst0bf1i003tk7js2a3q8jot",
+      "company": {
+        "id": "cmsswvkda009gk7ywcwqvnc46",
+        "name": "TOYOTA",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkdl009ik7yw1zbo2iwc",
+        "name": "Roberto Ueda"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:52:47.289Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst09oi1003pk7jsya7zbkpz",
+      "company": {
+        "id": "cmsswvkgq00a3k7yw5ov2kr08",
+        "name": "NOVELIS DO BRASIL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkgy00a5k7yw7n8om1xo",
+        "name": "Stéfano Rosetti"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:51:26.260Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst06zue003lk7js98kg7r7r",
+      "company": {
+        "id": "cmsswvkbv0097k7yw2h03d31v",
+        "name": "O9 SOLUTIONS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkc40099k7ywrfkj752u",
+        "name": "Renato Tavares"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:49:20.989Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst04io5003hk7jsp0bow46y",
+      "company": {
+        "id": "cmsswvkes009pk7ywmodw02o6",
+        "name": "DUIMPWEB",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkf1009rk7ywadeazh9p",
+        "name": "Rodrigo Santos"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:47:25.241Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszeu8u001zk7jsgn2qzv9v",
+      "company": {
+        "id": "cmsswvj8z001yk7ywcetyhbhu",
+        "name": "INPO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkcp009dk7yw8nr8qalq",
+        "name": "Rhandal Masteguim"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:45:30.502Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst00szm0039k7jsbta5a8qt",
+      "company": {
+        "id": "cmsswvk7p008gk7ywddbjwrue",
+        "name": "LOGCOMEX",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk80008ik7ywi7vcpgha",
+        "name": "Mônica Gabriella"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:44:32.176Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszybqb0035k7js4xdptkw1",
+      "company": {
+        "id": "cmsswvk5f0083k7ywi4stpksk",
+        "name": "WRI BRASIL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk5q0085k7ywzqakziwg",
+        "name": "Mariana Müller Barcelos"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:42:36.473Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszwc9t0031k7jspxk4btsf",
+      "company": {
+        "id": "cmsswvk1r007gk7ywzal58exp",
+        "name": "KNAPP",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk1z007ik7ywm3j43bmi",
+        "name": "Marcio Schilling"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:41:03.875Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszv3rz002xk7jsddgkurts",
+      "company": {
+        "id": "cmsswvjwp006fk7ywpbsl5yb9",
+        "name": "FLEETPAY",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjx0006hk7ywl1ij4ca0",
+        "name": "Leonardo Mello"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:40:06.181Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszt2b0002tk7jsn2biq2gv",
+      "company": {
+        "id": "cmsswvjsy005nk7ywjqy1a770",
+        "name": "CONEXLOG CARGAS EXPRESSAS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjt5005pk7ywaidy9de8",
+        "name": "Junior Silvestro"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:38:31.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszs18m002pk7jsuujdzj9m",
+      "company": {
+        "id": "cmsswvjmk004ak7ywdatlmnsy",
+        "name": "ENJOEI",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjms004ck7ywtqui4v6n",
+        "name": "Gerson Dias"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:37:42.960Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszptf1002lk7js26xx9i2h",
+      "company": {
+        "id": "cmsswvji3003bk7ywqupxivrq",
+        "name": "DR. OETKER",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjia003dk7yw266nerlg",
+        "name": "Fábio Neiva"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:35:59.494Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszo6ye002hk7jstsmakrg7",
+      "company": {
+        "id": "cmsswvj0o000vk7ywro68x2tw",
+        "name": "FLOWLS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj0x000xk7yw3vragbr4",
+        "name": "Anna Valle"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:34:43.737Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszlfn3002dk7jsa6jbxuj5",
+      "company": {
+        "id": "cmsswviz3000mk7ywgh0k8nif",
+        "name": "BAT",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvizc000ok7yw3wko60jc",
+        "name": "Alice Bernardi"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:32:35.003Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszhf9x0027k7js8geob5qb",
+      "company": {
+        "id": "cmsswvj34001ek7ywjnwn7gii",
+        "name": "LOOG.AI",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj3f001gk7ywddygkcp2",
+        "name": "Bruno Gregório"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:29:27.899Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsszg9c60023k7js90qh5mvy",
+      "company": {
+        "id": "cmsswvj1y0015k7ywi14sfch9",
+        "name": "LTPLABS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj250017k7ywgqrqfnkz",
+        "name": "Bruno Batista"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:28:33.578Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssz8ydf001nk7jsnppnu9mg",
+      "company": {
+        "id": "cmsswvj6w001ok7ywxsr2r6az",
+        "name": "SAP",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj7b001qk7yw3dthgbaz",
+        "name": "Camilla Sarto"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:22:52.602Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssz7kwf001jk7jspj3khcfa",
+      "company": {
+        "id": "cmsswvjkt003vk7ywdq5v46u2",
+        "name": "SOCIEDADE BÍBLICA DO BRASIL (SBB)",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjl2003xk7yw3oy8qqxj",
+        "name": "Fernando Araujo"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:21:48.596Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssz65d3001fk7jss9wvfx89",
+      "company": {
+        "id": "cmsswvk3g007uk7yw7wnyippy",
+        "name": "M. DIAS BRANCO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk3q007wk7ywew5rf9zj",
+        "name": "Marcos Paulo Battistini"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:20:41.865Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssz49h9001bk7jslx9jqg77",
+      "company": {
+        "id": "cmqjvk2sc0003k7s032rc28s2",
+        "name": "Heineken Brasil",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjy7006qk7ywtk399acc",
+        "name": "Ligia Camargo"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:19:13.841Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssz2c580017k7jsd6pqlbpf",
+      "company": {
+        "id": "cmqjsbyd6000ok7zw8yagmcc0",
+        "name": "Casas Bahia",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjtl005tk7ywvnj9g0zm",
+        "name": "Karina Baldin"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:17:44.024Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssyzu960013k7jsogtqo0ub",
+      "company": {
+        "id": "cmsswvkic00adk7ywr6z8l7es",
+        "name": "SANOFI MEDLEY FARMACÊUTICA",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkim00afk7ywparsr53a",
+        "name": "Tatiana Perim Ignez"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:15:47.539Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssyyni7000zk7jseyszcalh",
+      "company": {
+        "id": "cmsswvkj400aik7ywj6749ryf",
+        "name": "RD SAÚDE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkjd00akk7ywekby7w2t",
+        "name": "Thiago Centurion"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:14:52.119Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssywd8y000vk7jshnm87a3r",
+      "company": {
+        "id": "cmsswvjcs002dk7ywkbplemsh",
+        "name": "MONDELEZ INTERNACIONAL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjd2002fk7yw6eqo2641",
+        "name": "Claudio Pena"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:13:05.453Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssyuvdt000rk7jss5gkgwvc",
+      "company": {
+        "id": "cmsswvjec002nk7ywvrigsp7z",
+        "name": "MBRF GLOBAL FOODS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjes002pk7ywyxqyu26s",
+        "name": "Diego Penteado"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:11:55.609Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssysi4k000nk7js2gmr1uc5",
+      "company": {
+        "id": "cmsswvjfa002sk7ywsi75mbns",
+        "name": "BAYER CROP SCIENCE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjfk002uk7ywg3w05uzt",
+        "name": "Elaine Selma"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:10:05.227Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssyr7mk000jk7js56ki6laq",
+      "company": {
+        "id": "cmsswvk0p0077k7ywgerwrabl",
+        "name": "MERCADO LIVRE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvke7009mk7ywt9vgojry",
+        "name": "Rodrigo de Mello Brito"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:09:04.952Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssypm54000fk7jsyd25z81u",
+      "company": {
+        "id": "cmqjsbyau0000k7zwrt3gzr83",
+        "name": "Gerdau",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk2y007rk7ywt30hu65y",
+        "name": "Marco Antônio Pimenta dos Santos"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:07:49.847Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssymtzk000bk7js40cu2frt",
+      "company": {
+        "id": "cms611chp001ck7ocsuk2wgs6",
+        "name": "Suzano",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk1d007dk7ywhjojdvth",
+        "name": "Marcela Cocchiarale"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:05:40.667Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmssyj7ff0003k7jsgx3d0hu3",
+      "company": {
+        "id": "cmsswvj9y0023k7yw9z609pdk",
+        "name": "FRASLE MOBILITY – RANDONCORP",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvja80025k7ywxk5ilsve",
+        "name": "Clairton Guielcer de For"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T13:02:51.376Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmst74ncr000gk7wcgkf895cf",
+      "company": {
+        "id": "cmshu8i8j005ek7ccqrg5l4zb",
+        "name": "Grupo Boticário",
+        "status": "DEAL"
+      },
+      "contact": {
+        "id": "cmst74nc9000ck7wc5ja60fok",
+        "name": "Diego Fortuna"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
       "dueAt": "2026-08-14T03:00:00.000Z",
       "severity": "info"
     },
     {
-      "id": "edson-rocha-recent",
+      "id": "cmsqcx6c8000jk76km44ryzw5",
       "company": {
-        "id": "bauducco",
-        "name": "Bauducco",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "edson-rocha",
-        "name": "Edson Rocha"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "info"
-    },
-    {
-      "id": "edvan-cruz-recent",
-      "company": {
-        "id": "yara-international",
-        "name": "Yara Brasil",
-        "status": "FIRST_CONTACT_SENT"
-      },
-      "contact": {
-        "id": "edvan-cruz",
-        "name": "Edvan Cruz"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "info"
-    },
-    {
-      "id": "amanda-caroline-dos-santos-recent",
-      "company": {
-        "id": "alpargatas-s-a",
+        "id": "cmqqo3pm5000bk7o8kcl2slig",
         "name": "Alpargatas (Havaianas)",
-        "status": "FIRST_CONTACT_SENT"
+        "status": "MESSAGE_SENT"
       },
       "contact": {
-        "id": "amanda-caroline-dos-santos",
+        "id": "cmsq28gp8000nk7g8p31snvej",
         "name": "Amanda Caroline dos Santos"
       },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsqcx6b3000fk76kb8acfrv8",
+      "company": {
+        "id": "cmq9t45ou003gk7o0jb6grra2",
+        "name": "Yara Brasil",
+        "status": "FOLLOW_UP_SENT"
       },
-      "reason": "Contato movimentado nos últimos 7 dias no LinkedIn do Thiago.",
-      "recommendedAction": "Acompanhar aceite/resposta e registrar M1 ou próximo toque conforme SLA.",
+      "contact": {
+        "id": "cmsq28go1000gk7g8rfo2e7w5",
+        "name": "Edvan Cruz"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsq28gn7000dk7g811whspc9",
+      "company": {
+        "id": "cmqjvk2th0009k7s0e6efvdsp",
+        "name": "Bauducco",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": {
+        "id": "cmsq28gme0009k7g82i6x8r79",
+        "name": "Edson Rocha"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "info"
+    },
+    {
+      "id": "cmsq28gkp0007k7g89id5dhyf",
+      "company": {
+        "id": "cmshu8ib9005sk7cc4xf313ms",
+        "name": "Procter & Gamble",
+        "status": "REPLIED"
+      },
+      "contact": {
+        "id": "cmroy4x8a000jk7bsn2rx7c71",
+        "name": "Ana Lúcia Gomes Resende Souza"
+      },
+      "owner": null,
+      "reason": "Convite enviado em 2026-08-14 — aguardando aceite.",
+      "recommendedAction": "Aguardar aceite e enviar M1 assim que a conexão for aceita.",
       "dueAt": "2026-08-14T03:00:00.000Z",
       "severity": "info"
     }
   ],
   "acceptedConnectionsWithoutMessage": [
     {
-      "id": "gerdau-accepted-no-msg",
+      "id": "cmsswww4z000ak7d00946tk53",
       "company": {
-        "id": "gerdau",
-        "name": "Gerdau",
-        "status": "CONNECTION_ACCEPTED"
+        "id": "cmsswvix30008k7ywz8a8gu2e",
+        "name": "CANTU INC",
+        "status": "MAPPED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswvixf000ak7yw3lnfhw41",
+        "name": "Alex Custodio"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Mauricio Metz (Head of Gerdau Brazilian Division).",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:47:42.594Z",
       "severity": "critical"
     },
     {
-      "id": "kenvue-accepted-no-msg",
+      "id": "cmsswww4z000ck7d0u0kfxknt",
       "company": {
-        "id": "kenvue",
-        "name": "Kenvue",
-        "status": "CONNECTION_ACCEPTED"
+        "id": "cmsswvixu000dk7yww5ncuc9s",
+        "name": "NESPRESSO",
+        "status": "MAPPED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswviy4000fk7yw0twhjtva",
+        "name": "Alex Dognani"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Mapear decisores e validar potencial",
-      "dueAt": "2026-07-28T14:23:05.751Z",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:47:50.323Z",
       "severity": "critical"
     },
     {
-      "id": "casas-bahia-accepted-no-msg",
+      "id": "cmsswww4z0001k7d0e0196229",
       "company": {
-        "id": "casas-bahia",
-        "name": "Casas Bahia",
-        "status": "CONNECTION_ACCEPTED"
+        "id": "cmsswvj84001tk7yw7hvex6nd",
+        "name": "SAMSUNG ELECTRONICS",
+        "status": "MAPPED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswvj8e001vk7ywuzyneg3y",
+        "name": "Carlos Oba"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Willemberg Cruz (Diretor de Logística).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:47:56.252Z",
       "severity": "critical"
     },
     {
-      "id": "suzano-accepted-no-msg",
+      "id": "cmsswww4z0009k7d04cz9rafn",
       "company": {
-        "id": "suzano",
-        "name": "Suzano",
-        "status": "CONNECTION_ACCEPTED"
+        "id": "cmsswvj3y001jk7ywdp3qmvze",
+        "name": "CITROSUCO",
+        "status": "MAPPED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswvj4y001lk7yw4s1kf1ck",
+        "name": "Camila Aceituno"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Aires Galhardo (Diretor de Logística / Supply Chain).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:48:29.875Z",
       "severity": "critical"
     },
     {
-      "id": "m-dias-branco-accepted-no-msg",
+      "id": "cmsswww50000dk7d0itm0pdi5",
       "company": {
-        "id": "m-dias-branco",
-        "name": "M. DIAS BRANCO",
-        "status": "CONNECTION_ACCEPTED"
+        "id": "cmr0nk5vn0003k75gazq8ykau",
+        "name": "Lojas Renner",
+        "status": "REPLIED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswviyl000jk7ywhaibfqw3",
+        "name": "Alexandre Aires"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:48:53.888Z",
       "severity": "critical"
     },
     {
-      "id": "heineken-brasil-accepted-no-msg",
+      "id": "cmsswww50000fk7d0mcf57urj",
       "company": {
-        "id": "heineken-brasil",
+        "id": "cmqjsbye70015k7zwh88ujxnp",
+        "name": "PepsiCo",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": {
+        "id": "cmsswvizz000sk7ywq759y5ha",
+        "name": "Anderson Pinheiro"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:49:05.479Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000hk7d0cpy8x4s1",
+      "company": {
+        "id": "cmsswvjaw0028k7ywn5xlkb3u",
+        "name": "SODEXO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjc1002ak7ywa54023vk",
+        "name": "Claudio Marcos Ferreira"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:49:12.476Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000ok7d0nm2ni2qn",
+      "company": {
+        "id": "cmqjvk2sc0003k7s032rc28s2",
         "name": "Heineken Brasil",
         "status": "CONNECTION_ACCEPTED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswvjhl0038k7ywfnl71g33",
+        "name": "Fábio Criniti"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Olinto Lopes Neto (Supply Chain Director).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:49:19.977Z",
       "severity": "critical"
     },
     {
-      "id": "ilos-accepted-no-msg",
+      "id": "cmsswww51001ak7d082ykh9js",
       "company": {
-        "id": "ilos",
-        "name": "ILOS",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "sanofi-medley-farmaceutica-accepted-no-msg",
-      "company": {
-        "id": "sanofi-medley-farmaceutica",
-        "name": "SANOFI MEDLEY FARMACÊUTICA",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "rd-saude-accepted-no-msg",
-      "company": {
-        "id": "rd-saude",
-        "name": "RD SAÚDE",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "lots-group-accepted-no-msg",
-      "company": {
-        "id": "lots-group",
-        "name": "LOTS GROUP",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "red-bull-accepted-no-msg",
-      "company": {
-        "id": "red-bull",
-        "name": "RED BULL",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "koepe-do-brasil-accepted-no-msg",
-      "company": {
-        "id": "koepe-do-brasil",
-        "name": "KOEPE DO BRASIL",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "mills-accepted-no-msg",
-      "company": {
-        "id": "mills",
-        "name": "MILLS",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "sap-accepted-no-msg",
-      "company": {
-        "id": "sap",
-        "name": "SAP",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "sociedade-biblica-do-brasil-sbb-accepted-no-msg",
-      "company": {
-        "id": "sociedade-biblica-do-brasil-sbb",
-        "name": "SOCIEDADE BÍBLICA DO BRASIL (SBB)",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "toyota-accepted-no-msg",
-      "company": {
-        "id": "toyota",
-        "name": "TOYOTA",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "novelis-do-brasil-accepted-no-msg",
-      "company": {
-        "id": "novelis-do-brasil",
-        "name": "NOVELIS DO BRASIL",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "o9-solutions-accepted-no-msg",
-      "company": {
-        "id": "o9-solutions",
-        "name": "O9 SOLUTIONS",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "duimpweb-accepted-no-msg",
-      "company": {
-        "id": "duimpweb",
-        "name": "DUIMPWEB",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "wri-brasil-accepted-no-msg",
-      "company": {
-        "id": "wri-brasil",
-        "name": "WRI BRASIL",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "knapp-accepted-no-msg",
-      "company": {
-        "id": "knapp",
-        "name": "KNAPP",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "fleetpay-accepted-no-msg",
-      "company": {
-        "id": "fleetpay",
-        "name": "FLEETPAY",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "conexlog-cargas-expressas-accepted-no-msg",
-      "company": {
-        "id": "conexlog-cargas-expressas",
-        "name": "CONEXLOG CARGAS EXPRESSAS",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "enjoei-accepted-no-msg",
-      "company": {
-        "id": "enjoei",
-        "name": "ENJOEI",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "dr-oetker-accepted-no-msg",
-      "company": {
-        "id": "dr-oetker",
-        "name": "DR. OETKER",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "flowls-accepted-no-msg",
-      "company": {
-        "id": "flowls",
-        "name": "FLOWLS",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "bat-accepted-no-msg",
-      "company": {
-        "id": "bat",
-        "name": "BAT",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "mondelez-internacional-accepted-no-msg",
-      "company": {
-        "id": "mondelez-internacional",
-        "name": "MONDELEZ INTERNACIONAL",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "mbrf-global-foods-accepted-no-msg",
-      "company": {
-        "id": "mbrf-global-foods",
-        "name": "MBRF GLOBAL FOODS",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "inpo-accepted-no-msg",
-      "company": {
-        "id": "inpo",
-        "name": "INPO",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "bayer-crop-science-accepted-no-msg",
-      "company": {
-        "id": "bayer-crop-science",
-        "name": "BAYER CROP SCIENCE",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "mercado-livre-accepted-no-msg",
-      "company": {
-        "id": "mercado-livre",
-        "name": "MERCADO LIVRE",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Luiz Vergueiro (Diretor Sênior Operações Logística).",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "logcomex-accepted-no-msg",
-      "company": {
-        "id": "logcomex",
-        "name": "LOGCOMEX",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "loog-ai-accepted-no-msg",
-      "company": {
-        "id": "loog-ai",
-        "name": "LOOG.AI",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "ltplabs-accepted-no-msg",
-      "company": {
-        "id": "ltplabs",
+        "id": "cmsswvj1y0015k7ywi14sfch9",
         "name": "LTPLABS",
         "status": "CONNECTION_ACCEPTED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswvjve0067k7yw6mmxrny1",
+        "name": "Leo Laranjeira"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:50:15.889Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001tk7d0z4ng39i8",
+      "company": {
+        "id": "cmsswvjg1002xk7ywdclu42xj",
+        "name": "KOEPE DO BRASIL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk8r008mk7ywj166iamq",
+        "name": "Pedro Freire"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:50:22.540Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001xk7d08w4aci7m",
+      "company": {
+        "id": "cmr97qk35000ck7ikdywcuq5k",
+        "name": "Campari Group",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": {
+        "id": "cmsswvkbe0094k7ywku91o36i",
+        "name": "Renata Fioravante"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:50:39.949Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52002ak7d0s6fulnne",
+      "company": {
+        "id": "cmsswvkko00ask7yw6ckay8pb",
+        "name": "HOLAMBRA COOPERATIVA AGROINDUSTRIAL",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvkky00auk7ywu1ne6whw",
+        "name": "Vinicius Pereira dos Santos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:50:56.300Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000rk7d0kvajqamr",
+      "company": {
+        "id": "cmsswvjji003lk7ywwgj3oj0p",
+        "name": "SEACREST PETRÓLEO",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjjq003nk7yw738jyjfm",
+        "name": "Felipe Ruy"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:51:03.454Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001uk7d06snecspo",
+      "company": {
+        "id": "cmsswvk9f008pk7yw9z1i58i1",
+        "name": "LOGSHARE",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvk9n008rk7ywbmll6a1g",
+        "name": "Pedro Prado"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:51:07.293Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001wk7d08hpru3rj",
+      "company": {
+        "id": "cmq9t45gg000jk7o0qkpnf88n",
+        "name": "Amazon Brasil",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": {
+        "id": "cmsswvkat0090k7ywmguwvnfv",
+        "name": "Rafael Caldas"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:51:10.759Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000nk7d0oi14695p",
+      "company": {
+        "id": "cmsswvjgs0032k7yw2onk1n5f",
+        "name": "JADLOG LOGÍSTICA",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjh30034k7ywg2kca30y",
+        "name": "Erivan Junior"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:51:19.206Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000qk7d01nyagpfu",
+      "company": {
+        "id": "cmsswvjit003gk7yws5av3jtt",
+        "name": "DATAMINT",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjj3003ik7ywtcotvmxv",
+        "name": "Felipe Fonseca"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:51:22.538Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52002bk7d0smikrvt9",
+      "company": {
+        "id": "cmqjsbyd6000ok7zw8yagmcc0",
+        "name": "Casas Bahia",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkli00ayk7ywe678lkpq",
+        "name": "Willemberg Cruz"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:52:07.051Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww500011k7d0retqwx5z",
+      "company": {
+        "id": "cmsswvjec002nk7ywvrigsp7z",
+        "name": "MBRF GLOBAL FOODS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjpx0052k7ywjzyl9ym3",
+        "name": "Jacira Santos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:52:35.651Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww510012k7d0y03ykyws",
+      "company": {
+        "id": "cmq9t45oj003bk7o02fgh1kc9",
+        "name": "Unilever",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": {
+        "id": "cmsswvjqe0056k7ywc5cttbib",
+        "name": "João Nascimento"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:52:39.216Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww510018k7d08xh4oqol",
+      "company": {
+        "id": "cmsswvju4005wk7ywir66oift",
+        "name": "COOPERCARGA LOGÍSTICA",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjue005yk7ywx50t987a",
+        "name": "Leandro Rocha"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:52:47.159Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001bk7d0i8j4ap8x",
+      "company": {
+        "id": "cmsswvjvu006ak7yw5tyg5udr",
+        "name": "ATLANTE SOLUÇÕES LOGÍSTICAS",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjw9006ck7ywyqv74rjf",
+        "name": "Leo Nunes"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:53:07.271Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001dk7d0l7oajoqn",
+      "company": {
+        "id": "cmsswvjxj006kk7yw5cxfb5j6",
+        "name": "GENERAL MOTORS",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjxt006mk7yw4tupd928",
+        "name": "Lierson Gomes"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:53:13.889Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001ik7d0p5s46lep",
+      "company": {
+        "id": "cmsswvk0p0077k7ywgerwrabl",
+        "name": "MERCADO LIVRE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk0x0079k7ywhp01tpd2",
+        "name": "Luiz Augusto Vergueiro"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:53:27.480Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001ok7d032l25aye",
+      "company": {
+        "id": "cmsswvj1b0010k7ywt8ieozy4",
+        "name": "ILOS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk4t0080k7yw6s8tpv76",
+        "name": "Maria Fernanda Hijjar"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:53:37.480Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001rk7d06phl34rm",
+      "company": {
+        "id": "cmsswvj1b0010k7ywt8ieozy4",
+        "name": "ILOS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk6z008dk7ywi9p3rp0r",
+        "name": "Monica Barros"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T12:53:40.767Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001nk7d0scso7236",
+      "company": {
+        "id": "cmsswvk3g007uk7yw7wnyippy",
+        "name": "M. DIAS BRANCO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk3q007wk7ywew5rf9zj",
+        "name": "Marcos Paulo Battistini"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
       "dueAt": "2026-08-14T16:50:46.307Z",
       "severity": "critical"
     },
     {
-      "id": "frasle-mobility-randoncorp-accepted-no-msg",
+      "id": "cmsswww4z0008k7d0e2efgsoe",
       "company": {
-        "id": "frasle-mobility-randoncorp",
+        "id": "cmsswvj34001ek7ywjnwn7gii",
+        "name": "LOOG.AI",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj3f001gk7ywddygkcp2",
+        "name": "Bruno Gregório"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000gk7d0hbm223jf",
+      "company": {
+        "id": "cmsswvj0o000vk7ywro68x2tw",
+        "name": "FLOWLS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj0x000xk7yw3vragbr4",
+        "name": "Anna Valle"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000ek7d0xa8oax86",
+      "company": {
+        "id": "cmsswviz3000mk7ywgh0k8nif",
+        "name": "BAT",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvizc000ok7yw3wko60jc",
+        "name": "Alice Bernardi"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000lk7d05wzbbmhq",
+      "company": {
+        "id": "cmsswvjfa002sk7ywsi75mbns",
+        "name": "BAYER CROP SCIENCE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjfk002uk7ywg3w05uzt",
+        "name": "Elaine Selma"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000wk7d0toiq8rwp",
+      "company": {
+        "id": "cmsswvjmk004ak7ywdatlmnsy",
+        "name": "ENJOEI",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjms004ck7ywtqui4v6n",
+        "name": "Gerson Dias"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000jk7d04mz62scb",
+      "company": {
+        "id": "cmsswvjdl002ik7ywa611pgjr",
+        "name": "MILLS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjdv002kk7ywwxymnq00",
+        "name": "Daniel Brugioni"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000tk7d0t1ufjo4s",
+      "company": {
+        "id": "cmsswvjkt003vk7ywdq5v46u2",
+        "name": "SOCIEDADE BÍBLICA DO BRASIL (SBB)",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjl2003xk7yw3oy8qqxj",
+        "name": "Fernando Araujo"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000pk7d0bsnghxsz",
+      "company": {
+        "id": "cmsswvji3003bk7ywqupxivrq",
+        "name": "DR. OETKER",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjia003dk7yw266nerlg",
+        "name": "Fábio Neiva"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000mk7d0iuwul566",
+      "company": {
+        "id": "cmsswvjg1002xk7ywdclu42xj",
+        "name": "KOEPE DO BRASIL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjgb002zk7ywyuyz4dyc",
+        "name": "Elton Barcelos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000sk7d04nqvf3tj",
+      "company": {
+        "id": "cmsswvjk5003qk7ywxtant3u4",
+        "name": "RED BULL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjke003sk7yw7hxkftrx",
+        "name": "Fernanda Redondo"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000kk7d0xqhvk56h",
+      "company": {
+        "id": "cmsswvjec002nk7ywvrigsp7z",
+        "name": "MBRF GLOBAL FOODS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjes002pk7ywyxqyu26s",
+        "name": "Diego Penteado"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001ck7d0gp4tmzj7",
+      "company": {
+        "id": "cmsswvjwp006fk7ywpbsl5yb9",
+        "name": "FLEETPAY",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjx0006hk7ywl1ij4ca0",
+        "name": "Leonardo Mello"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001kk7d0uuboj8et",
+      "company": {
+        "id": "cmsswvk1r007gk7ywzal58exp",
+        "name": "KNAPP",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk1z007ik7ywm3j43bmi",
+        "name": "Marcio Schilling"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww510016k7d0nei8xn0m",
+      "company": {
+        "id": "cmsswvjsy005nk7ywjqy1a770",
+        "name": "CONEXLOG CARGAS EXPRESSAS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjt5005pk7ywaidy9de8",
+        "name": "Junior Silvestro"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww510017k7d0r2yxpvql",
+      "company": {
+        "id": "cmqjsbyd6000ok7zw8yagmcc0",
+        "name": "Casas Bahia",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjtl005tk7ywvnj9g0zm",
+        "name": "Karina Baldin"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001jk7d0feor3je8",
+      "company": {
+        "id": "cms611chp001ck7ocsuk2wgs6",
+        "name": "Suzano",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk1d007dk7ywhjojdvth",
+        "name": "Marcela Cocchiarale"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001ek7d0oyocodi2",
+      "company": {
+        "id": "cmqjvk2sc0003k7s032rc28s2",
+        "name": "Heineken Brasil",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjy7006qk7ywtk399acc",
+        "name": "Ligia Camargo"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520022k7d0zqtiytgh",
+      "company": {
+        "id": "cmsswvkes009pk7ywmodw02o6",
+        "name": "DUIMPWEB",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkf1009rk7ywadeazh9p",
+        "name": "Rodrigo Santos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520021k7d0oq1fjh6s",
+      "company": {
+        "id": "cmsswvk0p0077k7ywgerwrabl",
+        "name": "MERCADO LIVRE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvke7009mk7ywt9vgojry",
+        "name": "Rodrigo de Mello Brito"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001pk7d0yss69e0q",
+      "company": {
+        "id": "cmsswvk5f0083k7ywi4stpksk",
+        "name": "WRI BRASIL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk5q0085k7ywzqakziwg",
+        "name": "Mariana Müller Barcelos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001zk7d0vmphiik3",
+      "company": {
+        "id": "cmsswvj8z001yk7ywcetyhbhu",
+        "name": "INPO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkcp009dk7yw8nr8qalq",
+        "name": "Rhandal Masteguim"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001yk7d01m4ury4m",
+      "company": {
+        "id": "cmsswvkbv0097k7yw2h03d31v",
+        "name": "O9 SOLUTIONS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkc40099k7ywrfkj752u",
+        "name": "Renato Tavares"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww4z0002k7d04tzuqn5y",
+      "company": {
+        "id": "cmsswvj8z001yk7ywcetyhbhu",
+        "name": "INPO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj9b0020k7ywk5922tv6",
+        "name": "Cauê Guazzelli"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww4z0003k7d0qwlty4bn",
+      "company": {
+        "id": "cmsswvj9y0023k7yw9z609pdk",
         "name": "FRASLE MOBILITY – RANDONCORP",
         "status": "CONNECTION_ACCEPTED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswvja80025k7ywxk5ilsve",
+        "name": "Clairton Guielcer de For"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Enviar mensagem de abertura (M1) personalizada com ângulo de negócio relevante ao segmento.",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
       "dueAt": "2026-08-14T16:50:46.307Z",
       "severity": "critical"
     },
     {
-      "id": "pague-menos-supermercados-accepted-no-msg",
+      "id": "cmsswww4m0000k7d0idwkxp7m",
       "company": {
-        "id": "pague-menos-supermercados",
-        "name": "Pague Menos Supermercados",
+        "id": "cmsswvj6w001ok7ywxsr2r6az",
+        "name": "SAP",
         "status": "CONNECTION_ACCEPTED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswvj7b001qk7yw3dthgbaz",
+        "name": "Camilla Sarto"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda.",
-      "recommendedAction": "Confirmar identidade da empresa (não é a rede de farmácias) e mapear contato de logística.",
-      "dueAt": "2026-07-30T20:15:08.022Z",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
       "severity": "critical"
     },
     {
-      "id": "johnson-johnson-brasil-accepted-no-msg",
+      "id": "cmsswww520027k7d076brxell",
       "company": {
-        "id": "johnson-johnson-brasil",
-        "name": "Johnson & Johnson Brasil",
+        "id": "cmsswvkic00adk7ywr6z8l7es",
+        "name": "SANOFI MEDLEY FARMACÊUTICA",
         "status": "CONNECTION_ACCEPTED"
       },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "contact": {
+        "id": "cmsswvkim00afk7ywparsr53a",
+        "name": "Tatiana Perim Ignez"
       },
-      "reason": "Conexão aceita no LinkedIn sem M1 enviada ainda. Falar com Nilson Bertoldo (Sr. Director, Global Logistics Strategy & Operations).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-07-28T14:23:05.751Z",
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww4z0005k7d084bwz047",
+      "company": {
+        "id": "cmsswvj1b0010k7ywt8ieozy4",
+        "name": "ILOS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj1k0012k7ywe4cfhlkm",
+        "name": "Beatris Huber"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww4z0004k7d0ux6kq6p3",
+      "company": {
+        "id": "cmsswvj1b0010k7ywt8ieozy4",
+        "name": "ILOS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjph004yk7ywaquyeu76",
+        "name": "Henrique Alvarenga"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww4z0006k7d01ftiftid",
+      "company": {
+        "id": "cmsswvj1y0015k7ywi14sfch9",
+        "name": "LTPLABS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj250017k7ywgqrqfnkz",
+        "name": "Bruno Batista"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001mk7d0yz3croki",
+      "company": {
+        "id": "cmqjsbyau0000k7zwrt3gzr83",
+        "name": "Gerdau",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk2y007rk7ywt30hu65y",
+        "name": "Marco Antônio Pimenta dos Santos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000ik7d0c0xqu3go",
+      "company": {
+        "id": "cmsswvjcs002dk7ywkbplemsh",
+        "name": "MONDELEZ INTERNACIONAL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjd2002fk7yw6eqo2641",
+        "name": "Claudio Pena"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520025k7d0ccsquaae",
+      "company": {
+        "id": "cmsswvkgq00a3k7yw5ov2kr08",
+        "name": "NOVELIS DO BRASIL",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkgy00a5k7yw7n8om1xo",
+        "name": "Stéfano Rosetti"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520028k7d01caz4zk3",
+      "company": {
+        "id": "cmsswvkj400aik7ywj6749ryf",
+        "name": "RD SAÚDE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkjd00akk7ywekby7w2t",
+        "name": "Thiago Centurion"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520020k7d0k4t1oahd",
+      "company": {
+        "id": "cmsswvkda009gk7ywcwqvnc46",
+        "name": "TOYOTA",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkdl009ik7yw1zbo2iwc",
+        "name": "Roberto Ueda"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001vk7d0qs80hhrv",
+      "company": {
+        "id": "cmsswvka2008uk7yw94wkssj1",
+        "name": "LOTS GROUP",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkaa008wk7ywu0vvl1z1",
+        "name": "Pedro Silvestrini"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001sk7d0ef68a0d0",
+      "company": {
+        "id": "cmsswvk7p008gk7ywddbjwrue",
+        "name": "LOGCOMEX",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk80008ik7ywi7vcpgha",
+        "name": "Mônica Gabriella"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520023k7d0oyk0jxiw",
+      "company": {
+        "id": "cmsswvj1b0010k7ywt8ieozy4",
+        "name": "ILOS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkfk009vk7ywgdp1osrw",
+        "name": "Rodrigo Tourinho Nakamura"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww510013k7d0n34zy7ra",
+      "company": {
+        "id": "cmsswvjqz0059k7ywjk6fvmp0",
+        "name": "H&CO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjr9005bk7yw86i7rxk8",
+        "name": "João Pedro Mikinev"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001gk7d0k6xyfq8t",
+      "company": {
+        "id": "cmsswvjz2006xk7yw64x5go9o",
+        "name": "EVMOB",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjzb006zk7ywlqbe9swn",
+        "name": "Lucas Zanon Arantes"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000uk7d0a7zzmipi",
+      "company": {
+        "id": "cmsswvjlh0040k7ywd70hbdba",
+        "name": "CUBO ITAÚ",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjlo0042k7yw7fcfrtr0",
+        "name": "Filipe Guimarães"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww52001qk7d0wm033ebi",
+      "company": {
+        "id": "cmsswvjaw0028k7ywn5xlkb3u",
+        "name": "SODEXO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk6g0089k7ywd6b92rqf",
+        "name": "Marina Zanin"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520024k7d07fuw8rqy",
+      "company": {
+        "id": "cmsswvkg2009yk7ywf1e9uw1t",
+        "name": "MIT ZARAGOZA LOGISTICS CENTER",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkgc00a0k7ywbsh8lgoq",
+        "name": "Spyros Lekkakos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww510019k7d0uesnhwr8",
+      "company": {
+        "id": "cmsswvjus0061k7yw70h1ayf6",
+        "name": "ACTIONSYS",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjv00063k7ywdhgjuhl3",
+        "name": "Leila Santos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001lk7d0xzucn9wt",
+      "company": {
+        "id": "cmsswvk2a007lk7ywqkmujt91",
+        "name": "EUCATEX",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk2h007nk7ywjxn3frl7",
+        "name": "Marcio Sidney Lino Junior"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww510014k7d0y9tfx7xm",
+      "company": {
+        "id": "cmsswvjrn005ek7ywchtx66p1",
+        "name": "FGV EAESP",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjrx005gk7yw9kdqldrn",
+        "name": "Joice Ribeiro Giacon"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001hk7d0hj08je5b",
+      "company": {
+        "id": "cmsswvjzs0072k7ywczc3s2k0",
+        "name": "ILOGG",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvk020074k7ywp153097s",
+        "name": "Luís Cláudio Martão"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001fk7d0lolrxa2r",
+      "company": {
+        "id": "cmsswvju4005wk7ywir66oift",
+        "name": "COOPERCARGA LOGÍSTICA",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjyn006uk7ywmo67ozow",
+        "name": "Lívia Barros"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520029k7d08zkomlby",
+      "company": {
+        "id": "cmsswvkjv00ank7ywarlh10a8",
+        "name": "EDENRED MOBILIDADE",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkk600apk7yweftu1gr9",
+        "name": "Vinicios Fernandes"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520026k7d07qozdmwa",
+      "company": {
+        "id": "cmsswvkhg00a8k7ywq9wdddb8",
+        "name": "EPSON",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvkhq00aak7ywnv98w391",
+        "name": "Tania Fernandes"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000zk7d01exex5z2",
+      "company": {
+        "id": "cmsswvjoa004nk7ywussctemi",
+        "name": "MOKI",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjoh004pk7yw2mh3sxr7",
+        "name": "Guilherme Werneck"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww500010k7d01unj3d43",
+      "company": {
+        "id": "cmsswvjou004sk7ywqr9iujrm",
+        "name": "DROGARIA ARAÚJO",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjp2004uk7ywzhmss7y7",
+        "name": "Helbert Lopes"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
       "severity": "critical"
     }
   ],
   "overdueNextActions": [
     {
-      "id": "grupo-petz-cobasi-kanban-overdue",
+      "id": "cmq9t45ks001wk7o0rej1w262",
       "company": {
-        "id": "grupo-petz-cobasi",
-        "name": "Grupo Petz Cobasi",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 88 dias (FOLLOW UP SENT). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Acompanhar o cronograma de migração de centros de distribuição pós-fusão e mapear decisores de logística do Grupo Petz Cobasi.",
-      "dueAt": "2026-05-18T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "coca-cola-femsa-kanban-overdue",
-      "company": {
-        "id": "coca-cola-femsa",
+        "id": "cmq9t45ks001wk7o0rej1w262",
         "name": "Coca-Cola FEMSA",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 88 dias (FOLLOW UP SENT). [Tier 1 · Score 85] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-05-18T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "opella-kanban-overdue",
+      "id": "cmq9t45fl0007k7o001t4o1aw",
       "company": {
-        "id": "opella",
+        "id": "cmq9t45fl0007k7o001t4o1aw",
         "name": "Opella",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 66 dias (MESSAGE SENT). [Tier 2 · Score 74] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Acompanhar cadência com Igor Costa. Mapear decisor adicional (GM/Diretor Geral Brasil).",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-06-09T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "amazon-brasil-kanban-overdue",
+      "id": "cmq9t45fy000ck7o0nyy7jehr",
       "company": {
-        "id": "amazon-brasil",
-        "name": "Amazon Brasil",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 59 dias (FOLLOW UP SENT). [Tier 1 · Score 98] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-06-16T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cacau-show-kanban-overdue",
-      "company": {
-        "id": "cacau-show",
+        "id": "cmq9t45fy000ck7o0nyy7jehr",
         "name": "Cacau Show",
         "status": "REPLIED_NEGATIVE"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 59 dias (REPLIED NEGATIVE). [Tier 2 · Score 75] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Mapear decisores de logística.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-06-16T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "c-a-brasil-kanban-overdue",
+      "id": "cmq9t45gg000jk7o0qkpnf88n",
       "company": {
-        "id": "c-a-brasil",
+        "id": "cmq9t45gg000jk7o0qkpnf88n",
+        "name": "Amazon Brasil",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-06-16T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmq9t45e70000k7o0jq29szvt",
+      "company": {
+        "id": "cmq9t45e70000k7o0jq29szvt",
         "name": "C&A Brasil",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 58 dias (FOLLOW UP SENT). [Tier 2 · Score 81] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Mapear decisores de Supply Chain/Logística da C&A Brasil via LinkedIn.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-06-17T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "gerdau-kanban-overdue",
+      "id": "cmqjsbyau0000k7zwrt3gzr83",
       "company": {
-        "id": "gerdau",
+        "id": "cmqjsbyau0000k7zwrt3gzr83",
         "name": "Gerdau",
         "status": "CONNECTION_ACCEPTED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 55 dias (CONNECTION ACCEPTED). [Tier 1 · Score 87] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
       "dueAt": "2026-06-20T11:30:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "l-oreal-kanban-overdue",
+      "id": "cmql5g0sf0000k7q80ihp0ek3",
       "company": {
-        "id": "l-oreal",
+        "id": "cmql5g0sf0000k7q80ihp0ek3",
         "name": "L'Oréal",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 54 dias (REPLIED). [Tier 2 · Score 77] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
       "dueAt": "2026-06-21T17:36:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "continental-pneus-kanban-overdue",
+      "id": "cmqp6w551000qk7r4xs866fpz",
       "company": {
-        "id": "continental-pneus",
+        "id": "cmqp6w551000qk7r4xs866fpz",
         "name": "Continental Pneus",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 53 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-06-22T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "bridgestone-kanban-overdue",
+      "id": "cmqjsbydi000tk7zw8z5fv7no",
       "company": {
-        "id": "bridgestone",
+        "id": "cmqjsbydi000tk7zw8z5fv7no",
         "name": "Bridgestone",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 51 dias (FOLLOW UP SENT). [Tier 3 · Score 70] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-06-24T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "samsung-brasil-kanban-overdue",
+      "id": "cmq9t45r5004ck7o0ey99kd8c",
       "company": {
-        "id": "samsung-brasil",
+        "id": "cmq9t45r5004ck7o0ey99kd8c",
         "name": "Samsung Brasil",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 50 dias (FOLLOW UP SENT). [Tier 3 · Score 73] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "lg-electronics-brasil-kanban-overdue",
+      "id": "cmqjsbyci000ek7zwqwobadjt",
       "company": {
-        "id": "lg-electronics-brasil",
+        "id": "cmqjsbyci000ek7zwqwobadjt",
         "name": "LG Electronics Brasil",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 50 dias (FOLLOW UP SENT). [Tier 3 · Score 70] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "tramontina-kanban-overdue",
+      "id": "cmqqwt16f000ik7o8il8uzjxj",
       "company": {
-        "id": "tramontina",
+        "id": "cmqqwt16f000ik7o8il8uzjxj",
+        "name": "Minerva Foods",
+        "status": "DEAL"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-06-25T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqtgcly20003k7gc2s9oizji",
+      "company": {
+        "id": "cmqtgcly20003k7gc2s9oizji",
         "name": "Tramontina",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 48 dias (REPLIED). [Tier 2 · Score 82] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
-      "recommendedAction": "Mapear decisores de Supply Chain/Logística da Tramontina via LinkedIn.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
       "dueAt": "2026-06-27T14:15:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "lojas-renner-kanban-overdue",
+      "id": "cmr0nk5vn0003k75gazq8ykau",
       "company": {
-        "id": "lojas-renner",
+        "id": "cmr0nk5vn0003k75gazq8ykau",
         "name": "Lojas Renner",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 38 dias (REPLIED). [Tier 3 · Score 74] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-07T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "amanco-wavin-kanban-overdue",
+      "id": "cmr9hdwpq0000k7gg9pd987qi",
       "company": {
-        "id": "amanco-wavin",
+        "id": "cmr9hdwpq0000k7gg9pd987qi",
         "name": "Amanco Wavin",
         "status": "REPLIED_NEGATIVE"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 37 dias (REPLIED NEGATIVE). [Tier 3 · Score 71] Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
-      "recommendedAction": "Acompanhar conclusão do investimento de capacidade em Suape-PE; mapear decisores de Supply Chain da Amanco Wavin Brasil quando houver sinal adicional.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
       "dueAt": "2026-07-08T17:06:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "kenvue-kanban-overdue",
+      "id": "cmq9t45p8003lk7o0jcpftg3k",
       "company": {
-        "id": "kenvue",
-        "name": "Kenvue",
-        "status": "CONNECTION_ACCEPTED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 32 dias (CONNECTION ACCEPTED). [Tier 2 · Score 76] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Mapear decisores e validar potencial",
-      "dueAt": "2026-07-13T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cargill-kanban-overdue",
-      "company": {
-        "id": "cargill",
+        "id": "cmq9t45p8003lk7o0jcpftg3k",
         "name": "Cargill",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 32 dias (FOLLOW UP SENT). [Tier 1 · Score 88] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-13T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "nestle-kanban-overdue",
+      "id": "cmr9oddqj0007k78kfo4omrjz",
       "company": {
-        "id": "nestle",
+        "id": "cmr9oddqj0007k78kfo4omrjz",
+        "name": "Kenvue",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-07-13T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqnso2n0008k7o898wwnhtz",
+      "company": {
+        "id": "cmqqnso2n0008k7o898wwnhtz",
         "name": "Nestlé",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 31 dias (REPLIED). [Tier 1 · Score 89] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-13T20:30:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "vulcabras-kanban-overdue",
+      "id": "cmrnsiw4d000wk7dskfx6urgd",
       "company": {
-        "id": "vulcabras",
+        "id": "cmrnsiw4d000wk7dskfx6urgd",
+        "name": "Theo e Bia",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-07-19T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzenod000ak7tgc0c9huxf",
+      "company": {
+        "id": "cmruzenod000ak7tgc0c9huxf",
+        "name": "Raízen",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar notícia de expansão ou movimento de negócio e preparar gancho executivo.",
+      "dueAt": "2026-07-20T02:33:30.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqs69y750002k78sabk3cg6y",
+      "company": {
+        "id": "cmqs69y750002k78sabk3cg6y",
         "name": "Vulcabras",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 24 dias (FOLLOW UP SENT). [Tier 2 · Score 84] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Mapear decisores de logística/distribuição da Vulcabras, com foco na operação do CD de Extrema/MG.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-21T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "jbs-kanban-overdue",
+      "id": "cmrml4xk4000mk7d0q2vlfbcn",
       "company": {
-        "id": "jbs",
-        "name": "JBS",
-        "status": "MESSAGE_SENT"
+        "id": "cmrml4xk4000mk7d0q2vlfbcn",
+        "name": "Mission of Brazil to the European Communities",
+        "status": "MAPPED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 23 dias (MESSAGE SENT). [Tier 1 · Score 92] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Confirmar qual decisor está incorreto. Mapear VP ou C-level de Supply Chain/Operações JBS Brasil (acima de Diretor). Aécio Patuzzi (Swift/JBS) confirmado ativo como Diretor SC.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-22T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "seara-kanban-overdue",
+      "id": "cmqqxfnzd0018k7o8cfbr68qi",
       "company": {
-        "id": "seara",
+        "id": "cmqqxfnzd0018k7o8cfbr68qi",
         "name": "Seara",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 23 dias (MESSAGE SENT). [Tier 2 · Score 84] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-22T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "torre-e-cia-supermercados-kanban-overdue",
+      "id": "cmruzeip50000k7tong0v7xer",
       "company": {
-        "id": "torre-e-cia-supermercados",
+        "id": "cmruzeip50000k7tong0v7xer",
+        "name": "Ball Corporation",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.306Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeiv00006k7toqbhf78ks",
+      "company": {
+        "id": "cmruzeiv00006k7toqbhf78ks",
+        "name": "Realize Human",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeivr0009k7tojgdkszqo",
+      "company": {
+        "id": "cmruzeivr0009k7tojgdkszqo",
+        "name": "Instituto Cisne Norte e Nordeste",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeix0000ek7to3hmjb3hq",
+      "company": {
+        "id": "cmruzeix0000ek7to3hmjb3hq",
+        "name": "Matec Engenharia",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeiu30003k7touh9wg5wt",
+      "company": {
+        "id": "cmruzeiu30003k7touh9wg5wt",
+        "name": "DHL Supply Chain",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrl2cae20011k774t8u03skw",
+      "company": {
+        "id": "cmrl2cae20011k774t8u03skw",
         "name": "Torre e Cia Supermercados",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 22 dias (MESSAGE SENT). [Tier 2 · Score 79] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Identificar Gerente de Logística / CD da Torre e Cia Supermercados no RJ.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-23T03:00:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "madeiramadeira-kanban-overdue",
+      "id": "cmrnsivxe0004k7dsqcu1qhv6",
       "company": {
-        "id": "madeiramadeira",
+        "id": "cmrnsivxe0004k7dsqcu1qhv6",
         "name": "MadeiraMadeira",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 21 dias (REPLIED). [Tier 2 · Score 78] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Mapear decisores e validar potencial",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-24T18:54:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "vale-kanban-overdue",
+      "id": "cmqti1t0i000bk7gc5guq6ez7",
       "company": {
-        "id": "vale",
+        "id": "cmqti1t0i000bk7gc5guq6ez7",
         "name": "Vale",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 21 dias (FOLLOW UP SENT). [Tier 2 · Score 78] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-07-24T19:24:00.000Z",
       "severity": "critical"
     },
     {
-      "id": "xmxyg-kanban-overdue",
+      "id": "cmsdb7e7q0000k7todio38gdj",
       "company": {
-        "id": "xmxyg",
+        "id": "cmsdb7e7q0000k7todio38gdj",
+        "name": "Johnson & Johnson MedTech",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-08-04T14:13:16.508Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsdb7eaf0006k7to2brsei53",
+      "company": {
+        "id": "cmsdb7eaf0006k7to2brsei53",
+        "name": "Integralmédica Suplementos Nutricionais",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-08-04T14:13:16.509Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsdb7e9v0003k7ton02lvgjw",
+      "company": {
+        "id": "cmsdb7e9v0003k7ton02lvgjw",
+        "name": "Xiamen Xiangyu Co., Ltd.",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-08-04T14:13:16.509Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsdb7ecr000gk7toq83pnfht",
+      "company": {
+        "id": "cmsdb7ecr000gk7toq83pnfht",
+        "name": "Ultragaz",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-08-04T14:13:16.509Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsdbkb9o0000k7u4v7q8mzo2",
+      "company": {
+        "id": "cmsdbkb9o0000k7u4v7q8mzo2",
+        "name": "Alsco Uniformes Brasil",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-08-04T14:23:19.074Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmshgsxts02tik7hkgcfr8ekg",
+      "company": {
+        "id": "cmshgsxts02tik7hkgcfr8ekg",
         "name": "XMXYG",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 6 dias (REPLIED). Ação registrada: \"Responder e avançar conversa (reply recebido no LinkedIn).\"",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
       "dueAt": "2026-08-08T16:53:00.000Z",
-      "severity": "warning"
+      "severity": "critical"
     },
     {
-      "id": "grupo-koch-s-a-kanban-overdue",
+      "id": "cmshu8he8001dk7cciwp3zjhf",
       "company": {
-        "id": "grupo-koch-s-a",
+        "id": "cmshu8he8001dk7cciwp3zjhf",
         "name": "Grupo Koch S A",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 1 dia (MESSAGE SENT). [Tier 1 · Score 87] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Identificar Diretor/Gerente de Logística do Grupo Koch em SC; avaliar CD de distribuição principal.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-08-13T03:00:00.000Z",
-      "severity": "warning"
+      "severity": "critical"
     },
     {
-      "id": "casas-bahia-kanban-overdue",
+      "id": "cmqjsbyd6000ok7zw8yagmcc0",
       "company": {
-        "id": "casas-bahia",
+        "id": "cmqjsbyd6000ok7zw8yagmcc0",
         "name": "Casas Bahia",
         "status": "CONNECTION_ACCEPTED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 1 dia (CONNECTION ACCEPTED). [Tier 2 · Score 83] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-08-13T19:21:33.000Z",
-      "severity": "warning"
+      "severity": "critical"
     },
     {
-      "id": "klabin-kanban-overdue",
+      "id": "cmshu8ha5000pk7cc7nz5rf6b",
       "company": {
-        "id": "klabin",
-        "name": "Klabin",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 0 dias (MESSAGE SENT). [Tier 2 · Score 79] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "warning"
-    },
-    {
-      "id": "krona-tubos-e-conexoes-kanban-overdue",
-      "company": {
-        "id": "krona-tubos-e-conexoes",
+        "id": "cmshu8ha5000pk7cc7nz5rf6b",
         "name": "Krona Tubos e Conexões",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 0 dias (MESSAGE SENT). [Tier 3 · Score 64] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Confirmar faturamento da Krona e mapear decisores de Supply Chain/Logística via LinkedIn.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "warning"
+      "severity": "critical"
     },
     {
-      "id": "assai-atacadista-kanban-overdue",
+      "id": "cmrnzoj7d0008k7gw066zexht",
       "company": {
-        "id": "assai-atacadista",
+        "id": "cmrnzoj7d0008k7gw066zexht",
+        "name": "Grupo Mateus",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrozupku0015k7lsychph5ih",
+      "company": {
+        "id": "cmrozupku0015k7lsychph5ih",
+        "name": "Tenda Atacado",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsj1qefu0004k7rczetdbsol",
+      "company": {
+        "id": "cmsj1qefu0004k7rczetdbsol",
+        "name": "SHEIN",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmr97qk35000ck7ikdywcuq5k",
+      "company": {
+        "id": "cmr97qk35000ck7ikdywcuq5k",
+        "name": "Campari Group",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmroz9tt80005k7ls23wgwnv0",
+      "company": {
+        "id": "cmroz9tt80005k7ls23wgwnv0",
+        "name": "Atacadão",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrl2cad1000uk774bixw7047",
+      "company": {
+        "id": "cmrl2cad1000uk774bixw7047",
+        "name": "Grupo DMA / Epa",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cms611cgy0017k7oco4rkjmbc",
+      "company": {
+        "id": "cms611cgy0017k7oco4rkjmbc",
+        "name": "Klabin",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqnb6e00006k7o8zjztmp3u",
+      "company": {
+        "id": "cmqqnb6e00006k7o8zjztmp3u",
         "name": "Assaí Atacadista",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Ação vencida há 0 dias (FOLLOW UP SENT). [Tier 1 · Score 92] Ação registrada: \"Enviar follow-up de cadência ABM no LinkedIn.\"",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "warning"
+      "severity": "critical"
+    },
+    {
+      "id": "cmrdgzv4u0007k77wsd8j8pzs",
+      "company": {
+        "id": "cmrdgzv4u0007k77wsd8j8pzs",
+        "name": "FORTLEV",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cms4m2n2z0006k7fgk379jrkd",
+      "company": {
+        "id": "cms4m2n2z0006k7fgk379jrkd",
+        "name": "ZAMP (Burger King Brasil)",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrl2caf50018k774hmcvgo27",
+      "company": {
+        "id": "cmrl2caf50018k774hmcvgo27",
+        "name": "Giassi Supermercados",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cms611chp001ck7ocsuk2wgs6",
+      "company": {
+        "id": "cms611chp001ck7ocsuk2wgs6",
+        "name": "Suzano",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T12:03:31.599Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrozuphs000sk7lshtz7m8u5",
+      "company": {
+        "id": "cmrozuphs000sk7lshtz7m8u5",
+        "name": "ALE Combustíveis",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T12:03:31.600Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqnssur0009k7o889yyn6m2",
+      "company": {
+        "id": "cmqqnssur0009k7o889yyn6m2",
+        "name": "Votorantim Cimentos",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
+      "dueAt": "2026-08-14T12:03:31.600Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqle46c0000k79sd3t0zgym",
+      "company": {
+        "id": "cmqqle46c0000k79sd3t0zgym",
+        "name": "Leroy Merlin Brasil",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-08-14T16:52:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmshu8i8j005ek7ccqrg5l4zb",
+      "company": {
+        "id": "cmshu8i8j005ek7ccqrg5l4zb",
+        "name": "Grupo Boticário",
+        "status": "DEAL"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-08-16T21:05:00.000Z",
+      "severity": "critical"
     }
   ],
   "staleCompanies30Days": [
     {
-      "id": "cimed-kanban-stale",
+      "id": "cmqjsbyci000ek7zwqwobadjt",
       "company": {
-        "id": "cimed",
-        "name": "CIMED",
-        "status": "DEAL"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 57 dias (DEAL). [Tier 1 · Score 87]",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-06-18T17:49:20.600Z",
-      "severity": "critical"
-    },
-    {
-      "id": "magazine-luiza-kanban-stale",
-      "company": {
-        "id": "magazine-luiza",
-        "name": "Magazine Luiza",
-        "status": "DEAL"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 57 dias (DEAL). [Tier 1 · Score 90]",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-06-18T17:49:23.036Z",
-      "severity": "critical"
-    },
-    {
-      "id": "lg-electronics-brasil-kanban-stale",
-      "company": {
-        "id": "lg-electronics-brasil",
+        "id": "cmqjsbyci000ek7zwqwobadjt",
         "name": "LG Electronics Brasil",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 57 dias (FOLLOW UP SENT). [Tier 3 · Score 70]",
-      "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
-      "dueAt": "2026-06-18T17:51:51.016Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "ambev-kanban-stale",
+      "id": "cmqp6w551000qk7r4xs866fpz",
       "company": {
-        "id": "ambev",
-        "name": "Ambev",
-        "status": "PAUSED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 57 dias (PAUSED). [Tier 1 · Score 87]",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-06-18T19:15:20.575Z",
-      "severity": "critical"
-    },
-    {
-      "id": "continental-pneus-kanban-stale",
-      "company": {
-        "id": "continental-pneus",
+        "id": "cmqp6w551000qk7r4xs866fpz",
         "name": "Continental Pneus",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 57 dias (REPLIED). [Tier 2 · Score 82]",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-06-18T19:15:28.654Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "neo-quimica-hypera-kanban-stale",
+      "id": "cmqjvk2tb0008k7s0ojv863er",
       "company": {
-        "id": "neo-quimica-hypera",
-        "name": "Neo Química / Hypera",
-        "status": "PAUSED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 57 dias (PAUSED). [Tier 2 · Score 83]",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-06-18T19:15:46.525Z",
-      "severity": "critical"
-    },
-    {
-      "id": "eurofarma-kanban-stale",
-      "company": {
-        "id": "eurofarma",
+        "id": "cmqjvk2tb0008k7s0ojv863er",
         "name": "Eurofarma",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 57 dias (FOLLOW UP SENT). [Tier 2 · Score 82]",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-06-18T19:16:35.916Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "natura-kanban-stale",
+      "id": "cmqqnsuku000ak7o86ik5ajp7",
       "company": {
-        "id": "natura",
-        "name": "Natura",
-        "status": "DEAL"
+        "id": "cmqqnsuku000ak7o86ik5ajp7",
+        "name": "CBA - Companhia Brasileira de Alumínio",
+        "status": "MAPPED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 56 dias (DEAL). [Tier 2 · Score 84]",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-06-19T18:56:44.243Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "bunge-brasil-kanban-stale",
+      "id": "cmqqwy7x1000jk7o8gj71hz56",
       "company": {
-        "id": "bunge-brasil",
+        "id": "cmqqwy7x1000jk7o8gj71hz56",
         "name": "Bunge Brasil",
         "status": "CONNECTION_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 52 dias (CONNECTION SENT). [Tier 1 · Score 85]",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-06-23T17:23:35.701Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "amaggi-kanban-stale",
+      "id": "cmqqxoqyo0000k76oy1n1ps2r",
       "company": {
-        "id": "amaggi",
+        "id": "cmqqxoqyo0000k76oy1n1ps2r",
         "name": "Amaggi",
         "status": "CONNECTION_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 52 dias (CONNECTION SENT). [Tier 2 · Score 84]",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-06-23T17:44:13.437Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "arauco-cmpc-brasil-kanban-stale",
+      "id": "cmqs0ktvw0000k7agv1huyukk",
       "company": {
-        "id": "arauco-cmpc-brasil",
+        "id": "cmqs0ktvw0000k7agv1huyukk",
         "name": "Arauco (CMPC Brasil)",
         "status": "CONNECTION_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 51 dias (CONNECTION SENT). [Tier 1 · Score 93]",
-      "recommendedAction": "Mapear decisores de logística/supply chain da CMPC Brasil/Arauco e identificar responsáveis pelas contratações de transporte rodoviário do Projeto Sucuriu.",
-      "dueAt": "2026-06-24T11:52:55.624Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "bracell-kanban-stale",
+      "id": "cmqs1v1rc0004k7agcwb5lh1f",
       "company": {
-        "id": "bracell",
+        "id": "cmqs1v1rc0004k7agcwb5lh1f",
         "name": "Bracell",
         "status": "CONNECTION_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 51 dias (CONNECTION SENT). [Tier 1 · Score 85]",
-      "recommendedAction": "Mapear decisores de logística e transporte da Bracell (SP e MS) e validar cronograma de implantação das novas plantas em Água Clara e Bataguassu.",
-      "dueAt": "2026-06-24T12:28:52.006Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "sherwin-williams-brasil-kanban-stale",
+      "id": "cmqs1vcv30005k7agcudalq2i",
       "company": {
-        "id": "sherwin-williams-brasil",
+        "id": "cmqs1vcv30005k7agcudalq2i",
         "name": "Sherwin-Williams Brasil",
         "status": "CONNECTION_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 51 dias (CONNECTION SENT). [Tier 2 · Score 84]",
-      "recommendedAction": "Mapear decisores de Supply Chain/Logística da Sherwin-Williams Brasil pós-integração com a divisão de tintas decorativas da BASF (Suvinil/Coral).",
-      "dueAt": "2026-06-24T12:29:06.398Z",
-      "severity": "critical"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
     },
     {
-      "id": "tramontina-kanban-stale",
+      "id": "cmqth3i760004k7gc32ts0ac8",
       "company": {
-        "id": "tramontina",
+        "id": "cmqth3i760004k7gc32ts0ac8",
+        "name": "Grendene",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtgcly20003k7gc2s9oizji",
+      "company": {
+        "id": "cmqtgcly20003k7gc2s9oizji",
         "name": "Tramontina",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 50 dias (REPLIED). [Tier 2 · Score 82]",
-      "recommendedAction": "Mapear decisores de Supply Chain/Logística da Tramontina via LinkedIn.",
-      "dueAt": "2026-06-25T14:15:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "arcelormittal-kanban-stale",
-      "company": {
-        "id": "arcelormittal",
-        "name": "ArcelorMittal",
-        "status": "PAUSED"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 39 dias (PAUSED). [Tier 2 · Score 82]",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-07-06T03:00:00.000Z",
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
       "severity": "warning"
     },
     {
-      "id": "opella-kanban-stale",
+      "id": "cmq9t45fl0007k7o001t4o1aw",
       "company": {
-        "id": "opella",
+        "id": "cmq9t45fl0007k7o001t4o1aw",
         "name": "Opella",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 39 dias (MESSAGE SENT). [Tier 2 · Score 74]",
-      "recommendedAction": "Acompanhar cadência com Igor Costa. Mapear decisor adicional (GM/Diretor Geral Brasil).",
-      "dueAt": "2026-07-06T14:34:37.779Z",
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
       "severity": "warning"
     },
     {
-      "id": "amanco-wavin-kanban-stale",
+      "id": "cmqqnso2n0008k7o898wwnhtz",
       "company": {
-        "id": "amanco-wavin",
-        "name": "Amanco Wavin",
-        "status": "REPLIED_NEGATIVE"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 39 dias (REPLIED NEGATIVE). [Tier 3 · Score 71]",
-      "recommendedAction": "Acompanhar conclusão do investimento de capacidade em Suape-PE; mapear decisores de Supply Chain da Amanco Wavin Brasil quando houver sinal adicional.",
-      "dueAt": "2026-07-06T17:11:00.000Z",
-      "severity": "warning"
-    },
-    {
-      "id": "nestle-kanban-stale",
-      "company": {
-        "id": "nestle",
+        "id": "cmqqnso2n0008k7o898wwnhtz",
         "name": "Nestlé",
         "status": "REPLIED"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 38 dias (REPLIED). [Tier 1 · Score 89]",
-      "recommendedAction": "Validar gatilho atual e preparar abordagem via remetente correto conforme hierarquia ABM.",
-      "dueAt": "2026-07-06T20:30:00.000Z",
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
       "severity": "warning"
     },
     {
-      "id": "bridgestone-kanban-stale",
+      "id": "cmqjsbydi000tk7zw8z5fv7no",
       "company": {
-        "id": "bridgestone",
+        "id": "cmqjsbydi000tk7zw8z5fv7no",
         "name": "Bridgestone",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Sem interação há 38 dias (FOLLOW UP SENT). [Tier 3 · Score 70]",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": "2026-07-06T20:36:39.271Z",
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
       "severity": "warning"
     },
     {
-      "id": "grupo-petz-cobasi-kanban-stale",
+      "id": "cmq9t45kb001rk7o0ceh395mp",
       "company": {
-        "id": "grupo-petz-cobasi",
+        "id": "cmq9t45kb001rk7o0ceh395mp",
         "name": "Grupo Petz Cobasi",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45e70000k7o0jq29szvt",
+      "company": {
+        "id": "cmq9t45e70000k7o0jq29szvt",
+        "name": "C&A Brasil",
+        "status": "FOLLOW_UP_SENT"
       },
-      "reason": "Sem interação há 30 dias (FOLLOW UP SENT). [Tier 2 · Score 82]",
-      "recommendedAction": "Acompanhar o cronograma de migração de centros de distribuição pós-fusão e mapear decisores de logística do Grupo Petz Cobasi.",
-      "dueAt": "2026-07-14T20:43:35.525Z",
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmqjvk2s10001k7s0qbtzkfyo",
+      "company": {
+        "id": "cmqjvk2s10001k7s0qbtzkfyo",
+        "name": "MBRF (Marfrig + BRF)",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmqs69y750002k78sabk3cg6y",
+      "company": {
+        "id": "cmqs69y750002k78sabk3cg6y",
+        "name": "Vulcabras",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmqqxfnzd0018k7o8cfbr68qi",
+      "company": {
+        "id": "cmqqxfnzd0018k7o8cfbr68qi",
+        "name": "Seara",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrml4xk4000mk7d0q2vlfbcn",
+      "company": {
+        "id": "cmrml4xk4000mk7d0q2vlfbcn",
+        "name": "Mission of Brazil to the European Communities",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45mw002lk7o00wohyh88",
+      "company": {
+        "id": "cmq9t45mw002lk7o00wohyh88",
+        "name": "JBS",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrl2cae20011k774t8u03skw",
+      "company": {
+        "id": "cmrl2cae20011k774t8u03skw",
+        "name": "Torre e Cia Supermercados",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrnsiw4d000wk7dskfx6urgd",
+      "company": {
+        "id": "cmrnsiw4d000wk7dskfx6urgd",
+        "name": "Theo e Bia",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrny457f0025k74g8nb19mxr",
+      "company": {
+        "id": "cmrny457f0025k74g8nb19mxr",
+        "name": "Toré Gestão e Representação Comercial",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrny459s002hk74gany0dtmg",
+      "company": {
+        "id": "cmrny459s002hk74gany0dtmg",
+        "name": "Movida Aluguel de Carros",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrny453j001jk74g3qsjeme0",
+      "company": {
+        "id": "cmrny453j001jk74g3qsjeme0",
+        "name": "Instituto Strabos",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrny4547001ok74ges6ly6re",
+      "company": {
+        "id": "cmrny4547001ok74ges6ly6re",
+        "name": "Soluções eSales",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrny455q001vk74gn6oscwa8",
+      "company": {
+        "id": "cmrny455q001vk74gn6oscwa8",
+        "name": "Inteli - Instituto de Tecnologia e Liderança",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrnyyafw001mk7t01cfopw6t",
+      "company": {
+        "id": "cmrnyyafw001mk7t01cfopw6t",
+        "name": "Freshworks",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrovnrd6001yk78w44bjohu7",
+      "company": {
+        "id": "cmrovnrd6001yk78w44bjohu7",
+        "name": "Tahto",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrovnrdx0023k78w2u66809b",
+      "company": {
+        "id": "cmrovnrdx0023k78w2u66809b",
+        "name": "Nordex Group",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmqti1t0i000bk7gc5guq6ez7",
+      "company": {
+        "id": "cmqti1t0i000bk7gc5guq6ez7",
+        "name": "Vale",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9jlczr0000k7r4ca25gjv7",
+      "company": {
+        "id": "cmq9jlczr0000k7r4ca25gjv7",
+        "name": "PX Sandbox",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
       "severity": "warning"
     }
   ],
-  "unmatchedInboxThreads": [],
+  "unmatchedInboxThreads": [
+    {
+      "id": "cmsivh86r0007k780e3jdcpwn",
+      "company": null,
+      "contact": {
+        "id": "cmsivh86r0007k780e3jdcpwn",
+        "name": "Luciano Sousa"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-12T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmsivh8fi000tk780lswsp6w0",
+      "company": null,
+      "contact": {
+        "id": "cmsivh8fi000tk780lswsp6w0",
+        "name": "Luciano Tótola"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-07T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmsivh8f8000rk780j68poqgv",
+      "company": null,
+      "contact": {
+        "id": "cmsivh8f8000rk780j68poqgv",
+        "name": "ROGERIO KOHNTOPP"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-07T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr9hdx2y0015k7ggu3xfsgfp",
+      "company": null,
+      "contact": {
+        "id": "cmr9hdx2y0015k7ggu3xfsgfp",
+        "name": "RENATA CRISTINA LOURENÇO FIORAVANTE"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-07T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmsivh8al000fk780bb1gqcxy",
+      "company": null,
+      "contact": {
+        "id": "cmsivh8al000fk780bb1gqcxy",
+        "name": "Rogério Andrade"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-07T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8j5e009mk7ccz9amgorr",
+      "company": null,
+      "contact": {
+        "id": "cmshu8j5e009mk7ccz9amgorr",
+        "name": "Rafael H."
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8iu10084k7ccn1cakvpe",
+      "company": null,
+      "contact": {
+        "id": "cmshu8iu10084k7ccn1cakvpe",
+        "name": "Beatriz Gomes Lima"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8ijk006qk7ccys7go5jk",
+      "company": null,
+      "contact": {
+        "id": "cmshu8ijk006qk7ccys7go5jk",
+        "name": "Fabio Mattos"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8i790058k7cc7ebdczf2",
+      "company": null,
+      "contact": {
+        "id": "cmshu8i790058k7cc7ebdczf2",
+        "name": "Vânia Ferreira Xavier"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8i6q0056k7ccjc9nespk",
+      "company": null,
+      "contact": {
+        "id": "cmshu8i6q0056k7ccjc9nespk",
+        "name": "Valéria Estelita"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8hvp0042k7ccb7sty4nv",
+      "company": null,
+      "contact": {
+        "id": "cmshu8hvp0042k7ccb7sty4nv",
+        "name": "Gustavo Sanches"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8hgv001rk7cc90edqydr",
+      "company": null,
+      "contact": {
+        "id": "cmshu8hgv001rk7cc90edqydr",
+        "name": "Andreia Vitoriano"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrj80cgt000wk748xths7z96",
+      "company": null,
+      "contact": {
+        "id": "cmrj80cgt000wk748xths7z96",
+        "name": "Luis Felipe Dovichi Mendes"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-07-06T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr9hjy0l000vk7x0iq9sqs9f",
+      "company": null,
+      "contact": {
+        "id": "cmr9hjy0l000vk7x0iq9sqs9f",
+        "name": "Diego Coelho"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-07-06T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welgx000bk7hk3btf2n8a",
+      "company": null,
+      "contact": {
+        "id": "cmr0welgx000bk7hk3btf2n8a",
+        "name": "Maximiliano Limberger"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welgl0009k7hkibzuhfw6",
+      "company": null,
+      "contact": {
+        "id": "cmr0welgl0009k7hkibzuhfw6",
+        "name": "Gabriel Dal Sasso"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welgf0007k7hks3pigr35",
+      "company": null,
+      "contact": {
+        "id": "cmr0welgf0007k7hks3pigr35",
+        "name": "Cristiano Quadros"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welga0005k7hkmrfhkk3l",
+      "company": null,
+      "contact": {
+        "id": "cmr0welga0005k7hkmrfhkk3l",
+        "name": "Ricardo Schilder Lima"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr0welfp0003k7hk5tos2ied",
+      "company": null,
+      "contact": {
+        "id": "cmr0welfp0003k7hk5tos2ied",
+        "name": "Vinicius Benincasa"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-30T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtxtzv80007k7pk53dx5rvy",
+      "company": null,
+      "contact": {
+        "id": "cmqtxtzv80007k7pk53dx5rvy",
+        "name": "Carlos H. Medeiros"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-29T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtxtzv40005k7pk39we3cnd",
+      "company": null,
+      "contact": {
+        "id": "cmqtxtzv40005k7pk39we3cnd",
+        "name": "Rafael Romani"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-29T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtxtzuu0003k7pk2aknfpvx",
+      "company": null,
+      "contact": {
+        "id": "cmqtxtzuu0003k7pk2aknfpvx",
+        "name": "Marcos Parodes"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-29T14:15:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqtxtztz0001k7pkm2plmmfd",
+      "company": null,
+      "contact": {
+        "id": "cmqtxtztz0001k7pkm2plmmfd",
+        "name": "Leandro Luiz Katayama Ribeiro"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-29T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rl4d0003k704mqstzvgh",
+      "company": null,
+      "contact": {
+        "id": "cmql5rl4d0003k704mqstzvgh",
+        "name": "Felipe Rosa"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-18T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rl420001k7040ozugou8",
+      "company": null,
+      "contact": {
+        "id": "cmql5rl420001k7040ozugou8",
+        "name": "Alex Soares"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-18T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqscw6a60007k780eq6zdkp4",
+      "company": null,
+      "contact": {
+        "id": "cmqscw6a60007k780eq6zdkp4",
+        "name": "Marcelo Fornereto"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-24T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqscw69z0005k780su8wezdp",
+      "company": null,
+      "contact": {
+        "id": "cmqscw69z0005k780su8wezdp",
+        "name": "Fábio José Silva"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-24T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqscw69u0003k780gwoau5sk",
+      "company": null,
+      "contact": {
+        "id": "cmqscw69u0003k780gwoau5sk",
+        "name": "Luciano Xavier de Miranda"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-24T17:19:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqscw68t0001k7804ro5tnrg",
+      "company": null,
+      "contact": {
+        "id": "cmqscw68t0001k7804ro5tnrg",
+        "name": "Leonardo Alfaro"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-24T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqr4f74u0003k720qyiqsvjn",
+      "company": null,
+      "contact": {
+        "id": "cmqr4f74u0003k720qyiqsvjn",
+        "name": "Fabio Artifon"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-23T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqr4f7480001k720mwtp3bzj",
+      "company": null,
+      "contact": {
+        "id": "cmqr4f7480001k720mwtp3bzj",
+        "name": "ADRIANO ROSA DELFINO"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-23T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqqwison0001k73stu2xokmo",
+      "company": null,
+      "contact": {
+        "id": "cmqqwison0001k73stu2xokmo",
+        "name": "Marcelo Simões Pato"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-23T16:45:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqpny4f70005k7zctdmzku3w",
+      "company": null,
+      "contact": {
+        "id": "cmqpny4f70005k7zctdmzku3w",
+        "name": "Eduardo Loyola"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-22T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqpny4df0001k7zcbixhtf2b",
+      "company": null,
+      "contact": {
+        "id": "cmqpny4df0001k7zcbixhtf2b",
+        "name": "Ricardo Dinelli"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-22T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rlax001ck704c6u8qi5b",
+      "company": null,
+      "contact": {
+        "id": "cmql5rlax001ck704c6u8qi5b",
+        "name": "José Amaral"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-09T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmqp6gjfi0001k7agc00qn18p",
+      "company": null,
+      "contact": {
+        "id": "cmqp6gjfi0001k7agc00qn18p",
+        "name": "Felipe Feteira do Vale"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-22T17:36:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rlb2001ek704zgc87b08",
+      "company": null,
+      "contact": {
+        "id": "cmql5rlb2001ek704zgc87b08",
+        "name": "Thomas Gris"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-09T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmql5rl4h0005k704di77xyab",
+      "company": null,
+      "contact": {
+        "id": "cmql5rl4h0005k704di77xyab",
+        "name": "Artur Izaias"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-06-19T11:32:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45sa004uk7o02akwdnmh",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45sa004uk7o02akwdnmh",
+        "name": "Ricardo Capello"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-04-13T16:48:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45k6001qk7o0c6hbpccp",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45k6001qk7o0c6hbpccp",
+        "name": "Olinto Lopes Neto"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-11T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45jy001ok7o0csaaafqo",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45jy001ok7o0csaaafqo",
+        "name": "Alexandre Westphalen"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-11T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45io001ck7o0mgw1o8s5",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45io001ck7o0mgw1o8s5",
+        "name": "Rafael Caldas"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-14T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45ii001ak7o05ykroxna",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45ii001ak7o05ykroxna",
+        "name": "Luciana de Andrade"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-15T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45i60016k7o0ez5hotlz",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45i60016k7o0ez5hotlz",
+        "name": "Daniel Castello Branco Augusto"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-18T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45hi000zk7o0gw3xnm7y",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45hi000zk7o0gw3xnm7y",
+        "name": "Rodrigo Lima"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-18T19:46:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45hf000xk7o0leptlt73",
+      "company": null,
+      "contact": {
+        "id": "cmq9t45hf000xk7o0leptlt73",
+        "name": "Rafael Ferreira Costa"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-05-20T03:00:00.000Z",
+      "severity": "warning"
+    }
+  ],
   "pendingHandoffs": [],
   "newSignalsWithoutNextAction": [],
   "summary": {
     "highTierNotStarted": 24,
-    "recentConnectionsSent": 6,
-    "acceptedConnectionsWithoutMessage": 38,
-    "overdueNextActions": 30,
-    "staleCompanies30Days": 20,
-    "unmatchedInboxThreads": 0,
+    "recentConnectionsSent": 55,
+    "acceptedConnectionsWithoutMessage": 78,
+    "overdueNextActions": 56,
+    "staleCompanies30Days": 33,
+    "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0
   }

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-14T18:12:52.961Z",
+  "generatedAt": "2026-08-17T11:43:45.073Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
-    "weekKey": "2026-S33",
+    "weekKey": "2026-S34",
     "totalCompanies": 124,
     "activeCompanies": 117,
     "pausedCompanies": 7,
@@ -15,14 +15,14 @@
     "companyDealRate": 0.05982905982905983
   },
   "sample": {
-    "activeContacts": 227,
-    "replies": 21,
+    "activeContacts": 228,
+    "replies": 22,
     "advanced": 12,
     "negatives": 1,
     "noResponse": 186,
-    "replyRate": 0.09251101321585903,
-    "advancedRate": 0.05286343612334802,
-    "avgDaysToFirstReply": 7
+    "replyRate": 0.09649122807017543,
+    "advancedRate": 0.05263157894736842,
+    "avgDaysToFirstReply": 6.909090909090909
   },
   "bySegment": [
     {
@@ -97,13 +97,13 @@
     },
     {
       "segment": "Segmento a classificar",
-      "total": 143,
-      "responded": 12,
+      "total": 144,
+      "responded": 13,
       "advanced": 6,
       "negative": 1,
-      "replyRate": 0.08391608391608392,
-      "advancedRate": 0.04195804195804196,
-      "avgDaysToFirstReply": 6.666666666666667
+      "replyRate": 0.09027777777777778,
+      "advancedRate": 0.041666666666666664,
+      "avgDaysToFirstReply": 6.538461538461538
     },
     {
       "segment": "Automotivo & Pneus",
@@ -169,13 +169,13 @@
     },
     {
       "seniority": "C-level / VP",
-      "total": 43,
-      "responded": 4,
+      "total": 44,
+      "responded": 5,
       "advanced": 2,
       "negative": 1,
-      "replyRate": 0.09302325581395349,
-      "advancedRate": 0.046511627906976744,
-      "avgDaysToFirstReply": 13.75
+      "replyRate": 0.11363636363636363,
+      "advancedRate": 0.045454545454545456,
+      "avgDaysToFirstReply": 12
     }
   ],
   "byFunctionArea": [
@@ -191,12 +191,12 @@
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 157,
-      "responded": 19,
+      "total": 158,
+      "responded": 20,
       "advanced": 10,
       "negative": 1,
-      "replyRate": 0.12101910828025478,
-      "advancedRate": 0.06369426751592357,
+      "replyRate": 0.12658227848101267,
+      "advancedRate": 0.06329113924050633,
       "avgDaysToFirstReply": 5
     },
     {
@@ -243,13 +243,13 @@
   "byTimeBand": [
     {
       "timeBand": "Antes das 08h",
-      "total": 77,
-      "responded": 13,
+      "total": 78,
+      "responded": 14,
       "advanced": 5,
       "negative": 1,
-      "replyRate": 0.16883116883116883,
-      "advancedRate": 0.06493506493506493,
-      "avgDaysToFirstReply": 8.384615384615385
+      "replyRate": 0.1794871794871795,
+      "advancedRate": 0.0641025641025641,
+      "avgDaysToFirstReply": 8.142857142857142
     },
     {
       "timeBand": "12h-17h59",
