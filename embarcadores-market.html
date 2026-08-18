@@ -408,6 +408,7 @@
 <script>
   const SEGMENT_COLORS = {
     "E-commerce & Varejo":               { dot: "#297ACC", top: "#297ACC" },
+    "Supermercadistas":                  { dot: "#16A34A", top: "#16A34A" },
     "Farmacêutico & Saúde":              { dot: "#8992A3", top: "#8992A3" },
     "Alimentos & Bebidas":               { dot: "#E7A31E", top: "#E7A31E" },
     "Cosméticos & Higiene":              { dot: "#D83598", top: "#D83598" },
@@ -415,7 +416,7 @@
     "Indústria Pesada":                  { dot: "#7D3DC5", top: "#7D3DC5" },
     "Automotivo & Pneus":                { dot: "#1AADA9", top: "#1AADA9" },
     "Agro & Commodities":                { dot: "#78BE14", top: "#78BE14" },
-    "Eletro & Tecnologia":                { dot: "#E7A31E", top: "#E7A31E" },
+    "Eletro & Tecnologia":               { dot: "#E7A31E", top: "#E7A31E" },
     "Logística & Transporte":            { dot: "#6B778C", top: "#6B778C" },
     "Construção Civil":                  { dot: "#6B778C", top: "#6B778C" },
     "Têxtil & Vestuário":                { dot: "#7D3DC5", top: "#7D3DC5" }
@@ -426,15 +427,16 @@
     "Alimentos & Bebidas":             { pct: 11.0, posicao: 1,  nota: "≈R$1,3tri/ano (ABIA, receita líquida da indústria de alimentos e bebidas) ÷ PIB R$11,7tri (IBGE, 2024)." },
     "Combustíveis, Energia & Química": { pct: 9.0,  posicao: 2,  nota: "Distribuição de combustíveis (~6,5% do PIB) + indústria química/petroquímica (ABIQUIM, ~2,5% do PIB) ÷ PIB R$11,7tri." },
     "Agro & Commodities":              { pct: 8.0,  posicao: 3,  nota: "Valor adicionado da agropecuária — produção e logística de commodities (IBGE/CNA) ÷ PIB R$11,7tri. Não inclui agroindústria de alimentos." },
-    "E-commerce & Varejo":             { pct: 7.7,  posicao: 4,  nota: "GMV do e-commerce (ABComm, ~R$200bi/ano) + faturamento de redes de supermercados (ABRAS, ~R$700bi/ano) ÷ PIB R$11,7tri." },
-    "Logística & Transporte":          { pct: 6.8,  posicao: 5,  nota: "Movimentação do transporte de cargas (CNT, ~R$800bi/ano), excluindo Correios ÷ PIB R$11,7tri." },
-    "Indústria Pesada":                { pct: 6.3,  posicao: 6,  nota: "Mineração (IBRAM) + siderurgia (Aço Brasil) + papel e celulose (Ibá) + indústria extrativa ÷ PIB R$11,7tri." },
+    "Logística & Transporte":          { pct: 6.8,  posicao: 4,  nota: "Movimentação do transporte de cargas (CNT, ~R$800bi/ano), excluindo Correios ÷ PIB R$11,7tri." },
+    "Indústria Pesada":                { pct: 6.3,  posicao: 5,  nota: "Mineração (IBRAM) + siderurgia (Aço Brasil) + papel e celulose (Ibá) + indústria extrativa ÷ PIB R$11,7tri." },
+    "Supermercadistas":                { pct: 6.0,  posicao: 6,  nota: "Faturamento das redes de supermercados e atacarejo (ABRAS, ~R$700bi/ano) ÷ PIB R$11,7tri. Separado de E-commerce & Varejo para análise independente." },
     "Automotivo & Pneus":              { pct: 6.0,  posicao: 7,  nota: "Indústria automotiva (Anfavea) + autopeças (Sindipeças) + pneus (ANIP, ~0,3% do PIB) ÷ PIB R$11,7tri." },
     "Construção Civil":                { pct: 4.8,  posicao: 8,  nota: "Valor adicionado da construção civil (CBIC/IBGE) ÷ PIB R$11,7tri." },
-    "Eletro & Tecnologia":             { pct: 1.9,  posicao: 9,  nota: "Receita da indústria eletroeletrônica (Abinee, ~R$220bi/ano) ÷ PIB R$11,7tri." },
-    "Têxtil & Vestuário":              { pct: 1.9,  posicao: 10, nota: "Receita da cadeia têxtil e de confecção (ABIT, ~R$220bi/ano) ÷ PIB R$11,7tri." },
-    "Farmacêutico & Saúde":            { pct: 1.4,  posicao: 11, nota: "Mercado farmacêutico brasileiro — apenas farma (Interfarma/IQVIA, ~R$160,7bi/ano) ÷ PIB R$11,7tri." },
-    "Cosméticos & Higiene":            { pct: 1.3,  posicao: 12, nota: "Estimativa de receita de higiene pessoal, perfumaria e cosméticos (ABIHPEC, ~R$140bi/ano) ÷ PIB R$11,7tri. Confiança baixa — sem total consolidado oficial." }
+    "E-commerce & Varejo":             { pct: 3.0,  posicao: 9,  nota: "GMV do e-commerce (ABComm, ~R$200bi/ano) + varejo não-alimentar (eletro, moda, home) (~R$150bi/ano) ÷ PIB R$11,7tri. Supermercados contabilizados em 'Supermercadistas'." },
+    "Eletro & Tecnologia":             { pct: 1.9,  posicao: 10, nota: "Receita da indústria eletroeletrônica (Abinee, ~R$220bi/ano) ÷ PIB R$11,7tri." },
+    "Têxtil & Vestuário":              { pct: 1.9,  posicao: 11, nota: "Receita da cadeia têxtil e de confecção (ABIT, ~R$220bi/ano) ÷ PIB R$11,7tri." },
+    "Farmacêutico & Saúde":            { pct: 1.4,  posicao: 12, nota: "Mercado farmacêutico brasileiro — apenas farma (Interfarma/IQVIA, ~R$160,7bi/ano) ÷ PIB R$11,7tri." },
+    "Cosméticos & Higiene":            { pct: 1.3,  posicao: 13, nota: "Estimativa de receita de higiene pessoal, perfumaria e cosméticos (ABIHPEC, ~R$140bi/ano) ÷ PIB R$11,7tri. Confiança baixa — sem total consolidado oficial." }
   };
 
   const apiBase = window.location.protocol === "file:" ? "http://localhost:3000" : "";
@@ -1008,6 +1010,7 @@
         <label class="form-label">Segmento *</label>
         <select name="segment" class="form-select" required>
           <option value="">— Selecione —</option>
+          <option value="Supermercadistas">Supermercadistas</option>
           <option value="Alimentos & Bebidas">Alimentos & Bebidas</option>
           <option value="E-commerce & Varejo">E-commerce & Varejo</option>
           <option value="Combustíveis, Energia & Química">Combustíveis, Energia & Química</option>

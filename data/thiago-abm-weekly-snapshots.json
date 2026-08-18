@@ -1653,21 +1653,21 @@
   },
   {
     "weekKey": "2026-S34",
-    "generatedAt": "2026-08-17T11:43:18.237Z",
+    "generatedAt": "2026-08-17T19:28:32.127Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 124,
-    "activePipeline": 117,
-    "pausedCount": 7,
-    "repliedOrBetter": 21,
-    "meetingOrBetter": 7,
-    "dealCount": 7,
-    "replyRate": 0.1794871794871795,
-    "meetingRate": 0.05982905982905983,
-    "dealRate": 0.05982905982905983,
-    "avgDaysToFirstReply": 1.2307692307692308,
-    "avgDaysSinceLastOutbound": null,
-    "totalOutboundTouchpoints": 0,
-    "totalInboundTouchpoints": 0,
+    "activePipeline": 116,
+    "pausedCount": 8,
+    "repliedOrBetter": 23,
+    "meetingOrBetter": 8,
+    "dealCount": 8,
+    "replyRate": 0.19827586206896552,
+    "meetingRate": 0.06896551724137931,
+    "dealRate": 0.06896551724137931,
+    "avgDaysToFirstReply": 6.133333333333334,
+    "avgDaysSinceLastOutbound": 0.4666666666666667,
+    "totalOutboundTouchpoints": 32,
+    "totalInboundTouchpoints": 6,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -1677,12 +1677,12 @@
       {
         "stage": "CONNECTION_ACCEPTED",
         "label": "Conexão Aceita",
-        "count": 7
+        "count": 6
       },
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 51
+        "count": 49
       },
       {
         "stage": "FOLLOW_UP_SENT",
@@ -1692,12 +1692,12 @@
       {
         "stage": "REPLIED",
         "label": "Respondeu",
-        "count": 14
+        "count": 15
       },
       {
         "stage": "DEAL",
         "label": "Negócio",
-        "count": 7
+        "count": 8
       }
     ],
     "topCompanies": [
@@ -1752,14 +1752,24 @@
         "nextActionDueAt": "2026-06-25T03:00:00.000Z"
       },
       {
-        "company": "Grupo Boticário",
+        "company": "Casas Bahia",
         "stage": "DEAL",
         "contacts": 4,
         "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "DEAL",
         "score": 90,
-        "nextActionDueAt": "2026-08-16T21:05:00.000Z"
+        "nextActionDueAt": "2026-08-13T19:21:33.000Z"
+      },
+      {
+        "company": "Grupo Boticário",
+        "stage": "DEAL",
+        "contacts": 4,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-08-19T21:05:00.000Z"
       },
       {
         "company": "Grupo Profarma",
@@ -1775,8 +1785,8 @@
         "company": "L'Oréal",
         "stage": "REPLIED",
         "contacts": 6,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
+        "outboundTouchpoints": 3,
+        "inboundTouchpoints": 2,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-06-21T17:36:00.000Z"
@@ -1840,22 +1850,12 @@
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-08-08T16:53:00.000Z"
-      },
-      {
-        "company": "Atacadão",
-        "stage": "REPLIED",
-        "contacts": 1,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-08-14T03:00:00.000Z"
       }
     ],
-    "activeContacts": 117,
-    "excludedContacts": 7,
+    "activeContacts": 116,
+    "excludedContacts": 8,
     "unresolvedCompanies": 0,
     "uniqueCompanies": 124,
-    "qualifiedAdvanceRate": 0.05982905982905983
+    "qualifiedAdvanceRate": 0.06896551724137931
   }
 ]

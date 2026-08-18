@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-08-17T11:43:45.073Z",
+  "generatedAt": "2026-08-17T19:28:39.449Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
     "weekKey": "2026-S34",
     "totalCompanies": 124,
-    "activeCompanies": 117,
-    "pausedCompanies": 7,
-    "repliedOrBetterCompanies": 21,
-    "meetingOrBetterCompanies": 7,
-    "dealCompanies": 7,
-    "companyReplyRate": 0.1794871794871795,
-    "companyMeetingRate": 0.05982905982905983,
-    "companyDealRate": 0.05982905982905983
+    "activeCompanies": 116,
+    "pausedCompanies": 8,
+    "repliedOrBetterCompanies": 23,
+    "meetingOrBetterCompanies": 8,
+    "dealCompanies": 8,
+    "companyReplyRate": 0.19827586206896552,
+    "companyMeetingRate": 0.06896551724137931,
+    "companyDealRate": 0.06896551724137931
   },
   "sample": {
     "activeContacts": 228,
-    "replies": 22,
-    "advanced": 12,
-    "negatives": 1,
-    "noResponse": 186,
-    "replyRate": 0.09649122807017543,
-    "advancedRate": 0.05263157894736842,
-    "avgDaysToFirstReply": 6.909090909090909
+    "replies": 23,
+    "advanced": 16,
+    "negatives": 3,
+    "noResponse": 179,
+    "replyRate": 0.10087719298245613,
+    "advancedRate": 0.07017543859649122,
+    "avgDaysToFirstReply": 7.956521739130435
   },
   "bySegment": [
     {
@@ -39,10 +39,10 @@
       "segment": "E-commerce & Varejo",
       "total": 21,
       "responded": 2,
-      "advanced": 1,
+      "advanced": 5,
       "negative": 0,
       "replyRate": 0.09523809523809523,
-      "advancedRate": 0.047619047619047616,
+      "advancedRate": 0.23809523809523808,
       "avgDaysToFirstReply": 23
     },
     {
@@ -98,12 +98,12 @@
     {
       "segment": "Segmento a classificar",
       "total": 144,
-      "responded": 13,
+      "responded": 14,
       "advanced": 6,
-      "negative": 1,
-      "replyRate": 0.09027777777777778,
+      "negative": 3,
+      "replyRate": 0.09722222222222222,
       "advancedRate": 0.041666666666666664,
-      "avgDaysToFirstReply": 6.538461538461538
+      "avgDaysToFirstReply": 8.285714285714286
     },
     {
       "segment": "Automotivo & Pneus",
@@ -139,22 +139,22 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 51,
+      "total": 52,
       "responded": 5,
-      "advanced": 4,
+      "advanced": 5,
       "negative": 0,
-      "replyRate": 0.09803921568627451,
-      "advancedRate": 0.0784313725490196,
+      "replyRate": 0.09615384615384616,
+      "advancedRate": 0.09615384615384616,
       "avgDaysToFirstReply": 9.4
     },
     {
       "seniority": "Diretoria / Head",
       "total": 106,
       "responded": 10,
-      "advanced": 4,
-      "negative": 0,
+      "advanced": 6,
+      "negative": 2,
       "replyRate": 0.09433962264150944,
-      "advancedRate": 0.03773584905660377,
+      "advancedRate": 0.05660377358490566,
       "avgDaysToFirstReply": 2.7
     },
     {
@@ -169,42 +169,42 @@
     },
     {
       "seniority": "C-level / VP",
-      "total": 44,
-      "responded": 5,
-      "advanced": 2,
+      "total": 43,
+      "responded": 6,
+      "advanced": 3,
       "negative": 1,
-      "replyRate": 0.11363636363636363,
-      "advancedRate": 0.045454545454545456,
-      "avgDaysToFirstReply": 12
+      "replyRate": 0.13953488372093023,
+      "advancedRate": 0.06976744186046512,
+      "avgDaysToFirstReply": 15.166666666666666
     }
   ],
   "byFunctionArea": [
     {
       "functionArea": "Função a classificar",
-      "total": 44,
+      "total": 45,
       "responded": 1,
       "advanced": 2,
       "negative": 0,
-      "replyRate": 0.022727272727272728,
-      "advancedRate": 0.045454545454545456,
+      "replyRate": 0.022222222222222223,
+      "advancedRate": 0.044444444444444446,
       "avgDaysToFirstReply": 0
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 158,
-      "responded": 20,
-      "advanced": 10,
-      "negative": 1,
-      "replyRate": 0.12658227848101267,
-      "advancedRate": 0.06329113924050633,
-      "avgDaysToFirstReply": 5
+      "total": 157,
+      "responded": 21,
+      "advanced": 14,
+      "negative": 2,
+      "replyRate": 0.1337579617834395,
+      "advancedRate": 0.08917197452229299,
+      "avgDaysToFirstReply": 6.238095238095238
     },
     {
       "functionArea": "Procurement / Suprimentos",
       "total": 12,
       "responded": 0,
       "advanced": 0,
-      "negative": 0,
+      "negative": 1,
       "replyRate": 0,
       "advancedRate": 0,
       "avgDaysToFirstReply": null
@@ -245,50 +245,50 @@
       "timeBand": "Antes das 08h",
       "total": 78,
       "responded": 14,
-      "advanced": 5,
-      "negative": 1,
+      "advanced": 6,
+      "negative": 3,
       "replyRate": 0.1794871794871795,
-      "advancedRate": 0.0641025641025641,
+      "advancedRate": 0.07692307692307693,
       "avgDaysToFirstReply": 8.142857142857142
     },
     {
       "timeBand": "12h-17h59",
       "total": 28,
       "responded": 5,
-      "advanced": 3,
+      "advanced": 4,
       "negative": 0,
       "replyRate": 0.17857142857142858,
-      "advancedRate": 0.10714285714285714,
+      "advancedRate": 0.14285714285714285,
       "avgDaysToFirstReply": 3.8
     },
     {
       "timeBand": "08h-11h59",
       "total": 19,
-      "responded": 3,
+      "responded": 4,
       "advanced": 2,
       "negative": 0,
-      "replyRate": 0.15789473684210525,
+      "replyRate": 0.21052631578947367,
       "advancedRate": 0.10526315789473684,
-      "avgDaysToFirstReply": 6.333333333333333
+      "avgDaysToFirstReply": 12.5
     },
     {
       "timeBand": "18h+",
       "total": 8,
       "responded": 0,
-      "advanced": 0,
+      "advanced": 1,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0,
+      "advancedRate": 0.125,
       "avgDaysToFirstReply": null
     },
     {
       "timeBand": "Sem horário",
       "total": 95,
       "responded": 0,
-      "advanced": 2,
+      "advanced": 3,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0.021052631578947368,
+      "advancedRate": 0.031578947368421054,
       "avgDaysToFirstReply": null
     }
   ],

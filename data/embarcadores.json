@@ -1542,7 +1542,7 @@
   {
     "id": 48,
     "name": "Carrefour Brasil",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 1,
     "scoreS13": null,
@@ -2855,7 +2855,7 @@
   {
     "id": 102,
     "name": "Assaí Atacadista",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 1,
     "scoreS13": null,
@@ -2896,7 +2896,7 @@
   {
     "id": 103,
     "name": "GPA — Grupo Pão de Açúcar",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 1,
     "scoreS13": null,
@@ -2931,7 +2931,7 @@
   {
     "id": 104,
     "name": "Grupo Mateus",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "MA",
     "tier": 1,
     "scoreS13": null,
@@ -2966,7 +2966,7 @@
   {
     "id": 105,
     "name": "Cencosud S.A.",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SC",
     "tier": 1,
     "scoreS13": null,
@@ -4349,7 +4349,7 @@
   {
     "id": 174,
     "name": "Grupo Koch S A",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SC",
     "tier": 1,
     "scoreS13": null,
@@ -4371,7 +4371,7 @@
   {
     "id": 175,
     "name": "Giassi Supermercados",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SC",
     "tier": 1,
     "scoreS13": null,
@@ -4393,7 +4393,7 @@
   {
     "id": 176,
     "name": "Atakarejo",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "BA",
     "tier": 1,
     "scoreS13": null,
@@ -4415,7 +4415,7 @@
   {
     "id": 177,
     "name": "Grupo Guanabara",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "RJ",
     "tier": 1,
     "scoreS13": null,
@@ -4437,7 +4437,7 @@
   {
     "id": 178,
     "name": "Supermercados BH (Grupo BH)",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "MG",
     "tier": 1,
     "scoreS13": null,
@@ -4459,7 +4459,7 @@
   {
     "id": 179,
     "name": "Grupo Savegnago",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4481,7 +4481,7 @@
   {
     "id": 180,
     "name": "Sonda Supermercados",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4503,7 +4503,7 @@
   {
     "id": 181,
     "name": "Comercial Zaragoza",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4525,7 +4525,7 @@
   {
     "id": 182,
     "name": "Pague Menos Supermercados",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4547,7 +4547,7 @@
   {
     "id": 183,
     "name": "Roldão Atacadista",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4569,7 +4569,7 @@
   {
     "id": 184,
     "name": "Plurix",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4591,7 +4591,7 @@
   {
     "id": 185,
     "name": "Covabra Supermercados",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4613,7 +4613,7 @@
   {
     "id": 186,
     "name": "Coop — Cooperativa de Consumo",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4635,7 +4635,7 @@
   {
     "id": 187,
     "name": "Grupo Angeloni",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SC",
     "tier": 2,
     "scoreS13": null,
@@ -4657,7 +4657,7 @@
   {
     "id": 188,
     "name": "Bistek Supermercados",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SC",
     "tier": 2,
     "scoreS13": null,
@@ -4679,7 +4679,7 @@
   {
     "id": 189,
     "name": "Fort Atacadista",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SC",
     "tier": 2,
     "scoreS13": null,
@@ -4701,7 +4701,7 @@
   {
     "id": 190,
     "name": "Bahamas Supermercados",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "BA",
     "tier": 2,
     "scoreS13": null,
@@ -4723,7 +4723,7 @@
   {
     "id": 191,
     "name": "Rede Mix Atacarejo",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "BA",
     "tier": 2,
     "scoreS13": null,
@@ -4745,7 +4745,7 @@
   {
     "id": 192,
     "name": "Hiperideal",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "BA",
     "tier": 2,
     "scoreS13": null,
@@ -4767,7 +4767,7 @@
   {
     "id": 193,
     "name": "Torre e Cia Supermercados",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "RJ",
     "tier": 2,
     "scoreS13": null,
@@ -4789,7 +4789,7 @@
   {
     "id": 194,
     "name": "Super Nosso",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "MG",
     "tier": 2,
     "scoreS13": null,
@@ -4811,7 +4811,7 @@
   {
     "id": 195,
     "name": "Grupo DMA / Epa",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "MG",
     "tier": 2,
     "scoreS13": null,
@@ -4833,7 +4833,7 @@
   {
     "id": 196,
     "name": "Grupo Barcelos",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "RJ",
     "tier": 3,
     "scoreS13": null,
@@ -4855,7 +4855,7 @@
   {
     "id": 197,
     "name": "Comercial de Alimentos Gilmar",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "BA",
     "tier": 3,
     "scoreS13": null,
@@ -4877,7 +4877,7 @@
   {
     "id": 198,
     "name": "Novo Mix Atacado",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "BA",
     "tier": 3,
     "scoreS13": null,
@@ -4899,7 +4899,7 @@
   {
     "id": 199,
     "name": "Atacadão",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 1,
     "scoreS13": null,
@@ -4968,7 +4968,7 @@
   {
     "id": 202,
     "name": "Tenda Atacado",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -4991,7 +4991,7 @@
   {
     "id": 203,
     "name": "Grupo São Vicente",
-    "segment": "E-commerce & Varejo",
+    "segment": "Supermercadistas",
     "uf": "RJ",
     "tier": 2,
     "scoreS13": null,
@@ -5216,6 +5216,107 @@
     },
     "tierRationale": "Adicionado via merge 2026-08-07",
     "nextResearchStep": "Mapear decisores e validar potencial",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 213,
+    "name": "Grupo 3corações",
+    "segment": "Alimentos & Bebidas",
+    "uf": "CE",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [
+      "3corações",
+      "3 Corações",
+      "Três Corações"
+    ],
+    "decisors": [
+      {
+        "name": "Homero Grec",
+        "role": "Head of Supply Chain and Operations",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Maior grupo de café do Brasil (marcas 3corações, Caboclo, São Braz). Distribuição nacional de produtos de alta rotatividade para varejo e foodservice. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 78,
+    "tierBreakdown": {
+      "potencialLogistico": 23,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 12,
+      "mapeabilidadeAcesso": 7
+    },
+    "tierRationale": "Tier 2: distribuição nacional de bens de consumo de alta rotatividade; Head de Supply Chain mapeado.",
+    "nextResearchStep": "Abordar Homero Grec — foco em complexidade logística da distribuição de cafés e bebidas.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 214,
+    "name": "Grupo Trigo",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "aliases": [
+      "Spoleto",
+      "China in Box",
+      "Koni Store"
+    ],
+    "decisors": [
+      {
+        "name": "Antonio Moreira Leite",
+        "role": "Presidente",
+        "confidence": "media",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Grupo de alimentação com marcas Spoleto, China in Box, Koni, Gendai e Gurumê. Logística de insumos para rede de franquias. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 72,
+    "tierBreakdown": {
+      "potencialLogistico": 20,
+      "aderenciaModeloPX": 17,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 3: múltiplas marcas de alimentação, boa capilaridade logística mas escala menor que Tier 2.",
+    "nextResearchStep": "Mapear decisor de Supply Chain/Logística — Antonio é Presidente (acesso mais difícil).",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+  },
+  {
+    "id": 215,
+    "name": "Grupo Pereira",
+    "segment": "Supermercadistas",
+    "uf": "SC",
+    "tier": 2,
+    "scoreS13": null,
+    "aliases": [
+      "Superlojas Pereira",
+      "Rede Pereira"
+    ],
+    "decisors": [
+      {
+        "name": "Roberto Soares",
+        "role": "Diretor de Logística e Supply Chain",
+        "confidence": "alta",
+        "source": "linkedin"
+      }
+    ],
+    "notes": "Rede de supermercados líder em Santa Catarina e sul do Brasil. Logística de distribuição regional com CD próprio. Validado via LinkedIn.",
+    "decisorMappingStatus": "found_2026-08-04",
+    "tierScore": 77,
+    "tierBreakdown": {
+      "potencialLogistico": 22,
+      "aderenciaModeloPX": 19,
+      "porteRelevancia": 17,
+      "gatilhosTiming": 11,
+      "mapeabilidadeAcesso": 8
+    },
+    "tierRationale": "Tier 2: rede regional relevante, decisor de Logística com perfil ideal mapeado diretamente.",
+    "nextResearchStep": "Abordar Roberto Soares — já mapeado com cargo exato de Diretor de Logística.",
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   }
 ]
