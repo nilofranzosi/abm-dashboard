@@ -1,8 +1,8 @@
 {
   "_placeholder": false,
   "generatedFrom": "public/data/embarcadores.json",
-  "generatedAt": "2026-07-08T11:53:11.529Z",
-  "count": 161,
+  "generatedAt": "2026-08-24T13:00:41.530Z",
+  "count": 203,
   "entries": [
     {
       "id": 1,
@@ -46,8 +46,8 @@
     },
     {
       "id": 6,
-      "name": "Shein Brasil",
-      "normalizedName": "shein-brasil",
+      "name": "SHEIN",
+      "normalizedName": "shein",
       "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 2
@@ -86,8 +86,8 @@
     },
     {
       "id": 11,
-      "name": "Ache",
-      "normalizedName": "ache",
+      "name": "Aché Laboratórios Farmacêuticos",
+      "normalizedName": "ache-laboratorios-farmaceuticos",
       "segment": "Farmacêutico & Saúde",
       "uf": "SP",
       "tier": 2
@@ -150,8 +150,8 @@
     },
     {
       "id": 19,
-      "name": "P&G",
-      "normalizedName": "p-g",
+      "name": "Procter & Gamble",
+      "normalizedName": "procter-gamble",
       "segment": "Cosméticos & Higiene",
       "uf": "SP",
       "tier": 2
@@ -174,8 +174,8 @@
     },
     {
       "id": 22,
-      "name": "Boticário",
-      "normalizedName": "boticario",
+      "name": "Grupo Boticário",
+      "normalizedName": "grupo-boticario",
       "segment": "Cosméticos & Higiene",
       "uf": "SP",
       "tier": 1
@@ -222,8 +222,8 @@
     },
     {
       "id": 28,
-      "name": "CSN",
-      "normalizedName": "csn",
+      "name": "CSN - Companhia Siderúrgica Nacional",
+      "normalizedName": "csn-companhia-siderurgica-nacional",
       "segment": "Indústria Pesada",
       "uf": "SP",
       "tier": 2
@@ -376,9 +376,9 @@
       "id": 48,
       "name": "Carrefour Brasil",
       "normalizedName": "carrefour-brasil",
-      "segment": "E-commerce & Varejo",
+      "segment": "Supermercadistas",
       "uf": "SP",
-      "tier": 2
+      "tier": 1
     },
     {
       "id": 49,
@@ -776,33 +776,33 @@
       "id": 102,
       "name": "Assaí Atacadista",
       "normalizedName": "assai-atacadista",
-      "segment": "E-commerce & Varejo",
+      "segment": "Supermercadistas",
       "uf": "SP",
       "tier": 1
     },
     {
       "id": 103,
-      "name": "GPA / Grupo Pão de Açúcar",
+      "name": "GPA — Grupo Pão de Açúcar",
       "normalizedName": "gpa-grupo-pao-de-acucar",
-      "segment": "E-commerce & Varejo",
+      "segment": "Supermercadistas",
       "uf": "SP",
-      "tier": 2
+      "tier": 1
     },
     {
       "id": 104,
       "name": "Grupo Mateus",
       "normalizedName": "grupo-mateus",
-      "segment": "E-commerce & Varejo",
+      "segment": "Supermercadistas",
       "uf": "MA",
-      "tier": 2
+      "tier": 1
     },
     {
       "id": 105,
-      "name": "Cencosud Brasil",
-      "normalizedName": "cencosud-brasil",
-      "segment": "E-commerce & Varejo",
+      "name": "Cencosud S.A.",
+      "normalizedName": "cencosud-s-a",
+      "segment": "Supermercadistas",
       "uf": "SC",
-      "tier": 3
+      "tier": 1
     },
     {
       "id": 106,
@@ -1118,8 +1118,8 @@
     },
     {
       "id": 146,
-      "name": "Krona",
-      "normalizedName": "krona",
+      "name": "Krona Tubos e Conexões",
+      "normalizedName": "krona-tubos-e-conexoes",
       "segment": "Construção Civil",
       "uf": "SC",
       "tier": 3
@@ -1290,6 +1290,342 @@
       "normalizedName": "danone-brasil",
       "segment": "Alimentos & Bebidas",
       "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 174,
+      "name": "Grupo Koch S A",
+      "normalizedName": "grupo-koch-s-a",
+      "segment": "Supermercadistas",
+      "uf": "SC",
+      "tier": 1
+    },
+    {
+      "id": 175,
+      "name": "Giassi Supermercados",
+      "normalizedName": "giassi-supermercados",
+      "segment": "Supermercadistas",
+      "uf": "SC",
+      "tier": 1
+    },
+    {
+      "id": 176,
+      "name": "Atakarejo",
+      "normalizedName": "atakarejo",
+      "segment": "Supermercadistas",
+      "uf": "BA",
+      "tier": 1
+    },
+    {
+      "id": 177,
+      "name": "Grupo Guanabara",
+      "normalizedName": "grupo-guanabara",
+      "segment": "Supermercadistas",
+      "uf": "RJ",
+      "tier": 1
+    },
+    {
+      "id": 178,
+      "name": "Supermercados BH (Grupo BH)",
+      "normalizedName": "supermercados-bh-grupo-bh",
+      "segment": "Supermercadistas",
+      "uf": "MG",
+      "tier": 1
+    },
+    {
+      "id": 179,
+      "name": "Grupo Savegnago",
+      "normalizedName": "grupo-savegnago",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 180,
+      "name": "Sonda Supermercados",
+      "normalizedName": "sonda-supermercados",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 181,
+      "name": "Comercial Zaragoza",
+      "normalizedName": "comercial-zaragoza",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 182,
+      "name": "Pague Menos Supermercados",
+      "normalizedName": "pague-menos-supermercados",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 183,
+      "name": "Roldão Atacadista",
+      "normalizedName": "roldao-atacadista",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 184,
+      "name": "Plurix",
+      "normalizedName": "plurix",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 185,
+      "name": "Covabra Supermercados",
+      "normalizedName": "covabra-supermercados",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 186,
+      "name": "Coop — Cooperativa de Consumo",
+      "normalizedName": "coop-cooperativa-de-consumo",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 187,
+      "name": "Grupo Angeloni",
+      "normalizedName": "grupo-angeloni",
+      "segment": "Supermercadistas",
+      "uf": "SC",
+      "tier": 2
+    },
+    {
+      "id": 188,
+      "name": "Bistek Supermercados",
+      "normalizedName": "bistek-supermercados",
+      "segment": "Supermercadistas",
+      "uf": "SC",
+      "tier": 2
+    },
+    {
+      "id": 189,
+      "name": "Fort Atacadista",
+      "normalizedName": "fort-atacadista",
+      "segment": "Supermercadistas",
+      "uf": "SC",
+      "tier": 2
+    },
+    {
+      "id": 190,
+      "name": "Bahamas Supermercados",
+      "normalizedName": "bahamas-supermercados",
+      "segment": "Supermercadistas",
+      "uf": "BA",
+      "tier": 2
+    },
+    {
+      "id": 191,
+      "name": "Rede Mix Atacarejo",
+      "normalizedName": "rede-mix-atacarejo",
+      "segment": "Supermercadistas",
+      "uf": "BA",
+      "tier": 2
+    },
+    {
+      "id": 192,
+      "name": "Hiperideal",
+      "normalizedName": "hiperideal",
+      "segment": "Supermercadistas",
+      "uf": "BA",
+      "tier": 2
+    },
+    {
+      "id": 193,
+      "name": "Torre e Cia Supermercados",
+      "normalizedName": "torre-e-cia-supermercados",
+      "segment": "Supermercadistas",
+      "uf": "RJ",
+      "tier": 2
+    },
+    {
+      "id": 194,
+      "name": "Super Nosso",
+      "normalizedName": "super-nosso",
+      "segment": "Supermercadistas",
+      "uf": "MG",
+      "tier": 2
+    },
+    {
+      "id": 195,
+      "name": "Grupo DMA / Epa",
+      "normalizedName": "grupo-dma-epa",
+      "segment": "Supermercadistas",
+      "uf": "MG",
+      "tier": 2
+    },
+    {
+      "id": 196,
+      "name": "Grupo Barcelos",
+      "normalizedName": "grupo-barcelos",
+      "segment": "Supermercadistas",
+      "uf": "RJ",
+      "tier": 3
+    },
+    {
+      "id": 197,
+      "name": "Comercial de Alimentos Gilmar",
+      "normalizedName": "comercial-de-alimentos-gilmar",
+      "segment": "Supermercadistas",
+      "uf": "BA",
+      "tier": 3
+    },
+    {
+      "id": 198,
+      "name": "Novo Mix Atacado",
+      "normalizedName": "novo-mix-atacado",
+      "segment": "Supermercadistas",
+      "uf": "BA",
+      "tier": 3
+    },
+    {
+      "id": 199,
+      "name": "Atacadão",
+      "normalizedName": "atacadao",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 200,
+      "name": "MadeiraMadeira",
+      "normalizedName": "madeiramadeira",
+      "segment": "E-commerce & Varejo",
+      "uf": "PR",
+      "tier": 2
+    },
+    {
+      "id": 201,
+      "name": "Kenvue",
+      "normalizedName": "kenvue",
+      "segment": "Farmacêutico & Saúde",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 202,
+      "name": "Tenda Atacado",
+      "normalizedName": "tenda-atacado",
+      "segment": "Supermercadistas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 203,
+      "name": "Grupo São Vicente",
+      "normalizedName": "grupo-sao-vicente",
+      "segment": "Supermercadistas",
+      "uf": "RJ",
+      "tier": 2
+    },
+    {
+      "id": 204,
+      "name": "Campari Group",
+      "normalizedName": "campari-group",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 205,
+      "name": "ALE Combustíveis",
+      "normalizedName": "ale-combustiveis",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "MG",
+      "tier": 3
+    },
+    {
+      "id": 206,
+      "name": "Rodoil Distribuidora de Combustíveis",
+      "normalizedName": "rodoil-distribuidora-de-combustiveis",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "RS",
+      "tier": 3
+    },
+    {
+      "id": 207,
+      "name": "Ortobom",
+      "normalizedName": "ortobom",
+      "segment": "Indústria Pesada",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 208,
+      "name": "Grupo Habib's",
+      "normalizedName": "grupo-habib-s",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 209,
+      "name": "ZAMP (Burger King Brasil)",
+      "normalizedName": "zamp-burger-king-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 210,
+      "name": "Arcos Dourados (McDonald's Brasil)",
+      "normalizedName": "arcos-dourados-mcdonald-s-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 211,
+      "name": "Enel",
+      "normalizedName": "enel",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 212,
+      "name": "Copel",
+      "normalizedName": "copel",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "PR",
+      "tier": 2
+    },
+    {
+      "id": 213,
+      "name": "Grupo 3corações",
+      "normalizedName": "grupo-3coracoes",
+      "segment": "Alimentos & Bebidas",
+      "uf": "CE",
+      "tier": 2
+    },
+    {
+      "id": 214,
+      "name": "Grupo Trigo",
+      "normalizedName": "grupo-trigo",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 215,
+      "name": "Grupo Pereira",
+      "normalizedName": "grupo-pereira",
+      "segment": "Supermercadistas",
+      "uf": "SC",
       "tier": 2
     }
   ]

@@ -590,6 +590,7 @@
               <tr>
                 <th data-sort="rank">Rank</th>
                 <th data-sort="empresa">Empresa</th>
+                <th data-sort="origemProspect">Origem</th>
                 <th data-sort="scorePotencial">Score potencial</th>
                 <th data-sort="motivoPrioridade">Motivo prioridade</th>
                 <th data-sort="regiao">Região</th>
@@ -604,7 +605,7 @@
               </tr>
             </thead>
             <tbody id="prospects-tbody">
-              <tr><td colspan="13" class="loading">Carregando prospects...</td></tr>
+              <tr><td colspan="14" class="loading">Carregando prospects...</td></tr>
             </tbody>
           </table>
         </section>
@@ -1381,11 +1382,22 @@
       return "Não";
     }
 
+    // As duas portas de entrada da aba: alvo de novo logo (Fase 28) e cliente
+    // em churn que reapareceu num evento (regra de 24/08/2026). Sem esta
+    // coluna as 15 linhas de retomada ficavam indistinguíveis das de novo logo.
+    function origemProspectLabel(value) {
+      if (value === "retomada-churn") {
+        return `<span class="badge" title="Cliente em churn que esteve em evento — sai desta aba sozinho quando o status deixar de ser churn">Retomada (churn)</span>`;
+      }
+      return `<span class="badge" title="Alvo de novo logo">Novo logo</span>`;
+    }
+
     function renderProspectRow(row) {
       return `
         <tr>
           <td>${row.rank}</td>
           <td>${escapeAttr(row.empresa)}</td>
+          <td>${origemProspectLabel(row.origemProspect)}</td>
           <td>${row.scorePotencial}</td>
           <td>${escapeAttr(row.motivoPrioridade)}</td>
           <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>

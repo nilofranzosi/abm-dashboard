@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T21:00:00.550Z",
+  "generatedAt": "2026-08-25T11:49:44.105Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -29,19 +29,6 @@
           "source": "linkedin-validation:approved",
           "owner": null,
           "contactCount": 2,
-          "activeDecisor": null
-        },
-        {
-          "id": "cms6kijif000kk7k0qaktmwfu",
-          "name": "Bayer Brasil",
-          "segment": "Farmacêutico & Saúde",
-          "accountScore": 79,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-29T20:59:29.782Z",
-          "source": "linkedin-sync:master",
-          "owner": null,
-          "contactCount": 4,
           "activeDecisor": null
         },
         {
@@ -194,186 +181,17 @@
           "activeDecisor": "Marcela Cocchiarale"
         },
         {
-          "id": "cmsswvk2a007lk7ywqkmujt91",
-          "name": "EUCATEX",
+          "id": "cmsswvjcs002dk7ywkbplemsh",
+          "name": "Mondelez Brasil",
           "segment": "Palestrante Fórum ILOS",
           "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
           "source": "forum-ilos-2026-speakers",
           "owner": null,
           "contactCount": 1,
-          "activeDecisor": "Marcio Sidney Lino Junior"
-        },
-        {
-          "id": "cmsswvjzs0072k7ywczc3s2k0",
-          "name": "ILOGG",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Luís Cláudio Martão"
-        },
-        {
-          "id": "cmsswvjz2006xk7yw64x5go9o",
-          "name": "EVMOB",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Lucas Zanon Arantes"
-        },
-        {
-          "id": "cmsswvju4005wk7ywir66oift",
-          "name": "COOPERCARGA LOGÍSTICA",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Lívia Barros"
-        },
-        {
-          "id": "cmsswvjus0061k7yw70h1ayf6",
-          "name": "ACTIONSYS",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Leila Santos"
-        },
-        {
-          "id": "cmsswvjoa004nk7ywussctemi",
-          "name": "MOKI",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Guilherme Werneck"
-        },
-        {
-          "id": "cmsswvjaw0028k7ywn5xlkb3u",
-          "name": "SODEXO",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Marina Zanin"
-        },
-        {
-          "id": "cmsswvjrn005ek7ywchtx66p1",
-          "name": "FGV EAESP",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Joice Ribeiro Giacon"
-        },
-        {
-          "id": "cmsswvjqz0059k7ywjk6fvmp0",
-          "name": "H&CO",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "João Pedro Mikinev"
-        },
-        {
-          "id": "cmsswvjou004sk7ywqr9iujrm",
-          "name": "DROGARIA ARAÚJO",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Helbert Lopes"
-        },
-        {
-          "id": "cmsswvjlh0040k7ywd70hbdba",
-          "name": "CUBO ITAÚ",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Filipe Guimarães"
-        },
-        {
-          "id": "cmsswvkjv00ank7ywarlh10a8",
-          "name": "EDENRED MOBILIDADE",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Vinicios Fernandes"
-        },
-        {
-          "id": "cmsswvkhg00a8k7ywq9wdddb8",
-          "name": "EPSON",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Tania Fernandes"
-        },
-        {
-          "id": "cmsswvkg2009yk7ywf1e9uw1t",
-          "name": "MIT ZARAGOZA LOGISTICS CENTER",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Spyros Lekkakos"
+          "activeDecisor": "Claudio Pena"
         },
         {
           "id": "cmsswvk3g007uk7yw7wnyippy",
@@ -402,331 +220,6 @@
           "activeDecisor": "Ligia Camargo"
         },
         {
-          "id": "cmsswvj1b0010k7ywt8ieozy4",
-          "name": "ILOS",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 5,
-          "activeDecisor": "Rodrigo Tourinho Nakamura"
-        },
-        {
-          "id": "cmsswvkic00adk7ywr6z8l7es",
-          "name": "SANOFI MEDLEY FARMACÊUTICA",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Tatiana Perim Ignez"
-        },
-        {
-          "id": "cmsswvkj400aik7ywj6749ryf",
-          "name": "RD SAÚDE",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Thiago Centurion"
-        },
-        {
-          "id": "cmsswvka2008uk7yw94wkssj1",
-          "name": "LOTS GROUP",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Pedro Silvestrini"
-        },
-        {
-          "id": "cmsswvjk5003qk7ywxtant3u4",
-          "name": "RED BULL",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Fernanda Redondo"
-        },
-        {
-          "id": "cmsswvjg1002xk7ywdclu42xj",
-          "name": "KOEPE DO BRASIL",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Elton Barcelos"
-        },
-        {
-          "id": "cmsswvjdl002ik7ywa611pgjr",
-          "name": "MILLS",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Daniel Brugioni"
-        },
-        {
-          "id": "cmsswvj6w001ok7ywxsr2r6az",
-          "name": "SAP",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Camilla Sarto"
-        },
-        {
-          "id": "cmsswvjkt003vk7ywdq5v46u2",
-          "name": "SOCIEDADE BÍBLICA DO BRASIL (SBB)",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Fernando Araujo"
-        },
-        {
-          "id": "cmsswvkda009gk7ywcwqvnc46",
-          "name": "TOYOTA",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Roberto Ueda"
-        },
-        {
-          "id": "cmsswvkgq00a3k7yw5ov2kr08",
-          "name": "NOVELIS DO BRASIL",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Stéfano Rosetti"
-        },
-        {
-          "id": "cmsswvkbv0097k7yw2h03d31v",
-          "name": "O9 SOLUTIONS",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Renato Tavares"
-        },
-        {
-          "id": "cmsswvkes009pk7ywmodw02o6",
-          "name": "DUIMPWEB",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Rodrigo Santos"
-        },
-        {
-          "id": "cmsswvk5f0083k7ywi4stpksk",
-          "name": "WRI BRASIL",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Mariana Müller Barcelos"
-        },
-        {
-          "id": "cmsswvk1r007gk7ywzal58exp",
-          "name": "KNAPP",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Marcio Schilling"
-        },
-        {
-          "id": "cmsswvjwp006fk7ywpbsl5yb9",
-          "name": "FLEETPAY",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Leonardo Mello"
-        },
-        {
-          "id": "cmsswvjsy005nk7ywjqy1a770",
-          "name": "CONEXLOG CARGAS EXPRESSAS",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Junior Silvestro"
-        },
-        {
-          "id": "cmsswvjmk004ak7ywdatlmnsy",
-          "name": "ENJOEI",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Gerson Dias"
-        },
-        {
-          "id": "cmsswvji3003bk7ywqupxivrq",
-          "name": "DR. OETKER",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Fábio Neiva"
-        },
-        {
-          "id": "cmsswvj0o000vk7ywro68x2tw",
-          "name": "FLOWLS",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Anna Valle"
-        },
-        {
-          "id": "cmsswviz3000mk7ywgh0k8nif",
-          "name": "BAT",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Alice Bernardi"
-        },
-        {
-          "id": "cmsswvjcs002dk7ywkbplemsh",
-          "name": "MONDELEZ INTERNACIONAL",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Claudio Pena"
-        },
-        {
-          "id": "cmsswvjec002nk7ywvrigsp7z",
-          "name": "MBRF GLOBAL FOODS",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Diego Penteado"
-        },
-        {
-          "id": "cmsswvj8z001yk7ywcetyhbhu",
-          "name": "INPO",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Cauê Guazzelli"
-        },
-        {
-          "id": "cmsswvjfa002sk7ywsi75mbns",
-          "name": "BAYER CROP SCIENCE",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Elaine Selma"
-        },
-        {
           "id": "cmsswvk0p0077k7ywgerwrabl",
           "name": "MERCADO LIVRE",
           "segment": "Palestrante Fórum ILOS",
@@ -738,58 +231,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "Rodrigo de Mello Brito"
-        },
-        {
-          "id": "cmsswvk7p008gk7ywddbjwrue",
-          "name": "LOGCOMEX",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Mônica Gabriella"
-        },
-        {
-          "id": "cmsswvj34001ek7ywjnwn7gii",
-          "name": "LOOG.AI",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Bruno Gregório"
-        },
-        {
-          "id": "cmsswvj1y0015k7ywi14sfch9",
-          "name": "LTPLABS",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 2,
-          "activeDecisor": "Bruno Batista"
-        },
-        {
-          "id": "cmsswvj9y0023k7yw9z609pdk",
-          "name": "FRASLE MOBILITY – RANDONCORP",
-          "segment": "Palestrante Fórum ILOS",
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "forum-ilos-2026-speakers",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Clairton Guielcer de For"
         },
         {
           "id": "cmrt9u7c00029k7181vu5pj2j",
@@ -967,19 +408,6 @@
           "activeDecisor": "Edson Rocha"
         },
         {
-          "id": "cmst74n870006k7wcpcssko5d",
-          "name": "GPA",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-24T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-17T03:00:00.000Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Mario Augusto Neto"
-        },
-        {
           "id": "cmrl2cabz000nk7745zclhm0a",
           "name": "Rodoil Distribuidora de Combustíveis",
           "segment": null,
@@ -991,6 +419,32 @@
           "owner": null,
           "contactCount": 5,
           "activeDecisor": "Luciano Demicheli"
+        },
+        {
+          "id": "cms4r8zfu0000k7k40fo3it88",
+          "name": "Sanofi Brasil",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 68,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "linkedin-sync:master",
+          "owner": null,
+          "contactCount": 2,
+          "activeDecisor": "Tatiana Perim Ignez"
+        },
+        {
+          "id": "cms7gif2u000rk7gsrnexfna3",
+          "name": "Mosaic Fertilizantes",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-07-30T11:55:11.957Z",
+          "source": "linkedin-validation:approved",
+          "owner": null,
+          "contactCount": 0,
+          "activeDecisor": null
         },
         {
           "id": "cmrt9u76r001mk718awvfzr00",
@@ -1058,19 +512,6 @@
           "activeDecisor": "Nuno Saramago"
         },
         {
-          "id": "cmq9t45oj003bk7o02fgh1kc9",
-          "name": "Unilever",
-          "segment": null,
-          "accountScore": 45,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 7,
-          "activeDecisor": "João Nascimento"
-        },
-        {
           "id": "cmqqqiayk000ck7o8lq2v2pzj",
           "name": "Tupy",
           "segment": null,
@@ -1095,19 +536,6 @@
           "owner": null,
           "contactCount": 5,
           "activeDecisor": "Bárbara Forlin"
-        },
-        {
-          "id": "cmshu8iuc0085k7cc2oh8lug3",
-          "name": "Pernod Ricard",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
         },
         {
           "id": "cmrtplazw001ok7uwc34jygjd",
@@ -1172,32 +600,6 @@
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
           "contactCount": 2,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8i7m0059k7ccbjkzwhg7",
-          "name": "Delly's",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
-          "id": "cmshu8i630050k7cctztnfxsb",
-          "name": "Grupo Level",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-06T20:59:44.544Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 1,
           "activeDecisor": null
         },
         {
@@ -1318,19 +720,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cms7gif2u000rk7gsrnexfna3",
-          "name": "The Mosaic Company - Brasil",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-30T11:55:11.957Z",
-          "source": "linkedin-validation:approved",
-          "owner": null,
-          "contactCount": 0,
-          "activeDecisor": null
-        },
-        {
           "id": "cms4r8zoe0016k7k42r3ia1xy",
           "name": "Cofco Brasil",
           "segment": "Agro & Commodities",
@@ -1435,19 +824,6 @@
           "activeDecisor": null
         },
         {
-          "id": "cms4r8zfu0000k7k40fo3it88",
-          "name": "Sanofi Brasil",
-          "segment": "Farmacêutico & Saúde",
-          "accountScore": 68,
-          "nextAction": null,
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-28T14:32:28.957Z",
-          "source": "linkedin-sync:master",
-          "owner": null,
-          "contactCount": 1,
-          "activeDecisor": null
-        },
-        {
           "id": "cmrtplb1i001tk7uwchofkpnw",
           "name": "Grupo Savegnago",
           "segment": "E-commerce & Varejo",
@@ -1541,8 +917,8 @@
           "lastInteractionAt": "2026-07-30T11:53:33.818Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 6,
-          "activeDecisor": "Carlos Marcelo Oba"
+          "contactCount": 7,
+          "activeDecisor": "Carlos Oba"
         },
         {
           "id": "cmqjsbyci000ek7zwqwobadjt",
@@ -1759,11 +1135,11 @@
           "accountScore": 0,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-14T20:44:04.928Z",
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
           "source": "painel-abm",
           "owner": null,
-          "contactCount": 1,
-          "activeDecisor": "Aécio Patuzzi"
+          "contactCount": 3,
+          "activeDecisor": "Diego Penteado"
         },
         {
           "id": "cmrozkqqk0000k75c20zkey14",
@@ -1772,10 +1148,10 @@
           "accountScore": 90,
           "nextAction": null,
           "nextActionDueAt": null,
-          "lastInteractionAt": "2026-07-27T12:55:06.125Z",
+          "lastInteractionAt": "2026-08-17T03:00:00.000Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": "Mario Augusto Neto"
         },
         {
@@ -1823,19 +1199,6 @@
       "stage": "REPLIED",
       "label": "Respondeu",
       "companies": [
-        {
-          "id": "cmql5g0sf0000k7q80ihp0ek3",
-          "name": "L'Oréal",
-          "segment": "Cosméticos & Higiene",
-          "accountScore": 0,
-          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-          "nextActionDueAt": "2026-06-21T17:36:00.000Z",
-          "lastInteractionAt": "2026-08-17T14:28:00.000Z",
-          "source": null,
-          "owner": null,
-          "contactCount": 6,
-          "activeDecisor": "Felipe Feteira do Vale"
-        },
         {
           "id": "cmqp6w551000qk7r4xs866fpz",
           "name": "Continental Pneus",
@@ -2132,6 +1495,19 @@
           "activeDecisor": "Eduardo De Camargo Filho"
         },
         {
+          "id": "cmql5g0sf0000k7q80ihp0ek3",
+          "name": "L'Oréal",
+          "segment": "Cosméticos & Higiene",
+          "accountScore": 0,
+          "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+          "nextActionDueAt": "2026-06-21T17:36:00.000Z",
+          "lastInteractionAt": "2026-08-24T12:27:28.874Z",
+          "source": null,
+          "owner": null,
+          "contactCount": 6,
+          "activeDecisor": "Felipe Feteira do Vale"
+        },
+        {
           "id": "cmqqwt16f000ik7o8il8uzjxj",
           "name": "Minerva Foods",
           "segment": null,
@@ -2143,19 +1519,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "ADRIANO ROSA DELFINO"
-        },
-        {
-          "id": "cmqjsbyd6000ok7zw8yagmcc0",
-          "name": "Casas Bahia",
-          "segment": null,
-          "accountScore": 720,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-13T19:21:33.000Z",
-          "lastInteractionAt": "2026-08-17T12:09:15.254Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 4,
-          "activeDecisor": "Karina Baldin"
         },
         {
           "id": "cmshu8i8j005ek7ccqrg5l4zb",
@@ -2171,8 +1534,34 @@
           "activeDecisor": "Luciano Xavier de Miranda"
         },
         {
+          "id": "cmq9t45oj003bk7o02fgh1kc9",
+          "name": "Unilever",
+          "segment": null,
+          "accountScore": 45,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-24T16:42:20.397Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 7,
+          "activeDecisor": "João Nascimento"
+        },
+        {
+          "id": "cmsswvjfa002sk7ywsi75mbns",
+          "name": "Bayer Brasil",
+          "segment": "Palestrante Fórum ILOS",
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-24T12:27:45.212Z",
+          "source": "forum-ilos-2026-speakers",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Elaine Selma"
+        },
+        {
           "id": "cmsngud670000k7q0j7ttgbyp",
-          "name": "Grupo Profarma",
+          "name": "Profarma",
           "segment": "Farmacêutico & Saúde",
           "accountScore": 0,
           "nextAction": "Contato Thiago",
@@ -2259,7 +1648,21 @@
     {
       "stage": "DISQUALIFIED",
       "label": "Desqualificado",
-      "companies": []
+      "companies": [
+        {
+          "id": "cmqjsbyd6000ok7zw8yagmcc0",
+          "name": "Casas Bahia",
+          "segment": null,
+          "accountScore": 720,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-13T19:21:33.000Z",
+          "lastInteractionAt": "2026-08-24T13:09:03.167Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": "Karina Baldin"
+        }
+      ]
     }
   ]
 }

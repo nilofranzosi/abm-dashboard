@@ -508,65 +508,31 @@
     }
 
     function exportToCSV() {
-      if (!data) return;
+      if (!data) {
+        alert('❌ Dados não carregados. Aguarde alguns segundos e tente novamente.');
+        return;
+      }
 
-      // Aplicar os mesmos filtros que a tabela usa
-      let filtered = data.rows.filter(row => {
-        const name = (row.companyName || row.clienteRaw).toLowerCase();
-        if (searchQuery && !name.includes(searchQuery)) return false;
-        if (filterTier && row.tier !== Number(filterTier)) return false;
-        if (filterStatus && row.status !== filterStatus) return false;
-        if (filterTrend) {
-          const trend = trendDoMes(row);
-          if (filterTrend === 'growth' && trend <= 0) return false;
-          if (filterTrend === 'decline' && trend >= 0) return false;
-          if (filterTrend === 'flat' && trend !== 0) return false;
-        }
-        if (filterNoEvents && row.eventos?.length > 0) return false;
-        return true;
-      });
+      // Pegar apenas as linhas visíveis na tabela (aplicar os mesmos filtros)
+      const tbody = document.getElementById('tbody');
+      const visibleRows = Array.from(tbody.querySelectorAll('tr')).map(tr => {
+        const idx = parseInt(tr.getAttribute('data-idx'));
+        return data.rows[idx];
+      }).filter(Boolean);
 
-      // Aplicar a mesma ordenação
-      const rows = [...filtered].sort((a, b) => {
-        let aVal, bVal;
-        if (sortBy === 'company') {
-          aVal = (a.companyName || a.clienteRaw).toLowerCase();
-          bVal = (b.companyName || b.clienteRaw).toLowerCase();
-        } else if (sortBy === 'contractDays') {
-          const aTrend = a.trend?.find(t => t.month === selectedMonth);
-          const bTrend = b.trend?.find(t => t.month === selectedMonth);
-          aVal = aTrend?.contractDays || 0;
-          bVal = bTrend?.contractDays || 0;
-        } else if (sortBy === 'status') {
-          const aTrend = a.trend?.find(t => t.month === selectedMonth);
-          const bTrend = b.trend?.find(t => t.month === selectedMonth);
-          aVal = a.alvo > 0 ? ((aTrend?.contractDays || 0) / a.alvo) * 100 : 0;
-          bVal = b.alvo > 0 ? ((bTrend?.contractDays || 0) / b.alvo) * 100 : 0;
-        } else if (sortBy === 'events') {
-          aVal = a.eventos?.length || 0;
-          bVal = b.eventos?.length || 0;
-        } else if (sortBy === 'tier') {
-          aVal = a.tier || 999;
-          bVal = b.tier || 999;
-        } else if (sortBy === 'qualification') {
-          aVal = a.status || '';
-          bVal = b.status || '';
-        } else if (sortBy === 'trend') {
-          aVal = trendDoMes(a);
-          bVal = trendDoMes(b);
-        } else if (sortBy === 'gap') {
-          aVal = a.faltaParaAlvo || 0;
-          bVal = b.faltaParaAlvo || 0;
-        }
-        return sortAsc ? (aVal < bVal ? -1 : 1) : (aVal > bVal ? -1 : 1);
-      });
+      if (visibleRows.length === 0) {
+        alert('❌ Nenhuma empresa encontrada com os filtros selecionados');
+        return;
+      }
 
-      // Gerar CSV
+      const monthToUse = selectedMonth || data.trendMonths?.[data.trendMonths.length - 1] || '2026-08-01';
+
+      // Gerar CSV com apenas as linhas visíveis
       const headers = ['#', 'Empresa', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade'];
       const csvLines = [headers.join(',')];
 
-      rows.forEach((row, idx) => {
-        const monthTrend = row.trend?.find(t => t.month === selectedMonth);
+      visibleRows.forEach((row, idx) => {
+        const monthTrend = row.trend?.find(t => t.month === monthToUse);
         const contractDaysThisMonth = monthTrend?.contractDays || 0;
         const pct = row.alvo > 0 ? Math.round((contractDaysThisMonth / row.alvo) * 100) : 0;
         const eventCount = row.eventos?.length || 0;
@@ -598,6 +564,8 @@
       link.download = `target-accounts-outubro-${new Date().toISOString().split('T')[0]}.csv`;
       link.click();
       URL.revokeObjectURL(link.href);
+
+      alert(`✅ Exportadas ${visibleRows.length} empresas (conforme filtro selecionado)`);
     }
 
     function updateDetailMonth() {
