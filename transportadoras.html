@@ -462,7 +462,7 @@
 </head>
 <body>
   <script>
-    if (new URLSearchParams(location.search).get("embed") === "1") {
+    if ((window.self !== window.top || new URLSearchParams(location.search).get("embed") === "1")) {
       document.documentElement.classList.add("embedded-view");
     }
   </script>
@@ -567,6 +567,35 @@
             </thead>
             <tbody id="clientes-tbody">
               <tr><td colspan="14" class="loading">Carregando clientes...</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Resumo de presença em evento, agrupado por família: as 5 etapas de
+             Copa Truck viram uma linha com a recorrência ao lado. Pedido do
+             Nilo em 24/08/2026 para enxergar quais eventos estão funcionando. -->
+        <section class="table-panel">
+          <h2>Touchpoints por evento</h2>
+          <div class="muted" id="eventos-resumo-legenda">
+            Presença em evento agrupada por família. <strong>Alcance</strong> conta empresa distinta —
+            quem foi a 3 etapas de Copa Truck conta uma vez.
+          </div>
+          <table class="clientes-table" id="eventos-resumo-table">
+            <thead>
+              <tr>
+                <th>Evento</th>
+                <th>Recorrência</th>
+                <th>Período</th>
+                <th>Alcance (empresas)</th>
+                <th>Touchpoints</th>
+                <th>Clientes</th>
+                <th>Prospects</th>
+                <th>Churn</th>
+                <th>Embarcadores</th>
+              </tr>
+            </thead>
+            <tbody id="eventos-resumo-tbody">
+              <tr><td colspan="9" class="loading">Carregando resumo de eventos...</td></tr>
             </tbody>
           </table>
         </section>
@@ -1363,6 +1392,57 @@
         applyFiltersAndSort();
       } catch (error) {
         tbodyEl.innerHTML = `<tr><td colspan="14" class="error">Não foi possível carregar /api/transportadoras/clientes. ${error.message}</td></tr>`;
+      }
+      loadEventosResumo();
+    }
+
+    // ─── Touchpoints por evento (resumo agrupado por família) ───────────────
+
+    function formatPeriodoEvento(row) {
+      const primeira = formatDate(row.primeiraEdicao);
+      if (row.recorrencia === 1) return primeira;
+      return `${primeira} – ${formatDate(row.ultimaEdicao)}`;
+    }
+
+    // A recorrência ganha tooltip com as edições que a compõem: sem isso a
+    // compilação esconde de qual etapa veio o alcance.
+    function recorrenciaCell(row) {
+      if (row.recorrencia === 1) return "1 edição";
+      const detalhe = row.edicoes
+        .map((e) => `${formatDate(e.occurredAt)} · ${e.eventName} (${e.empresas})`)
+        .join("\n");
+      return `<span title="${escapeAttr(detalhe)}">${row.recorrencia} edições</span>`;
+    }
+
+    async function loadEventosResumo() {
+      const tbody = document.getElementById("eventos-resumo-tbody");
+      if (!tbody) return;
+      tbody.innerHTML = `<tr><td colspan="9" class="loading">Carregando resumo de eventos...</td></tr>`;
+      try {
+        const payload = await fetchJson(`${apiBase}/api/transportadoras/eventos-resumo`);
+        const rows = payload.data ?? [];
+        if (rows.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="9" class="loading">Nenhum touchpoint de evento registrado.</td></tr>`;
+          return;
+        }
+        tbody.innerHTML = rows
+          .map(
+            (row) => `
+              <tr>
+                <td>${escapeAttr(row.familia)}</td>
+                <td>${recorrenciaCell(row)}</td>
+                <td>${formatPeriodoEvento(row)}</td>
+                <td><strong>${row.empresasAlcancadas}</strong></td>
+                <td>${row.totalTouchpoints}</td>
+                <td>${row.clientes}</td>
+                <td>${row.prospects}</td>
+                <td>${row.churn}</td>
+                <td>${row.embarcadores}</td>
+              </tr>`
+          )
+          .join("");
+      } catch (error) {
+        tbody.innerHTML = `<tr><td colspan="9" class="error">Não foi possível carregar /api/transportadoras/eventos-resumo. ${error.message}</td></tr>`;
       }
     }
 

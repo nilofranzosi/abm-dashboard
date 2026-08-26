@@ -148,6 +148,37 @@
     </div>
   </div>
 
+  <!-- Resumo de presença em evento agrupado por família (as 5 etapas de Copa
+       Truck viram uma linha com a recorrência ao lado). Fica fora do .container
+       de propósito: o container é a grade de 2 colunas (tabela + detalhe) e
+       este painel é de largura cheia. Pedido do Nilo em 24/08/2026. -->
+  <div class="panel" id="eventos-resumo-panel" style="margin-top: 16px;">
+    <h2>Touchpoints por evento</h2>
+    <p class="muted" style="margin-bottom: 14px;">
+      Presença em evento de toda a base, agrupada por família.
+      <strong>Alcance</strong> conta empresa distinta — quem foi a 3 etapas de Copa Truck conta uma vez.
+      Passe o mouse na recorrência para ver as edições.
+    </p>
+    <table id="eventos-resumo-table">
+      <thead>
+        <tr>
+          <th>Evento</th>
+          <th style="text-align: center;">Recorrência</th>
+          <th>Período</th>
+          <th style="text-align: right;">Alcance</th>
+          <th style="text-align: right;">Touchpoints</th>
+          <th style="text-align: right;">Clientes</th>
+          <th style="text-align: right;">Prospects</th>
+          <th style="text-align: right;">Churn</th>
+          <th style="text-align: right;">Embarcadores</th>
+        </tr>
+      </thead>
+      <tbody id="eventos-resumo-tbody">
+        <tr><td colspan="9" class="muted">Carregando resumo de eventos...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <script>
     let data = null;
     let currentChart = null;
@@ -261,6 +292,57 @@
         render();
       } catch (err) {
         document.body.innerHTML = `<div class="error">Erro ao carregar dados de agosto/2026: ${escapeHtml(err.message)}</div>`;
+        return;
+      }
+      // Fora do try acima de proposito: uma falha no resumo de eventos nao
+      // pode derrubar o painel inteiro (aquele catch reescreve o body todo).
+      loadEventosResumo();
+    }
+
+    // ─── Touchpoints por evento (resumo agrupado por familia) ───────────────
+
+    function fmtDataEvento(iso) {
+      return new Date(iso).toLocaleDateString('pt-BR');
+    }
+
+    async function loadEventosResumo() {
+      const tbody = document.getElementById('eventos-resumo-tbody');
+      if (!tbody) return;
+      try {
+        const res = await fetch('/api/transportadoras/eventos-resumo', { credentials: 'include' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+        const rows = (await res.json()).data ?? [];
+        if (rows.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="9" class="muted">Nenhum touchpoint de evento registrado.</td></tr>`;
+          return;
+        }
+        tbody.innerHTML = rows.map(row => {
+          const periodo = row.recorrencia === 1
+            ? fmtDataEvento(row.primeiraEdicao)
+            : `${fmtDataEvento(row.primeiraEdicao)} – ${fmtDataEvento(row.ultimaEdicao)}`;
+          // Tooltip com as edicoes: sem ele a compilacao esconde de qual etapa
+          // veio o alcance.
+          const detalhe = row.edicoes
+            .map(e => `${fmtDataEvento(e.occurredAt)} · ${e.eventName} (${e.empresas})`)
+            .join('\n');
+          const rec = row.recorrencia === 1
+            ? '1 edição'
+            : `<span title="${escapeHtml(detalhe)}" style="border-bottom: 1px dotted #6B778C; cursor: help;">${row.recorrencia} edições</span>`;
+          return `
+            <tr>
+              <td>${escapeHtml(row.familia)}</td>
+              <td style="text-align: center;">${rec}</td>
+              <td>${periodo}</td>
+              <td style="text-align: right; font-weight: 600;">${row.empresasAlcancadas}</td>
+              <td style="text-align: right;">${row.totalTouchpoints}</td>
+              <td style="text-align: right;">${row.clientes}</td>
+              <td style="text-align: right;">${row.prospects}</td>
+              <td style="text-align: right;">${row.churn}</td>
+              <td style="text-align: right;">${row.embarcadores}</td>
+            </tr>`;
+        }).join('');
+      } catch (err) {
+        tbody.innerHTML = `<tr><td colspan="9" class="error">Não foi possível carregar o resumo de eventos: ${escapeHtml(err.message)}</td></tr>`;
       }
     }
 

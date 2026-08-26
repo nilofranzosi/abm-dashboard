@@ -281,7 +281,7 @@ function renderWeek(weekKey) {
 
 async function init() {
   // Embed mode
-  if (new URLSearchParams(location.search).get('embed') === '1') {
+  if ((window.self !== window.top || new URLSearchParams(location.search).get("embed") === "1")) {
     document.body.classList.add('embed');
   }
 

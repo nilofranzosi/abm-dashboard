@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T11:49:43.744Z",
+  "generatedAt": "2026-08-26T12:00:00.078Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -855,15 +855,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww51001nk7d0scso7236",
+      "id": "cmsswww4z0004k7d0ux6kq6p3",
       "company": {
-        "id": "cmsswvk3g007uk7yw7wnyippy",
-        "name": "M. DIAS BRANCO",
-        "status": "CONNECTION_ACCEPTED"
+        "id": "cmsswvj1b0010k7ywt8ieozy4",
+        "name": "ILOS",
+        "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvk3q007wk7ywew5rf9zj",
-        "name": "Marcos Paulo Battistini"
+        "id": "cmsswvjph004yk7ywaquyeu76",
+        "name": "Henrique Alvarenga"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -889,23 +889,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww50000gk7d0hbm223jf",
-      "company": {
-        "id": "cmsswvj0o000vk7ywro68x2tw",
-        "name": "FLOWLS",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvj0x000xk7yw3vragbr4",
-        "name": "Anna Valle"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmsswww50000ek7d0xa8oax86",
       "company": {
         "id": "cmsswviz3000mk7ywgh0k8nif",
@@ -915,6 +898,23 @@
       "contact": {
         "id": "cmsswvizc000ok7yw3wko60jc",
         "name": "Alice Bernardi"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000gk7d0hbm223jf",
+      "company": {
+        "id": "cmsswvj0o000vk7ywro68x2tw",
+        "name": "FLOWLS",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvj0x000xk7yw3vragbr4",
+        "name": "Anna Valle"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -940,15 +940,32 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww50000wk7d0toiq8rwp",
+      "id": "cmsswww50000tk7d0t1ufjo4s",
       "company": {
-        "id": "cmsswvjmk004ak7ywdatlmnsy",
-        "name": "ENJOEI",
+        "id": "cmsswvjkt003vk7ywdq5v46u2",
+        "name": "SOCIEDADE BÍBLICA DO BRASIL (SBB)",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvjms004ck7ywtqui4v6n",
-        "name": "Gerson Dias"
+        "id": "cmsswvjl2003xk7yw3oy8qqxj",
+        "name": "Fernando Araujo"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000sk7d04nqvf3tj",
+      "company": {
+        "id": "cmsswvjk5003qk7ywxtant3u4",
+        "name": "RED BULL",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjke003sk7yw7hxkftrx",
+        "name": "Fernanda Redondo"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -966,23 +983,6 @@
       "contact": {
         "id": "cmsswvjdv002kk7ywwxymnq00",
         "name": "Daniel Brugioni"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww50000tk7d0t1ufjo4s",
-      "company": {
-        "id": "cmsswvjkt003vk7ywdq5v46u2",
-        "name": "SOCIEDADE BÍBLICA DO BRASIL (SBB)",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvjl2003xk7yw3oy8qqxj",
-        "name": "Fernando Araujo"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1025,6 +1025,23 @@
       "severity": "critical"
     },
     {
+      "id": "cmsswww50000wk7d0toiq8rwp",
+      "company": {
+        "id": "cmsswvjmk004ak7ywdatlmnsy",
+        "name": "ENJOEI",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjms004ck7ywtqui4v6n",
+        "name": "Gerson Dias"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmsswww50000mk7d0iuwul566",
       "company": {
         "id": "cmsswvjg1002xk7ywdclu42xj",
@@ -1034,57 +1051,6 @@
       "contact": {
         "id": "cmsswvjgb002zk7ywyuyz4dyc",
         "name": "Elton Barcelos"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww50000sk7d04nqvf3tj",
-      "company": {
-        "id": "cmsswvjk5003qk7ywxtant3u4",
-        "name": "RED BULL",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvjke003sk7yw7hxkftrx",
-        "name": "Fernanda Redondo"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww51001ck7d0gp4tmzj7",
-      "company": {
-        "id": "cmsswvjwp006fk7ywpbsl5yb9",
-        "name": "FLEETPAY",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvjx0006hk7ywl1ij4ca0",
-        "name": "Leonardo Mello"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww51001kk7d0uuboj8et",
-      "company": {
-        "id": "cmsswvk1r007gk7ywzal58exp",
-        "name": "KNAPP",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvk1z007ik7ywm3j43bmi",
-        "name": "Marcio Schilling"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1110,6 +1076,23 @@
       "severity": "critical"
     },
     {
+      "id": "cmsswww51001ck7d0gp4tmzj7",
+      "company": {
+        "id": "cmsswvjwp006fk7ywpbsl5yb9",
+        "name": "FLEETPAY",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjx0006hk7ywl1ij4ca0",
+        "name": "Leonardo Mello"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmsswww510017k7d0r2yxpvql",
       "company": {
         "id": "cmqjsbyd6000ok7zw8yagmcc0",
@@ -1119,6 +1102,23 @@
       "contact": {
         "id": "cmsswvjtl005tk7ywvnj9g0zm",
         "name": "Karina Baldin"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001kk7d0uuboj8et",
+      "company": {
+        "id": "cmsswvk1r007gk7ywzal58exp",
+        "name": "KNAPP",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvk1z007ik7ywm3j43bmi",
+        "name": "Marcio Schilling"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1161,15 +1161,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww520022k7d0zqtiytgh",
+      "id": "cmsswww52001sk7d0ef68a0d0",
       "company": {
-        "id": "cmsswvkes009pk7ywmodw02o6",
-        "name": "DUIMPWEB",
+        "id": "cmsswvk7p008gk7ywddbjwrue",
+        "name": "LOGCOMEX",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvkf1009rk7ywadeazh9p",
-        "name": "Rodrigo Santos"
+        "id": "cmsswvk80008ik7ywi7vcpgha",
+        "name": "Mônica Gabriella"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1195,6 +1195,23 @@
       "severity": "critical"
     },
     {
+      "id": "cmsswww520020k7d0k4t1oahd",
+      "company": {
+        "id": "cmsswvkda009gk7ywcwqvnc46",
+        "name": "TOYOTA",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvkdl009ik7yw1zbo2iwc",
+        "name": "Roberto Ueda"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmsswww51001pk7d0yss69e0q",
       "company": {
         "id": "cmsswvk5f0083k7ywi4stpksk",
@@ -1212,15 +1229,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww52001zk7d0vmphiik3",
+      "id": "cmsswww520022k7d0zqtiytgh",
       "company": {
-        "id": "cmsswvj8z001yk7ywcetyhbhu",
-        "name": "INPO",
+        "id": "cmsswvkes009pk7ywmodw02o6",
+        "name": "DUIMPWEB",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvkcp009dk7yw8nr8qalq",
-        "name": "Rhandal Masteguim"
+        "id": "cmsswvkf1009rk7ywadeazh9p",
+        "name": "Rodrigo Santos"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1229,15 +1246,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww52001yk7d01m4ury4m",
+      "id": "cmsswww51001nk7d0scso7236",
       "company": {
-        "id": "cmsswvkbv0097k7yw2h03d31v",
-        "name": "O9 SOLUTIONS",
-        "status": "MAPPED"
+        "id": "cmsswvk3g007uk7yw7wnyippy",
+        "name": "M. DIAS BRANCO",
+        "status": "CONNECTION_ACCEPTED"
       },
       "contact": {
-        "id": "cmsswvkc40099k7ywrfkj752u",
-        "name": "Renato Tavares"
+        "id": "cmsswvk3q007wk7ywew5rf9zj",
+        "name": "Marcos Paulo Battistini"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1246,15 +1263,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww4z0002k7d04tzuqn5y",
+      "id": "cmsswww52001vk7d0qs80hhrv",
       "company": {
-        "id": "cmsswvj8z001yk7ywcetyhbhu",
-        "name": "INPO",
+        "id": "cmsswvka2008uk7yw94wkssj1",
+        "name": "LOTS GROUP",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvj9b0020k7ywk5922tv6",
-        "name": "Cauê Guazzelli"
+        "id": "cmsswvkaa008wk7ywu0vvl1z1",
+        "name": "Pedro Silvestrini"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1263,15 +1280,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww4z0003k7d0qwlty4bn",
+      "id": "cmsswww520025k7d0ccsquaae",
       "company": {
-        "id": "cmsswvj9y0023k7yw9z609pdk",
-        "name": "FRASLE MOBILITY – RANDONCORP",
+        "id": "cmsswvkgq00a3k7yw5ov2kr08",
+        "name": "NOVELIS DO BRASIL",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvja80025k7ywxk5ilsve",
-        "name": "Clairton Guielcer de For"
+        "id": "cmsswvkgy00a5k7yw7n8om1xo",
+        "name": "Stéfano Rosetti"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1280,15 +1297,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww4m0000k7d0idwkxp7m",
+      "id": "cmsswww4z0006k7d01ftiftid",
       "company": {
-        "id": "cmsswvj6w001ok7ywxsr2r6az",
-        "name": "SAP",
+        "id": "cmsswvj1y0015k7ywi14sfch9",
+        "name": "LTPLABS",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvj7b001qk7yw3dthgbaz",
-        "name": "Camilla Sarto"
+        "id": "cmsswvj250017k7ywgqrqfnkz",
+        "name": "Bruno Batista"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1331,15 +1348,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww4z0004k7d0ux6kq6p3",
+      "id": "cmsswww4z0002k7d04tzuqn5y",
       "company": {
-        "id": "cmsswvj1b0010k7ywt8ieozy4",
-        "name": "ILOS",
+        "id": "cmsswvj8z001yk7ywcetyhbhu",
+        "name": "INPO",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvjph004yk7ywaquyeu76",
-        "name": "Henrique Alvarenga"
+        "id": "cmsswvj9b0020k7ywk5922tv6",
+        "name": "Cauê Guazzelli"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1348,15 +1365,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww4z0006k7d01ftiftid",
+      "id": "cmsswww4m0000k7d0idwkxp7m",
       "company": {
-        "id": "cmsswvj1y0015k7ywi14sfch9",
-        "name": "LTPLABS",
+        "id": "cmsswvj6w001ok7ywxsr2r6az",
+        "name": "SAP",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvj250017k7ywgqrqfnkz",
-        "name": "Bruno Batista"
+        "id": "cmsswvj7b001qk7yw3dthgbaz",
+        "name": "Camilla Sarto"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1399,23 +1416,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww520025k7d0ccsquaae",
-      "company": {
-        "id": "cmsswvkgq00a3k7yw5ov2kr08",
-        "name": "NOVELIS DO BRASIL",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvkgy00a5k7yw7n8om1xo",
-        "name": "Stéfano Rosetti"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmsswww520028k7d01caz4zk3",
       "company": {
         "id": "cmsswvkj400aik7ywj6749ryf",
@@ -1433,15 +1433,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww520020k7d0k4t1oahd",
+      "id": "cmsswww4z0003k7d0qwlty4bn",
       "company": {
-        "id": "cmsswvkda009gk7ywcwqvnc46",
-        "name": "TOYOTA",
+        "id": "cmsswvj9y0023k7yw9z609pdk",
+        "name": "FRASLE MOBILITY – RANDONCORP",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvkdl009ik7yw1zbo2iwc",
-        "name": "Roberto Ueda"
+        "id": "cmsswvja80025k7ywxk5ilsve",
+        "name": "Clairton Guielcer de For"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1450,32 +1450,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww52001vk7d0qs80hhrv",
+      "id": "cmsswww52001zk7d0vmphiik3",
       "company": {
-        "id": "cmsswvka2008uk7yw94wkssj1",
-        "name": "LOTS GROUP",
+        "id": "cmsswvj8z001yk7ywcetyhbhu",
+        "name": "INPO",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvkaa008wk7ywu0vvl1z1",
-        "name": "Pedro Silvestrini"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-14T16:50:46.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww52001sk7d0ef68a0d0",
-      "company": {
-        "id": "cmsswvk7p008gk7ywddbjwrue",
-        "name": "LOGCOMEX",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvk80008ik7ywi7vcpgha",
-        "name": "Mônica Gabriella"
+        "id": "cmsswvkcp009dk7yw8nr8qalq",
+        "name": "Rhandal Masteguim"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1501,100 +1484,32 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww510013k7d0n34zy7ra",
+      "id": "cmsswww52001yk7d01m4ury4m",
       "company": {
-        "id": "cmsswvjqz0059k7ywjk6fvmp0",
-        "name": "H&CO",
+        "id": "cmsswvkbv0097k7yw2h03d31v",
+        "name": "O9 SOLUTIONS",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvjr9005bk7yw86i7rxk8",
-        "name": "João Pedro Mikinev"
+        "id": "cmsswvkc40099k7ywrfkj752u",
+        "name": "Renato Tavares"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
       "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-17T11:34:36.245Z",
+      "dueAt": "2026-08-14T16:50:46.307Z",
       "severity": "critical"
     },
     {
-      "id": "cmsswww51001gk7d0k6xyfq8t",
+      "id": "cmsswww51001fk7d0lolrxa2r",
       "company": {
-        "id": "cmsswvjz2006xk7yw64x5go9o",
-        "name": "EVMOB",
+        "id": "cmsswvju4005wk7ywir66oift",
+        "name": "COOPERCARGA LOGÍSTICA",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvjzb006zk7ywlqbe9swn",
-        "name": "Lucas Zanon Arantes"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-17T11:34:36.245Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww51001lk7d0xzucn9wt",
-      "company": {
-        "id": "cmsswvk2a007lk7ywqkmujt91",
-        "name": "EUCATEX",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvk2h007nk7ywjxn3frl7",
-        "name": "Marcio Sidney Lino Junior"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-17T11:34:36.245Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww52001qk7d0wm033ebi",
-      "company": {
-        "id": "cmsswvjaw0028k7ywn5xlkb3u",
-        "name": "SODEXO",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvk6g0089k7ywd6b92rqf",
-        "name": "Marina Zanin"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-17T11:34:36.245Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww520024k7d07fuw8rqy",
-      "company": {
-        "id": "cmsswvkg2009yk7ywf1e9uw1t",
-        "name": "MIT ZARAGOZA LOGISTICS CENTER",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvkgc00a0k7ywbsh8lgoq",
-        "name": "Spyros Lekkakos"
-      },
-      "owner": null,
-      "reason": "Conexão aceita sem primeira mensagem registrada.",
-      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
-      "dueAt": "2026-08-17T11:34:36.245Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsswww510019k7d0uesnhwr8",
-      "company": {
-        "id": "cmsswvjus0061k7yw70h1ayf6",
-        "name": "ACTIONSYS",
-        "status": "MAPPED"
-      },
-      "contact": {
-        "id": "cmsswvjv00063k7ywdhgjuhl3",
-        "name": "Leila Santos"
+        "id": "cmsswvjyn006uk7ywmo67ozow",
+        "name": "Lívia Barros"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1620,6 +1535,23 @@
       "severity": "critical"
     },
     {
+      "id": "cmsswww52001qk7d0wm033ebi",
+      "company": {
+        "id": "cmsswvjaw0028k7ywn5xlkb3u",
+        "name": "SODEXO",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvk6g0089k7ywd6b92rqf",
+        "name": "Marina Zanin"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmsswww510014k7d0y9tfx7xm",
       "company": {
         "id": "cmsswvjrn005ek7ywchtx66p1",
@@ -1637,15 +1569,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww51001hk7d0hj08je5b",
+      "id": "cmsswww520024k7d07fuw8rqy",
       "company": {
-        "id": "cmsswvjzs0072k7ywczc3s2k0",
-        "name": "ILOGG",
+        "id": "cmsswvkg2009yk7ywf1e9uw1t",
+        "name": "MIT ZARAGOZA LOGISTICS CENTER",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvk020074k7ywp153097s",
-        "name": "Luís Cláudio Martão"
+        "id": "cmsswvkgc00a0k7ywbsh8lgoq",
+        "name": "Spyros Lekkakos"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1654,15 +1586,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww51001fk7d0lolrxa2r",
+      "id": "cmsswww51001gk7d0k6xyfq8t",
       "company": {
-        "id": "cmsswvju4005wk7ywir66oift",
-        "name": "COOPERCARGA LOGÍSTICA",
+        "id": "cmsswvjz2006xk7yw64x5go9o",
+        "name": "EVMOB",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvjyn006uk7ywmo67ozow",
-        "name": "Lívia Barros"
+        "id": "cmsswvjzb006zk7ywlqbe9swn",
+        "name": "Lucas Zanon Arantes"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1671,15 +1603,15 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww520029k7d08zkomlby",
+      "id": "cmsswww510013k7d0n34zy7ra",
       "company": {
-        "id": "cmsswvkjv00ank7ywarlh10a8",
-        "name": "EDENRED MOBILIDADE",
+        "id": "cmsswvjqz0059k7ywjk6fvmp0",
+        "name": "H&CO",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvkk600apk7yweftu1gr9",
-        "name": "Vinicios Fernandes"
+        "id": "cmsswvjr9005bk7yw86i7rxk8",
+        "name": "João Pedro Mikinev"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1688,15 +1620,49 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww520026k7d07qozdmwa",
+      "id": "cmsswww510019k7d0uesnhwr8",
       "company": {
-        "id": "cmsswvkhg00a8k7ywq9wdddb8",
-        "name": "EPSON",
+        "id": "cmsswvjus0061k7yw70h1ayf6",
+        "name": "ACTIONSYS",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvkhq00aak7ywnv98w391",
-        "name": "Tania Fernandes"
+        "id": "cmsswvjv00063k7ywdhgjuhl3",
+        "name": "Leila Santos"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww500010k7d01unj3d43",
+      "company": {
+        "id": "cmsswvjou004sk7ywqr9iujrm",
+        "name": "DROGARIA ARAÚJO",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvjp2004uk7ywzhmss7y7",
+        "name": "Helbert Lopes"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001lk7d0xzucn9wt",
+      "company": {
+        "id": "cmsswvk2a007lk7ywqkmujt91",
+        "name": "EUCATEX",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvk2h007nk7ywjxn3frl7",
+        "name": "Marcio Sidney Lino Junior"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",
@@ -1722,15 +1688,49 @@
       "severity": "critical"
     },
     {
-      "id": "cmsswww500010k7d01unj3d43",
+      "id": "cmsswww520026k7d07qozdmwa",
       "company": {
-        "id": "cmsswvjou004sk7ywqr9iujrm",
-        "name": "DROGARIA ARAÚJO",
+        "id": "cmsswvkhg00a8k7ywq9wdddb8",
+        "name": "EPSON",
         "status": "MAPPED"
       },
       "contact": {
-        "id": "cmsswvjp2004uk7ywzhmss7y7",
-        "name": "Helbert Lopes"
+        "id": "cmsswvkhq00aak7ywnv98w391",
+        "name": "Tania Fernandes"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww51001hk7d0hj08je5b",
+      "company": {
+        "id": "cmsswvjzs0072k7ywczc3s2k0",
+        "name": "ILOGG",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvk020074k7ywp153097s",
+        "name": "Luís Cláudio Martão"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww520029k7d08zkomlby",
+      "company": {
+        "id": "cmsswvkjv00ank7ywarlh10a8",
+        "name": "EDENRED MOBILIDADE",
+        "status": "MAPPED"
+      },
+      "contact": {
+        "id": "cmsswvkk600apk7yweftu1gr9",
+        "name": "Vinicios Fernandes"
       },
       "owner": null,
       "reason": "Conexão aceita sem primeira mensagem registrada.",

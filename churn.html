@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Churn — Tier 1 a 4</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+  <script src="/js/multi-filtro.js"></script>
+  <style>
+    :root {
+      --ink: #2B3038;
+      --muted: #6B778C;
+      --line: #D4E4F5;
+      --bg: #F4F8FC;
+      --panel: #FFFFFF;
+      --blue: #297ACC;
+      --green: #148F4E;
+      --red: #C93137;
+      /* Marcador da ultima operacao. Mesmo ambar da aba Clientes, e pelo mesmo
+         motivo: e um MOMENTO no eixo do tempo, nao um status bom ou ruim. */
+      --marco: #8B6212;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family:var(--font-sans); color: var(--ink); background: var(--bg); padding: 14px; }
+    .container { display: grid; grid-template-columns: 1fr 400px; gap: 14px; min-height: 100vh; }
+    h2 { margin: 0 0 14px; font-size: 16px; color: var(--blue); }
+    p { margin: 0; }
+    .muted { color: var(--muted); font-size: 13px; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px; margin-bottom: 14px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 14px; }
+    .kpi { background: white; border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 8px; padding: 16px; text-align: center; }
+    .kpi.perda { border-top-color: var(--red); }
+    .kpi.cobertura { border-top-color: var(--green); }
+    .kpi-label { font-size: 0.65rem; font-weight: 600; color: #6B778C; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+    .kpi-value { font-size: 1.75rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+    .kpi-subtitle { font-size: 11px; color: var(--muted); }
+
+    /* Alternador de visao. Dois estados exclusivos, sempre visiveis os dois:
+       esconder a contagem da outra visao faria parecer que a aba perdeu linhas. */
+    .view-switch { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+    .view-switch button { padding: 8px 16px; border: 0; background: white; cursor: pointer; font-size: 13px; font-weight: 400; color: var(--muted); font-family: inherit; }
+    .view-switch button.active { background: var(--blue); color: white; font-weight: 600; }
+    .view-switch button:not(.active):hover { background: var(--bg); }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; color: #404754; background: #F4F8FC; border-bottom: 1px solid var(--line); padding: 10px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; cursor: pointer; }
+    th:hover { background: #D4E4F5; }
+    td { border-bottom: 1px solid #F4F8FC; padding: 10px; vertical-align: top; }
+    tr:hover { background: #F8FAFD; cursor: pointer; }
+    tr.selected { background: #D4E4F5; }
+    .empresa-nome { font-weight: 600; }
+    .empresa-grupo { font-size: 11px; color: var(--muted); }
+    .status-badge { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 0.72rem; font-weight: 600; background: #F0F1F3; color: #404754; }
+    .status-badge.positive { background: #D0E9DC; color: #0C562F; }
+    .status-badge.negative { background: #F4D6D7; color: #791D21; }
+    .status-badge.info { background: #D4E4F5; color: #297ACC; }
+    .status-badge.warn { background: #FAEDD2; color: #8B6212; }
+    .num { font-variant-numeric: tabular-nums; text-align: right; }
+    .num.zero, .num.vazio { color: var(--muted); font-weight: 400; }
+    .num.forte { font-weight: 600; }
+    .filiais-badge { display: inline-block; min-width: 26px; padding: 2px 8px; border-radius: 100px; font-size: 0.72rem; font-weight: 600; background: #D4E4F5; color: #297ACC; text-align: center; }
+    .filiais-badge.una { background: #F0F1F3; color: var(--muted); font-weight: 400; }
+    /* Sparkline em CSS puro: barras proporcionais ao pico da propria linha.
+       Nao e grafico com eixo — e um indicador de forma, e o numero exato fica
+       na coluna ao lado e no painel de detalhe. */
+    .spark { display: inline-flex; align-items: flex-end; gap: 1px; height: 22px; }
+    .spark i { width: 4px; background: var(--blue); border-radius: 1px 1px 0 0; min-height: 1px; }
+    .spark i.zero { background: #E1E4E8; }
+    .abm-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
+    .abm-dot.tocada { background: var(--green); }
+    .abm-dot.intocada { background: transparent; border: 1px solid #C4C9D1; }
+
+    .detail-panel { display: none; flex-direction: column; gap: 14px; }
+    .detail-panel.open { display: flex; }
+    .chart-container { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px; }
+    .chart-canvas-wrap { position: relative; height: 240px; }
+    .chart-key { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; padding-top: 10px; font-size: 12px; color: var(--muted); }
+    .chart-key span { display: inline-flex; align-items: center; gap: 6px; }
+    .key-linha { width: 16px; height: 2px; background: var(--blue); border-radius: 2px; }
+    .key-marco { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 8px solid var(--marco); }
+    .detail-grid { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; font-size: 13px; }
+    .detail-grid div:nth-child(even) { text-align: right; font-weight: 600; }
+    .destaque { padding: 12px; background: #F4F8FC; border-radius: 6px; border-left: 3px solid var(--red); }
+    .destaque-label { font-size: 11px; color: var(--muted); font-weight: 600; text-transform: uppercase; margin-bottom: 6px; }
+    .destaque-valor { font-size: 28px; font-weight: 600; color: var(--red); }
+    .filiais-lista { max-height: 220px; overflow-y: auto; font-size: 13px; }
+    .filiais-lista div { padding: 6px 10px; border-left: 3px solid var(--line); margin-bottom: 4px; background: #F8FAFD; }
+
+    .empty { color: var(--muted); padding: 18px; text-align: center; }
+    .error { background: #F4D6D7; border: 1px solid #F4D6D7; color: var(--red); padding: 12px; border-radius: 6px; }
+    .loading { color: var(--muted); padding: 40px; text-align: center; font-size: 14px; }
+    .pager { display: flex; gap: 10px; align-items: center; justify-content: center; padding: 14px 0 2px; }
+    .pager button { padding: 6px 14px; border: 1px solid var(--line); background: white; border-radius: 4px; cursor: pointer; font-size: 13px; font-family: inherit; }
+    .pager button:disabled { color: #A6ADBA; cursor: not-allowed; }
+    .btn-export { padding: 8px 14px; border: 1px solid var(--line); background: white; border-radius: 4px; cursor: pointer; font-size: 13px; color: var(--ink); font-family: inherit; }
+    .btn-export:hover { background: var(--bg); }
+    @media (max-width: 1200px) {
+      .container { grid-template-columns: 1fr; }
+      .detail-panel.open { display: grid; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+<link rel="stylesheet" href="/css/thermo-ds.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <div class="panel">
+        <h2>Churn — Tier 1 a 4</h2>
+        <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-bottom: 14px;">
+          <div class="view-switch" id="view-switch">
+            <button data-view="filiais" class="active" id="btn-filiais">Por filial</button>
+            <button data-view="agrupado" id="btn-agrupado">Agrupado</button>
+          </div>
+          <p class="muted" id="view-hint"></p>
+        </div>
+        <div class="kpi-grid" id="kpi-grid"></div>
+      </div>
+
+      <div class="panel">
+        <h2 id="table-title">Empresas em churn</h2>
+        <p class="muted" style="margin-bottom: 14px;" id="table-hint"></p>
+
+        <div style="margin-bottom: 14px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+          <input type="text" id="search-input" placeholder="Pesquisar empresa, grupo ou CNPJ..." style="flex: 1; min-width: 200px; padding: 8px 12px; border: 1px solid #D4E4F5; border-radius: 4px; font-size: 13px; font-family: inherit;">
+          <div id="filter-tier"></div>
+          <div id="filter-gs"></div>
+          <div id="filter-operacao"></div>
+          <div id="filter-abm"></div>
+          <button class="btn-export" onclick="exportCsv()">⬇ Exportar</button>
+        </div>
+
+        <table id="main-table">
+          <thead>
+            <tr>
+              <th style="width: 44px; text-align: center;">#</th>
+              <th onclick="sortTable('name')">Empresa</th>
+              <th onclick="sortTable('tier')">Tier</th>
+              <th onclick="sortTable('filiais')" id="th-filiais">Filiais</th>
+              <th onclick="sortTable('ultimaOperacao')">Última operação</th>
+              <th onclick="sortTable('perda')">Volume anual</th>
+              <th>Queda</th>
+              <th onclick="sortTable('gs')">GS</th>
+              <th onclick="sortTable('abm')" style="text-align: center;">ABM</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+        <div class="pager" id="pager"></div>
+      </div>
+    </div>
+
+    <div class="detail-panel" id="detail-panel">
+      <div class="panel">
+        <h2 id="detail-title">Selecione uma empresa</h2>
+        <div id="detail-sub" class="muted" style="margin-bottom: 12px;"></div>
+        <div class="destaque">
+          <div class="destaque-label">Volume do último ano ativo</div>
+          <div class="destaque-valor" id="detail-perda">—</div>
+        </div>
+        <div class="detail-grid" style="margin-top: 14px;" id="detail-grid"></div>
+      </div>
+      <div class="chart-container">
+        <div class="chart-canvas-wrap">
+          <canvas id="trend-chart"></canvas>
+        </div>
+        <div class="chart-key">
+          <span><i class="key-linha"></i> dias agenciados</span>
+          <span><i class="key-marco"></i> última operação</span>
+        </div>
+      </div>
+      <div class="panel" id="filiais-panel" hidden>
+        <h2 id="filiais-title">Filiais</h2>
+        <div class="filiais-lista" id="filiais-lista"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Estado da tela. `view` e o unico eixo que muda a consulta ao servidor —
+    // todo o resto filtra em memoria sobre o que ja veio.
+    let view = 'filiais';
+    let data = null;
+    const cache = {};
+    let selectedKey = null;
+    let chart = null;
+    let page = 0;
+    const PAGE_SIZE = 50;
+    let searchQuery = '';
+    let filterTier = new Set();
+    let filterGs = new Set();
+    let filterOperacao = new Set();
+    let filterAbm = new Set();
+    let sortKey = 'perda';
+    let sortDir = 'desc';
+    let filtrosMontados = false;
+
+    const MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+
+    function escapeHtml(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, (c) => (
+        { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+      ));
+    }
+
+    function num(n) {
+      return n == null ? '—' : n.toLocaleString('pt-BR');
+    }
+
+    /** "2024-10-01" -> "out/24". Corta a string, nunca constroi Date: um
+        "YYYY-MM-DD" virado Date entra como UTC e volta um dia antes no fuso
+        de Sao Paulo, exibindo o mes anterior. */
+    function mesAno(iso) {
+      if (!iso) return '—';
+      const [ano, mes] = iso.split('-');
+      return `${MESES[Number(mes) - 1]}/${ano.slice(2)}`;
+    }
+
+    function meses(n) {
+      if (n == null) return '';
+      if (n === 0) return 'neste mês';
+      return n === 1 ? 'há 1 mês' : `há ${n} meses`;
+    }
+
+    async function load() {
+      const alvo = view;
+      if (cache[alvo]) { data = cache[alvo]; render(); return; }
+
+      document.getElementById('tbody').innerHTML = '<tr><td colspan="9" class="loading">Carregando…</td></tr>';
+      try {
+        const res = await fetch(`/api/transportadoras/churn?view=${alvo}`, { credentials: 'include' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+        const json = await res.json();
+        cache[alvo] = json.data;
+        // A visao pode ter mudado enquanto a resposta vinha: so pinta se ainda
+        // for a visao pedida, senao um clique rapido deixa a tela mostrando o
+        // resultado da visao anterior.
+        if (view !== alvo) return;
+        data = json.data;
+        render();
+      } catch (err) {
+        document.getElementById('tbody').innerHTML =
+          `<tr><td colspan="9"><div class="error">Erro ao carregar o churn: ${escapeHtml(err.message)}</div></td></tr>`;
+      }
+    }
+
+    function render() {
+      renderHints();
+      renderKpis();
+      montarFiltros();
+      renderTable();
+    }
+
+    function renderHints() {
+      const t = data.totais;
+      document.getElementById('view-hint').textContent = view === 'agrupado'
+        ? `${num(t.empresas)} grupos de CNPJ, reunindo ${num(t.filiais)} filiais · base da Torre de ${mesAno(data.mes)}`
+        : `${num(t.empresas)} filiais em churn · base da Torre de ${mesAno(data.mes)}`;
+
+      document.getElementById('table-hint').textContent = view === 'agrupado'
+        ? 'Uma linha por grupo de CNPJ, com o número de filiais que ele carrega. Clique para ver a queda e a lista de filiais.'
+        : 'Uma linha por filial. Clique para ver a queda de dias agenciados dessa unidade.';
+
+      document.getElementById('th-filiais').hidden = false;
+    }
+
+    function renderKpis() {
+      const t = data.totais;
+      const rotuloEmpresas = view === 'agrupado' ? 'Grupos em churn' : 'Filiais em churn';
+      const subEmpresas = view === 'agrupado' ? `${num(t.filiais)} filiais no total` : 'unidades individuais';
+
+      document.getElementById('kpi-grid').innerHTML = `
+        <div class="kpi">
+          <div class="kpi-label">${rotuloEmpresas}</div>
+          <div class="kpi-value">${num(t.empresas)}</div>
+          <div class="kpi-subtitle">${subEmpresas}</div>
+        </div>
+        <div class="kpi perda">
+          <div class="kpi-label">Volume do último ano ativo</div>
+          <div class="kpi-value">${num(t.volumeUltimoAnoAtivo)}</div>
+          <div class="kpi-subtitle">dias agenciados enquanto ainda operavam</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Chegaram a operar</div>
+          <div class="kpi-value">${num(t.comOperacao)}</div>
+          <div class="kpi-subtitle">${num(t.nuncaOperaram)} nunca operaram</div>
+        </div>
+        <div class="kpi cobertura">
+          <div class="kpi-label">Já tocadas pelo ABM</div>
+          <div class="kpi-value">${num(t.comCoberturaAbm)}</div>
+          <div class="kpi-subtitle">${num(t.empresas - t.comCoberturaAbm)} sem nenhum toque</div>
+        </div>`;
+    }
+
+    function montarFiltros() {
+      // Os filtros sao montados UMA vez. Remonta-los a cada troca de visao
+      // apagaria a selecao do usuario no meio da analise.
+      if (filtrosMontados) return;
+      filtrosMontados = true;
+
+      const tiers = [...new Set(data.rows.map((r) => r.tier))].sort((a, b) => a - b);
+      const gsList = [...new Set(data.rows.map((r) => r.gsName).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-tier'),
+        rotulo: 'Tier',
+        resumoTodos: 'todos',
+        opcoes: tiers.map((t) => ({ valor: String(t), texto: String(t) })),
+        aoMudar: (v) => { filterTier = v; page = 0; renderTable(); }
+      });
+
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-gs'),
+        rotulo: 'GS',
+        resumoTodos: 'todos',
+        opcoes: gsList.map((g) => ({ valor: g, texto: g })),
+        aoMudar: (v) => { filterGs = v; page = 0; renderTable(); }
+      });
+
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-operacao'),
+        rotulo: 'Operação',
+        resumoTodos: 'todas',
+        opcoes: [
+          { valor: 'operou', texto: 'Chegou a operar' },
+          { valor: 'nunca', texto: 'Nunca operou' }
+        ],
+        aoMudar: (v) => { filterOperacao = v; page = 0; renderTable(); }
+      });
+
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-abm'),
+        rotulo: 'ABM',
+        resumoTodos: 'todos',
+        opcoes: [
+          { valor: 'tocada', texto: 'Já tocada' },
+          { valor: 'intocada', texto: 'Sem toque' }
+        ],
+        aoMudar: (v) => { filterAbm = v; page = 0; renderTable(); }
+      });
+
+      let debounce = null;
+      document.getElementById('search-input').addEventListener('input', (e) => {
+        const q = e.target.value.toLowerCase();
+        clearTimeout(debounce);
+        debounce = setTimeout(() => { searchQuery = q; page = 0; renderTable(); }, 200);
+      });
+    }
+
+    function linhasFiltradas() {
+      return data.rows.filter((r) => {
+        if (searchQuery) {
+          const alvo = `${r.name} ${r.grupoEconomico || ''} ${r.cnpjGroup}`.toLowerCase();
+          if (!alvo.includes(searchQuery)) return false;
+        }
+        if (filterTier.size > 0 && !filterTier.has(String(r.tier))) return false;
+        if (filterGs.size > 0 && !filterGs.has(r.gsName)) return false;
+        if (filterOperacao.size > 0) {
+          const chave = r.ultimaOperacao ? 'operou' : 'nunca';
+          if (!filterOperacao.has(chave)) return false;
+        }
+        if (filterAbm.size > 0) {
+          const chave = r.cobertura.touchpoints > 0 ? 'tocada' : 'intocada';
+          if (!filterAbm.has(chave)) return false;
+        }
+        return true;
+      });
+    }
+
+    function valorDeOrdenacao(row, key) {
+      switch (key) {
+        case 'name': return row.name.toLowerCase();
+        case 'tier': return row.tier;
+        case 'filiais': return row.filiaisCount;
+        // Sem operacao ordena como vazio, nunca como "1970": um cliente que
+        // nunca operou nao e o mais antigo, e um caso diferente.
+        case 'ultimaOperacao': return row.ultimaOperacao || '';
+        case 'perda': return row.diasUltimoAnoAtivo == null ? -1 : row.diasUltimoAnoAtivo;
+        case 'gs': return (row.gsName || '').toLowerCase();
+        case 'abm': return row.cobertura.touchpoints;
+        default: return 0;
+      }
+    }
+
+    function sortTable(key) {
+      if (sortKey === key) {
+        sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+      } else {
+        sortKey = key;
+        sortDir = key === 'name' || key === 'gs' ? 'asc' : 'desc';
+      }
+      page = 0;
+      renderTable();
+    }
+
+    function sparkline(trend) {
+      if (!trend || trend.length === 0) return '<span class="muted">—</span>';
+      const valores = trend.map((p) => p.contractDays || 0);
+      const pico = Math.max(...valores);
+      if (pico === 0) return '<span class="muted">—</span>';
+      const barras = valores.map((v) => {
+        const altura = Math.max(1, Math.round((v / pico) * 22));
+        return `<i class="${v === 0 ? 'zero' : ''}" style="height:${altura}px"></i>`;
+      }).join('');
+      return `<span class="spark" title="${escapeHtml(trend.map((p) => `${mesAno(p.month)}: ${num(p.contractDays)}`).join(' · '))}">${barras}</span>`;
+    }
+
+    function renderTable() {
+      const linhas = linhasFiltradas();
+      linhas.sort((a, b) => {
+        const va = valorDeOrdenacao(a, sortKey);
+        const vb = valorDeOrdenacao(b, sortKey);
+        if (va < vb) return sortDir === 'asc' ? -1 : 1;
+        if (va > vb) return sortDir === 'asc' ? 1 : -1;
+        return a.name.localeCompare(b.name, 'pt-BR');
+      });
+
+      const total = linhas.length;
+      const inicio = page * PAGE_SIZE;
+      const pagina = linhas.slice(inicio, inicio + PAGE_SIZE);
+      const tbody = document.getElementById('tbody');
+
+      document.getElementById('table-title').textContent =
+        view === 'agrupado' ? `Grupos em churn (${num(total)})` : `Filiais em churn (${num(total)})`;
+
+      if (pagina.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="9" class="empty">Nenhuma empresa com os filtros atuais.</td></tr>';
+        document.getElementById('pager').innerHTML = '';
+        return;
+      }
+
+      tbody.innerHTML = pagina.map((r, i) => {
+        const grupoDiferente = r.grupoEconomico && r.grupoEconomico !== r.name;
+        const filiais = r.filiaisCount > 1
+          ? `<span class="filiais-badge">${r.filiaisCount}</span>`
+          : `<span class="filiais-badge una">1</span>`;
+        const perda = r.diasUltimoAnoAtivo == null || r.diasUltimoAnoAtivo === 0
+          ? '<span class="num vazio">—</span>'
+          : `<span class="num forte">${num(r.diasUltimoAnoAtivo)}</span>`;
+        const op = r.ultimaOperacao
+          ? `${mesAno(r.ultimaOperacao)}<div class="empresa-grupo">${escapeHtml(meses(r.mesesSemOperar))}</div>`
+          : '<span class="muted">nunca operou</span>';
+
+        return `<tr onclick="selecionar('${escapeHtml(r.rowKey)}')" class="${r.rowKey === selectedKey ? 'selected' : ''}">
+          <td style="text-align:center;color:var(--muted)">${inicio + i + 1}</td>
+          <td>
+            <div class="empresa-nome">${escapeHtml(r.name)}</div>
+            ${grupoDiferente ? `<div class="empresa-grupo">${escapeHtml(r.grupoEconomico)}</div>` : ''}
+          </td>
+          <td><span class="status-badge ${r.tier <= 2 ? 'negative' : 'warn'}">T${r.tier}</span></td>
+          <td>${filiais}</td>
+          <td>${op}</td>
+          <td class="num">${perda}</td>
+          <td>${sparkline(r.trend)}</td>
+          <td>${escapeHtml(r.gsName || '—')}${r.gsTeam ? `<div class="empresa-grupo">${escapeHtml(r.gsTeam)}</div>` : ''}</td>
+          <td style="text-align:center">
+            <span class="abm-dot ${r.cobertura.touchpoints > 0 ? 'tocada' : 'intocada'}"
+                  title="${r.cobertura.touchpoints > 0 ? `${r.cobertura.touchpoints} touchpoint(s)` : 'sem toque no ABM'}"></span>
+          </td>
+        </tr>`;
+      }).join('');
+
+      const paginas = Math.ceil(total / PAGE_SIZE);
+      document.getElementById('pager').innerHTML = paginas <= 1 ? '' : `
+        <button onclick="mudarPagina(-1)" ${page === 0 ? 'disabled' : ''}>‹ Anterior</button>
+        <span class="muted">Página ${page + 1} de ${paginas}</span>
+        <button onclick="mudarPagina(1)" ${page >= paginas - 1 ? 'disabled' : ''}>Próxima ›</button>`;
+    }
+
+    function mudarPagina(delta) {
+      page += delta;
+      renderTable();
+    }
+
+    function selecionar(rowKey) {
+      selectedKey = rowKey;
+      const row = data.rows.find((r) => r.rowKey === rowKey);
+      if (!row) return;
+
+      document.getElementById('detail-panel').classList.add('open');
+      document.getElementById('detail-title').textContent = row.name;
+
+      const partes = [`CNPJ raiz ${row.cnpjGroup}`, `Tier ${row.tier}`];
+      if (row.grupoEconomico && row.grupoEconomico !== row.name) partes.push(row.grupoEconomico);
+      document.getElementById('detail-sub').textContent = partes.join(' · ');
+
+      document.getElementById('detail-perda').textContent =
+        row.diasUltimoAnoAtivo == null || row.diasUltimoAnoAtivo === 0 ? 'nunca operou' : num(row.diasUltimoAnoAtivo);
+
+      const cob = row.cobertura;
+      const linhasDetalhe = [
+        ['Última operação', row.ultimaOperacao ? `${mesAno(row.ultimaOperacao)} (${meses(row.mesesSemOperar)})` : 'nunca'],
+        ['Rotulada churn pela Torre', row.churnSince ? `${mesAno(row.churnSince)} (${meses(row.monthsInChurn)})` : '—'],
+        ['Maior mês registrado', row.picoDias == null ? '—' : `${num(row.picoDias)} dias`],
+        ['Filiais no grupo', num(row.filiaisCount)],
+        ['GS responsável', row.gsName || '—'],
+        ['Time', row.gsTeam || '—'],
+        ['Classificação', row.classification || '—'],
+        ['Touchpoints ABM', num(cob.touchpoints)],
+        ['Status no pipeline', cob.abmStatus || 'fora do pipeline'],
+        ['Decisor abordado', cob.decisor || '—']
+      ];
+      document.getElementById('detail-grid').innerHTML = linhasDetalhe
+        .map(([k, v]) => `<div class="muted">${escapeHtml(k)}</div><div>${escapeHtml(v)}</div>`)
+        .join('');
+
+      renderFiliais(row);
+      renderChart(row);
+      renderTable();
+    }
+
+    function renderFiliais(row) {
+      const painel = document.getElementById('filiais-panel');
+      // A lista de filiais so existe na visao agrupada — no nivel de filial a
+      // linha JA e a unidade, e repetir o proprio nome seria ruido.
+      if (view !== 'agrupado' || row.filiaisCount <= 1) {
+        painel.hidden = true;
+        return;
+      }
+      painel.hidden = false;
+      document.getElementById('filiais-title').textContent = `Filiais (${num(row.filiaisCount)})`;
+      document.getElementById('filiais-lista').innerHTML =
+        `<div class="muted">Este grupo reúne ${num(row.filiaisCount)} unidades no CNPJ raiz ${escapeHtml(row.cnpjGroup)}. Troque para a visão “Por filial” e pesquise pelo CNPJ para ver cada uma que está em churn.</div>`;
+    }
+
+    function renderChart(row) {
+      const ctx = document.getElementById('trend-chart');
+      if (chart) chart.destroy();
+
+      const trend = row.trend || [];
+      if (trend.length === 0) {
+        chart = null;
+        ctx.getContext('2d').clearRect(0, 0, ctx.width, ctx.height);
+        return;
+      }
+
+      chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: trend.map((p) => mesAno(p.month)),
+          datasets: [{
+            data: trend.map((p) => p.contractDays),
+            borderColor: '#297ACC',
+            backgroundColor: 'rgba(41,122,204,0.08)',
+            fill: true,
+            tension: 0.25,
+            pointRadius: trend.map((p) => (row.ultimaOperacao && p.month === row.ultimaOperacao ? 5 : 3)),
+            pointBackgroundColor: trend.map((p) => (row.ultimaOperacao && p.month === row.ultimaOperacao ? '#8B6212' : '#297ACC')),
+            spanGaps: false
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (item) => `${num(item.parsed.y)} dias agenciados`
+              }
+            }
+          },
+          scales: {
+            y: { beginAtZero: true, ticks: { precision: 0 } },
+            x: { grid: { display: false } }
+          }
+        }
+      });
+    }
+
+    function exportCsv() {
+      const linhas = linhasFiltradas();
+      const cabecalho = [
+        'nome', 'grupo_economico', 'cnpj_raiz', 'tier', 'filiais',
+        'ultima_operacao', 'meses_sem_operar', 'dias_ultimo_ano_ativo', 'pico_dias',
+        'rotulo_churn_torre', 'gs', 'time', 'classificacao',
+        'touchpoints_abm', 'status_abm', 'decisor'
+      ];
+      const celula = (v) => {
+        const s = v == null ? '' : String(v);
+        return /[",;\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+      };
+      const corpo = linhas.map((r) => [
+        r.name, r.grupoEconomico, r.cnpjGroup, r.tier, r.filiaisCount,
+        r.ultimaOperacao, r.mesesSemOperar, r.diasUltimoAnoAtivo, r.picoDias,
+        r.churnSince, r.gsName, r.gsTeam, r.classification,
+        r.cobertura.touchpoints, r.cobertura.abmStatus, r.cobertura.decisor
+      ].map(celula).join(','));
+
+      // BOM: sem ele o Excel em pt-BR abre "Petrópolis" como "PetrÃ³polis".
+      const blob = new Blob(['﻿' + [cabecalho.join(','), ...corpo].join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `churn-tier1-4-${view}-${data.mes || 'atual'}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    document.getElementById('view-switch').addEventListener('click', (e) => {
+      const botao = e.target.closest('button[data-view]');
+      if (!botao || botao.dataset.view === view) return;
+      view = botao.dataset.view;
+      document.querySelectorAll('#view-switch button').forEach((b) => b.classList.toggle('active', b === botao));
+      // A selecao nao sobrevive a troca: uma filial nao tem equivalente direto
+      // no grupo, e manter o painel aberto mostraria dado da visao anterior.
+      selectedKey = null;
+      document.getElementById('detail-panel').classList.remove('open');
+      page = 0;
+      load();
+    });
+
+    load();
+  </script>
+</body>
+</html>
