@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T12:00:00.226Z",
+  "generatedAt": "2026-08-27T12:00:00.149Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -1521,6 +1521,19 @@
           "activeDecisor": "ADRIANO ROSA DELFINO"
         },
         {
+          "id": "cmqjsbyd6000ok7zw8yagmcc0",
+          "name": "Casas Bahia",
+          "segment": null,
+          "accountScore": 720,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-13T19:21:33.000Z",
+          "lastInteractionAt": "2026-08-26T19:37:23.153Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": "Karina Baldin"
+        },
+        {
           "id": "cmshu8i8j005ek7ccqrg5l4zb",
           "name": "Grupo Boticário",
           "segment": null,
@@ -1648,21 +1661,7 @@
     {
       "stage": "DISQUALIFIED",
       "label": "Desqualificado",
-      "companies": [
-        {
-          "id": "cmqjsbyd6000ok7zw8yagmcc0",
-          "name": "Casas Bahia",
-          "segment": null,
-          "accountScore": 720,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-13T19:21:33.000Z",
-          "lastInteractionAt": "2026-08-24T13:09:03.167Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 4,
-          "activeDecisor": "Karina Baldin"
-        }
-      ]
+      "companies": []
     }
   ]
 }

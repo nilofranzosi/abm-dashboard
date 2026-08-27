@@ -1860,21 +1860,21 @@
   },
   {
     "weekKey": "2026-S35",
-    "generatedAt": "2026-08-26T11:51:33.989Z",
+    "generatedAt": "2026-08-27T11:59:11.946Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 119,
-    "activePipeline": 110,
-    "pausedCount": 9,
-    "repliedOrBetter": 23,
-    "meetingOrBetter": 9,
-    "dealCount": 9,
-    "replyRate": 0.20909090909090908,
-    "meetingRate": 0.08181818181818182,
-    "dealRate": 0.08181818181818182,
-    "avgDaysToFirstReply": 3.357142857142857,
-    "avgDaysSinceLastOutbound": 12.8,
-    "totalOutboundTouchpoints": 36,
-    "totalInboundTouchpoints": 9,
+    "activePipeline": 111,
+    "pausedCount": 8,
+    "repliedOrBetter": 24,
+    "meetingOrBetter": 10,
+    "dealCount": 10,
+    "replyRate": 0.21621621621621623,
+    "meetingRate": 0.09009009009009009,
+    "dealRate": 0.09009009009009009,
+    "avgDaysToFirstReply": 6.133333333333334,
+    "avgDaysSinceLastOutbound": 12.666666666666666,
+    "totalOutboundTouchpoints": 38,
+    "totalInboundTouchpoints": 11,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -1904,7 +1904,7 @@
       {
         "stage": "DEAL",
         "label": "Negócio",
-        "count": 9
+        "count": 10
       }
     ],
     "topCompanies": [
@@ -1967,6 +1967,16 @@
         "bestStatus": "DEAL",
         "score": 90,
         "nextActionDueAt": "2026-06-25T03:00:00.000Z"
+      },
+      {
+        "company": "Casas Bahia",
+        "stage": "DEAL",
+        "contacts": 4,
+        "outboundTouchpoints": 6,
+        "inboundTouchpoints": 2,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-08-13T19:21:33.000Z"
       },
       {
         "company": "Grupo Boticário",
@@ -2047,22 +2057,12 @@
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-07-24T18:54:00.000Z"
-      },
-      {
-        "company": "XMXYG",
-        "stage": "REPLIED",
-        "contacts": 1,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-08-08T16:53:00.000Z"
       }
     ],
-    "activeContacts": 110,
-    "excludedContacts": 9,
+    "activeContacts": 111,
+    "excludedContacts": 8,
     "unresolvedCompanies": 0,
     "uniqueCompanies": 119,
-    "qualifiedAdvanceRate": 0.08181818181818182
+    "qualifiedAdvanceRate": 0.09009009009009009
   }
 ]

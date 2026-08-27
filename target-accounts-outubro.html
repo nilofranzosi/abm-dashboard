@@ -103,6 +103,7 @@
           <div id="filter-status"></div>
           <div id="filter-trend"></div>
           <div id="filter-eventos"></div>
+          <div id="filter-eventos-count"></div>
 
           <button id="export-csv-btn" onclick="exportToCSV()" style="padding: 8px 14px; background: #297ACC; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">📥 Exportar CSV</button>
         </div>
@@ -196,6 +197,7 @@
     let filterStatus = [];
     let filterTrend = [];
     let filterEventos = [];
+    let filterEventosCount = [];
 
     function escapeHtml(text) {
       if (!text) return "";
@@ -406,6 +408,21 @@
         aoMudar: (v) => { filterEventos = v; renderTable(); }
       });
 
+      // Filtro por quantidade de eventos (0, 1, 2, 3, 4+)
+      MultiFiltro.criar({
+        montarEm: document.getElementById('filter-eventos-count'),
+        rotulo: 'Qty Eventos',
+        resumoTodos: 'todas',
+        opcoes: [
+          { valor: '0', texto: '0 eventos' },
+          { valor: '1', texto: '1 evento' },
+          { valor: '2', texto: '2 eventos' },
+          { valor: '3', texto: '3 eventos' },
+          { valor: '4+', texto: '4+ eventos' }
+        ],
+        aoMudar: (v) => { filterEventosCount = v; renderTable(); }
+      });
+
       document.getElementById('search-input').addEventListener('input', (e) => {
         searchQuery = e.target.value.toLowerCase();
         renderTable();
@@ -517,6 +534,13 @@
         // Contar a nao casada como "sem evento" fabricaria um falso negativo —
         // era o que o filtro antigo fazia, por olhar so o tamanho da lista.
         if (!casaFiltro(filterEventos, row.eventoRegistroStatus)) return false;
+
+        // Filtro por quantidade de eventos (0, 1, 2, 3, 4+)
+        if (filterEventosCount.length > 0) {
+          const eventCount = row.eventos?.length || 0;
+          const countStr = eventCount >= 4 ? '4+' : String(eventCount);
+          if (!filterEventosCount.includes(countStr)) return false;
+        }
 
         return true;
       });

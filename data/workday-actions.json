@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T12:00:00.078Z",
+  "generatedAt": "2026-08-27T12:00:00.065Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -134,25 +134,6 @@
       "recommendedAction": "Mapear decisores de logística/supply chain da Fras-le, com foco na operação de exportação para mais de 120 países.",
       "dueAt": null,
       "severity": "critical"
-    },
-    {
-      "id": "casas-bahia-tier-not-started",
-      "company": {
-        "id": "cmqjsbyd6000ok7zw8yagmcc0",
-        "name": "Casas Bahia"
-      },
-      "contact": {
-        "id": "willemberg-cruz",
-        "name": "Willemberg Cruz — Diretor de Logística"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 83/100 | E-commerce & Varejo. Decisor mapeado: Willemberg Cruz (Diretor de Logística).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": null,
-      "severity": "warning"
     },
     {
       "id": "sao-martinho-tier-not-started",
@@ -406,6 +387,22 @@
       },
       "reason": "Tier 2 | Score 78/100 | Alimentos & Bebidas. Decisor ainda não mapeado — pesquisar antes de abordar.",
       "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "covabra-supermercados-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Covabra Supermercados"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 78/100 | Supermercadistas. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Confirmar faturamento e mapear Gerente de Logística da Covabra na região de Campinas.",
       "dueAt": null,
       "severity": "warning"
     }
@@ -706,7 +703,7 @@
       "company": {
         "id": "cmqjsbyd6000ok7zw8yagmcc0",
         "name": "Casas Bahia",
-        "status": "DISQUALIFIED"
+        "status": "DEAL"
       },
       "contact": {
         "id": "cmsswvkli00ayk7ywe678lkpq",
@@ -1097,7 +1094,7 @@
       "company": {
         "id": "cmqjsbyd6000ok7zw8yagmcc0",
         "name": "Casas Bahia",
-        "status": "DISQUALIFIED"
+        "status": "DEAL"
       },
       "contact": {
         "id": "cmsswvjtl005tk7ywvnj9g0zm",
@@ -1951,11 +1948,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45p8003lk7o0jcpftg3k",
+      "id": "cmr9oddqj0007k78kfo4omrjz",
       "company": {
-        "id": "cmq9t45p8003lk7o0jcpftg3k",
-        "name": "Cargill",
-        "status": "FOLLOW_UP_SENT"
+        "id": "cmr9oddqj0007k78kfo4omrjz",
+        "name": "Kenvue",
+        "status": "CONNECTION_ACCEPTED"
       },
       "contact": null,
       "owner": null,
@@ -1965,11 +1962,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmr9oddqj0007k78kfo4omrjz",
+      "id": "cmq9t45p8003lk7o0jcpftg3k",
       "company": {
-        "id": "cmr9oddqj0007k78kfo4omrjz",
-        "name": "Kenvue",
-        "status": "CONNECTION_ACCEPTED"
+        "id": "cmq9t45p8003lk7o0jcpftg3k",
+        "name": "Cargill",
+        "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
       "owner": null,
@@ -2035,11 +2032,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmqqxfnzd0018k7o8cfbr68qi",
+      "id": "cmrml4xk4000mk7d0q2vlfbcn",
       "company": {
-        "id": "cmqqxfnzd0018k7o8cfbr68qi",
-        "name": "Seara",
-        "status": "MESSAGE_SENT"
+        "id": "cmrml4xk4000mk7d0q2vlfbcn",
+        "name": "Mission of Brazil to the European Communities",
+        "status": "MAPPED"
       },
       "contact": null,
       "owner": null,
@@ -2049,11 +2046,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmrml4xk4000mk7d0q2vlfbcn",
+      "id": "cmqqxfnzd0018k7o8cfbr68qi",
       "company": {
-        "id": "cmrml4xk4000mk7d0q2vlfbcn",
-        "name": "Mission of Brazil to the European Communities",
-        "status": "MAPPED"
+        "id": "cmqqxfnzd0018k7o8cfbr68qi",
+        "name": "Seara",
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": null,
@@ -2091,10 +2088,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmruzeiv00006k7toqbhf78ks",
+      "id": "cmruzeivr0009k7tojgdkszqo",
       "company": {
-        "id": "cmruzeiv00006k7toqbhf78ks",
-        "name": "Realize Human",
+        "id": "cmruzeivr0009k7tojgdkszqo",
+        "name": "Instituto Cisne Norte e Nordeste",
         "status": "MAPPED"
       },
       "contact": null,
@@ -2105,10 +2102,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmruzeivr0009k7tojgdkszqo",
+      "id": "cmruzeiv00006k7toqbhf78ks",
       "company": {
-        "id": "cmruzeivr0009k7tojgdkszqo",
-        "name": "Instituto Cisne Norte e Nordeste",
+        "id": "cmruzeiv00006k7toqbhf78ks",
+        "name": "Realize Human",
         "status": "MAPPED"
       },
       "contact": null,
@@ -2189,10 +2186,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmsdb7e9v0003k7ton02lvgjw",
+      "id": "cmsdb7ecr000gk7toq83pnfht",
       "company": {
-        "id": "cmsdb7e9v0003k7ton02lvgjw",
-        "name": "Xiamen Xiangyu Co., Ltd.",
+        "id": "cmsdb7ecr000gk7toq83pnfht",
+        "name": "Ultragaz",
         "status": "MAPPED"
       },
       "contact": null,
@@ -2217,10 +2214,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmsdb7ecr000gk7toq83pnfht",
+      "id": "cmsdb7e9v0003k7ton02lvgjw",
       "company": {
-        "id": "cmsdb7ecr000gk7toq83pnfht",
-        "name": "Ultragaz",
+        "id": "cmsdb7e9v0003k7ton02lvgjw",
+        "name": "Xiamen Xiangyu Co., Ltd.",
         "status": "MAPPED"
       },
       "contact": null,
@@ -2273,17 +2270,17 @@
       "severity": "critical"
     },
     {
-      "id": "cmroz9tt80005k7ls23wgwnv0",
+      "id": "cmqjsbyd6000ok7zw8yagmcc0",
       "company": {
-        "id": "cmroz9tt80005k7ls23wgwnv0",
-        "name": "Atacadão",
-        "status": "REPLIED"
+        "id": "cmqjsbyd6000ok7zw8yagmcc0",
+        "name": "Casas Bahia",
+        "status": "DEAL"
       },
       "contact": null,
       "owner": null,
       "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-      "dueAt": "2026-08-14T03:00:00.000Z",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-13T19:21:33.000Z",
       "severity": "critical"
     },
     {
@@ -2301,52 +2298,38 @@
       "severity": "critical"
     },
     {
-      "id": "cmqqnb6e00006k7o8zjztmp3u",
-      "company": {
-        "id": "cmqqnb6e00006k7o8zjztmp3u",
-        "name": "Assaí Atacadista",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmrl2caf50018k774hmcvgo27",
-      "company": {
-        "id": "cmrl2caf50018k774hmcvgo27",
-        "name": "Giassi Supermercados",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmrl2cad1000uk774bixw7047",
-      "company": {
-        "id": "cmrl2cad1000uk774bixw7047",
-        "name": "Grupo DMA / Epa",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmr97qk35000ck7ikdywcuq5k",
       "company": {
         "id": "cmr97qk35000ck7ikdywcuq5k",
         "name": "Campari Group",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrdgzv4u0007k77wsd8j8pzs",
+      "company": {
+        "id": "cmrdgzv4u0007k77wsd8j8pzs",
+        "name": "FORTLEV",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsj1qefu0004k7rczetdbsol",
+      "company": {
+        "id": "cmsj1qefu0004k7rczetdbsol",
+        "name": "SHEIN",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
@@ -2371,10 +2354,66 @@
       "severity": "critical"
     },
     {
-      "id": "cmsj1qefu0004k7rczetdbsol",
+      "id": "cmqqnb6e00006k7o8zjztmp3u",
       "company": {
-        "id": "cmsj1qefu0004k7rczetdbsol",
-        "name": "SHEIN",
+        "id": "cmqqnb6e00006k7o8zjztmp3u",
+        "name": "Assaí Atacadista",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cms611cgy0017k7oco4rkjmbc",
+      "company": {
+        "id": "cms611cgy0017k7oco4rkjmbc",
+        "name": "Klabin",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmroz9tt80005k7ls23wgwnv0",
+      "company": {
+        "id": "cmroz9tt80005k7ls23wgwnv0",
+        "name": "Atacadão",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrl2caf50018k774hmcvgo27",
+      "company": {
+        "id": "cmrl2caf50018k774hmcvgo27",
+        "name": "Giassi Supermercados",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrl2cad1000uk774bixw7047",
+      "company": {
+        "id": "cmrl2cad1000uk774bixw7047",
+        "name": "Grupo DMA / Epa",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
@@ -2413,34 +2452,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmrdgzv4u0007k77wsd8j8pzs",
-      "company": {
-        "id": "cmrdgzv4u0007k77wsd8j8pzs",
-        "name": "FORTLEV",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cms611cgy0017k7oco4rkjmbc",
-      "company": {
-        "id": "cms611cgy0017k7oco4rkjmbc",
-        "name": "Klabin",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cms611chp001ck7ocsuk2wgs6",
       "company": {
         "id": "cms611chp001ck7ocsuk2wgs6",
@@ -2455,20 +2466,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmrozuphs000sk7lshtz7m8u5",
-      "company": {
-        "id": "cmrozuphs000sk7lshtz7m8u5",
-        "name": "ALE Combustíveis",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T12:03:31.600Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmqqnssur0009k7o889yyn6m2",
       "company": {
         "id": "cmqqnssur0009k7o889yyn6m2",
@@ -2479,6 +2476,20 @@
       "owner": null,
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
+      "dueAt": "2026-08-14T12:03:31.600Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrozuphs000sk7lshtz7m8u5",
+      "company": {
+        "id": "cmrozuphs000sk7lshtz7m8u5",
+        "name": "ALE Combustíveis",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-08-14T12:03:31.600Z",
       "severity": "critical"
     },
@@ -2567,39 +2578,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45ou003gk7o0jb6grra2",
-      "company": {
-        "id": "cmq9t45ou003gk7o0jb6grra2",
-        "name": "Yara Brasil",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-24T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmshu8ib9005sk7cc4xf313ms",
       "company": {
         "id": "cmshu8ib9005sk7cc4xf313ms",
         "name": "Procter & Gamble",
         "status": "REPLIED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-24T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmqjvk2th0009k7s0e6efvdsp",
-      "company": {
-        "id": "cmqjvk2th0009k7s0e6efvdsp",
-        "name": "Bauducco",
-        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": null,
@@ -2665,6 +2648,34 @@
       "severity": "critical"
     },
     {
+      "id": "cmqjsbye70015k7zwh88ujxnp",
+      "company": {
+        "id": "cmqjsbye70015k7zwh88ujxnp",
+        "name": "PepsiCo",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-24T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqjvk2th0009k7s0e6efvdsp",
+      "company": {
+        "id": "cmqjvk2th0009k7s0e6efvdsp",
+        "name": "Bauducco",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-24T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmr9oddp70000k78k8r6rq39u",
       "company": {
         "id": "cmr9oddp70000k78k8r6rq39u",
@@ -2679,10 +2690,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmqjsbye70015k7zwh88ujxnp",
+      "id": "cmq9t45ou003gk7o0jb6grra2",
       "company": {
-        "id": "cmqjsbye70015k7zwh88ujxnp",
-        "name": "PepsiCo",
+        "id": "cmq9t45ou003gk7o0jb6grra2",
+        "name": "Yara Brasil",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
@@ -3847,7 +3858,7 @@
     "highTierNotStarted": 24,
     "recentConnectionsSent": 0,
     "acceptedConnectionsWithoutMessage": 78,
-    "overdueNextActions": 68,
+    "overdueNextActions": 69,
     "staleCompanies30Days": 39,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
