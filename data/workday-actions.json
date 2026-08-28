@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T12:00:00.065Z",
+  "generatedAt": "2026-08-28T12:00:00.070Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -3224,6 +3224,132 @@
       "severity": "warning"
     },
     {
+      "id": "cmqtrcyhm000rk7gcbz2uhmg1",
+      "company": {
+        "id": "cmqtrcyhm000rk7gcbz2uhmg1",
+        "name": "Johnson & Johnson Brasil",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmr9oddqj0007k78kfo4omrjz",
+      "company": {
+        "id": "cmr9oddqj0007k78kfo4omrjz",
+        "name": "Kenvue",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms4r8zhm0005k7k4wvo0laqo",
+      "company": {
+        "id": "cms4r8zhm0005k7k4wvo0laqo",
+        "name": "Reckitt Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45ks001wk7o0rej1w262",
+      "company": {
+        "id": "cmq9t45ks001wk7o0rej1w262",
+        "name": "Coca-Cola FEMSA",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms4r8znl0011k7k4hpj5lxox",
+      "company": {
+        "id": "cms4r8znl0011k7k4hpj5lxox",
+        "name": "Whirlpool Brasil",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45gg000jk7o0qkpnf88n",
+      "company": {
+        "id": "cmq9t45gg000jk7o0qkpnf88n",
+        "name": "Amazon Brasil",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms611c0g0000k7ocpx9zqdvr",
+      "company": {
+        "id": "cms611c0g0000k7ocpx9zqdvr",
+        "name": "BASF Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms611c2y0007k7ocu7x23hc1",
+      "company": {
+        "id": "cms611c2y0007k7ocu7x23hc1",
+        "name": "Electrolux",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms611c4h000ek7oc9u3jfwd8",
+      "company": {
+        "id": "cms611c4h000ek7oc9u3jfwd8",
+        "name": "Nutrien Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmq9jlczr0000k7r4ca25gjv7",
       "company": {
         "id": "cmq9jlczr0000k7r4ca25gjv7",
@@ -3859,7 +3985,7 @@
     "recentConnectionsSent": 0,
     "acceptedConnectionsWithoutMessage": 78,
     "overdueNextActions": 69,
-    "staleCompanies30Days": 39,
+    "staleCompanies30Days": 48,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0

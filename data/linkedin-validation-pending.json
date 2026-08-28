@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-08-27T11:59:19.615Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-27.json",
+  "generatedAt": "2026-08-28T11:49:37.129Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-28.json",
   "summary": {
     "total": 0,
     "replied": 0,
     "companyUnknown": 0,
-    "overdue": 0,
-    "offList": 0
+    "overdue": 0
   },
   "companies": []
 }

@@ -104,6 +104,7 @@
           <div id="filter-trend"></div>
           <div id="filter-eventos"></div>
           <div id="filter-eventos-count"></div>
+          <div id="filter-eventos-list"></div>
 
           <button id="export-csv-btn" onclick="exportToCSV()" style="padding: 8px 14px; background: #297ACC; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 600;">📥 Exportar CSV</button>
         </div>
@@ -198,6 +199,7 @@
     let filterTrend = [];
     let filterEventos = [];
     let filterEventosCount = [];
+    let filterEventosList = [];
 
     function escapeHtml(text) {
       if (!text) return "";
@@ -423,6 +425,26 @@
         aoMudar: (v) => { filterEventosCount = v; renderTable(); }
       });
 
+      // Filtro por evento específico — extrai todos os nomes únicos dos dados
+      const eventosList = [
+        ...new Set(
+          data.rows
+            .flatMap(r => r.eventos || [])
+            .map(e => e.eventName)
+            .filter(name => name && name.trim())
+        )
+      ].sort();
+
+      if (eventosList.length > 0) {
+        MultiFiltro.criar({
+          montarEm: document.getElementById('filter-eventos-list'),
+          rotulo: 'Evento',
+          resumoTodos: 'todos',
+          opcoes: eventosList.map(evt => ({ valor: evt, texto: evt })),
+          aoMudar: (v) => { filterEventosList = v; renderTable(); }
+        });
+      }
+
       document.getElementById('search-input').addEventListener('input', (e) => {
         searchQuery = e.target.value.toLowerCase();
         renderTable();
@@ -540,6 +562,13 @@
           const eventCount = row.eventos?.length || 0;
           const countStr = eventCount >= 4 ? '4+' : String(eventCount);
           if (!filterEventosCount.includes(countStr)) return false;
+        }
+
+        // Filtro por evento específico — mostra empresas que foram a esse evento
+        if (filterEventosList.length > 0) {
+          const eventNames = (row.eventos || []).map(e => e.eventName);
+          const temEvento = filterEventosList.some(evt => eventNames.includes(evt));
+          if (!temEvento) return false;
         }
 
         return true;

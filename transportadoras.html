@@ -542,6 +542,10 @@
             <option value="__SEM_DADO__">Sem dado</option>
           </select>
           <input type="text" id="clientes-search" placeholder="Buscar empresa...">
+          <label style="display:inline-flex; align-items:center; gap:6px; cursor:pointer;">
+            <input type="checkbox" id="clientes-atencao-filter">
+            <span>Só quem precisa de atenção</span>
+          </label>
           <span class="muted" id="clientes-count-label"></span>
         </section>
 
@@ -552,6 +556,7 @@
                 <th data-sort="rank">Rank</th>
                 <th data-sort="empresa">Empresa</th>
                 <th data-sort="status">Status</th>
+                <th data-sort="healthPontos">Relacionamento</th>
                 <th data-sort="scoreTotal">Score total</th>
                 <th data-sort="motivoPrioridade">Motivo prioridade</th>
                 <th data-sort="tier">Tier</th>
@@ -566,7 +571,7 @@
               </tr>
             </thead>
             <tbody id="clientes-tbody">
-              <tr><td colspan="14" class="loading">Carregando clientes...</td></tr>
+              <tr><td colspan="15" class="loading">Carregando clientes...</td></tr>
             </tbody>
           </table>
         </section>
@@ -1270,6 +1275,7 @@
 
     const statusFilterEl = document.getElementById("clientes-status-filter");
     const searchEl = document.getElementById("clientes-search");
+    const atencaoFilterEl = document.getElementById("clientes-atencao-filter");
     const tbodyEl = document.getElementById("clientes-tbody");
     const countLabelEl = document.getElementById("clientes-count-label");
 
@@ -1289,6 +1295,22 @@
       return "Sem dado sincronizado";
     }
 
+    // Health Score de relacionamento (/api/transportadoras/health-score),
+    // indexado por companyId. Carregado junto com os clientes; se a chamada
+    // falhar, a coluna mostra "–" e o resto da tabela segue funcionando.
+    let healthPorEmpresa = new Map();
+
+    function relacionamentoCell(row) {
+      const h = healthPorEmpresa.get(row.id);
+      if (!h) return '<span class="pending" title="Health Score não carregado">–</span>';
+      const detalhe = `${h.pontos} pts · Alto ${h.porNivel.ALTO} · Intermediário ${h.porNivel.INTERMEDIARIO} · Básico ${h.porNivel.BASICO}`
+        + (h.diasSemTouchpoint === null ? "
+Nunca teve touchpoint" : `
+Último contato há ${h.diasSemTouchpoint} dia(s)`);
+      const alerta = h.precisaAtencao ? ' ⚠️' : '';
+      return `<span class="badge" title="${escapeAttr(detalhe)}">${escapeAttr(h.bandLabel)} · ${h.pontos}${alerta}</span>`;
+    }
+
     function renderClienteRow(row) {
       const valor = row.valorEmAndamento !== null && row.valorEmAndamento !== undefined
         ? row.valorEmAndamento
@@ -1298,6 +1320,7 @@
           <td>${row.rank}</td>
           <td>${escapeAttr(row.empresa)}</td>
           <td><span class="status-pill ${statusPillClass(row.status)}">${statusLabel(row.status)}</span></td>
+          <td>${relacionamentoCell(row)}</td>
           <td>${row.scoreTotal}</td>
           <td>${escapeAttr(row.motivoPrioridade)}</td>
           <td>${row.tier ?? "–"}</td>
@@ -1322,10 +1345,13 @@
       const statusValue = statusFilterEl.value;
       const search = searchEl.value.trim().toLowerCase();
 
+      const soAtencao = atencaoFilterEl?.checked === true;
+
       let filtered = clientesData.filter((row) => {
         if (statusValue === "__SEM_DADO__" && row.status !== null) return false;
         if (statusValue && statusValue !== "__SEM_DADO__" && row.status !== statusValue) return false;
         if (search && !row.empresa.toLowerCase().includes(search)) return false;
+        if (soAtencao && healthPorEmpresa.get(row.id)?.precisaAtencao !== true) return false;
         return true;
       });
 
@@ -1336,6 +1362,10 @@
         if (column === "sinalPrincipal") {
           aVal = a.sinalPrincipal?.type ?? "";
           bVal = b.sinalPrincipal?.type ?? "";
+        }
+        if (column === "healthPontos") {
+          aVal = healthPorEmpresa.get(a.id)?.pontos ?? -1;
+          bVal = healthPorEmpresa.get(b.id)?.pontos ?? -1;
         }
         if (aVal === null || aVal === undefined) aVal = "";
         if (bVal === null || bVal === undefined) bVal = "";
@@ -1354,6 +1384,7 @@
 
     statusFilterEl.addEventListener("change", applyFiltersAndSort);
     searchEl.addEventListener("input", applyFiltersAndSort);
+    atencaoFilterEl?.addEventListener("change", applyFiltersAndSort);
 
     tbodyEl.addEventListener("click", (event) => {
       const cronogramaBtn = event.target.closest("button[data-ver-cronograma]");
@@ -1384,14 +1415,20 @@
     });
 
     async function loadClientes() {
-      tbodyEl.innerHTML = `<tr><td colspan="14" class="loading">Carregando clientes...</td></tr>`;
+      tbodyEl.innerHTML = `<tr><td colspan="15" class="loading">Carregando clientes...</td></tr>`;
       try {
-        const payload = await fetchJson(`${apiBase}/api/transportadoras/clientes`);
+        const [payload, health] = await Promise.all([
+          fetchJson(`${apiBase}/api/transportadoras/clientes`),
+          // Falha aqui nao pode derrubar a tabela de clientes: a coluna de
+          // relacionamento degrada para "–" e o resto continua de pe.
+          fetchJson(`${apiBase}/api/transportadoras/health-score`).catch(() => ({ data: [] }))
+        ]);
         clientesData = payload.data ?? [];
+        healthPorEmpresa = new Map((health.data ?? []).map((h) => [h.id, h]));
         clientesLoaded = true;
         applyFiltersAndSort();
       } catch (error) {
-        tbodyEl.innerHTML = `<tr><td colspan="14" class="error">Não foi possível carregar /api/transportadoras/clientes. ${error.message}</td></tr>`;
+        tbodyEl.innerHTML = `<tr><td colspan="15" class="error">Não foi possível carregar /api/transportadoras/clientes. ${error.message}</td></tr>`;
       }
       loadEventosResumo();
     }

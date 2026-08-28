@@ -42,7 +42,7 @@
   </style>
 <link rel="stylesheet" href="/css/thermo-ds.css">
   <script>
-    if (new URLSearchParams(location.search).get("embed") === "1") {
+    if ((window.self !== window.top || new URLSearchParams(location.search).get("embed") === "1")) {
       document.documentElement.classList.add("embedded-view");
     }
   </script>
@@ -55,7 +55,7 @@
       <a class="nav-item" href="/thiago-abm-weekly-dashboard.html">Dashboard Semanal</a>
       <a class="nav-item active" href="/thiago-abm-pattern-study.html">Estudo de Padrões</a>
       <div class="nav-label">Base</div>
-      <div class="muted">119 empresas / 111 ativas<br>27/08/2026</div>
+      <div class="muted">119 empresas / 111 ativas<br>28/08/2026</div>
     </aside>
     <main>
       <div class="topbar">

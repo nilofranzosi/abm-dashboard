@@ -1860,7 +1860,7 @@
   },
   {
     "weekKey": "2026-S35",
-    "generatedAt": "2026-08-27T11:59:11.946Z",
+    "generatedAt": "2026-08-28T11:49:16.175Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 119,
     "activePipeline": 111,
@@ -1872,8 +1872,8 @@
     "meetingRate": 0.09009009009009009,
     "dealRate": 0.09009009009009009,
     "avgDaysToFirstReply": 6.133333333333334,
-    "avgDaysSinceLastOutbound": 12.666666666666666,
-    "totalOutboundTouchpoints": 38,
+    "avgDaysSinceLastOutbound": 13.285714285714286,
+    "totalOutboundTouchpoints": 35,
     "totalInboundTouchpoints": 11,
     "funnel": [
       {
