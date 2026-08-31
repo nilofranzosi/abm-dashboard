@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T21:00:00.155Z",
+  "generatedAt": "2026-08-31T11:48:10.030Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -2578,6 +2578,34 @@
       "severity": "critical"
     },
     {
+      "id": "cmq9t45ou003gk7o0jb6grra2",
+      "company": {
+        "id": "cmq9t45ou003gk7o0jb6grra2",
+        "name": "Yara Brasil",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-24T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrl2cabz000nk7745zclhm0a",
+      "company": {
+        "id": "cmrl2cabz000nk7745zclhm0a",
+        "name": "Rodoil Distribuidora de Combustíveis",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-24T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmshu8ib9005sk7cc4xf313ms",
       "company": {
         "id": "cmshu8ib9005sk7cc4xf313ms",
@@ -2634,20 +2662,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmrl2cabz000nk7745zclhm0a",
-      "company": {
-        "id": "cmrl2cabz000nk7745zclhm0a",
-        "name": "Rodoil Distribuidora de Combustíveis",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-24T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmqjsbye70015k7zwh88ujxnp",
       "company": {
         "id": "cmqjsbye70015k7zwh88ujxnp",
@@ -2681,20 +2695,6 @@
         "id": "cmr9oddp70000k78k8r6rq39u",
         "name": "Tigre S.A.",
         "status": "REPLIED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-24T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmq9t45ou003gk7o0jb6grra2",
-      "company": {
-        "id": "cmq9t45ou003gk7o0jb6grra2",
-        "name": "Yara Brasil",
-        "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
       "owner": null,
@@ -3378,6 +3378,160 @@
       "severity": "warning"
     },
     {
+      "id": "cms7fto3r0000k7ps4lj0nowp",
+      "company": {
+        "id": "cms7fto3r0000k7ps4lj0nowp",
+        "name": "Messer Gases",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms7fto7o0007k7ps4pewwluh",
+      "company": {
+        "id": "cms7fto7o0007k7ps4pewwluh",
+        "name": "White Martins",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms4r8zp1001bk7k44lds2r9k",
+      "company": {
+        "id": "cms4r8zp1001bk7k44lds2r9k",
+        "name": "Embraer",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms4r8zoe0016k7k42r3ia1xy",
+      "company": {
+        "id": "cms4r8zoe0016k7k42r3ia1xy",
+        "name": "Cofco Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45r5004ck7o0ey99kd8c",
+      "company": {
+        "id": "cmq9t45r5004ck7o0ey99kd8c",
+        "name": "Samsung Brasil",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmq9t45p8003lk7o0jcpftg3k",
+      "company": {
+        "id": "cmq9t45p8003lk7o0jcpftg3k",
+        "name": "Cargill",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms7gif2u000rk7gsrnexfna3",
+      "company": {
+        "id": "cms7gif2u000rk7gsrnexfna3",
+        "name": "Mosaic Fertilizantes",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrt9u7c00029k7181vu5pj2j",
+      "company": {
+        "id": "cmrt9u7c00029k7181vu5pj2j",
+        "name": "Pague Menos Supermercados",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms6kijhb000ak7k0cry61j90",
+      "company": {
+        "id": "cms6kijhb000ak7k0cry61j90",
+        "name": "Roche Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms7zadzy0000k798fhz84bgo",
+      "company": {
+        "id": "cms7zadzy0000k798fhz84bgo",
+        "name": "Grupo Habib's",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms7zbj2a0002k7986syufxuz",
+      "company": {
+        "id": "cms7zbj2a0002k7986syufxuz",
+        "name": "Arcos Dourados (McDonald's Brasil)",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmq9jlczr0000k7r4ca25gjv7",
       "company": {
         "id": "cmq9jlczr0000k7r4ca25gjv7",
@@ -4041,7 +4195,7 @@
     "recentConnectionsSent": 0,
     "acceptedConnectionsWithoutMessage": 78,
     "overdueNextActions": 69,
-    "staleCompanies30Days": 52,
+    "staleCompanies30Days": 63,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0

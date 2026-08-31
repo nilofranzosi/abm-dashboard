@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-28T11:49:23.733Z",
+  "generatedAt": "2026-08-31T11:46:05.695Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
-    "weekKey": "2026-S35",
+    "weekKey": "2026-S36",
     "totalCompanies": 119,
     "activeCompanies": 111,
     "pausedCompanies": 8,
@@ -16,13 +16,13 @@
   },
   "sample": {
     "activeContacts": 228,
-    "replies": 24,
+    "replies": 25,
     "advanced": 26,
     "negatives": 3,
-    "noResponse": 173,
-    "replyRate": 0.10526315789473684,
+    "noResponse": 172,
+    "replyRate": 0.10964912280701754,
     "advancedRate": 0.11403508771929824,
-    "avgDaysToFirstReply": 7.875
+    "avgDaysToFirstReply": 7.56
   },
   "bySegment": [
     {
@@ -98,12 +98,12 @@
     {
       "segment": "Segmento a classificar",
       "total": 144,
-      "responded": 15,
+      "responded": 16,
       "advanced": 8,
       "negative": 3,
-      "replyRate": 0.10416666666666667,
+      "replyRate": 0.1111111111111111,
       "advancedRate": 0.05555555555555555,
-      "avgDaysToFirstReply": 8.133333333333333
+      "avgDaysToFirstReply": 7.625
     },
     {
       "segment": "Automotivo & Pneus",
@@ -139,13 +139,13 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 51,
-      "responded": 5,
+      "total": 52,
+      "responded": 6,
       "advanced": 5,
       "negative": 0,
-      "replyRate": 0.09803921568627451,
-      "advancedRate": 0.09803921568627451,
-      "avgDaysToFirstReply": 9.4
+      "replyRate": 0.11538461538461539,
+      "advancedRate": 0.09615384615384616,
+      "avgDaysToFirstReply": 7.833333333333333
     },
     {
       "seniority": "Diretoria / Head",
@@ -169,12 +169,12 @@
     },
     {
       "seniority": "C-level / VP",
-      "total": 44,
+      "total": 43,
       "responded": 6,
       "advanced": 4,
       "negative": 1,
-      "replyRate": 0.13636363636363635,
-      "advancedRate": 0.09090909090909091,
+      "replyRate": 0.13953488372093023,
+      "advancedRate": 0.09302325581395349,
       "avgDaysToFirstReply": 15.166666666666666
     }
   ],
@@ -192,12 +192,12 @@
     {
       "functionArea": "Supply / Logística / Operações",
       "total": 158,
-      "responded": 22,
+      "responded": 23,
       "advanced": 20,
       "negative": 2,
-      "replyRate": 0.13924050632911392,
+      "replyRate": 0.14556962025316456,
       "advancedRate": 0.12658227848101267,
-      "avgDaysToFirstReply": 6.2272727272727275
+      "avgDaysToFirstReply": 5.956521739130435
     },
     {
       "functionArea": "Procurement / Suprimentos",
@@ -253,23 +253,23 @@
     },
     {
       "timeBand": "12h-17h59",
-      "total": 28,
+      "total": 27,
       "responded": 5,
       "advanced": 4,
       "negative": 0,
-      "replyRate": 0.17857142857142858,
-      "advancedRate": 0.14285714285714285,
+      "replyRate": 0.18518518518518517,
+      "advancedRate": 0.14814814814814814,
       "avgDaysToFirstReply": 3.8
     },
     {
       "timeBand": "08h-11h59",
-      "total": 19,
-      "responded": 4,
+      "total": 20,
+      "responded": 5,
       "advanced": 3,
       "negative": 0,
-      "replyRate": 0.21052631578947367,
-      "advancedRate": 0.15789473684210525,
-      "avgDaysToFirstReply": 12.5
+      "replyRate": 0.25,
+      "advancedRate": 0.15,
+      "avgDaysToFirstReply": 10
     },
     {
       "timeBand": "18h+",
