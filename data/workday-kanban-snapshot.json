@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T12:00:00.338Z",
+  "generatedAt": "2026-08-28T21:00:00.380Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -93,7 +93,7 @@
           "lastInteractionAt": "2026-06-24T12:28:52.006Z",
           "source": "manual-tier-outreach",
           "owner": null,
-          "contactCount": 0,
+          "contactCount": 1,
           "activeDecisor": null
         },
         {
@@ -151,7 +151,7 @@
           "lastInteractionAt": "2026-08-14T16:50:46.307Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 12,
           "activeDecisor": "Marco Antônio Pimenta dos Santos"
         },
         {
@@ -177,7 +177,7 @@
           "lastInteractionAt": "2026-08-14T16:50:46.307Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 8,
           "activeDecisor": "Marcela Cocchiarale"
         },
         {
@@ -203,7 +203,7 @@
           "lastInteractionAt": "2026-08-14T16:50:46.307Z",
           "source": "forum-ilos-2026-speakers",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 11,
           "activeDecisor": "Marcos Paulo Battistini"
         },
         {
@@ -216,7 +216,7 @@
           "lastInteractionAt": "2026-08-14T16:50:46.307Z",
           "source": "painel-abm",
           "owner": null,
-          "contactCount": 4,
+          "contactCount": 8,
           "activeDecisor": "Ligia Camargo"
         },
         {
@@ -300,7 +300,7 @@
           "lastInteractionAt": "2026-07-15T03:00:00.000Z",
           "source": "manual-tier-outreach",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": "Fabio Artifon"
         },
         {
@@ -339,7 +339,7 @@
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 3,
           "activeDecisor": "Roberto Bisogni"
         },
         {
@@ -365,7 +365,7 @@
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -430,7 +430,7 @@
           "lastInteractionAt": "2026-08-14T16:50:46.307Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 5,
           "activeDecisor": "Tatiana Perim Ignez"
         },
         {
@@ -495,7 +495,7 @@
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 4,
           "activeDecisor": "Vinicius Benincasa"
         },
         {
@@ -534,7 +534,7 @@
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 5,
+          "contactCount": 6,
           "activeDecisor": "Bárbara Forlin"
         },
         {
@@ -612,7 +612,7 @@
           "lastInteractionAt": "2026-08-06T20:59:44.544Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 3,
           "activeDecisor": null
         },
         {
@@ -755,7 +755,7 @@
           "lastInteractionAt": "2026-07-30T11:35:57.154Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 8,
           "activeDecisor": null
         },
         {
@@ -768,7 +768,7 @@
           "lastInteractionAt": "2026-07-29T20:59:29.782Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -807,7 +807,7 @@
           "lastInteractionAt": "2026-07-29T11:54:14.346Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 3,
           "activeDecisor": null
         },
         {
@@ -820,7 +820,7 @@
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": null
         },
         {
@@ -865,7 +865,7 @@
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 4,
           "activeDecisor": "Eduardo Mareuse"
         },
         {
@@ -878,7 +878,7 @@
           "lastInteractionAt": "2026-07-28T14:32:28.957Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 6,
+          "contactCount": 8,
           "activeDecisor": "Rafael Caldas"
         },
         {
@@ -891,7 +891,7 @@
           "lastInteractionAt": "2026-07-14T20:43:47.730Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": "Claudia Simon"
         },
         {
@@ -904,7 +904,7 @@
           "lastInteractionAt": "2026-07-06T20:36:39.271Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 8,
           "activeDecisor": "Henrique Fonseca"
         },
         {
@@ -917,7 +917,7 @@
           "lastInteractionAt": "2026-07-30T11:53:33.818Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 7,
+          "contactCount": 10,
           "activeDecisor": "Carlos Oba"
         },
         {
@@ -930,7 +930,7 @@
           "lastInteractionAt": "2026-06-18T17:51:51.016Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 4,
           "activeDecisor": "Luciana de Andrade"
         },
         {
@@ -995,7 +995,7 @@
           "lastInteractionAt": "2026-08-07T03:00:00.000Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 3,
           "activeDecisor": "Renata Fioravante"
         },
         {
@@ -1086,7 +1086,7 @@
           "lastInteractionAt": "2026-08-17T03:00:00.000Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 4,
           "activeDecisor": "Eduardo Loyola"
         },
         {
@@ -1112,7 +1112,7 @@
           "lastInteractionAt": "2026-08-17T03:00:00.000Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 4,
+          "contactCount": 5,
           "activeDecisor": "Edvan Cruz"
         },
         {
@@ -1125,7 +1125,7 @@
           "lastInteractionAt": "2026-08-17T03:00:00.000Z",
           "source": "manual-tier-outreach",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 3,
           "activeDecisor": "Daniel Turci Pedroso"
         },
         {
@@ -1235,7 +1235,7 @@
           "lastInteractionAt": "2026-07-23T18:43:56.042Z",
           "source": null,
           "owner": null,
-          "contactCount": 4,
+          "contactCount": 6,
           "activeDecisor": "Alexandre Aires"
         },
         {
@@ -1300,7 +1300,7 @@
           "lastInteractionAt": "2026-08-12T03:00:00.000Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 4,
           "activeDecisor": "Fernando Alfano"
         },
         {
@@ -1326,7 +1326,7 @@
           "lastInteractionAt": "2026-08-12T16:52:00.000Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 4,
+          "contactCount": 5,
           "activeDecisor": "Ricardo Dinelli"
         },
         {
@@ -1352,7 +1352,7 @@
           "lastInteractionAt": "2026-08-17T03:00:00.000Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 5,
           "activeDecisor": "Ana Lúcia Gomes Resende Souza"
         },
         {
@@ -1452,7 +1452,7 @@
           "lastInteractionAt": "2026-07-28T14:33:52.335Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 6,
           "activeDecisor": "Daniel Drumond"
         },
         {
@@ -1465,7 +1465,7 @@
           "lastInteractionAt": "2026-06-19T18:56:44.243Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 3,
           "activeDecisor": "Eduardo Sá Freire"
         },
         {
@@ -1491,7 +1491,7 @@
           "lastInteractionAt": "2026-06-18T17:49:23.036Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 2,
           "activeDecisor": "Eduardo De Camargo Filho"
         },
         {
@@ -1504,7 +1504,7 @@
           "lastInteractionAt": "2026-08-24T12:27:28.874Z",
           "source": null,
           "owner": null,
-          "contactCount": 6,
+          "contactCount": 12,
           "activeDecisor": "Felipe Feteira do Vale"
         },
         {
@@ -1530,7 +1530,7 @@
           "lastInteractionAt": "2026-08-26T19:37:23.153Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 4,
+          "contactCount": 6,
           "activeDecisor": "Karina Baldin"
         },
         {
@@ -1543,7 +1543,7 @@
           "lastInteractionAt": "2026-08-17T21:05:00.000Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 4,
+          "contactCount": 6,
           "activeDecisor": "Luciano Xavier de Miranda"
         },
         {
@@ -1556,7 +1556,7 @@
           "lastInteractionAt": "2026-08-24T16:42:20.397Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 7,
+          "contactCount": 17,
           "activeDecisor": "João Nascimento"
         },
         {
@@ -1569,7 +1569,7 @@
           "lastInteractionAt": "2026-08-24T12:27:45.212Z",
           "source": "forum-ilos-2026-speakers",
           "owner": null,
-          "contactCount": 1,
+          "contactCount": 12,
           "activeDecisor": "Elaine Selma"
         },
         {
@@ -1582,7 +1582,7 @@
           "lastInteractionAt": null,
           "source": null,
           "owner": null,
-          "contactCount": 0,
+          "contactCount": 4,
           "activeDecisor": null
         }
       ]
@@ -1601,7 +1601,7 @@
           "lastInteractionAt": "2026-08-10T16:49:01.897Z",
           "source": null,
           "owner": null,
-          "contactCount": 0,
+          "contactCount": 8,
           "activeDecisor": null
         },
         {
@@ -1614,7 +1614,7 @@
           "lastInteractionAt": "2026-07-06T03:00:00.000Z",
           "source": "painel-abm",
           "owner": null,
-          "contactCount": 2,
+          "contactCount": 5,
           "activeDecisor": "Cristiano Quadros"
         },
         {

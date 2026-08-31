@@ -1,11 +1,2717 @@
 {
-  "generatedAt": "2026-08-28T11:49:37.129Z",
+  "generatedAt": "2026-08-28T19:26:44.874Z",
   "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-28.json",
   "summary": {
-    "total": 0,
+    "total": 39,
     "replied": 0,
     "companyUnknown": 0,
-    "overdue": 0
+    "overdue": 0,
+    "offList": 39
   },
-  "companies": []
+  "companies": [
+    {
+      "id": "db-cmsswvitj0003k7yw02h9fdu0",
+      "resolvedCompany": "SETCESP",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "ANA Jarrouge",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Presidente Executiva",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvixu000dk7yww5ncuc9s",
+      "resolvedCompany": "NESPRESSO",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Daniela Rocha",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Delivery Service e Transport",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvj1y0015k7ywi14sfch9",
+      "resolvedCompany": "LTPLABS",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "André Duarte",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Sócio",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "André HOFF",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Outra",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Felipe Capalbo",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Business Analyst",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "JUAN Cazes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Outro",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Pedro Roriz Tinoco Filho",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Business Analyst Intern",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvj3y001jk7ywdp3qmvze",
+      "resolvedCompany": "CITROSUCO",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Israel Santos Pinto",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Global Systems Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjit003gk7yws5av3jtt",
+      "resolvedCompany": "DATAMINT",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "CAUÊ Padilha",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Dalai Ribeiro",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Projeto",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Helio Lopes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CTO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "JOÃO Mattos",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Product Owner",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Thiago KATO",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Analista Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Tulio Ribeiro",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CEO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjji003lk7ywwgj3oj0p",
+      "resolvedCompany": "SEACREST PETRÓLEO",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Guilherme Henrique de Assumpção Portugal",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Planejamento Financeiro",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Tarcísio RUI Alvarenga",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Logística de ÓLEO Bruto",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjlh0040k7ywd70hbdba",
+      "resolvedCompany": "CUBO ITAÚ",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Gabriel Mioranza de Medeiros",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Community Leader",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Matheus Ortiz",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Community Leader",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjoa004nk7ywussctemi",
+      "resolvedCompany": "MOKI",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Carlos Henrique Lopes da Silva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "COO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "LEE Veloso",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Pedro Malan",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD de Serviços",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjvu006ak7yw5tyg5udr",
+      "resolvedCompany": "ATLANTE SOLUÇÕES LOGÍSTICAS",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Alexandre REY",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Consultor",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Bruno Abdelnur Camargo Pereira da Costa",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Novos Negócios",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Jefferson Lopes de Oliveira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Videomaker",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "JOSY Silva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Consultora de Soluções Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Leonardo Nunes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CEO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjxj006kk7yw5cxfb5j6",
+      "resolvedCompany": "GENERAL MOTORS",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Denio Nogueira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Customer Fulfillment & Logistics Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Sabrina Ismael",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Business Planner",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvk1r007gk7ywzal58exp",
+      "resolvedCompany": "KNAPP",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Emanuella Areal",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Senior System Design Engineer",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Felipe Seidy Ikeda",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "General Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Leonardo Schuskell",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Vendas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Pedro Almeida",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Logistics Product Specialist",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Rodolfo Nunes Soares",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Romiana Oyama",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Especialista em Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Sebastião Almeida",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CEO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvk9f008pk7yw9z1i58i1",
+      "resolvedCompany": "LOGSHARE",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "André Rubens Andrade",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Ariane Rodrigues",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "CAIO Bentivegna",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor GTM",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Eduardo Souza",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CTO & Founder",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Keren Shemesh",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD Vendas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Paula CURY",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Vice-presidente de Operações",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvkhg00a8k7ywq9wdddb8",
+      "resolvedCompany": "EPSON",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Jaqueline Leonor Severo",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Especialista Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvkjv00ank7ywarlh10a8",
+      "resolvedCompany": "EDENRED MOBILIDADE",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Ariane Batista",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Vendas KEY Account",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Armando Pereira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Daniel Cypas",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CFO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Felipe Barbosa",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de TI",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Guilherme Soldani",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Regional",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Hyllary Isabelly da Silva Inacio",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Estagiaria de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Lisiane Pereira Rodrigues",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Ricardo Bernasconi",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Ricardo MO",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Superintendente de Vendas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Rodrigo FARO",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor de Rede",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Vicente Junior",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "KEY Account Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Viviane Saraiva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD de Produtos",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvkko00ask7yw6ckay8pb",
+      "resolvedCompany": "HOLAMBRA COOPERATIVA AGROINDUSTRIAL",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Marcelo Rafante",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenador de Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjg1002xk7ywdclu42xj",
+      "resolvedCompany": "KOEPE DO BRASIL",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Bruno Roberto dos Santos Rocha",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Projetos",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Filippo Andrade",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Consultor",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Ricardo Tostes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Romulo Alfredo Cordeiro de Almeida",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Arquiteto de Tecnologias",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvka2008uk7yw94wkssj1",
+      "resolvedCompany": "LOTS GROUP",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Andressa Lemos",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Bruno Coteco de Souza",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Carlos Henrique Sarres Vieira Junior",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Estratégia Corporativa",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Cezar Galate Cerbam",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Parcerias Estrategicas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Eduardo Oliveira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "VP de Operações - LATAM",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Guilherme Martins REIS",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Especialista de Descarbonização",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Lívia de Mendonça Gimenez",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Estagiária",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Mariane Oliveira de MELO",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Analista de Marketing Pleno",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Thais Castro",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Operações",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Thamirys Gomes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Sales Executive",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Vinicius Garcia Teixeira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvj34001ek7ywjnwn7gii",
+      "resolvedCompany": "LOOG.AI",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Francisco Moutinho",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gestor Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Mariana Falcão",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Analista",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Newton Silveira de Oliveira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Logistico Especialista em IA",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "TAÍS Cristina LIMA",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Administrativo Financeiro",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvj8z001yk7ywcetyhbhu",
+      "resolvedCompany": "INPO",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Carlos Essig",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Juliana Viegas",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CEO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Nicolau Schebanow Júnior",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenador de Projetos",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswviz3000mk7ywgh0k8nif",
+      "resolvedCompany": "BAT",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Bruna Celeghin Neves",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Transportes e Comex",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Camila Nascimento Neves",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Carolina Carvalho",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD of Supply Chain",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Daphne LUXO",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Regional de Operações Logísticas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "ENZO Nogueira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Regional de Operações Logísticas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Gabriel Simões e Senna",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD of Innovation & Development LATAM South",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Guilherme Hermeto",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Logistica",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Isabela Zambelli",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Planejamento",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "JOSÉ Carlos Farias Carvalho",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenador de Projetos",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Julia de Oliveira RIOS",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Procurement Suplly Chain",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Julia Rabel",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Supply",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Leandro Augusto Ramos de Moraes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Supply Chain LATAM South Director",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Lucas Oliveira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Fulfillment Center Coordinator",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "LUIS Fernando Malheiros Esper",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD of Procurement, LATAM",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Michele Cabral Camara Farias",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Procurement Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Rodrigo Ferreira Abdulmassih",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Procurement Supply Chain",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Rodrigo Mario PICH",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD of LEAF Supply Chain",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Tarcila Franca Magalhaes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Frota",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Thiago Rozende Lucas",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD de Projetos",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Thiago Vinhal",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD of Supply Chain & Planning",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Willian Marquesan",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenador de Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvj0o000vk7ywro68x2tw",
+      "resolvedCompany": "FLOWLS",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Paolla RUIS",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Sales Executive",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvji3003bk7ywqupxivrq",
+      "resolvedCompany": "DR. OETKER",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Fabio Costa Neiva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Executive Logistics Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjwp006fk7ywpbsl5yb9",
+      "resolvedCompany": "FLEETPAY",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "CIZA Nogueira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Inacio LIMA",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "COO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Matheus",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CTO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvk5f0083k7ywi4stpksk",
+      "resolvedCompany": "WRI BRASIL",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "LUIS Antonio Lindau",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor do Programa de Cidades",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Paloma Ferreira Martins",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Analista de Descarbonização do Transporte de Carga",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvkbv0097k7yw2h03d31v",
+      "resolvedCompany": "O9 SOLUTIONS",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Camila Ávila",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Marketing Project Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Felipe Falleiros",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor de Relacionamento com Clientes",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Gabriel Vasconcellos",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "GM & SVP LATAM",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Gustavo Calzavara",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "VP Industry Solutions",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "JOÃO Franklin Gouveia",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor de Vendas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Lucas Soffner",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "SR Director Industry Solutions",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvj6w001ok7ywxsr2r6az",
+      "resolvedCompany": "SAP",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "ERIC Shoiti Cequiguti",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Customer Success Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "JOÃO Pedro Mariza",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Sales Development Executive",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Laryssa Freire",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Marco Aurelio Silva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor Business Development",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Natasha Mouta",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Vlamir Silva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Sales Development Executive",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Wanderley Scatolin",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Sales Development Executive",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjsy005nk7ywjqy1a770",
+      "resolvedCompany": "CONEXLOG CARGAS EXPRESSAS",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "EDER Júnior Jacobi",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Executivo",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Emanuel Francisco DIAS",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Johnatan Ribeiro",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Filial Fortaleza",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "RONI Passos",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Direto Executivo",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Sérgio Lemes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Unidade",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Thiago Piazza Machado",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Prospecção de Novos Negócios",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvkes009pk7ywmodw02o6",
+      "resolvedCompany": "DUIMPWEB",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Jonathan Salles",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD of Business Operations",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvkgq00a3k7yw5ov2kr08",
+      "resolvedCompany": "NOVELIS DO BRASIL",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "ANA Cláudia Rezende",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenadora de Supply Chain - S&OE",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Bruna Falarini",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Supply Chain Comex Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Carlos Anselmo",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Senior Director, Procurement & Supply Chain",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Diogo Arieta",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "SR Manager Procurement",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Juliana Alves de Macedo Vieira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coodenador Suprimentos Logistica",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Larissa Vitória da Silva Moura",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenadora de Excelência",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Marcos da Silva Godoi",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenador SR",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Thiago Assis",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Senior Logistics Coordinator",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjdl002ik7ywa611pgjr",
+      "resolvedCompany": "MILLS",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Alice Novais Oliveira Xavier",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Consultor Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Aline Fernanda Ferreira Rangon",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gestora de Grandes Contas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Eduardo Henrique de LIMA",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Videomaker",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Fernanda de Almeida Sales",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gestora de Grandes Contas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Gabriel Henrique Vanceto Camargo",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Consultor Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Giulia de Queiroz Silva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenadora de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Lilian Patricia Siqueira da Silva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Sandoval Santana Borges Júnior",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Nacional",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Sarah Camilo Roque",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Analista de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjk5003qk7ywxtant3u4",
+      "resolvedCompany": "RED BULL",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Graciela Kanazawa",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Nacional de Customer Collaboration",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Renata Christine Serafim Barros de Azevedo",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "HEAD Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvkj400aik7ywj6749ryf",
+      "resolvedCompany": "RD SAÚDE",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Carla Daniele Eugenio",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Roberto Tomiyama Giacomo",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Especialista de Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvk7p008gk7ywddbjwrue",
+      "resolvedCompany": "LOGCOMEX",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Allan Schmitt",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "CFO",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Cezar Nascimento",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Sales Development Representative",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Fabio Siqueira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Customer Success Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Gleice Alves",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Arquiteta AI",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Rodrigo Orquisa",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Especialista de Eventos LATAM",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Vitor Greca",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Executivo de Vendas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjqz0059k7ywjk6fvmp0",
+      "resolvedCompany": "H&CO",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Eduarda Bragança",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Account Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Guilherme Kleinert",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Global Expansion Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "LUIS Claudio Peixoto",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Technology Sales Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Pamela Palma",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Analista de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Pedro Henrique da Cunha",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Vanessa Moraes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjaw0028k7ywn5xlkb3u",
+      "resolvedCompany": "SODEXO",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Valeria Stabile",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenadora de Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjus0061k7yw70h1ayf6",
+      "resolvedCompany": "ACTIONSYS",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Pierre Nunes",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Executivo Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Roberto Simões",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Executivo de Contas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Rogerio Loggetto",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de MKTG",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Tamires Silva de Oliveira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente de Contas",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Victoria Porto DIAS",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Wanderson Oliveira da Silva",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Analista de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvjz2006xk7yw64x5go9o",
+      "resolvedCompany": "EVMOB",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Alexssandro Ferreira Valladares",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Executivo Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Amanda Souza Vieira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretora Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "ANA Milena Serrano Amaya",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Country Manager",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "ANA Paula Siqueira de LIMA",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Consultor Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Fabio Ramiro Cavallaro",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Executivo Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Fernanda Garcia",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "Lucas Porto Diniz Costa",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Gerente Comercial",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        },
+        {
+          "contactName": "LUIZ Oliveira",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenador de Marketing",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmsswvj9y0023k7yw9z609pdk",
+      "resolvedCompany": "FRASLE MOBILITY – RANDONCORP",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Valderes Matos COGO",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Coordenador de Logística",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "db-cmruzeiu30003k7touh9wg5wt",
+      "resolvedCompany": "DHL Supply Chain",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Andre Almeida",
+          "funnelStatus": "MAPPED",
+          "roleOrHeadline": "Diretor SR. de Desenvolvimento de Negócios",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    }
+  ]
 }
