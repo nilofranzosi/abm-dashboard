@@ -2067,7 +2067,7 @@
   },
   {
     "weekKey": "2026-S36",
-    "generatedAt": "2026-08-31T11:44:22.934Z",
+    "generatedAt": "2026-08-31T18:55:32.423Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 119,
     "activePipeline": 111,
@@ -2079,9 +2079,9 @@
     "meetingRate": 0.09009009009009009,
     "dealRate": 0.09009009009009009,
     "avgDaysToFirstReply": 6.133333333333334,
-    "avgDaysSinceLastOutbound": 6,
-    "totalOutboundTouchpoints": 18,
-    "totalInboundTouchpoints": 10,
+    "avgDaysSinceLastOutbound": 16.357142857142858,
+    "totalOutboundTouchpoints": 35,
+    "totalInboundTouchpoints": 11,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -2096,12 +2096,12 @@
       {
         "stage": "MESSAGE_SENT",
         "label": "Mensagem Enviada",
-        "count": 44
+        "count": 43
       },
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 27
+        "count": 28
       },
       {
         "stage": "REPLIED",
@@ -2189,7 +2189,7 @@
         "company": "Grupo Boticário",
         "stage": "DEAL",
         "contacts": 6,
-        "outboundTouchpoints": 0,
+        "outboundTouchpoints": 1,
         "inboundTouchpoints": 0,
         "bestStatus": "DEAL",
         "score": 90,

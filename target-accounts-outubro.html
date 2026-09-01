@@ -88,6 +88,7 @@
         <h2>Visão Estratégica — Target Accounts Outubro</h2>
         <div style="margin-bottom: 14px; display: flex; align-items: center;" id="month-selector"></div>
         <div class="kpi-grid" id="kpi-grid"></div>
+        <div id="metric-source" class="muted" style="font-size: 11px; border-top: 1px solid var(--line); padding-top: 8px;"></div>
       </div>
 
       <div class="panel">
@@ -173,6 +174,7 @@
           <th style="text-align: right;">Prospects</th>
           <th style="text-align: right;">Churn</th>
           <th style="text-align: right;">Embarcadores</th>
+          <th style="text-align: center;">Ação</th>
         </tr>
       </thead>
       <tbody id="eventos-resumo-tbody">
@@ -343,6 +345,12 @@
               <td style="text-align: right;">${row.prospects}</td>
               <td style="text-align: right;">${row.churn}</td>
               <td style="text-align: right;">${row.embarcadores}</td>
+              <td style="text-align: center;">
+                <button onclick="exportarMailingPorEvento('${escapeHtml(row.familia)}')"
+                        style="padding: 6px 10px; background: #297ACC; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600;">
+                  📥 Exportar
+                </button>
+              </td>
             </tr>`;
         }).join('');
       } catch (err) {
@@ -532,6 +540,12 @@
           <div class="kpi-subtitle">${getMonthLabel(data.trendMonths[firstMonthIdx])} → ${getMonthLabel(selectedMonth)}</div>
         </div>
       `;
+      const fonte = data.metricSource || 'fonte não informada';
+      const atualizado = data.metricSyncedAt
+        ? new Date(data.metricSyncedAt).toLocaleString('pt-BR')
+        : 'sem sincronização registrada';
+      document.getElementById('metric-source').textContent =
+        `Fonte de Dias Agenciados: ${fonte} · Atualizado em ${atualizado}. Meta é referência separada; dias vendidos não entram nesta série.`;
     }
 
     function renderTable() {
@@ -995,6 +1009,95 @@
           </div>
         </div>`;
       }).join('');
+    }
+
+    // Exportar mailing de um evento específico
+    async function exportarMailingPorEvento(nomeEvento) {
+      try {
+        // Buscar dados de mailing do evento via API
+        const res = await fetch(`/api/transportadoras/eventos-mailing?evento=${encodeURIComponent(nomeEvento)}`, {
+          credentials: 'include'
+        });
+
+        if (!res.ok) {
+          if (res.status === 404) {
+            // Buscar lista de eventos disponíveis para mostrar no erro
+            try {
+              const resDisp = await fetch(`/api/transportadoras/eventos-mailing-disponiveis`, {
+                credentials: 'include'
+              });
+              if (resDisp.ok) {
+                const dispData = await resDisp.json();
+                const eventosDisponiveis = dispData.data || [];
+                const listaEventos = eventosDisponiveis
+                  .map(e => `• ${e.evento} (${e.totalPessoas} pessoas)`)
+                  .join('\n');
+                alert(
+                  `Nenhum mailing encontrado para "${nomeEvento}"\n\nEventos disponíveis:\n${listaEventos || '(nenhum evento com mailing)'}`
+                );
+              } else {
+                alert(`Nenhum mailing encontrado para o evento "${nomeEvento}"`);
+              }
+            } catch (e) {
+              alert(`Nenhum mailing encontrado para o evento "${nomeEvento}"`);
+            }
+          } else {
+            throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+          }
+          return;
+        }
+
+        const dados = await res.json();
+        const mailingList = dados.data || [];
+        // origem === 'touchpoints' significa evento sem mailing: o CSV lista as
+        // empresas presentes, sem pessoa. Avisar, senao parece mailing furado.
+        if (dados.origem === 'touchpoints') {
+          alert(`"${nomeEvento}" não tem mailing na planilha.
+
+` +
+                `Exportando as ${mailingList.length} empresa(s) com Touchpoint ` +
+                `registrado na Engine — sem nome, cargo ou contato.`);
+        }
+
+        if (mailingList.length === 0) {
+          alert(`Nenhum registro de mailing encontrado para "${nomeEvento}"`);
+          return;
+        }
+
+        // Gerar CSV. A coluna Evento diz de qual edicao a pessoa veio — numa
+        // familia agrupada ("Copa Truck") sem ela o CSV vira uma pilha sem
+        // procedencia; num evento de edicao unica ela so repete o nome.
+        const colunas = ['Evento', 'Empresa', 'Nome', 'Cargo', 'Email/Telefone'];
+        const linhas = mailingList.map(pessoa => [
+          pessoa.evento || nomeEvento,
+          pessoa.empresa || '',
+          pessoa.nome || '',
+          pessoa.cargo || '',
+          pessoa.contato || ''
+        ]);
+
+        // Montar CSV com encoding UTF-8
+        let csv = colunas.join(';') + '\n';
+        csv += linhas.map(linha =>
+          linha.map(cell => `"${String(cell).replace(/"/g, '""')}"`)
+            .join(';')
+        ).join('\n');
+
+        // Baixar arquivo
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement('a');
+        const url = URL.createObjectURL(blob);
+        link.setAttribute('href', url);
+        link.setAttribute('download', `mailing-${nomeEvento.toLowerCase().replace(/\s+/g, '-')}.csv`);
+        link.style.visibility = 'hidden';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+      } catch (err) {
+        alert(`Erro ao exportar mailing: ${err.message}`);
+        console.error(err);
+      }
     }
 
     load();

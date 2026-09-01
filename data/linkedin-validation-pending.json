@@ -1,61 +1,279 @@
 {
-  "generatedAt": "2026-08-31T11:48:03.375Z",
+  "generatedAt": "2026-08-31T18:55:45.881Z",
   "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-08-31.json",
   "summary": {
-    "total": 40,
+    "total": 59,
     "replied": 0,
-    "companyUnknown": 0,
-    "overdue": 1,
-    "offList": 39
+    "companyUnknown": 3,
+    "overdue": 0,
+    "offList": 54
   },
   "companies": [
     {
-      "id": "amazon",
-      "resolvedCompany": "Amazon",
+      "id": "ultragaz",
+      "resolvedCompany": "Ultragaz",
       "reviewReasons": [
-        "overdue"
+        "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Rafael Caldas",
-          "funnelStatus": "FOLLOW_UP_SENT",
-          "roleOrHeadline": "Country Leader - Amazon Logistics Brazil",
-          "confidence": "Media",
-          "daysSinceLastOutbound": 7,
-          "lastOutboundAt": "2026-08-24T03:00:00.000Z",
+          "contactName": "Erik Trench Alcantara Santos",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor de Gases Renováveis",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
           "lastInboundAt": null,
-          "outboundTouchpoints": 3,
+          "outboundTouchpoints": 0,
           "inboundMessages": [],
-          "outboundMessages": [
-            {
-              "occurredAt": "2026-04-06T19:46:00.000Z",
-              "body": "Estamos a 1 mês do dia das mães, um dos maiores picos do e-commerce. Trabalhamos com transportadoras que atendem Mercado Livre e Shopee, acredito que temos oportunidades concretas para a cadeia logística da Amazon."
-            },
-            {
-              "occurredAt": "2026-04-06T03:00:00.000Z",
-              "body": "Vamos marcar uma conversa?"
-            },
-            {
-              "occurredAt": "2026-05-14T17:39:00.000Z",
-              "body": "Rafael, a Copa do Mundo se iniciando no próximo mês está gerando um aumento nas vendas do E-commerce. a PX é a parceira ideal para auxiliar sua operação em picos sazonais."
-            },
-            {
-              "occurredAt": "2026-05-14T03:00:00.000Z",
-              "body": "Vamos conversar?"
-            },
-            {
-              "occurredAt": "2026-08-24T20:48:00.000Z",
-              "body": "Assisti sua agenda no Fórum ILOS, achei muito interessante a forma que vocês pensaram para realizar entregas em regiões menos comuns."
-            },
-            {
-              "occurredAt": "2026-08-24T03:00:00.000Z",
-              "body": "Gostaria de entender mais as possibilidades da PX junto à Amazon, visto que hoje já possuímos uma forte parceria com o Mercado Livre."
-            },
-            {
-              "occurredAt": "2026-08-24T03:00:00.000Z",
-              "body": "Para isso, o melhor contato seria contigo?"
-            }
-          ],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "malt-enxovais",
+      "resolvedCompany": "Malt Enxovais",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Salah Malt",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor administrativo na Malt Enxovais | Liderança | Administração | Planejamento | Gestão | Organização | Logística | Tecnologia | Supply Chain | Operações | Negócios | Armazenamento | Marketing | Comércio Exterior |",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "newsun-energy-group",
+      "resolvedCompany": "NewSun Energy Group",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Gianflávio Nogueira Albertin",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "CBDO | Projetos em Biometano & Energia e Renováveis",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "the-lubrizol-corporation",
+      "resolvedCompany": "The Lubrizol Corporation",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Ruben Matera",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Head of Procurement LATAM | Procurement Director | Oil & Gas, Specialty Chemicals & Industrial | Procurement Transformation",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "fedex",
+      "resolvedCompany": "FedEx",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Sávio Novacosque",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente Sênior de Logística na FedEx | MBA em Gestão Financeira",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "TRANSPORTADORA"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "TRANSPORTADORA"
+    },
+    {
+      "id": "unknown-nicklas-gehardt-meyer",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Nicklas Gehardt Meyer",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "COO | Transformo Estratégia em Execução e Crescimento Sustentável | Integração de Operações • Governança • Performance • Geração de Valor",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "tpc",
+      "resolvedCompany": "TPC",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "André Sampaio",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "CEO na TPC",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "the-heikeken-company",
+      "resolvedCompany": "The Heikeken Company",
+      "reviewReasons": [
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Vitor Buso de Souza",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente de Logística e Operações | Supply Chain | Warehouse | Transportes | Performance, Produtividade e Transformação Operacional na The Heikeken Company",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "nexallog",
+      "resolvedCompany": "NEXALLOG",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Alexandre Felix",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Founder at NEXALLOG | 25+ Years Leading Logistics Operations | Advisor & Turnaround Consultant | Mentor | Connecting Paths, Generating Results",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "fm-transportes",
+      "resolvedCompany": "FM TRANSPORTES",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Paulo Albuquerque, MSc, PMP, CPC-A",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor Administrativo Financeiro | FM Transportes",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-murilo-cesar-alberconi",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Murilo Cesar Alberconi",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Customer Logistics Director",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
           "icpSegment": "EMBARCADOR"
         }
       ],
@@ -63,17 +281,266 @@
       "icpSegment": "EMBARCADOR"
     },
     {
-      "id": "db-cmsswvitj0003k7yw02h9fdu0",
-      "resolvedCompany": "SETCESP",
+      "id": "solucoes-esales",
+      "resolvedCompany": "Soluções eSales",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Erick Leite Santos",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Consultoria Estratégico de Negócios com ênfase em Logística | Frete, Torre de Controle e Gestão de Entregas",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "setor",
+      "resolvedCompany": "setor",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Daniel Picanço Amaral Santos",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Biogás | Biometano | Regulações do setor | Atributos Ambientais | Gestão de contratos",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "nexta-distribuidora",
+      "resolvedCompany": "NEXTA Distribuidora",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Thiago Mercadante Neves",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor Executivo | Estratégia, P&L e Transformação | Operações, Supply Chain, Logística, Engenharia e SSMA",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "300software",
+      "resolvedCompany": "300Software",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Guilherme (Gui) Mello",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Founder & CEO @ 300Software | Resolvemos o que drena a margem da sua operação | IESE EMBA25",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "ardagh-metal-packaging",
+      "resolvedCompany": "Ardagh Metal Packaging",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Luciana Paulino Fleck",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Executiva de Planejamento Integrado | Estratégia | Supply Chain | Transformação Digital",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "empresa-asis-tax-tech",
+      "resolvedCompany": "empresa ASIS Tax Tech ✅",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Jesuslene Dourado",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente Executiva de Canais da empresa ASIS Tax Tech ✅",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-paulo-vita",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Paulo Vita",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Sales",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "apk-transporte-e-logistica",
+      "resolvedCompany": "APK TRANSPORTE E LOGÍSTICA",
       "reviewReasons": [
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "ANA Jarrouge",
-          "funnelStatus": "MAPPED",
-          "roleOrHeadline": "Presidente Executiva",
-          "confidence": "Media",
+          "contactName": "Monalisa Di Giuseppe",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretora Comercial e Operacional",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "TRANSPORTADORA"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "TRANSPORTADORA"
+    },
+    {
+      "id": "profuturo-fia-business-school",
+      "resolvedCompany": "PROFUTURO - FIA Business School",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Fernando Castro",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor Executivo de Logística | Supply Chain | Transporte | Distribuição | Excelência Operacional | Lean Six Sigma | Operações Logística | Omnichannel | E-commerce | Head de Logística.",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "cargo-sapiens",
+      "resolvedCompany": "Cargo Sapiens.",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Thiago Pasquini Giampietro",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Aplicando tecnologia no processo de compra de frete | Enterprise Account Executive at Cargo Sapiens.",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "bat",
+      "resolvedCompany": "BAT",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Bruna Celeghin Neves",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Operações Logísticas | Projetos | Compras | Inovação | Gestão Estratégica e Econômica de Negócios | Performance Logística",
+          "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,
@@ -87,104 +554,29 @@
       "icpSegment": "EMBARCADOR"
     },
     {
-      "id": "db-cmsswvixu000dk7yww5ncuc9s",
-      "resolvedCompany": "NESPRESSO",
+      "id": "fundacao-dom-cabral",
+      "resolvedCompany": "Fundação Dom Cabral",
       "reviewReasons": [
+        "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Daniela Rocha",
-          "funnelStatus": "MAPPED",
-          "roleOrHeadline": "Gerente de Delivery Service e Transport",
-          "confidence": "Media",
+          "contactName": "Ricardo Kallas",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "CEO | Board Member",
+          "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,
           "outboundTouchpoints": 0,
           "inboundMessages": [],
           "outboundMessages": [],
-          "icpSegment": "EMBARCADOR"
+          "icpSegment": null
         }
       ],
       "reviewedAt": null,
-      "icpSegment": "EMBARCADOR"
-    },
-    {
-      "id": "db-cmsswvj1y0015k7ywi14sfch9",
-      "resolvedCompany": "LTPLABS",
-      "reviewReasons": [
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "André Duarte",
-          "funnelStatus": "MAPPED",
-          "roleOrHeadline": "Sócio",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": "EMBARCADOR"
-        },
-        {
-          "contactName": "André HOFF",
-          "funnelStatus": "MAPPED",
-          "roleOrHeadline": "Outra",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": "EMBARCADOR"
-        },
-        {
-          "contactName": "Felipe Capalbo",
-          "funnelStatus": "MAPPED",
-          "roleOrHeadline": "Business Analyst",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": "EMBARCADOR"
-        },
-        {
-          "contactName": "JUAN Cazes",
-          "funnelStatus": "MAPPED",
-          "roleOrHeadline": "Outro",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": "EMBARCADOR"
-        },
-        {
-          "contactName": "Pedro Roriz Tinoco Filho",
-          "funnelStatus": "MAPPED",
-          "roleOrHeadline": "Business Analyst Intern",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": "EMBARCADOR"
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": "EMBARCADOR"
+      "icpSegment": null
     },
     {
       "id": "db-cmsswvj3y001jk7ywdp3qmvze",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T11:48:10.589Z",
+  "generatedAt": "2026-08-31T20:26:29.222Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -216,7 +216,7 @@
           "lastInteractionAt": "2026-08-14T16:50:46.307Z",
           "source": "painel-abm",
           "owner": null,
-          "contactCount": 8,
+          "contactCount": 9,
           "activeDecisor": "Ligia Camargo"
         },
         {
@@ -406,19 +406,6 @@
           "owner": null,
           "contactCount": 1,
           "activeDecisor": "Edson Rocha"
-        },
-        {
-          "id": "cmrl2cabz000nk7745zclhm0a",
-          "name": "Rodoil Distribuidora de Combustíveis",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-24T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-17T03:00:00.000Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 5,
-          "activeDecisor": "Luciano Demicheli"
         },
         {
           "id": "cms4r8zfu0000k7k40fo3it88",
@@ -943,7 +930,7 @@
           "lastInteractionAt": "2026-07-30T11:54:00.341Z",
           "source": "linkedin-thiago-abm-scan",
           "owner": null,
-          "contactCount": 3,
+          "contactCount": 4,
           "activeDecisor": "Renato Marostica"
         },
         {
@@ -1075,6 +1062,19 @@
           "owner": null,
           "contactCount": 9,
           "activeDecisor": "Gabriel Dal Sasso"
+        },
+        {
+          "id": "cmrl2cabz000nk7745zclhm0a",
+          "name": "Rodoil Distribuidora de Combustíveis",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-24T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-31T17:08:51.749Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 5,
+          "activeDecisor": "Luciano Demicheli"
         },
         {
           "id": "cmqjsbye70015k7zwh88ujxnp",
@@ -1339,7 +1339,7 @@
           "lastInteractionAt": "2026-08-17T11:34:00.000Z",
           "source": "linkedin-sync:master",
           "owner": null,
-          "contactCount": 5,
+          "contactCount": 6,
           "activeDecisor": "José Roberto Braga"
         },
         {
@@ -1569,7 +1569,7 @@
           "lastInteractionAt": "2026-08-24T12:27:45.212Z",
           "source": "forum-ilos-2026-speakers",
           "owner": null,
-          "contactCount": 12,
+          "contactCount": 14,
           "activeDecisor": "Elaine Selma"
         },
         {

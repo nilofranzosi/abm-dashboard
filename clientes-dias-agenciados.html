@@ -96,6 +96,7 @@
         <h2>Visão Geral — Base de Clientes</h2>
         <div style="margin-bottom: 14px; display: flex; align-items: center;" id="month-selector"></div>
         <div class="kpi-grid" id="kpi-grid"></div>
+        <div id="metric-source" class="muted" style="font-size: 11px; border-top: 1px solid var(--line); padding-top: 8px;"></div>
       </div>
 
       <div class="panel">
@@ -384,6 +385,12 @@
           <div class="kpi-subtitle">${getMonthLabel(primeiroMes)} → ${getMonthLabel(selectedMonth)}</div>
         </div>
       `;
+      const fonte = data.metricSource || 'fonte não informada';
+      const atualizado = data.metricSyncedAt
+        ? new Date(data.metricSyncedAt).toLocaleString('pt-BR')
+        : 'sem sincronização registrada';
+      document.getElementById('metric-source').textContent =
+        `Fonte de Dias Agenciados: ${fonte} · Atualizado em ${atualizado}. Dias vendidos não entram nesta série.`;
     }
 
     // Seleção vazia não recorta nada. Com valores marcados, a linha precisa

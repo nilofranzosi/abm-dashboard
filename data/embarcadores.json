@@ -1688,7 +1688,11 @@
     },
     "tierRationale": "Tier 2: conta relevante, depende de gatilho ou validação adicional por alto potencial logístico/capilaridade; porte econômico alto; mapeamento parcial de decisores.",
     "nextResearchStep": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10",
+    "aliases": [
+      "Heikeken",
+      "The Heikeken Company"
+    ]
   },
   {
     "id": 54,
