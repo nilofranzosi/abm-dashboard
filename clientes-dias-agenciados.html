@@ -229,13 +229,22 @@
       return monthStr === `${hoje.getFullYear()}-${mm}-01`;
     }
 
-    // Tendencia = primeiro mes da janela ate o mes SELECIONADO (mesma regra da
-    // aba Target Accounts, para as duas abas nao contarem historias diferentes).
+    // Tendencia = mes selecionado vs mes IMEDIATAMENTE ANTERIOR (mes a mes),
+    // mesma regra da aba Target Accounts para as duas nao contarem historias
+    // diferentes. Antes comparava contra o primeiro mes da janela, o que media
+    // meio ano de distancia e escondia o momentum recente: uma conta que caiu
+    // cinco meses e virou no ultimo aparecia em queda.
+    // No primeiro mes da janela nao existe anterior — devolve 0 em vez de
+    // inventar uma base de comparacao.
     function trendDoMes(row) {
       if (!row.trend || row.trend.length < 2) return 0;
-      const primeiro = row.trend[0]?.contractDays || 0;
-      const atual = diasDoMes(row) || 0;
-      return atual - primeiro;
+
+      const idxSelecionado = row.trend.findIndex((t) => t.month === selectedMonth);
+      if (idxSelecionado <= 0) return 0;
+
+      const anterior = row.trend[idxSelecionado - 1]?.contractDays || 0;
+      const atual = row.trend[idxSelecionado]?.contractDays || 0;
+      return atual - anterior;
     }
 
     async function load() {
@@ -348,10 +357,21 @@
       const totalTouchpoints = data.rows.reduce((sum, r) => sum + r.touchpointsTotal, 0);
       const comTouchpoint = data.totais.comTouchpoint;
 
-      const primeiroMes = data.trendMonths[0];
-      const primeiroTotal = data.rows.reduce((sum, r) => sum + (r.trend.find(t => t.month === primeiroMes)?.contractDays || 0), 0);
-      const variacao = totalDias - primeiroTotal;
-      const variacaoPct = primeiroTotal > 0 ? Math.round((variacao / primeiroTotal) * 100) : 0;
+      // Tendencia consolidada tambem mes a mes: total do mes selecionado contra
+      // o total do mes anterior. No primeiro mes da janela nao ha o que comparar.
+      const idxSelecionado = data.trendMonths.indexOf(selectedMonth);
+      let variacao = 0;
+      let variacaoPct = 0;
+      let mesAnteriorLabel = null;
+
+      if (idxSelecionado > 0) {
+        const mesAnterior = data.trendMonths[idxSelecionado - 1];
+        const totalAnterior = data.rows.reduce(
+          (sum, r) => sum + (r.trend.find(t => t.month === mesAnterior)?.contractDays || 0), 0);
+        variacao = totalDias - totalAnterior;
+        variacaoPct = totalAnterior > 0 ? Math.round((variacao / totalAnterior) * 100) : 0;
+        mesAnteriorLabel = getMonthLabel(mesAnterior);
+      }
 
       const parcial = isMesEmCurso(selectedMonth);
       const notaParcial = parcial
@@ -382,7 +402,9 @@
         <div class="kpi">
           <div class="kpi-label">Tendência</div>
           <div class="kpi-value" style="${variacao >= 0 ? 'color:var(--green)' : 'color:var(--red)'}">${variacaoPct > 0 ? '+' : ''}${variacaoPct}%</div>
-          <div class="kpi-subtitle">${getMonthLabel(primeiroMes)} → ${getMonthLabel(selectedMonth)}</div>
+          <div class="kpi-subtitle">${mesAnteriorLabel
+            ? `${mesAnteriorLabel} → ${getMonthLabel(selectedMonth)}${parcial ? ' · mês em curso, ainda parcial' : ''}`
+            : 'Primeiro mês da janela · sem base de comparação'}</div>
         </div>
       `;
       const fonte = data.metricSource || 'fonte não informada';

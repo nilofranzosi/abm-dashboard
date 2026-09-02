@@ -31,6 +31,7 @@
     .muted { color: var(--muted); font-size: 13px; }
     .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px; margin-bottom: 14px; }
     .kpi-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 14px; }
+    .health-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 14px; }
     .kpi { background: white; border: 1px solid var(--line); border-top: 3px solid #297ACC; border-radius: 8px; padding: 16px; text-align: center; }
     .kpi-label { font-size: 0.65rem; font-weight: 600; color: #6B778C; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
     .kpi-value { font-size: 1.75rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
@@ -77,6 +78,7 @@
       .container { grid-template-columns: 1fr; }
       .detail-panel { display: grid !important; }
       .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+      .health-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 <link rel="stylesheet" href="/css/thermo-ds.css">
@@ -86,6 +88,7 @@
     <div>
       <div class="panel">
         <h2>Visão Estratégica — Target Accounts Outubro</h2>
+        <div class="health-grid" id="health-summary"></div>
         <div style="margin-bottom: 14px; display: flex; align-items: center;" id="month-selector"></div>
         <div class="kpi-grid" id="kpi-grid"></div>
         <div id="metric-source" class="muted" style="font-size: 11px; border-top: 1px solid var(--line); padding-top: 8px;"></div>
@@ -115,6 +118,8 @@
             <tr>
               <th style="width: 50px; text-align: center;">#</th>
               <th onclick="sortTable('company')">Empresa</th>
+              <th onclick="sortTable('health')">Saúde</th>
+              <th style="text-align: right;">Alvo</th>
               <th onclick="sortTable('status')">Status Operacional (%)</th>
               <th onclick="sortTable('events')">Eventos</th>
               <th onclick="sortTable('tier')">Tier</th>
@@ -132,6 +137,7 @@
       <div class="panel">
         <h2 id="detail-title">Selecione uma empresa</h2>
         <div id="detail-info" class="muted"></div>
+        <div id="detail-health" style="margin-top:14px"></div>
         <div style="margin-top: 14px; padding: 12px; background: #F4F8FC; border-radius: 6px; border-left: 3px solid #297ACC;">
           <div style="font-size: 11px; color: #6B778C; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Dias Agenciados (mês selecionado)</div>
           <div id="detail-contract-days" style="font-size: 28px; font-weight: 600; color: #297ACC;">—</div>
@@ -185,6 +191,7 @@
 
   <script>
     let data = null;
+    let healthData = null;
     let currentChart = null;
     let sortBy = 'contractDays';
     let sortAsc = false; // Descending by default (maior para menor)
@@ -235,15 +242,25 @@
       return t > 0 ? 'growth' : t < 0 ? 'decline' : 'flat';
     }
 
-    // Tendencia = primeiro mes da janela ate o mes SELECIONADO. Antes ia sempre
-    // ate o ultimo mes da serie, entao escolher julho no seletor ainda mostrava
-    // a variacao contra agosto — toda empresa aparecia em queda porque agosto
-    // ainda esta correndo.
+    // Tendencia = mes anterior vs mes selecionado (comparacao mes-a-mes)
+    // Assim temos uma visao clara do momentum entre dois meses proximos
     function trendDoMes(row) {
       if (!row.trend || row.trend.length < 2) return 0;
-      const primeiro = row.trend[0]?.contractDays || 0;
-      const atual = row.trend.find((t) => t.month === selectedMonth)?.contractDays || 0;
-      return atual - primeiro;
+
+      // Encontrar o índice do mês selecionado
+      const selectedIdx = row.trend.findIndex((t) => t.month === selectedMonth);
+      if (selectedIdx <= 0) return 0; // Sem mês anterior para comparar
+
+      const mesAnterior = row.trend[selectedIdx - 1]?.contractDays || 0;
+      const atual = row.trend[selectedIdx]?.contractDays || 0;
+      return atual - mesAnterior;
+    }
+
+    // Calcula "Falta p/ o alvo" dinamicamente baseado no mês selecionado
+    function calcularFaltaRecalculada(row) {
+      const monthTrend = row.trend?.find(t => t.month === selectedMonth);
+      const contractDaysThisMonth = monthTrend?.contractDays || 0;
+      return row.alvo > 0 ? row.alvo - contractDaysThisMonth : 0;
     }
 
     // Meta oficial "Meta de dias vendidos" da Motorista PX, mes a mes. Fonte
@@ -295,6 +312,8 @@
         if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
         const json = await res.json();
         data = json.data;
+        const healthRes = await fetch('/api/transportadoras/target-accounts-health', { credentials: 'include' });
+        if (healthRes.ok) healthData = (await healthRes.json()).data;
         render();
       } catch (err) {
         document.body.innerHTML = `<div class="error">Erro ao carregar dados de agosto/2026: ${escapeHtml(err.message)}</div>`;
@@ -364,8 +383,30 @@
       }
       renderMonthSelector();
       initializeFilters();
+      renderHealthSummary();
       renderStrategic();
       renderTable();
+    }
+
+    function healthFor(row) {
+      return healthData?.rows?.find(item => item.id === row.id)?.health || null;
+    }
+    function healthLabel(status) {
+      return ({ SAUDAVEL: 'Saudável', ATENCAO: 'Atenção', EM_RISCO: 'Em risco', DADOS_INSUFICIENTES: 'Sem base diária' })[status] || 'Sem base diária';
+    }
+    function healthClass(status) {
+      return status === 'SAUDAVEL' ? 'positive' : status === 'EM_RISCO' ? 'negative' : 'info';
+    }
+    function renderHealthSummary() {
+      const totals = healthData?.totals;
+      const node = document.getElementById('health-summary');
+      if (!totals) { node.innerHTML = `<div class="kpi"><div class="kpi-label">Saúde da carteira</div><div class="kpi-value">—</div><div class="kpi-subtitle">Aguardando série diária</div></div>`; return; }
+      node.innerHTML = [
+        ['Total de Target Accounts', totals.total, 'base monitorada'],
+        ['Saudáveis', totals.saudaveis, 'dentro da curva e da projeção'],
+        ['Em atenção', totals.atencao, 'requer nova medição semanal'],
+        ['Em risco', totals.emRisco, 'intervenção agora']
+      ].map(([label, value, subtitle]) => `<div class="kpi"><div class="kpi-label">${label}</div><div class="kpi-value">${value}</div><div class="kpi-subtitle">${subtitle}</div></div>`).join('');
     }
 
     function initializeFilters() {
@@ -493,15 +534,27 @@
       const evaluated = data.rows.filter(r => r.companyId !== null).length;
       const eventCoverage = evaluated > 0 ? Math.round((withEvents / evaluated) * 100) : 0;
 
-      // Calcular tendência entre primeiro e último mês
-      const firstMonthIdx = 0;
-      const lastMonthIdx = data.trendMonths.length - 1;
-      const firstMonthData = data.rows.map(r => r.trend?.[firstMonthIdx]?.contractDays || 0);
-      const lastMonthData = monthData;
-      const firstTotal = firstMonthData.reduce((sum, d) => sum + d, 0);
-      const lastTotal = lastMonthData.reduce((sum, d) => sum + d, 0);
-      const trend = lastTotal - firstTotal;
-      const trendPct = firstTotal > 0 ? Math.round((trend / firstTotal) * 100) : 0;
+      // Calcular tendência mês-a-mês (mês selecionado vs mês anterior)
+      const selectedIdx = data.trendMonths.indexOf(selectedMonth);
+      let trend = 0;
+      let trendPct = 0;
+      let prevMonthLabel = getMonthLabel(selectedMonth);
+
+      if (selectedIdx > 0) {
+        // Mês anterior existe
+        const prevMonthIdx = selectedIdx - 1;
+        const prevMonthData = data.rows.map(r => r.trend?.[prevMonthIdx]?.contractDays || 0);
+        const prevTotal = prevMonthData.reduce((sum, d) => sum + d, 0);
+        const currTotal = monthData.reduce((sum, d) => sum + d, 0);
+        trend = currTotal - prevTotal;
+        trendPct = prevTotal > 0 ? Math.round((trend / prevTotal) * 100) : 0;
+        prevMonthLabel = getMonthLabel(data.trendMonths[prevMonthIdx]);
+      } else if (selectedIdx === 0) {
+        // Primeiro mês: sem comparação
+        trend = 0;
+        trendPct = 0;
+        prevMonthLabel = getMonthLabel(selectedMonth);
+      }
 
       const parcial = isMesEmCurso(selectedMonth);
       const notaParcial = parcial
@@ -537,7 +590,7 @@
         <div class="kpi">
           <div class="kpi-label">Tendência</div>
           <div class="kpi-value" style="${trend >= 0 ? 'color:var(--green)' : 'color:var(--red)'}">${trendPct > 0 ? '+' : ''}${trendPct}%</div>
-          <div class="kpi-subtitle">${getMonthLabel(data.trendMonths[firstMonthIdx])} → ${getMonthLabel(selectedMonth)}</div>
+          <div class="kpi-subtitle">${prevMonthLabel} → ${getMonthLabel(selectedMonth)}</div>
         </div>
       `;
       const fonte = data.metricSource || 'fonte não informada';
@@ -603,6 +656,10 @@
           const bTrend = b.trend?.find(t => t.month === selectedMonth);
           aVal = a.alvo > 0 ? ((aTrend?.contractDays || 0) / a.alvo) * 100 : 0;
           bVal = b.alvo > 0 ? ((bTrend?.contractDays || 0) / b.alvo) * 100 : 0;
+        } else if (sortBy === 'health') {
+          const order = { EM_RISCO: 0, ATENCAO: 1, SAUDAVEL: 2, DADOS_INSUFICIENTES: 3 };
+          aVal = order[healthFor(a)?.status] ?? 3;
+          bVal = order[healthFor(b)?.status] ?? 3;
         } else if (sortBy === 'events') {
           aVal = a.eventos?.length || 0;
           bVal = b.eventos?.length || 0;
@@ -616,8 +673,8 @@
           aVal = trendDoMes(a);
           bVal = trendDoMes(b);
         } else if (sortBy === 'gap') {
-          aVal = a.faltaParaAlvo || 0;
-          bVal = b.faltaParaAlvo || 0;
+          aVal = calcularFaltaRecalculada(a);
+          bVal = calcularFaltaRecalculada(b);
         }
         return sortAsc ? (aVal < bVal ? -1 : 1) : (aVal > bVal ? -1 : 1);
       });
@@ -632,16 +689,23 @@
         const trend = trendDoMes(row);
         const trendClass = trend > 0 ? 'trend-up' : trend < 0 ? 'trend-down' : 'trend-flat';
         const trendSymbol = trend > 0 ? '↑' : trend < 0 ? '↓' : '→';
+        const health = healthFor(row);
+
+        // Recalcular "Falta p/ o alvo" dinamicamente baseado no mês selecionado
+        const faltaRecalculada = calcularFaltaRecalculada(row);
+        const faltaColor = faltaRecalculada > 0 ? '#e7a31e' : '#8992a3';
 
         return `<tr data-idx="${realIdx}" onclick="showDetail(${realIdx})">
           <td style="text-align: center; font-weight: 600; color: #6B778C;">${idx + 1}</td>
           <td><strong>${escapeHtml(row.companyName || row.clienteRaw)}</strong></td>
+          <td><span class="status-badge ${healthClass(health?.status)}">${healthLabel(health?.status)}</span></td>
+          <td style="text-align: right; font-weight: 600; color: #297ACC;">${fmt(row.alvo)}</td>
           <td>${pct}% <span class="muted" style="font-size:11px">(${fmt(contractDaysThisMonth)} dias)</span></td>
           <td><span class="status-badge ${eventCount > 0 ? 'positive' : 'negative'}">${eventCount} evento${eventCount !== 1 ? 's' : ''}</span></td>
           <td>${row.tier || '—'}</td>
           <td><span class="status-badge ${row.status ? 'info' : ''}">${row.status || '—'}</span></td>
           <td><span class="${trendClass}">${trendSymbol} ${fmt(Math.abs(trend))}</span></td>
-          <td style="font-weight: 600; color: ${row.faltaParaAlvo > 0 ? '#e7a31e' : '#8992a3'}">${fmt(row.faltaParaAlvo)}</td>
+          <td style="font-weight: 600; color: ${faltaColor}">${fmt(faltaRecalculada)}</td>
         </tr>`;
       }).join('');
     }
@@ -748,6 +812,10 @@
         <p><strong>Alvo:</strong> ${fmt(row.alvo)} dias | <strong>Falta:</strong> ${fmt(row.faltaParaAlvo)}</p>
         <p><strong>Multiplicador:</strong> ${escapeHtml(row.multiplicador)} | <strong>Viabilidade:</strong> ${escapeHtml(row.viabilidade)}</p>
       `;
+      const health = healthFor(row);
+      document.getElementById('detail-health').innerHTML = !health
+        ? '<p class="muted">Monitoramento de saúde indisponível.</p>'
+        : `<div style="padding:12px;background:#F4F8FC;border-left:3px solid ${health.status === 'EM_RISCO' ? '#C93137' : health.status === 'SAUDAVEL' ? '#148F4E' : '#297ACC'}"><strong>${healthLabel(health.status)}</strong><br>${(health.reasons || []).map(escapeHtml).join('<br>')}</div>`;
 
       // Numeração é resolvida uma vez e reusada pelo gráfico e pela timeline,
       // para o balão nº 2 do gráfico ser sempre o item nº 2 da lista.

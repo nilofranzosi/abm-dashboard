@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T20:26:29.222Z",
+  "generatedAt": "2026-09-02T11:56:27.530Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -179,6 +179,19 @@
           "owner": null,
           "contactCount": 8,
           "activeDecisor": "Marcela Cocchiarale"
+        },
+        {
+          "id": "cmtiqol5i000sk7d4tpd1yjj3",
+          "name": "Mars Brasil",
+          "segment": "Alimentos & Bebidas",
+          "accountScore": 78,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-09-01T14:05:05.684Z",
+          "source": "linkedin-sync:master",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": null
         },
         {
           "id": "cmsswvjcs002dk7ywkbplemsh",
@@ -1569,7 +1582,7 @@
           "lastInteractionAt": "2026-08-24T12:27:45.212Z",
           "source": "forum-ilos-2026-speakers",
           "owner": null,
-          "contactCount": 14,
+          "contactCount": 15,
           "activeDecisor": "Elaine Selma"
         },
         {

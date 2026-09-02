@@ -156,7 +156,6 @@
       <button class="nav-item active" data-view="weekly">Dashboard Semanal</button>
       <button class="nav-item" data-view="patterns">Estudo de Padrões</button>
       <button class="nav-item" data-view="workday">Ações de Hoje</button>
-      <button class="nav-item" data-view="transportadoras-hub">Touchpoints</button>
       <button class="nav-item" data-view="prospects">Prospects</button>
       
       <button class="nav-item" data-view="noticias">Notícias do Setor</button>
@@ -204,10 +203,6 @@
 
       <div id="workday" class="section-view">
         <iframe class="embedded-frame" src="/workday.html?embed=1&icp=TRANSPORTADORA" title="Ações de Hoje"></iframe>
-      </div>
-
-      <div id="transportadoras-hub" class="section-view">
-        <iframe class="embedded-frame" src="/transportadoras.html?embed=1&tab=cronograma" title="Touchpoints"></iframe>
       </div>
 
       <div id="prospects" class="section-view">
@@ -279,7 +274,7 @@
     // Esconde as abas que a pessoa nao tem. Isto e UX: quem barra de verdade e o
     // servidor (requirePageAccess), e cada aba e um iframe com URL propria — se
     // esta funcao falhar, o iframe da aba proibida cai em /sem-acesso.html.
-    const VIEW_PANEL = {"weekly":"dashboard-semanal-transportadora","patterns":"estudo-de-padroes-transportadora","workday":"acoes-de-hoje","embarcadores":"painel-embarcadores","transportadoras-hub":"transportadoras","prospects":"transportadoras","noticias":"noticias-do-setor","validation":"validacao-linkedin","target-accounts":"target-accounts","clientes":"clientes","churn":"churn","gestao-acessos":"gestao-de-acessos"};
+    const VIEW_PANEL = {"weekly":"dashboard-semanal-transportadora","patterns":"estudo-de-padroes-transportadora","workday":"acoes-de-hoje","embarcadores":"painel-embarcadores","prospects":"transportadoras","noticias":"noticias-do-setor","validation":"validacao-linkedin","target-accounts":"target-accounts","clientes":"clientes","churn":"churn","gestao-acessos":"gestao-de-acessos"};
 
     function ativar(view) {
       buttons.forEach((item) => item.classList.toggle("active", item.dataset.view === view));

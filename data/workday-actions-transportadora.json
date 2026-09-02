@@ -1,22 +1,1555 @@
 {
-  "generatedAt": "2026-07-09T12:35:27.504Z",
+  "generatedAt": "2026-09-01T17:59:43.764Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
-  "acceptedConnectionsWithoutMessage": [],
-  "overdueNextActions": [],
-  "staleCompanies30Days": [],
+  "acceptedConnectionsWithoutMessage": [
+    {
+      "id": "cmsswww4z0007k7d0l78w2vce",
+      "company": {
+        "id": "cmrdrq8rv004fk75snk746ty4",
+        "name": "Zé Delivery",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvj2n001bk7ywnkb3uxhk",
+        "name": "Bruno Duarte Melaré"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-14T16:50:46.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsswww50000xk7d0muwkjs57",
+      "company": {
+        "id": "cmrdrq7s4001vk75sgfc8sk2g",
+        "name": "FedEx",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": {
+        "id": "cmsswvjn5004gk7ywz162j4s5",
+        "name": "Glaucia Megna"
+      },
+      "owner": null,
+      "reason": "Conexão aceita sem primeira mensagem registrada.",
+      "recommendedAction": "Enviar M1 hoje respeitando o SLA pós-aceite.",
+      "dueAt": "2026-08-17T11:34:36.245Z",
+      "severity": "critical"
+    }
+  ],
+  "overdueNextActions": [
+    {
+      "id": "cmrey6yk800j0k7c4r7ihvw9h",
+      "company": {
+        "id": "cmrey6yk800j0k7c4r7ihvw9h",
+        "name": "Kona Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
+      "dueAt": "2026-08-14T12:03:31.599Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrdrq7ey000gk75s3aqotnc4",
+      "company": {
+        "id": "cmrdrq7ey000gk75s3aqotnc4",
+        "name": "Kuehne + Nagel",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
+      "dueAt": "2026-08-14T12:03:31.600Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsizc0mm0001k7tw6ivk59yu",
+      "company": {
+        "id": "cmsizc0mm0001k7tw6ivk59yu",
+        "name": "Imediato Nexway",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
+      "dueAt": "2026-08-14T12:03:31.600Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrdrq7bv0004k75swvtpkdc5",
+      "company": {
+        "id": "cmrdrq7bv0004k75swvtpkdc5",
+        "name": "Gollog",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar notícia de expansão ou movimento de negócio e preparar gancho executivo.",
+      "dueAt": "2026-08-25T03:06:13.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmtd7tbbo000hk79w29w9r7ey",
+      "company": {
+        "id": "cmtd7tbbo000hk79w29w9r7ey",
+        "name": "CEVA Logistics",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
+      "dueAt": "2026-09-01T11:42:49.442Z",
+      "severity": "critical"
+    }
+  ],
+  "staleCompanies30Days": [
+    {
+      "id": "cmrdrq7da0009k75svimmxm3q",
+      "company": {
+        "id": "cmrdrq7da0009k75svimmxm3q",
+        "name": "Ultracargo",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7eg000ek75shiquhwnr",
+      "company": {
+        "id": "cmrdrq7eg000ek75shiquhwnr",
+        "name": "COFCO International",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7fp000jk75s1unh4f26",
+      "company": {
+        "id": "cmrdrq7fp000jk75s1unh4f26",
+        "name": "VLI Logística",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7k6000zk75s9ot5he7d",
+      "company": {
+        "id": "cmrdrq7k6000zk75s9ot5he7d",
+        "name": "DHL Express Brasil",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq8lj0040k75sydutvpxl",
+      "company": {
+        "id": "cmrdrq8lj0040k75sydutvpxl",
+        "name": "TKS LOCAÇÕES",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7sk001xk75sltjlkcy6",
+      "company": {
+        "id": "cmrdrq7sk001xk75sltjlkcy6",
+        "name": "Frigorifico JBS",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6sox0005k7c4ti6ftjrz",
+      "company": {
+        "id": "cmrey6sox0005k7c4ti6ftjrz",
+        "name": "AGROLOG TRANSPORTADORA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6ta4002ak7c4mx7vzglc",
+      "company": {
+        "id": "cmrey6ta4002ak7c4mx7vzglc",
+        "name": "NEPOMUCENO",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6vat008jk7c4lagawvf2",
+      "company": {
+        "id": "cmrey6vat008jk7c4lagawvf2",
+        "name": "Transportes Framento - Filipe",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6vz800avk7c4rvprqz00",
+      "company": {
+        "id": "cmrey6vz800avk7c4rvprqz00",
+        "name": "Expresso Nepomuceno - Mercado Livre B2C",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6xdl00f6k7c4s2hhkvjv",
+      "company": {
+        "id": "cmrey6xdl00f6k7c4s2hhkvjv",
+        "name": "TRANSPORTES OURO NEGRO LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey76tq012jk7c4w5xkmo7b",
+      "company": {
+        "id": "cmrey76tq012jk7c4w5xkmo7b",
+        "name": "Transportes Framento",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6t3g001mk7c4rbud4b9a",
+      "company": {
+        "id": "cmrey6t3g001mk7c4rbud4b9a",
+        "name": "GT Soluções - Rio Verde GO",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6t2l001kk7c4igk2wafb",
+      "company": {
+        "id": "cmrey6t2l001kk7c4igk2wafb",
+        "name": "GT Soluções",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey715d00p0k7c4pwizznxb",
+      "company": {
+        "id": "cmrey715d00p0k7c4pwizznxb",
+        "name": "Eco Rapido Transportes Ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6ytl00jmk7c4qkckgky8",
+      "company": {
+        "id": "cmrey6ytl00jmk7c4qkckgky8",
+        "name": "Milenium transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey76tz012kk7c4ap3l00rk",
+      "company": {
+        "id": "cmrey76tz012kk7c4ap3l00rk",
+        "name": "TRANSPORTES FRAMENTO LTDA.",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6szf0019k7c4cypkmt08",
+      "company": {
+        "id": "cmrey6szf0019k7c4cypkmt08",
+        "name": "ELIS BRASIL - BAIXADA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6uk30065k7c4dp8thf94",
+      "company": {
+        "id": "cmrey6uk30065k7c4dp8thf94",
+        "name": "Minasbeb Com. de Bebidas",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey70zw00opk7c4894yc151",
+      "company": {
+        "id": "cmrey70zw00opk7c4894yc151",
+        "name": "Dinho Distribuidora",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6vj7009ik7c4j35rese3",
+      "company": {
+        "id": "cmrey6vj7009ik7c4j35rese3",
+        "name": "Ambipar",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6vjw009lk7c44rdfegbe",
+      "company": {
+        "id": "cmrey6vjw009lk7c44rdfegbe",
+        "name": "APK. LOGISTICA E TRANSPORTE LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6zi700l9k7c4c5w1w17u",
+      "company": {
+        "id": "cmrey6zi700l9k7c4c5w1w17u",
+        "name": "TECMAR",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6wyg00dzk7c4r0ootdi0",
+      "company": {
+        "id": "cmrey6wyg00dzk7c4r0ootdi0",
+        "name": "TARUMÃ DISTRIBUIDORA DE BEBIDAS LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6u0t004zk7c4gb3funce",
+      "company": {
+        "id": "cmrey6u0t004zk7c4gb3funce",
+        "name": "Favorita transportes - Matriz",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey71nd00q6k7c42uxj19hy",
+      "company": {
+        "id": "cmrey71nd00q6k7c42uxj19hy",
+        "name": "GRUPO CARGO POLO",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq8ol0047k75s13mapnck",
+      "company": {
+        "id": "cmrdrq8ol0047k75s13mapnck",
+        "name": "TRANSPANORAMA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6wms00ctk7c4eq54lwyg",
+      "company": {
+        "id": "cmrey6wms00ctk7c4eq54lwyg",
+        "name": "OPR Logistica Pontual",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6wna00cvk7c4giu2r4g0",
+      "company": {
+        "id": "cmrey6wna00cvk7c4giu2r4g0",
+        "name": "ORIENTE LOGISTICA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7rw001uk75sb1s0g98a",
+      "company": {
+        "id": "cmrdrq7rw001uk75sb1s0g98a",
+        "name": "FADEL",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6wcm00buk7c49n6gwdml",
+      "company": {
+        "id": "cmrey6wcm00buk7c49n6gwdml",
+        "name": "JBS = AMBIENTAL",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey70c500n3k7c4gjh4hrzv",
+      "company": {
+        "id": "cmrey70c500n3k7c4gjh4hrzv",
+        "name": "VITLOG",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6tum004ck7c4lvd8kak8",
+      "company": {
+        "id": "cmrey6tum004ck7c4lvd8kak8",
+        "name": "CMW TRANSPORTES LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6t3q001nk7c4gqetupk2",
+      "company": {
+        "id": "cmrey6t3q001nk7c4gqetupk2",
+        "name": "GT Soluções - Uberaba",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey734e00tdk7c44ha4114a",
+      "company": {
+        "id": "cmrey734e00tdk7c44ha4114a",
+        "name": "TOMASI LOGISTICA LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6sz70018k7c4c42558ts",
+      "company": {
+        "id": "cmrey6sz70018k7c4c42558ts",
+        "name": "Edini Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6ucb005jk7c4v86u277i",
+      "company": {
+        "id": "cmrey6ucb005jk7c4v86u277i",
+        "name": "IMARUI LESTE DISTRIBUICAO E LOGISTICA LTDA (LITORAL NORTE)",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq8o60046k75sa6wn2qnn",
+      "company": {
+        "id": "cmrdrq8o60046k75sa6wn2qnn",
+        "name": "TRANSMARONI",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7x0002ck75s8ail55cm",
+      "company": {
+        "id": "cmrdrq7x0002ck75s8ail55cm",
+        "name": "HORIZONTE",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey73ky00ugk7c4czf6nxs8",
+      "company": {
+        "id": "cmrey73ky00ugk7c4czf6nxs8",
+        "name": "Univale Distribuidora de Bebidas",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey70bu00n2k7c4a8fuylgy",
+      "company": {
+        "id": "cmrey70bu00n2k7c4a8fuylgy",
+        "name": "VIPEX TRANSPORTES LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey7985019ik7c49uovuy0n",
+      "company": {
+        "id": "cmrey7985019ik7c49uovuy0n",
+        "name": "OURO NEGRO CURITIBA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6yn500j6k7c4k7qhup2g",
+      "company": {
+        "id": "cmrey6yn500j6k7c4k7qhup2g",
+        "name": "LEMAR LOGISTICA E TRANSPORTES LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6tnx003pk7c4uy10b8yu",
+      "company": {
+        "id": "cmrey6tnx003pk7c4uy10b8yu",
+        "name": "VirtuGNL",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey71h200pqk7c4h9v2wjq8",
+      "company": {
+        "id": "cmrey71h200pqk7c4h9v2wjq8",
+        "name": "FOCUSLOG",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7ze002ik75s42bfokta",
+      "company": {
+        "id": "cmrdrq7ze002ik75s42bfokta",
+        "name": "JADLOG",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey70us00oek7c472cg36aj",
+      "company": {
+        "id": "cmrey70us00oek7c472cg36aj",
+        "name": "COMBER LOGISTICA LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6xjz00fok7c488ada8l2",
+      "company": {
+        "id": "cmrey6xjz00fok7c488ada8l2",
+        "name": "Vidal Logistica",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey73gg00u6k7c4yz9zqa1x",
+      "company": {
+        "id": "cmrey73gg00u6k7c4yz9zqa1x",
+        "name": "TRANSPORTES MAROSO LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey70hx00nkk7c4c19qnh6s",
+      "company": {
+        "id": "cmrey70hx00nkk7c4c19qnh6s",
+        "name": "Araujo Distribuidora",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6wib00cek7c4pixn8ll4",
+      "company": {
+        "id": "cmrey6wib00cek7c4pixn8ll4",
+        "name": "Madri Express Log",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey76jx011sk7c470rwc4ud",
+      "company": {
+        "id": "cmrey76jx011sk7c470rwc4ud",
+        "name": "TOPVAN TRANSPORTE",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6uti006yk7c43scqwetl",
+      "company": {
+        "id": "cmrey6uti006yk7c43scqwetl",
+        "name": "REGRA LOGISTICA EM DISTRIBUICAO LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6urk006rk7c4iesixxlb",
+      "company": {
+        "id": "cmrey6urk006rk7c4iesixxlb",
+        "name": "Prodelog Transportes Ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6yw100jqk7c44uibo48n",
+      "company": {
+        "id": "cmrey6yw100jqk7c44uibo48n",
+        "name": "NASP LOGISTICA E TRANSPORTES LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6uot006jk7c4qpymchle",
+      "company": {
+        "id": "cmrey6uot006jk7c4qpymchle",
+        "name": "P&W Igarapé Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey73mq00ukk7c4hz15olpe",
+      "company": {
+        "id": "cmrey73mq00ukk7c4hz15olpe",
+        "name": "VIA GROUP PARTICIPAÇÕES LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6vzh00awk7c4chwof6vu",
+      "company": {
+        "id": "cmrey6vzh00awk7c4chwof6vu",
+        "name": "Expresso Rio Vermelho Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6z6e00kgk7c4u9w6hq0d",
+      "company": {
+        "id": "cmrey6z6e00kgk7c4u9w6hq0d",
+        "name": "REVALLE PAULO AFONSO",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6yb700ibk7c4siij8jl8",
+      "company": {
+        "id": "cmrey6yb700ibk7c4siij8jl8",
+        "name": "GAT LOGISTICA LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6xss00ggk7c45cphwvlb",
+      "company": {
+        "id": "cmrey6xss00ggk7c45cphwvlb",
+        "name": "Bello Alimentos Ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6x2k00eak7c446h47yoa",
+      "company": {
+        "id": "cmrey6x2k00eak7c446h47yoa",
+        "name": "TRANSCASA TRANSPORTES E LOGISTICA LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7oh001gk75sz0gf8s6t",
+      "company": {
+        "id": "cmrdrq7oh001gk75sz0gf8s6t",
+        "name": "COMANDO DIESEL TRANSPORTE E LOGISTICA LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7ph001kk75s1fibbvnj",
+      "company": {
+        "id": "cmrdrq7ph001kk75s1fibbvnj",
+        "name": "CONLOG",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6x1h00e7k7c4u2cwynnp",
+      "company": {
+        "id": "cmrey6x1h00e7k7c4u2cwynnp",
+        "name": "Trans RV Transporttes Rodoviários de Cargas LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6waz00bqk7c4lijlkxa9",
+      "company": {
+        "id": "cmrey6waz00bqk7c4lijlkxa9",
+        "name": "IMEDIATA TRANSPORTES LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6vwc00alk7c4rjoyqhvd",
+      "company": {
+        "id": "cmrey6vwc00alk7c4rjoyqhvd",
+        "name": "DISTRIBUIDORA VIRGINIA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6t890023k7c4f1tmow1d",
+      "company": {
+        "id": "cmrey6t890023k7c4f1tmow1d",
+        "name": "LOGNET LOGISTICA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6suu000sk7c4j3fs5c69",
+      "company": {
+        "id": "cmrey6suu000sk7c4j3fs5c69",
+        "name": "Concreserv",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey72x900ssk7c4k78x1t2s",
+      "company": {
+        "id": "cmrey72x900ssk7c4k78x1t2s",
+        "name": "Schreiber Logística Ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey73sj00uvk7c42197dcjd",
+      "company": {
+        "id": "cmrey73sj00uvk7c42197dcjd",
+        "name": "ADF EMPRESAS REUNIDAS LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6tjg003ak7c4zkzkuigd",
+      "company": {
+        "id": "cmrey6tjg003ak7c4zkzkuigd",
+        "name": "TRANSMARIANO TRANSPORTES E LOGISTICA LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey799j019nk7c4elnkt1go",
+      "company": {
+        "id": "cmrey799j019nk7c4elnkt1go",
+        "name": "Pelog Soluções Logísticas",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6zps00lpk7c4m1co7822",
+      "company": {
+        "id": "cmrey6zps00lpk7c4m1co7822",
+        "name": "TRANSDANIEL",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6uht005yk7c4x935v6bu",
+      "company": {
+        "id": "cmrey6uht005yk7c4x935v6bu",
+        "name": "LOGMAM TRANSPORTES LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey71mq00q4k7c4zmo6vfui",
+      "company": {
+        "id": "cmrey71mq00q4k7c4zmo6vfui",
+        "name": "GPA LOG.E TRANS LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey73ha00u8k7c471fxceys",
+      "company": {
+        "id": "cmrey73ha00u8k7c471fxceys",
+        "name": "TRANSPORTES SERRANO LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6uxk007dk7c44ls2j463",
+      "company": {
+        "id": "cmrey6uxk007dk7c44ls2j463",
+        "name": "SAMID Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey730k00t3k7c4d3iycab2",
+      "company": {
+        "id": "cmrey730k00t3k7c4d3iycab2",
+        "name": "STEEL LOG - COMERCIO, LOGISTICA, TRANSPORTADORA E SERVICOS LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6vf50091k7c45hgjnzml",
+      "company": {
+        "id": "cmrey6vf50091k7c45hgjnzml",
+        "name": "Vicolog Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey74ff00wck7c45vw5pb60",
+      "company": {
+        "id": "cmrey74ff00wck7c45vw5pb60",
+        "name": "Daltez Comercio e Logística",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey74dg00w7k7c4ayq9rsup",
+      "company": {
+        "id": "cmrey74dg00w7k7c4ayq9rsup",
+        "name": "CSN SÃO PAULO LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6t7m0021k7c4ojg3tyxa",
+      "company": {
+        "id": "cmrey6t7m0021k7c4ojg3tyxa",
+        "name": "LOG20",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6wvm00dpk7c4bs3o24z9",
+      "company": {
+        "id": "cmrey6wvm00dpk7c4bs3o24z9",
+        "name": "Shift Mobilidade Corporativa e Agenciamento Ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6zgc00l5k7c4knztc710",
+      "company": {
+        "id": "cmrey6zgc00l5k7c4knztc710",
+        "name": "Talentos Consultoria de Pessoal LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey75rr00zlk7c45pn8ez1c",
+      "company": {
+        "id": "cmrey75rr00zlk7c45pn8ez1c",
+        "name": "MMR Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6wdz00byk7c4qz0iyorq",
+      "company": {
+        "id": "cmrey6wdz00byk7c4qz0iyorq",
+        "name": "JM TRANSPORTES",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey75gd00yqk7c4j95mmwvl",
+      "company": {
+        "id": "cmrey75gd00yqk7c4j95mmwvl",
+        "name": "LG Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6tga002yk7c47zghwltq",
+      "company": {
+        "id": "cmrey6tga002yk7c47zghwltq",
+        "name": "TAG DEL SOL TRANSPORTES LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6u9k005bk7c47yd30bfn",
+      "company": {
+        "id": "cmrey6u9k005bk7c47yd30bfn",
+        "name": "Grupo Urbam",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6srp000gk7c4c3ym0x1b",
+      "company": {
+        "id": "cmrey6srp000gk7c4c3ym0x1b",
+        "name": "BEVERAGE DISTRIBUIDORA DE BEBIDAS LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6wvu00dqk7c4iq8jiyrh",
+      "company": {
+        "id": "cmrey6wvu00dqk7c4iq8jiyrh",
+        "name": "SHLOG Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6ww300drk7c473c7ea9v",
+      "company": {
+        "id": "cmrey6ww300drk7c473c7ea9v",
+        "name": "Soluciona",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6t52001sk7c4473v6bg4",
+      "company": {
+        "id": "cmrey6t52001sk7c4473v6bg4",
+        "name": "Jamef Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6vbj008mk7c44pl2u7iz",
+      "company": {
+        "id": "cmrey6vbj008mk7c44pl2u7iz",
+        "name": "Transportes Rodoviário Fedrigo LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey71t400qhk7c480c839wr",
+      "company": {
+        "id": "cmrey71t400qhk7c480c839wr",
+        "name": "Irmãos Farid ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq8sb004gk75swc8c7vus",
+      "company": {
+        "id": "cmrdrq8sb004gk75swc8c7vus",
+        "name": "Zero Carbon Logistics S.A.",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6y8j00i2k7c4y7pq4wc7",
+      "company": {
+        "id": "cmrey6y8j00i2k7c4y7pq4wc7",
+        "name": "FC transportes Ltda ES",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6zxe00m7k7c4m928e045",
+      "company": {
+        "id": "cmrey6zxe00m7k7c4m928e045",
+        "name": "TRANSPORTADORA PACHECO LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6tnc003nk7c4fwe05pk8",
+      "company": {
+        "id": "cmrey6tnc003nk7c4fwe05pk8",
+        "name": "Vamos Locação",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    }
+  ],
   "unmatchedInboxThreads": [
     {
-      "id": "cmr9hjy0l000vk7x0iq9sqs9f",
+      "id": "cmsivh86r0007k780e3jdcpwn",
       "company": null,
       "contact": {
-        "id": "cmr9hjy0l000vk7x0iq9sqs9f",
-        "name": "Diego Coelho"
+        "id": "cmsivh86r0007k780e3jdcpwn",
+        "name": "Luciano Sousa"
       },
       "owner": null,
       "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
       "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
-      "dueAt": "2026-07-06T03:00:00.000Z",
+      "dueAt": "2026-08-12T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmsivh8fi000tk780lswsp6w0",
+      "company": null,
+      "contact": {
+        "id": "cmsivh8fi000tk780lswsp6w0",
+        "name": "Luciano Tótola"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-07T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmsivh8f8000rk780j68poqgv",
+      "company": null,
+      "contact": {
+        "id": "cmsivh8f8000rk780j68poqgv",
+        "name": "ROGERIO KOHNTOPP"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-07T03:00:00.000Z",
       "severity": "warning"
     },
     {
@@ -25,6 +1558,136 @@
       "contact": {
         "id": "cmr9hdx2y0015k7ggu3xfsgfp",
         "name": "RENATA CRISTINA LOURENÇO FIORAVANTE"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-07T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmsivh8al000fk780bb1gqcxy",
+      "company": null,
+      "contact": {
+        "id": "cmsivh8al000fk780bb1gqcxy",
+        "name": "Rogério Andrade"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-08-07T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8j5e009mk7ccz9amgorr",
+      "company": null,
+      "contact": {
+        "id": "cmshu8j5e009mk7ccz9amgorr",
+        "name": "Rafael H."
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8iu10084k7ccn1cakvpe",
+      "company": null,
+      "contact": {
+        "id": "cmshu8iu10084k7ccn1cakvpe",
+        "name": "Beatriz Gomes Lima"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8ijk006qk7ccys7go5jk",
+      "company": null,
+      "contact": {
+        "id": "cmshu8ijk006qk7ccys7go5jk",
+        "name": "Fabio Mattos"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8i790058k7cc7ebdczf2",
+      "company": null,
+      "contact": {
+        "id": "cmshu8i790058k7cc7ebdczf2",
+        "name": "Vânia Ferreira Xavier"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8i6q0056k7ccjc9nespk",
+      "company": null,
+      "contact": {
+        "id": "cmshu8i6q0056k7ccjc9nespk",
+        "name": "Valéria Estelita"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8hvp0042k7ccb7sty4nv",
+      "company": null,
+      "contact": {
+        "id": "cmshu8hvp0042k7ccb7sty4nv",
+        "name": "Gustavo Sanches"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmshu8hgv001rk7cc90edqydr",
+      "company": null,
+      "contact": {
+        "id": "cmshu8hgv001rk7cc90edqydr",
+        "name": "Andreia Vitoriano"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrj80cgt000wk748xths7z96",
+      "company": null,
+      "contact": {
+        "id": "cmrj80cgt000wk748xths7z96",
+        "name": "Luis Felipe Dovichi Mendes"
+      },
+      "owner": null,
+      "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
+      "recommendedAction": "Classificar como relevante/irrelevante e fazer match manual se for ABM.",
+      "dueAt": "2026-07-06T03:00:00.000Z",
+      "severity": "warning"
+    },
+    {
+      "id": "cmr9hjy0l000vk7x0iq9sqs9f",
+      "company": null,
+      "contact": {
+        "id": "cmr9hjy0l000vk7x0iq9sqs9f",
+        "name": "Diego Coelho"
       },
       "owner": null,
       "reason": "Thread do LinkedIn ainda não está vinculada a um contato da base.",
@@ -454,10 +2117,10 @@
   "summary": {
     "highTierNotStarted": 0,
     "recentConnectionsSent": 0,
-    "acceptedConnectionsWithoutMessage": 0,
-    "overdueNextActions": 0,
-    "staleCompanies30Days": 0,
-    "unmatchedInboxThreads": 34,
+    "acceptedConnectionsWithoutMessage": 2,
+    "overdueNextActions": 5,
+    "staleCompanies30Days": 100,
+    "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0
   }

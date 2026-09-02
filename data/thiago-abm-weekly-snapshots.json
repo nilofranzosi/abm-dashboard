@@ -2067,19 +2067,19 @@
   },
   {
     "weekKey": "2026-S36",
-    "generatedAt": "2026-08-31T18:55:32.423Z",
+    "generatedAt": "2026-09-02T12:00:13.495Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
-    "totalApproached": 119,
-    "activePipeline": 111,
+    "totalApproached": 120,
+    "activePipeline": 112,
     "pausedCount": 8,
     "repliedOrBetter": 24,
     "meetingOrBetter": 10,
     "dealCount": 10,
-    "replyRate": 0.21621621621621623,
-    "meetingRate": 0.09009009009009009,
-    "dealRate": 0.09009009009009009,
+    "replyRate": 0.21428571428571427,
+    "meetingRate": 0.08928571428571429,
+    "dealRate": 0.08928571428571429,
     "avgDaysToFirstReply": 6.133333333333334,
-    "avgDaysSinceLastOutbound": 16.357142857142858,
+    "avgDaysSinceLastOutbound": 18.714285714285715,
     "totalOutboundTouchpoints": 35,
     "totalInboundTouchpoints": 11,
     "funnel": [
@@ -2091,7 +2091,7 @@
       {
         "stage": "CONNECTION_ACCEPTED",
         "label": "Conexão Aceita",
-        "count": 6
+        "count": 7
       },
       {
         "stage": "MESSAGE_SENT",
@@ -2266,10 +2266,10 @@
         "nextActionDueAt": "2026-07-24T18:54:00.000Z"
       }
     ],
-    "activeContacts": 111,
+    "activeContacts": 112,
     "excludedContacts": 8,
     "unresolvedCompanies": 0,
-    "uniqueCompanies": 119,
-    "qualifiedAdvanceRate": 0.09009009009009009
+    "uniqueCompanies": 120,
+    "qualifiedAdvanceRate": 0.08928571428571429
   }
 ]

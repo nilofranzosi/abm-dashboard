@@ -609,11 +609,16 @@
       <section id="tab-prospects" class="tab-view">
         <section class="filters">
           <input type="text" id="prospects-search" placeholder="Buscar empresa...">
-          <select id="prospects-decisor-filter">
-            <option value="">Decisor mapeado: Todos</option>
-            <option value="sim">Sim</option>
-            <option value="parcial">Parcial</option>
-            <option value="não">Não</option>
+          <select id="prospects-origem-filter">
+            <option value="">Origem: Todas</option>
+            <option value="novo">Novo (nunca atendido)</option>
+            <option value="churn">Retomada (churn)</option>
+          </select>
+          <select id="prospects-frota-filter">
+            <option value="">Frota: Todas</option>
+            <option value="1000">1000+ veículos</option>
+            <option value="500">500+ veículos</option>
+            <option value="300">300+ veículos</option>
           </select>
           <span class="muted" id="prospects-count-label"></span>
         </section>
@@ -624,22 +629,24 @@
               <tr>
                 <th data-sort="rank">Rank</th>
                 <th data-sort="empresa">Empresa</th>
-                <th data-sort="origemProspect">Origem</th>
-                <th data-sort="scorePotencial">Score potencial</th>
-                <th data-sort="motivoPrioridade">Motivo prioridade</th>
-                <th data-sort="regiao">Região</th>
-                <th data-sort="segmento">Segmento</th>
-                <th data-sort="sinalExterno">Sinal externo</th>
-                <th data-sort="decisorMapeado">Decisor mapeado</th>
-                <th data-sort="similaridadeIcp">Similaridade ICP</th>
-                <th data-sort="interacaoPx">Interação PX</th>
-                <th data-sort="acaoSugerida">Ação sugerida</th>
-                <th data-sort="dono">Dono</th>
+                <th data-sort="origem">Origem</th>
+                <th data-sort="frota">Frota</th>
+                <th data-sort="cnpj">CNPJ</th>
+                <th data-sort="filiais">Filiais</th>
+                <th data-sort="ufsLabel">UFs</th>
+                <th data-sort="tierPx">Tier PX</th>
+                <th data-sort="statusTorre">Status na Torre</th>
+                <th data-sort="diasOperados">Dias operados</th>
+                <th data-sort="contratos">Contratos</th>
+                <th data-sort="ultimaOp">Última operação</th>
+                <th data-sort="cadastroEm">Cadastro</th>
+                <th data-sort="lastMile">Last mile</th>
+                <th data-sort="touchpoints">Touchpoints</th>
                 <th class="no-sort">Ações</th>
               </tr>
             </thead>
             <tbody id="prospects-tbody">
-              <tr><td colspan="14" class="loading">Carregando prospects...</td></tr>
+              <tr><td colspan="16" class="loading">Carregando prospects...</td></tr>
             </tbody>
           </table>
         </section>
@@ -1304,9 +1311,7 @@
       const h = healthPorEmpresa.get(row.id);
       if (!h) return '<span class="pending" title="Health Score não carregado">–</span>';
       const detalhe = `${h.pontos} pts · Alto ${h.porNivel.ALTO} · Intermediário ${h.porNivel.INTERMEDIARIO} · Básico ${h.porNivel.BASICO}`
-        + (h.diasSemTouchpoint === null ? "
-Nunca teve touchpoint" : `
-Último contato há ${h.diasSemTouchpoint} dia(s)`);
+        + (h.diasSemTouchpoint === null ? "\nNunca teve touchpoint" : `\nÚltimo contato há ${h.diasSemTouchpoint} dia(s)`);
       const alerta = h.precisaAtencao ? ' ⚠️' : '';
       return `<span class="badge" title="${escapeAttr(detalhe)}">${escapeAttr(h.bandLabel)} · ${h.pontos}${alerta}</span>`;
     }
@@ -1489,47 +1494,67 @@ Nunca teve touchpoint" : `
     let prospectsSort = { column: "rank", dir: "asc" };
 
     const prospectsSearchEl = document.getElementById("prospects-search");
-    const prospectsDecisorFilterEl = document.getElementById("prospects-decisor-filter");
+    const prospectsOrigemFilterEl = document.getElementById("prospects-origem-filter");
+    const prospectsFrotaFilterEl = document.getElementById("prospects-frota-filter");
     const prospectsTbodyEl = document.getElementById("prospects-tbody");
     const prospectsCountLabelEl = document.getElementById("prospects-count-label");
 
-    function decisorLabel(value) {
-      if (value === "sim") return "Sim";
-      if (value === "parcial") return "Parcial";
-      return "Não";
+    // As duas portas de entrada da aba, conforme a regra de composição de
+    // 31/08/2026: "não atendido" entra direto e forma o corpo da lista; churn
+    // só entra com pelo menos 1 Touchpoint registrado. Sem esta coluna as duas
+    // trilhas ficam indistinguíveis, e elas exigem copy e dono diferentes.
+    function origemProspectLabel(value) {
+      if (value === "churn") {
+        return `<span class="badge" title="Ex-cliente em churn — trilha de retomada, exige ao menos 1 Touchpoint registrado">Retomada (churn)</span>`;
+      }
+      return `<span class="badge" title="Cliente que ainda não atendemos">Novo</span>`;
     }
 
-    // As duas portas de entrada da aba: alvo de novo logo (Fase 28) e cliente
-    // em churn que reapareceu num evento (regra de 24/08/2026). Sem esta
-    // coluna as 15 linhas de retomada ficavam indistinguíveis das de novo logo.
-    function origemProspectLabel(value) {
-      if (value === "retomada-churn") {
-        return `<span class="badge" title="Cliente em churn que esteve em evento — sai desta aba sozinho quando o status deixar de ser churn">Retomada (churn)</span>`;
+    // qtd_trucks é autodeclarado pela empresa no cadastro e nunca auditado.
+    // Valores redondos e altos são suspeitos — marcamos para que ninguém
+    // trate o número como medido. Some quando o RNTRC entrar como fonte.
+    function frotaLabel(frota) {
+      if (frota === null || frota === undefined) {
+        return `<span class="pending" title="Empresa fora da base do Torre — frota a apurar via RNTRC">a apurar</span>`;
       }
-      return `<span class="badge" title="Alvo de novo logo">Novo logo</span>`;
+      const suspeita = frota >= 500 && frota % 100 === 0;
+      const titulo = suspeita
+        ? "Frota autodeclarada e arredondada — confirmar no RNTRC"
+        : "Frota autodeclarada no cadastro";
+      return `<span title="${titulo}">${frota.toLocaleString("pt-BR")}${suspeita ? " *" : ""}</span>`;
+    }
+
+    function boolLabel(value, tituloSim, tituloNao) {
+      if (value === null || value === undefined) return "–";
+      return value
+        ? `<span class="badge" title="${tituloSim}">Sim</span>`
+        : `<span class="pending" title="${tituloNao}">Não</span>`;
     }
 
     function renderProspectRow(row) {
+      const ufs = Array.isArray(row.ufs) && row.ufs.length > 0 ? row.ufs.join(", ") : "–";
       return `
         <tr>
           <td>${row.rank}</td>
           <td>${escapeAttr(row.empresa)}</td>
-          <td>${origemProspectLabel(row.origemProspect)}</td>
-          <td>${row.scorePotencial}</td>
-          <td>${escapeAttr(row.motivoPrioridade)}</td>
-          <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
-          <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
-          <td><span class="pending" title="Sem fonte de dados de região/segmento/sinal externo ainda">–</span></td>
-          <td><span class="badge">${decisorLabel(row.decisorMapeado)}</span></td>
-          <td><span class="pending" title="Score engine chega na Fase 32">–</span></td>
-          <td>${row.interacaoPx ? formatDate(row.interacaoPx) : "–"}</td>
-          <td>${row.acaoSugerida ? escapeAttr(row.acaoSugerida) : "–"}</td>
-          <td>${row.dono ? escapeAttr(row.dono) : "–"}</td>
+          <td>${origemProspectLabel(row.origem)}</td>
+          <td>${frotaLabel(row.frota)}</td>
+          <td>${row.cnpj ? escapeAttr(row.cnpj) : "–"}</td>
+          <td>${row.filiais ?? "–"}</td>
+          <td>${escapeAttr(ufs)}</td>
+          <td>${row.tierPx ?? "–"}</td>
+          <td>${escapeAttr(row.statusTorre)}</td>
+          <td>${row.diasOperados ? row.diasOperados.toLocaleString("pt-BR") : "–"}</td>
+          <td>${row.contratos ? row.contratos.toLocaleString("pt-BR") : "–"}</td>
+          <td>${row.ultimaOp ? formatDate(row.ultimaOp) : "–"}</td>
+          <td>${row.cadastroEm ? formatDate(row.cadastroEm) : "–"}</td>
+          <td>${boolLabel(row.lastMile, "Opera last mile (flag do cadastro)", "Flag não marcada no cadastro — pode significar 'não respondido'")}</td>
+          <td>${row.touchpoints > 0
+            ? `<span class="badge" title="${escapeAttr(row.ultimoTouchpoint ?? "")}">${row.touchpoints}</span>`
+            : `<span class="pending" title="Nenhum contato registrado na Engine">0</span>`}</td>
           <td>
-            <button disabled title="Sem tela de conta dedicada a prospects ainda">Ver prospect</button>
-            <button type="button" data-gerar-demanda-prospect="${escapeAttr(row.id)}">Criar demanda Growth</button>
-            <button disabled title="Sem fluxo de tarefas de pesquisa ainda">Criar tarefa de pesquisa</button>
-            <button type="button" data-adicionar-sinal="${escapeAttr(row.id)}" title="Abrir aba Sinais com esta empresa pré-selecionada">Adicionar sinal</button>
+            <button type="button" data-criar-tarefa="${row.rank}"
+              title="Cria uma tarefa em Ações de Hoje (Minhas Ações) e sincroniza com o ClickUp">Criar tarefa</button>
           </td>
         </tr>
       `;
@@ -1537,10 +1562,12 @@ Nunca teve touchpoint" : `
 
     function applyProspectsFiltersAndSort() {
       const search = prospectsSearchEl.value.trim().toLowerCase();
-      const decisorValue = prospectsDecisorFilterEl.value;
+      const origemValue = prospectsOrigemFilterEl.value;
+      const frotaMin = Number(prospectsFrotaFilterEl.value) || 0;
 
       let filtered = prospectsData.filter((row) => {
-        if (decisorValue && row.decisorMapeado !== decisorValue) return false;
+        if (origemValue && row.origem !== origemValue) return false;
+        if (frotaMin && (row.frota ?? 0) < frotaMin) return false;
         if (search && !row.empresa.toLowerCase().includes(search)) return false;
         return true;
       });
@@ -1558,14 +1585,18 @@ Nunca teve touchpoint" : `
         return 0;
       });
 
-      prospectsCountLabelEl.textContent = `${filtered.length} de ${prospectsData.length} empresas`;
+      const novos = filtered.filter((row) => row.origem === "novo").length;
+      const churns = filtered.length - novos;
+      prospectsCountLabelEl.textContent =
+        `${filtered.length} de ${prospectsData.length} empresas · ${novos} novos · ${churns} retomada`;
       prospectsTbodyEl.innerHTML = filtered.length === 0
-        ? `<tr><td colspan="13" class="empty">Nenhuma empresa encontrada com os filtros atuais.</td></tr>`
+        ? `<tr><td colspan="16" class="empty">Nenhuma empresa encontrada com os filtros atuais.</td></tr>`
         : filtered.map(renderProspectRow).join("");
     }
 
     prospectsSearchEl.addEventListener("input", applyProspectsFiltersAndSort);
-    prospectsDecisorFilterEl.addEventListener("change", applyProspectsFiltersAndSort);
+    prospectsOrigemFilterEl.addEventListener("change", applyProspectsFiltersAndSort);
+    prospectsFrotaFilterEl.addEventListener("change", applyProspectsFiltersAndSort);
 
     document.querySelectorAll("#prospects-table th[data-sort]").forEach((th) => {
       th.addEventListener("click", () => {
@@ -1579,29 +1610,94 @@ Nunca teve touchpoint" : `
       });
     });
 
+    // Fonte: snapshot curado em data/transportadoras-prospects.json (Top 50 de
+    // 31/08/2026). A API /api/transportadoras/prospects ainda serve o ranking
+    // antigo, montado sobre os 39 alvos da Fase 28 — ela fica como fallback
+    // até o pipeline de gates (frota + CNAE) ser portado para o domínio.
     async function loadProspects() {
-      prospectsTbodyEl.innerHTML = `<tr><td colspan="13" class="loading">Carregando prospects...</td></tr>`;
+      prospectsTbodyEl.innerHTML = `<tr><td colspan="16" class="loading">Carregando prospects...</td></tr>`;
       try {
-        const payload = await fetchJson(`${apiBase}/api/transportadoras/prospects`);
-        prospectsData = payload.data ?? [];
+        const response = await fetch("data/transportadoras-prospects.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        // ufsLabel existe só para a ordenação da coluna UFs: o campo bruto é um
+        // array, e o comparador da tabela só sabe comparar string e número.
+        prospectsData = (payload.entries ?? []).map((row) => ({
+          ...row,
+          ufsLabel: Array.isArray(row.ufs) ? row.ufs.join(", ") : ""
+        }));
         prospectsLoaded = true;
         applyProspectsFiltersAndSort();
       } catch (error) {
-        prospectsTbodyEl.innerHTML = `<tr><td colspan="13" class="error">Não foi possível carregar /api/transportadoras/prospects. ${error.message}</td></tr>`;
+        try {
+          const payload = await fetchJson(`${apiBase}/api/transportadoras/prospects`);
+          prospectsData = (payload.data ?? []).map((row) => ({
+            ...row,
+            origem: row.origemProspect === "retomada-churn" ? "churn" : "novo",
+            frota: null, cnpj: null, filiais: null, ufs: [], tierPx: null,
+            statusTorre: "–", diasOperados: 0, contratos: 0, ultimaOp: null, cadastroEm: null,
+            lastMile: null
+          }));
+          prospectsLoaded = true;
+          applyProspectsFiltersAndSort();
+        } catch (apiError) {
+          prospectsTbodyEl.innerHTML = `<tr><td colspan="16" class="error">Não foi possível carregar o snapshot nem a API. ${escapeAttr(apiError.message)}</td></tr>`;
+        }
       }
     }
 
-    prospectsTbodyEl.addEventListener("click", (event) => {
-      const sinalBtn = event.target.closest("button[data-adicionar-sinal]");
-      if (sinalBtn) {
-        const companyId = sinalBtn.dataset.adicionarSinal;
-        showTab("sinais");
-        openSinalForm(companyId);
-        return;
-      }
-      const demandaBtn = event.target.closest("button[data-gerar-demanda-prospect]");
-      if (demandaBtn) {
-        openDemandaForm({ origem: "prospect", companyId: demandaBtn.dataset.gerarDemandaProspect });
+    // Ação única da aba: cria a tarefa em Ações de Hoje (Minhas Ações). O POST
+    // já dispara o sync com o ClickUp do lado do servidor.
+    //
+    // companyId só vai quando a empresa foi resolvida por CNPJ na Engine — 18
+    // das 50. As outras 32 existem na Torre mas nunca foram criadas na Engine;
+    // para elas a tarefa nasce sem vínculo e carrega o nome no título, o que é
+    // preferível a arriscar prender a tarefa na empresa errada.
+    prospectsTbodyEl.addEventListener("click", async (event) => {
+      const btn = event.target.closest("button[data-criar-tarefa]");
+      if (!btn) return;
+
+      const row = prospectsData.find((r) => String(r.rank) === btn.dataset.criarTarefa);
+      if (!row) return;
+
+      const rotulo = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Criando...";
+
+      const detalhes = [
+        `Origem: ${row.origem === "churn" ? "retomada de churn" : "novo — nunca atendido"}`,
+        row.frota ? `Frota declarada: ${row.frota}` : "Frota: a apurar",
+        row.cnpj ? `CNPJ: ${row.cnpj}` : null,
+        row.diasOperados ? `Já operou ${row.diasOperados} dias (última: ${row.ultimaOp ?? "?"})` : null,
+        row.touchpoints ? `Touchpoints: ${row.touchpoints} — ${row.ultimoTouchpoint}` : null,
+        `Posição ${row.rank} do Top 50 de Prospects.`
+      ].filter(Boolean).join("\n");
+
+      try {
+        await fetchJson(`${apiBase}/api/workday/tasks`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            title: `Abordar ${row.empresa}`,
+            notes: detalhes,
+            companyId: row.engineCompanyId ?? null
+          })
+        });
+        btn.textContent = "Tarefa criada";
+        btn.title = "Criada em Ações de Hoje › Minhas Ações";
+      } catch (error) {
+        btn.disabled = false;
+        btn.textContent = rotulo;
+        // /api/workday pertence ao painel "Ações de Hoje", onde GESTOR tem
+        // apenas leitura por decisão de projeto. O 403 aqui não é falha: é o
+        // modelo de acesso funcionando. Sem esta mensagem o usuário só via
+        // "HTTP 403" e abria chamado.
+        const semPermissao = String(error.message).includes("403");
+        const recado = semPermissao
+          ? "Seu perfil tem acesso de leitura em Ações de Hoje, então não pode criar tarefas. Peça a um administrador."
+          : `Não foi possível criar a tarefa: ${error.message}`;
+        btn.title = recado;
+        window.alert(recado);
       }
     });
 

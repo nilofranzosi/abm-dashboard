@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T12:35:27.840Z",
+  "generatedAt": "2026-09-01T17:59:44.063Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -9,7 +9,34 @@
     {
       "stage": "CONNECTION_ACCEPTED",
       "label": "Conexão Aceita",
-      "companies": []
+      "companies": [
+        {
+          "id": "cmrdrq7s4001vk75sgfc8sk2g",
+          "name": "FedEx",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Retomada (cliente em churn) — presente em 10º Congresso ABOL; 1ª Confraria do Transporte",
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-17T11:34:36.245Z",
+          "source": "transportadora-anti-churn-priority",
+          "owner": null,
+          "contactCount": 24,
+          "activeDecisor": "Glaucia Megna"
+        },
+        {
+          "id": "cmrdrq8rv004fk75snk746ty4",
+          "name": "Zé Delivery",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": null,
+          "nextActionDueAt": null,
+          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
+          "source": "transportadora-anti-churn-priority",
+          "owner": null,
+          "contactCount": 1,
+          "activeDecisor": "Bruno Duarte Melaré"
+        }
+      ]
     },
     {
       "stage": "MESSAGE_SENT",

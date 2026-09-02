@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-09-01T17:59:44.096Z",
+  "ativo": [],
+  "segundaAbordagem": [
+    {
+      "id": "cmrdrq7s4001vk75sgfc8sk2g",
+      "name": "FedEx",
+      "segment": null,
+      "icpTier": "1",
+      "abmStatus": "CONNECTION_ACCEPTED",
+      "daysSinceLastReply": 15,
+      "lastReplyAt": null,
+      "nextAction": "Retomada (cliente em churn) — presente em 10º Congresso ABOL; 1ª Confraria do Transporte"
+    },
+    {
+      "id": "cmrdrq8rv004fk75snk746ty4",
+      "name": "Zé Delivery",
+      "segment": null,
+      "icpTier": "1",
+      "abmStatus": "CONNECTION_ACCEPTED",
+      "daysSinceLastReply": 18,
+      "lastReplyAt": null,
+      "nextAction": null
+    }
+  ],
+  "terceiraAbordagem": [],
+  "novoDecisor": [],
+  "prazoEsgotado": [],
+  "maturacao": [],
+  "reentrada": [],
+  "arquivados": []
+}
