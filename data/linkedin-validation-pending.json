@@ -1,14 +1,39 @@
 {
-  "generatedAt": "2026-09-02T11:56:19.795Z",
+  "generatedAt": "2026-09-02T18:17:18.117Z",
   "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-02.json",
   "summary": {
-    "total": 36,
+    "total": 37,
     "replied": 0,
     "companyUnknown": 0,
     "overdue": 0,
-    "offList": 36
+    "offList": 37
   },
   "companies": [
+    {
+      "id": "penske-logistics",
+      "resolvedCompany": "Penske Logistics",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Ademir Terra",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor Financeiro | CFO",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
     {
       "id": "db-cmsswvj3y001jk7ywdp3qmvze",
       "resolvedCompany": "CITROSUCO",

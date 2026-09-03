@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T18:04:39.321Z",
+  "generatedAt": "2026-09-02T19:50:04.857Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots-transportadora.json",
   "companySummary": {
@@ -15,30 +15,40 @@
     "companyDealRate": 0
   },
   "sample": {
-    "activeContacts": 1,
-    "replies": 0,
+    "activeContacts": 3,
+    "replies": 1,
     "advanced": 0,
     "negatives": 0,
-    "noResponse": 1,
-    "replyRate": 0,
+    "noResponse": 2,
+    "replyRate": 0.3333333333333333,
     "advancedRate": 0,
-    "avgDaysToFirstReply": null
+    "avgDaysToFirstReply": 0
   },
   "bySegment": [
     {
       "segment": "Segmento a classificar",
-      "total": 1,
-      "responded": 0,
+      "total": 3,
+      "responded": 1,
       "advanced": 0,
       "negative": 0,
-      "replyRate": 0,
+      "replyRate": 0.3333333333333333,
       "advancedRate": 0,
-      "avgDaysToFirstReply": null
+      "avgDaysToFirstReply": 0
     }
   ],
   "bySeniority": [
     {
       "seniority": "Não identificado",
+      "total": 2,
+      "responded": 1,
+      "advanced": 0,
+      "negative": 0,
+      "replyRate": 0.5,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": 0
+    },
+    {
+      "seniority": "Diretoria / Head",
       "total": 1,
       "responded": 0,
       "advanced": 0,
@@ -51,6 +61,16 @@
   "byFunctionArea": [
     {
       "functionArea": "Supply / Logística / Operações",
+      "total": 2,
+      "responded": 1,
+      "advanced": 0,
+      "negative": 0,
+      "replyRate": 0.5,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": 0
+    },
+    {
+      "functionArea": "Comercial / Desenvolvimento",
       "total": 1,
       "responded": 0,
       "advanced": 0,
@@ -63,13 +83,23 @@
   "byTimeBand": [
     {
       "timeBand": "Sem horário",
-      "total": 1,
+      "total": 2,
       "responded": 0,
       "advanced": 0,
       "negative": 0,
       "replyRate": 0,
       "advancedRate": 0,
       "avgDaysToFirstReply": null
+    },
+    {
+      "timeBand": "08h-11h59",
+      "total": 1,
+      "responded": 1,
+      "advanced": 0,
+      "negative": 0,
+      "replyRate": 1,
+      "advancedRate": 0,
+      "avgDaysToFirstReply": 0
     }
   ],
   "copyStats": null
