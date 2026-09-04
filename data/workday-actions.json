@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T12:00:00.177Z",
+  "generatedAt": "2026-09-04T12:00:00.085Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -85,6 +85,38 @@
       "severity": "critical"
     },
     {
+      "id": "volkswagen-do-brasil-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Volkswagen do Brasil"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 1 | Score 88/100 | Automotivo & Pneus. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear decisor de supply chain/logística VW Brasil e iniciar cadência.",
+      "dueAt": null,
+      "severity": "critical"
+    },
+    {
+      "id": "stellantis-brasil-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Stellantis Brasil"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 1 | Score 87/100 | Automotivo & Pneus. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear decisor de supply chain/logística Betim e iniciar cadência.",
+      "dueAt": null,
+      "severity": "critical"
+    },
+    {
       "id": "adm-brasil-tier-not-started",
       "company": {
         "id": null,
@@ -132,6 +164,22 @@
       },
       "reason": "Tier 1 | Score 85/100 | Automotivo & Pneus. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
       "recommendedAction": "Mapear decisores de logística/supply chain da Fras-le, com foco na operação de exportação para mais de 120 países.",
+      "dueAt": null,
+      "severity": "critical"
+    },
+    {
+      "id": "gm-brasil-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "GM Brasil"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 1 | Score 85/100 | Automotivo & Pneus. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear decisor de supply chain/logística GM Brasil e iniciar cadência.",
       "dueAt": null,
       "severity": "critical"
     },
@@ -254,6 +302,22 @@
       "severity": "warning"
     },
     {
+      "id": "citrosuco-tier-not-started",
+      "company": {
+        "id": "cmsswvj3y001jk7ywdp3qmvze",
+        "name": "CITROSUCO"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 80/100 | Agro & Commodities. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Mapear decisor de supply chain/logística e verificar se decisores de Cutrale se sobrepõem.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "aliexpress-tier-not-started",
       "company": {
         "id": null,
@@ -336,73 +400,6 @@
       },
       "reason": "Tier 2 | Score 79/100 | Supermercadistas. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
       "recommendedAction": "Identificar Gerente de Logística / CD da Rede Mix Atacarejo em Salvador.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "beiersdorf-brasil-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Beiersdorf Brasil"
-      },
-      "contact": {
-        "id": "fatima-ribeiro",
-        "name": "Fátima Ribeiro — Diretora de Supply Chain"
-      },
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 78/100 | Cosméticos & Higiene. Decisor mapeado: Fátima Ribeiro (Diretora de Supply Chain).",
-      "recommendedAction": "Monitorar sinais e ativar quando houver expansão, vaga logística, notícia ou interação.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "camil-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Camil"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 78/100 | Alimentos & Bebidas. Decisor ainda não mapeado — pesquisar antes de abordar.",
-      "recommendedAction": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "covabra-supermercados-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Covabra Supermercados"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 78/100 | Supermercadistas. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
-      "recommendedAction": "Confirmar faturamento e mapear Gerente de Logística da Covabra na região de Campinas.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "coop-cooperativa-de-consumo-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Coop — Cooperativa de Consumo"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 78/100 | Supermercadistas. Decisor ainda não mapeado — pesquisar antes de abordar.",
-      "recommendedAction": "Mapear estrutura de decisão logística da Coop e identificar responsável pelo CD ou recebimento.",
       "dueAt": null,
       "severity": "warning"
     }
@@ -2681,7 +2678,7 @@
       "company": {
         "id": "cmq9t45p8003lk7o0jcpftg3k",
         "name": "Cargill",
-        "status": "FOLLOW_UP_SENT"
+        "status": "REPLIED"
       },
       "contact": null,
       "owner": null,
@@ -4163,20 +4160,6 @@
       "severity": "warning"
     },
     {
-      "id": "cmq9t45p8003lk7o0jcpftg3k",
-      "company": {
-        "id": "cmq9t45p8003lk7o0jcpftg3k",
-        "name": "Cargill",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
       "id": "cms7gif2u000rk7gsrnexfna3",
       "company": {
         "id": "cms7gif2u000rk7gsrnexfna3",
@@ -4251,6 +4234,34 @@
       "company": {
         "id": "cmrt9u76r001mk718awvfzr00",
         "name": "Super Nosso",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms7gn51v000sk7gsghpyznvs",
+      "company": {
+        "id": "cms7gn51v000sk7gsghpyznvs",
+        "name": "Copel",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cms7gpafg000vk7gsxp6xou0y",
+      "company": {
+        "id": "cms7gpafg000vk7gsxp6xou0y",
+        "name": "Centauro",
         "status": "MESSAGE_SENT"
       },
       "contact": null,
@@ -4924,7 +4935,7 @@
     "recentConnectionsSent": 42,
     "acceptedConnectionsWithoutMessage": 78,
     "overdueNextActions": 69,
-    "staleCompanies30Days": 64,
+    "staleCompanies30Days": 65,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T12:00:00.502Z",
+  "generatedAt": "2026-09-04T12:00:00.169Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -934,19 +934,6 @@
           "activeDecisor": "Luciana de Andrade"
         },
         {
-          "id": "cmq9t45p8003lk7o0jcpftg3k",
-          "name": "Cargill",
-          "segment": null,
-          "accountScore": 0,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-07-13T03:00:00.000Z",
-          "lastInteractionAt": "2026-07-30T11:54:00.341Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 4,
-          "activeDecisor": "Renato Marostica"
-        },
-        {
           "id": "cmqs69y750002k78sabk3cg6y",
           "name": "Vulcabras",
           "segment": "Textil & Vestuário",
@@ -1250,6 +1237,19 @@
           "owner": null,
           "contactCount": 6,
           "activeDecisor": "Alexandre Aires"
+        },
+        {
+          "id": "cmq9t45p8003lk7o0jcpftg3k",
+          "name": "Cargill",
+          "segment": null,
+          "accountScore": 0,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-07-13T03:00:00.000Z",
+          "lastInteractionAt": "2026-09-04T11:58:46.482Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": "Renato Marostica"
         },
         {
           "id": "cmqqnso2n0008k7o898wwnhtz",

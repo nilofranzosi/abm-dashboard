@@ -1,8 +1,8 @@
 {
   "_placeholder": false,
   "generatedFrom": "public/data/embarcadores.json",
-  "generatedAt": "2026-09-02T18:16:57.308Z",
-  "count": 203,
+  "generatedAt": "2026-09-04T11:45:47.509Z",
+  "count": 214,
   "entries": [
     {
       "id": 1,
@@ -1627,6 +1627,94 @@
       "segment": "Supermercadistas",
       "uf": "SC",
       "tier": 2
+    },
+    {
+      "id": 218,
+      "name": "CITROSUCO",
+      "normalizedName": "citrosuco",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 219,
+      "name": "Copersucar",
+      "normalizedName": "copersucar",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 220,
+      "name": "Cutrale",
+      "normalizedName": "cutrale",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 221,
+      "name": "EuroChem",
+      "normalizedName": "eurochem",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 3
+    },
+    {
+      "id": 222,
+      "name": "Stellantis Brasil",
+      "normalizedName": "stellantis-brasil",
+      "segment": "Automotivo & Pneus",
+      "uf": "MG",
+      "tier": 1
+    },
+    {
+      "id": 223,
+      "name": "Frigorífico LAR",
+      "normalizedName": "frigorifico-lar",
+      "segment": "Alimentos & Bebidas",
+      "uf": "PR",
+      "tier": 3
+    },
+    {
+      "id": 224,
+      "name": "GM Brasil",
+      "normalizedName": "gm-brasil",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 1
+    },
+    {
+      "id": 225,
+      "name": "Hortifruti Natural da Terra",
+      "normalizedName": "hortifruti-natural-da-terra",
+      "segment": "Supermercadistas",
+      "uf": "RJ",
+      "tier": 2
+    },
+    {
+      "id": 227,
+      "name": "Tereos Brasil",
+      "normalizedName": "tereos-brasil",
+      "segment": "Agro & Commodities",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 228,
+      "name": "Unigel",
+      "normalizedName": "unigel",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 229,
+      "name": "Volkswagen do Brasil",
+      "normalizedName": "volkswagen-do-brasil",
+      "segment": "Automotivo & Pneus",
+      "uf": "SP",
+      "tier": 1
     }
   ]
 }

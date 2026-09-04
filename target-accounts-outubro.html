@@ -105,6 +105,9 @@
                marcada = todos, o mesmo estado neutro do antigo "Todos os ...". -->
           <div id="filter-tier"></div>
           <div id="filter-status"></div>
+          <div id="filter-origem"></div>
+          <div id="filter-faixa"></div>
+          <div id="filter-movimento"></div>
           <div id="filter-trend"></div>
           <div id="filter-eventos"></div>
           <div id="filter-eventos-count"></div>
@@ -124,6 +127,9 @@
               <th onclick="sortTable('events')">Eventos</th>
               <th onclick="sortTable('tier')">Tier</th>
               <th onclick="sortTable('qualification')">Status</th>
+              <th onclick="sortTable('origem')">Origem</th>
+              <th onclick="sortTable('faixa')">Faixa (Ago)</th>
+              <th onclick="sortTable('movimento')">Movimento</th>
               <th onclick="sortTable('trend')">Tendência</th>
               <th onclick="sortTable('gap')">Falta p/ o alvo</th>
             </tr>
@@ -205,6 +211,9 @@
     // status ATIVO).
     let filterTier = [];
     let filterStatus = [];
+    let filterOrigem = [];
+    let filterFaixa = [];
+    let filterMovimento = [];
     let filterTrend = [];
     let filterEventos = [];
     let filterEventosCount = [];
@@ -432,6 +441,47 @@
         aoMudar: (v) => { filterStatus = v; renderTable(); }
       });
 
+      // Filtro por origem (GS ou Sugerida) — extrai valores únicos dos dados
+      const origens = [...new Set(data.rows.map(r => r.origem).filter(o => o))];
+      if (origens.length > 0) {
+        MultiFiltro.criar({
+          montarEm: document.getElementById('filter-origem'),
+          rotulo: 'Origem',
+          resumoTodos: 'todas',
+          opcoes: origens.map(o => ({ valor: o, texto: o })),
+          aoMudar: (v) => { filterOrigem = v; renderTable(); }
+        });
+      }
+
+      // Filtro por faixa (6000, 3000, 900) — extrai valores únicos dos dados
+      const faixas = [...new Set(data.rows.map(r => r.faixaAgo).filter(f => f))];
+      if (faixas.length > 0) {
+        const faixasOrdenadas = ['6000', '3000', '900'].filter(f => faixas.includes(f));
+        MultiFiltro.criar({
+          montarEm: document.getElementById('filter-faixa'),
+          rotulo: 'Faixa',
+          resumoTodos: 'todas',
+          opcoes: faixasOrdenadas.map(f => ({ valor: f, texto: `${f} dias` })),
+          aoMudar: (v) => { filterFaixa = v; renderTable(); }
+        });
+      }
+
+      // Filtro por movimento (subiu, caiu, manteve) — ordem customizada
+      const movimentos = [...new Set(data.rows.map(r => r.movimento).filter(m => m))];
+      if (movimentos.length > 0) {
+        const movimentosOrdenados = ['subiu', 'caiu', 'manteve'].filter(m => movimentos.includes(m));
+        MultiFiltro.criar({
+          montarEm: document.getElementById('filter-movimento'),
+          rotulo: 'Movimento',
+          resumoTodos: 'todos',
+          opcoes: movimentosOrdenados.map(m => ({
+            valor: m,
+            texto: m === 'subiu' ? '↑ Subiu' : m === 'caiu' ? '↓ Caiu' : '→ Manteve'
+          })),
+          aoMudar: (v) => { filterMovimento = v; renderTable(); }
+        });
+      }
+
       MultiFiltro.criar({
         montarEm: document.getElementById('filter-trend'),
         rotulo: 'Tendência',
@@ -611,6 +661,9 @@
 
         if (!casaFiltro(filterTier, row.tier)) return false;
         if (!casaFiltro(filterStatus, row.status)) return false;
+        if (!casaFiltro(filterOrigem, row.origem)) return false;
+        if (!casaFiltro(filterFaixa, row.faixaAgo)) return false;
+        if (!casaFiltro(filterMovimento, row.movimento)) return false;
         if (!casaFiltro(filterTrend, classificarTendencia(row))) return false;
 
         // Filtro por registro de evento. Usa eventoRegistroStatus, e nao
@@ -669,6 +722,15 @@
         } else if (sortBy === 'qualification') {
           aVal = a.status || '';
           bVal = b.status || '';
+        } else if (sortBy === 'origem') {
+          aVal = a.origem || '';
+          bVal = b.origem || '';
+        } else if (sortBy === 'faixa') {
+          aVal = a.faixaAgo || '';
+          bVal = b.faixaAgo || '';
+        } else if (sortBy === 'movimento') {
+          aVal = a.movimento || '';
+          bVal = b.movimento || '';
         } else if (sortBy === 'trend') {
           aVal = trendDoMes(a);
           bVal = trendDoMes(b);
@@ -704,6 +766,9 @@
           <td><span class="status-badge ${eventCount > 0 ? 'positive' : 'negative'}">${eventCount} evento${eventCount !== 1 ? 's' : ''}</span></td>
           <td>${row.tier || '—'}</td>
           <td><span class="status-badge ${row.status ? 'info' : ''}">${row.status || '—'}</span></td>
+          <td>${row.origem || '—'}</td>
+          <td>${row.faixaAgo ? `${row.faixaAgo} dias` : '—'}</td>
+          <td>${row.movimento || '—'}</td>
           <td><span class="${trendClass}">${trendSymbol} ${fmt(Math.abs(trend))}</span></td>
           <td style="font-weight: 600; color: ${faltaColor}">${fmt(faltaRecalculada)}</td>
         </tr>`;
@@ -741,7 +806,7 @@
       const monthToUse = selectedMonth || data.trendMonths?.[data.trendMonths.length - 1] || '2026-08-01';
 
       // Gerar CSV com apenas as linhas visíveis
-      const headers = ['#', 'Empresa', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade'];
+      const headers = ['#', 'Empresa', 'Origem', 'Faixa (Ago)', 'Movimento', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade'];
       const csvLines = [headers.join(',')];
 
       visibleRows.forEach((row, idx) => {
@@ -755,6 +820,9 @@
         const csvRow = [
           idx + 1,
           `"${(row.companyName || row.clienteRaw).replace(/"/g, '""')}"`,
+          row.origem || '—',
+          row.faixaAgo ? `${row.faixaAgo} dias` : '—',
+          row.movimento || '—',
           pct,
           contractDaysThisMonth,
           eventCount,
@@ -811,6 +879,11 @@
         <p><strong>Coordenação:</strong> ${escapeHtml(row.coordenacao)}</p>
         <p><strong>Alvo:</strong> ${fmt(row.alvo)} dias | <strong>Falta:</strong> ${fmt(row.faltaParaAlvo)}</p>
         <p><strong>Multiplicador:</strong> ${escapeHtml(row.multiplicador)} | <strong>Viabilidade:</strong> ${escapeHtml(row.viabilidade)}</p>
+        <p style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #D4E4F5;">
+          <strong>Origem:</strong> ${row.origem || '—'} |
+          <strong>Faixa (Ago):</strong> ${row.faixaAgo ? `${row.faixaAgo} dias` : '—'} |
+          <strong>Movimento:</strong> ${row.movimento || '—'}
+        </p>
       `;
       const health = healthFor(row);
       document.getElementById('detail-health').innerHTML = !health
