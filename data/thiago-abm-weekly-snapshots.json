@@ -2067,19 +2067,19 @@
   },
   {
     "weekKey": "2026-S36",
-    "generatedAt": "2026-09-04T11:55:27.465Z",
+    "generatedAt": "2026-09-04T19:06:03.009Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 120,
     "activePipeline": 112,
     "pausedCount": 8,
-    "repliedOrBetter": 24,
+    "repliedOrBetter": 25,
     "meetingOrBetter": 10,
     "dealCount": 10,
-    "replyRate": 0.21428571428571427,
+    "replyRate": 0.22321428571428573,
     "meetingRate": 0.08928571428571429,
     "dealRate": 0.08928571428571429,
-    "avgDaysToFirstReply": 6.133333333333334,
-    "avgDaysSinceLastOutbound": 0,
+    "avgDaysToFirstReply": 5.75,
+    "avgDaysSinceLastOutbound": 0.7857142857142857,
     "totalOutboundTouchpoints": 17,
     "totalInboundTouchpoints": 3,
     "funnel": [
@@ -2101,12 +2101,12 @@
       {
         "stage": "FOLLOW_UP_SENT",
         "label": "Follow-Up Enviado",
-        "count": 28
+        "count": 27
       },
       {
         "stage": "REPLIED",
         "label": "Respondeu",
-        "count": 14
+        "count": 15
       },
       {
         "stage": "DEAL",
@@ -2246,24 +2246,24 @@
         "nextActionDueAt": "2026-07-07T03:00:00.000Z"
       },
       {
+        "company": "Cargill",
+        "stage": "REPLIED",
+        "contacts": 4,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-13T03:00:00.000Z"
+      },
+      {
         "company": "Nestlé",
         "stage": "REPLIED",
         "contacts": 1,
-        "outboundTouchpoints": 0,
+        "outboundTouchpoints": 1,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
         "nextActionDueAt": "2026-07-13T20:30:00.000Z"
-      },
-      {
-        "company": "MadeiraMadeira",
-        "stage": "REPLIED",
-        "contacts": 2,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-07-24T18:54:00.000Z"
       }
     ],
     "activeContacts": 112,

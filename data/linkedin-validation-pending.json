@@ -1,14 +1,85 @@
 {
-  "generatedAt": "2026-09-04T11:55:33.993Z",
+  "generatedAt": "2026-09-04T19:06:11.334Z",
   "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-04.json",
   "summary": {
-    "total": 14,
+    "total": 35,
     "replied": 3,
-    "companyUnknown": 3,
+    "companyUnknown": 5,
     "overdue": 0,
-    "offList": 7
+    "offList": 24
   },
   "companies": [
+    {
+      "id": "unknown-nilton-pimenta-sampaio",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Nilton Pimenta Sampaio",
+          "funnelStatus": "FIRST_CONTACT_SENT",
+          "roleOrHeadline": null,
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": 1,
+          "lastOutboundAt": "2026-09-04T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 1,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Nilton, a PX atua disponibilizando mão de obra para a operação logística, sem necessidade de contratação fixa via RH."
+            },
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Vi que você atuou na Ambev, temos forte atuação com eles junto as transportadoras parceiras."
+            },
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Acredito que temos oportunidades concretas para a operação da Suzano."
+            },
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "alpargatas-s-a",
+      "resolvedCompany": "Alpargatas S.A.",
+      "reviewReasons": [
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Adriano Negrão",
+          "funnelStatus": "FIRST_CONTACT_SENT",
+          "roleOrHeadline": "Vice Presidente Supply Chain",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 1,
+          "lastOutboundAt": "2026-09-04T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 1,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Gostaria de conversar com o time de logística da Alpargatas para entender mais as possibilidades junto a PX. Você estará na Logística do Futuro na próxima semana?"
+            }
+          ],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
     {
       "id": "bat",
       "resolvedCompany": "BAT",
@@ -22,7 +93,7 @@
           "funnelStatus": "REPLIED_POSITIVE",
           "roleOrHeadline": "Supply Chain Sourcing Manager @ BAT | Procurement • Supply Chain • Operations | End-to-End: Sourcing, Logística & Category Management | Digital Transformation | LATAM",
           "confidence": "Alta",
-          "daysSinceLastOutbound": 0,
+          "daysSinceLastOutbound": 1,
           "lastOutboundAt": "2026-09-04T03:00:00.000Z",
           "lastInboundAt": "2026-09-04T03:00:00.000Z",
           "outboundTouchpoints": 1,
@@ -186,7 +257,7 @@
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Sr. Supply Chain Purchasing & Transports Manager LATAM",
           "confidence": "Media",
-          "daysSinceLastOutbound": 0,
+          "daysSinceLastOutbound": 1,
           "lastOutboundAt": "2026-09-04T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -204,19 +275,19 @@
       "icpSegment": null
     },
     {
-      "id": "unknown-fernando-castro",
-      "resolvedCompany": "A apurar",
+      "id": "profuturo-fia-business-school",
+      "resolvedCompany": "PROFUTURO - FIA Business School",
       "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
+        "icp-unknown",
+        "company-off-list"
       ],
       "contacts": [
         {
           "contactName": "Fernando Castro",
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Diretor Executivo de Logística | Supply Chain | Transporte | Distribuição | Excelência Operacional | Lean Six Sigma | Operações Logística | Omnichannel | E-commerce | Head de Logística.",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 0,
+          "confidence": "Media",
+          "daysSinceLastOutbound": 1,
           "lastOutboundAt": "2026-09-04T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -277,6 +348,530 @@
               "body": "Temos transportadoras como a Treméa, que é nosso cliente e quer homologar com vocês a operação com Motorista PX."
             }
           ],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "danone",
+      "resolvedCompany": "Danone",
+      "reviewReasons": [
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Amir Hamin",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Head de Supply Chain | Diretor de Planejamento | Demand & Supply Planning | Customer Service | Transformação Digital | Melhoria Contínua | Master Black Belt",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-caio-de-vasconcelos",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Caio de Vasconcelos",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Technology Executive | Digital Transformation | Artificial Inteligence | Cloud | Enterprise Technology",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "grupo-buddemeyer",
+      "resolvedCompany": "Grupo Buddemeyer",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Anderson Slominski",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente de projetos logísticos",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "grupo-binswanger",
+      "resolvedCompany": "Grupo Binswanger",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Simone Santos",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Sócia-Diretora do Grupo Binswanger | Especialista em Real Estate",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "goflux",
+      "resolvedCompany": "goFlux",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Rodrigo Gonçalves",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Co-Founder & CEO @goFlux | Transformando logística rodoviária com dados, IA e infraestrutura financeira | Agro, Supply Chain & Freight Intelligence",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "vendemmia-logistica-integrada",
+      "resolvedCompany": "Vendemmia Logística Integrada",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Luciano Ricci",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Cofundador e Sócio-Diretor na Vendemmia Logística Integrada | Logística e Fundador & Product Lead | Vendemmia Analytics – Plataforma Digital 4PL (Importação, Armazém & Transporte) | “Total Visibility. Real-Time Control.”",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "prestex",
+      "resolvedCompany": "Prestex",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Marcelo Zeferino",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Chief Commercial Officer (CCO)| Conselheiro de Administração| Prestex Logística Emergencial",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "foco-aluguel-de-carros",
+      "resolvedCompany": "Foco Aluguel de Carros",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Patrícia Salvi",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Operações | Estratégia | Processos | Eficiência Operacional | Customer Service | Varejo | Mentora Feminina",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "nstech",
+      "resolvedCompany": "nstech",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Rafael Martins",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Sales & Growth | Operations | New Ventures",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        },
+        {
+          "contactName": "Leopoldo Suarez",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "VP Cliente, Estratégia e Mercado & Partner nstech",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        },
+        {
+          "contactName": "Lucas Sancassani",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Pagamentos, Produtos Financeiros e Fintech @nstech",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "niche-partners",
+      "resolvedCompany": "Niche Partners",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Vasco Carvalho Oliveira Neto",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Ceo nstech e Sócio Tarpon",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "faculdade-libano",
+      "resolvedCompany": "Faculdade Líbano",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Pedro Rastelli",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Tributário | Planejamento | Inovação | Reforma Tributária",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "goodtruck-brasil",
+      "resolvedCompany": "GoodTruck Brasil",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Renata Gonçalves",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Urbanista | Sistemas Alimentares Urbanos e Economia Circular | Diretora Executiva GoodTruck Brasil | Palestrante | Coalizões & Políticas para Desperdício Zero",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "amazon",
+      "resolvedCompany": "Amazon",
+      "reviewReasons": [
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Felipe Moraes",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Supply Chain Executive Director | Chief Supply Chain Officer (CSCO) | ASCM Member | CSCP | Amazon",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "norcoast",
+      "resolvedCompany": "Norcoast",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Paula Lacerda",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Senior Sales Manager | Area Product Head | Cabotagem | Operations | Contract Logistics | Senior Leadership | Integrated Solution",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "naporta",
+      "resolvedCompany": "naPorta",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Sanderson Pajeú",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Founder & CEO @ naPorta",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "mulheres-de-growth",
+      "resolvedCompany": "Mulheres de Growth",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Priscila Moherdaui",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor de Marketing e Growth",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "ice-pharma",
+      "resolvedCompany": "ICE Pharma",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Rafael Milano Di Gesu",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Deputy Head of Animal Sourcing and Project Management",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-liana-montemor",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Liana Montemor",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Pharma Cold Chain | Qualificação Térmica, Treinamento e Consultoria | Estratégia de Vendas Técnicas | Auditora IATA CEIV PHARMA",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "emball-iso",
+      "resolvedCompany": "EMBALL'ISO",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Frederic Desmaret",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "General Manager",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "colliers",
+      "resolvedCompany": "Colliers",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Mauricio Nascimento",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "National Director na Colliers | Locação, Venda e BTS de Galpões Logísticos | +R$ 1,45 Bi em Negócios Transacionados",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
           "icpSegment": null
         }
       ],
@@ -345,30 +940,6 @@
           "contactName": "Leonardo Rentroia Viana, MSc",
           "funnelStatus": "CONNECTION_ACCEPTED",
           "roleOrHeadline": "Procurement l Sustainability & Innovation l Diversity & Inclusion in Procurement l Master´s Degree in Supply Chain",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "alpargatas-s-a",
-      "resolvedCompany": "Alpargatas S.A.",
-      "reviewReasons": [
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Adriano Negrão",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Vice Presidente Supply Chain",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
