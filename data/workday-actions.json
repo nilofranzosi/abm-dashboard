@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T20:49:09.868Z",
+  "generatedAt": "2026-09-10T20:00:00.138Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -4005,6 +4005,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmqtia16u000fk7gcezuocnzi",
+      "company": {
+        "id": "cmqtia16u000fk7gcezuocnzi",
+        "name": "Saint-Gobain Brasil",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmq9jlczr0000k7r4ca25gjv7",
       "company": {
         "id": "cmq9jlczr0000k7r4ca25gjv7",
@@ -4668,7 +4682,7 @@
     "recentConnectionsSent": 0,
     "acceptedConnectionsWithoutMessage": 78,
     "overdueNextActions": 69,
-    "staleCompanies30Days": 97,
+    "staleCompanies30Days": 98,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0
