@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T20:00:00.138Z",
+  "generatedAt": "2026-09-14T11:52:16.997Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -4019,11 +4019,11 @@
       "severity": "warning"
     },
     {
-      "id": "cmq9jlczr0000k7r4ca25gjv7",
+      "id": "cmrnsiw1z000ik7dsff38327m",
       "company": {
-        "id": "cmq9jlczr0000k7r4ca25gjv7",
-        "name": "PX Sandbox",
-        "status": "MAPPED"
+        "id": "cmrnsiw1z000ik7dsff38327m",
+        "name": "Grupo São Vicente",
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": null,
@@ -4033,11 +4033,11 @@
       "severity": "warning"
     },
     {
-      "id": "cmsdb7ecr000gk7toq83pnfht",
+      "id": "cmrozupku0015k7lsychph5ih",
       "company": {
-        "id": "cmsdb7ecr000gk7toq83pnfht",
-        "name": "Ultragaz",
-        "status": "MAPPED"
+        "id": "cmrozupku0015k7lsychph5ih",
+        "name": "Tenda Atacado",
+        "status": "REPLIED"
       },
       "contact": null,
       "owner": null,
@@ -4047,11 +4047,11 @@
       "severity": "warning"
     },
     {
-      "id": "cmruzenod000ak7tgc0c9huxf",
+      "id": "cmq9t45jb001ik7o09gybyask",
       "company": {
-        "id": "cmruzenod000ak7tgc0c9huxf",
-        "name": "Raízen",
-        "status": "MAPPED"
+        "id": "cmq9t45jb001ik7o09gybyask",
+        "name": "Shopee Brasil",
+        "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
       "owner": null,
@@ -4061,11 +4061,39 @@
       "severity": "warning"
     },
     {
-      "id": "cmsswvk9f008pk7yw9z1i58i1",
+      "id": "cmroz9tt80005k7ls23wgwnv0",
       "company": {
-        "id": "cmsswvk9f008pk7yw9z1i58i1",
-        "name": "LOGSHARE",
-        "status": "MAPPED"
+        "id": "cmroz9tt80005k7ls23wgwnv0",
+        "name": "Atacadão",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmqqle46c0000k79sd3t0zgym",
+      "company": {
+        "id": "cmqqle46c0000k79sd3t0zgym",
+        "name": "Leroy Merlin Brasil",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmsswvk0p0077k7ywgerwrabl",
+      "company": {
+        "id": "cmsswvk0p0077k7ywgerwrabl",
+        "name": "MERCADO LIVRE",
+        "status": "CONNECTION_ACCEPTED"
       },
       "contact": null,
       "owner": null,
@@ -4682,7 +4710,7 @@
     "recentConnectionsSent": 0,
     "acceptedConnectionsWithoutMessage": 78,
     "overdueNextActions": 69,
-    "staleCompanies30Days": 98,
+    "staleCompanies30Days": 100,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,
     "newSignalsWithoutNextAction": 0

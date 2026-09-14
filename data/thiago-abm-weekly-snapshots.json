@@ -2274,7 +2274,7 @@
   },
   {
     "weekKey": "2026-S37",
-    "generatedAt": "2026-09-10T19:10:37.326Z",
+    "generatedAt": "2026-09-11T18:59:45.828Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 120,
     "activePipeline": 112,
@@ -2285,10 +2285,217 @@
     "replyRate": 0.22321428571428573,
     "meetingRate": 0.08928571428571429,
     "dealRate": 0.08928571428571429,
-    "avgDaysToFirstReply": 6.1875,
-    "avgDaysSinceLastOutbound": 5.785714285714286,
+    "avgDaysToFirstReply": 5.8125,
+    "avgDaysSinceLastOutbound": 8.5,
     "totalOutboundTouchpoints": 17,
-    "totalInboundTouchpoints": 3,
+    "totalInboundTouchpoints": 4,
+    "funnel": [
+      {
+        "stage": "CONNECTION_SENT",
+        "label": "Conexão Enviada",
+        "count": 10
+      },
+      {
+        "stage": "CONNECTION_ACCEPTED",
+        "label": "Conexão Aceita",
+        "count": 7
+      },
+      {
+        "stage": "MESSAGE_SENT",
+        "label": "Mensagem Enviada",
+        "count": 43
+      },
+      {
+        "stage": "FOLLOW_UP_SENT",
+        "label": "Follow-Up Enviado",
+        "count": 27
+      },
+      {
+        "stage": "REPLIED",
+        "label": "Respondeu",
+        "count": 15
+      },
+      {
+        "stage": "DEAL",
+        "label": "Negócio",
+        "count": 10
+      }
+    ],
+    "topCompanies": [
+      {
+        "company": "Vibra Energia",
+        "stage": "DEAL",
+        "contacts": 6,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-04-13T03:00:00.000Z"
+      },
+      {
+        "company": "Natura",
+        "stage": "DEAL",
+        "contacts": 3,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-01T22:52:00.000Z"
+      },
+      {
+        "company": "CIMED",
+        "stage": "DEAL",
+        "contacts": 3,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-07T17:29:00.000Z"
+      },
+      {
+        "company": "Magazine Luiza",
+        "stage": "DEAL",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-05-31T21:09:00.000Z"
+      },
+      {
+        "company": "L'Oréal",
+        "stage": "DEAL",
+        "contacts": 12,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-06-21T17:36:00.000Z"
+      },
+      {
+        "company": "Minerva Foods",
+        "stage": "DEAL",
+        "contacts": 2,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-06-25T03:00:00.000Z"
+      },
+      {
+        "company": "Casas Bahia",
+        "stage": "DEAL",
+        "contacts": 6,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-08-13T19:21:33.000Z"
+      },
+      {
+        "company": "Grupo Boticário",
+        "stage": "DEAL",
+        "contacts": 6,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-08-19T21:05:00.000Z"
+      },
+      {
+        "company": "Unilever",
+        "stage": "DEAL",
+        "contacts": 17,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": null
+      },
+      {
+        "company": "Profarma",
+        "stage": "DEAL",
+        "contacts": 4,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": null
+      },
+      {
+        "company": "Continental Pneus",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-22T03:00:00.000Z"
+      },
+      {
+        "company": "Tramontina",
+        "stage": "REPLIED",
+        "contacts": 3,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-06-27T14:15:00.000Z"
+      },
+      {
+        "company": "Lojas Renner",
+        "stage": "REPLIED",
+        "contacts": 6,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-07T03:00:00.000Z"
+      },
+      {
+        "company": "Cargill",
+        "stage": "REPLIED",
+        "contacts": 4,
+        "outboundTouchpoints": 2,
+        "inboundTouchpoints": 1,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-13T03:00:00.000Z"
+      },
+      {
+        "company": "Nestlé",
+        "stage": "REPLIED",
+        "contacts": 1,
+        "outboundTouchpoints": 1,
+        "inboundTouchpoints": 0,
+        "bestStatus": "REPLIED",
+        "score": 60,
+        "nextActionDueAt": "2026-07-13T20:30:00.000Z"
+      }
+    ],
+    "activeContacts": 112,
+    "excludedContacts": 8,
+    "unresolvedCompanies": 0,
+    "uniqueCompanies": 120,
+    "qualifiedAdvanceRate": 0.08928571428571429
+  },
+  {
+    "weekKey": "2026-S38",
+    "generatedAt": "2026-09-14T12:00:09.995Z",
+    "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
+    "totalApproached": 120,
+    "activePipeline": 112,
+    "pausedCount": 8,
+    "repliedOrBetter": 25,
+    "meetingOrBetter": 10,
+    "dealCount": 10,
+    "replyRate": 0.22321428571428573,
+    "meetingRate": 0.08928571428571429,
+    "dealRate": 0.08928571428571429,
+    "avgDaysToFirstReply": 5.8125,
+    "avgDaysSinceLastOutbound": 10.714285714285714,
+    "totalOutboundTouchpoints": 17,
+    "totalInboundTouchpoints": 4,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",

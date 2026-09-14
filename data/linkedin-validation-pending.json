@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-10T19:10:43.454Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-10.json",
+  "generatedAt": "2026-09-14T12:00:14.931Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-14.json",
   "summary": {
-    "total": 35,
-    "replied": 3,
-    "companyUnknown": 8,
-    "overdue": 9,
-    "offList": 19
+    "total": 22,
+    "replied": 4,
+    "companyUnknown": 1,
+    "overdue": 11,
+    "offList": 11
   },
   "companies": [
     {
-      "id": "unknown-thiago-mercadante-neves",
+      "id": "unknown-nilton-pimenta-sampaio",
       "resolvedCompany": "A apurar",
       "reviewReasons": [
         "replied",
@@ -19,11 +19,59 @@
       ],
       "contacts": [
         {
-          "contactName": "Thiago Mercadante Neves",
+          "contactName": "Nilton Pimenta Sampaio",
           "funnelStatus": "REPLIED_NEUTRAL",
           "roleOrHeadline": null,
           "confidence": "Baixa",
-          "daysSinceLastOutbound": 7,
+          "daysSinceLastOutbound": 10,
+          "lastOutboundAt": "2026-09-04T03:00:00.000Z",
+          "lastInboundAt": "2026-09-14T18:38:00.000Z",
+          "outboundTouchpoints": 1,
+          "inboundMessages": [
+            {
+              "occurredAt": "2026-09-14T18:38:00.000Z",
+              "body": "Fechado"
+            }
+          ],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Nilton, a PX atua disponibilizando mão de obra para a operação logística, sem necessidade de contratação fixa via RH."
+            },
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Vi que você atuou na Ambev, temos forte atuação com eles junto as transportadoras parceiras."
+            },
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Acredito que temos oportunidades concretas para a operação da Suzano."
+            },
+            {
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "nexta-distribuidora",
+      "resolvedCompany": "NEXTA Distribuidora",
+      "reviewReasons": [
+        "replied",
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Thiago Mercadante Neves",
+          "funnelStatus": "REPLIED_NEUTRAL",
+          "roleOrHeadline": "Diretor Executivo | Estratégia, P&L e Transformação | Operações, Supply Chain, Logística, Engenharia e SSMA",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T21:18:00.000Z",
           "lastInboundAt": "2026-09-03T03:00:00.000Z",
           "outboundTouchpoints": 2,
@@ -66,51 +114,47 @@
       "icpSegment": null
     },
     {
-      "id": "unknown-nilton-pimenta-sampaio",
-      "resolvedCompany": "A apurar",
+      "id": "nestle",
+      "resolvedCompany": "Nestlé",
       "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
+        "overdue"
       ],
       "contacts": [
         {
-          "contactName": "Nilton Pimenta Sampaio",
+          "contactName": "Mariana Vilchez",
           "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": "Logística | Diretor de Operações | Last Mile | Florestal",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 1,
-          "lastOutboundAt": "2026-09-10T03:00:00.000Z",
+          "roleOrHeadline": "Logistics Executive Manager | E-Commerce @ Nestlé",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": 10,
+          "lastOutboundAt": "2026-09-04T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-09-10T03:00:00.000Z",
-              "body": "Nilton, a PX atua disponibilizando mão de obra para a operação logística, sem necessidade de contratação fixa via RH."
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Mariana, a PX tem forte atuação na logística de E-commerce e alimentos, em empresas como Ambev e Mercado Livre."
             },
             {
-              "occurredAt": "2026-09-10T03:00:00.000Z",
-              "body": "Vi que você atuou na Ambev, temos forte atuação com eles junto as transportadoras parceiras."
+              "occurredAt": "2026-09-04T03:00:00.000Z",
+              "body": "Acredito que temos oportunidades concretas para a operação da Nestlé."
             },
             {
-              "occurredAt": "2026-09-10T03:00:00.000Z",
-              "body": "Acredito que temos oportunidades concretas para a operação da Suzano."
-            },
-            {
-              "occurredAt": "2026-09-10T03:00:00.000Z",
+              "occurredAt": "2026-09-04T03:00:00.000Z",
               "body": "Vamos marcar uma conversa?"
             }
           ],
-          "icpSegment": null
+          "icpSegment": "EMBARCADOR"
         }
       ],
       "reviewedAt": null,
-      "icpSegment": null
+      "icpSegment": "EMBARCADOR"
     },
     {
       "id": "alpargatas-s-a",
       "resolvedCompany": "Alpargatas S.A.",
       "reviewReasons": [
+        "overdue",
         "icp-unknown"
       ],
       "contacts": [
@@ -119,14 +163,14 @@
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Vice Presidente Supply Chain",
           "confidence": "Media",
-          "daysSinceLastOutbound": 1,
-          "lastOutboundAt": "2026-09-10T03:00:00.000Z",
+          "daysSinceLastOutbound": 10,
+          "lastOutboundAt": "2026-09-04T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-09-10T03:00:00.000Z",
+              "occurredAt": "2026-09-04T03:00:00.000Z",
               "body": "Gostaria de conversar com o time de logística da Alpargatas para entender mais as possibilidades junto a PX. Você estará na Logística do Futuro na próxima semana?"
             }
           ],
@@ -149,7 +193,7 @@
           "funnelStatus": "REPLIED_POSITIVE",
           "roleOrHeadline": "Supply Chain Sourcing Manager @ BAT | Procurement • Supply Chain • Operations | End-to-End: Sourcing, Logística & Category Management | Digital Transformation | LATAM",
           "confidence": "Alta",
-          "daysSinceLastOutbound": 8,
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": "2026-09-03T03:00:00.000Z",
           "outboundTouchpoints": 1,
@@ -203,21 +247,21 @@
           "funnelStatus": "REPLIED_POSITIVE",
           "roleOrHeadline": "Freight Desk Merchant",
           "confidence": "Media",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-09-10T11:21:00.000Z",
-          "lastInboundAt": "2026-09-10T03:00:00.000Z",
+          "daysSinceLastOutbound": 10,
+          "lastOutboundAt": "2026-09-04T11:21:00.000Z",
+          "lastInboundAt": "2026-09-04T03:00:00.000Z",
           "outboundTouchpoints": 2,
           "inboundMessages": [
             {
-              "occurredAt": "2026-09-10T11:05:00.000Z",
+              "occurredAt": "2026-09-04T11:05:00.000Z",
               "body": "Sim, comigo mesmo"
             },
             {
-              "occurredAt": "2026-09-10T03:00:00.000Z",
+              "occurredAt": "2026-09-04T03:00:00.000Z",
               "body": "Depois me manda uma mensagem no WhatsApp que combinamos uma reunião"
             },
             {
-              "occurredAt": "2026-09-10T03:00:00.000Z",
+              "occurredAt": "2026-09-04T03:00:00.000Z",
               "body": "(11)999067209"
             }
           ],
@@ -235,7 +279,7 @@
               "body": "Para isso, o melhor contato seria contigo?"
             },
             {
-              "occurredAt": "2026-09-10T11:21:00.000Z",
+              "occurredAt": "2026-09-04T11:21:00.000Z",
               "body": "Bom dia! Beleza, vou te mandar uma mensagem la. Obrigado!"
             }
           ],
@@ -246,10 +290,9 @@
       "icpSegment": "EMBARCADOR"
     },
     {
-      "id": "unknown-daniel-battistella",
-      "resolvedCompany": "A apurar",
+      "id": "electrolux-group",
+      "resolvedCompany": "Electrolux Group",
       "reviewReasons": [
-        "company-unknown",
         "overdue",
         "icp-unknown"
       ],
@@ -258,8 +301,8 @@
           "contactName": "Daniel Battistella",
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Sr. Supply Chain Purchasing & Transports Manager LATAM",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 8,
+          "confidence": "Media",
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -288,7 +331,7 @@
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Gerente Planejamento Supply Chain",
           "confidence": "Media",
-          "daysSinceLastOutbound": 8,
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -321,7 +364,7 @@
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Gerente Logística | Transportes | Engenheiro Mecânico | Black Belt na White Martins (Linde plc)",
           "confidence": "Alta",
-          "daysSinceLastOutbound": 8,
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -343,20 +386,20 @@
       "icpSegment": "EMBARCADOR"
     },
     {
-      "id": "unknown-fernando-castro",
-      "resolvedCompany": "A apurar",
+      "id": "profuturo-fia-business-school",
+      "resolvedCompany": "PROFUTURO - FIA Business School",
       "reviewReasons": [
-        "company-unknown",
         "overdue",
-        "icp-unknown"
+        "icp-unknown",
+        "company-off-list"
       ],
       "contacts": [
         {
           "contactName": "Fernando Castro",
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Diretor Executivo de Logística | Supply Chain | Transporte | Distribuição | Excelência Operacional | Lean Six Sigma | Operações Logística | Omnichannel | E-commerce | Head de Logística.",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 8,
+          "confidence": "Media",
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -397,7 +440,7 @@
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Customer Logistics Director",
           "confidence": "Media",
-          "daysSinceLastOutbound": 8,
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -434,7 +477,7 @@
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Manufacturing & Supply Chain Director",
           "confidence": "Media",
-          "daysSinceLastOutbound": 8,
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -471,7 +514,7 @@
           "funnelStatus": "FOLLOW_UP_SENT",
           "roleOrHeadline": "Supply Chain Executive | Driving Growth, Efficiency and High-Performance Teams",
           "confidence": "Alta",
-          "daysSinceLastOutbound": 8,
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 2,
@@ -512,7 +555,7 @@
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Executivo de Logística & Supply Chain | Operações, Fulfillment e Distribuição | Projetos e Tecnologia",
           "confidence": "Media",
-          "daysSinceLastOutbound": 8,
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -538,20 +581,20 @@
       "icpSegment": "EMBARCADOR"
     },
     {
-      "id": "unknown-ricardo-bergonsi",
-      "resolvedCompany": "A apurar",
+      "id": "lactalis-brasil",
+      "resolvedCompany": "Lactalis Brasil",
       "reviewReasons": [
-        "company-unknown",
         "overdue",
-        "icp-unknown"
+        "icp-unknown",
+        "company-off-list"
       ],
       "contacts": [
         {
           "contactName": "Ricardo Bergonsi",
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Diretor de Logística",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 7,
+          "confidence": "Media",
+          "daysSinceLastOutbound": 11,
           "lastOutboundAt": "2026-09-03T17:14:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
@@ -577,17 +620,116 @@
       "icpSegment": null
     },
     {
-      "id": "associacao-brasileira-dos-distribuidores-caoa-chery",
-      "resolvedCompany": "Associação Brasileira dos Distribuidores CAOA Chery",
+      "id": "bobbytes",
+      "resolvedCompany": "bobbytes",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Marco Antonio dos Santos",
+          "contactName": "Juliano Binder",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Setor Automotivo I Desenvolvimento de Rede I Gestão Estratégica de Projetos I Marketing I Inteligência de Mercado I Mentoria I Vendas I Relacionamento I Inovação I Qualidade I ESG I Mobilidade I",
+          "roleOrHeadline": "Lead Data Scientist | CEO | Co-Founder @bobbytes",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "ic-transportes",
+      "resolvedCompany": "IC Transportes",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Jean Roberto",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente operacional IC Transportes",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "TRANSPORTADORA"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "TRANSPORTADORA"
+    },
+    {
+      "id": "qi-tech",
+      "resolvedCompany": "QI Tech",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Stephanie Pedrazza Grunwald",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Commercial Executive at QI Tech | Driving Payments, Credit & Infrastructure Innovation for Tech & Corporate Clients | FIDC | DCM | Lending as a Service | BNPL | SaaS B2B | Open Finance | Embedded Finance | BaaS | QI DTVM",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "csi-cargo",
+      "resolvedCompany": "CSI Cargo",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "ANDRES CEBALLOS",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor Presidente na CSI Cargo",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "viver-de-ia",
+      "resolvedCompany": "Viver de IA",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Murilo Borges",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "RevOps (Revenue Operations) | Head Comercial | Sales Specialist | Especialista em Vendas B2B e B2C | Closer Sênior | Growth Hacking | Marketing Specialist",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -602,67 +744,17 @@
       "icpSegment": null
     },
     {
-      "id": "storage-compat-s-a",
-      "resolvedCompany": "Storage Compat S.A.",
+      "id": "dalcin-custodio-advogados-e-diretora-comercial-da-rv-imola-especialista-em-negociacoes-contratos-e-licitacoes",
+      "resolvedCompany": "Dalcin & Custodio Advogados e Diretora Comercial da RV Ímola - Especialista em Negociações Contratos e Licitações",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Francisco Boni",
+          "contactName": "TALIRA DALCIN",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Commercial Director | Storage Compat America",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "kadima-rh",
-      "resolvedCompany": "KADIMA RH",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Janaina Schwabe",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gestão de Pessoas | Atuação estratégica com lideranças| Consultora de RH | Headhunter",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "4log",
-      "resolvedCompany": "4LOG",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Claudio Zerbinatto",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Diretor da 4LOG | CEO Zerbinatto | Comércio Exterior, Logística e Desenvolvimento de Negócios",
+          "roleOrHeadline": "Sócia da Dalcin & Custodio Advogados e Diretora Comercial da RV Ímola - Especialista em Negociações Contratos e Licitações",
           "confidence": "Media",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -677,444 +769,18 @@
       "icpSegment": null
     },
     {
-      "id": "g8-transportes",
-      "resolvedCompany": "G8 Transportes",
+      "id": "meuticket",
+      "resolvedCompany": "MeuTicket",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Robson Souza",
+          "contactName": "Edjel Oliveira",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Diretor G8 Transportes",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "soluciona-logistica",
-      "resolvedCompany": "Soluciona Logística",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "THIAGO ORNELLAS",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Coordenador de Operações",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "mob2con",
-      "resolvedCompany": "Mob2Con",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Mariliana Fagotti",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Head of Business Intelligence | CRM | Data Analytics | Customer Insights | Growth | Marketing Analytics | Loyalty | Commercial Planning",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        },
-        {
-          "contactName": "Lucas Bittencourt",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Co-founder & Diretor de Produtos, Dados, Tecnologia e Operações na Mob2Con",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "unknown-eduardo-guerra",
-      "resolvedCompany": "A apurar",
-      "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Eduardo Guerra",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": null,
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "adidas",
-      "resolvedCompany": "adidas",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Geisa Lira",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Supply Chain Director",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "pneusafe",
-      "resolvedCompany": "PneuSafe",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Jefferson Domingos",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Sócio da PneuSafe | Empreendedor Tecnologia e prevenção para pneus Mobilidade e eficiência operacional",
+          "roleOrHeadline": "Fundador da MeuTicket | Eventos • Food • Estacionamento | Tecnologia para operações em todo o Brasil",
           "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "universidade-federal-de-santa-catarina",
-      "resolvedCompany": "Universidade Federal de Santa Catarina",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Davi S. Flor",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Graduando em Ciências Econômicas | UFSC",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        },
-        {
-          "contactName": "Luis Eduardo Werner",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Business Strategy | Operations | Corporate Turnaround & Crisis Management | Legal Strategy",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "ufsc",
-      "resolvedCompany": "UFSC",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Vinícius Da Silva Pereira",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Graduando de Engenharia de Transportes e Logística na UFSC",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "empresa-moinhos-restaurante-e-pizzaria",
-      "resolvedCompany": "empresa Moinhos Restaurante e Pizzaria",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Renan Bernard",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente da empresa Moinhos Restaurante e Pizzaria",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "unknown-joao-tostes",
-      "resolvedCompany": "A apurar",
-      "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "João Tostes",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente de Logística | Coordenador de Transportes | Coordenador de Planejamento Logístico | Coordenador de Inteligência Logística | Coordenador de Torre de Controle | Supply Chain | First Mile | Last Mile | TMS",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "papel",
-      "resolvedCompany": "papel",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "João Paulo Morales",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Conselheiro de empresas e Mentoria. Ajudo empresários a escalar com lucro real, não só com faturamento no papel | 150+ empresas transformadas | 35%+ de crescimento médio",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "caramuru-alimentos-s-a",
-      "resolvedCompany": "Caramuru Alimentos S.A.",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Luiz Francisco de Maria",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente de Planejamento Integrado | Caramuru Alimentos S.A.",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "movimentai-tecnologia",
-      "resolvedCompany": "MovimentAI Tecnologia",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Isabela Lins",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Head de Marketing na MovimentAI Tecnologia",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "totvs",
-      "resolvedCompany": "TOTVS",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Felipe Pervelli",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Transformando Negócios com Tecnologia",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "ticket-log",
-      "resolvedCompany": "Ticket Log",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Kauê Miglioranza Santos",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente Nacional de Vendas| Liderança, Desenvolvimento de negócios, Estratégia de marketing",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "datafrete",
-      "resolvedCompany": "DATAFRETE",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Lucas Ricardo Martins",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Head de Receita e Expansão na DATAFRETE | Crescimento previsível em SaaS B2B",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "unknown-jackson-schneider",
-      "resolvedCompany": "A apurar",
-      "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Jackson Schneider",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Board Member",
-          "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,
