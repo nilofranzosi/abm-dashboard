@@ -1,5 +1,101 @@
 [
   {
+    "week": "S38",
+    "date": "2026-09-14",
+    "items": [
+      {
+        "title": "Processo seletivo Mercado Livre abre 120 vagas em Guarulhos",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.abcdoabc.com.br/processo-seletivo-mercado-livre-120-vagas/&ct=ga&cd=CAIyHGYyMDU1ZGUyN2NmODIwMjM6Y29tOnB0OkJSOlI&usg=AOvVaw32LklQtjuNq12BgXxmeJWi",
+        "source": "Google Alert - \"Mercado Livre\" logística",
+        "category": "RSS"
+      },
+      {
+        "title": "Mercado Livre recebe currículos para Auxiliar de Logística em Simões Filho e Lauro com ...",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://n1n.com.br/mercado-de-trabalho/111000/mercado-livre-recebe-curriculos-para-auxiliar-de-logistica-em-simoes-filho-e-lauro-com-salario-de-ate-r2-35700-e-pr-de-ate-r-346/&ct=ga&cd=CAIyHGYyMDU1ZGUyN2NmODIwMjM6Y29tOnB0OkJSOlI&usg=AOvVaw3A0oDQHUl3PwfE3U1EcG5j",
+        "source": "Google Alert - \"Mercado Livre\" logística",
+        "category": "RSS"
+      },
+      {
+        "title": "Casas Bahia faz novo leilão com fogões, lavadoras e geladeiras por R$ 200 após fechar lojas",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.portaltemponovo.com.br/casas-bahia-faz-novo-leilao-com-fogoes-lavadoras-e-geladeiras-por-200-apos-fechar-lojas/&ct=ga&cd=CAIyHDVhNzFhZjQzMmU0ZDljNDM6Y29tOnB0OkJSOlI&usg=AOvVaw3iftIVVWxdjZJ9FPmMuhM-",
+        "source": "Google Alert - \"Casas Bahia\" logística",
+        "category": "RSS"
+      },
+      {
+        "title": "Casas Bahia faz novo leilão com fogões, lavadoras e geladeiras por R$ 200 após fechar lojas",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.portaltemponovo.com.br/casas-bahia-faz-novo-leilao-com-fogoes-lavadoras-e-geladeiras-por-200-apos-fechar-lojas/&ct=ga&cd=CAIyHDIwMTZmYzk1ZjEwMDk0NDY6Y29tOnB0OkJSOlI&usg=AOvVaw3iftIVVWxdjZJ9FPmMuhM-",
+        "source": "Google Alert - \"Grupo Casas Bahia\" distribuição",
+        "category": "RSS"
+      },
+      {
+        "title": "Nestlé reforça aposta no Brasil com investimento de R$ 2 bilhões em nutrição e saúde até 2028",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.portoferreirahoje.com.br/noticia/2026/09/13/nestle-reforca-aposta-no-brasil-com-investimento-de-r-2-bilhoes-em-nutricao-e-saude-ate-2028/&ct=ga&cd=CAIyHGFhYjMwNDExMDE5ZTM4ZTc6Y29tOnB0OkJSOlI&usg=AOvVaw2NejzH8ebfQ5Ph6MLFPwxF",
+        "source": "Google Alert - \"Nestlé\" logística Brasil",
+        "category": "RSS"
+      },
+      {
+        "title": "US grain merchants ADM, Cargill agree to swap elevators",
+        "link": "https://millermagazine.com/blog/us-grain-merchants-adm-cargill-agree-to-swap-elevators-3302",
+        "source": "Agronegócio",
+        "category": "AGRO"
+      },
+      {
+        "title": "Falta de Caminhoneiros 2026: 88% das Empresas Não Contratam",
+        "link": "https://webfrete.com/blog/falta-de-caminhoneiros-brasil-2026",
+        "source": "Déficit de Motoristas",
+        "category": "MOTORISTAS"
+      },
+      {
+        "title": "Cinco grandes varejistas reduziram em mais de 1,1 mil o ... - Instagram",
+        "link": "https://www.instagram.com/p/Dcq7TzOkoEV/",
+        "source": "Varejo ABM",
+        "category": "ABM_VAREJO"
+      },
+      {
+        "title": "Mercado Livre aperta o passo Com 42 CDs Full previstos para 2026, a ...",
+        "link": "https://www.instagram.com/p/DctTtB_leH4/",
+        "source": "Mercado Livre / MELI",
+        "category": "ABM_MELI"
+      },
+      {
+        "title": "A Shopee acaba de ampliar sua operação logística no ... - Instagram",
+        "link": "https://www.instagram.com/p/DYNVZrkteYj/",
+        "source": "Shopee",
+        "category": "ABM_SHOPEE"
+      },
+      {
+        "title": "Você tem curiosidade de como funciona uma operação centro de ...",
+        "link": "https://www.instagram.com/reel/DJ1YODdR2Be/",
+        "source": "Mercado Livre / MELI",
+        "category": "ABM_MELI"
+      },
+      {
+        "title": "Quando sobe o preço do diesel, não é só o caminhoneiro que ... - Instagram",
+        "link": "https://www.instagram.com/reel/DVqv8gxoGNY/?hl=en",
+        "source": "Diesel & Custos",
+        "category": "CUSTO_DIESEL"
+      },
+      {
+        "title": "Diesel S10 cai a R$ 6,94 em julho e alivia frete, diz ANP",
+        "link": "https://www.socaminhoesvirtual.com.br/noticias/mercado/preco-diesel-julho-2026-anp-frete",
+        "source": "Diesel & Custos",
+        "category": "CUSTO_DIESEL"
+      },
+      {
+        "title": "Outsourcing Improves Unilever's Distribution, Gives Logistics ...",
+        "link": "https://www.supplychainbrain.com/articles/5066-outsourcing-improves-unilevers-distribution-gives-logistics-provider-a-foothold-in-brazil",
+        "source": "Outros ABM",
+        "category": "ABM_OUTROS"
+      },
+      {
+        "title": "Inside Unilever's AI-powered supply chain",
+        "link": "https://www.unilever.com/news/news-search/2026/building-resilience-driving-growth-inside-unilevers-aipowered-supply-chain/",
+        "source": "Outros ABM",
+        "category": "ABM_OUTROS"
+      }
+    ]
+  },
+  {
     "week": "S36",
     "date": "2026-08-31",
     "items": [

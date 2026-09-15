@@ -44,6 +44,13 @@
     .reason-tag.replied { background: #FAEDD2; color: var(--amber); }
     .reason-tag.company-unknown { background: #F4D6D7; color: var(--red); }
     .reason-tag.overdue { background: #E8DAF9; color: #7D3DC5; }
+    .reason-tag.icp-unknown { background: #FAEDD2; color: var(--amber); }
+    .reason-tag.company-off-list { background: #E8DAF9; color: #7D3DC5; }
+
+    /* Prompt: empresa off-list ou sem segmento (ICP) resolvido */
+    .painel-prompt { margin: 0 16px 10px; padding: 10px 12px; background: #FAEDD2; border: 1px solid #E7A31E; border-radius: 6px; font-size: 12px; color: var(--amber); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+    .painel-prompt strong { color: var(--ink); }
+    .painel-prompt-actions { display: flex; gap: 6px; flex-wrap: wrap; }
 
     /* Contacts list inside the company card */
     .contacts-list { padding: 0 16px 10px; display: grid; gap: 8px; margin-top: 10px; }
@@ -161,7 +168,9 @@
   const REASON_LABELS = {
     replied: "Respondeu",
     "company-unknown": "Empresa desconhecida",
-    overdue: "Sem retorno >7d"
+    overdue: "Sem retorno >7d",
+    "icp-unknown": "Segmento (ICP) pendente",
+    "company-off-list": "Fora do Painel Embarcadores"
   };
 
   // ── data ──────────────────────────────────────────────────────────────────
@@ -231,6 +240,60 @@
       updateKpisFromSummary(result.summary);
     } catch (e) {
       showToast("Erro: " + e.message);
+      // O bloqueio mais comum é segmento (ICP) pendente — o backend já tenta
+      // recasar contra o Painel Embarcadores antes de bloquear, e persiste o
+      // resultado mesmo quando bloqueia. Recarrega o card para mostrar o
+      // motivo atualizado (ex: prompt de "adicionar ao Painel") em vez de
+      // deixar só o toast de erro sem próximo passo.
+      await refreshCard(companyId);
+    }
+  }
+
+  async function refreshCard(companyId) {
+    try {
+      const data = await loadData();
+      updateKpisFromSummary(data.summary);
+      const group = (data.companies || []).find(g => g.id === companyId);
+      const card = document.getElementById(`card-${companyId}`);
+      if (group && card) {
+        card.outerHTML = renderCompanyCard(group);
+      } else if (!group) {
+        removeCard(companyId);
+      }
+    } catch { /* best-effort */ }
+  }
+
+  function updateCardAfterResolution(companyId, result) {
+    if (result.removedFromQueue) {
+      removeCard(companyId);
+      return;
+    }
+    const prompt = document.getElementById(`painel-prompt-${companyId}`);
+    if (prompt) prompt.remove();
+    const tagsWrap = document.querySelector(`#card-${companyId} .reason-tags`);
+    if (tagsWrap && result.reviewReasons) {
+      tagsWrap.innerHTML = result.reviewReasons.map(r => `<span class="reason-tag ${r}">${REASON_LABELS[r] || r}</span>`).join("");
+    }
+    updateKpisFromSummary(result.summary);
+  }
+
+  async function addToPainel(companyId) {
+    try {
+      const result = await submitAction({ action: "add-to-painel", companyId });
+      updateCardAfterResolution(companyId, result);
+      showToast(`✓ Adicionada ao Painel Embarcadores: ${result.resolvedCompany}`);
+    } catch (e) {
+      showToast("Erro: " + e.message);
+    }
+  }
+
+  async function setIcpSegment(companyId, icpSegment) {
+    try {
+      const result = await submitAction({ action: "correct-icp-segment", companyId, icpSegment });
+      updateCardAfterResolution(companyId, result);
+      showToast(`Segmento definido → ${icpSegment === "EMBARCADOR" ? "Embarcador" : "Transportadora"}`);
+    } catch (e) {
+      showToast("Erro: " + e.message);
     }
   }
 
@@ -252,17 +315,15 @@
     if (!company) return;
     try {
       const result = await submitAction({ action: "correct-company", companyId, company });
-      closeInputs(companyId);
       if (result.removedFromQueue) {
         removeCard(companyId);
         showToast(`✓ Empresa corrigida e aprovada: ${company}`);
       } else {
-        const header = document.querySelector(`#card-${companyId} .company-name`);
-        if (header) header.textContent = company;
-        const badge = document.querySelector(`#card-${companyId} .company-badge`);
-        if (badge) { badge.textContent = company; badge.classList.remove("unknown"); }
-        const unknownTag = document.querySelector(`#card-${companyId} .reason-tag.company-unknown`);
-        if (unknownTag) unknownTag.remove();
+        // Reconstrói o card em vez de só trocar nome/badge: a correção pode
+        // ter disparado a autocura de ICP no backend (recasando contra o
+        // Painel Embarcadores) e mudado quais motivos/prompts se aplicam
+        // (ex: passou a precisar do prompt "adicionar ao Painel").
+        await refreshCard(companyId);
         showToast(`Empresa atualizada → ${company}`);
       }
       updateKpisFromSummary(result.summary);
@@ -372,6 +433,32 @@
     const touchLabel = group.contacts.length === 1 ? "1 contato" : `${group.contacts.length} contatos`;
     const companyName = group.resolvedCompany.replace(/'/g, "\\'");
 
+    // Empresa resolvida mas sem match confiável no Painel Embarcadores nem em
+    // Transportadoras: oferece cadastrar direto na fila, em vez de travar em
+    // "Segmento (ICP) pendente" sem nenhuma ação possível na tela.
+    const showPainelPrompt = !isUnknown && group.reviewReasons.includes("company-off-list");
+    // Segmento pendente mas SEM ser um caso de off-list confirmado (ainda não
+    // recasado contra as listas mestre) — oferece resolver manualmente.
+    const showIcpPrompt = !isUnknown && !showPainelPrompt && group.reviewReasons.includes("icp-unknown");
+
+    const promptHtml = showPainelPrompt
+      ? `<div class="painel-prompt" id="painel-prompt-${group.id}">
+          <span>Empresa não encontrada no Painel Embarcadores. Adicionar <strong>${group.resolvedCompany}</strong> à lista?</span>
+          <div class="painel-prompt-actions">
+            <button class="btn btn-confirm" style="font-size:12px;padding:5px 10px" onclick="addToPainel('${group.id}')">Adicionar ao Painel Embarcadores</button>
+            <button class="btn btn-correct" style="font-size:12px;padding:5px 10px" onclick="setIcpSegment('${group.id}', 'TRANSPORTADORA')">É Transportadora</button>
+          </div>
+        </div>`
+      : showIcpPrompt
+      ? `<div class="painel-prompt" id="painel-prompt-${group.id}">
+          <span>Segmento (ICP) não identificado para <strong>${group.resolvedCompany}</strong>.</span>
+          <div class="painel-prompt-actions">
+            <button class="btn btn-confirm" style="font-size:12px;padding:5px 10px" onclick="setIcpSegment('${group.id}', 'EMBARCADOR')">É Embarcador</button>
+            <button class="btn btn-correct" style="font-size:12px;padding:5px 10px" onclick="setIcpSegment('${group.id}', 'TRANSPORTADORA')">É Transportadora</button>
+          </div>
+        </div>`
+      : "";
+
     return `
     <div class="card" id="card-${group.id}">
       <div class="card-company-header">
@@ -386,6 +473,8 @@
       </div>
 
       <div class="contacts-list">${contactsHtml}</div>
+
+      ${promptHtml}
 
       <div class="actions">
         <button class="btn btn-approve" onclick="approve('${group.id}')">Aprovar Empresa</button>

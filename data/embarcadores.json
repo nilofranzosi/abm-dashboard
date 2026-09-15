@@ -2106,27 +2106,6 @@
     "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
   },
   {
-    "id": 70,
-    "name": "Três Corações",
-    "segment": "Alimentos & Bebidas",
-    "uf": "CE",
-    "tier": 3,
-    "scoreS13": null,
-    "decisors": [],
-    "notes": "Maior empresa de café do Brasil. Operações em 8 estados. 2ª marca de café mais vendida no país. Distribuição nacional.",
-    "tierScore": 74,
-    "tierBreakdown": {
-      "potencialLogistico": 30,
-      "aderenciaModeloPX": 24,
-      "porteRelevancia": 12,
-      "gatilhosTiming": 5,
-      "mapeabilidadeAcesso": 3
-    },
-    "tierRationale": "Tier 3: conta de observação/apuração antes de entrar em cadência por alto potencial logístico/capilaridade; porte relevante; decisores pendentes.",
-    "nextResearchStep": "Mapear 1-2 decisores e aguardar sinal operacional antes de cadência ativa.",
-    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
-  },
-  {
     "id": 71,
     "name": "Ablac / Piracanjuba",
     "segment": "Alimentos & Bebidas",
@@ -2691,7 +2670,7 @@
   {
     "id": 94,
     "name": "Saint-Gobain Brasil",
-    "segment": "Construção Civil",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -3046,7 +3025,7 @@
   {
     "id": 107,
     "name": "Raia Drogasil",
-    "segment": "Farmacêutico & Saúde",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -3178,7 +3157,7 @@
   {
     "id": 113,
     "name": "Lojas Renner",
-    "segment": "Têxtil & Vestuário",
+    "segment": "E-commerce & Varejo",
     "uf": "RS",
     "tier": 3,
     "scoreS13": null,
@@ -3200,7 +3179,7 @@
   {
     "id": 114,
     "name": "Pague Menos",
-    "segment": "Farmacêutico & Saúde",
+    "segment": "E-commerce & Varejo",
     "uf": "CE",
     "tier": 3,
     "scoreS13": null,
@@ -3420,7 +3399,7 @@
   {
     "id": 124,
     "name": "Riachuelo",
-    "segment": "Têxtil & Vestuário",
+    "segment": "E-commerce & Varejo",
     "uf": "RN",
     "tier": 3,
     "scoreS13": null,
@@ -3464,7 +3443,7 @@
   {
     "id": 126,
     "name": "C&A Brasil",
-    "segment": "Têxtil & Vestuário",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -3486,7 +3465,7 @@
   {
     "id": 127,
     "name": "Marisa",
-    "segment": "Têxtil & Vestuário",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 3,
     "scoreS13": null,
@@ -3508,7 +3487,7 @@
   {
     "id": 128,
     "name": "Inditex Brasil (Zara)",
-    "segment": "Têxtil & Vestuário",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 3,
     "scoreS13": null,
@@ -3618,7 +3597,7 @@
   {
     "id": 133,
     "name": "Leroy Merlin Brasil",
-    "segment": "Construção Civil",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 2,
     "scoreS13": null,
@@ -3640,7 +3619,7 @@
   {
     "id": 134,
     "name": "Lojas Quero-Quero",
-    "segment": "Construção Civil",
+    "segment": "E-commerce & Varejo",
     "uf": "RS",
     "tier": 2,
     "scoreS13": null,
@@ -3662,7 +3641,7 @@
   {
     "id": 135,
     "name": "Obramax",
-    "segment": "Construção Civil",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 3,
     "scoreS13": null,
@@ -3706,7 +3685,7 @@
   {
     "id": 137,
     "name": "Sodimac Brasil",
-    "segment": "Construção Civil",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 3,
     "scoreS13": null,
@@ -3728,7 +3707,7 @@
   {
     "id": 138,
     "name": "Telhanorte / C&C (Grupo Mover)",
-    "segment": "Construção Civil",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 3,
     "scoreS13": null,
@@ -3750,7 +3729,7 @@
   {
     "id": 139,
     "name": "Decathlon Brasil",
-    "segment": "Têxtil & Vestuário",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 3,
     "scoreS13": null,
@@ -3948,7 +3927,7 @@
   {
     "id": 149,
     "name": "Alpargatas (Havaianas)",
-    "segment": "Têxtil & Vestuário",
+    "segment": "E-commerce & Varejo",
     "uf": "SP",
     "tier": 1,
     "scoreS13": null,
@@ -5251,11 +5230,6 @@
     "uf": "CE",
     "tier": 2,
     "scoreS13": null,
-    "aliases": [
-      "3corações",
-      "3 Corações",
-      "Três Corações"
-    ],
     "decisors": [
       {
         "name": "Homero Grec",
@@ -5276,7 +5250,13 @@
     },
     "tierRationale": "Tier 2: distribuição nacional de bens de consumo de alta rotatividade; Head de Supply Chain mapeado.",
     "nextResearchStep": "Abordar Homero Grec — foco em complexidade logística da distribuição de cafés e bebidas.",
-    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10"
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10",
+    "aliases": [
+      "Três Corações",
+      "Tres Coracoes",
+      "3 Corações",
+      "3 Coracoes"
+    ]
   },
   {
     "id": 214,
@@ -5426,7 +5406,7 @@
   {
     "id": 221,
     "name": "EuroChem",
-    "segment": "Combustíveis, Energia & Química",
+    "segment": "Agro & Commodities",
     "uf": "SP",
     "tier": 3,
     "scoreS13": null,
@@ -5639,5 +5619,33 @@
       "VW do Brasil",
       "Volkswagen"
     ]
+  },
+  {
+    "id": 230,
+    "name": "Petronas/NEXTA",
+    "segment": "Combustíveis, Energia & Química",
+    "uf": "SP",
+    "tier": 3,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "NEXTA Distribuidora — distribuidora de lubrificantes e combustíveis Petronas no Brasil. Abordagem iniciada via LinkedIn.",
+    "aliases": [
+      "NEXTA",
+      "NEXTA Distribuidora",
+      "Petronas Brasil",
+      "Petronas Lubrificantes"
+    ],
+    "tierScore": 69,
+    "tierBreakdown": {
+      "potencialLogistico": 25,
+      "aderenciaModeloPX": 18,
+      "porteRelevancia": 12,
+      "gatilhosTiming": 8,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 3: empresa em cadência ativa (LinkedIn), distribuidora de combustíveis/lubrificantes de porte regional; decisores a confirmar.",
+    "nextResearchStep": "Confirmar decisores e avançar cadência iniciada no LinkedIn.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10",
+    "decisorMappingStatus": "pending_2026-09-14"
   }
 ]

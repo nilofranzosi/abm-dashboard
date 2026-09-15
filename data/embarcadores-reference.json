@@ -1,7 +1,7 @@
 {
   "_placeholder": false,
   "generatedFrom": "public/data/embarcadores.json",
-  "generatedAt": "2026-09-14T11:51:52.197Z",
+  "generatedAt": "2026-09-15T11:57:30.984Z",
   "count": 214,
   "entries": [
     {
@@ -533,14 +533,6 @@
       "tier": 3
     },
     {
-      "id": 70,
-      "name": "Três Corações",
-      "normalizedName": "tres-coracoes",
-      "segment": "Alimentos & Bebidas",
-      "uf": "CE",
-      "tier": 3
-    },
-    {
       "id": 71,
       "name": "Ablac / Piracanjuba",
       "normalizedName": "ablac-piracanjuba",
@@ -720,7 +712,7 @@
       "id": 94,
       "name": "Saint-Gobain Brasil",
       "normalizedName": "saint-gobain-brasil",
-      "segment": "Construção Civil",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 2
     },
@@ -816,7 +808,7 @@
       "id": 107,
       "name": "Raia Drogasil",
       "normalizedName": "raia-drogasil",
-      "segment": "Farmacêutico & Saúde",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 2
     },
@@ -864,7 +856,7 @@
       "id": 113,
       "name": "Lojas Renner",
       "normalizedName": "lojas-renner",
-      "segment": "Têxtil & Vestuário",
+      "segment": "E-commerce & Varejo",
       "uf": "RS",
       "tier": 3
     },
@@ -872,7 +864,7 @@
       "id": 114,
       "name": "Pague Menos",
       "normalizedName": "pague-menos",
-      "segment": "Farmacêutico & Saúde",
+      "segment": "E-commerce & Varejo",
       "uf": "CE",
       "tier": 3
     },
@@ -952,7 +944,7 @@
       "id": 124,
       "name": "Riachuelo",
       "normalizedName": "riachuelo",
-      "segment": "Têxtil & Vestuário",
+      "segment": "E-commerce & Varejo",
       "uf": "RN",
       "tier": 3
     },
@@ -968,7 +960,7 @@
       "id": 126,
       "name": "C&A Brasil",
       "normalizedName": "c-a-brasil",
-      "segment": "Têxtil & Vestuário",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 2
     },
@@ -976,7 +968,7 @@
       "id": 127,
       "name": "Marisa",
       "normalizedName": "marisa",
-      "segment": "Têxtil & Vestuário",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 3
     },
@@ -984,7 +976,7 @@
       "id": 128,
       "name": "Inditex Brasil (Zara)",
       "normalizedName": "inditex-brasil-zara",
-      "segment": "Têxtil & Vestuário",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 3
     },
@@ -1024,7 +1016,7 @@
       "id": 133,
       "name": "Leroy Merlin Brasil",
       "normalizedName": "leroy-merlin-brasil",
-      "segment": "Construção Civil",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 2
     },
@@ -1032,7 +1024,7 @@
       "id": 134,
       "name": "Lojas Quero-Quero",
       "normalizedName": "lojas-quero-quero",
-      "segment": "Construção Civil",
+      "segment": "E-commerce & Varejo",
       "uf": "RS",
       "tier": 2
     },
@@ -1040,7 +1032,7 @@
       "id": 135,
       "name": "Obramax",
       "normalizedName": "obramax",
-      "segment": "Construção Civil",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 3
     },
@@ -1056,7 +1048,7 @@
       "id": 137,
       "name": "Sodimac Brasil",
       "normalizedName": "sodimac-brasil",
-      "segment": "Construção Civil",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 3
     },
@@ -1064,7 +1056,7 @@
       "id": 138,
       "name": "Telhanorte / C&C (Grupo Mover)",
       "normalizedName": "telhanorte-c-c-grupo-mover",
-      "segment": "Construção Civil",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 3
     },
@@ -1072,7 +1064,7 @@
       "id": 139,
       "name": "Decathlon Brasil",
       "normalizedName": "decathlon-brasil",
-      "segment": "Têxtil & Vestuário",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 3
     },
@@ -1144,7 +1136,7 @@
       "id": 149,
       "name": "Alpargatas (Havaianas)",
       "normalizedName": "alpargatas-havaianas",
-      "segment": "Têxtil & Vestuário",
+      "segment": "E-commerce & Varejo",
       "uf": "SP",
       "tier": 1
     },
@@ -1656,7 +1648,7 @@
       "id": 221,
       "name": "EuroChem",
       "normalizedName": "eurochem",
-      "segment": "Combustíveis, Energia & Química",
+      "segment": "Agro & Commodities",
       "uf": "SP",
       "tier": 3
     },
@@ -1715,6 +1707,14 @@
       "segment": "Automotivo & Pneus",
       "uf": "SP",
       "tier": 1
+    },
+    {
+      "id": 230,
+      "name": "Petronas/NEXTA",
+      "normalizedName": "petronas-nexta",
+      "segment": "Combustíveis, Energia & Química",
+      "uf": "SP",
+      "tier": 3
     }
   ]
 }

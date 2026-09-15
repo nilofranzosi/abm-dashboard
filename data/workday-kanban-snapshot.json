@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T11:52:17.372Z",
+  "generatedAt": "2026-09-15T11:57:59.610Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -145,7 +145,7 @@
           "id": "cmqjsbyau0000k7zwrt3gzr83",
           "name": "Gerdau",
           "segment": null,
-          "accountScore": 40,
+          "accountScore": 100,
           "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
           "nextActionDueAt": "2026-06-20T11:30:00.000Z",
           "lastInteractionAt": "2026-08-14T16:50:46.307Z",
@@ -166,19 +166,6 @@
           "owner": null,
           "contactCount": 2,
           "activeDecisor": "André Freire"
-        },
-        {
-          "id": "cms611chp001ck7ocsuk2wgs6",
-          "name": "Suzano",
-          "segment": "Indústria Pesada",
-          "accountScore": 123,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-14T12:03:31.599Z",
-          "lastInteractionAt": "2026-08-14T16:50:46.307Z",
-          "source": "linkedin-sync:master",
-          "owner": null,
-          "contactCount": 8,
-          "activeDecisor": "Marcela Cocchiarale"
         },
         {
           "id": "cmtiqol5i000sk7d4tpd1yjj3",
@@ -1537,7 +1524,7 @@
           "id": "cmqjsbyd6000ok7zw8yagmcc0",
           "name": "Casas Bahia",
           "segment": null,
-          "accountScore": 820,
+          "accountScore": 880,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-13T19:21:33.000Z",
           "lastInteractionAt": "2026-08-26T19:37:23.153Z",
@@ -1545,6 +1532,19 @@
           "owner": null,
           "contactCount": 6,
           "activeDecisor": "Karina Baldin"
+        },
+        {
+          "id": "cms611chp001ck7ocsuk2wgs6",
+          "name": "Suzano",
+          "segment": "Indústria Pesada",
+          "accountScore": 123,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-14T12:03:31.599Z",
+          "lastInteractionAt": "2026-09-14T13:17:34.639Z",
+          "source": "linkedin-sync:master",
+          "owner": null,
+          "contactCount": 8,
+          "activeDecisor": "Marcela Cocchiarale"
         },
         {
           "id": "cmshu8i8j005ek7ccqrg5l4zb",

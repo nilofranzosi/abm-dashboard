@@ -197,6 +197,7 @@
 
   <script>
     let data = null;
+    let baseGeralData = null;
     let healthData = null;
     let currentChart = null;
     let sortBy = 'contractDays';
@@ -279,10 +280,8 @@
     // o unico lugar a mexer.
     //
     // ATENCAO ao que esta meta e: ela e da PX INTEIRA, nao das 139 contas deste
-    // painel. Por isso o KPI abaixo se chama "Participacao na Meta" e nao
-    // "Atingimento" — 30.134,5 dias sobre 200.837 nao quer dizer que as contas
-    // entregaram 15% do que deviam, e sim que elas carregam 15% do alvo do mes
-    // da empresa toda.
+    // painel. Ela continua sendo exibida como referencia no card de Dias
+    // Agenciados, mas nao entra mais no calculo de participacao deste painel.
     //
     // abr–jun/26 aparecem arredondados na imagem (133K/152K/180K), nunca com o
     // numero cheio — vao marcados como aproximados em vez de fingirem precisao
@@ -315,17 +314,20 @@
 
     async function load() {
       try {
-        const res = await fetch('/api/transportadoras/target-accounts-outubro', {
-          credentials: 'include'
-        });
+        const [res, baseGeralRes] = await Promise.all([
+          fetch('/api/transportadoras/target-accounts-outubro', { credentials: 'include' }),
+          fetch('/api/transportadoras/clientes-dias-agenciados', { credentials: 'include' })
+        ]);
         if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
-        const json = await res.json();
+        if (!baseGeralRes.ok) throw new Error(`HTTP ${baseGeralRes.status}: ${baseGeralRes.statusText}`);
+        const [json, baseGeralJson] = await Promise.all([res.json(), baseGeralRes.json()]);
         data = json.data;
+        baseGeralData = baseGeralJson.data;
         const healthRes = await fetch('/api/transportadoras/target-accounts-health', { credentials: 'include' });
         if (healthRes.ok) healthData = (await healthRes.json()).data;
         render();
       } catch (err) {
-        document.body.innerHTML = `<div class="error">Erro ao carregar dados de agosto/2026: ${escapeHtml(err.message)}</div>`;
+        document.body.innerHTML = `<div class="error">Erro ao carregar Target Accounts e a base geral: ${escapeHtml(err.message)}</div>`;
         return;
       }
       // Fora do try acima de proposito: uma falha no resumo de eventos nao
@@ -579,7 +581,16 @@
 
       const totalDaysAll = monthData.reduce((sum, d) => sum + d, 0);
       const metaMes = META_MENSAL_PX[selectedMonth] || null;
-      const pctAll = metaMes ? Math.round((totalDaysAll / metaMes.dias) * 100) : null;
+      const totalDaysBaseGeral = baseGeralData?.rows?.reduce((sum, row) => {
+        const days = row.trend?.find((entry) => entry.month === selectedMonth)?.contractDays;
+        return sum + (days || 0);
+      }, 0) ?? null;
+      const pctBaseGeral = totalDaysBaseGeral !== null && totalDaysBaseGeral > 0
+        ? (totalDaysAll / totalDaysBaseGeral) * 100
+        : null;
+      const pctBaseGeralTexto = pctBaseGeral === null
+        ? '—'
+        : `${pctBaseGeral.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`;
       const withEvents = data.rows.filter(r => r.eventos?.length > 0).length;
       const evaluated = data.rows.filter(r => r.companyId !== null).length;
       const eventCoverage = evaluated > 0 ? Math.round((withEvents / evaluated) * 100) : 0;
@@ -621,11 +632,11 @@
           <div class="kpi-subtitle">${metaTexto}${notaParcial}</div>
         </div>
         <div class="kpi">
-          <div class="kpi-label">Participação na Meta</div>
-          <div class="kpi-value">${pctAll === null ? '—' : `${pctAll}%`}</div>
-          <div class="kpi-subtitle">${pctAll === null
-            ? 'Meta do mês não publicada'
-            : `Das 139 contas na meta da PX${parcial ? ' (mês em curso)' : ''}`}</div>
+          <div class="kpi-label">Participação na Base Geral</div>
+          <div class="kpi-value">${pctBaseGeralTexto}</div>
+          <div class="kpi-subtitle">${totalDaysBaseGeral === null
+            ? 'Base geral não carregada'
+            : `De ${fmt(totalDaysBaseGeral)} dias agenciados na base geral${parcial ? ' (mês em curso)' : ''}`}</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">Cobertura Eventos</div>

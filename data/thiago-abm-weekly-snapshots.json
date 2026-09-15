@@ -2481,21 +2481,21 @@
   },
   {
     "weekKey": "2026-S38",
-    "generatedAt": "2026-09-14T12:00:09.995Z",
+    "generatedAt": "2026-09-15T11:40:35.420Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 120,
     "activePipeline": 112,
     "pausedCount": 8,
-    "repliedOrBetter": 25,
-    "meetingOrBetter": 10,
-    "dealCount": 10,
-    "replyRate": 0.22321428571428573,
-    "meetingRate": 0.08928571428571429,
-    "dealRate": 0.08928571428571429,
-    "avgDaysToFirstReply": 5.8125,
-    "avgDaysSinceLastOutbound": 10.714285714285714,
-    "totalOutboundTouchpoints": 17,
-    "totalInboundTouchpoints": 4,
+    "repliedOrBetter": 26,
+    "meetingOrBetter": 11,
+    "dealCount": 11,
+    "replyRate": 0.23214285714285715,
+    "meetingRate": 0.09821428571428571,
+    "dealRate": 0.09821428571428571,
+    "avgDaysToFirstReply": 6.117647058823529,
+    "avgDaysSinceLastOutbound": null,
+    "totalOutboundTouchpoints": 0,
+    "totalInboundTouchpoints": 0,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -2505,7 +2505,7 @@
       {
         "stage": "CONNECTION_ACCEPTED",
         "label": "Conexão Aceita",
-        "count": 7
+        "count": 6
       },
       {
         "stage": "MESSAGE_SENT",
@@ -2525,7 +2525,7 @@
       {
         "stage": "DEAL",
         "label": "Negócio",
-        "count": 10
+        "count": 11
       }
     ],
     "topCompanies": [
@@ -2600,6 +2600,16 @@
         "nextActionDueAt": "2026-08-13T19:21:33.000Z"
       },
       {
+        "company": "Suzano",
+        "stage": "DEAL",
+        "contacts": 8,
+        "outboundTouchpoints": 0,
+        "inboundTouchpoints": 0,
+        "bestStatus": "DEAL",
+        "score": 90,
+        "nextActionDueAt": "2026-08-14T12:03:31.599Z"
+      },
+      {
         "company": "Grupo Boticário",
         "stage": "DEAL",
         "contacts": 6,
@@ -2613,7 +2623,7 @@
         "company": "Unilever",
         "stage": "DEAL",
         "contacts": 17,
-        "outboundTouchpoints": 2,
+        "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "DEAL",
         "score": 90,
@@ -2663,27 +2673,17 @@
         "company": "Cargill",
         "stage": "REPLIED",
         "contacts": 4,
-        "outboundTouchpoints": 2,
-        "inboundTouchpoints": 1,
-        "bestStatus": "REPLIED",
-        "score": 60,
-        "nextActionDueAt": "2026-07-13T03:00:00.000Z"
-      },
-      {
-        "company": "Nestlé",
-        "stage": "REPLIED",
-        "contacts": 1,
-        "outboundTouchpoints": 1,
+        "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "REPLIED",
         "score": 60,
-        "nextActionDueAt": "2026-07-13T20:30:00.000Z"
+        "nextActionDueAt": "2026-07-13T03:00:00.000Z"
       }
     ],
     "activeContacts": 112,
     "excludedContacts": 8,
     "unresolvedCompanies": 0,
     "uniqueCompanies": 120,
-    "qualifiedAdvanceRate": 0.08928571428571429
+    "qualifiedAdvanceRate": 0.09821428571428571
   }
 ]
