@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T19:08:01.549Z",
+  "generatedAt": "2026-09-15T18:39:30.396Z",
   "ativo": [],
   "segundaAbordagem": [
     {
@@ -8,22 +8,23 @@
       "segment": null,
       "icpTier": "1",
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 25,
+      "daysSinceLastReply": 29,
       "lastReplyAt": null,
       "nextAction": "Retomada (cliente em churn) — presente em 10º Congresso ABOL; 1ª Confraria do Transporte"
-    },
+    }
+  ],
+  "terceiraAbordagem": [
     {
       "id": "cmrdrq8rv004fk75snk746ty4",
       "name": "Zé Delivery",
       "segment": null,
       "icpTier": "1",
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 28,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": null
     }
   ],
-  "terceiraAbordagem": [],
   "novoDecisor": [],
   "prazoEsgotado": [],
   "maturacao": [],

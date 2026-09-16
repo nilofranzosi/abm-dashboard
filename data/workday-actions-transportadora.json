@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T19:08:01.431Z",
+  "generatedAt": "2026-09-15T18:39:30.104Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
   "acceptedConnectionsWithoutMessage": [
@@ -111,6 +111,20 @@
     }
   ],
   "staleCompanies30Days": [
+    {
+      "id": "cmrdrq8rv004fk75snk746ty4",
+      "company": {
+        "id": "cmrdrq8rv004fk75snk746ty4",
+        "name": "Zé Delivery",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
     {
       "id": "cmrdrq7da0009k75svimmxm3q",
       "company": {
@@ -774,6 +788,20 @@
       "company": {
         "id": "cmrey6xjz00fok7c488ada8l2",
         "name": "Vidal Logistica",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6uwp007ak7c4cgnljyi8",
+      "company": {
+        "id": "cmrey6uwp007ak7c4cgnljyi8",
+        "name": "RV IMOLA TRANSPORTES E LOGISTICA LTDA",
         "status": "MAPPED"
       },
       "contact": null,
@@ -1474,34 +1502,6 @@
       "company": {
         "id": "cmrey6y8j00i2k7c4y7pq4wc7",
         "name": "FC transportes Ltda ES",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6zxe00m7k7c4m928e045",
-      "company": {
-        "id": "cmrey6zxe00m7k7c4m928e045",
-        "name": "TRANSPORTADORA PACHECO LTDA",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6tnc003nk7c4fwe05pk8",
-      "company": {
-        "id": "cmrey6tnc003nk7c4fwe05pk8",
-        "name": "Vamos Locação",
         "status": "MAPPED"
       },
       "contact": null,

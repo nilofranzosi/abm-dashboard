@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T11:57:59.684Z",
+  "generatedAt": "2026-09-15T18:39:12.897Z",
   "ativo": [
     {
       "id": "cmtiqol5i000sk7d4tpd1yjj3",
@@ -7,7 +7,7 @@
       "segment": "Alimentos & Bebidas",
       "icpTier": "Tier 2",
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 13,
+      "daysSinceLastReply": 14,
       "lastReplyAt": null,
       "nextAction": null
     }
@@ -32,16 +32,6 @@
       "daysSinceLastReply": 29,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
-    },
-    {
-      "id": "cmrozkqti000hk75coogp46br",
-      "name": "Ultrapar",
-      "segment": "Combustíveis, Energia & Química",
-      "icpTier": "Tier 2",
-      "abmStatus": "REPLIED",
-      "daysSinceLastReply": 29,
-      "lastReplyAt": "2026-08-17T11:34:00.000Z",
-      "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn)."
     }
   ],
   "terceiraAbordagem": [
@@ -81,7 +71,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "MESSAGE_SENT",
-      "daysSinceLastReply": 41,
+      "daysSinceLastReply": 42,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -101,7 +91,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "MESSAGE_SENT",
-      "daysSinceLastReply": 41,
+      "daysSinceLastReply": 42,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -181,7 +171,7 @@
       "segment": "Palestrante Fórum ILOS",
       "icpTier": null,
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -191,7 +181,7 @@
       "segment": "Palestrante Fórum ILOS",
       "icpTier": null,
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -201,7 +191,7 @@
       "segment": "Palestrante Fórum ILOS",
       "icpTier": null,
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -211,7 +201,7 @@
       "segment": "Combustíveis, Energia & Química",
       "icpTier": null,
       "abmStatus": "PAUSED",
-      "daysSinceLastReply": 35,
+      "daysSinceLastReply": 36,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -231,7 +221,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "FOLLOW_UP_SENT",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -241,7 +231,7 @@
       "segment": "Farmacêutico & Saúde",
       "icpTier": "Tier 3",
       "abmStatus": "MESSAGE_SENT",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -261,7 +251,7 @@
       "segment": "E-commerce & Varejo",
       "icpTier": "Tier 2",
       "abmStatus": "MESSAGE_SENT",
-      "daysSinceLastReply": 42,
+      "daysSinceLastReply": 43,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -291,7 +281,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "CONNECTION_SENT",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional."
     },
@@ -311,7 +301,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "REPLIED",
-      "daysSinceLastReply": 39,
+      "daysSinceLastReply": 40,
       "lastReplyAt": "2026-08-06T16:53:00.000Z",
       "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn)."
     },
@@ -343,7 +333,7 @@
       "segment": "E-commerce & Varejo",
       "icpTier": "Tier 1",
       "abmStatus": "MESSAGE_SENT",
-      "daysSinceLastReply": 56,
+      "daysSinceLastReply": 57,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -363,7 +353,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "FOLLOW_UP_SENT",
-      "daysSinceLastReply": 48,
+      "daysSinceLastReply": 49,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -413,7 +403,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "CONNECTION_SENT",
-      "daysSinceLastReply": 56,
+      "daysSinceLastReply": 57,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -443,7 +433,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 48,
+      "daysSinceLastReply": 49,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -523,7 +513,7 @@
       "segment": "Cosméticos & Higiene",
       "icpTier": "Tier 3",
       "abmStatus": "MESSAGE_SENT",
-      "daysSinceLastReply": 48,
+      "daysSinceLastReply": 49,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -543,7 +533,7 @@
       "segment": "Eletro & Tecnologia",
       "icpTier": "Tier 3",
       "abmStatus": "CONNECTION_SENT",
-      "daysSinceLastReply": 48,
+      "daysSinceLastReply": 49,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -585,7 +575,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "CONNECTION_SENT",
-      "daysSinceLastReply": 83,
+      "daysSinceLastReply": 84,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -595,7 +585,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "REPLIED_NEGATIVE",
-      "daysSinceLastReply": 70,
+      "daysSinceLastReply": 71,
       "lastReplyAt": "2026-07-06T17:06:00.000Z",
       "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn)."
     },
@@ -605,7 +595,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "FOLLOW_UP_SENT",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -655,7 +645,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "CONNECTION_SENT",
-      "daysSinceLastReply": 82,
+      "daysSinceLastReply": 83,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -685,7 +675,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "FOLLOW_UP_SENT",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -695,7 +685,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "REPLIED",
-      "daysSinceLastReply": 10,
+      "daysSinceLastReply": 11,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -785,7 +775,7 @@
       "segment": "Alimentos & Bebidas",
       "icpTier": null,
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -795,7 +785,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 48,
+      "daysSinceLastReply": 49,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -805,7 +795,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "REPLIED",
-      "daysSinceLastReply": 33,
+      "daysSinceLastReply": 34,
       "lastReplyAt": "2026-08-12T16:52:00.000Z",
       "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn)."
     },
@@ -815,7 +805,7 @@
       "segment": "Têxtil & Vestuário",
       "icpTier": null,
       "abmStatus": "REPLIED",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -825,7 +815,7 @@
       "segment": "Alimentos & Bebidas",
       "icpTier": null,
       "abmStatus": "FOLLOW_UP_SENT",
-      "daysSinceLastReply": 31,
+      "daysSinceLastReply": 32,
       "lastReplyAt": null,
       "nextAction": null
     },
@@ -835,7 +825,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "REPLIED",
-      "daysSinceLastReply": 56,
+      "daysSinceLastReply": 57,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -875,7 +865,7 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "FOLLOW_UP_SENT",
-      "daysSinceLastReply": 14,
+      "daysSinceLastReply": 15,
       "lastReplyAt": null,
       "nextAction": "Enviar follow-up de cadência ABM no LinkedIn."
     },
@@ -925,8 +915,18 @@
       "segment": null,
       "icpTier": null,
       "abmStatus": "REPLIED",
-      "daysSinceLastReply": 81,
+      "daysSinceLastReply": 82,
       "lastReplyAt": "2026-06-25T14:15:00.000Z",
+      "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn)."
+    },
+    {
+      "id": "cmrozkqti000hk75coogp46br",
+      "name": "Ultrapar",
+      "segment": "Combustíveis, Energia & Química",
+      "icpTier": "Tier 2",
+      "abmStatus": "REPLIED",
+      "daysSinceLastReply": 29,
+      "lastReplyAt": "2026-08-17T11:34:00.000Z",
       "nextAction": "Responder e avançar conversa (reply recebido no LinkedIn)."
     },
     {

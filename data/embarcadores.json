@@ -1841,7 +1841,7 @@
   {
     "id": 59,
     "name": "Votorantim",
-    "segment": "Indústria Pesada",
+    "segment": "Construção Civil",
     "uf": "SP",
     "tier": 3,
     "scoreS13": null,
@@ -5622,6 +5622,33 @@
   },
   {
     "id": 230,
+    "name": "Lactalis Brasil",
+    "segment": "Alimentos & Bebidas",
+    "uf": "SP",
+    "tier": 2,
+    "scoreS13": null,
+    "decisors": [],
+    "notes": "Grupo multinacional francês, líder mundial em laticínios. Opera no Brasil com marcas Président, Batavo e Itambé.",
+    "aliases": [
+      "Lactalis",
+      "Lactalis Group",
+      "Président Brasil",
+      "Itambé"
+    ],
+    "tierScore": 80,
+    "tierBreakdown": {
+      "potencialLogistico": 28,
+      "aderenciaModeloPX": 20,
+      "porteRelevancia": 16,
+      "gatilhosTiming": 10,
+      "mapeabilidadeAcesso": 6
+    },
+    "tierRationale": "Tier 2: grande grupo de laticínios (Président, Batavo, Itambé), distribuição nacional ampla.",
+    "tierModel": "ABM_PX_Tierizacao_v1_2026-06-10",
+    "decisorMappingStatus": "pending_2026-09-15"
+  },
+  {
+    "id": 231,
     "name": "Petronas/NEXTA",
     "segment": "Combustíveis, Energia & Química",
     "uf": "SP",

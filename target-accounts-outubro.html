@@ -95,7 +95,7 @@
       </div>
 
       <div class="panel">
-        <h2>Desempenho Diário — 139 Empresas</h2>
+        <h2>Desempenho Diário — 249 Grupos</h2>
         <p class="muted" style="margin-bottom: 14px;">Clique em uma empresa para ver evolução dos últimos 6 meses, eventos e análise. Os percentuais e valores abaixo correspondem ao mês selecionado.</p>
 
         <div style="margin-bottom: 14px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
@@ -130,6 +130,8 @@
               <th onclick="sortTable('origem')">Origem</th>
               <th onclick="sortTable('faixa')">Faixa (Ago)</th>
               <th onclick="sortTable('movimento')">Movimento</th>
+              <th onclick="sortTable('diasAgo')">Dias (Ago)</th>
+              <th onclick="sortTable('gapParaMeta')">Gap p/ Meta</th>
               <th onclick="sortTable('trend')">Tendência</th>
               <th onclick="sortTable('gap')">Falta p/ o alvo</th>
             </tr>
@@ -748,6 +750,12 @@
         } else if (sortBy === 'gap') {
           aVal = calcularFaltaRecalculada(a);
           bVal = calcularFaltaRecalculada(b);
+        } else if (sortBy === 'diasAgo') {
+          aVal = a.diasAgosto || 0;
+          bVal = b.diasAgosto || 0;
+        } else if (sortBy === 'gapParaMeta') {
+          aVal = a.gapParaMeta || 0;
+          bVal = b.gapParaMeta || 0;
         }
         return sortAsc ? (aVal < bVal ? -1 : 1) : (aVal > bVal ? -1 : 1);
       });
@@ -782,6 +790,8 @@
           <td>${row.movimento || '—'}</td>
           <td><span class="${trendClass}">${trendSymbol} ${fmt(Math.abs(trend))}</span></td>
           <td style="font-weight: 600; color: ${faltaColor}">${fmt(faltaRecalculada)}</td>
+          <td>${row.diasAgosto ? fmt(row.diasAgosto) : '—'}</td>
+          <td>${row.gapParaMeta !== undefined && row.gapParaMeta !== null ? fmt(row.gapParaMeta) : '—'}</td>
         </tr>`;
       }).join('');
     }
@@ -817,7 +827,7 @@
       const monthToUse = selectedMonth || data.trendMonths?.[data.trendMonths.length - 1] || '2026-08-01';
 
       // Gerar CSV com apenas as linhas visíveis
-      const headers = ['#', 'Empresa', 'Origem', 'Faixa (Ago)', 'Movimento', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade'];
+      const headers = ['#', 'Empresa', 'Origem', 'Faixa (Ago)', 'Movimento', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade', 'Dias (Ago)', 'Gap p/ Meta'];
       const csvLines = [headers.join(',')];
 
       visibleRows.forEach((row, idx) => {
@@ -843,7 +853,9 @@
           row.faltaParaAlvo,
           row.alvo,
           `"${row.multiplicador || '—'}"`,
-          `"${row.viabilidade || '—'}"`
+          `"${row.viabilidade || '—'}"`,
+          row.diasAgosto || '—',
+          row.gapParaMeta !== undefined && row.gapParaMeta !== null ? row.gapParaMeta : '—'
         ];
         csvLines.push(csvRow.join(','));
       });
