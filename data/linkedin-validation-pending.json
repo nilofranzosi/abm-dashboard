@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-15T13:30:43.542Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-15.json",
+  "generatedAt": "2026-09-16T12:25:23.237Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-16.json",
   "summary": {
     "total": 3,
     "replied": 0,
-    "companyUnknown": 0,
+    "companyUnknown": 1,
     "overdue": 0,
-    "offList": 3
+    "offList": 2
   },
   "companies": [
     {
-      "id": "icro-solutions",
-      "resolvedCompany": "ICRO Solutions",
+      "id": "unknown-franceline-tomczyk",
+      "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
+        "company-unknown",
+        "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "JEAN PITZ",
+          "contactName": "Franceline Tomczyk",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "CIO | Executivo de Tecnologia, Estratégia Digital e Governança de Negócios | Customer Success | Gestão de Projetos | Growth Mindset",
+          "roleOrHeadline": "Transformo operações comerciais em crescimento previsível | Gestão de Vendas & Customer Success | SaaS & B2B",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -35,17 +35,17 @@
       "icpSegment": null
     },
     {
-      "id": "yamalog",
-      "resolvedCompany": "YAMALOG",
+      "id": "erea-galpoes",
+      "resolvedCompany": "EREA Galpões",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "André Gustavo Corrêa da Silva",
+          "contactName": "Luiz Augusto Merico",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente Comercial focado em estratégia e gestão de inovação",
+          "roleOrHeadline": "Partner Development Advisory Director",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -60,17 +60,17 @@
       "icpSegment": null
     },
     {
-      "id": "fundacao-getulio-vargas",
-      "resolvedCompany": "Fundação Getulio Vargas",
+      "id": "system-advisor",
+      "resolvedCompany": "System Advisor",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Rodrigo Soares Bottura",
+          "contactName": "Mário Oliveira",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente de Logística | Transportes | Warehouse | Distribuição | Supply Chain | Control Tower | Roteirização | Projetos | Eficiência Logística | SAP | WMS | TMS",
+          "roleOrHeadline": "Founder",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,

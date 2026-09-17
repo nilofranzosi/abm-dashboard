@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T18:39:30.104Z",
+  "generatedAt": "2026-09-16T18:44:09.963Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
   "acceptedConnectionsWithoutMessage": [
@@ -116,6 +116,20 @@
       "company": {
         "id": "cmrdrq8rv004fk75snk746ty4",
         "name": "Zé Delivery",
+        "status": "CONNECTION_ACCEPTED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7s4001vk75sgfc8sk2g",
+      "company": {
+        "id": "cmrdrq7s4001vk75sgfc8sk2g",
+        "name": "FedEx",
         "status": "CONNECTION_ACCEPTED"
       },
       "contact": null,
@@ -1274,6 +1288,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey72k400sck7c4buasmdni",
+      "company": {
+        "id": "cmrey72k400sck7c4buasmdni",
+        "name": "Rodomaxlog Armazenagem e Logística Ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey74dg00w7k7c4ayq9rsup",
       "company": {
         "id": "cmrey74dg00w7k7c4ayq9rsup",
@@ -1474,34 +1502,6 @@
       "company": {
         "id": "cmrey71t400qhk7c480c839wr",
         "name": "Irmãos Farid ltda",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrdrq8sb004gk75swc8c7vus",
-      "company": {
-        "id": "cmrdrq8sb004gk75swc8c7vus",
-        "name": "Zero Carbon Logistics S.A.",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6y8j00i2k7c4y7pq4wc7",
-      "company": {
-        "id": "cmrey6y8j00i2k7c4y7pq4wc7",
-        "name": "FC transportes Ltda ES",
         "status": "MAPPED"
       },
       "contact": null,

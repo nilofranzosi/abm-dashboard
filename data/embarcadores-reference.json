@@ -1,8 +1,8 @@
 {
   "_placeholder": false,
   "generatedFrom": "public/data/embarcadores.json",
-  "generatedAt": "2026-09-15T11:57:30.984Z",
-  "count": 214,
+  "generatedAt": "2026-09-16T12:15:16.546Z",
+  "count": 215,
   "entries": [
     {
       "id": 1,
@@ -456,7 +456,7 @@
       "id": 59,
       "name": "Votorantim",
       "normalizedName": "votorantim",
-      "segment": "Indústria Pesada",
+      "segment": "Construção Civil",
       "uf": "SP",
       "tier": 3
     },
@@ -1710,6 +1710,14 @@
     },
     {
       "id": 230,
+      "name": "Lactalis Brasil",
+      "normalizedName": "lactalis-brasil",
+      "segment": "Alimentos & Bebidas",
+      "uf": "SP",
+      "tier": 2
+    },
+    {
+      "id": 231,
       "name": "Petronas/NEXTA",
       "normalizedName": "petronas-nexta",
       "segment": "Combustíveis, Energia & Química",

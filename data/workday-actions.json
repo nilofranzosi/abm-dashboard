@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T20:00:03.554Z",
+  "generatedAt": "2026-09-16T20:00:00.212Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -318,6 +318,22 @@
       "severity": "warning"
     },
     {
+      "id": "lactalis-brasil-tier-not-started",
+      "company": {
+        "id": null,
+        "name": "Lactalis Brasil"
+      },
+      "contact": null,
+      "owner": {
+        "id": "thiago",
+        "name": "Thiago"
+      },
+      "reason": "Tier 2 | Score 80/100 | Alimentos & Bebidas. Decisor ainda não mapeado — pesquisar antes de abordar.",
+      "recommendedAction": "Validar gatilho atual e preparar convite de conexão personalizado.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "aliexpress-tier-not-started",
       "company": {
         "id": null,
@@ -384,22 +400,6 @@
       },
       "reason": "Tier 2 | Score 79/100 | Supermercadistas. Decisor ainda não mapeado — pesquisar antes de abordar.",
       "recommendedAction": "Identificar Gerente de Logística / Recebimento do Comercial Zaragoza em SP.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "rede-mix-atacarejo-tier-not-started",
-      "company": {
-        "id": null,
-        "name": "Rede Mix Atacarejo"
-      },
-      "contact": null,
-      "owner": {
-        "id": "thiago",
-        "name": "Thiago"
-      },
-      "reason": "Tier 2 | Score 79/100 | Supermercadistas. Sinal de timing forte. Decisor ainda não mapeado — pesquisar antes de abordar.",
-      "recommendedAction": "Identificar Gerente de Logística / CD da Rede Mix Atacarejo em Salvador.",
       "dueAt": null,
       "severity": "warning"
     }
