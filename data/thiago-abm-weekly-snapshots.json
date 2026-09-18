@@ -2481,7 +2481,7 @@
   },
   {
     "weekKey": "2026-S38",
-    "generatedAt": "2026-09-16T12:25:08.804Z",
+    "generatedAt": "2026-09-17T13:57:49.565Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 120,
     "activePipeline": 112,
@@ -2492,10 +2492,10 @@
     "replyRate": 0.23214285714285715,
     "meetingRate": 0.09821428571428571,
     "dealRate": 0.09821428571428571,
-    "avgDaysToFirstReply": 6.235294117647059,
-    "avgDaysSinceLastOutbound": 12.714285714285714,
-    "totalOutboundTouchpoints": 17,
-    "totalInboundTouchpoints": 4,
+    "avgDaysToFirstReply": 3.7058823529411766,
+    "avgDaysSinceLastOutbound": 13.714285714285714,
+    "totalOutboundTouchpoints": 22,
+    "totalInboundTouchpoints": 7,
     "funnel": [
       {
         "stage": "CONNECTION_SENT",
@@ -2593,8 +2593,8 @@
         "company": "Casas Bahia",
         "stage": "DEAL",
         "contacts": 6,
-        "outboundTouchpoints": 0,
-        "inboundTouchpoints": 0,
+        "outboundTouchpoints": 6,
+        "inboundTouchpoints": 3,
         "bestStatus": "DEAL",
         "score": 90,
         "nextActionDueAt": "2026-08-13T19:21:33.000Z"

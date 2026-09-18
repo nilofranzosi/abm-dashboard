@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-09-16T12:25:23.237Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-16.json",
+  "generatedAt": "2026-09-17T13:57:54.081Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-17.json",
   "summary": {
     "total": 3,
     "replied": 0,
-    "companyUnknown": 1,
+    "companyUnknown": 0,
     "overdue": 0,
-    "offList": 2
+    "offList": 3
   },
   "companies": [
     {
-      "id": "unknown-franceline-tomczyk",
-      "resolvedCompany": "A apurar",
+      "id": "executive-partner-gritsch-group",
+      "resolvedCompany": "Executive Partner - Gritsch Group",
       "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
+        "icp-unknown",
+        "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Franceline Tomczyk",
+          "contactName": "Tercio GRITSCH",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Transformo operações comerciais em crescimento previsível | Gestão de Vendas & Customer Success | SaaS & B2B",
-          "confidence": "Baixa",
+          "roleOrHeadline": "Executive Partner - Gritsch Group",
+          "confidence": "Media",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,
@@ -35,42 +35,41 @@
       "icpSegment": null
     },
     {
-      "id": "erea-galpoes",
-      "resolvedCompany": "EREA Galpões",
+      "id": "empresa-perzan-transportes",
+      "resolvedCompany": "empresa Perzan Transportes",
       "reviewReasons": [
-        "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Luiz Augusto Merico",
+          "contactName": "Felipe Zanella",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Partner Development Advisory Director",
-          "confidence": "Baixa",
+          "roleOrHeadline": "Administrador da empresa Perzan Transportes",
+          "confidence": "Media",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,
           "outboundTouchpoints": 0,
           "inboundMessages": [],
           "outboundMessages": [],
-          "icpSegment": null
+          "icpSegment": "TRANSPORTADORA"
         }
       ],
       "reviewedAt": null,
-      "icpSegment": null
+      "icpSegment": "TRANSPORTADORA"
     },
     {
-      "id": "system-advisor",
-      "resolvedCompany": "System Advisor",
+      "id": "new-vagas-estacionamentos",
+      "resolvedCompany": "New Vagas Estacionamentos",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Mário Oliveira",
+          "contactName": "Valdemir Oliveira",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Founder",
+          "roleOrHeadline": "GRUPO NEW VAGAS ESTACIONAMENTOS",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
