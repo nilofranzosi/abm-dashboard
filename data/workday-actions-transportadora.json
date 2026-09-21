@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T18:41:38.691Z",
+  "generatedAt": "2026-09-18T20:32:28.838Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
   "acceptedConnectionsWithoutMessage": [
@@ -140,6 +140,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrdrq7co0007k75shvppktf0",
+      "company": {
+        "id": "cmrdrq7co0007k75shvppktf0",
+        "name": "Vix Logística",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrdrq7da0009k75svimmxm3q",
       "company": {
         "id": "cmrdrq7da0009k75svimmxm3q",
@@ -158,6 +172,20 @@
       "company": {
         "id": "cmrdrq7eg000ek75shiquhwnr",
         "name": "COFCO International",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrdrq7f6000hk75s60fug1lz",
+      "company": {
+        "id": "cmrdrq7f6000hk75s60fug1lz",
+        "name": "DSV",
         "status": "MAPPED"
       },
       "contact": null,
@@ -326,6 +354,20 @@
       "company": {
         "id": "cmrey6t2l001kk7c4igk2wafb",
         "name": "GT Soluções",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6tzk004uk7c4f5ic90im",
+      "company": {
+        "id": "cmrey6tzk004uk7c4f5ic90im",
+        "name": "EXPRESSO 3300 TRANSPORTE LOGISTICA E ARMAZENAGEM LTDA",
         "status": "MAPPED"
       },
       "contact": null,
@@ -522,6 +564,34 @@
       "company": {
         "id": "cmrey6wms00ctk7c4eq54lwyg",
         "name": "OPR Logistica Pontual",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6z7v00kkk7c4hamqa5di",
+      "company": {
+        "id": "cmrey6z7v00kkk7c4hamqa5di",
+        "name": "RODOBRAS TRANSPORTES",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey76pr0127k7c4lxytohcz",
+      "company": {
+        "id": "cmrey76pr0127k7c4lxytohcz",
+        "name": "TRANSMARTINS TRANSP CARGAS E LOGISTICA LTDA",
         "status": "MAPPED"
       },
       "contact": null,
@@ -788,6 +858,20 @@
       "company": {
         "id": "cmrey70us00oek7c472cg36aj",
         "name": "COMBER LOGISTICA LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6v13007qk7c4kecncvj0",
+      "company": {
+        "id": "cmrey6v13007qk7c4kecncvj0",
+        "name": "TKE TRANSPORTES",
         "status": "MAPPED"
       },
       "contact": null,
@@ -1204,6 +1288,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey728800rlk7c47tqknhgo",
+      "company": {
+        "id": "cmrey728800rlk7c47tqknhgo",
+        "name": "OPERALOG",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey71mq00q4k7c4zmo6vfui",
       "company": {
         "id": "cmrey71mq00q4k7c4zmo6vfui",
@@ -1386,122 +1484,24 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey6y5300hpk7c47dakhvrf",
+      "company": {
+        "id": "cmrey6y5300hpk7c47dakhvrf",
+        "name": "EMPRESA DE TRANSPORTES MARTINS LTDA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey75gd00yqk7c4j95mmwvl",
       "company": {
         "id": "cmrey75gd00yqk7c4j95mmwvl",
         "name": "LG Transportes",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6tga002yk7c47zghwltq",
-      "company": {
-        "id": "cmrey6tga002yk7c47zghwltq",
-        "name": "TAG DEL SOL TRANSPORTES LTDA",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6u9k005bk7c47yd30bfn",
-      "company": {
-        "id": "cmrey6u9k005bk7c47yd30bfn",
-        "name": "Grupo Urbam",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6srp000gk7c4c3ym0x1b",
-      "company": {
-        "id": "cmrey6srp000gk7c4c3ym0x1b",
-        "name": "BEVERAGE DISTRIBUIDORA DE BEBIDAS LTDA",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6wvu00dqk7c4iq8jiyrh",
-      "company": {
-        "id": "cmrey6wvu00dqk7c4iq8jiyrh",
-        "name": "SHLOG Transportes",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6ww300drk7c473c7ea9v",
-      "company": {
-        "id": "cmrey6ww300drk7c473c7ea9v",
-        "name": "Soluciona",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6t52001sk7c4473v6bg4",
-      "company": {
-        "id": "cmrey6t52001sk7c4473v6bg4",
-        "name": "Jamef Transportes",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6vbj008mk7c44pl2u7iz",
-      "company": {
-        "id": "cmrey6vbj008mk7c44pl2u7iz",
-        "name": "Transportes Rodoviário Fedrigo LTDA",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey71t400qhk7c480c839wr",
-      "company": {
-        "id": "cmrey71t400qhk7c480c839wr",
-        "name": "Irmãos Farid ltda",
         "status": "MAPPED"
       },
       "contact": null,
