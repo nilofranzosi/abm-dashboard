@@ -1,51 +1,26 @@
 {
-  "generatedAt": "2026-09-21T19:32:08.413Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-21.json",
+  "generatedAt": "2026-09-22T12:15:09.364Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-22.json",
   "summary": {
-    "total": 7,
+    "total": 1,
     "replied": 0,
-    "companyUnknown": 1,
+    "companyUnknown": 0,
     "overdue": 0,
-    "offList": 6
+    "offList": 1
   },
   "companies": [
     {
-      "id": "cliente",
-      "resolvedCompany": "Cliente",
+      "id": "grupo-olx",
+      "resolvedCompany": "Grupo OLX",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Diego Guedes",
+          "contactName": "Marcelo Wendling",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente de Logística e Transporte | Last Mile & Operações | Control Tower | Network Design | Otimização de Supply Chain | Experiência do Cliente | Melhoria Contínua | +€5M em Savings & Excelência em Nível de Serviço",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "unknown-gilberto-junior",
-      "resolvedCompany": "A apurar",
-      "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Gilberto Junior",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente/Coordenador de operações de logística",
+          "roleOrHeadline": "CTO",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -58,130 +33,6 @@
       ],
       "reviewedAt": null,
       "icpSegment": null
-    },
-    {
-      "id": "gemini-sports-marketing-sporting-management",
-      "resolvedCompany": "Gemini Sports Marketing & Sporting Management",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Ronaldo Januário",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "CEO na Gemini Sports Marketing & Sporting Management | CEO/CFO Certification",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "universidade-cruzeiro-do-sul",
-      "resolvedCompany": "Universidade Cruzeiro do Sul",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Erica Santos",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Coordenadora de Logística | Gestão de Operações & Transportes | Supply Chain | Last Mile | Gestão de Pessoas | KPIs | Eficiência Operacional | Melhoria Contínua",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "abtlp",
-      "resolvedCompany": "ABTLP",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Eduardo Leal",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Secretario Executivo da ABTLP",
-          "confidence": "Media",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "system-advisor",
-      "resolvedCompany": "System Advisor",
-      "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Alexandre Jeselsohn",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Co-Founder | Head Comercial na System Advisor | Ajudando empresas a encontrar o melhor sistema de Gestão | Consultoria | Criatividade | Empreendedorismo",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
-    {
-      "id": "fedex-express",
-      "resolvedCompany": "FedEx Express",
-      "reviewReasons": [
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Luciele Wu",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Marketing Manager focused on Strategic Pricing and Revenue Management at FedEx Express",
-          "confidence": "Alta",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": "TRANSPORTADORA"
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": "TRANSPORTADORA"
     }
   ]
 }

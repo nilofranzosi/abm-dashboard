@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T19:32:07.180Z",
+  "generatedAt": "2026-09-22T12:15:03.491Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
@@ -15,13 +15,13 @@
     "companyDealRate": 0.09821428571428571
   },
   "sample": {
-    "activeContacts": 350,
+    "activeContacts": 351,
     "replies": 28,
     "advanced": 33,
     "negatives": 4,
-    "noResponse": 279,
-    "replyRate": 0.08,
-    "advancedRate": 0.09428571428571429,
+    "noResponse": 280,
+    "replyRate": 0.07977207977207977,
+    "advancedRate": 0.09401709401709402,
     "avgDaysToFirstReply": 5.571428571428571
   },
   "bySegment": [
@@ -57,11 +57,11 @@
     },
     {
       "segment": "Alimentos & Bebidas",
-      "total": 18,
+      "total": 19,
       "responded": 1,
       "advanced": 0,
       "negative": 0,
-      "replyRate": 0.05555555555555555,
+      "replyRate": 0.05263157894736842,
       "advancedRate": 0,
       "avgDaysToFirstReply": 0
     },
@@ -139,22 +139,22 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 89,
+      "total": 90,
       "responded": 6,
       "advanced": 8,
       "negative": 0,
-      "replyRate": 0.06741573033707865,
-      "advancedRate": 0.0898876404494382,
+      "replyRate": 0.06666666666666667,
+      "advancedRate": 0.08888888888888889,
       "avgDaysToFirstReply": 0.6666666666666666
     },
     {
       "seniority": "Diretoria / Head",
-      "total": 140,
+      "total": 141,
       "responded": 12,
       "advanced": 17,
       "negative": 2,
-      "replyRate": 0.08571428571428572,
-      "advancedRate": 0.12142857142857143,
+      "replyRate": 0.0851063829787234,
+      "advancedRate": 0.12056737588652482,
       "avgDaysToFirstReply": 3.4166666666666665
     },
     {
@@ -169,12 +169,12 @@
     },
     {
       "seniority": "C-level / VP",
-      "total": 66,
+      "total": 65,
       "responded": 7,
       "advanced": 4,
       "negative": 2,
-      "replyRate": 0.10606060606060606,
-      "advancedRate": 0.06060606060606061,
+      "replyRate": 0.1076923076923077,
+      "advancedRate": 0.06153846153846154,
       "avgDaysToFirstReply": 13.142857142857142
     }
   ],
@@ -191,12 +191,12 @@
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 217,
+      "total": 218,
       "responded": 24,
       "advanced": 24,
       "negative": 3,
-      "replyRate": 0.11059907834101383,
-      "advancedRate": 0.11059907834101383,
+      "replyRate": 0.11009174311926606,
+      "advancedRate": 0.11009174311926606,
       "avgDaysToFirstReply": 4.25
     },
     {
@@ -283,12 +283,12 @@
     },
     {
       "timeBand": "Sem horário",
-      "total": 205,
+      "total": 206,
       "responded": 0,
       "advanced": 13,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0.06341463414634146,
+      "advancedRate": 0.06310679611650485,
       "avgDaysToFirstReply": null
     }
   ],

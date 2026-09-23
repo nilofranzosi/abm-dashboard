@@ -319,8 +319,7 @@
             : `${fmtDataEvento(row.primeiraEdicao)} – ${fmtDataEvento(row.ultimaEdicao)}`;
           const detalhe = row.edicoes
             .map(e => `${fmtDataEvento(e.occurredAt)} · ${e.eventName} (${e.empresas})`)
-            .join('
-');
+            .join('\n');
           const rec = row.recorrencia === 1
             ? '1 edição'
             : `<span title="${escapeHtml(detalhe)}" style="border-bottom: 1px dotted #6B778C; cursor: help;">${row.recorrencia} edições</span>`;

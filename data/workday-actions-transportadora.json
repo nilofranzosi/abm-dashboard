@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T20:32:28.838Z",
+  "generatedAt": "2026-09-22T12:40:45.717Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
   "acceptedConnectionsWithoutMessage": [
@@ -406,6 +406,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey6xa700evk7c4zo303xfx",
+      "company": {
+        "id": "cmrey6xa700evk7c4zo303xfx",
+        "name": "Transportadora Real 94",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey76tz012kk7c4ap3l00rk",
       "company": {
         "id": "cmrey76tz012kk7c4ap3l00rk",
@@ -634,6 +648,20 @@
       "company": {
         "id": "cmrey6wcm00buk7c49n6gwdml",
         "name": "JBS = AMBIENTAL",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6y6x00hwk7c4faqmtxm7",
+      "company": {
+        "id": "cmrey6y6x00hwk7c4faqmtxm7",
+        "name": "EXCELLENCE TRANSPORTES E LOGISTICA LTDA",
         "status": "MAPPED"
       },
       "contact": null,
@@ -1064,6 +1092,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey6yhg00iuk7c4mxj577us",
+      "company": {
+        "id": "cmrey6yhg00iuk7c4mxj577us",
+        "name": "J Lima Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey6yb700ibk7c4siij8jl8",
       "company": {
         "id": "cmrey6yb700ibk7c4siij8jl8",
@@ -1460,48 +1502,6 @@
       "company": {
         "id": "cmrey75rr00zlk7c45pn8ez1c",
         "name": "MMR Transportes",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6wdz00byk7c4qz0iyorq",
-      "company": {
-        "id": "cmrey6wdz00byk7c4qz0iyorq",
-        "name": "JM TRANSPORTES",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6y5300hpk7c47dakhvrf",
-      "company": {
-        "id": "cmrey6y5300hpk7c47dakhvrf",
-        "name": "EMPRESA DE TRANSPORTES MARTINS LTDA",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey75gd00yqk7c4j95mmwvl",
-      "company": {
-        "id": "cmrey75gd00yqk7c4j95mmwvl",
-        "name": "LG Transportes",
         "status": "MAPPED"
       },
       "contact": null,
