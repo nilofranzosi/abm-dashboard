@@ -1,27 +1,52 @@
 {
-  "generatedAt": "2026-09-22T12:15:09.364Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-22.json",
+  "generatedAt": "2026-09-23T12:11:17.431Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-23.json",
   "summary": {
-    "total": 1,
+    "total": 2,
     "replied": 0,
     "companyUnknown": 0,
     "overdue": 0,
-    "offList": 1
+    "offList": 2
   },
   "companies": [
     {
-      "id": "grupo-olx",
-      "resolvedCompany": "Grupo OLX",
+      "id": "thor-implementos-rodoviarios-ltda",
+      "resolvedCompany": "THOR Implementos Rodoviários Ltda.",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Marcelo Wendling",
+          "contactName": "Marcio Rossato Celeste",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "CTO",
+          "roleOrHeadline": "Diretor Comercial",
           "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "eco-automacao-industrial",
+      "resolvedCompany": "ECO Automação Industrial",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Lucas Dalmônico",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Supervisor de Vendas na ECO Automação Industrial",
+          "confidence": "Alta",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,
