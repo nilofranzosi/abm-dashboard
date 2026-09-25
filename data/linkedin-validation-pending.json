@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-23T12:11:17.431Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-23.json",
+  "generatedAt": "2026-09-25T11:51:16.546Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-25.json",
   "summary": {
-    "total": 2,
+    "total": 10,
     "replied": 0,
-    "companyUnknown": 0,
+    "companyUnknown": 1,
     "overdue": 0,
-    "offList": 2
+    "offList": 9
   },
   "companies": [
     {
-      "id": "thor-implementos-rodoviarios-ltda",
-      "resolvedCompany": "THOR Implementos Rodoviários Ltda.",
+      "id": "insider-store",
+      "resolvedCompany": "Insider Store",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Marcio Rossato Celeste",
+          "contactName": "Gilberto Junior",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Diretor Comercial",
+          "roleOrHeadline": "Transportes | Logística | Gestão Estratégica | Otimização de Custos | Last Mile & Operações B2C/B2B",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -35,18 +35,216 @@
       "icpSegment": null
     },
     {
-      "id": "eco-automacao-industrial",
-      "resolvedCompany": "ECO Automação Industrial",
+      "id": "galeazzi-associados",
+      "resolvedCompany": "Galeazzi & Associados",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Lucas Dalmônico",
+          "contactName": "Eduardo Mollo",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Supervisor de Vendas na ECO Automação Industrial",
+          "roleOrHeadline": "Sócio - Diretor Executivo | Supply Chain & Logística Integrada | Consultoria Estratégica | Redução de Custos · OBZ · Transformação Digital",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "fundacao-dom-cabral",
+      "resolvedCompany": "Fundação Dom Cabral",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Daniel Moretto",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente de Operações | Supply Chain & Logística | Gestão Estratégica | Transporte & Distribuição | Armazenagem | Gestão de Frota | Planejamento | Performance & Custos",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "tradeflock",
+      "resolvedCompany": "TradeFlock",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Shashi Verma",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Head of Audience Reach & Circulation @ TradeFlock | Driving Readership Growth and Retention",
           "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-leandro-bandeira-sousa",
+      "resolvedCompany": "A apurar",
+      "reviewReasons": [
+        "company-unknown",
+        "icp-unknown"
+      ],
+      "contacts": [
+        {
+          "contactName": "Leandro Bandeira Sousa",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Diretor Sênior de Projetos | Centro de Serviços Compartilhados | Transformação Cultural e Processos | Eficiência Operacional | Operações de Backoffice",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "motorista-px",
+      "resolvedCompany": "Motorista PX",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Livia Medeiros",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Executiva Comercial | Gestão de Carteira | CX | Retenção de Clientes | CRM | Inside Sales",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "grupo-ravanello",
+      "resolvedCompany": "Grupo Ravanello",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Cleverson José Corrêa",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerência de Operações - TRR | Operacional | ADM | Comercial | Logística | Compras | Suprimentos | Supply Chain | Gestão de Estoques | Fornecedores | Black Belt | S&OP | Strategic Sourcing.",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "TRANSPORTADORA"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "TRANSPORTADORA"
+    },
+    {
+      "id": "mercadocar",
+      "resolvedCompany": "Mercadocar",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Enoc Deodato de Morais",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gestor de operações, Gerente de Logísticas MercadoCar",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "distribuidora-de-bebidas-virginia",
+      "resolvedCompany": "Distribuidora de Bebidas Virginia",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Mauro Augusto Montagnini",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente de Planejamento Logístico na Distribuidora de Bebidas Virginia | Engenharia de projetos, Engenharia de processos | Green Belt , Melhoria Continua | OBZ , Orçamento | Gestão de Pessoas",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "TRANSPORTADORA"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "TRANSPORTADORA"
+    },
+    {
+      "id": "felycitha",
+      "resolvedCompany": "Felycitha",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Tatiana Rades",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Business Psychology Advisor | Psicóloga | Conselheira | Consultora Empresarial | Palestrante | Fundadora Felycitha | Cofundadora Doctor Sell | Autora: O Empresário e a Consultora | Open Mind Brazil",
+          "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,

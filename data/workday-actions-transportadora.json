@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T18:38:05.925Z",
+  "generatedAt": "2026-09-24T19:44:49.718Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
   "acceptedConnectionsWithoutMessage": [
@@ -452,6 +452,20 @@
       "company": {
         "id": "cmrey6uk30065k7c4dp8thf94",
         "name": "Minasbeb Com. de Bebidas",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
+      "id": "cmrey6uv50074k7c46jm5v01f",
+      "company": {
+        "id": "cmrey6uv50074k7c46jm5v01f",
+        "name": "RN Logística",
         "status": "MAPPED"
       },
       "contact": null,
@@ -1232,6 +1246,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey73oz00uok7c45x5pi4ba",
+      "company": {
+        "id": "cmrey73oz00uok7c45x5pi4ba",
+        "name": "Vs Operador Logístico Ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey6suu000sk7c4j3fs5c69",
       "company": {
         "id": "cmrey6suu000sk7c4j3fs5c69",
@@ -1474,34 +1502,6 @@
       "company": {
         "id": "cmrey6wvm00dpk7c4bs3o24z9",
         "name": "Shift Mobilidade Corporativa e Agenciamento Ltda",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6zgc00l5k7c4knztc710",
-      "company": {
-        "id": "cmrey6zgc00l5k7c4knztc710",
-        "name": "Talentos Consultoria de Pessoal LTDA",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey75rr00zlk7c45pn8ez1c",
-      "company": {
-        "id": "cmrey75rr00zlk7c45pn8ez1c",
-        "name": "MMR Transportes",
         "status": "MAPPED"
       },
       "contact": null,
