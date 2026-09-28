@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desempenho de Eventos</title>
+  <!--
+    Aba "Desempenho de Eventos" do hub Transportadora.
+
+    Olha o EVENTO, nao o cliente: para que cada evento serve, se foi efetivo,
+    o que corrigir e quais alertas. A pergunta "como esta este cliente" continua
+    nas abas Target Accounts e Clientes.
+
+    Fonte unica: /data/eventos-desempenho.json, gerado por
+    Eventos/relatorio/scripts/build_abm_export.py a partir do Relatorio de Leads
+    Eventos. Esta pagina NAO recalcula nenhum numero — so exibe. O export trava
+    se os totais divergirem do relatorio publicado.
+
+    Nao usar /api/transportadoras/eventos-resumo aqui: aquela rota conta
+    touchpoint pela regra do Outreach Engine (empresa + semana ISO + evento, todos
+    os tipos), que da numeros diferentes do relatorio de eventos.
+  -->
+  <style>
+    :root {
+      --ink: #2B3038;
+      --muted: #6B778C;
+      --line: #D4E4F5;
+      --bg: #F4F8FC;
+      --panel: #FFFFFF;
+      --blue: #297ACC;
+      --green: #148F4E;
+      --red: #C93137;
+      --amber: #8B6212;
+      /* baldes do funil — mesma ordem e significado do relatorio */
+      --b-cliente: #148F4E;
+      --b-venda: #0C562F;
+      --b-sql: #297ACC;
+      --b-embarcador: #1B5C99;
+      --b-mql: #8B6212;
+      --b-lead: #A6ADBA;
+      --b-sem_dado: #C4C9D1;
+      --b-outros: #E1E4E8;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--font-sans); color: var(--ink); background: var(--bg); padding: 14px; }
+    h2 { margin: 0 0 6px; font-size: 16px; color: var(--blue); }
+    h3 { margin: 0 0 10px; font-size: 14px; color: var(--ink); }
+    p { margin: 0; }
+    .muted { color: var(--muted); font-size: 13px; }
+    .small { font-size: 11px; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px; margin-bottom: 14px; }
+    .panel-intro { color: var(--muted); font-size: 13px; margin-bottom: 14px; max-width: 980px; line-height: 1.5; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .kpi { background: white; border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 8px; padding: 14px; text-align: center; }
+    .kpi.grow { border-top-color: var(--green); }
+    .kpi.warn { border-top-color: var(--amber); }
+    .kpi-label { font-size: 0.65rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+    .kpi-value { font-size: 1.6rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; font-variant-numeric: tabular-nums; }
+    .kpi-subtitle { font-size: 11px; color: var(--muted); }
+    .note { background: #F8FAFD; border-left: 3px solid var(--line); padding: 10px 12px; border-radius: 4px; font-size: 12px; color: var(--muted); line-height: 1.5; margin-top: 12px; }
+    .note.warn { border-left-color: var(--amber); background: #FDF8EE; }
+
+    .view-switch { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+    .view-switch button { padding: 7px 14px; border: 0; background: white; cursor: pointer; font-size: 13px; color: var(--muted); font-family: inherit; }
+    .view-switch button.active { background: var(--blue); color: white; font-weight: 600; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; color: #404754; background: #F4F8FC; border-bottom: 1px solid var(--line); padding: 9px 8px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; white-space: nowrap; }
+    th.sortable { cursor: pointer; }
+    th.sortable:hover { background: #D4E4F5; }
+    th .grp { display: block; font-size: 0.6rem; color: var(--muted); font-weight: 600; }
+    tr.grupos th { background: white; color: var(--blue); font-size: 0.65rem; letter-spacing: 0.05em; padding: 6px 8px 2px; border-bottom: 0; cursor: default; }
+    th.col-evento, td.col-evento { min-width: 230px; }
+    td { border-bottom: 1px solid #F4F8FC; padding: 9px 8px; vertical-align: top; }
+    tbody tr.clicavel:hover { background: #F8FAFD; cursor: pointer; }
+    tr.selected { background: #D4E4F5 !important; }
+    .num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+    .vazio { color: var(--muted); }
+    .nome { font-weight: 600; }
+    .sub { font-size: 11px; color: var(--muted); }
+    .table-scroll { overflow-x: auto; }
+    .col-sep { border-left: 1px solid var(--line); }
+
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 100px; font-size: 0.72rem; font-weight: 600; background: #F0F1F3; color: #404754; white-space: nowrap; }
+    .badge.efetivo { background: #D0E9DC; color: #0C562F; }
+    .badge.parcial { background: #FAEDD2; color: #8B6212; }
+    .badge.nao_efetivo { background: #F4D6D7; color: #791D21; }
+    .badge.aguardando, .badge.sem_base, .badge.sem_leitura { background: #F0F1F3; color: #404754; }
+    .badge.relacionamento { background: #D0E9DC; color: #0C562F; }
+    .badge.aquisicao { background: #D4E4F5; color: #1B5C99; }
+    .badge.prel { background: white; border: 1px dashed #A6ADBA; color: var(--muted); font-weight: 400; }
+    .badge.completa { background: #D0E9DC; color: #0C562F; }
+    .badge.preliminar { background: #FAEDD2; color: #8B6212; }
+    .badge.sem_data { background: #F0F1F3; color: #404754; }
+
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+    .toolbar input, .toolbar select { padding: 7px 10px; border: 1px solid var(--line); border-radius: 4px; font-size: 13px; font-family: inherit; background: white; color: var(--ink); }
+    .toolbar input { flex: 1; min-width: 200px; }
+    .btn { padding: 7px 12px; border: 1px solid var(--line); background: white; border-radius: 4px; cursor: pointer; font-size: 13px; color: var(--ink); font-family: inherit; }
+    .btn:hover:not(:disabled) { background: var(--bg); }
+    .btn:disabled { color: #A6ADBA; cursor: not-allowed; }
+
+    /* funil: barras horizontais proporcionais ao maior estagio */
+    .funil { display: grid; grid-template-columns: 150px 1fr 70px; gap: 6px 10px; align-items: center; font-size: 13px; }
+    .funil .barra { height: 16px; border-radius: 3px; min-width: 2px; }
+    /* composicao do evento: uma barra empilhada, soma = touchpoints */
+    .stack { display: flex; height: 22px; border-radius: 4px; overflow: hidden; background: #F0F1F3; margin: 6px 0 8px; }
+    .stack i { display: block; height: 100%; }
+    .legenda { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--muted); }
+    .legenda span { display: inline-flex; align-items: center; gap: 5px; }
+    .legenda b { color: var(--ink); font-weight: 600; }
+    .dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+
+    .ev-nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+    .ev-nav select { padding: 7px 10px; border: 1px solid var(--line); border-radius: 4px; font-size: 13px; font-family: inherit; min-width: 320px; max-width: 100%; }
+    .ev-head { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; }
+    .ev-head .titulo { font-size: 18px; font-weight: 600; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card { border: 1px solid var(--line); border-radius: 6px; padding: 14px; background: white; }
+    .card.diag { border-left: 4px solid var(--blue); }
+    .card.diag.efetivo { border-left-color: var(--green); }
+    .card.diag.parcial { border-left-color: var(--amber); }
+    .card.diag.nao_efetivo { border-left-color: var(--red); }
+    .kv { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 4px; }
+    .kv div { background: #F8FAFD; border-radius: 4px; padding: 8px 10px; }
+    .kv .k { font-size: 10px; text-transform: uppercase; color: var(--muted); font-weight: 600; letter-spacing: 0.03em; }
+    .kv .v { font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; }
+    ul.lista { margin: 6px 0 0; padding-left: 18px; font-size: 13px; line-height: 1.55; }
+    ul.lista li { margin-bottom: 4px; }
+    ul.alertas { list-style: none; margin: 6px 0 0; padding: 0; font-size: 13px; }
+    ul.alertas li { padding: 7px 10px; border-radius: 4px; margin-bottom: 6px; border-left: 3px solid var(--line); background: #F8FAFD; line-height: 1.45; }
+    ul.alertas li.critico { border-left-color: var(--red); background: #FBEEEE; }
+    ul.alertas li.atencao { border-left-color: var(--amber); background: #FDF8EE; }
+    ul.alertas li.info { border-left-color: var(--blue); }
+    .vazio-bloco { color: var(--muted); font-size: 13px; padding: 8px 0; }
+    details { border: 1px solid var(--line); border-radius: 6px; margin-top: 10px; background: white; }
+    details > summary { cursor: pointer; padding: 10px 14px; font-size: 13px; font-weight: 600; list-style-position: inside; }
+    details > div { padding: 0 14px 14px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; font-size: 12px; }
+    .chips span { background: #F0F1F3; border-radius: 100px; padding: 2px 10px; }
+    .sec-n { display: inline-block; width: 22px; height: 22px; line-height: 22px; text-align: center; border-radius: 50%; background: var(--blue); color: white; font-size: 12px; margin-right: 8px; }
+    .loading { color: var(--muted); padding: 40px; text-align: center; font-size: 14px; }
+    .error { background: #F4D6D7; color: #791D21; padding: 12px; border-radius: 6px; }
+    .conclusao { margin-bottom: 12px; }
+    .conclusao .t { font-weight: 600; font-size: 13px; margin-bottom: 3px; }
+    .conclusao .x { font-size: 13px; color: #404754; line-height: 1.5; }
+
+    @media (max-width: 1100px) {
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .grid-2 { grid-template-columns: 1fr; }
+      .kv { grid-template-columns: repeat(2, 1fr); }
+      .funil { grid-template-columns: 110px 1fr 56px; }
+    }
+  </style>
+  <link rel="stylesheet" href="/css/thermo-ds.css">
+</head>
+<body>
+  <div id="app"><div class="loading">Carregando desempenho dos eventos…</div></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var BALDES = [
+    ["cliente", "Clientes"], ["venda", "Vendas"], ["sql", "SQL"], ["embarcador", "Embarcadores"],
+    ["mql", "MQL"], ["lead", "Leads"], ["sem_dado", "Sem dado"], ["outros", "Outros"]
+  ];
+  var VEREDITO = {
+    efetivo: "Efetivo", parcial: "Parcial", nao_efetivo: "Não efetivo",
+    aguardando: "Aguardando janela", sem_base: "Sem base", sem_leitura: "Sem leitura"
+  };
+  var PAPEL = { relacionamento: "Relacionamento", aquisicao: "Aquisição" };
+  var PAPEL_SERVE = {
+    relacionamento: "Serve para aprofundar a relação com quem já é cliente. A régua é o crescimento de dias agenciados dos clientes presentes depois do evento.",
+    aquisicao: "Serve para trazer empresas novas. A régua é a qualidade do público não cliente (venda, SQL, embarcador, MQL), os SQL e as vendas."
+  };
+  var JANELA = { completa: "Completa", preliminar: "Preliminar", aguardando: "Aguardando", sem_data: "Sem data" };
+  var CLASSE = {
+    aumento: "Promotor", sem_aumento: "Detrator", sem_mudanca: "Sem mudança",
+    conversao: "Venda", sem_dado_pos: "Aguardando janela"
+  };
+  var SUB = { reativado: "reativado", estagnado: "estagnado", detrator: "queda real", operando: "operando", sem_operacao: "sem operação" };
+  var SITUACAO_SQL = { novo: "Novo", cliente: "Já cliente", venda: "Venda", embarcador_painel: "Embarcador do Painel" };
+
+  var D = null;
+  var eventoSel = null;
+  var funilModo = "empresas";
+  var ordem = { campo: "data", asc: true };
+  var filtros = { q: "", papel: "", tipo: "", veredito: "" };
+
+  function esc(v) {
+    return String(v == null ? "" : v).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function fmtN(v) { return v == null ? "—" : Number(v).toLocaleString("pt-BR"); }
+  function fmtPct(v) { return v == null ? "—" : Math.round(v).toLocaleString("pt-BR") + "%"; }
+  function fmtDelta(v) {
+    if (v == null) return "—";
+    var r = Math.round(v);
+    return (r > 0 ? "+" : "") + r.toLocaleString("pt-BR");
+  }
+  function fmtData(iso) {
+    if (!iso) return "sem data fixa";
+    var p = iso.split("-");
+    return p[2] + "/" + p[1] + "/" + p[0];
+  }
+  function fmtMes(iso) {
+    var nomes = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+    var p = iso.split("-");
+    return nomes[Number(p[1]) - 1] + "/" + p[0].slice(2);
+  }
+  function numCell(v, fmt) {
+    var t = (fmt || fmtN)(v);
+    return '<td class="num' + (v == null || v === 0 ? " vazio" : "") + '">' + t + "</td>";
+  }
+  function badgeVeredito(d) {
+    return '<span class="badge ' + d.veredito + '">' + VEREDITO[d.veredito] + "</span>" +
+      (d.preliminar ? ' <span class="badge prel">preliminar</span>' : "");
+  }
+
+  fetch("/data/eventos-desempenho.json", { credentials: "include" })
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(function (json) {
+      D = json;
+      var comData = D.eventos.filter(function (e) { return e.data; });
+      eventoSel = (comData.length ? comData[comData.length - 1] : D.eventos[0]).evento;
+      render();
+    })
+    .catch(function (err) {
+      document.getElementById("app").innerHTML =
+        '<div class="error">Não foi possível carregar os dados dos eventos (' + esc(err.message) + ").</div>";
+    });
+
+  function render() {
+    var m = D.meta;
+    document.getElementById("app").innerHTML =
+      '<div class="panel">' +
+        "<h2>Desempenho de Eventos</h2>" +
+        '<p class="panel-intro">Para que cada evento serve, se foi efetivo, o que corrigir e quais alertas. ' +
+        "Aqui a unidade é o <b>evento</b>; para acompanhar um cliente, use Target Accounts e Clientes. " +
+        "Números do Relatório de Leads Eventos (versão " + esc(m.versao_relatorio) + ", " + fmtData(m.data_referencia) + "), " +
+        "com último mês fechado em " + fmtMes(m.ultimo_mes_fechado) + ".</p>" +
+        kpisHtml() +
+        '<div class="note warn"><b>Pendências da base:</b> ' + m.pendencias.map(esc).join(" ") + "</div>" +
+      "</div>" +
+      '<div class="panel"><h2><span class="sec-n">1</span>Funil de empresas</h2><div id="funil"></div></div>' +
+      '<div class="panel"><h2><span class="sec-n">2</span>Evento a evento</h2>' +
+        '<p class="panel-intro">Clique numa linha para abrir o diagnóstico do evento. <b>Papel</b>: relacionamento quando pelo menos 50% dos touchpoints são clientes, aquisição nos demais. <b>Público qualificado</b> = (venda + SQL + embarcador + MQL) ÷ touchpoints de não clientes.</p>' +
+        filtrosHtml() + '<div class="table-scroll"><table id="tabela-eventos"></table></div></div>' +
+      '<div class="panel" id="detalhe-evento"><h2><span class="sec-n">3</span>Diagnóstico do evento</h2><div id="detalhe"></div></div>' +
+      '<div class="panel"><h2><span class="sec-n">4</span>Comparação por formato</h2>' +
+        '<p class="panel-intro">Relacionamento conta só os clientes que tiveram o formato como primeiro evento do período (evento-âncora), para não contar a mesma empresa duas vezes — igual à Análise Qualitativa do relatório. Aquisição soma os touchpoints de todos os eventos do formato.</p>' +
+        '<div class="table-scroll">' + formatosHtml() + "</div></div>" +
+      '<div class="panel"><h2><span class="sec-n">5</span>Análise geral</h2>' + analiseGeralHtml() + "</div>";
+
+    renderFunil();
+    renderTabela();
+    renderDetalhe();
+    wireFiltros();
+  }
+
+  function kpisHtml() {
+    var t = D.totais, fe = t.funil_empresas, cp = t.clientes_pre_pos;
+    var cards = [
+      ["Eventos", fmtN(t.eventos), "na base de 25/09/2026", ""],
+      ["Touchpoints", fmtN(t.touchpoints), "1 empresa em 1 evento", ""],
+      ["Participantes", fmtN(t.participantes), "pessoas nas listas dos eventos", ""],
+      ["Empresas únicas", fmtN(t.empresas_unicas), fmtN(fe.cliente) + " clientes · " + fmtN(t.empresas_unicas - fe.cliente - fe.venda) + " não clientes", ""],
+      ["Vendas", fmtN(fe.venda), fmtN(t.vendas_operando) + " já operando", "grow"],
+      ["SQL", fmtN(fe.sql), "+" + fmtN(t.sql_ja_clientes) + " já clientes · só 3 eventos têm lista", ""],
+      ["Público qualificado", fmtPct(t.publico_qualificado_pct), "dos touchpoints de não clientes", "warn"],
+      ["Saldo dos clientes", fmtDelta(t.saldo_d_mes) + " d/mês", cp.promotores + " promotores · " + cp.detratores + " detratores · observado, não causal", "grow"]
+    ];
+    return '<div class="kpi-grid">' + cards.map(function (k) {
+      return '<div class="kpi ' + k[3] + '"><div class="kpi-label">' + k[0] + '</div><div class="kpi-value">' + k[1] +
+        '</div><div class="kpi-subtitle">' + esc(k[2]) + "</div></div>";
+    }).join("") + "</div>";
+  }
+
+  function renderFunil() {
+    var fonte = funilModo === "empresas" ? D.totais.funil_empresas : D.totais.funil_touchpoints;
+    var max = Math.max.apply(null, BALDES.map(function (b) { return fonte[b[0]]; }));
+    var total = BALDES.reduce(function (s, b) { return s + fonte[b[0]]; }, 0);
+    var el = document.getElementById("funil");
+    el.innerHTML =
+      '<div class="toolbar"><div class="view-switch">' +
+        '<button data-f="empresas" class="' + (funilModo === "empresas" ? "active" : "") + '">Empresas únicas</button>' +
+        '<button data-f="touchpoints" class="' + (funilModo === "touchpoints" ? "active" : "") + '">Touchpoints</button>' +
+      '</div><span class="muted">' + (funilModo === "empresas"
+        ? "Cada empresa conta uma vez, no estágio mais avançado em qualquer evento. Soma " + fmtN(total) + "."
+        : "Cada empresa conta em cada evento em que esteve. Soma " + fmtN(total) + ".") + "</span></div>" +
+      '<div class="funil">' + BALDES.map(function (b) {
+        var v = fonte[b[0]];
+        var extra = "";
+        if (funilModo === "empresas" && b[0] === "venda") extra = ' <span class="sub">(' + D.totais.vendas_operando + " operando)</span>";
+        if (funilModo === "empresas" && b[0] === "sql") extra = ' <span class="sub">(+' + D.totais.sql_ja_clientes + " já clientes)</span>";
+        return "<div>" + b[1] + extra + '</div><div><div class="barra" style="width:' + (v / max * 100) + "%;background:var(--b-" + b[0] + ')"></div></div><div class="num">' + fmtN(v) + "</div>";
+      }).join("") + "</div>";
+    el.querySelectorAll("[data-f]").forEach(function (btn) {
+      btn.addEventListener("click", function () { funilModo = btn.getAttribute("data-f"); renderFunil(); });
+    });
+  }
+
+  function filtrosHtml() {
+    var tipos = [];
+    D.eventos.forEach(function (e) { if (tipos.indexOf(e.tipo) < 0) tipos.push(e.tipo); });
+    return '<div class="toolbar">' +
+      '<input type="search" id="f-q" placeholder="Buscar evento…">' +
+      '<select id="f-papel"><option value="">Todos os papéis</option><option value="relacionamento">Relacionamento</option><option value="aquisicao">Aquisição</option></select>' +
+      '<select id="f-tipo"><option value="">Todos os formatos</option>' + tipos.map(function (t) { return '<option value="' + esc(t) + '">' + esc(t) + "</option>"; }).join("") + "</select>" +
+      '<select id="f-veredito"><option value="">Todos os diagnósticos</option>' + Object.keys(VEREDITO).map(function (k) { return '<option value="' + k + '">' + VEREDITO[k] + "</option>"; }).join("") + "</select>" +
+      '<button class="btn" id="btn-csv">⬇ Exportar</button></div>';
+  }
+
+  function wireFiltros() {
+    ["q", "papel", "tipo", "veredito"].forEach(function (k) {
+      var el = document.getElementById("f-" + k);
+      el.addEventListener(k === "q" ? "input" : "change", function () { filtros[k] = el.value; renderTabela(); });
+    });
+    document.getElementById("btn-csv").addEventListener("click", exportCsv);
+  }
+
+  function eventosFiltrados() {
+    var q = filtros.q.trim().toLowerCase();
+    return D.eventos.filter(function (e) {
+      if (q && e.evento.toLowerCase().indexOf(q) < 0 && e.tipo.toLowerCase().indexOf(q) < 0) return false;
+      if (filtros.papel && e.papel !== filtros.papel) return false;
+      if (filtros.tipo && e.tipo !== filtros.tipo) return false;
+      if (filtros.veredito && e.diagnostico.veredito !== filtros.veredito) return false;
+      return true;
+    });
+  }
+
+  var COLUNAS = {
+    evento: function (e) { return e.evento.toLowerCase(); },
+    data: function (e) { return e.data || "9999"; },
+    participantes: function (e) { return e.alcance.participantes; },
+    touchpoints: function (e) { return e.alcance.touchpoints; },
+    pct_clientes: function (e) { return e.alcance.pct_clientes; },
+    vendas: function (e) { return e.aquisicao.vendas; },
+    sql: function (e) { return e.aquisicao.sql_novos; },
+    mql: function (e) { return e.aquisicao.mql; },
+    embarcadores: function (e) { return e.aquisicao.embarcadores; },
+    qualificado: function (e) { return e.aquisicao.publico_qualificado_pct; },
+    analisados: function (e) { return e.relacionamento.clientes_analisados; },
+    taxa: function (e) { return e.relacionamento.taxa_promotores; },
+    delta: function (e) { return e.relacionamento.delta_medio; },
+    reativados: function (e) { return e.relacionamento.reativados; }
+  };
+
+  function renderTabela() {
+    var rows = eventosFiltrados().slice();
+    var f = COLUNAS[ordem.campo];
+    rows.sort(function (a, b) {
+      var va = f(a), vb = f(b);
+      if (va == null && vb == null) return 0;
+      if (va == null) return 1;
+      if (vb == null) return -1;
+      var r = va < vb ? -1 : va > vb ? 1 : 0;
+      return ordem.asc ? r : -r;
+    });
+    function th(campo, rotulo, grupo, cls) {
+      var seta = ordem.campo === campo ? (ordem.asc ? " ▲" : " ▼") : "";
+      return '<th class="sortable ' + (cls || "") + '" data-sort="' + campo + '">' + (grupo ? '<span class="grp">' + grupo + "</span>" : "") + rotulo + seta + "</th>";
+    }
+    var html = '<thead><tr class="grupos"><th colspan="3"></th><th colspan="3" class="col-sep">Alcance</th><th colspan="5" class="col-sep">Aquisição</th><th colspan="4" class="col-sep">Relacionamento</th><th colspan="2" class="col-sep"></th></tr><tr>' +
+      th("evento", "Evento", null, "col-evento") + th("data", "Data") + "<th>Papel</th>" +
+      th("participantes", "Particip.", null, "col-sep") + th("touchpoints", "Touchp.") + th("pct_clientes", "% clientes") +
+      th("vendas", "Vendas", null, "col-sep") + th("sql", "SQL") + th("mql", "MQL") + th("embarcadores", "Embarc.") + th("qualificado", "% qualif.") +
+      th("analisados", "Clientes", null, "col-sep") + th("taxa", "% promot.") + th("delta", "Δ d/mês") + th("reativados", "Reativ.") +
+      '<th class="col-sep">Janela</th><th>Diagnóstico</th></tr></thead><tbody>';
+    html += rows.map(function (e) {
+      var a = e.aquisicao, r = e.relacionamento;
+      var vendas = a.vendas == null ? '<td class="num vazio">—</td>'
+        : '<td class="num col-sep' + (a.vendas ? "" : " vazio") + '">' + a.vendas + (a.vendas ? ' <span class="sub">(' + a.vendas_operando + " op.)</span>" : "") + "</td>";
+      var sql = a.tem_lista_sql ? '<td class="num">' + a.sql_novos + (a.sql_ja_clientes ? ' <span class="sub">(+' + a.sql_ja_clientes + " cli.)</span>" : "") + "</td>"
+        : '<td class="num vazio"><span class="sub">sem lista</span></td>';
+      return '<tr class="clicavel' + (e.evento === eventoSel ? " selected" : "") + '" data-evento="' + esc(e.evento) + '">' +
+        '<td class="col-evento"><div class="nome">' + esc(e.evento) + '</div><div class="sub">' + esc(e.tipo) + "</div></td>" +
+        '<td class="sub" style="white-space:nowrap">' + fmtData(e.data) + "</td>" +
+        '<td><span class="badge ' + e.papel + '">' + PAPEL[e.papel] + "</span></td>" +
+        '<td class="num col-sep">' + fmtN(e.alcance.participantes) + "</td>" +
+        '<td class="num nome">' + fmtN(e.alcance.touchpoints) + "</td>" +
+        '<td class="num">' + fmtPct(e.alcance.pct_clientes) + "</td>" +
+        vendas + sql + numCell(a.mql) + numCell(a.embarcadores) + numCell(a.publico_qualificado_pct, fmtPct) +
+        '<td class="num col-sep">' + fmtN(r.clientes_analisados) + "</td>" +
+        numCell(r.taxa_promotores, fmtPct) + numCell(r.delta_medio, fmtDelta) + numCell(r.reativados) +
+        '<td class="col-sep"><span class="badge ' + e.janela.status + '">' + JANELA[e.janela.status] + "</span></td>" +
+        "<td>" + badgeVeredito(e.diagnostico) + "</td></tr>";
+    }).join("");
+    if (!rows.length) html += '<tr><td colspan="17" class="vazio-bloco" style="text-align:center">Nenhum evento com esses filtros.</td></tr>';
+    html += "</tbody>";
+    var tabela = document.getElementById("tabela-eventos");
+    tabela.innerHTML = html;
+    tabela.querySelectorAll("th[data-sort]").forEach(function (h) {
+      h.addEventListener("click", function () {
+        var c = h.getAttribute("data-sort");
+        ordem = { campo: c, asc: ordem.campo === c ? !ordem.asc : (c === "evento" || c === "data") };
+        renderTabela();
+      });
+    });
+    tabela.querySelectorAll("tr[data-evento]").forEach(function (tr) {
+      tr.addEventListener("click", function () { selecionar(tr.getAttribute("data-evento"), true); });
+    });
+  }
+
+  function selecionar(nome, rolar) {
+    eventoSel = nome;
+    renderTabela();
+    renderDetalhe();
+    if (rolar) document.getElementById("detalhe-evento").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function renderDetalhe() {
+    var idx = D.eventos.findIndex(function (e) { return e.evento === eventoSel; });
+    var e = D.eventos[idx];
+    var el = document.getElementById("detalhe");
+    if (!e) { el.innerHTML = '<div class="vazio-bloco">Selecione um evento.</div>'; return; }
+    var d = e.diagnostico, r = e.relacionamento, a = e.aquisicao;
+
+    var nav = '<div class="ev-nav"><button class="btn" id="ev-prev"' + (idx <= 0 ? " disabled" : "") + '>← Anterior</button>' +
+      '<select id="ev-select">' + D.eventos.map(function (x) {
+        return '<option value="' + esc(x.evento) + '"' + (x.evento === e.evento ? " selected" : "") + ">" + esc(x.evento) + " — " + fmtData(x.data) + " · " + x.alcance.touchpoints + " touchpoints</option>";
+      }).join("") + "</select>" +
+      '<button class="btn" id="ev-next"' + (idx >= D.eventos.length - 1 ? " disabled" : "") + ">Próximo →</button></div>";
+
+    var head = '<div class="ev-head"><div><div class="titulo">' + esc(e.evento) + '</div><div class="muted">' + esc(e.tipo) + " · " + fmtData(e.data) +
+      (e.dias_desde_evento != null ? " · há " + e.dias_desde_evento + " dias" : "") + "</div></div>" +
+      '<div><span class="badge ' + e.papel + '">' + PAPEL[e.papel] + '</span> <span class="badge ' + e.janela.status + '">Janela ' + JANELA[e.janela.status].toLowerCase() +
+      (e.janela.meses_faltando ? " (faltam " + e.janela.meses_faltando + ")" : "") + "</span></div></div>";
+
+    var vr = d.veredito_relatorio;
+    var diag = '<div class="card diag ' + d.veredito + '">' +
+      "<h3>Para que serve</h3>" +
+      '<p style="font-size:13px;line-height:1.5;margin-bottom:12px">' + PAPEL_SERVE[e.papel] + "</p>" +
+      "<h3>Foi efetivo?</h3>" +
+      '<div style="margin-bottom:6px">' + badgeVeredito(d) + "</div>" +
+      '<p style="font-size:13px;line-height:1.5">' + esc(d.motivo) + "</p>" +
+      (vr ? '<p class="sub" style="margin-top:8px">Veredito do relatório (só clientes com este evento como âncora, sinal limpo): <b>' + esc(vr.label) + "</b>" +
+        (vr.delta_sinal_limpo != null ? " · Δ " + fmtDelta(vr.delta_sinal_limpo) + " d/mês" : "") + " · " + vr.clientes_ancora + " cliente(s) âncora.</p>" : "") +
+      "</div>";
+
+    var alertas = '<div class="card"><h3>Alertas</h3>' + (d.alertas.length
+      ? '<ul class="alertas">' + d.alertas.map(function (x) { return '<li class="' + x.nivel + '">' + esc(x.texto) + "</li>"; }).join("") + "</ul>"
+      : '<div class="vazio-bloco">Nenhum alerta para este evento.</div>') +
+      '<h3 style="margin-top:14px">Pontos de correção</h3>' + (d.correcoes.length
+      ? '<ul class="lista">' + d.correcoes.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>"
+      : '<div class="vazio-bloco">Nenhum ponto de correção levantado pelos números.</div>') + "</div>";
+
+    var leitura = '<div class="card" style="margin-top:14px"><h3>Leitura qualitativa do evento</h3>' + (e.leituras.length
+      ? e.leituras.map(function (l) {
+          return '<div style="margin-bottom:10px"><div class="nome" style="font-size:13px">' + esc(l.titulo) + '</div><div class="sub">' + esc(l.fonte) + "</div>" +
+            '<ul class="lista">' + l.pontos.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul></div>";
+        }).join("")
+      : '<div class="vazio-bloco">Ainda sem relatório deste evento. Entra aqui quando o relatório pós-evento for incorporado.</div>') + "</div>";
+
+    var tp = e.alcance.touchpoints || 1;
+    var comp = '<div class="card" style="margin-top:14px"><h3>Quem esteve no evento</h3>' +
+      '<div class="muted">' + fmtN(e.alcance.touchpoints) + " touchpoints · " + fmtN(e.alcance.participantes) + " participantes (" + esc(e.alcance.fonte_participantes) + ")</div>" +
+      '<div class="stack">' + BALDES.map(function (b) {
+        var v = e.baldes[b[0]];
+        return v ? '<i title="' + b[1] + ": " + v + '" style="width:' + (v / tp * 100) + "%;background:var(--b-" + b[0] + ')"></i>' : "";
+      }).join("") + "</div>" +
+      '<div class="legenda">' + BALDES.map(function (b) {
+        return '<span><i class="dot" style="background:var(--b-' + b[0] + ')"></i>' + b[1] + " <b>" + e.baldes[b[0]] + "</b></span>";
+      }).join("") + "</div>" +
+      '<div class="kv" style="margin-top:14px">' +
+        kv("Público qualificado", fmtPct(a.publico_qualificado_pct)) + kv("Fora do público", fmtPct(a.publico_fora_pct)) +
+        kv("Vendas", a.vendas == null ? "—" : a.vendas + " (" + a.vendas_operando + " op.)") + kv("SQL novos", a.tem_lista_sql ? a.sql_novos : "sem lista") +
+      "</div>" +
+      '<h3 style="margin-top:16px">Clientes presentes (pré × pós)</h3>' +
+      '<div class="kv">' +
+        kv("Analisados", r.clientes_analisados) + kv("Promotores", r.promotores + (r.reativados ? " (" + r.reativados + " reativ.)" : "")) +
+        kv("Detratores", r.detratores + (r.detratores ? " (" + r.queda_real + " queda)" : "")) + kv("Sem mudança", r.sem_mudanca) +
+        kv("Taxa de promotores", fmtPct(r.taxa_promotores)) + kv("Δ médio", fmtDelta(r.delta_medio) + " d/mês") +
+        kv("Vendas (pelo evento-âncora)", r.vendas_geradas) + kv("Aguardando janela", r.aguardando_janela) +
+      "</div>" +
+      (r.clientes_analisados && r.ancora_neste_evento < r.clientes_analisados
+        ? '<div class="note">' + (r.clientes_analisados - r.ancora_neste_evento) + " dos " + r.clientes_analisados + " clientes já tinham ido a outro evento antes deste; para eles o pré × pós é relativo ao evento-âncora (coluna da lista abaixo). Só " + r.ancora_neste_evento + " têm este evento como âncora.</div>"
+        : "") +
+      "</div>";
+
+    el.innerHTML = nav + head + '<div class="grid-2">' + diag + alertas + "</div>" + leitura + comp + listasHtml(e);
+
+    document.getElementById("ev-select").addEventListener("change", function (ev) { selecionar(ev.target.value, false); });
+    var prev = document.getElementById("ev-prev"), next = document.getElementById("ev-next");
+    prev.addEventListener("click", function () { if (idx > 0) selecionar(D.eventos[idx - 1].evento, false); });
+    next.addEventListener("click", function () { if (idx < D.eventos.length - 1) selecionar(D.eventos[idx + 1].evento, false); });
+  }
+
+  function kv(k, v) { return '<div><div class="k">' + esc(k) + '</div><div class="v">' + esc(v) + "</div></div>"; }
+
+  function listasHtml(e) {
+    var L = e.listas, out = "";
+    function bloco(titulo, n, corpo, aberto) {
+      return "<details" + (aberto ? " open" : "") + "><summary>" + titulo + " (" + n + ")</summary><div>" + corpo + "</div></details>";
+    }
+    if (L.clientes.length) {
+      out += bloco("Clientes presentes", L.clientes.length,
+        '<div class="table-scroll"><table><thead><tr><th>Empresa</th><th>Resultado</th><th class="num">Média pré</th><th class="num">Média pós</th><th class="num">Δ d/mês</th><th>Evento-âncora</th></tr></thead><tbody>' +
+        L.clientes.map(function (c) {
+          var cls = c.classificacao === "aumento" ? "efetivo" : c.classificacao === "sem_aumento" ? (c.sub_classificacao === "detrator" ? "nao_efetivo" : "parcial") : "";
+          return '<tr><td><div class="nome">' + esc(c.empresa) + '</div><div class="sub">' + (c.tier != null ? "Tier " + esc(c.tier) : "sem tier") + (c.cavaleiro ? " · " + esc(c.cavaleiro) : "") + "</div></td>" +
+            '<td><span class="badge ' + cls + '">' + (CLASSE[c.classificacao] || esc(c.classificacao)) + (c.sub_classificacao ? " · " + (SUB[c.sub_classificacao] || esc(c.sub_classificacao)) : "") + "</span></td>" +
+            numCell(c.media_pre, fmtDelta0) + numCell(c.media_pos, fmtDelta0) + numCell(c.delta_medio, fmtDelta) +
+            '<td class="sub">' + (c.evento_ancora === e.evento ? "este evento" : esc(c.evento_ancora)) + "</td></tr>";
+        }).join("") + "</tbody></table></div>", true);
+    }
+    if (L.vendas.length) {
+      out += bloco("Vendas (conta criada depois do evento)", L.vendas.length,
+        '<table><thead><tr><th>Empresa</th><th>Conta criada em</th><th class="num">Dias após o evento</th><th>Situação</th></tr></thead><tbody>' +
+        L.vendas.map(function (v) {
+          return '<tr><td><div class="nome">' + esc(v.empresa) + "</div>" + (v.nome_px ? '<div class="sub">' + esc(v.nome_px) + "</div>" : "") + "</td>" +
+            "<td>" + fmtData(v.conta_criada_em) + '</td><td class="num">+' + v.dias_ate_conta + "</td>" +
+            "<td>" + (v.operando ? '<span class="badge efetivo">Operando' + (v.status_atual ? " · " + esc(v.status_atual) : "") + "</span>" : '<span class="badge parcial">Sem operação ainda</span>') + "</td></tr>";
+        }).join("") + "</tbody></table>", true);
+    }
+    if (L.sql.length) {
+      out += bloco("SQL", L.sql.length,
+        '<table><thead><tr><th>Empresa</th><th>Contato</th><th>Situação</th></tr></thead><tbody>' +
+        L.sql.map(function (s) {
+          return '<tr><td class="nome">' + esc(s.empresa) + "</td><td>" + esc(s.contato || "—") + "</td><td>" + esc(SITUACAO_SQL[s.situacao] || s.situacao || "—") + "</td></tr>";
+        }).join("") + '</tbody></table><p class="sub" style="margin-top:8px">Telefone e e-mail ficam no Relatório de Leads Eventos.</p>', false);
+    }
+    if (L.mql.length) {
+      out += bloco("MQL", L.mql.length,
+        '<table><thead><tr><th>Empresa</th><th>Por que é MQL</th></tr></thead><tbody>' +
+        L.mql.map(function (m) { return '<tr><td class="nome">' + esc(m.empresa) + '</td><td class="sub">' + esc(m.motivo || "—") + "</td></tr>"; }).join("") +
+        "</tbody></table>", false);
+    }
+    [["embarcadores", "Embarcadores"], ["leads", "Leads"], ["sem_dado", "Sem dado"], ["outros", "Outros (fora do público da PX)"]].forEach(function (p) {
+      var lista = L[p[0]];
+      if (lista.length) out += bloco(p[1], lista.length, '<div class="chips">' + lista.map(function (n) { return "<span>" + esc(n) + "</span>"; }).join("") + "</div>", false);
+    });
+    return out ? '<h3 style="margin-top:18px">Empresas do evento</h3>' + out : "";
+  }
+
+  function fmtDelta0(v) { return v == null ? "—" : Math.round(v).toLocaleString("pt-BR"); }
+
+  function formatosHtml() {
+    return '<table><thead><tr><th>Formato</th><th class="num">Eventos</th>' +
+      '<th class="num col-sep"><span class="grp">Alcance</span>Touchp.</th><th class="num"><span class="grp">Alcance</span>% clientes</th>' +
+      '<th class="num col-sep"><span class="grp">Aquisição</span>Não clientes</th><th class="num"><span class="grp">Aquisição</span>% qualif.</th><th class="num"><span class="grp">Aquisição</span>Vendas</th><th class="num"><span class="grp">Aquisição</span>SQL</th><th class="num"><span class="grp">Aquisição</span>MQL</th>' +
+      '<th class="num col-sep"><span class="grp">Relacionamento</span>Clientes</th><th class="num"><span class="grp">Relacionamento</span>% promot.</th><th class="num"><span class="grp">Relacionamento</span>Δ d/mês</th></tr></thead><tbody>' +
+      D.formatos.map(function (f) {
+        return '<tr><td><div class="nome">' + esc(f.tipo) + '</div><div class="sub">' + f.eventos.map(esc).join(" · ") + "</div></td>" +
+          '<td class="num">' + f.eventos.length + "</td>" +
+          '<td class="num col-sep">' + fmtN(f.touchpoints) + "</td>" + numCell(f.pct_clientes, fmtPct) +
+          '<td class="num col-sep">' + fmtN(f.tp_nao_clientes) + "</td>" + numCell(f.publico_qualificado_pct, fmtPct) + numCell(f.vendas) + numCell(f.sql_novos) + numCell(f.mql) +
+          '<td class="num col-sep">' + fmtN(f.clientes_com_dado) + "</td>" + numCell(f.taxa_promotores, fmtPct) + numCell(f.delta_medio, fmtDelta) + "</tr>";
+      }).join("") + "</tbody></table>" +
+      '<p class="sub" style="margin-top:8px">Clientes = promotores + detratores com o formato como evento-âncora.</p>';
+  }
+
+  function analiseGeralHtml() {
+    var g = D.analise_geral, regras = D.meta.regras_diagnostico;
+    return '<p class="panel-intro">Leitura escrita em ' + fmtData(g.data) + " a partir dos números do relatório. Será revista quando set/26 fechar e conforme os relatórios pós-evento entrarem.</p>" +
+      '<div class="grid-2"><div><h3>Conclusões</h3>' + g.conclusoes.map(function (c) {
+        return '<div class="conclusao"><div class="t">' + esc(c.titulo) + '</div><div class="x">' + esc(c.texto) + "</div></div>";
+      }).join("") + "</div>" +
+      '<div><h3>Recomendações</h3><ul class="lista">' + g.recomendacoes.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" +
+      '<h3 style="margin-top:16px">Ressalvas</h3><ul class="lista">' + g.ressalvas.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div></div>" +
+      "<details><summary>Como o diagnóstico de cada evento é calculado</summary><div>" +
+        '<p style="font-size:13px;margin-bottom:8px">' + esc(regras.papel) + "</p>" +
+        '<div class="grid-2"><div><h3>Eventos de relacionamento</h3><ul class="lista">' + regras.relacionamento.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div>" +
+        '<div><h3>Eventos de aquisição</h3><ul class="lista">' + regras.aquisicao.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul></div></div>" +
+        '<p class="sub" style="margin-top:8px">' + esc(regras.media_taxa_promotores) + " Média atual: " + fmtPct(D.totais.media_taxa_promotores_eventos) + ". Público qualificado geral: " + fmtPct(D.totais.publico_qualificado_pct) + ".</p>" +
+      "</div></details>";
+  }
+
+  function exportCsv() {
+    var cab = ["Evento", "Data", "Formato", "Papel", "Participantes", "Touchpoints", "% clientes", "Vendas", "Vendas operando", "SQL novos", "MQL", "Embarcadores",
+      "% público qualificado", "Clientes analisados", "Promotores", "Reativados", "Detratores", "Taxa de promotores", "Δ médio d/mês", "Janela", "Diagnóstico", "Preliminar"];
+    var linhas = eventosFiltrados().map(function (e) {
+      var a = e.aquisicao, r = e.relacionamento;
+      return [e.evento, e.data || "", e.tipo, PAPEL[e.papel], e.alcance.participantes, e.alcance.touchpoints, e.alcance.pct_clientes,
+        a.vendas, a.vendas_operando, a.tem_lista_sql ? a.sql_novos : "sem lista", a.mql, a.embarcadores, a.publico_qualificado_pct,
+        r.clientes_analisados, r.promotores, r.reativados, r.detratores, r.taxa_promotores, r.delta_medio,
+        JANELA[e.janela.status], VEREDITO[e.diagnostico.veredito], e.diagnostico.preliminar ? "sim" : "não"];
+    });
+    var csv = [cab].concat(linhas).map(function (l) {
+      return l.map(function (v) {
+        var s = v == null ? "" : typeof v === "number" ? String(v).replace(".", ",") : String(v);
+        return /[";\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+      }).join(";");
+    }).join("\n");
+    var blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "desempenho-eventos-" + D.meta.data_referencia + ".csv";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  }
+})();
+</script>
+</body>
+</html>
