@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T20:00:00.363Z",
+  "generatedAt": "2026-09-29T11:43:03.444Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -1861,10 +1861,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmqjsbyci000ek7zwqwobadjt",
+      "id": "cmq9t45r5004ck7o0ey99kd8c",
       "company": {
-        "id": "cmqjsbyci000ek7zwqwobadjt",
-        "name": "LG Electronics Brasil",
+        "id": "cmq9t45r5004ck7o0ey99kd8c",
+        "name": "Samsung Brasil",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
@@ -1889,10 +1889,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45r5004ck7o0ey99kd8c",
+      "id": "cmqjsbyci000ek7zwqwobadjt",
       "company": {
-        "id": "cmq9t45r5004ck7o0ey99kd8c",
-        "name": "Samsung Brasil",
+        "id": "cmqjsbyci000ek7zwqwobadjt",
+        "name": "LG Electronics Brasil",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
@@ -1945,11 +1945,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45p8003lk7o0jcpftg3k",
+      "id": "cmr9oddqj0007k78kfo4omrjz",
       "company": {
-        "id": "cmq9t45p8003lk7o0jcpftg3k",
-        "name": "Cargill",
-        "status": "REPLIED"
+        "id": "cmr9oddqj0007k78kfo4omrjz",
+        "name": "Kenvue",
+        "status": "CONNECTION_ACCEPTED"
       },
       "contact": null,
       "owner": null,
@@ -1959,11 +1959,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmr9oddqj0007k78kfo4omrjz",
+      "id": "cmq9t45p8003lk7o0jcpftg3k",
       "company": {
-        "id": "cmr9oddqj0007k78kfo4omrjz",
-        "name": "Kenvue",
-        "status": "CONNECTION_ACCEPTED"
+        "id": "cmq9t45p8003lk7o0jcpftg3k",
+        "name": "Cargill",
+        "status": "REPLIED"
       },
       "contact": null,
       "owner": null,
@@ -2071,34 +2071,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmruzeiu30003k7touh9wg5wt",
-      "company": {
-        "id": "cmruzeiu30003k7touh9wg5wt",
-        "name": "DHL Supply Chain",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
-      "dueAt": "2026-07-22T18:23:02.307Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmruzeivr0009k7tojgdkszqo",
-      "company": {
-        "id": "cmruzeivr0009k7tojgdkszqo",
-        "name": "Instituto Cisne Norte e Nordeste",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
-      "dueAt": "2026-07-22T18:23:02.307Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmruzeiv00006k7toqbhf78ks",
       "company": {
         "id": "cmruzeiv00006k7toqbhf78ks",
@@ -2113,10 +2085,38 @@
       "severity": "critical"
     },
     {
+      "id": "cmruzeiu30003k7touh9wg5wt",
+      "company": {
+        "id": "cmruzeiu30003k7touh9wg5wt",
+        "name": "DHL Supply Chain",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmruzeix0000ek7to3hmjb3hq",
       "company": {
         "id": "cmruzeix0000ek7to3hmjb3hq",
         "name": "Matec Engenharia",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar post recente e classificar dor logística antes de priorizar abordagem.",
+      "dueAt": "2026-07-22T18:23:02.307Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmruzeivr0009k7tojgdkszqo",
+      "company": {
+        "id": "cmruzeivr0009k7tojgdkszqo",
+        "name": "Instituto Cisne Norte e Nordeste",
         "status": "MAPPED"
       },
       "contact": null,
@@ -2183,10 +2183,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmsdb7ecr000gk7toq83pnfht",
+      "id": "cmsdb7eaf0006k7to2brsei53",
       "company": {
-        "id": "cmsdb7ecr000gk7toq83pnfht",
-        "name": "Ultragaz",
+        "id": "cmsdb7eaf0006k7to2brsei53",
+        "name": "Integralmédica Suplementos Nutricionais",
         "status": "MAPPED"
       },
       "contact": null,
@@ -2197,10 +2197,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmsdb7eaf0006k7to2brsei53",
+      "id": "cmsdb7ecr000gk7toq83pnfht",
       "company": {
-        "id": "cmsdb7eaf0006k7to2brsei53",
-        "name": "Integralmédica Suplementos Nutricionais",
+        "id": "cmsdb7ecr000gk7toq83pnfht",
+        "name": "Ultragaz",
         "status": "MAPPED"
       },
       "contact": null,

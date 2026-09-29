@@ -157,6 +157,7 @@
       <button class="nav-item" data-view="patterns">Estudo de Padrões</button>
       <button class="nav-item" data-view="embarcadores">Painel Embarcadores</button>
       <button class="nav-item" data-view="bid">BID Embarcadores</button>
+      <button class="nav-item" data-view="abm-weekly-follow">Follow Semanal ABM</button>
       <button class="nav-item" data-view="noticias">Notícias do Setor</button>
       <button class="nav-item" data-view="gestao-acessos">Gestão de Acessos</button>
       <div class="nav-label">Compartilhar</div>
@@ -196,6 +197,10 @@
 
       <div id="bid" class="section-view">
         <iframe class="embedded-frame" src="bid-embarcadores.html?embed=1" title="BID Embarcadores"></iframe>
+      </div>
+
+      <div id="abm-weekly-follow" class="section-view">
+        <iframe class="embedded-frame" src="/abm-weekly-follow.html?embed=1" title="Follow Semanal ABM"></iframe>
       </div>
 
       <div id="workday" class="section-view" style="display:none!important">
@@ -265,7 +270,7 @@
     // Esconde as abas que a pessoa nao tem. Isto e UX: quem barra de verdade e o
     // servidor (requirePageAccess), e cada aba e um iframe com URL propria — se
     // esta funcao falhar, o iframe da aba proibida cai em /sem-acesso.html.
-    const VIEW_PANEL = {"weekly":"dashboard-semanal-embarcador","patterns":"estudo-de-padroes-embarcador","workday":"acoes-de-hoje","embarcadores":"painel-embarcadores","bid":"bid-embarcadores","signals":"feed-de-sinais","noticias":"noticias-do-setor","validation":"validacao-linkedin","gestao-acessos":"gestao-de-acessos"};
+    const VIEW_PANEL = {"weekly":"dashboard-semanal-embarcador","patterns":"estudo-de-padroes-embarcador","workday":"acoes-de-hoje","embarcadores":"painel-embarcadores","bid":"bid-embarcadores","abm-weekly-follow":"follow-semanal-abm","signals":"feed-de-sinais","noticias":"noticias-do-setor","validation":"validacao-linkedin","gestao-acessos":"gestao-de-acessos"};
 
     function ativar(view) {
       buttons.forEach((item) => item.classList.toggle("active", item.dataset.view === view));

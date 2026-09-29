@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T20:37:45.168Z",
+  "generatedAt": "2026-09-29T11:43:03.992Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -1560,6 +1560,19 @@
           "activeDecisor": "Luciano Xavier de Miranda"
         },
         {
+          "id": "cmsngud670000k7q0j7ttgbyp",
+          "name": "Profarma",
+          "segment": "Farmacêutico & Saúde",
+          "accountScore": 0,
+          "nextAction": "Contato Thiago",
+          "nextActionDueAt": null,
+          "lastInteractionAt": null,
+          "source": null,
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": null
+        },
+        {
           "id": "cmq9t45oj003bk7o02fgh1kc9",
           "name": "Unilever",
           "segment": null,
@@ -1584,19 +1597,6 @@
           "owner": null,
           "contactCount": 15,
           "activeDecisor": "Elaine Selma"
-        },
-        {
-          "id": "cmsngud670000k7q0j7ttgbyp",
-          "name": "Profarma",
-          "segment": "Farmacêutico & Saúde",
-          "accountScore": 0,
-          "nextAction": "Contato Thiago",
-          "nextActionDueAt": null,
-          "lastInteractionAt": null,
-          "source": null,
-          "owner": null,
-          "contactCount": 4,
-          "activeDecisor": null
         }
       ]
     },

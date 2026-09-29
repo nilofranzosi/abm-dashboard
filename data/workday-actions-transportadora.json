@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T19:44:49.718Z",
+  "generatedAt": "2026-09-28T18:52:26.240Z",
   "highTierNotStarted": [],
   "recentConnectionsSent": [],
   "acceptedConnectionsWithoutMessage": [
@@ -728,6 +728,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey76bf011ck7c4l2ups9ad",
+      "company": {
+        "id": "cmrey76bf011ck7c4l2ups9ad",
+        "name": "SEGURA TRANSPORTES E LOGISTICA",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey734e00tdk7c44ha4114a",
       "company": {
         "id": "cmrey734e00tdk7c44ha4114a",
@@ -1078,6 +1092,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey6vyc00ask7c4kkmxja10",
+      "company": {
+        "id": "cmrey6vyc00ask7c4kkmxja10",
+        "name": "Evidencia Logistica Transportes Ltda",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey6vzh00awk7c4chwof6vu",
       "company": {
         "id": "cmrey6vzh00awk7c4chwof6vu",
@@ -1386,6 +1414,20 @@
       "severity": "warning"
     },
     {
+      "id": "cmrey6y8900i1k7c40gwoxddf",
+      "company": {
+        "id": "cmrey6y8900i1k7c40gwoxddf",
+        "name": "Fantinato Transportes",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
+      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
+      "dueAt": null,
+      "severity": "warning"
+    },
+    {
       "id": "cmrey73ha00u8k7c471fxceys",
       "company": {
         "id": "cmrey73ha00u8k7c471fxceys",
@@ -1460,48 +1502,6 @@
       "company": {
         "id": "cmrey72k400sck7c4buasmdni",
         "name": "Rodomaxlog Armazenagem e Logística Ltda",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey74dg00w7k7c4ayq9rsup",
-      "company": {
-        "id": "cmrey74dg00w7k7c4ayq9rsup",
-        "name": "CSN SÃO PAULO LTDA",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6t7m0021k7c4ojg3tyxa",
-      "company": {
-        "id": "cmrey6t7m0021k7c4ojg3tyxa",
-        "name": "LOG20",
-        "status": "MAPPED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Empresa ativa sem interação registrada há 30 dias ou mais.",
-      "recommendedAction": "Revisar conta, buscar novo gatilho e definir próximo passo.",
-      "dueAt": null,
-      "severity": "warning"
-    },
-    {
-      "id": "cmrey6wvm00dpk7c4bs3o24z9",
-      "company": {
-        "id": "cmrey6wvm00dpk7c4bs3o24z9",
-        "name": "Shift Mobilidade Corporativa e Agenciamento Ltda",
         "status": "MAPPED"
       },
       "contact": null,

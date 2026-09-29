@@ -1,5 +1,65 @@
 [
   {
+    "week": "S40",
+    "date": "2026-09-28",
+    "items": [
+      {
+        "title": "Mercado Livre libera cupom de 18% OFF em itens para casa aconchegante neste domingo",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://seletronic.com.br/cupom-18-off-mercado-livre-casa-aconchegante-27-09-2026/&ct=ga&cd=CAIyHGYyMDU1ZGUyN2NmODIwMjM6Y29tOnB0OkJSOlI&usg=AOvVaw0jZNQMiuPzuGuqbvoMEY6k",
+        "source": "Google Alert - \"Mercado Livre\" logística",
+        "category": "RSS"
+      },
+      {
+        "title": "Ele fará R$ 60 milhões com um &#39;Mercado Livre&#39; para compras públicas de governos | Exame",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://exame.com/negocios/ele-fara-r-60-milhoes-com-um-mercado-livre-para-compras-publicas-de-governos/&ct=ga&cd=CAIyHGYyMDU1ZGUyN2NmODIwMjM6Y29tOnB0OkJSOlI&usg=AOvVaw0XhcMgWlATJ7NUtUmIr_eF",
+        "source": "Google Alert - \"Mercado Livre\" logística",
+        "category": "RSS"
+      },
+      {
+        "title": "Mercado Livre libera cupom de até R$ 200 OFF em tecnologia válido só hoje domingo",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://seletronic.com.br/cupom-200-off-mercado-livre-tecnologia-27-09-2026/&ct=ga&cd=CAIyHGYyMDU1ZGUyN2NmODIwMjM6Y29tOnB0OkJSOlI&usg=AOvVaw36lcubXWlxix6aTo81Xx5-",
+        "source": "Google Alert - \"Mercado Livre\" logística",
+        "category": "RSS"
+      },
+      {
+        "title": "Casas Bahia faz último leilão com máquina de lavar, geladeira e fogão por R$ 250 após fechar lojas",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.portaltemponovo.com.br/casas-bahia-faz-ultimo-leilao-com-maquina-de-lavar-geladeira-e-fogao-por-250-apos-fechar-lojas/&ct=ga&cd=CAIyHDVhNzFhZjQzMmU0ZDljNDM6Y29tOnB0OkJSOlI&usg=AOvVaw0StliVSA2GhDjXvBQtUBqF",
+        "source": "Google Alert - \"Casas Bahia\" logística",
+        "category": "RSS"
+      },
+      {
+        "title": "Unilever Alimentos mantém aposta no Brasil e amplia investimentos",
+        "link": "https://www.google.com/url?rct=j&sa=t&url=https://www.cnnbrasil.com.br/economia/money/negocios/unilever-alimentos-mantem-aposta-no-brasil-e-amplia-investimentos/&ct=ga&cd=CAIyHDVhYmI4YTQ0NDU1NmRkNDM6Y29tOnB0OkJSOlI&usg=AOvVaw3oexEhcBCq0jQUB9USiOtI",
+        "source": "Google Alert - \"Unilever\" expansão operação",
+        "category": "RSS"
+      },
+      {
+        "title": "Amazon Logistics | Amazon.jobs",
+        "link": "https://amazon.jobs/content/pt/teams/transportation-shipping-logistics/na-ops",
+        "source": "Amazon",
+        "category": "ABM_AMAZON"
+      },
+      {
+        "title": "Mercado Livre anuncia cinco novos centros de distribuição e duplica ...",
+        "link": "https://startupi.com.br/mercado-livre-anuncia-cinco-novos-centros-de-distribuicao-e-duplica-capacidade-logistica-no-brasil/",
+        "source": "Mercado Livre / MELI",
+        "category": "ABM_MELI"
+      },
+      {
+        "title": "Cargill acquiring ADM chocolate business - Feedstuffs",
+        "link": "https://www.feedstuffs.com/agribusiness-news/cargill-acquiring-adm-chocolate-business",
+        "source": "Agronegócio",
+        "category": "AGRO"
+      },
+      {
+        "title": "WEF recognises impact of our supply chain tech investments | Unilever",
+        "link": "https://www.unilever.com/news/news-search/2026/wef-recognises-business-impact-of-unilevers-supply-chain-tech-investments/",
+        "source": "Outros ABM",
+        "category": "ABM_OUTROS"
+      }
+    ]
+  },
+  {
     "week": "S39",
     "date": "2026-09-21",
     "items": [
