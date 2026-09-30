@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T11:43:03.444Z",
+  "generatedAt": "2026-09-30T12:00:00.119Z",
   "highTierNotStarted": [
     {
       "id": "raizen-tier-not-started",
@@ -1875,20 +1875,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmqqwt16f000ik7o8il8uzjxj",
-      "company": {
-        "id": "cmqqwt16f000ik7o8il8uzjxj",
-        "name": "Minerva Foods",
-        "status": "DEAL"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
-      "dueAt": "2026-06-25T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmqjsbyci000ek7zwqwobadjt",
       "company": {
         "id": "cmqjsbyci000ek7zwqwobadjt",
@@ -1899,6 +1885,20 @@
       "owner": null,
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-06-25T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqwt16f000ik7o8il8uzjxj",
+      "company": {
+        "id": "cmqqwt16f000ik7o8il8uzjxj",
+        "name": "Minerva Foods",
+        "status": "DEAL"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Responder e avançar conversa (reply recebido no LinkedIn).",
       "dueAt": "2026-06-25T03:00:00.000Z",
       "severity": "critical"
     },
@@ -2029,11 +2029,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmrml4xk4000mk7d0q2vlfbcn",
+      "id": "cmqqxfnzd0018k7o8cfbr68qi",
       "company": {
-        "id": "cmrml4xk4000mk7d0q2vlfbcn",
-        "name": "Mission of Brazil to the European Communities",
-        "status": "MAPPED"
+        "id": "cmqqxfnzd0018k7o8cfbr68qi",
+        "name": "Seara",
+        "status": "MESSAGE_SENT"
       },
       "contact": null,
       "owner": null,
@@ -2043,11 +2043,11 @@
       "severity": "critical"
     },
     {
-      "id": "cmqqxfnzd0018k7o8cfbr68qi",
+      "id": "cmrml4xk4000mk7d0q2vlfbcn",
       "company": {
-        "id": "cmqqxfnzd0018k7o8cfbr68qi",
-        "name": "Seara",
-        "status": "MESSAGE_SENT"
+        "id": "cmrml4xk4000mk7d0q2vlfbcn",
+        "name": "Mission of Brazil to the European Communities",
+        "status": "MAPPED"
       },
       "contact": null,
       "owner": null,
@@ -2071,10 +2071,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmruzeiv00006k7toqbhf78ks",
+      "id": "cmruzeivr0009k7tojgdkszqo",
       "company": {
-        "id": "cmruzeiv00006k7toqbhf78ks",
-        "name": "Realize Human",
+        "id": "cmruzeivr0009k7tojgdkszqo",
+        "name": "Instituto Cisne Norte e Nordeste",
         "status": "MAPPED"
       },
       "contact": null,
@@ -2113,10 +2113,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmruzeivr0009k7tojgdkszqo",
+      "id": "cmruzeiv00006k7toqbhf78ks",
       "company": {
-        "id": "cmruzeivr0009k7tojgdkszqo",
-        "name": "Instituto Cisne Norte e Nordeste",
+        "id": "cmruzeiv00006k7toqbhf78ks",
+        "name": "Realize Human",
         "status": "MAPPED"
       },
       "contact": null,
@@ -2281,76 +2281,6 @@
       "severity": "critical"
     },
     {
-      "id": "cms4m2n2z0006k7fgk379jrkd",
-      "company": {
-        "id": "cms4m2n2z0006k7fgk379jrkd",
-        "name": "ZAMP (Burger King Brasil)",
-        "status": "REPLIED"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmr97qk35000ck7ikdywcuq5k",
-      "company": {
-        "id": "cmr97qk35000ck7ikdywcuq5k",
-        "name": "Campari Group",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmrdgzv4u0007k77wsd8j8pzs",
-      "company": {
-        "id": "cmrdgzv4u0007k77wsd8j8pzs",
-        "name": "FORTLEV",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmsj1qefu0004k7rczetdbsol",
-      "company": {
-        "id": "cmsj1qefu0004k7rczetdbsol",
-        "name": "SHEIN",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmshu8ha5000pk7cc7nz5rf6b",
-      "company": {
-        "id": "cmshu8ha5000pk7cc7nz5rf6b",
-        "name": "Krona Tubos e Conexões",
-        "status": "MESSAGE_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-14T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmqqnb6e00006k7o8zjztmp3u",
       "company": {
         "id": "cmqqnb6e00006k7o8zjztmp3u",
@@ -2393,6 +2323,20 @@
       "severity": "critical"
     },
     {
+      "id": "cms4m2n2z0006k7fgk379jrkd",
+      "company": {
+        "id": "cms4m2n2z0006k7fgk379jrkd",
+        "name": "ZAMP (Burger King Brasil)",
+        "status": "REPLIED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmrl2caf50018k774hmcvgo27",
       "company": {
         "id": "cmrl2caf50018k774hmcvgo27",
@@ -2411,6 +2355,34 @@
       "company": {
         "id": "cmrl2cad1000uk774bixw7047",
         "name": "Grupo DMA / Epa",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmshu8ha5000pk7cc7nz5rf6b",
+      "company": {
+        "id": "cmshu8ha5000pk7cc7nz5rf6b",
+        "name": "Krona Tubos e Conexões",
+        "status": "MESSAGE_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmsj1qefu0004k7rczetdbsol",
+      "company": {
+        "id": "cmsj1qefu0004k7rczetdbsol",
+        "name": "SHEIN",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
@@ -2449,6 +2421,34 @@
       "severity": "critical"
     },
     {
+      "id": "cmrdgzv4u0007k77wsd8j8pzs",
+      "company": {
+        "id": "cmrdgzv4u0007k77wsd8j8pzs",
+        "name": "FORTLEV",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmr97qk35000ck7ikdywcuq5k",
+      "company": {
+        "id": "cmr97qk35000ck7ikdywcuq5k",
+        "name": "Campari Group",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
       "id": "cms611chp001ck7ocsuk2wgs6",
       "company": {
         "id": "cms611chp001ck7ocsuk2wgs6",
@@ -2463,20 +2463,6 @@
       "severity": "critical"
     },
     {
-      "id": "cmqqnssur0009k7o889yyn6m2",
-      "company": {
-        "id": "cmqqnssur0009k7o889yyn6m2",
-        "name": "Votorantim Cimentos",
-        "status": "CONNECTION_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
-      "dueAt": "2026-08-14T12:03:31.600Z",
-      "severity": "critical"
-    },
-    {
       "id": "cmrozuphs000sk7lshtz7m8u5",
       "company": {
         "id": "cmrozuphs000sk7lshtz7m8u5",
@@ -2487,6 +2473,20 @@
       "owner": null,
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-14T12:03:31.600Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqnssur0009k7o889yyn6m2",
+      "company": {
+        "id": "cmqqnssur0009k7o889yyn6m2",
+        "name": "Votorantim Cimentos",
+        "status": "CONNECTION_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Validar vaga de logística e preparar abordagem com gancho de pressão operacional.",
       "dueAt": "2026-08-14T12:03:31.600Z",
       "severity": "critical"
     },
@@ -2575,38 +2575,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmq9t45ou003gk7o0jb6grra2",
+      "id": "cmr9oddp70000k78k8r6rq39u",
       "company": {
-        "id": "cmq9t45ou003gk7o0jb6grra2",
-        "name": "Yara Brasil",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-24T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmrl2cabz000nk7745zclhm0a",
-      "company": {
-        "id": "cmrl2cabz000nk7745zclhm0a",
-        "name": "Rodoil Distribuidora de Combustíveis",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-24T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmshu8ib9005sk7cc4xf313ms",
-      "company": {
-        "id": "cmshu8ib9005sk7cc4xf313ms",
-        "name": "Procter & Gamble",
+        "id": "cmr9oddp70000k78k8r6rq39u",
+        "name": "Tigre S.A.",
         "status": "REPLIED"
       },
       "contact": null,
@@ -2621,20 +2593,6 @@
       "company": {
         "id": "cmqjsbycu000jk7zwdxamw5bu",
         "name": "Americanas",
-        "status": "FOLLOW_UP_SENT"
-      },
-      "contact": null,
-      "owner": null,
-      "reason": "Próxima ação da empresa está vencida.",
-      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-      "dueAt": "2026-08-24T03:00:00.000Z",
-      "severity": "critical"
-    },
-    {
-      "id": "cmqqwnulx000hk7o87yzt0lca",
-      "company": {
-        "id": "cmqqwnulx000hk7o87yzt0lca",
-        "name": "Braskem",
         "status": "FOLLOW_UP_SENT"
       },
       "contact": null,
@@ -2673,6 +2631,34 @@
       "severity": "critical"
     },
     {
+      "id": "cmq9t45ou003gk7o0jb6grra2",
+      "company": {
+        "id": "cmq9t45ou003gk7o0jb6grra2",
+        "name": "Yara Brasil",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-24T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmqqwnulx000hk7o87yzt0lca",
+      "company": {
+        "id": "cmqqwnulx000hk7o87yzt0lca",
+        "name": "Braskem",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-24T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
       "id": "cmqjvk2th0009k7s0e6efvdsp",
       "company": {
         "id": "cmqjvk2th0009k7s0e6efvdsp",
@@ -2687,10 +2673,10 @@
       "severity": "critical"
     },
     {
-      "id": "cmr9oddp70000k78k8r6rq39u",
+      "id": "cmshu8ib9005sk7cc4xf313ms",
       "company": {
-        "id": "cmr9oddp70000k78k8r6rq39u",
-        "name": "Tigre S.A.",
+        "id": "cmshu8ib9005sk7cc4xf313ms",
+        "name": "Procter & Gamble",
         "status": "REPLIED"
       },
       "contact": null,
@@ -2698,6 +2684,34 @@
       "reason": "Próxima ação da empresa está vencida.",
       "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
       "dueAt": "2026-08-24T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmrl2cabz000nk7745zclhm0a",
+      "company": {
+        "id": "cmrl2cabz000nk7745zclhm0a",
+        "name": "Rodoil Distribuidora de Combustíveis",
+        "status": "FOLLOW_UP_SENT"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+      "dueAt": "2026-08-24T03:00:00.000Z",
+      "severity": "critical"
+    },
+    {
+      "id": "cmulccoun000vk76kr85uqqmy",
+      "company": {
+        "id": "cmulccoun000vk76kr85uqqmy",
+        "name": "Ipiranga",
+        "status": "MAPPED"
+      },
+      "contact": null,
+      "owner": null,
+      "reason": "Próxima ação da empresa está vencida.",
+      "recommendedAction": "Revisar notícia de expansão ou movimento de negócio e preparar gancho executivo.",
+      "dueAt": "2026-09-28T14:35:20.000Z",
       "severity": "critical"
     }
   ],
@@ -4709,7 +4723,7 @@
     "highTierNotStarted": 24,
     "recentConnectionsSent": 0,
     "acceptedConnectionsWithoutMessage": 78,
-    "overdueNextActions": 69,
+    "overdueNextActions": 70,
     "staleCompanies30Days": 100,
     "unmatchedInboxThreads": 46,
     "pendingHandoffs": 0,

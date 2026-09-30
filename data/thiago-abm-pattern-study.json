@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T18:33:06.587Z",
+  "generatedAt": "2026-09-29T14:13:35.397Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
@@ -15,13 +15,13 @@
     "companyDealRate": 0.09821428571428571
   },
   "sample": {
-    "activeContacts": 384,
+    "activeContacts": 388,
     "replies": 27,
     "advanced": 33,
     "negatives": 4,
-    "noResponse": 314,
-    "replyRate": 0.0703125,
-    "advancedRate": 0.0859375,
+    "noResponse": 318,
+    "replyRate": 0.06958762886597938,
+    "advancedRate": 0.08505154639175258,
     "avgDaysToFirstReply": 5.7407407407407405
   },
   "bySegment": [
@@ -57,11 +57,11 @@
     },
     {
       "segment": "Alimentos & Bebidas",
-      "total": 20,
+      "total": 19,
       "responded": 1,
       "advanced": 0,
       "negative": 0,
-      "replyRate": 0.05,
+      "replyRate": 0.05263157894736842,
       "advancedRate": 0,
       "avgDaysToFirstReply": 0
     },
@@ -97,12 +97,12 @@
     },
     {
       "segment": "Segmento a classificar",
-      "total": 290,
+      "total": 295,
       "responded": 17,
       "advanced": 13,
       "negative": 4,
-      "replyRate": 0.05862068965517241,
-      "advancedRate": 0.04482758620689655,
+      "replyRate": 0.0576271186440678,
+      "advancedRate": 0.04406779661016949,
       "avgDaysToFirstReply": 7.705882352941177
     },
     {
@@ -139,42 +139,42 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 113,
+      "total": 112,
       "responded": 6,
       "advanced": 8,
       "negative": 0,
-      "replyRate": 0.05309734513274336,
-      "advancedRate": 0.07079646017699115,
+      "replyRate": 0.05357142857142857,
+      "advancedRate": 0.07142857142857142,
       "avgDaysToFirstReply": 0.6666666666666666
     },
     {
       "seniority": "Diretoria / Head",
-      "total": 144,
+      "total": 146,
       "responded": 12,
       "advanced": 17,
       "negative": 2,
-      "replyRate": 0.08333333333333333,
-      "advancedRate": 0.11805555555555555,
+      "replyRate": 0.0821917808219178,
+      "advancedRate": 0.11643835616438356,
       "avgDaysToFirstReply": 3.4166666666666665
     },
     {
       "seniority": "Gerência / Especialista",
-      "total": 60,
+      "total": 61,
       "responded": 3,
       "advanced": 4,
       "negative": 0,
-      "replyRate": 0.05,
-      "advancedRate": 0.06666666666666667,
+      "replyRate": 0.04918032786885246,
+      "advancedRate": 0.06557377049180328,
       "avgDaysToFirstReply": 6.333333333333333
     },
     {
       "seniority": "C-level / VP",
-      "total": 67,
+      "total": 69,
       "responded": 6,
       "advanced": 4,
       "negative": 2,
-      "replyRate": 0.08955223880597014,
-      "advancedRate": 0.05970149253731343,
+      "replyRate": 0.08695652173913043,
+      "advancedRate": 0.057971014492753624,
       "avgDaysToFirstReply": 15.166666666666666
     }
   ],
@@ -191,12 +191,12 @@
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 233,
+      "total": 237,
       "responded": 23,
       "advanced": 24,
       "negative": 3,
-      "replyRate": 0.09871244635193133,
-      "advancedRate": 0.10300429184549356,
+      "replyRate": 0.0970464135021097,
+      "advancedRate": 0.10126582278481013,
       "avgDaysToFirstReply": 4.391304347826087
     },
     {
@@ -243,12 +243,12 @@
   "byTimeBand": [
     {
       "timeBand": "Antes das 08h",
-      "total": 90,
+      "total": 89,
       "responded": 18,
       "advanced": 12,
       "negative": 4,
-      "replyRate": 0.2,
-      "advancedRate": 0.13333333333333333,
+      "replyRate": 0.20224719101123595,
+      "advancedRate": 0.1348314606741573,
       "avgDaysToFirstReply": 4.777777777777778
     },
     {
@@ -283,12 +283,12 @@
     },
     {
       "timeBand": "Sem horário",
-      "total": 235,
+      "total": 240,
       "responded": 0,
       "advanced": 13,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0.05531914893617021,
+      "advancedRate": 0.05416666666666667,
       "avgDaysToFirstReply": null
     }
   ],

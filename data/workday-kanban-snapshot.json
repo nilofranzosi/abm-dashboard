@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T11:43:03.992Z",
+  "generatedAt": "2026-09-30T12:00:01.519Z",
   "columns": [
     {
       "stage": "CONNECTION_SENT",
@@ -1051,6 +1051,19 @@
           "activeDecisor": "Gabriel Dal Sasso"
         },
         {
+          "id": "cmqjsbye70015k7zwh88ujxnp",
+          "name": "PepsiCo",
+          "segment": null,
+          "accountScore": 40,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-08-24T03:00:00.000Z",
+          "lastInteractionAt": "2026-08-17T03:00:00.000Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 4,
+          "activeDecisor": "Eduardo Loyola"
+        },
+        {
           "id": "cmrl2cabz000nk7745zclhm0a",
           "name": "Rodoil Distribuidora de Combustíveis",
           "segment": null,
@@ -1062,19 +1075,6 @@
           "owner": null,
           "contactCount": 5,
           "activeDecisor": "Luciano Demicheli"
-        },
-        {
-          "id": "cmqjsbye70015k7zwh88ujxnp",
-          "name": "PepsiCo",
-          "segment": null,
-          "accountScore": 20,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": "2026-08-24T03:00:00.000Z",
-          "lastInteractionAt": "2026-08-17T03:00:00.000Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 4,
-          "activeDecisor": "Eduardo Loyola"
         },
         {
           "id": "cmqjsbycu000jk7zwdxamw5bu",
@@ -1524,7 +1524,7 @@
           "id": "cmqjsbyd6000ok7zw8yagmcc0",
           "name": "Casas Bahia",
           "segment": null,
-          "accountScore": 880,
+          "accountScore": 900,
           "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
           "nextActionDueAt": "2026-08-13T19:21:33.000Z",
           "lastInteractionAt": "2026-08-26T19:37:23.153Z",
@@ -1560,6 +1560,19 @@
           "activeDecisor": "Luciano Xavier de Miranda"
         },
         {
+          "id": "cmq9t45oj003bk7o02fgh1kc9",
+          "name": "Unilever",
+          "segment": null,
+          "accountScore": 65,
+          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
+          "nextActionDueAt": "2026-09-29T03:27:11.000Z",
+          "lastInteractionAt": "2026-08-24T16:42:20.397Z",
+          "source": "linkedin-thiago-abm-scan",
+          "owner": null,
+          "contactCount": 17,
+          "activeDecisor": "João Nascimento"
+        },
+        {
           "id": "cmsngud670000k7q0j7ttgbyp",
           "name": "Profarma",
           "segment": "Farmacêutico & Saúde",
@@ -1571,19 +1584,6 @@
           "owner": null,
           "contactCount": 4,
           "activeDecisor": null
-        },
-        {
-          "id": "cmq9t45oj003bk7o02fgh1kc9",
-          "name": "Unilever",
-          "segment": null,
-          "accountScore": 45,
-          "nextAction": "Enviar follow-up de cadência ABM no LinkedIn.",
-          "nextActionDueAt": null,
-          "lastInteractionAt": "2026-08-24T16:42:20.397Z",
-          "source": "linkedin-thiago-abm-scan",
-          "owner": null,
-          "contactCount": 17,
-          "activeDecisor": "João Nascimento"
         },
         {
           "id": "cmsswvjfa002sk7ywsi75mbns",

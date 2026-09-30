@@ -2895,7 +2895,7 @@
   },
   {
     "weekKey": "2026-S40",
-    "generatedAt": "2026-09-28T18:33:00.271Z",
+    "generatedAt": "2026-09-29T14:13:31.746Z",
     "sourcePath": "http://127.0.0.1:3000/api/workday/kanban",
     "totalApproached": 120,
     "activePipeline": 112,
@@ -3034,19 +3034,19 @@
         "nextActionDueAt": "2026-08-19T21:05:00.000Z"
       },
       {
-        "company": "Profarma",
+        "company": "Unilever",
         "stage": "DEAL",
-        "contacts": 4,
+        "contacts": 17,
         "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "DEAL",
         "score": 90,
-        "nextActionDueAt": null
+        "nextActionDueAt": "2026-09-29T03:27:11.000Z"
       },
       {
-        "company": "Unilever",
+        "company": "Profarma",
         "stage": "DEAL",
-        "contacts": 17,
+        "contacts": 4,
         "outboundTouchpoints": 0,
         "inboundTouchpoints": 0,
         "bestStatus": "DEAL",
