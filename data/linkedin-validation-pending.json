@@ -1,48 +1,14 @@
 {
-  "generatedAt": "2026-09-29T14:13:40.744Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-29.json",
+  "generatedAt": "2026-09-30T12:25:22.088Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-09-30.json",
   "summary": {
     "total": 9,
     "replied": 0,
-    "companyUnknown": 1,
+    "companyUnknown": 3,
     "overdue": 0,
-    "offList": 8
+    "offList": 6
   },
   "companies": [
-    {
-      "id": "unknown-danilo-yajima",
-      "resolvedCompany": "A apurar",
-      "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
-      ],
-      "contacts": [
-        {
-          "contactName": "Danilo Yajima",
-          "funnelStatus": "FIRST_CONTACT_SENT",
-          "roleOrHeadline": "Supply Planning / Sourcing / Innovation / Customer Service & Logistics / Project Management",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-09-29T03:00:00.000Z",
-          "lastInboundAt": null,
-          "outboundTouchpoints": 1,
-          "inboundMessages": [],
-          "outboundMessages": [
-            {
-              "occurredAt": "2026-09-29T03:00:00.000Z",
-              "body": "Danilo, a PX tem forte atuação nas empresas de bens de consumo. Acredito que temos oportunidades concretas para a operação da Mars."
-            },
-            {
-              "occurredAt": "2026-09-29T03:00:00.000Z",
-              "body": "Vamos marcar uma conversa?"
-            }
-          ],
-          "icpSegment": null
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": null
-    },
     {
       "id": "cliente",
       "resolvedCompany": "Cliente",
@@ -57,17 +23,17 @@
           "roleOrHeadline": "Gerente de Logística e Transporte | Last Mile & Operações | Control Tower | Network Design | Otimização de Supply Chain | Experiência do Cliente | Melhoria Contínua | +€5M em Savings & Excelência em Nível de Serviço",
           "confidence": "Media",
           "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-09-29T03:00:00.000Z",
+          "lastOutboundAt": "2026-09-30T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-09-29T03:00:00.000Z",
+              "occurredAt": "2026-09-30T03:00:00.000Z",
               "body": "Diego, gostaria de te apresentar o Modelo PX de busca de profissionais."
             },
             {
-              "occurredAt": "2026-09-29T03:00:00.000Z",
+              "occurredAt": "2026-09-30T03:00:00.000Z",
               "body": "Vamos marcar uma conversa?"
             }
           ],
@@ -78,41 +44,55 @@
       "icpSegment": null
     },
     {
-      "id": "go-log-transportes",
-      "resolvedCompany": "Go Log Transportes",
+      "id": "unknown-leandro-bandeira-sousa",
+      "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "company-off-list"
+        "company-unknown",
+        "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Moreira Jose",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Executivo de Operações, Logística & Desenvolvimento de Negócios Supply Chain • Transportes • Expansão Nacional • Operações B2B/B2C",
+          "contactName": "Leandro Bandeira Sousa",
+          "funnelStatus": "FIRST_CONTACT_SENT",
+          "roleOrHeadline": "Diretor Sênior de Projetos | Centro de Serviços Compartilhados | Transformação Cultural e Processos | Eficiência Operacional | Operações de Backoffice",
           "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
+          "daysSinceLastOutbound": 0,
+          "lastOutboundAt": "2026-09-30T03:00:00.000Z",
           "lastInboundAt": null,
-          "outboundTouchpoints": 0,
+          "outboundTouchpoints": 1,
           "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": "TRANSPORTADORA"
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-09-30T03:00:00.000Z",
+              "body": "Leandro, queria marcar um momento para apresentar o modelo PX para você, hoje temos atuação em empresas como Ambev e GPA."
+            },
+            {
+              "occurredAt": "2026-09-30T03:00:00.000Z",
+              "body": "Acredito que temos oportunidades concretas para o Grupo Carrefour."
+            },
+            {
+              "occurredAt": "2026-09-30T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": null
         }
       ],
       "reviewedAt": null,
-      "icpSegment": "TRANSPORTADORA"
+      "icpSegment": null
     },
     {
-      "id": "optai",
-      "resolvedCompany": "OPTAI",
+      "id": "unknown-luis-matsuda",
+      "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
+        "company-unknown",
+        "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Diogo Andrade",
+          "contactName": "Luis Matsuda",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Diretor de Operações | Mobilidade | Conectando Estratégia e Execução",
+          "roleOrHeadline": "Executivo de Supply Chain | Logística Integrada | Transportes | Procurement | Customer Experience | Customer Success | Performance e Estratégia B2B",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -127,17 +107,17 @@
       "icpSegment": null
     },
     {
-      "id": "genesys-solucoes-integradas",
-      "resolvedCompany": "Genesys Soluções Integradas",
+      "id": "phx-services-parcel-handling-express",
+      "resolvedCompany": "PHX Services - Parcel Handling Express",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Leoelson da Silva Miranda, MBA, Green Belt.",
+          "contactName": "Ricardo Barbosa",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Cofundador & Diretor Executivo | Transformando desafios logísticos em vantagem competitiva e crescimento | Fulfillment | D2C | E-commerce | B2B | Cross Docking",
+          "roleOrHeadline": "Director Operational PHX CARGO - PARCEL HANDLING EXPRESS.",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -152,17 +132,67 @@
       "icpSegment": null
     },
     {
-      "id": "manpowergroup-brasil",
-      "resolvedCompany": "ManpowerGroup Brasil",
+      "id": "totvs",
+      "resolvedCompany": "TOTVS",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Luiz Gonzaga Bella",
+          "contactName": "Felipe Pervelli",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente Executivo de Operações na ManpowerGroup Brasil | Workforce Solutions, Staffing e Outsourcing | Operações Nacionais e Contas Estratégicas",
+          "roleOrHeadline": "Transformando Negócios com Tecnologia",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "ticket-log",
+      "resolvedCompany": "Ticket Log",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Kauê Miglioranza Santos",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente Nacional de Vendas| Liderança, Desenvolvimento de negócios, Estratégia de marketing",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "datafrete",
+      "resolvedCompany": "DATAFRETE",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Lucas Ricardo Martins",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Head de Receita e Expansão na DATAFRETE | Crescimento previsível em SaaS B2B",
           "confidence": "Alta",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -177,42 +207,18 @@
       "icpSegment": null
     },
     {
-      "id": "transvicon-logistica",
-      "resolvedCompany": "TRANSVICON LOGÍSTICA",
-      "reviewReasons": [
-        "company-off-list"
-      ],
-      "contacts": [
-        {
-          "contactName": "Wanderson Nascimento",
-          "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "--",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": null,
-          "lastOutboundAt": null,
-          "lastInboundAt": null,
-          "outboundTouchpoints": 0,
-          "inboundMessages": [],
-          "outboundMessages": [],
-          "icpSegment": "TRANSPORTADORA"
-        }
-      ],
-      "reviewedAt": null,
-      "icpSegment": "TRANSPORTADORA"
-    },
-    {
-      "id": "empresa-cobli",
-      "resolvedCompany": "empresa Cobli",
+      "id": "universidade-federal-de-santa-catarina",
+      "resolvedCompany": "Universidade Federal de Santa Catarina",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Vinicius Oliveira",
+          "contactName": "Luis Eduardo Werner",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Diretor de Operações da empresa Cobli",
-          "confidence": "Media",
+          "roleOrHeadline": "Business Strategy | Operations | Corporate Turnaround & Crisis Management | Legal Strategy",
+          "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,
@@ -226,17 +232,17 @@
       "icpSegment": null
     },
     {
-      "id": "localiza-co",
-      "resolvedCompany": "Localiza&Co",
+      "id": "unknown-jackson-schneider",
+      "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "icp-unknown",
-        "company-off-list"
+        "company-unknown",
+        "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Carlos Fraga",
+          "contactName": "Jackson Schneider",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Gerente de Operações | Processos Produtivos | Parqueamento de Veículos | Gestão de Frota | Manutenção Automotivo e Pesados |",
+          "roleOrHeadline": "Board Member",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,

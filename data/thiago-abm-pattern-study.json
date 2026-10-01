@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T14:13:35.397Z",
+  "generatedAt": "2026-09-30T12:25:13.026Z",
   "sourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning",
   "dashboardSourcePath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\public\\data\\thiago-abm-weekly-snapshots.json",
   "companySummary": {
@@ -15,14 +15,14 @@
     "companyDealRate": 0.09821428571428571
   },
   "sample": {
-    "activeContacts": 388,
-    "replies": 27,
+    "activeContacts": 391,
+    "replies": 28,
     "advanced": 33,
     "negatives": 4,
-    "noResponse": 318,
-    "replyRate": 0.06958762886597938,
-    "advancedRate": 0.08505154639175258,
-    "avgDaysToFirstReply": 5.7407407407407405
+    "noResponse": 320,
+    "replyRate": 0.07161125319693094,
+    "advancedRate": 0.08439897698209718,
+    "avgDaysToFirstReply": 5.571428571428571
   },
   "bySegment": [
     {
@@ -57,11 +57,11 @@
     },
     {
       "segment": "Alimentos & Bebidas",
-      "total": 19,
+      "total": 21,
       "responded": 1,
       "advanced": 0,
       "negative": 0,
-      "replyRate": 0.05263157894736842,
+      "replyRate": 0.047619047619047616,
       "advancedRate": 0,
       "avgDaysToFirstReply": 0
     },
@@ -97,13 +97,13 @@
     },
     {
       "segment": "Segmento a classificar",
-      "total": 295,
-      "responded": 17,
+      "total": 296,
+      "responded": 18,
       "advanced": 13,
       "negative": 4,
-      "replyRate": 0.0576271186440678,
-      "advancedRate": 0.04406779661016949,
-      "avgDaysToFirstReply": 7.705882352941177
+      "replyRate": 0.060810810810810814,
+      "advancedRate": 0.04391891891891892,
+      "avgDaysToFirstReply": 7.333333333333333
     },
     {
       "segment": "Automotivo & Pneus",
@@ -139,12 +139,12 @@
   "bySeniority": [
     {
       "seniority": "Não identificado",
-      "total": 112,
+      "total": 113,
       "responded": 6,
       "advanced": 8,
       "negative": 0,
-      "replyRate": 0.05357142857142857,
-      "advancedRate": 0.07142857142857142,
+      "replyRate": 0.05309734513274336,
+      "advancedRate": 0.07079646017699115,
       "avgDaysToFirstReply": 0.6666666666666666
     },
     {
@@ -169,13 +169,13 @@
     },
     {
       "seniority": "C-level / VP",
-      "total": 69,
-      "responded": 6,
+      "total": 71,
+      "responded": 7,
       "advanced": 4,
       "negative": 2,
-      "replyRate": 0.08695652173913043,
-      "advancedRate": 0.057971014492753624,
-      "avgDaysToFirstReply": 15.166666666666666
+      "replyRate": 0.09859154929577464,
+      "advancedRate": 0.056338028169014086,
+      "avgDaysToFirstReply": 13.142857142857142
     }
   ],
   "byFunctionArea": [
@@ -191,13 +191,13 @@
     },
     {
       "functionArea": "Supply / Logística / Operações",
-      "total": 237,
-      "responded": 23,
+      "total": 240,
+      "responded": 24,
       "advanced": 24,
       "negative": 3,
-      "replyRate": 0.0970464135021097,
-      "advancedRate": 0.10126582278481013,
-      "avgDaysToFirstReply": 4.391304347826087
+      "replyRate": 0.1,
+      "advancedRate": 0.1,
+      "avgDaysToFirstReply": 4.25
     },
     {
       "functionArea": "Procurement / Suprimentos",
@@ -244,12 +244,12 @@
     {
       "timeBand": "Antes das 08h",
       "total": 89,
-      "responded": 18,
+      "responded": 19,
       "advanced": 12,
       "negative": 4,
-      "replyRate": 0.20224719101123595,
+      "replyRate": 0.21348314606741572,
       "advancedRate": 0.1348314606741573,
-      "avgDaysToFirstReply": 4.777777777777778
+      "avgDaysToFirstReply": 4.578947368421052
     },
     {
       "timeBand": "12h-17h59",
@@ -283,12 +283,12 @@
     },
     {
       "timeBand": "Sem horário",
-      "total": 240,
+      "total": 243,
       "responded": 0,
       "advanced": 13,
       "negative": 0,
       "replyRate": 0,
-      "advancedRate": 0.05416666666666667,
+      "advancedRate": 0.053497942386831275,
       "avgDaysToFirstReply": null
     }
   ],

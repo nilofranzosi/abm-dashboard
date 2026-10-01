@@ -21,6 +21,10 @@
          do piso 8. Nao e token de status desta pagina (verde/vermelho) — evento
          nao e bom nem ruim, e um momento. */
       --evento: #8B6212;
+      /* Visita GS: verde-azulado, distinto do ambar do evento de Marketing e do azul
+         da linha de dados. Alem da cor, a visita usa forma propria (balao quadrado
+         e losango no eixo) para nao depender so de matiz. */
+      --visita: #0E7C86;
     }
     * { box-sizing: border-box; }
     body { margin: 0; font-family:var(--font-sans); color: var(--ink); background: var(--bg); padding: 14px; }
@@ -29,7 +33,7 @@
     p { margin: 0; }
     .muted { color: var(--muted); font-size: 13px; }
     .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px; margin-bottom: 14px; }
-    .kpi-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 14px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 14px; }
     .kpi { background: white; border: 1px solid var(--line); border-top: 3px solid #297ACC; border-radius: 8px; padding: 16px; text-align: center; }
     .kpi-label { font-size: 0.65rem; font-weight: 600; color: #6B778C; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
     .kpi-value { font-size: 1.75rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
@@ -65,9 +69,12 @@
     .chart-tip { position: absolute; z-index: 5; pointer-events: none; background: var(--ink); color: white; padding: 6px 9px; border-radius: 4px; font-size: 12px; line-height: 1.35; max-width: 220px; box-shadow: 0 2px 8px rgba(23,32,51,.24); }
     .chart-tip[hidden] { display: none; }
     .chart-tip .tip-data { color: #C4C9D1; font-size: 11px; }
-    .timeline { max-height: 250px; overflow-y: auto; }
+    .timeline { max-height: 450px; overflow-y: auto; }
     .timeline-item { padding: 8px 12px; border-left: 3px solid var(--blue); margin-bottom: 8px; background: #F8FAFD; display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: start; }
     .timeline-item.no-grafico { border-left-color: var(--evento); }
+    .timeline-item.no-grafico.visita { border-left-color: var(--visita); }
+    .timeline-num.visita { background: var(--visita); border-radius: 4px; }
+    .key-visita { width: 9px; height: 9px; background: var(--visita); transform: rotate(45deg); }
     .timeline-num { grid-row: span 2; width: 20px; height: 20px; border-radius: 50%; background: var(--evento); color: white; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
     .timeline-num.fora { background: #E1E4E8; color: var(--muted); }
     .timeline-item-date { font-size: 0.75rem; color: var(--muted); font-weight: 600; text-transform: uppercase; }
@@ -125,7 +132,8 @@
               <th style="width: 50px; text-align: center;">#</th>
               <th onclick="sortTable('company')">Cliente</th>
               <th onclick="sortTable('contractDays')">Dias Agenciados</th>
-              <th onclick="sortTable('touchpoints')">Touchpoints</th>
+              <th onclick="sortTable('touchpoints')">Touchpoints Marketing</th>
+              <th onclick="sortTable('visitas')">Visitas GS</th>
               <th onclick="sortTable('tier')">Tier</th>
               <th onclick="sortTable('qualification')">Status</th>
               <th onclick="sortTable('trend')">Tendência</th>
@@ -227,7 +235,8 @@
       MESSAGE_SENT: 'Mensagens enviadas',
       REPLY_RECEIVED: 'Respostas recebidas',
       EVENT_ATTENDED: 'Presenças em evento',
-      SUPERCASE: 'Supercase (case gravado na empresa)'
+      SUPERCASE: 'Supercase (case gravado na empresa)',
+      VISITA_GS: 'Visitas GS'
     };
 
     function escapeHtml(text) {
@@ -314,7 +323,7 @@
           return;
         }
         tbody.innerHTML = rows.map(row => {
-          const periodo = row.recorrencia === 1
+          const periodo = fmtDataEvento(row.primeiraEdicao) === fmtDataEvento(row.ultimaEdicao)
             ? fmtDataEvento(row.primeiraEdicao)
             : `${fmtDataEvento(row.primeiraEdicao)} – ${fmtDataEvento(row.ultimaEdicao)}`;
           const detalhe = row.edicoes
@@ -436,7 +445,9 @@
       const totalDias = valores.reduce((sum, d) => sum + (d || 0), 0);
       const comDias = valores.filter(d => d !== null).length;
 
-      const totalTouchpoints = data.rows.reduce((sum, r) => sum + r.touchpointsTotal, 0);
+      const totalTouchpoints = data.rows.reduce((sum, r) => sum + r.touchpointsMarketing, 0);
+      const totalVisitasGs = data.rows.reduce((sum, r) => sum + r.visitasGs, 0);
+      const comVisitaGs = data.rows.filter(r => r.visitasGs > 0).length;
       const comTouchpoint = data.totais.comTouchpoint;
 
       // Tendencia consolidada tambem mes a mes: total do mes selecionado contra
@@ -472,9 +483,14 @@
           <div class="kpi-subtitle">${fmt(comDias)} com dias no mês</div>
         </div>
         <div class="kpi">
-          <div class="kpi-label">Touchpoints</div>
+          <div class="kpi-label">Touchpoints Marketing</div>
           <div class="kpi-value">${fmt(totalTouchpoints)}</div>
           <div class="kpi-subtitle">Em ${fmt(comTouchpoint)} clientes</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Visitas GS</div>
+          <div class="kpi-value">${fmt(totalVisitasGs)}</div>
+          <div class="kpi-subtitle">Em ${fmt(comVisitaGs)} clientes</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">Cobertura ABM</div>
@@ -517,7 +533,7 @@
         if (!casaFiltro(filterTrend, classificarTendencia(row))) return false;
         // Conta TODOS os tipos de touchpoint, nao so evento — "sem nenhum
         // touchpoint" aqui quer dizer conta que nunca foi tocada por nada.
-        if (!casaFiltro(filterTouchpoints, row.touchpointsTotal > 0 ? 'com' : 'sem')) return false;
+        if (!casaFiltro(filterTouchpoints, row.touchpointsMarketing > 0 ? 'com' : 'sem')) return false;
         if (filterComDias && diasDoMes(row) === null) return false;
         return true;
       });
@@ -535,8 +551,11 @@
           aVal = diasDoMes(a) ?? -1;
           bVal = diasDoMes(b) ?? -1;
         } else if (sortBy === 'touchpoints') {
-          aVal = a.touchpointsTotal;
-          bVal = b.touchpointsTotal;
+          aVal = a.touchpointsMarketing;
+          bVal = b.touchpointsMarketing;
+        } else if (sortBy === 'visitas') {
+          aVal = a.visitasGs;
+          bVal = b.visitasGs;
         } else if (sortBy === 'tier') {
           aVal = a.tier || 999;
           bVal = b.tier || 999;
@@ -571,7 +590,8 @@
           <td style="text-align: center; font-weight: 600; color: #6B778C;">${page * PAGE_SIZE + idx + 1}</td>
           <td><strong>${escapeHtml(row.name)}</strong></td>
           <td>${dias === null ? '<span class="muted">—</span>' : fmt(dias)}</td>
-          <td><span class="tp-count ${row.touchpointsTotal === 0 ? 'zero' : ''}">${row.touchpointsTotal}</span></td>
+          <td><span class="tp-count ${row.touchpointsMarketing === 0 ? 'zero' : ''}">${row.touchpointsMarketing}</span></td>
+          <td><span class="tp-count ${row.visitasGs === 0 ? 'zero' : ''}" style="${row.visitasGs > 0 ? 'color: var(--visita);' : ''}">${row.visitasGs}</span></td>
           <td>${row.tier || '—'}</td>
           <td><span class="status-badge ${statusClass}">${row.status || '—'}</span></td>
           <td><span class="${trendClass}">${trendSymbol} ${fmt(Math.abs(trend))}</span></td>
@@ -649,13 +669,19 @@
         container.innerHTML = '<div class="empty">Nenhum touchpoint registrado</div>';
         return;
       }
+      // Marketing e Visita GS separados: o numero grande e o de Marketing, e a
+      // visita vem em bloco proprio para nao se misturar com os canais.
       const linhas = Object.entries(row.touchpointsPorTipo)
+        .filter(([tipo]) => tipo !== 'VISITA_GS')
         .sort((a, b) => b[1] - a[1])
         .map(([tipo, n]) => `<div>${escapeHtml(TIPO_LABEL[tipo] || tipo)}</div><div>${n}</div>`)
         .join('');
       container.innerHTML = `
-        <div style="font-size:28px;font-weight:600;color:#297ACC;margin-top:4px">${row.touchpointsTotal}</div>
+        <div class="muted" style="font-size:11px;margin-top:4px">Marketing</div>
+        <div style="font-size:28px;font-weight:600;color:#297ACC">${row.touchpointsMarketing}</div>
         <div class="tp-breakdown">${linhas}</div>
+        <div class="muted" style="font-size:11px;margin-top:10px">Visitas GS</div>
+        <div style="font-size:28px;font-weight:600;color:var(--visita)">${row.visitasGs}</div>
       `;
     }
 
@@ -686,11 +712,21 @@
     // numero da marca e o numero da lista serem sempre o mesmo evento.
     let eventosDoGrafico = [];
 
+    // Visita GS (Growth/Success no cliente) e Evento de Marketing sao coisas
+    // distintas: as duas colunas e as cores do grafico as separam.
+    function ehVisitaGs(evento) { return evento.eventType === 'VISITA_GS'; }
+    function contarPresencas(row) {
+      const lista = row.eventos || [];
+      const visitas = lista.filter(ehVisitaGs).length;
+      return { marketing: lista.length - visitas, visitas };
+    }
+
     function prepararEventos(row) {
       eventosDoGrafico = (row.eventos || []).map((e, i) => ({
         numero: i + 1,
         eventName: e.eventName,
         occurredAt: e.occurredAt,
+        visita: ehVisitaGs(e),
         pos: posicaoNoGrafico(e.occurredAt)
       }));
     }
@@ -737,16 +773,25 @@
           ctx.moveTo(x, chartArea.top + 16);
           ctx.lineTo(x, chartArea.bottom);
           ctx.lineWidth = 1;
-          ctx.strokeStyle = 'rgba(181, 71, 8, 0.45)';
+          ctx.strokeStyle = evento.visita ? 'rgba(14, 124, 134, 0.45)' : 'rgba(181, 71, 8, 0.45)';
           ctx.stroke();
 
           // Triangulo apontando para cima, apoiado no eixo
+          const cor = evento.visita ? '#0E7C86' : '#8B6212';
           ctx.beginPath();
-          ctx.moveTo(x, chartArea.bottom - 8);
-          ctx.lineTo(x - 5, chartArea.bottom);
-          ctx.lineTo(x + 5, chartArea.bottom);
+          if (evento.visita) {
+            // Losango: forma propria da Visita GS no eixo
+            ctx.moveTo(x, chartArea.bottom - 10);
+            ctx.lineTo(x + 5, chartArea.bottom - 5);
+            ctx.lineTo(x, chartArea.bottom);
+            ctx.lineTo(x - 5, chartArea.bottom - 5);
+          } else {
+            ctx.moveTo(x, chartArea.bottom - 8);
+            ctx.lineTo(x - 5, chartArea.bottom);
+            ctx.lineTo(x + 5, chartArea.bottom);
+          }
           ctx.closePath();
-          ctx.fillStyle = '#8B6212';
+          ctx.fillStyle = cor;
           ctx.fill();
 
           // Balao numerado. Quando dois eventos caem quase no mesmo x, empilha
@@ -759,8 +804,13 @@
           evento._y = y;
 
           ctx.beginPath();
-          ctx.arc(x, y, 9, 0, Math.PI * 2);
-          ctx.fillStyle = '#8B6212';
+          if (evento.visita) {
+            // Balao quadrado para a Visita GS; circulo para Evento de Marketing
+            ctx.rect(x - 8, y - 8, 16, 16);
+          } else {
+            ctx.arc(x, y, 9, 0, Math.PI * 2);
+          }
+          ctx.fillStyle = cor;
           ctx.fill();
           // Anel na cor da superficie: mantem o balao legivel onde cruza a linha
           ctx.lineWidth = 2;
@@ -788,10 +838,19 @@
         return;
       }
 
-      key.innerHTML = `
-        <span><i class="key-linha"></i> Dias agenciados</span>
-        <span><i class="key-evento"></i> Evento (${noGrafico} na janela${fora > 0 ? `, ${fora} fora` : ''})</span>
-      `;
+      const dentro = eventosDoGrafico.filter((e) => e.pos !== null);
+      const visitasNaJanela = dentro.filter((e) => e.visita).length;
+      const eventosNaJanela = dentro.length - visitasNaJanela;
+      const visitasFora = eventosDoGrafico.filter((e) => e.visita && e.pos === null).length;
+      const eventosFora = fora - visitasFora;
+      const partes = ['<span><i class="key-linha"></i> Dias agenciados</span>'];
+      if (eventosNaJanela + eventosFora > 0) {
+        partes.push(`<span><i class="key-evento"></i> Evento de Marketing (${eventosNaJanela} na janela${eventosFora > 0 ? `, ${eventosFora} fora` : ''})</span>`);
+      }
+      if (visitasNaJanela + visitasFora > 0) {
+        partes.push(`<span><i class="key-visita"></i> Visita GS (${visitasNaJanela} na janela${visitasFora > 0 ? `, ${visitasFora} fora` : ''})</span>`);
+      }
+      key.innerHTML = partes.join('');
     }
 
     // Tooltip proprio dos marcadores: o do Chart.js so enxerga pontos do
@@ -910,8 +969,8 @@
       container.innerHTML = eventosDoGrafico.map(e => {
         const dentro = e.pos !== null;
         return `
-        <div class="timeline-item ${dentro ? 'no-grafico' : ''}">
-          <div class="timeline-num ${dentro ? '' : 'fora'}">${e.numero}</div>
+        <div class="timeline-item ${dentro ? 'no-grafico' : ''} ${e.visita ? 'visita' : ''}">
+          <div class="timeline-num ${dentro ? '' : 'fora'} ${e.visita ? 'visita' : ''}">${e.numero}</div>
           <div class="timeline-item-date">${new Date(e.occurredAt).toLocaleDateString('pt-BR')}</div>
           <div class="timeline-item-event">
             ${escapeHtml(e.eventName)}

@@ -22,6 +22,10 @@
          nao e bom nem ruim, e um momento. Mesma cor da aba Clientes: as duas
          abas mostram a mesma marca, entao contam a mesma historia. */
       --evento: #8B6212;
+      /* Visita GS: verde-azulado, distinto do ambar do evento de Marketing e do azul
+         da linha de dados. Alem da cor, a visita usa forma propria (balao quadrado
+         e losango no eixo) para nao depender so de matiz. */
+      --visita: #0E7C86;
     }
     * { box-sizing: border-box; }
     body { margin: 0; font-family:var(--font-sans); color: var(--ink); background: var(--bg); padding: 14px; }
@@ -64,9 +68,12 @@
     .chart-tip { position: absolute; z-index: 5; pointer-events: none; background: var(--ink); color: white; padding: 6px 9px; border-radius: 4px; font-size: 12px; line-height: 1.35; max-width: 220px; box-shadow: 0 2px 8px rgba(23,32,51,.24); }
     .chart-tip[hidden] { display: none; }
     .chart-tip .tip-data { color: #C4C9D1; font-size: 11px; }
-    .timeline { max-height: 250px; overflow-y: auto; }
+    .timeline { max-height: 450px; overflow-y: auto; }
     .timeline-item { padding: 8px 12px; border-left: 3px solid var(--blue); margin-bottom: 8px; background: #F8FAFD; display: grid; grid-template-columns: auto 1fr; gap: 0 10px; align-items: start; }
     .timeline-item.no-grafico { border-left-color: var(--evento); }
+    .timeline-item.no-grafico.visita { border-left-color: var(--visita); }
+    .timeline-num.visita { background: var(--visita); border-radius: 4px; }
+    .key-visita { width: 9px; height: 9px; background: var(--visita); transform: rotate(45deg); }
     .timeline-num { grid-row: span 2; width: 20px; height: 20px; border-radius: 50%; background: var(--evento); color: white; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
     .timeline-num.fora { background: #E1E4E8; color: var(--muted); }
     .timeline-item-date { font-size: 0.75rem; color: var(--muted); font-weight: 600; text-transform: uppercase; }
@@ -124,7 +131,8 @@
               <th onclick="sortTable('health')">Saúde</th>
               <th style="text-align: right;">Alvo</th>
               <th onclick="sortTable('status')">Status Operacional (%)</th>
-              <th onclick="sortTable('events')">Eventos</th>
+              <th onclick="sortTable('events')">Eventos Marketing</th>
+              <th onclick="sortTable('visitas')">Visitas GS</th>
               <th onclick="sortTable('tier')">Tier</th>
               <th onclick="sortTable('qualification')">Status</th>
               <th onclick="sortTable('origem')">Origem</th>
@@ -355,7 +363,7 @@
           return;
         }
         tbody.innerHTML = rows.map(row => {
-          const periodo = row.recorrencia === 1
+          const periodo = fmtDataEvento(row.primeiraEdicao) === fmtDataEvento(row.ultimaEdicao)
             ? fmtDataEvento(row.primeiraEdicao)
             : `${fmtDataEvento(row.primeiraEdicao)} – ${fmtDataEvento(row.ultimaEdicao)}`;
           // Tooltip com as edicoes: sem ele a compilacao esconde de qual etapa
@@ -593,7 +601,7 @@
       const pctBaseGeralTexto = pctBaseGeral === null
         ? '—'
         : `${pctBaseGeral.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}%`;
-      const withEvents = data.rows.filter(r => r.eventos?.length > 0).length;
+      const withEvents = data.rows.filter(r => contarPresencas(r).marketing > 0).length;
       const evaluated = data.rows.filter(r => r.companyId !== null).length;
       const eventCoverage = evaluated > 0 ? Math.round((withEvents / evaluated) * 100) : 0;
 
@@ -692,7 +700,7 @@
 
         // Filtro por quantidade de eventos (0, 1, 2, 3, 4+)
         if (filterEventosCount.length > 0) {
-          const eventCount = row.eventos?.length || 0;
+          const eventCount = contarPresencas(row).marketing;
           const countStr = eventCount >= 4 ? '4+' : String(eventCount);
           if (!filterEventosCount.includes(countStr)) return false;
         }
@@ -727,8 +735,11 @@
           aVal = order[healthFor(a)?.status] ?? 3;
           bVal = order[healthFor(b)?.status] ?? 3;
         } else if (sortBy === 'events') {
-          aVal = a.eventos?.length || 0;
-          bVal = b.eventos?.length || 0;
+          aVal = contarPresencas(a).marketing;
+          bVal = contarPresencas(b).marketing;
+        } else if (sortBy === 'visitas') {
+          aVal = contarPresencas(a).visitas;
+          bVal = contarPresencas(b).visitas;
         } else if (sortBy === 'tier') {
           aVal = a.tier || 999;
           bVal = b.tier || 999;
@@ -766,7 +777,7 @@
         const monthTrend = row.trend?.find(t => t.month === selectedMonth);
         const contractDaysThisMonth = monthTrend?.contractDays || 0;
         const pct = row.alvo > 0 ? Math.round((contractDaysThisMonth / row.alvo) * 100) : 0;
-        const eventCount = row.eventos?.length || 0;
+        const { marketing: eventCount, visitas: visitCount } = contarPresencas(row);
         const trend = trendDoMes(row);
         const trendClass = trend > 0 ? 'trend-up' : trend < 0 ? 'trend-down' : 'trend-flat';
         const trendSymbol = trend > 0 ? '↑' : trend < 0 ? '↓' : '→';
@@ -783,6 +794,7 @@
           <td style="text-align: right; font-weight: 600; color: #297ACC;">${fmt(row.alvo)}</td>
           <td>${pct}% <span class="muted" style="font-size:11px">(${fmt(contractDaysThisMonth)} dias)</span></td>
           <td><span class="status-badge ${eventCount > 0 ? 'positive' : 'negative'}">${eventCount} evento${eventCount !== 1 ? 's' : ''}</span></td>
+          <td><span class="status-badge ${visitCount > 0 ? 'info' : ''}">${visitCount} visita${visitCount !== 1 ? 's' : ''}</span></td>
           <td>${row.tier || '—'}</td>
           <td><span class="status-badge ${row.status ? 'info' : ''}">${row.status || '—'}</span></td>
           <td>${row.origem || '—'}</td>
@@ -827,14 +839,14 @@
       const monthToUse = selectedMonth || data.trendMonths?.[data.trendMonths.length - 1] || '2026-08-01';
 
       // Gerar CSV com apenas as linhas visíveis
-      const headers = ['#', 'Empresa', 'Origem', 'Faixa (Ago)', 'Movimento', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade', 'Dias (Ago)', 'Gap p/ Meta'];
+      const headers = ['#', 'Empresa', 'Origem', 'Faixa (Ago)', 'Movimento', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos Marketing', 'Visitas GS', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade', 'Dias (Ago)', 'Gap p/ Meta'];
       const csvLines = [headers.join(',')];
 
       visibleRows.forEach((row, idx) => {
         const monthTrend = row.trend?.find(t => t.month === monthToUse);
         const contractDaysThisMonth = monthTrend?.contractDays || 0;
         const pct = row.alvo > 0 ? Math.round((contractDaysThisMonth / row.alvo) * 100) : 0;
-        const eventCount = row.eventos?.length || 0;
+        const { marketing: eventCount, visitas: visitCount } = contarPresencas(row);
         const trend = trendDoMes(row);
         const trendSymbol = trend > 0 ? '↑' : trend < 0 ? '↓' : '→';
 
@@ -847,6 +859,7 @@
           pct,
           contractDaysThisMonth,
           eventCount,
+          visitCount,
           row.tier || '—',
           row.status || '—',
           `"${trendSymbol} ${Math.abs(trend)}"`,
@@ -946,11 +959,21 @@
     // numero da marca e o numero da lista serem sempre o mesmo evento.
     let eventosDoGrafico = [];
 
+    // Visita GS (Growth/Success no cliente) e Evento de Marketing sao coisas
+    // distintas: as duas colunas e as cores do grafico as separam.
+    function ehVisitaGs(evento) { return evento.eventType === 'VISITA_GS'; }
+    function contarPresencas(row) {
+      const lista = row.eventos || [];
+      const visitas = lista.filter(ehVisitaGs).length;
+      return { marketing: lista.length - visitas, visitas };
+    }
+
     function prepararEventos(row) {
       eventosDoGrafico = (row.eventos || []).map((e, i) => ({
         numero: i + 1,
         eventName: e.eventName,
         occurredAt: e.occurredAt,
+        visita: ehVisitaGs(e),
         pos: posicaoNoGrafico(e.occurredAt)
       }));
     }
@@ -997,16 +1020,25 @@
           ctx.moveTo(x, chartArea.top + 16);
           ctx.lineTo(x, chartArea.bottom);
           ctx.lineWidth = 1;
-          ctx.strokeStyle = 'rgba(181, 71, 8, 0.45)';
+          ctx.strokeStyle = evento.visita ? 'rgba(14, 124, 134, 0.45)' : 'rgba(181, 71, 8, 0.45)';
           ctx.stroke();
 
           // Triangulo apontando para cima, apoiado no eixo
+          const cor = evento.visita ? '#0E7C86' : '#8B6212';
           ctx.beginPath();
-          ctx.moveTo(x, chartArea.bottom - 8);
-          ctx.lineTo(x - 5, chartArea.bottom);
-          ctx.lineTo(x + 5, chartArea.bottom);
+          if (evento.visita) {
+            // Losango: forma propria da Visita GS no eixo
+            ctx.moveTo(x, chartArea.bottom - 10);
+            ctx.lineTo(x + 5, chartArea.bottom - 5);
+            ctx.lineTo(x, chartArea.bottom);
+            ctx.lineTo(x - 5, chartArea.bottom - 5);
+          } else {
+            ctx.moveTo(x, chartArea.bottom - 8);
+            ctx.lineTo(x - 5, chartArea.bottom);
+            ctx.lineTo(x + 5, chartArea.bottom);
+          }
           ctx.closePath();
-          ctx.fillStyle = '#8B6212';
+          ctx.fillStyle = cor;
           ctx.fill();
 
           // Balao numerado. Quando dois eventos caem quase no mesmo x, empilha
@@ -1019,8 +1051,13 @@
           evento._y = y;
 
           ctx.beginPath();
-          ctx.arc(x, y, 9, 0, Math.PI * 2);
-          ctx.fillStyle = '#8B6212';
+          if (evento.visita) {
+            // Balao quadrado para a Visita GS; circulo para Evento de Marketing
+            ctx.rect(x - 8, y - 8, 16, 16);
+          } else {
+            ctx.arc(x, y, 9, 0, Math.PI * 2);
+          }
+          ctx.fillStyle = cor;
           ctx.fill();
           // Anel na cor da superficie: mantem o balao legivel onde cruza a linha
           ctx.lineWidth = 2;
@@ -1048,10 +1085,19 @@
         return;
       }
 
-      key.innerHTML = `
-        <span><i class="key-linha"></i> Dias agenciados</span>
-        <span><i class="key-evento"></i> Evento (${noGrafico} na janela${fora > 0 ? `, ${fora} fora` : ''})</span>
-      `;
+      const dentro = eventosDoGrafico.filter((e) => e.pos !== null);
+      const visitasNaJanela = dentro.filter((e) => e.visita).length;
+      const eventosNaJanela = dentro.length - visitasNaJanela;
+      const visitasFora = eventosDoGrafico.filter((e) => e.visita && e.pos === null).length;
+      const eventosFora = fora - visitasFora;
+      const partes = ['<span><i class="key-linha"></i> Dias agenciados</span>'];
+      if (eventosNaJanela + eventosFora > 0) {
+        partes.push(`<span><i class="key-evento"></i> Evento de Marketing (${eventosNaJanela} na janela${eventosFora > 0 ? `, ${eventosFora} fora` : ''})</span>`);
+      }
+      if (visitasNaJanela + visitasFora > 0) {
+        partes.push(`<span><i class="key-visita"></i> Visita GS (${visitasNaJanela} na janela${visitasFora > 0 ? `, ${visitasFora} fora` : ''})</span>`);
+      }
+      key.innerHTML = partes.join('');
     }
 
     // Tooltip proprio dos marcadores: o do Chart.js so enxerga pontos do
@@ -1164,8 +1210,8 @@
       container.innerHTML = eventosDoGrafico.map(e => {
         const dentro = e.pos !== null;
         return `
-        <div class="timeline-item ${dentro ? 'no-grafico' : ''}">
-          <div class="timeline-num ${dentro ? '' : 'fora'}">${e.numero}</div>
+        <div class="timeline-item ${dentro ? 'no-grafico' : ''} ${e.visita ? 'visita' : ''}">
+          <div class="timeline-num ${dentro ? '' : 'fora'} ${e.visita ? 'visita' : ''}">${e.numero}</div>
           <div class="timeline-item-date">${new Date(e.occurredAt).toLocaleDateString('pt-BR')}</div>
           <div class="timeline-item-event">
             ${escapeHtml(e.eventName)}
