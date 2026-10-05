@@ -165,7 +165,7 @@
           <canvas id="trend-chart"></canvas>
         </div>
         <div class="chart-key">
-          <span><i class="key-linha"></i> dias agenciados</span>
+          <span><i class="key-linha"></i> dias vendidos</span>
           <span><i class="key-marco"></i> última operação</span>
         </div>
       </div>
@@ -259,7 +259,7 @@
 
       document.getElementById('table-hint').textContent = view === 'agrupado'
         ? 'Uma linha por grupo de CNPJ, com o número de filiais que ele carrega. Clique para ver a queda e a lista de filiais.'
-        : 'Uma linha por filial. Clique para ver a queda de dias agenciados dessa unidade.';
+        : 'Uma linha por filial. Clique para ver a queda de dias vendidos dessa unidade.';
 
       document.getElementById('th-filiais').hidden = false;
     }
@@ -278,7 +278,7 @@
         <div class="kpi perda">
           <div class="kpi-label">Volume do último ano ativo</div>
           <div class="kpi-value">${num(t.volumeUltimoAnoAtivo)}</div>
-          <div class="kpi-subtitle">dias agenciados enquanto ainda operavam</div>
+          <div class="kpi-subtitle">dias vendidos enquanto ainda operavam</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">Chegaram a operar</div>
@@ -556,7 +556,7 @@
             legend: { display: false },
             tooltip: {
               callbacks: {
-                label: (item) => `${num(item.parsed.y)} dias agenciados`
+                label: (item) => `${num(item.parsed.y)} dias vendidos`
               }
             }
           },

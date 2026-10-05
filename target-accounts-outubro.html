@@ -155,7 +155,7 @@
         <div id="detail-info" class="muted"></div>
         <div id="detail-health" style="margin-top:14px"></div>
         <div style="margin-top: 14px; padding: 12px; background: #F4F8FC; border-radius: 6px; border-left: 3px solid #297ACC;">
-          <div style="font-size: 11px; color: #6B778C; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Dias Agenciados (mês selecionado)</div>
+          <div style="font-size: 11px; color: #6B778C; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Dias Vendidos (mês selecionado)</div>
           <div id="detail-contract-days" style="font-size: 28px; font-weight: 600; color: #297ACC;">—</div>
         </div>
       </div>
@@ -243,7 +243,7 @@
       return d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
     }
 
-    // Dias agenciados vem do banco como decimal (meia diaria existe: FSJ fecha
+    // Dias vendidos vem do banco como decimal (meia diaria existe: FSJ fecha
     // julho em 12.170,5). Formatar em pt-BR com no maximo uma casa evita tanto
     // "12170.5" quanto o residuo de ponto flutuante da soma das 139 contas.
     function fmt(n) {
@@ -291,7 +291,12 @@
     //
     // ATENCAO ao que esta meta e: ela e da PX INTEIRA, nao das 139 contas deste
     // painel. Ela continua sendo exibida como referencia no card de Dias
-    // Agenciados, mas nao entra mais no calculo de participacao deste painel.
+    // Vendidos, mas nao entra mais no calculo de participacao deste painel.
+    //
+    // O arquivo-fonte se chama "Meta Dias Agenciados.jpeg" porque foi
+    // homologado antes de 02/10/2026; a propria imagem titula a serie como
+    // "Meta de dias vendidos". O nome do arquivo fica como esta para nao
+    // perder o rastro da homologacao.
     //
     // abr–jun/26 aparecem arredondados na imagem (133K/152K/180K), nunca com o
     // numero cheio — vao marcados como aproximados em vez de fingirem precisao
@@ -637,7 +642,7 @@
 
       document.getElementById('kpi-grid').innerHTML = `
         <div class="kpi">
-          <div class="kpi-label">Dias Agenciados</div>
+          <div class="kpi-label">Dias Vendidos</div>
           <div class="kpi-value">${fmt(totalDaysAll)}</div>
           <div class="kpi-subtitle">${metaTexto}${notaParcial}</div>
         </div>
@@ -646,7 +651,7 @@
           <div class="kpi-value">${pctBaseGeralTexto}</div>
           <div class="kpi-subtitle">${totalDaysBaseGeral === null
             ? 'Base geral não carregada'
-            : `De ${fmt(totalDaysBaseGeral)} dias agenciados na base geral${parcial ? ' (mês em curso)' : ''}`}</div>
+            : `De ${fmt(totalDaysBaseGeral)} dias vendidos na base geral${parcial ? ' (mês em curso)' : ''}`}</div>
         </div>
         <div class="kpi">
           <div class="kpi-label">Cobertura Eventos</div>
@@ -669,7 +674,7 @@
         ? new Date(data.metricSyncedAt).toLocaleString('pt-BR')
         : 'sem sincronização registrada';
       document.getElementById('metric-source').textContent =
-        `Fonte de Dias Agenciados: ${fonte} · Atualizado em ${atualizado}. Meta é referência separada; dias vendidos não entram nesta série.`;
+        `Fonte de Dias Vendidos: ${fonte} · Atualizado em ${atualizado}. Meta é referência separada.`;
     }
 
     function renderTable() {
@@ -839,7 +844,7 @@
       const monthToUse = selectedMonth || data.trendMonths?.[data.trendMonths.length - 1] || '2026-08-01';
 
       // Gerar CSV com apenas as linhas visíveis
-      const headers = ['#', 'Empresa', 'Origem', 'Faixa (Ago)', 'Movimento', 'Status Operacional (%)', 'Dias Agenciados', 'Eventos Marketing', 'Visitas GS', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade', 'Dias (Ago)', 'Gap p/ Meta'];
+      const headers = ['#', 'Empresa', 'Origem', 'Faixa (Ago)', 'Movimento', 'Status Operacional (%)', 'Dias Vendidos', 'Eventos Marketing', 'Visitas GS', 'Tier', 'Status', 'Tendência', 'Falta p/ o alvo', 'Alvo', 'Multiplicador', 'Viabilidade', 'Dias (Ago)', 'Gap p/ Meta'];
       const csvLines = [headers.join(',')];
 
       visibleRows.forEach((row, idx) => {
@@ -886,7 +891,7 @@
     }
 
     function updateDetailMonth() {
-      // Atualizar o card de dias agenciados se um detalhe estiver aberto
+      // Atualizar o card de dias vendidos se um detalhe estiver aberto
       const detailPanel = document.getElementById('detail-panel');
       if (detailPanel.classList.contains('open')) {
         const selectedTr = document.querySelector('#tbody tr.selected');
@@ -1081,7 +1086,7 @@
       const fora = eventosDoGrafico.length - noGrafico;
 
       if (eventosDoGrafico.length === 0) {
-        key.innerHTML = '<span><i class="key-linha"></i> Dias agenciados</span>';
+        key.innerHTML = '<span><i class="key-linha"></i> Dias vendidos</span>';
         return;
       }
 
@@ -1090,7 +1095,7 @@
       const eventosNaJanela = dentro.length - visitasNaJanela;
       const visitasFora = eventosDoGrafico.filter((e) => e.visita && e.pos === null).length;
       const eventosFora = fora - visitasFora;
-      const partes = ['<span><i class="key-linha"></i> Dias agenciados</span>'];
+      const partes = ['<span><i class="key-linha"></i> Dias vendidos</span>'];
       if (eventosNaJanela + eventosFora > 0) {
         partes.push(`<span><i class="key-evento"></i> Evento de Marketing (${eventosNaJanela} na janela${eventosFora > 0 ? `, ${eventosFora} fora` : ''})</span>`);
       }
@@ -1157,7 +1162,7 @@
         data: {
           labels,
           datasets: [{
-            label: 'Dias Agenciados',
+            label: 'Dias Vendidos',
             data: values,
             borderColor: '#297ACC',
             backgroundColor: 'rgba(15, 82, 186, 0.05)',

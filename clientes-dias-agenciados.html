@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clientes — Dias Agenciados</title>
+  <title>Clientes — Dias Vendidos</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
   <script src="/js/multi-filtro.js"></script>
   <style>
@@ -16,6 +16,10 @@
       --blue: #297ACC;
       --green: #148F4E;
       --red: #C93137;
+      /* Faixa intermediaria do indice de ritmo (90-99%). O ambar de evento
+         existe nesta pagina mas e marcador de momento, nao de status — usar
+         aquele aqui faria "atrasado" e "teve evento" terem a mesma cor. */
+      --atencao: #9A6700;
       /* Marcador de evento. Ambar contra o azul do dado: par validado pelo
          validador de paleta (ΔE 26,0 protanopia / 32,4 visao normal), bem acima
          do piso 8. Nao e token de status desta pagina (verde/vermelho) — evento
@@ -34,6 +38,12 @@
     .muted { color: var(--muted); font-size: 13px; }
     .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px; margin-bottom: 14px; }
     .kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 14px; }
+    /* Quatro blocos, nao seis: o ritmo responde uma pergunta so (estamos no
+       passo?) e cada bloco a mais dilui a resposta. */
+    .ritmo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 4px; }
+    .ritmo-indice { font-size: 1.75rem; font-weight: 600; margin: 4px 0; }
+    .ritmo-faixa { display: inline-block; font-size: 10px; font-weight: 600; text-transform: uppercase;
+                   letter-spacing: 0.4px; padding: 1px 6px; border-radius: 3px; border: 1px solid currentColor; }
     .kpi { background: white; border: 1px solid var(--line); border-top: 3px solid #297ACC; border-radius: 8px; padding: 16px; text-align: center; }
     .kpi-label { font-size: 0.65rem; font-weight: 600; color: #6B778C; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
     .kpi-value { font-size: 1.75rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
@@ -92,6 +102,7 @@
       .container { grid-template-columns: 1fr; }
       .detail-panel { display: grid !important; }
       .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+      .ritmo-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 <link rel="stylesheet" href="/css/thermo-ds.css">
@@ -106,8 +117,20 @@
         <div id="metric-source" class="muted" style="font-size: 11px; border-top: 1px solid var(--line); padding-top: 8px;"></div>
       </div>
 
+      <!-- Ritmo do mes corrente. So aparece no mes em curso: num mes fechado
+           "estamos no passo?" nao e mais pergunta, e o bloco viraria ruido. -->
+      <div class="panel" id="ritmo-panel" style="display: none;">
+        <h2>Ritmo de Dias Vendidos — <span id="ritmo-mes"></span></h2>
+        <p class="muted" style="margin-bottom: 14px;" id="ritmo-sub"></p>
+        <div class="ritmo-grid" id="ritmo-kpis"></div>
+        <div class="chart-canvas-wrap" style="margin-top: 18px;">
+          <canvas id="ritmo-chart"></canvas>
+        </div>
+        <div id="ritmo-nota" class="muted" style="font-size: 11px; border-top: 1px solid var(--line); padding-top: 8px; margin-top: 14px;"></div>
+      </div>
+
       <div class="panel">
-        <h2 id="table-title">Dias Agenciados por Cliente</h2>
+        <h2 id="table-title">Dias Vendidos por Cliente</h2>
         <p class="muted" style="margin-bottom: 14px;">Clique em um cliente para ver a evolução dos últimos 6 meses, os touchpoints e os eventos. Os valores da tabela correspondem ao mês selecionado.</p>
 
         <div style="margin-bottom: 14px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
@@ -131,7 +154,7 @@
             <tr>
               <th style="width: 50px; text-align: center;">#</th>
               <th onclick="sortTable('company')">Cliente</th>
-              <th onclick="sortTable('contractDays')">Dias Agenciados</th>
+              <th onclick="sortTable('contractDays')">Dias Vendidos</th>
               <th onclick="sortTable('touchpoints')">Touchpoints Marketing</th>
               <th onclick="sortTable('visitas')">Visitas GS</th>
               <th onclick="sortTable('tier')">Tier</th>
@@ -150,7 +173,7 @@
         <h2 id="detail-title">Selecione um cliente</h2>
         <div id="detail-info" class="muted"></div>
         <div style="margin-top: 14px; padding: 12px; background: #F4F8FC; border-radius: 6px; border-left: 3px solid #297ACC;">
-          <div style="font-size: 11px; color: #6B778C; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Dias Agenciados (mês selecionado)</div>
+          <div style="font-size: 11px; color: #6B778C; font-weight: 600; text-transform: uppercase; margin-bottom: 6px;">Dias Vendidos (mês selecionado)</div>
           <div id="detail-contract-days" style="font-size: 28px; font-weight: 600; color: #297ACC;">—</div>
         </div>
       </div>
@@ -252,12 +275,12 @@
       return d.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
     }
 
-    // Dias agenciados vem do banco como decimal (meia diaria existe).
+    // Dias vendidos vem do banco como decimal (meia diaria existe).
     function fmt(n) {
       return (Number(n) || 0).toLocaleString('pt-BR', { maximumFractionDigits: 1 });
     }
 
-    // Ausencia de serie e diferente de zero dia agenciado: um cliente em CHURN
+    // Ausencia de serie e diferente de zero dia vendido: um cliente em CHURN
     // sem linha no mes nao "fez 0 dias", ele nao tem dado. A tabela mostra "—"
     // para o primeiro caso e o numero para o segundo.
     function diasDoMes(row) {
@@ -289,6 +312,238 @@
       return atual - anterior;
     }
 
+    // ─── Ritmo de dias vendidos (mes em curso) ──────────────────────────────
+
+    let ritmo = null;
+    let ritmoChart = null;
+
+    function pct(valor) {
+      return `${Math.round((Number(valor) || 0) * 100)}%`;
+    }
+
+    // Tres faixas, nao duas. Com o corte unico em 100% um mes a 99% apareceria
+    // igual a um mes a 60%, e e justamente entre esses dois que a decisao muda.
+    function corDoIndice(indice) {
+      if (indice >= 1) return 'var(--green)';
+      if (indice >= 0.9) return 'var(--atencao)';
+      return 'var(--red)';
+    }
+
+    function rotuloDoIndice(indice) {
+      if (indice >= 1) return 'No ritmo';
+      if (indice >= 0.9) return 'Atencao';
+      return 'Abaixo do ritmo';
+    }
+
+    function diaCurto(diaISO) {
+      return diaISO.slice(8, 10);
+    }
+
+    async function loadRitmo() {
+      try {
+        const res = await fetch('/api/transportadoras/clientes-dias-agenciados/ritmo', { credentials: 'include' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
+        ritmo = json.data;
+        renderRitmo();
+      } catch (err) {
+        // Falha aqui nao derruba a aba: o painel de ritmo some e o resto da
+        // base continua utilizavel.
+        document.getElementById('ritmo-panel').style.display = 'none';
+        console.warn('[ritmo] nao foi possivel carregar:', err.message);
+      }
+    }
+
+    function renderRitmo() {
+      const painel = document.getElementById('ritmo-panel');
+      // O bloco acompanha o mes em curso, nao o mes escolhido no seletor: a
+      // serie de ritmo so existe para o mes corrente.
+      if (!ritmo || !isMesEmCurso(selectedMonth)) {
+        painel.style.display = 'none';
+        return;
+      }
+      painel.style.display = '';
+
+      document.getElementById('ritmo-mes').textContent = getMonthLabel(`${ritmo.mes}-01`);
+      const hojeLabel = new Date(`${ritmo.hoje}T12:00:00`).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' });
+      document.getElementById('ritmo-sub').textContent =
+        `Realizado ate ${hojeLabel} contra a curva esperada do mes. A curva distribui o alvo pelo peso de cada dia da semana e desconta feriado nacional — nao e o alvo dividido pelo numero de dias.`;
+
+      const blocos = [];
+
+      const futuros = ritmo.lancadoParaDiasFuturos > 0
+        ? `${fmt(ritmo.lancadoParaDiasFuturos)} ja lancados para dias futuros do mes`
+        : 'Nenhum lancamento para dia futuro';
+      blocos.push(`
+        <div class="kpi">
+          <div class="kpi-label">Realizado ate hoje</div>
+          <div class="kpi-value">${fmt(ritmo.realizadoAteHoje)}</div>
+          <div class="kpi-subtitle">${futuros}</div>
+        </div>`);
+
+      if (ritmo.meta) {
+        blocos.push(`
+          <div class="kpi">
+            <div class="kpi-label">Ritmo vs Meta</div>
+            <div class="ritmo-indice" style="color:${corDoIndice(ritmo.meta.indice)}">${pct(ritmo.meta.indice)}
+              <span class="ritmo-faixa" style="color:${corDoIndice(ritmo.meta.indice)}">${rotuloDoIndice(ritmo.meta.indice)}</span>
+            </div>
+            <div class="kpi-subtitle">Esperado ${fmt(ritmo.meta.esperadoAteHoje)} · meta do mes ${fmt(ritmo.meta.totalDoMes)}</div>
+          </div>`);
+      } else {
+        blocos.push(`
+          <div class="kpi">
+            <div class="kpi-label">Ritmo vs Meta</div>
+            <div class="kpi-value">—</div>
+            <div class="kpi-subtitle">Mes sem meta cadastrada</div>
+          </div>`);
+      }
+
+      if (ritmo.mesAnterior) {
+        const labelAnterior = getMonthLabel(`${ritmo.mesAnterior.mes}-01`);
+        blocos.push(`
+          <div class="kpi">
+            <div class="kpi-label">Ritmo vs ${escapeHtml(labelAnterior)}</div>
+            <div class="ritmo-indice" style="color:${corDoIndice(ritmo.mesAnterior.indice)}">${pct(ritmo.mesAnterior.indice)}
+              <span class="ritmo-faixa" style="color:${corDoIndice(ritmo.mesAnterior.indice)}">${rotuloDoIndice(ritmo.mesAnterior.indice)}</span>
+            </div>
+            <div class="kpi-subtitle">Esperado ${fmt(ritmo.mesAnterior.esperadoAteHoje)} · base de ${fmt(ritmo.mesAnterior.realizado)} reponderada pelo calendario</div>
+          </div>`);
+      } else {
+        blocos.push(`
+          <div class="kpi">
+            <div class="kpi-label">Ritmo vs mes anterior</div>
+            <div class="kpi-value">—</div>
+            <div class="kpi-subtitle">Sem serie do mes anterior</div>
+          </div>`);
+      }
+
+      const projecao = ritmo.projecaoDeFechamento;
+      const contraMeta = ritmo.meta && ritmo.meta.totalDoMes > 0 && projecao !== null
+        ? `${pct(projecao / ritmo.meta.totalDoMes)} da meta`
+        : 'Sem meta para comparar';
+      blocos.push(`
+        <div class="kpi">
+          <div class="kpi-label">Projecao de fechamento</div>
+          <div class="kpi-value">${projecao === null ? '—' : fmt(projecao)}</div>
+          <div class="kpi-subtitle">${contraMeta}</div>
+        </div>`);
+
+      document.getElementById('ritmo-kpis').innerHTML = blocos.join('');
+
+      const atualizado = ritmo.syncedAt ? new Date(ritmo.syncedAt).toLocaleString('pt-BR') : 'sem sincronizacao registrada';
+      const avisoPesos = ritmo.pesos.fallbackPlano
+        ? ' Atencao: ainda nao ha historico suficiente para ponderar os dias da semana, entao a curva esta plana e o indice e menos confiavel no comeco do mes.'
+        : '';
+      const feriados = ritmo.curva.filter((d) => d.feriado).map((d) => diaCurto(d.dia));
+      const notaFeriado = feriados.length > 0
+        ? ` Feriado nacional no mes: dia ${feriados.join(', ')} — a curva ja espera menos nesse(s) dia(s).`
+        : '';
+      document.getElementById('ritmo-nota').textContent =
+        `Serie diaria da base inteira · ${ritmo.metricSource} · Atualizado em ${atualizado}.${avisoPesos}${notaFeriado}`;
+
+      renderRitmoChart();
+    }
+
+    function renderRitmoChart() {
+      const canvas = document.getElementById('ritmo-chart');
+      if (!canvas || typeof Chart === 'undefined') return;
+      if (ritmoChart) ritmoChart.destroy();
+
+      const labels = ritmo.curva.map((d) => diaCurto(d.dia));
+      const acumulado = ritmo.curva.map((d) => d.realizadoAcumulado);
+      const noDia = ritmo.curva.map((d) => d.realizadoNoDia);
+      const esperadoMeta = ritmo.meta
+        ? ritmo.curva.map((d) => d.pctEsperadoAcumulado * ritmo.meta.totalDoMes)
+        : null;
+      const esperadoAnterior = ritmo.mesAnterior
+        ? ritmo.curva.map((d) => d.pctEsperadoAcumulado * ritmo.mesAnterior.totalDoMes)
+        : null;
+
+      const datasets = [{
+        type: 'bar',
+        label: 'Vendido no dia',
+        data: noDia,
+        yAxisID: 'y2',
+        backgroundColor: 'rgba(41, 122, 204, 0.18)',
+        borderWidth: 0,
+        order: 3
+      }, {
+        type: 'line',
+        label: 'Realizado (acumulado)',
+        data: acumulado,
+        yAxisID: 'y',
+        borderColor: '#297ACC',
+        backgroundColor: '#297ACC',
+        borderWidth: 2.5,
+        pointRadius: 0,
+        tension: 0.15,
+        order: 1
+      }];
+
+      if (esperadoMeta) {
+        datasets.push({
+          type: 'line',
+          label: 'Esperado — meta',
+          data: esperadoMeta,
+          yAxisID: 'y',
+          borderColor: '#2B3038',
+          borderWidth: 2,
+          borderDash: [6, 4],
+          pointRadius: 0,
+          tension: 0.15,
+          order: 2
+        });
+      }
+      if (esperadoAnterior) {
+        datasets.push({
+          type: 'line',
+          label: 'Esperado — ritmo do mes anterior',
+          data: esperadoAnterior,
+          yAxisID: 'y',
+          borderColor: '#6B778C',
+          borderWidth: 1.5,
+          borderDash: [2, 3],
+          pointRadius: 0,
+          tension: 0.15,
+          order: 2
+        });
+      }
+
+      ritmoChart = new Chart(canvas, {
+        data: { labels, datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y === null ? '—' : fmt(ctx.parsed.y)}`
+              }
+            }
+          },
+          scales: {
+            y: {
+              title: { display: true, text: 'Acumulado no mes', font: { size: 11 } },
+              ticks: { font: { size: 10 }, callback: (v) => fmt(v) },
+              grid: { color: '#EDF3FA' }
+            },
+            // Eixo proprio para a barra diaria: na escala do acumulado ela
+            // ficaria rente a zero e nao mostraria o desenho da semana.
+            y2: {
+              position: 'right',
+              title: { display: true, text: 'No dia', font: { size: 11 } },
+              ticks: { font: { size: 10 }, callback: (v) => fmt(v) },
+              grid: { display: false }
+            },
+            x: { ticks: { font: { size: 10 } }, grid: { display: false } }
+          }
+        }
+      });
+    }
+
     async function load() {
       try {
         const res = await fetch('/api/transportadoras/clientes-dias-agenciados', { credentials: 'include' });
@@ -303,6 +558,7 @@
       // Fora do try acima de proposito: falha no resumo de eventos nao pode
       // derrubar o painel inteiro (aquele catch reescreve o body todo).
       loadEventosResumo();
+      loadRitmo();
     }
 
     // ─── Touchpoints por evento (resumo agrupado por familia) ───────────────
@@ -358,6 +614,9 @@
       initializeFilters();
       renderStrategic();
       renderTable();
+      // O bloco de ritmo reage a troca de mes no seletor: ele so aparece no mes
+      // em curso, e some sozinho quando o usuario olha um mes fechado.
+      renderRitmo();
     }
 
     function initializeFilters() {
@@ -473,7 +732,7 @@
 
       document.getElementById('kpi-grid').innerHTML = `
         <div class="kpi">
-          <div class="kpi-label">Dias Agenciados</div>
+          <div class="kpi-label">Dias Vendidos</div>
           <div class="kpi-value">${fmt(totalDias)}</div>
           <div class="kpi-subtitle">${notaParcial}</div>
         </div>
@@ -510,7 +769,7 @@
         ? new Date(data.metricSyncedAt).toLocaleString('pt-BR')
         : 'sem sincronização registrada';
       document.getElementById('metric-source').textContent =
-        `Fonte de Dias Agenciados: ${fonte} · Atualizado em ${atualizado}. Dias vendidos não entram nesta série.`;
+        `Fonte de Dias Vendidos: ${fonte} · Atualizado em ${atualizado}.`;
     }
 
     // Seleção vazia não recorta nada. Com valores marcados, a linha precisa
@@ -574,7 +833,7 @@
       const pageRows = rows.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
 
       document.getElementById('table-title').textContent =
-        `Dias Agenciados por Cliente — ${fmt(rows.length)} cliente${rows.length !== 1 ? 's' : ''}`;
+        `Dias Vendidos por Cliente — ${fmt(rows.length)} cliente${rows.length !== 1 ? 's' : ''}`;
 
       const tbody = document.getElementById('tbody');
       tbody.innerHTML = pageRows.map((row, idx) => {
@@ -834,7 +1093,7 @@
       const fora = eventosDoGrafico.length - noGrafico;
 
       if (eventosDoGrafico.length === 0) {
-        key.innerHTML = '<span><i class="key-linha"></i> Dias agenciados</span>';
+        key.innerHTML = '<span><i class="key-linha"></i> Dias vendidos</span>';
         return;
       }
 
@@ -843,7 +1102,7 @@
       const eventosNaJanela = dentro.length - visitasNaJanela;
       const visitasFora = eventosDoGrafico.filter((e) => e.visita && e.pos === null).length;
       const eventosFora = fora - visitasFora;
-      const partes = ['<span><i class="key-linha"></i> Dias agenciados</span>'];
+      const partes = ['<span><i class="key-linha"></i> Dias vendidos</span>'];
       if (eventosNaJanela + eventosFora > 0) {
         partes.push(`<span><i class="key-evento"></i> Evento de Marketing (${eventosNaJanela} na janela${eventosFora > 0 ? `, ${eventosFora} fora` : ''})</span>`);
       }
@@ -916,7 +1175,7 @@
         data: {
           labels,
           datasets: [{
-            label: 'Dias Agenciados',
+            label: 'Dias Vendidos',
             data: values,
             borderColor: '#297ACC',
             backgroundColor: 'rgba(15, 82, 186, 0.05)',

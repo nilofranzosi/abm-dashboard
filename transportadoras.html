@@ -2777,7 +2777,7 @@
       const impactRow = eventosImpactoByName.get(touchpoint.eventName);
       if (!impactRow) return firstLine;
       const secondLine = impactRow.status === "ranqueado"
-        ? `Tendência esperada pós-evento: ${formatGrowthPct(impactRow.medianaCrescimentoPct)} dias agenciados · N=${impactRow.clientesTocados} clientes`
+        ? `Tendência esperada pós-evento: ${formatGrowthPct(impactRow.medianaCrescimentoPct)} dias vendidos · N=${impactRow.clientesTocados} clientes`
         : `Tendência esperada pós-evento: ${escapeAttr(impactRow.statusMensagem)} · N=${impactRow.clientesTocados} clientes`;
       return `${firstLine}\n${secondLine}`;
     }

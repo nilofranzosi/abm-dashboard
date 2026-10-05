@@ -1,49 +1,43 @@
 {
-  "generatedAt": "2026-10-01T12:27:19.001Z",
-  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-10-01.json",
+  "generatedAt": "2026-10-02T12:27:03.541Z",
+  "sourceEnrichedPath": "C:\\Users\\NiloFranzosiFilho\\Documents\\New project\\px-outreach-engine\\.planning\\thiago-abm-enriched-2026-10-02.json",
   "summary": {
-    "total": 6,
+    "total": 21,
     "replied": 1,
-    "companyUnknown": 4,
-    "overdue": 0,
-    "offList": 2
+    "companyUnknown": 2,
+    "overdue": 9,
+    "offList": 10
   },
   "companies": [
     {
-      "id": "unknown-luis-licre",
+      "id": "unknown-william-tobaro",
       "resolvedCompany": "A apurar",
       "reviewReasons": [
-        "replied",
         "company-unknown",
         "icp-unknown"
       ],
       "contacts": [
         {
-          "contactName": "Luís Licre",
-          "funnelStatus": "REPLIED_POSITIVE",
+          "contactName": "William Tobaro",
+          "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": null,
           "confidence": "Baixa",
           "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-10-01T03:00:00.000Z",
-          "lastInboundAt": "2026-10-01T21:26:00.000Z",
+          "lastOutboundAt": "2026-10-02T03:00:00.000Z",
+          "lastInboundAt": null,
           "outboundTouchpoints": 1,
-          "inboundMessages": [
-            {
-              "occurredAt": "2026-10-01T21:26:00.000Z",
-              "body": "Oi Thiago, tudo bem?Hoje realizamos call com o John, do seu time e a Scapini.Vamos avançar. Obrigado!"
-            }
-          ],
+          "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
-              "body": "Luís, a PX hoje está em forte atuação no E-commerce, tanto em empresas que possuem frota própria quanto nas transportadoras que prestam o serviço."
+              "occurredAt": "2026-10-02T17:21:00.000Z",
+              "body": "William, vi aqui a notícia da nova aquisição de frota de vocês."
             },
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
-              "body": "Hoje atuamos no MELI, Shopee e Magalu. Acredito que podemos iniciar um projeto junto a MadeiraMadeira."
+              "occurredAt": "2026-10-02T03:00:00.000Z",
+              "body": "A PX já atua junto a Rodonaves em algumas operações, mas acredito que podemos aplicar um projeto para expandir essa atuação."
             },
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
+              "occurredAt": "2026-10-02T03:00:00.000Z",
               "body": "Vamos marcar uma conversa?"
             }
           ],
@@ -54,9 +48,85 @@
       "icpSegment": null
     },
     {
+      "id": "madeiramadeira",
+      "resolvedCompany": "MadeiraMadeira",
+      "reviewReasons": [
+        "replied"
+      ],
+      "contacts": [
+        {
+          "contactName": "Luís Licre",
+          "funnelStatus": "REPLIED_POSITIVE",
+          "roleOrHeadline": "Diretor de Logística | Head de Transporte | Gerente de Logística | WMS | TMS | Estratégia + Execução | Redução de Custos | Eficiência Operacional | MadeiraMadeira | Zig | Loggi | A Geradora | Ale Combustíveis",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 0,
+          "lastOutboundAt": "2026-10-02T03:00:00.000Z",
+          "lastInboundAt": "2026-10-02T21:26:00.000Z",
+          "outboundTouchpoints": 1,
+          "inboundMessages": [
+            {
+              "occurredAt": "2026-10-02T21:26:00.000Z",
+              "body": "Oi Thiago, tudo bem?Hoje realizamos call com o John, do seu time e a Scapini.Vamos avançar. Obrigado!"
+            }
+          ],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-10-02T03:00:00.000Z",
+              "body": "Luís, a PX hoje está em forte atuação no E-commerce, tanto em empresas que possuem frota própria quanto nas transportadoras que prestam o serviço."
+            },
+            {
+              "occurredAt": "2026-10-02T03:00:00.000Z",
+              "body": "Hoje atuamos no MELI, Shopee e Magalu. Acredito que podemos iniciar um projeto junto a MadeiraMadeira."
+            },
+            {
+              "occurredAt": "2026-10-02T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "mars",
+      "resolvedCompany": "Mars",
+      "reviewReasons": [
+        "overdue"
+      ],
+      "contacts": [
+        {
+          "contactName": "Danilo Yajima",
+          "funnelStatus": "FIRST_CONTACT_SENT",
+          "roleOrHeadline": "Supply Planning / Sourcing / Innovation / Customer Service & Logistics / Project Management",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 1,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Danilo, a PX tem forte atuação nas empresas de bens de consumo. Acredito que temos oportunidades concretas para a operação da Mars."
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
       "id": "cliente",
       "resolvedCompany": "Cliente",
       "reviewReasons": [
+        "overdue",
         "icp-unknown",
         "company-off-list"
       ],
@@ -66,18 +136,18 @@
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Gerente de Logística e Transporte | Last Mile & Operações | Control Tower | Network Design | Otimização de Supply Chain | Experiência do Cliente | Melhoria Contínua | +€5M em Savings & Excelência em Nível de Serviço",
           "confidence": "Media",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-10-01T03:00:00.000Z",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
+              "occurredAt": "2026-09-25T03:00:00.000Z",
               "body": "Diego, gostaria de te apresentar o Modelo PX de busca de profissionais."
             },
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
+              "occurredAt": "2026-09-25T03:00:00.000Z",
               "body": "Vamos marcar uma conversa?"
             }
           ],
@@ -88,57 +158,269 @@
       "icpSegment": null
     },
     {
-      "id": "unknown-leandro-bandeira-sousa",
-      "resolvedCompany": "A apurar",
+      "id": "grupo-carrefour-brasil",
+      "resolvedCompany": "Grupo Carrefour Brasil",
       "reviewReasons": [
-        "company-unknown",
-        "icp-unknown"
+        "overdue"
       ],
       "contacts": [
         {
           "contactName": "Leandro Bandeira Sousa",
           "funnelStatus": "FIRST_CONTACT_SENT",
           "roleOrHeadline": "Diretor Sênior de Projetos | Centro de Serviços Compartilhados | Transformação Cultural e Processos | Eficiência Operacional | Operações de Backoffice",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-10-01T03:00:00.000Z",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 1,
           "inboundMessages": [],
           "outboundMessages": [
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
+              "occurredAt": "2026-09-25T03:00:00.000Z",
               "body": "Leandro, queria marcar um momento para apresentar o modelo PX para você, hoje temos atuação em empresas como Ambev e GPA."
             },
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
+              "occurredAt": "2026-09-25T03:00:00.000Z",
               "body": "Acredito que temos oportunidades concretas para o Grupo Carrefour."
             },
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
+              "occurredAt": "2026-09-25T03:00:00.000Z",
               "body": "Vamos marcar uma conversa?"
             }
           ],
-          "icpSegment": null
+          "icpSegment": "EMBARCADOR"
         }
       ],
       "reviewedAt": null,
-      "icpSegment": null
+      "icpSegment": "EMBARCADOR"
     },
     {
-      "id": "unknown-gustavo-emma",
-      "resolvedCompany": "A apurar",
+      "id": "reckitt",
+      "resolvedCompany": "Reckitt",
       "reviewReasons": [
-        "company-unknown"
+        "overdue"
+      ],
+      "contacts": [
+        {
+          "contactName": "Marcus Galvani",
+          "funnelStatus": "FOLLOW_UP_SENT",
+          "roleOrHeadline": "Diretor de Supply Chain na Reckitt",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 2,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-07-28T03:00:00.000Z",
+              "body": "Marcus, a PX atua fornecendo mão de obra sob demanda para a operação logística, sem necessidade de contratação fixa via RH."
+            },
+            {
+              "occurredAt": "2026-07-28T03:00:00.000Z",
+              "body": "Atuamos em empresas como Ambev e Unilever, acredito que temos oportunidades concretas para a cadeia da Reckitt."
+            },
+            {
+              "occurredAt": "2026-07-28T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Marcus, gostaria de avançar em um processo de homologação do modelo PX junto a Reckitt."
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Para isso, o melhor contato seria contigo?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "nutrien-solucoes-agricolas",
+      "resolvedCompany": "Nutrien Soluções Agrícolas",
+      "reviewReasons": [
+        "overdue"
+      ],
+      "contacts": [
+        {
+          "contactName": "Marco Ribeiro",
+          "funnelStatus": "FOLLOW_UP_SENT",
+          "roleOrHeadline": "Head de Supply Chain | Especialista em Planejamento de Operações Logísticas, Transportes e Operações Agrícolas | Foco em Eficiência e Transformação de Processos",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 2,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-07-28T03:00:00.000Z",
+              "body": "Marco, a PX está em um processo de homologação com a Raízen, acredito que temos possibilidades de aplicar um projeto similar na Nutrien."
+            },
+            {
+              "occurredAt": "2026-07-28T03:00:00.000Z",
+              "body": "Para avançar nesse projeto, o melhor contato seria contigo?"
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Gostaria de marcar uma conversa para mostrar o modelo PX para a Nutrien. Conseguimos homologar e encontrar profissionais de acordo com suas exigências"
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "messer-gases-brasil",
+      "resolvedCompany": "Messer Gases Brasil",
+      "reviewReasons": [
+        "overdue"
+      ],
+      "contacts": [
+        {
+          "contactName": "Juliano Campaner",
+          "funnelStatus": "FOLLOW_UP_SENT",
+          "roleOrHeadline": "Diretor de logística | Diretor de supply chain | Diretor de processos e melhoria contínua | Logística | Supply Chain | G",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 2,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-05-04T03:00:00.000Z",
+              "body": "Juliano, hoje a PX trabalha com transportadoras que atendem a Air Liquide no Brasil. Acredito que temos oportunidades concretas para a cadeia logística da Messer também."
+            },
+            {
+              "occurredAt": "2026-05-04T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Estamos em um processo de homologação junto a Raízen, acredito que temos possibilidades semelhantes junto a Messer."
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Para isso, o melhor contato seria contigo?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "krona-tubos-e-conexoes",
+      "resolvedCompany": "Krona Tubos e Conexões",
+      "reviewReasons": [
+        "overdue"
+      ],
+      "contacts": [
+        {
+          "contactName": "ROGERIO KOHNTOPP",
+          "funnelStatus": "FOLLOW_UP_SENT",
+          "roleOrHeadline": "DIRETOR DE OPERAÇÕES - COO GRUPO KRONA",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 2,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-08-06T03:00:00.000Z",
+              "body": "A PX é uma plataforma que disponibiliza mão de obra para a operação logística, sem necessidade de contratação fixa via RH."
+            },
+            {
+              "occurredAt": "2026-08-06T03:00:00.000Z",
+              "body": "Assim como a Krona, nós somos de Joinville, mas temos atuação nacional em empresas como Votorantim e Ambev."
+            },
+            {
+              "occurredAt": "2026-08-06T03:00:00.000Z",
+              "body": "Acredito que temos muitas oportunidades no Grupo Krona."
+            },
+            {
+              "occurredAt": "2026-08-06T03:00:00.000Z",
+              "body": "Para isso, o melhor contato seria contigo?"
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Gostaria de avançar num processo de homologação da PX junto ao Grupo Krona.(Editada)"
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "klabin",
+      "resolvedCompany": "Klabin",
+      "reviewReasons": [
+        "overdue"
+      ],
+      "contacts": [
+        {
+          "contactName": "Roberto Bisogni",
+          "funnelStatus": "FOLLOW_UP_SENT",
+          "roleOrHeadline": "Diretor de Supply Chain / Logística / S&OP na Klabin",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
+          "lastInboundAt": null,
+          "outboundTouchpoints": 2,
+          "inboundMessages": [],
+          "outboundMessages": [
+            {
+              "occurredAt": "2026-08-04T03:00:00.000Z",
+              "body": "A PX está em processo de homologação com a Raízen, acredito que temos oportunidades concretas para a operação da Klabin."
+            },
+            {
+              "occurredAt": "2026-08-04T03:00:00.000Z",
+              "body": "Vamos marcar uma conversa?"
+            },
+            {
+              "occurredAt": "2026-09-25T03:00:00.000Z",
+              "body": "Gostaria de avançar em uma conversa de homologação junto a Klabin. Para isso, o melhor contato seria contigo?"
+            }
+          ],
+          "icpSegment": "EMBARCADOR"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "EMBARCADOR"
+    },
+    {
+      "id": "embraer",
+      "resolvedCompany": "Embraer",
+      "reviewReasons": [
+        "overdue"
       ],
       "contacts": [
         {
           "contactName": "Gustavo Emmã",
           "funnelStatus": "FOLLOW_UP_SENT",
           "roleOrHeadline": "Supply Chain | Operations | Procurement | Manufacturing | Business Transformation | Export Controls | Executive Leadership",
-          "confidence": "Baixa",
-          "daysSinceLastOutbound": 0,
-          "lastOutboundAt": "2026-10-01T03:00:00.000Z",
+          "confidence": "Media",
+          "daysSinceLastOutbound": 7,
+          "lastOutboundAt": "2026-09-25T03:00:00.000Z",
           "lastInboundAt": null,
           "outboundTouchpoints": 2,
           "inboundMessages": [],
@@ -152,7 +434,7 @@
               "body": "Para avançar nesse ponto, o melhor contato seria contigo?"
             },
             {
-              "occurredAt": "2026-10-01T03:00:00.000Z",
+              "occurredAt": "2026-09-25T03:00:00.000Z",
               "body": "Você estará no Fórum de Compras que acontecerá no dia 06 de outubro no Transamérica?"
             }
           ],
@@ -163,7 +445,81 @@
       "icpSegment": "EMBARCADOR"
     },
     {
-      "id": "unknown-marcio-rodrigues-das-neves",
+      "id": "rte-rodonaves",
+      "resolvedCompany": "RTE Rodonaves",
+      "reviewReasons": [
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Régis Tiecher",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "CEO Grupo Rodonaves",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": "TRANSPORTADORA"
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": "TRANSPORTADORA"
+    },
+    {
+      "id": "ufsc",
+      "resolvedCompany": "UFSC",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Vinícius Da Silva Pereira",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Graduando de Engenharia de Transportes e Logística na UFSC",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "empresa-moinhos-restaurante-e-pizzaria",
+      "resolvedCompany": "empresa Moinhos Restaurante e Pizzaria",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Renan Bernard",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente da empresa Moinhos Restaurante e Pizzaria",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "unknown-joao-tostes",
       "resolvedCompany": "A apurar",
       "reviewReasons": [
         "company-unknown",
@@ -171,9 +527,9 @@
       ],
       "contacts": [
         {
-          "contactName": "Marcio Rodrigues das Neves",
+          "contactName": "João Tostes",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Supply Chain | Logistics | Transportation",
+          "roleOrHeadline": "Gerente de Logística | Coordenador de Transportes | Coordenador de Planejamento Logístico | Coordenador de Inteligência Logística | Coordenador de Torre de Controle | Supply Chain | First Mile | Last Mile | TMS",
           "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
@@ -188,18 +544,143 @@
       "icpSegment": null
     },
     {
-      "id": "bt-logistica-integrada",
-      "resolvedCompany": "BT Logistica Integrada",
+      "id": "papel",
+      "resolvedCompany": "papel",
       "reviewReasons": [
         "icp-unknown",
         "company-off-list"
       ],
       "contacts": [
         {
-          "contactName": "Ailton Ferreira de Carvalho",
+          "contactName": "João Paulo Morales",
           "funnelStatus": "CONNECTION_ACCEPTED",
-          "roleOrHeadline": "Coordenador de Logística Pleno na BT Logistica Integrada",
+          "roleOrHeadline": "Conselheiro de empresas e Mentoria. Ajudo empresários a escalar com lucro real, não só com faturamento no papel | 150+ empresas transformadas | 35%+ de crescimento médio",
           "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "mob2con",
+      "resolvedCompany": "Mob2Con",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Lucas Bittencourt",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Co-founder & Diretor de Produtos, Dados, Tecnologia e Operações na Mob2Con",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "caramuru-alimentos-s-a",
+      "resolvedCompany": "Caramuru Alimentos S.A.",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Luiz Francisco de Maria",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente de Planejamento Integrado | Caramuru Alimentos S.A.",
+          "confidence": "Media",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "movimentai-tecnologia",
+      "resolvedCompany": "MovimentAI Tecnologia",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Isabela Lins",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Head de Marketing na MovimentAI Tecnologia",
+          "confidence": "Alta",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "totvs",
+      "resolvedCompany": "TOTVS",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Felipe Pervelli",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Transformando Negócios com Tecnologia",
+          "confidence": "Baixa",
+          "daysSinceLastOutbound": null,
+          "lastOutboundAt": null,
+          "lastInboundAt": null,
+          "outboundTouchpoints": 0,
+          "inboundMessages": [],
+          "outboundMessages": [],
+          "icpSegment": null
+        }
+      ],
+      "reviewedAt": null,
+      "icpSegment": null
+    },
+    {
+      "id": "ticket-log",
+      "resolvedCompany": "Ticket Log",
+      "reviewReasons": [
+        "icp-unknown",
+        "company-off-list"
+      ],
+      "contacts": [
+        {
+          "contactName": "Kauê Miglioranza Santos",
+          "funnelStatus": "CONNECTION_ACCEPTED",
+          "roleOrHeadline": "Gerente Nacional de Vendas| Liderança, Desenvolvimento de negócios, Estratégia de marketing",
+          "confidence": "Baixa",
           "daysSinceLastOutbound": null,
           "lastOutboundAt": null,
           "lastInboundAt": null,

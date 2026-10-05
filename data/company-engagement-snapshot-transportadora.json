@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T18:49:22.267Z",
+  "generatedAt": "2026-10-02T18:47:14.781Z",
   "ativo": [],
   "segundaAbordagem": [],
   "terceiraAbordagem": [],
@@ -10,7 +10,7 @@
       "segment": null,
       "icpTier": "1",
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 45,
+      "daysSinceLastReply": 46,
       "lastReplyAt": null,
       "nextAction": "Retomada (cliente em churn) — presente em 10º Congresso ABOL; 1ª Confraria do Transporte"
     },
@@ -20,7 +20,7 @@
       "segment": null,
       "icpTier": "1",
       "abmStatus": "CONNECTION_ACCEPTED",
-      "daysSinceLastReply": 48,
+      "daysSinceLastReply": 49,
       "lastReplyAt": null,
       "nextAction": null
     }
